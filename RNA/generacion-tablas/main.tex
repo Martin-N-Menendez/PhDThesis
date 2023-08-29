@@ -1,0 +1,36 @@
+\section{Generacion de tablas de enclavamiento}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+        \caption{Route detection algorithm}\label{alg:routes}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        Routes = [], route = 0\;
+        \For{ start in [Signals] }
+        {
+            \tcc{Find manoeuvre and circulation signals}
+            \If{ start != "Stop" }
+            {
+                dir = start\_sig.Direction\;
+                \tcc{Find next signal w/ same direction}
+                
+                end = find\_next\_signal(start,[Signals])\;
+
+                [paths] = find(start.node,end.node,graph)\;
+                
+                \For{ node in [paths] }
+                {
+                    \tcc{Find rail objects within path}
+                    sws = find(graph[node],switches)\;
+                    lc = find(graph[node],levelCrossings)\;
+                    ptf = find(graph[node],platforms)\;
+                    %route ++\;
+                    Routes[route++] = $\{$start,end,dir,node,sws,lc,ptf$\}$\;
+                }
+            }
+        }
+        \KwResult{[Routes]} 
+    \end{algorithm}

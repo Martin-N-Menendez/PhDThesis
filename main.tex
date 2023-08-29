@@ -1,0 +1,65 @@
+\documentclass{report}
+
+\usepackage{packages}
+\usepackage{lipsum}
+\usepackage{mwe}
+\usepackage{amsmath,amsfonts}
+\usepackage{listings}
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+%\usepackage[margin=2cm]{geometry} % Adjust margins as needed
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{lipsum} % For dummy text, you can remove this in your actual document
+
+
+% Define the background image properties
+\def\backgroundimage{caratula/FIUBA.png} % Replace 'example-image' with the name of your background image file
+\def\backgroundopacity{0.9} % Adjust the opacity of the background image (0 to 1)
+
+\addbibresource{references/main.bib}
+\setcounter{secnumdepth}{4} % para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{4} % para que ponga subsubsecciones en el indice
+\begin{document}
+\pagenumbering{Roman}
+\input{caratula/main}
+\newpage
+
+%Blank page
+\thispagestyle{empty}
+\
+\newpage
+
+\setcounter{page}{1}
+\input{resumen}
+\newpage
+\input{abstract}
+\newpage
+
+%Blank page
+\thispagestyle{empty}
+\
+\newpage
+
+\input{agradecimientos}
+\newpage
+\input{indice}
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{introduccion/main}
+\newpage
+\input{propuesta/main}
+\newpage
+\input{RNA/main}
+\newpage
+\input{ACG/main}
+\newpage
+\input{resultados-obtenidos/main}
+\newpage
+\input{conclusiones/main}
+
+\printbibliography[title={Referencias}]
+
+\end{document}

@@ -1,0 +1,52 @@
+\subsection{Algoritmo de herencia vertical}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+        \caption{Vertical inheritance algorithm}\label{alg:vertical}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        \For{ each Signal S protecting a Sw\_A }
+        {
+            \For{ each Sw\_B != Sw\_A }
+            {
+                \tcc{Criteria \#0}
+                \If{ distance(Sw\_A,Sw\_B) $>$ MIN\_DISTANCE }
+                {
+                    Continue\;
+                }
+                \If{ S in Sw\_A.Branch also in Sw\_B.Start} 
+                {
+                   \tcc{Criteria \#1}
+                   \If{ S points to Sw\_B.Start }
+                   {
+                        Move S to Sw\_A.Start\;
+                   }
+                   \tcc{Criteria \#2}
+                   \If{ S points to Sw\_A.Branch }
+                   {
+                        Move S to Sw\_B.Continue\;
+                        Move S to Sw\_B.Branch\;
+                   }
+                }
+                \If{ S in Sw\_A.Continue also in Sw\_B.Start}
+                {
+                   \tcc{Criteria \#3}
+                   \If{ S points to Sw\_B.Start }
+                   {
+                        Move S to Sw\_A.Start\;
+                   }
+                   \tcc{Criteria \#4}
+                   \If{ S points to Sw\_A.Continue }
+                   {
+                        Move S to Sw\_B.Continue\;
+                        Move S to Sw\_B.Branch\;
+                   }
+                }
+            }
+        
+        }
+        \KwResult{[Signals]} 
+    \end{algorithm}

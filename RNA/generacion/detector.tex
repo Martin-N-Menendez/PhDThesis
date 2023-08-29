@@ -1,0 +1,21 @@
+\subsection{Detectores}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+            \caption{Train detection elements algorithm}\label{alg:RJ}
+            \DontPrintSemicolon
+            %\SetAlgoLined
+            \SetNoFillComment
+            \LinesNotNumbered 
+            \For { netElement WITH AxleCounters or RailJoints }
+            {
+                Track.Length = Length ( between RailJoints )\;
+                \If { Track.Length $>$ FIXED\_LENGTH }
+                {
+                    [Signals] $\gets$ ADD circulation signal $>>>$\;
+                    [Signals] $\gets$ ADD circulation signal $<<<$\;
+                }
+            }
+            \KwResult{[Signals]} 
+        \end{algorithm} 

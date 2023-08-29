@@ -1,0 +1,19 @@
+\subsection{Plataformas}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+            \caption{Platform algorithm}\label{alg:PTF}
+            \DontPrintSemicolon
+            %\SetAlgoLined
+            \SetNoFillComment
+            \LinesNotNumbered 
+            \For { netElement WITH Platform }
+            {
+                \tcc{Before leaving platform from left}
+                [Signals] $\gets$ ADD departure signal $>>>$\;
+                \tcc{After leaving platform from right}
+                [Signals] $\gets$ ADD departure signal $<<<$\;
+            }
+            \KwResult{[Signals]} 
+        \end{algorithm}

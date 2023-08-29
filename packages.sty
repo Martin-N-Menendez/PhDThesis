@@ -1,0 +1,86 @@
+\ProvidesPackage{packages}
+
+% Dejo esto de backup por si se rompe algo. Cualquier cosa, descomentar estas lineas y comentar las otras
+% \usepackage[a4paper]{geometry}
+% \usepackage[utf8]{inputenc}
+% \usepackage{graphicx}
+% \usepackage{float}
+% \usepackage{caption}
+% \usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper, textheight = 675pt]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsfonts, amssymb, amsmath, microtype, mathtools, commath, nicefrac}
+\usepackage{authblk}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage[footnotesize, bf, labelsep=endash, margin=1.5cm]{caption}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage{wrapfig}
+\usepackage{imakeidx}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage{textcomp}
+\usepackage{lastpage}
+\usepackage{pdfpages}
+%\usepackage{cite}
+
+\newminted{python}{frame=lines,framerule=2pt}
+\hypersetup{
+     colorlinks=true,
+     linkcolor=black,
+     filecolor=blue,
+     citecolor = black,      
+     urlcolor=black,
+     }
+     
+\captionsetup[table]{name=Tabla}
+\numberwithin{figure}{section}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\setcounter{secnumdepth}{4}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}% clear all header and footer fields
+  \rfoot{\thepage}%
+}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\pagestyle{fancy}
+\fancyhf{}
+\let\MakeUppercase\relax
+\lhead{\leftmark}
+\rfoot{\thepage}
+
+% \rhead{\rightmark}
+%\lfoot{Trabajo Profesional de Ingeniería Electrónica}
+%\rfoot{Página \thepage\ de \pageref{LastPage}}
+
+\newcommand{\customparagraph}[1]{\paragraph{#1}\mbox{}\\}
+
+%Estas dos lineas hacen que la página donde 
+%empieza \chapter() sea fancy y no plain
+%\usepackage{etoolbox}
+%\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{makecell}
+\usepackage{tocloft}

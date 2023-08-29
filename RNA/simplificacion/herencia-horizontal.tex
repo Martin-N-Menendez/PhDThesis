@@ -1,0 +1,22 @@
+\subsection{Algoritmo de herencia horizontal}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+        \caption{Horizontal inheritance algorithm}\label{alg:horizontal}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        \For{ each netElement }
+        {
+            \For{ each object in netElement }
+            {
+                \If{dist(Obj\_A,Obj\_B) $<$ MIN\_DISTANCE }
+                {
+                    move\_signals\_between(Obj\_A,Obj\_B)
+                }
+            }
+        }
+        \KwResult{[Signals]} 
+    \end{algorithm}

@@ -1,0 +1,22 @@
+\thispagestyle{plain}
+
+\centerline{\begin{minipage}{10cm}
+
+\vspace{70pt}
+\begin{center}
+    {\huge\textit{Resumen}}
+    
+    \vspace{30pt}
+    
+    Un sistema de enclavamientos permite que un tren se desplace de forma segura evitando colisiones y descarrilamientos mediante el señalamiento. El señalamiento incluye los semáforos (o señales) que otorgan autoridad a los maquinistas para transitar por las vías, en función del estado de la infraestructura ferroviaria implicada, como pasos a nivel, desvíos, etc. El diseño del señalamiento es un proceso complejo que involucra el análisis de la red ferroviaria, la detección de zonas riesgosas y la correcta ubicación de las señales. La generación automática de señalización es valiosa y útil cuando se desarrolla una nueva red ferroviaria o cuando se reactiva una red ferroviaria abandonada.
+
+    \vspace{5pt}
+    
+    En este contexto, diseñamos un set de herramientas que, a partir del trazado ferroviario, realizan de forma automática el diseño e implementación del señalamiento utilizando un lenguaje de descripción de hardware. La etapa encargada del diseño del señalamiento ferroviario es el Analizador de Redes Ferroviarias (RNA, por sus siglas en inglés). En tanto que de la implementación en VHDL se encarga el Generador Automático de Código (ACG, por sus siglas en inglés). Ambas herramientas se comunican entre sí, y con el exterior, mediante el abierto estándar de intercambio de datos de infraestructura ferroviaria railML.
+
+    \vspace{5pt}
+    
+    El señalamiento generado incluye el número de señales necesarias, su posición y orientación, además de la tabla de enclavamiento. La tabla de enclavamientos, el cumplimiento de los principios de diseño ferroviario y la sintáxis del archivo railML generado son validados por el mismo RNA. El archivo railML generado junto con el modelo de comportamiento dinámico, definido en redes de Petri, es utilizado por el ACG para implementar el sistema de enclavamiento. %En este artículo presentamos un caso real de aplicación del RNA a la estación belgrano C de la línea Mitre, comparando el señalamiento original y el generada por el RNA.
+    
+\end{center}
+\end{minipage}}

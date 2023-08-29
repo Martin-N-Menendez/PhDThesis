@@ -1,0 +1,49 @@
+\subsection{Limpieza de señales}
+
+Prioridad y repeticion
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+        \caption{Signal reduction algorithm}\label{alg:reduction}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        Sources = $\{$ T,L,S,B,P,C,J,X $\}$\;
+        \For{ Sig\_A \& Sig\_B in [Signals]}
+        {
+            \If{ A != B  \& Sig\_A.From == Sig\_B.From }
+            {
+             CDL\_zones.Pos = detect\_next\_dangers ( Sig\_A )\;
+             A.Pos,B.Pos = Sig\_A.Pos,Sig\_B\;
+             Safe = zone\_between(CDL\_zones.Pos,A.Pos,B.Pos)\;
+                 \If{ NOT safe }
+                 {
+                    \If{ $|A.Pos,B.Pos|$ $<$ MIN\_DISTANCE }
+                    {
+                        \If{ Sig\_A \& Sig\_B same orientation }
+                        {
+                            \If{ Sig\_A \& Sig\_B same direction }
+                            {
+                                \If { Sig\_A \& Sig\_B type "Circ" }
+                                {
+                                    \If{ Sig\_A.Idx $<$ Sig\_B.Idx }
+                                    {
+                                        delete Sig\_B  else Sig\_A
+                                    }
+                                    %{
+                                    %    delete( Sig\_A )
+                                    %}
+                                }
+                            }
+                        }
+                        \If{ Sig\_A \& Sig\_B different source}
+                        {
+                            delete\_lowest\_priority( Sig\_A,Sig\_B )\;
+                        }
+                    }
+                }
+            }
+        }
+        \KwResult{[Signals]} 
+    \end{algorithm}
