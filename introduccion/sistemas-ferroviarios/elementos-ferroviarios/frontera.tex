@@ -1,7 +1,16 @@
 \subsubsection{Fin de vía y transiciones}
 
-\lipsum[1]
+El tendido ferroviario no puede continuar de forma indefinida, ni tampoco interrumpirse de forma abrupta. Como se puede visualizar en la Figura \ref{fig:frontera_1}, existen dos formas de definir el fin de vía: de forma relativa y de forma absoluta.
 
-\lipsum[1]
-\includegraphics{example-image}
-\lipsum[1]
+Un fin de vía relativo es todo aquel límite que define el alcance del sistema de señalamiento, pero no necesariamente es el final de la red. Es decir, el sistema podrá recibir información de cualquier sensor dentro de estos límites, o incluso de algunos sensores en la frontera exterior, pero solo podrá comandar los actuadores dentro de la zona. Esto es de vital importancia a la hora de reducir la complejidad de la red, al realizar el procesamiento de forma distribuida, sin depender de un decisión centralizada.
+
+Un fin de vía absoluto es todo aquel límite que define el final físico del tendido ferroviario, luego del cual ya no se tiene infraestructura. Podemos encontrar estos límites en los talleres ferroviarios, en las terminales principales de cada red o en vías utilizadas para estacionar los trenes por fuera de la rama principal en uso. Estos límites deben estar adecuadamente protegidos y señalizados.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{example-image}
+        \centering\caption{Topología de ejemplo con finales de vía relativos y absolutos.}
+        \label{fig:frontera_1}
+    \end{figure}
+    
+En la Figura \ref{fig:frontera_1} encontramos varios casos de ambos elementos. Un ejemplo de fin de vía relativo sería la frontera entre las estaciones A y B. Las vías continúan a la derecha de A, pero no son parte del alcance del sistema que controla los elementos ferroviarios en las inmediaciones de A. En tanto que un fin de vía absoluto sería todo final literal de la red ferroviaria, tales como terminales, talleres y vías secundarias sin retorno.
