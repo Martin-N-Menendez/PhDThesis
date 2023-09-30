@@ -1,41 +1,32 @@
 \subsection{Tipos de sistemas de enclavamiento}
 
-    Lamentablemente, los sistemas de enclavamiento en Argentina son en su mayoría mecánicos, de comienzos del siglo XX, y otra cantidad considerable son electromecánicos, de más de 40 años de antigüedad. Muchos de ellos ya han agotado su vida útil y deben ser reemplazados. Otros, en cambio, han estado en desuso por años y necesitan ser repuestos, pero solo una docena de empresas en el mundo realizan el diseño del sistema y los costos para un bypass simple rondan las decenas de millones de dólares. Por esto, es importante contar con sistemas electrónicos de diseño y fabricación nacional.
-    
-    Además, existen diferentes lugares donde aún resta instalar este tipo de sistemas, por lo que su implementación constituye una necesidad real para el desarrollo de la infraestructura ferroviaria de señalamiento en Argentina.
-    
-    A comienzos del siglo XX, se implementaron los sistemas de enclavamiento mediante soluciones mecánicas. Utilizaban palancas, como las que se visualizan en la Figura \ref{fig:enclavamiento_2}, para comandar los cambios de vías y semáforos.
+    Los primeros sistemas de enclavamiento implementados eran mecánicos. Estos utilizaban palancas, como las que se visualizan en la Figura \ref{fig:enclavamiento_1}, para comandar los cambios de vías y semáforos. Un palanca que habilite una ruta se encuentra bloqueada mecánicamente (enclavada) hasta que todas las palancas que afecten a los elementos ferroviarios correspondientes a esa ruta se encuentre en la posición que garanticen que la ruta es segura. De la misma manera, una vez habilitada una ruta, no es posible mecánicamente mover una palanca que habilite una ruta contraria y, por lo tanto, lleve a dos formaciones a colisionar frontal o lateralmente.
     
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.5\textwidth]{example-image}
             \centering\caption{XXXXX.}
-            \label{fig:enclavamiento_2}
+            \label{fig:enclavamiento_1}
         \end{figure}
+
+    Aunque hoy en día las tecnologías mas modernas ya no utilizan bloqueo mecánicos, se sigue utilizando el término "enclavamiento". En lugar de palancas y mecanismos de bloqueo, se utilizan circuitos lógicos, tanto eléctricos como electrónicos, y lógica programable que permita garantizar el mismo objetivo: verificar condiciones previo a autorizar una ruta y prohibir la habilitación de rutas conflictivas con las actualmente activas.
+
+    A comienzos del siglo XX se empezaron a utilizar sistemas de enclavamiento electromecánicos en entornos urbanos y semi-urbanos. Hoy en día este sistema es de los mas utilizado en muchos países, sobretodo en áreas rurales donde los sistemas tardan mas en actualizarse en comparación con las áreas urbanas. Un sistema de enclavamiento electromecánico se basa en relés (Figura \ref{fig:enclavamiento_2}) y circuitos de vía. Los circuitos implementados con relés determinan la lógica del enclavamiento y son necesarios unas pocas decenas para operar una barrera ferroviaria, pero cientos a miles para operar una estación ferroviaria de gran tamaño.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{example-image}
+        \centering\caption{XXXXX.}
+        \label{fig:enclavamiento_2}
+    \end{figure} 
     
-    Una vez que se constituye una configuración de posiciones de palancas que habilitan un trayecto, estas quedan "enclavadas" mecánicamente, es decir, su posición se bloquea y no es físicamente posible cambiarla. A medida que se van moviendo ciertas palancas, las demás que pudieran representar situaciones no seguras quedan enclavadas, y solo se pueden mover aquellas cuyo accionamiento representa una situación segura. De esa manera, se garantiza que no se generarán configuraciones tales que las formaciones colisionen entre sí.
+    Los sistemas de enclavamiento electromecánicos son comandados por un operario mediante un panel de control (Figura \ref{fig:enclavamiento_3}). El operario solicita al sistema de enclavamiento las rutas que el conductor ferroviario necesita para transitar por la vía. El sistema de enclavamiento solamente habilitará las rutas seguras, indicando al conductor que puede avanzar mediante un semáforo de aspecto verde o amarillo. En caso de que la ruta no sea habilitada, el sistema "enclavará" los estados de los elementos ferroviarios pertenecientes a esa ruta y le indicará al conductor que no puede continuar su recorrido con un semáforo de aspecto rojo. El operario puede volver a pedir la ruta si las condiciones del sistema cambiaron.
     
-    Las tecnologías más modernas heredaron el término "enclavamiento", aunque ya no se tengan palancas enclavadas en posiciones fijas. En lugar de palancas físicas, se utilizan sistemas electrónicos y lógica programable para lograr el mismo objetivo de garantizar la seguridad ferroviaria.
-    
-    %----
-    
-    A mediados del siglo XX se desarrolló el sistema de enclavamiento electromecánico. Su funcionamiento se basa en relés (Figura \ref{fig:enclavamiento_3}) y circuitos de vía, de forma tal de poder detectar la presencia de un tren y comandar tanto las señales como las barreras de los pasos a nivel.
-        
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=0.5\textwidth]{example-image}
-            \centering\caption{XXXXX.}
-            \label{fig:enclavamiento_3}
-        \end{figure} 
-    
-    Los sistemas de enclavamiento electromecánicos son comandados por un operario mediante un panel de control (Figura \ref{fig:enclavamiento_4}). El operario solicita al sistema de enclavamiento las rutas que el conductor ferroviario necesita para circular. El sistema permitirá solo la operación de cambio de vías seguras. En caso contrario, se tendrán las salidas "enclavadas" y el sistema de enclavamiento impedirá mediante los semáforos el avance de la formación hasta que pueda realizarse el cambio de forma segura.
-    
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=0.5\textwidth]{example-image}
-            \centering\caption{XXXXX.}
-            \label{fig:enclavamiento_4}
-        \end{figure}
-    
-    %--- 
-    HABLAR DE ENCLAVAMIENTO ELECTRONICO
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{example-image}
+        \centering\caption{XXXXX.}
+        \label{fig:enclavamiento_3}
+    \end{figure}
+
+    En la actualidad, los sistemas de enclavamiento mas modernos son electrónicos, en base a microprocesadores, PLCs (Controlador Lógico Programable, del inglés Programmable Logic Controllers), o FPGAs (Matriz de puerta programable en campo, del inglés Field-programmable Gate Array). Estas tecnologías presentan la ventaja de ser reprogramables una vez instalados, lo que aporta flexibilidad al diseño, escalabilidad y robustez. Además, ocupan mucho menos espacio que su contraparte electromecánica, reduciendo los costes de infraestructura, consumo eléctrico y mantenimiento. Se utilizan principalmente en redes de procesamiento distribuido, debido a su integración de forma nativa con protocolos de comunicación industrial diseñados para entornos ferroviarios [REF]. Adicionalmente, los sistemas electrónicos pueden ser fácilmente auditados y redundados, para aumentar su fiabilidad y comprobar su nivel de seguridad.
