@@ -1,6 +1,17 @@
 \subsection{RailTopoModel}
 
-\lipsum[1]
+    En 2016 la UIC (del inglés, International Union of Railways) publicó el Standard 30100 [REF] en el cual definió un formato de intercambio de datos ferroviarios llamado RailTopoModel. RailTopoModel es un modelo topológico de infraestructura ferroviaria basado en grafos. El modelo abarca tres tipos de niveles, la topología de la red, objetos materiales, objetos inmateriales y objetos lógicos, tal como se ilustra en la Figura \ref{fig:RTM_3}. 
 
-\input{introduccion/estado-del-arte/railTopoModel/grafos}
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=1\textwidth]{Figuras/objetos}
+        \centering\caption{Alcance del modelo de UIC RailTopoModel.}
+        \label{fig:RTM_3}
+    \end{figure}
+
+    Cada uno de estos elementos posee propiedades y características propias, que pueden ser físicas u abstractas. Por ejemplo, los objetos materiales pueden ser adimensionales (señales, balizas, etc), unidimensionales (vías, plataformas, etc) o bidimensionales (estaciones, túneles, etc). Debido a como fue diseñado, RailTopoModel es el modelo ideal para implementar un enfoque geográfico.
+    
+\input{introduccion/estado-del-arte/railTopoModel/base}
+\input{introduccion/estado-del-arte/railTopoModel/netEntities}
 \input{introduccion/estado-del-arte/railTopoModel/niveles}
+\input{introduccion/estado-del-arte/railTopoModel/positioning}
