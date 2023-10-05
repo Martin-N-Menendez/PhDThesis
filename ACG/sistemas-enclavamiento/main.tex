@@ -1,12 +1,12 @@
 \subsection{Sistemas de enclavamiento}
 
-A modo de ejemplo, se ilustra en la Figura \ref{fig:enclavamiento_1} un sistema de cambios en una vía simple con bypass. Esto permite que dos formaciones puedan cruzarse en sentidos opuestos sin colisionar.
+A modo de ejemplo, se ilustra en la Figura \ref{fig:enclavamiento} un sistema de cambios en una vía simple con bypass. Esto permite que dos formaciones puedan cruzarse en sentidos opuestos sin colisionar.
 
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/bypass}
         \centering\caption{XXXXX.}
-        \label{fig:enclavamiento_1}
+        \label{fig:enclavamiento}
     \end{figure}
 
 Para evitar la colisión, se requiere un control seguro que evite que las formaciones avancen hacia secciones ya ocupadas por otras. También debe evitar que las formaciones avancen sobre los cambios cuando estos aún no han terminado de posicionarse en su lugar, lo que provocaría descarrilamientos. A este control se lo denomina sistema de enclavamiento y, en definitiva, impide que se produzcan configuraciones no seguras y controla los semáforos que habilitan o no los itinerarios de las formaciones. Una falla en un enclavamiento puede poner en peligro cientos de vidas humanas y generar gastos considerables. Por lo tanto, en el diseño del sistema de enclavamiento se deben cumplir estrictos parámetros de fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS).
