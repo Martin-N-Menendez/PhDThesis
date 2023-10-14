@@ -12,10 +12,8 @@
     El RNA importa un archivo en formato railML que describe el sistema, con o sin señalamiento previo. Luego el RNA analiza la topología de la red, detecta todos los elementos ferroviarios involucrados y genera el señalamiento necesario para que la red sea segura. Finalmente, el RNA exporta un nuevo archivo en formato railML con el nuevo señalamiento, además de la tabla de enclavamientos del sistema, con todas las rutas soportadas por esa red ferroviaria. El nuevo archivo railML es utilizado por el ACG para generar código en VHDL [VHDL] automáticamente para ser sintetizado en una plataforma FPGA [FPGA].
     
     El proceso de validación incluye la validación de la sintaxis del archivo railML generado por RNA, la validación de la tabla de enclavamiento generada automáticamente por RNA y, finalmente, la validación del señalamiento generado conforme a los principios de señalamiento (Sección \ref{sec:principios}). Para implementar automáticamente un sistema de enclavamiento, el ACG toma este diseño de señalamiento estático generado automáticamente y un modelo de comportamiento dinámico en redes de Petri. %Un ingeniero de señalamiento puede realizar un análisis dinámico adicional, incluyendo cualquier problema relacionado con el tiempo, como fallas o retrasos, que están más allá del alcance de este artículo.
-    
-
 
 \input{propuesta/enfoque}
 \input{propuesta/arquitectura}
-\input{propuesta/sistema}
+%\input{propuesta/sistema}
 \input{propuesta/validacion}
