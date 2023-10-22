@@ -8,19 +8,26 @@
 
     La clase Interlocking incluye 156 subclases, todas ellas enfocadas en definir las características dinámicas de los elementos ferroviarios que las posean. Entre ellas podemos encontrar LevelCrossingsIL (ver Sección XX), SignalsIL (ver Sección XX), SwitchesIL (ver Sección XX), entre otras. Adicionalmente, se encuentras las subclases relacionadas a la tabla de enclavamientos y las rutas, como Routes, CombinedRoutes, ConflictingRoutes, RoutesRelations y muchas otras referidas explícitamente a rutas (ver Sección XX). 
     
-    El RNA solamente necesita de las clases Common, Infraestructure e Interlocking para funcionar, por lo que no fue necesario implementar las clases RollingStock ni Timetable. En total se han implementado 524 clases, considerando 28 clases nativas de RailTopoModel necesarias para que railML pueda interpretar los tipos de datos definidos.
+    El RNA solamente necesita de las clases Common, Infraestructure e Interlocking para funcionar, por lo que no fue necesario implementar las clases RollingStock ni Timetable. En total se han implementado 524 clases, considerando 28 clases nativas de RailTopoModel necesarias para que railML pueda interpretar los tipos de datos definidos. Todas las clases y subclases mencionadas son opcionales en el estándar, salvo que se indique lo contrario, es decir, no son obligatorias para que el archivo railML se considere válido.
 
     En las siguientes secciones se detallaran las subclases mas importantes implementadas, tal que se pueda comprender que atributos son procesados para poder generar el señalamiento. Se comenzará con las clases relativas a la topología de la red, eje central análisis del RNA y se proseguirá con las clases asociadas a elementos ferroviarios materiales. Simultáneamente, se profundizará en los conceptos mas destacados de cada elemento ferroviario correspondiente a esa clase, destacando cual es el señalamiento asociado al mismo para protegerlo en base a los principios ferroviarios expuestos.
+
+    % COMMON
+    \input{RNA/biblioteca/metadata}
+    \input{RNA/biblioteca/common}
+
     
     % GRAFOS
-    % ELEMENTOS
+    \input{RNA/biblioteca/grafos}
+    
+     % ELEMENTOS
+    \input{RNA/biblioteca/vias}
+    \input{RNA/biblioteca/border}
+    \input{RNA/biblioteca/detection}
+    \input{RNA/biblioteca/ATS}
+    \input{RNA/biblioteca/platform}
+    \input{RNA/biblioteca/crossing}
+    \input{RNA/biblioteca/switch}
+    
     % SEMAFOROS
-
-\input{RNA/biblioteca/vias}
-\input{RNA/biblioteca/border}
-\input{RNA/biblioteca/detection}
-\input{RNA/biblioteca/ATS}
-\input{RNA/biblioteca/platform}
-\input{RNA/biblioteca/crossing}
-\input{RNA/biblioteca/switch}
-\input{RNA/biblioteca/signal}
+    \input{RNA/biblioteca/signal}

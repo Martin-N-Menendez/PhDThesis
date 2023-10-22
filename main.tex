@@ -7,17 +7,49 @@
 \usepackage{listings}
 %\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
-
+\usepackage{algorithmic}
 %\usepackage[margin=2cm]{geometry} % Adjust margins as needed
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{lipsum} % For dummy text, you can remove this in your actual document
+
+\newcommand{\SWITCH}[1]{\STATE \textbf{Switch} (#1)}
+\newcommand{\RETURN}[1]{\STATE \textbf{return} (#1)}
+\newcommand{\ENDSWITCH}{\STATE \textbf{End switch}}
+\newcommand{\CASE}[1]{\STATE \textbf{case} #1\textbf{:} \begin{ALC@g}}
+\newcommand{\ENDCASE}{\end{ALC@g}}
+\newcommand{\CASELINE}[1]{\STATE \textbf{Case} #1\textbf{:} }
+\newcommand{\DEFAULT}{\STATE \textbf{default:} \begin{ALC@g}}
+\newcommand{\ENDDEFAULT}{\end{ALC@g}}
+\newcommand{\DEFAULTLINE}[1]{\STATE \textbf{default:} }
+
 
 
 % Define the background image properties
 \def\backgroundimage{caratula/FIUBA.png} % Replace 'example-image' with the name of your background image file
 \def\backgroundopacity{0.9} % Adjust the opacity of the background image (0 to 1)
 
+    \definecolor{maroon}{rgb}{0.5,0,0}
+    \definecolor{darkgreen}{rgb}{0,0.5,0}
+    \lstdefinelanguage{XML}
+    {
+      basicstyle=\small \ttfamily,
+      morestring=[s]{"}{"},
+      morecomment=[s]{?}{?},
+      morecomment=[s]{!--}{--},
+      numbers = left,
+      tabsize = 4,
+      commentstyle=\color{darkgreen},
+      moredelim=[s][\color{black}]{>}{<},
+      moredelim=[s][\color{red}]{\ }{=},
+      stringstyle=\color{blue},
+      breaklines = true, %% enable line breaking
+      numberstyle = \tiny,
+      frame = trBL,
+      identifierstyle=\color{maroon}
+    }
+
+    
 \addbibresource{references/main.bib}
 \setcounter{secnumdepth}{4} % para que ponga 1.1.1.1 en subsubsecciones
 \setcounter{tocdepth}{4} % para que ponga subsubsecciones en el indice
