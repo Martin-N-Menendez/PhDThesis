@@ -1,5 +1,41 @@
 \subsection{Máquina de cambios}
 
+    \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
+            \caption{Switches detector algorithm}
+            \label{alg:switches}
+            \begin{algorithmic}
+                \STATE \{switches\} $\gets$ \{\}
+                \IF {infrastructure.SwitchesIS != None} 
+                    \FOR{i in infrastructure.SwitchesIS[0].SwitchIS}
+                        \IF{i.Id not in switchesIS.keys()}
+                            \STATE sw\_id $\gets$ i.Name[0].Name
+                            \STATE j $\gets$ i.SpotLocation[0]
+                            \STATE left\_id $\gets$ i.LeftBranch[0].NetRelationRef
+                            \STATE right\_id $\gets$ i.RightBranch[0].NetRelationRef
+                            \STATE switches[sw\_id] $\gets$ \{"Node":j.NetElementRef\}
+                            \STATE switches[sw\_id] $\gets$ \{"Continue":i.ContinueCourse\}
+                            \STATE switches[sw\_id] $\gets$ \{"Branch":i.BranchCourse\}
+                            \STATE switches[sw\_id] $\gets$ \{"Dir":j.ApplicationDirection\}
+                            \STATE switches[sw\_id] $\gets$ \{"LeftBranch":j.left\_id\}
+                            \STATE switches[sw\_id] $\gets$ \{"RightBranch":j.right\_id\}
+                        \ENDIF
+                    \ENDFOR
+                \ENDIF
+                \STATE visual\_data $\gets$ visualization.Visualization
+                \IF {visual\_data != None}
+                    \FOR {i in  visual\_data[0].SpotElementProjection}
+                        \STATE sw\_id $\gets$ i.Name[0].Name
+                        \IF {"Sw" in sw\_id}
+                            \STATE pos\_x $\gets$ int(i.Coordinate[0].X)
+                            \STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
+                            \STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
+                        \ENDIF 
+                    \ENDFOR
+                \ENDIF
+            \OUTPUT switchesIS
+            \end{algorithmic}
+        \end{algorithm}
+        
     Una máquina de cambios (Figura \ref{fig:cambios_1}) es un mecanismo utilizado para permitir el paso de las formaciones de una vía a una ramificación del recorrido principal. Esto se realiza mediante el movimiento de la aguja del cambio (riel móvil) hacia su respectiva contraaguja (riel fijo) hasta obtener un adecuado acoplamiento que permita la circulación de la formación.
 
     \begin{figure}[!h]

@@ -55,10 +55,10 @@
     La primer netRelation es entre el netElement ne3 y el ne46, la segunda netRelation es entre el netElement ne3 y el ne53. Esto es consistente con los parámetros de relation que tenía el netElement ne3 en el Código \ref{lst:netElement}. Sin embargo, en el tercer netRelation vemos que existe una relación entre los netElement ne46 y ne53 pero, en este caso, el parámetro navigability es "None", a diferencia de los primeros dos que era "both". La navegabilidad es el parámetro que hace que una red de grafos tenga sentido como red ferroviaria: que exista una conexión no implica que sea físicamente utilizable por un tren, tal como se explico en la Sección \ref{sec:RTM}.
     
     % Explicar analisis de red de grafos
-
-
+    La secuencia de análisis de la red de grafos se describe en el Algoritmo \ref{alg:graph_network}. El primer paso es procesar la subclase netElements para obtener un diccionario de todos los nodos de la red. Ordenar este diccionario es importante para agilizar la búsqueda de rutas mas adelante. El criterio de ordenamiento fue por coordenadas, de menor a mayor, priorizando la coordenada x por sobre la y, pero cualquier otro criterio sería válido. Con el diccionario de nodos y analizando la subclase netRelations es posible construir un diccionario de netPaths. Este diccionario utiliza cada nodo del grafo como índice y contiene un diccionario con todos los nodos que son vecinos anteriores y posteriores (considerando el criterio de ordenamiento, algunos nodos estarán antes o después).
+    
         \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \caption{Graph network analysis algorithm}
+            \caption{Análisis de la red de grafos}
             \label{alg:graph_network}
             \begin{algorithmic}
                 \STATE \{nodes\} $\gets$ get\_nodes(netElements)
@@ -71,89 +71,39 @@
             \end{algorithmic}
         \end{algorithm}
 
+    La cantidad de vecinos de cada nodo es fundamental para poder clasificarlos. Los nodos que posee un solo vecino serán nodos que se encuentren en el límite de la red (límite relativo u absoluto). Aquellos con dos vecinos, uno anterior y otro posterior, son nodos normales. En cambio, si tienen dos vecinos y ambos son anteriores o ambos son posteriores entonces son nodos que con toda seguridad tienen una máquina de cambios. Por ejemplo, el nodo ne3 del Código \ref{lst:netRelation} posee una máquina de cambios ya que los nodos ne46 y ne53 son anteriores a ne3.
 
-\begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \label{alg:connectedness}
-            \caption{Connectivity algorithm}
-            \begin{algorithmic}
-                \STATE \{zones\} $\gets \{ \}$
-                \STATE ADD first node in \{zones\}
-                \FOR {node in \{nodes\}}
-                    \FOR {zone in \{zones\}}
-                        \IF {node not in zones[zone]}
-                            \IF {neighbours(node) in zones[zone]}
-                                \STATE zones[zone] ADD node
-                            \ELSE
-                                \STATE Define new\_zone
-                                \STATE zones[new\_zone] ADD node
-                            \ENDIF
-                        \ENDIF
-                    \ENDFOR
-                \ENDFOR 
-            \RETURN \{zones\}
-            \end{algorithmic}
-        \end{algorithm}
+    A continuación, es necesario determinar la conexidad de la red. Una red de grafos puede ser como alguna de las ilustradas en la Figura \ref{fig:conexidad}. Las redes de grafos que tengan nodos aislados o una cantida de vecinos tales que ese nodo no represente a ninguna máquina de cambios existente no podrá ser una red ferroviaria. La red no tiene que ser totalmente conexa, se admiten redes ferroviarias disjuntas, siempre que cada red funcione de manera independiente, con una cantidad mínima de nodos en cada una.   
 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=1\textwidth]{Figuras/conexo.PNG}
+        \centering\caption{Distintos tipos de redes de grafos.}
+        \label{fig:conexidad}
+    \end{figure}
+
+    Para determinar si la red es conexa, se siguen los pasos del Algoritmo \ref{alg:connectedness}. Añadiendo nodos a una lista de zonas siempre que el nodo tenga un vecino en esa lista. Si un nodo posee un vecino en ambas listas, las listas se combinan, creando una nueva zona. Si la cantidad de zonas es uno entonces la red es fuertemente conexa. Una red ferroviaria disconexa puede resolverse mas rápido que una fuertemente conexa ya que no haría falta iterar entre todos los elementos para analizarlos sino solo los pertenecientes a dicho subgrafo.
+        
     \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \caption{Switches detector algorithm}
-            \label{alg:switches}
-            \begin{algorithmic}
-                \STATE \{switches\} $\gets$ \{\}
-                \IF {infrastructure.SwitchesIS != None} 
-                    \FOR{i in infrastructure.SwitchesIS[0].SwitchIS}
-                        \IF{i.Id not in switchesIS.keys()}
-                            \STATE sw\_id $\gets$ i.Name[0].Name
-                            \STATE j $\gets$ i.SpotLocation[0]
-                            \STATE left\_id $\gets$ i.LeftBranch[0].NetRelationRef
-                            \STATE right\_id $\gets$ i.RightBranch[0].NetRelationRef
-                            \STATE switches[sw\_id] $\gets$ \{"Node":j.NetElementRef\}
-                            \STATE switches[sw\_id] $\gets$ \{"Continue":i.ContinueCourse\}
-                            \STATE switches[sw\_id] $\gets$ \{"Branch":i.BranchCourse\}
-                            \STATE switches[sw\_id] $\gets$ \{"Dir":j.ApplicationDirection\}
-                            \STATE switches[sw\_id] $\gets$ \{"LeftBranch":j.left\_id\}
-                            \STATE switches[sw\_id] $\gets$ \{"RightBranch":j.right\_id\}
+        \label{alg:connectedness}
+        \caption{Algoritmo de conexidad}
+        \begin{algorithmic}
+            \STATE \{zones\} $\gets \{ \}$
+            \STATE ADD first node in \{zones\}
+            \FOR {node in \{nodes\}}
+                \FOR {zone in \{zones\}}
+                    \IF {node not in zones[zone]}
+                        \IF {neighbours(node) in zones[zone]}
+                            \STATE zones[zone] ADD node
+                        \ELSE
+                            \STATE Define new\_zone
+                            \STATE zones[new\_zone] ADD node
                         \ENDIF
-                    \ENDFOR
-                \ENDIF
-                \STATE visual\_data $\gets$ visualization.Visualization
-                \IF {visual\_data != None}
-                    \FOR {i in  visual\_data[0].SpotElementProjection}
-                        \STATE sw\_id $\gets$ i.Name[0].Name
-                        \IF {"Sw" in sw\_id}
-                            \STATE pos\_x $\gets$ int(i.Coordinate[0].X)
-                            \STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
-                            \STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
-                        \ENDIF 
-                    \ENDFOR
-                \ENDIF
-            \RETURN switchesIS
-            \end{algorithmic}
-        \end{algorithm}
-
-    %% Identificar nodos y aristas
-    %% Identificar orientaciones
-    %% Detectar conexidad
-    %% Detectar si es una red ferroviaria o no
-
-
-    \begin{algorithm}[hbt!]
-        \caption{Level crossing algorithm}\label{alg:LC}
-        \DontPrintSemicolon
-        %\SetAlgoLined
-        \SetNoFillComment
-        \LinesNotNumbered 
-        \For { netElement WITH LevelCrossing }
-        {
-            \tcc{Before reaching level crossing}
-            [Signals] $\gets$ ADD circulation signal $>>>$\;
-            \tcc{After leaving level crossing}
-            [Signals] $\gets$ ADD circulation signal $<<<$\;
-        }
-        \KwResult{[Signals]} 
+                    \ENDIF
+                \ENDFOR
+            \ENDFOR 
+            \OUTPUT \{zones\}   
+        \end{algorithmic}
     \end{algorithm}
-
-
-
-    
-    
+        
     En las siguientes subsecciones se analizaran en conjunto los elementos ferroviario descriptos en las subclases FunctionalInfrastructure y InfrastructureVisualizations.
