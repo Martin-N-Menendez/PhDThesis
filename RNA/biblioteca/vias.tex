@@ -26,6 +26,19 @@
 
     Las vías se agrupan en secciones que, por cuestiones de seguridad y logística, se establece que solo pueden ser utilizadas por un tren a la vez. Estas secciones pueden ser de varios kilómetros en zonas rurales o unos pocos cientos de metros en zonas urbanas, donde la red necesita una mayor granularidad debido a la densidad del tráfico ferroviario en las grandes urbes.
 
-    % EXPLICAR TRACKS
+    En railML las vías son elementos ferroviarios físicos, representados por la clase track, ilustrada en el Código \ref{lst:track}. Esta clase se encuentra definida dentro del vector de clase tracks, dentro de la subclase functionalInfrastructure, dentro de la clase infrastructure.
 
+    \begin{lstlisting}[language = XML, caption = Clase track , label = {lst:track}]
+    <track type="mainTrack" infrastructureManagerRef="im_01" mainDirection="both" id="trk2">
+        <trackBegin ref="bus5"/>
+        <trackEnd ref="swi77"/>
+        <length value="1799.28" type="physical"/>
+        <designator register="_Example" entry="TRACK track2"/>
+        <linearLocation applicationDirection="both" id="trk2_lloc01">
+            <associatedNetElement netElementRef="ne3" keepsOrientation="true"/>
+        </linearLocation>
+        <name name="track2" language="en"/>
+    </track>
+    \end{lstlisting}
     
+    Las vías en railML se definen entre dos elementos ferroviarios físicos. En este caso, la vía indicada como trk2 se encuentra definida entre el BufferStop bus5 (ver Sección \ref{sec:bufferstop}) y la máquina de cambios swi77 (ver Sección \ref{sec:switches}). Esta clase define, además, el largo de la vía y el netElement al cual están asociadas, en este caso, el netElement ne3. Es natural confundirse tracks y netElements, porque son términos casi equivalentes, pero un track representa un elemento físico y un netElement engloba de manera abstracta una porción del trazado de vías. Es decir, una vía puede dividirse en varios netElements, pero un netElement solo se asocia a una vía.
