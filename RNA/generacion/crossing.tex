@@ -2,18 +2,18 @@
 
 \lipsum[1]
 
-\begin{algorithm}[hbt!]
-            \caption{Level crossing algorithm}\label{alg:LC}
-            \DontPrintSemicolon
-            %\SetAlgoLined
-            \SetNoFillComment
-            \LinesNotNumbered 
-            \For { netElement WITH LevelCrossing }
-            {
-                \tcc{Before reaching level crossing}
-                [Signals] $\gets$ ADD circulation signal $>>>$\;
-                \tcc{After leaving level crossing}
-                [Signals] $\gets$ ADD circulation signal $<<<$\;
-            }
-            \KwResult{[Signals]} 
-        \end{algorithm}
+        \begin{algorithm}[hbt!]
+        \caption{Level crossing algorithm}\label{alg:LC}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        \For { netElement WITH LevelCrossing }
+        {
+            \tcc{Before reaching level crossing}
+            [Signals] $\gets$ ADD circulation signal $>>>$\;
+            \tcc{After leaving level crossing}
+            [Signals] $\gets$ ADD circulation signal $<<<$\;
+        }
+        \KwResult{[Signals]} 
+    \end{algorithm}
