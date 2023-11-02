@@ -5,8 +5,8 @@
 
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.7\textwidth]{Figuras/Cambios.jpg}
-        \centering\caption{XXXXX.}
+        \includegraphics[width=0.9\textwidth]{Figuras/Cambios.jpg}
+        \centering\caption{Máquina de cambios.}
         \label{fig:cambios_1}
     \end{figure}
 
@@ -14,8 +14,8 @@
 
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.7\textwidth]{Figuras/Cambios_2.jpg}
-        \centering\caption{XXXXX.}
+        \includegraphics[width=0.9\textwidth]{Figuras/Cambios_2.jpg}
+        \centering\caption{Cambio de vías de estación Matheu, Linea Mitre.}
         \label{fig:cambios_2}
     \end{figure}
 
@@ -23,28 +23,57 @@
 
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=1\textwidth]{example-image}
-        \centering\caption{XXXXX.}
+        \includegraphics[width=0.9\textwidth]{Figuras/cambio_3.PNG}
+        \centering\caption{Posiciones adoptadas por una máquina de cambios simple.}
         \label{fig:cambios_3}
     \end{figure}
 
-    Hablar de comando, correspondencia y accion. Figura \ref{fig:cambios_4}
+    Las máquinas de cambios son un elemento activo de la red ferroviaria, controlados por el sistema de enclavamientos. Pero al ser mecanismos que necesitan tiempo para cambiar de un estado al otro, no puede asumirse que el comando es obedecido al instante. Incluso podría darse el caso que jamás llegue a cumplirse la orden debido a desperfectos mecánicos o eléctricos. Es por eso que introducimos los conceptos de comando, indicación y correspondencia, tal como se ilustran en la Figura \ref{fig:cambios_4}.
 
-    \lipsum[1]
-    
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/cambios}
-        \centering\caption{XXXXX.}
+        \centering\caption{Comando, indicación y correspondencia en máquinas de cambios.}
         \label{fig:cambios_4}
     \end{figure}
+    
+    El comando es la instrucción que el sistema de enclavamientos envía a la máquina de cambios. Esta instrucción puede ser modificar la posición de normal a reverso o de reverso a normal. La indicación es el estado que la máquina de cambios informa al sistema de enclavamientos. El sistema solo asume que el comando fue obedecido cuando tanto el comando como la indicación muestran una correspondencia. En caso contrario, el sistema de enclavamiento no puede asumir cual es el estado real del sistema, si el comando enviado o el estado reportado por la máquina de cambios. El mismo concepto puede ser aplicado en cualquier otro elemento mecánico, como por ejemplo las barreras ferroviarias.
 
-EXPLICAR MAS DE CAMBIOS
+    El RNA debe analizar diversos atributos distribuidos entre la clase switchIS (Código \ref{lst:switchIS}), la clase spotElementProjection (Código \ref{lst:switch}) y switchIL (Código \ref{lst:switchIL}). La clase switchIS se encuentra dentro del vector de clases switchesIS, dentro de functionalInfrastructure, que a su vez es parte de la clase infrastructure. La clase define el id de la máquina de cambios, el tipo (ordinario), el netElement al cual pertenece la entrada del cambio y hacia que lado se encuentra la vía de continuación y ramificación si transitamos desde el netElement del cambio hacia el cambio mismo. En este caso, si transitamos por el netElement ne16 el tren tendrá la vía de continuación en la mano derecha y la ramificación en la mano izquierda. Las máquina de cambio ordinarias siempre tienen una rama izquierda y una rama derecha definida. Además, dentro de la definición de cada rama tenemos el atributo netRelationRef, del cual se puede obtener, procesamiento mediante, los otros netElement correspondientes a las ramas: ne15 y ne14.
 
+    \begin{lstlisting}[language = XML, caption = Clase switchIS , label = {lst:switchIS}]
+    <switchIS id="swi84" continueCourse="right" branchCourse="left" type="ordinarySwitch">
+        <name name="Sw01" language="en"/>
+        <spotLocation id="swi84_sloc01" netElementRef="ne16" applicationDirection="reverse" intrinsicCoord="0.0000"/>
+        <designator register="_Example" entry="SWITCH Sw01"/>
+        <leftBranch netRelationRef="nr_ne15ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="-500"/>
+        <rightBranch netRelationRef="nr_ne14ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="0"/>
+    </switchIS>
+    \end{lstlisting}
 
+    La clase spotElementProjection define la ubicación en el espacio del elemento ferroviario referido. En este caso, como se puede ver en el Código \ref{lst:switch}, la posición de la máquina de cambios es la coordenada (-561 ; -450).
+
+    \begin{lstlisting}[language = XML, caption = Clase spotElementProjection , label = {lst:switch}]
+    <spotElementProjection refersToElement="swi84" id="vis01_sep16">
+        <name name="Sw01" language="en"/>
+        <coordinate x="-560.994" y="-450.000"/>
+    </spotElementProjection>
+    \end{lstlisting}
+
+    La clase switchIL, definida dentro del vector de clases switchesIL, se encuentra dentro de la clase assetsForIL, en la clase interlocking. Contiene datos extra sobre el comportamiento dinámico de la máquina de cambios y define explícitamente los otros dos nodos, en contraposición a switchIS del cual hay que obtenerlos procesando un string. El RNA puede obtener los netElement de ambas clases y compararlos, anulando el análisis si los netElement definidos en switchIS y switchIL no son coincidentes.
+    
+    \begin{lstlisting}[language = XML, caption = Clase switchIL , label = {lst:switchIL}]
+    <switchIL id="il_swi84" maxThrowTime="PT10S" typicalThrowTime="PT6S" isKeyLocked="false" returnsToPreferredPosition="false">
+        <refersTo ref="swi84"/>
+        <branchLeft ref="ne15"/>
+        <branchRight ref="ne14"/>
+    </switchIL>
+    \end{lstlisting}
+    
+    El RNA utiliza el Algoritmo \ref{alg:switches} para detectar todos estos parámetros y crear un vector de máquinas de cambios (switches) indexado por el id de cada máquina de cambios (sw\_id). La existencia y ubicación de las máquinas de cambios ya se habían obtenido mediante el análisis de la red de grafos ferroviaria. El Algoritmo \ref{alg:switches} analiza la clase switchIS y confirma la existencia de la máquina de cambios, para luego la clase spotElementProjection y confirmar la ubicación de la misma. Los datos obtenidos en switches[sw\_id].LeftBranch y switches[sw\_id].RightBranch, permiten obtener los nodos de las ramificaciones que luego se conformarán analizando la clase switchIL en algoritmos posteriores.
 
     \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \caption{Switches detector algorithm}
+            \caption{Algoritmo detector de máquinas de cambios.}
             \label{alg:switches}
             \begin{algorithmic}
                 \STATE \{switches\} $\gets$ \{\}
@@ -68,7 +97,7 @@ EXPLICAR MAS DE CAMBIOS
                 \IF {visual\_data != None}
                     \FOR {i in  visual\_data[0].SpotElementProjection}
                         \STATE sw\_id $\gets$ i.Name[0].Name
-                        \IF {"Sw" in sw\_id}
+                        \IF {'Sw' in sw\_id}
                             \STATE pos\_x $\gets$ int(i.Coordinate[0].X)
                             \STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
                             \STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
