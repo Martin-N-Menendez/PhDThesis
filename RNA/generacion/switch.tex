@@ -1,32 +1,36 @@
 \subsection{Maquinas de cambios}
 
-\lipsum[1]
+    \lipsum[1-2]
 
-\begin{algorithm}[hbt!]
-            \caption{Switch algorithm}\label{alg:SW}
-            \DontPrintSemicolon
-            %\SetAlgoLined
-            \SetNoFillComment
-            \LinesNotNumbered 
-            \For { Switch in Switches }
+    \begin{algorithm}[hbt!]
+        \caption{Switch algorithm}\label{alg:SW}
+        \DontPrintSemicolon
+        %\SetAlgoLined
+        \SetNoFillComment
+        \LinesNotNumbered 
+        \For { Switch in Switches }
+        {
+            \tcc{All signals must point to switch}
+            \Switch{ Switch.Type }
             {
-                \tcc{All signals must point to switch}
-                \Switch{ Switch.Type }
+                \Case{Start}
                 {
-                    \Case{Start}
-                    {
-                        [Signals] $\gets$ ADD circulation signal\;
-                        [Signals] $\gets$ ADD maneuver signal\;
-                    }
-                    \Case{Continue branch}
-                    {
-                        [Signals] $\gets$ ADD circulation signal\;
-                    }
-                    \Case{Detour branch}
-                    {
-                        [Signals] $\gets$ ADD maneuver signal\;
-                    }
-                }   
-            }
-            \KwResult{[Signals]} 
-        \end{algorithm}
+                    [Signals] $\gets$ ADD circulation signal\;
+                    [Signals] $\gets$ ADD maneuver signal\;
+                }
+                \Case{Continue branch}
+                {
+                    [Signals] $\gets$ ADD circulation signal\;
+                }
+                \Case{Detour branch}
+                {
+                    [Signals] $\gets$ ADD maneuver signal\;
+                }
+            }   
+        }
+        \KwResult{[Signals]} 
+    \end{algorithm}
+
+    \lipsum[1]
+    \includegraphics{example-image}\\
+    \lipsum[1-2]

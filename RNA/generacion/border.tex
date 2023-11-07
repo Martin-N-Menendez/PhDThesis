@@ -1,39 +1,54 @@
-\subsection{Fin de via}
+\subsection{Fin de vía}
 
 \lipsum[1]
 
 \begin{algorithm}[hbt!]
-            \caption{Line border and buffer stops algorithm}\label{alg:LBBS}
-            \DontPrintSemicolon
-            %\SetAlgoLined
-            \SetNoFillComment
-            \LinesNotNumbered 
-            \For { netElement WITH BufferStops }
+    \caption{Line border algorithm}\label{alg:lineBorder}
+    \DontPrintSemicolon
+    %\SetAlgoLined
+    \SetNoFillComment
+    \LinesNotNumbered 
+    \For { netElement WITH LineBorder }
+    {
+        \If { netElement.Length $>$ FIXED\_LENGTH }
+        {
+            \If { NOT EXIST next netElement }
             {
-                \If { NOT EXIST next netElement }
-                {
-                    [Signals] $\gets$ ADD stop signal $>>$\;
-                    [Signals] $\gets$ ADD departure signal $<<$\;
-                }
-                \If { NOT EXIST prev netElement }
-                {
-                    [Signals] $\gets$ ADD stop signal $<<$\;
-                    [Signals] $\gets$ ADD departure signal $>>$\;
-                }
+                [Signals] $\gets$ ADD departure signal $>>$\;
             }
-            \For { netElement WITH LineBorder }
+            \If { NOT EXIST prev netElement }
             {
-                \If { netElement.Length $>$ FIXED\_LENGTH }
-                {
-                    \If { NOT EXIST next netElement }
-                    {
-                        [Signals] $\gets$ ADD departure signal $>>$\;
-                    }
-                    \If { NOT EXIST prev netElement }
-                    {
-                        [Signals] $\gets$ ADD departure signal $<<$\;
-                    }
-                }
+                [Signals] $\gets$ ADD departure signal $<<$\;
             }
-            \KwResult{[Signals]} 
-        \end{algorithm}
+        }
+    }
+    \KwResult{[Signals]} 
+\end{algorithm}
+
+\lipsum[1]
+
+\begin{algorithm}[hbt!]
+    \caption{Buffer stops algorithm}\label{alg:bufferStop}
+    \DontPrintSemicolon
+    %\SetAlgoLined
+    \SetNoFillComment
+    \LinesNotNumbered 
+    \For { netElement WITH BufferStops }
+    {
+        \If { NOT EXIST next netElement }
+        {
+            [Signals] $\gets$ ADD stop signal $>>$\;
+            [Signals] $\gets$ ADD departure signal $<<$\;
+        }
+        \If { NOT EXIST prev netElement }
+        {
+            [Signals] $\gets$ ADD stop signal $<<$\;
+            [Signals] $\gets$ ADD departure signal $>>$\;
+        }
+    }
+    \KwResult{[Signals]} 
+\end{algorithm}
+
+\lipsum[1]
+\includegraphics{example-image}\\
+\lipsum[1-2]
