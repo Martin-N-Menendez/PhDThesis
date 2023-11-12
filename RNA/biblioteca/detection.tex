@@ -1,6 +1,7 @@
 \subsection{Sistemas de detección de formaciones ferroviarias}
-
-Es de vital importancia que el sistema pueda determinar la posición de un tren dentro del tendido ferroviario. De esta manera, poder habilitar la circulación en secciones donde no exista peligro de colisión con otros formaciones o, por el contrario, detener la marcha de las formaciones anteriores para evitar accidentes. Existen diversas maneras de detectar la posición de un tren, entre ellas el uso de circuitos de vía y contadores de ejes(Figure \ref{fig:deteccion_1}). 
+    \label{sec:detectors}
+    
+    Es de vital importancia que el sistema pueda determinar la posición de un tren dentro del tendido ferroviario. De esta manera, poder habilitar la circulación en secciones donde no exista peligro de colisión con otros formaciones o, por el contrario, detener la marcha de las formaciones anteriores para evitar accidentes. Existen diversas maneras de detectar la posición de un tren, entre ellas el uso de circuitos de vía y contadores de ejes(Figure \ref{fig:deteccion_1}). 
 
     \begin{figure}[!h]
         \centering
@@ -9,7 +10,7 @@ Es de vital importancia que el sistema pueda determinar la posición de un tren 
         \label{fig:deteccion_1}
     \end{figure}
 
-Los circuitos de vía (Figura \ref{fig:deteccion_2}) son dispositivos electrónicos que aplican una diferencia de potencial finita entre los rieles. Cuando una formación ingresa a la sección, sus ruedas metálicas cortocircuitan ambos rieles. El cortocircuito es detectado por el relé y este, a su vez, reporta el estado al resto del sistema. 
+    Los circuitos de vía (Figura \ref{fig:deteccion_2}) son dispositivos electrónicos que aplican una diferencia de potencial finita entre los rieles. Cuando una formación ingresa a la sección, sus ruedas metálicas cortocircuitan ambos rieles. El cortocircuito es detectado por el relé y este, a su vez, reporta el estado al resto del sistema. 
 
     \begin{figure}[!h]
         \centering
@@ -18,7 +19,9 @@ Los circuitos de vía (Figura \ref{fig:deteccion_2}) son dispositivos electróni
         \label{fig:deteccion_2}
     \end{figure}
 
-    En caso de que la alimentación se interrumpa, el cableado sufra alguna falla, vandalismo, inundación, o que efectivamente una formación ocupe la sección, el circuito de vía reportará que la sección se encuentra ocupada. De esta manera, solo es posible recibir un reporte de sección desocupada cuando la sección efectivamente se encuentre desocupada. A este principio se le denomina fail-safe [REF]. Es decir, si por alguna razón algo falla, el sistema adopta la condición más restrictiva, mitigando la posibilidad de una situación peligrosa.
+    En caso de que la alimentación se interrumpa, el cableado sufra alguna falla, vandalismo, inundación, o que efectivamente una formación ocupe la sección, el circuito de vía reportará que la sección se encuentra ocupada. De esta manera, solo es posible recibir un reporte de sección desocupada cuando la sección efectivamente se encuentre desocupada. A este principio se le denomina fail-safe [REF]. Es decir, si por alguna razón algo falla, el sistema adopta la condición más restrictiva, mitigando la posibilidad de una situación peligrosa. 
+    
+    Existe una discontinuidad entre los rieles denominado juntura, que permite la expansión de los mismos al ser sometidos a altas temperaturas sin que los rieles se doblen y provoquen daños a la infraestructura. Los circuitos de vía, se relacionan directamente a las junturas entre las vías, modelados por la clase rail Joint en railML.  Esta discontinuidad eléctrica es lo que limita la acción del circuito de vía a la región entre dos junturas.
 
     En el código \ref{lst:trackCircuit} podemos ver un ejemplo de la clase trackCircuit dentro de la clase interlocking, que incluye a la clase assetsForIL y estos, a su vez, a la clase vector de tvdSections. Esta clase posee un id (tvd7), la tecnología utilizada (en este caso trackCircuit, circuivo de vía) y los límites donde el circuito de vía es válido: los bufferStop bus1 y bus2.
 

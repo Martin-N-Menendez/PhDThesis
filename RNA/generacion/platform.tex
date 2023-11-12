@@ -1,6 +1,18 @@
-\subsection{Plataformas}
+\subsection{Plataformas ferroviarias}
 
-    \lipsum[1-2]
+    % Autoridad > derecho limitado a una porcion
+    % Claridad > autoridad no ambigua
+    % Anticipacion > avisar con antelacion
+    % Granularidad > rutas cortas y funcionales
+    % Terminalidad > avisar fin de via
+    % Infraestructura > avisar de infraestructura
+    % No bloqueo > circulacion fluida
+
+    En la Sección \ref{sec:platform} definimos la clase platform que modela a las plataformas ferroviarias. Las plataformas ferroviarias son un punto del recorrido donde las formaciones pueden detenerse, algunas veces de forma opcional dependiendo el itinerario, para que los pasajeros desciendan y nuevos pasajeros puedan ascender. Claramente existe una limitación de autoridad, las formaciones necesitan un nuevo permiso para continuar circulando una vez alcanzada la plataforma. Permiso que será otorgado o negado según el estado del sistema a continuación del recorrido. Las plataformas ferroviarias suelen encontrarse en zonas pobladas, cerca de otras infraestructuras, zonas comerciales o residenciales, por lo que avisar con antelación al maquinista que debe disminuir la marcha y/o detenerse es esencial.
+
+    Además, es posible que las formaciones convivan con otras formaciones que también hacen uso de la estación, por lo que las señales deben ser unívocas y claras. Algunas estaciones pueden contener fines de vías o ramificaciones hacia talleres u otros ramales, por lo que también se aplica el principio de terminalidad y granuralidad. Finalmente, es importante el mantener una circulación fluida de las formaciones, de modo de no retrasar el itinerario de las formaciones que vienen detrás, por lo que se deberá aplicar el principio de no bloqueo.
+
+    En el Algoritmo \ref{alg:PTF} definimos a la señal de partida como la única señal necesaria para operar una plataforma, asumiendo que la señal de ingreso de la misma será dada por otra instancia previa. De no existir otro elemento cercano por el cual se genere una señal, se puede asumir que la distancia a la plataforma es muy larga y, por lo tanto, se aplicaría el Algoritmo \ref{alg:RJ}, protegiendo a la plataforma. En el caso de que la vía se bidireccional se añadiran señales de partida para ambos sentidos.
 
     \begin{algorithm}[hbt!]
         \caption{Platform algorithm}\label{alg:PTF}
@@ -11,13 +23,20 @@
         \For { netElement WITH Platform }
         {
             \tcc{Before leaving platform from left}
-            [Signals] $\gets$ ADD departure signal $>>>$\;
+            [Signals] $\gets$ ADD departure signal $\gg\gg$\;
             \tcc{After leaving platform from right}
-            [Signals] $\gets$ ADD departure signal $<<<$\;
+            [Signals] $\gets$ ADD departure signal $\ll\ll$\;
         }
         \KwResult{[Signals]} 
     \end{algorithm}
 
-    \lipsum[1]
-    \includegraphics{example-image}\\
-    \lipsum[1-2]
+    Aplicando el Algoritmo \ref{alg:PTF} a un sistema de dos vías paralelas con plataformas pertenecientes a la misma estación obtenemos el resultado ilustrado en la Figura \ref{fig:signal_platform}.Se asumieron que ambas vías son bidireccionales, en caso contrario solo se generarían las señales S01 y S02.
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=1\textwidth]{Figuras/platforms.PNG}
+        \centering\caption{Señalamiento generado para estaciones ferroviarias.}
+        \label{fig:signal_platform}
+    \end{figure}
+    
+    Una formación que circule de izquierda a derecha deberá detenerse antes de la señal S01, en caso de utilizar la vía superior, o antes de la señal S04, en caso de utilizar la vía inferior. Análogamente, las formaciones deberán detenerse antes de las señales S03 y S02 en el caso de transitar de derecha a izquierda por la vía superior o inferior respectivamente. Sólo cuando estas señales otorguen a la formación autoridad para circular podrán reanudar su marcha hasta la próxima señal disponible, fuera del alcance de lo ilustrado en la Figura \ref{fig:signal_platform}.
