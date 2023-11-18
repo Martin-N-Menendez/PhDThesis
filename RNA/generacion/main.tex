@@ -3,10 +3,17 @@
     
     En esta Sección se abordará la generación automática de señalamiento que realiza el RNA para cada uno de los elementos ferroviarios básicos y se mostrará como los principios de señalamiento (ver Sección \ref{sec:principios}) se cumplen para cada uno de ellos de forma individual. Se asumirá para el análisis de la red ferroviaria que todas las vías son bidireccionales y que los elementos ferroviarios deben ser protegidos en todas las direcciones. De esta forma, siempre se tendrá un análisis completo de la red ferroviaria, contemplando todos los posibles usos de la red que el operador pueda darle.
     
-    Tal como se explico en la Sección \ref{sec:validacion}, al ser el modelo ferroviario de grafos un sistema lineal, podemos definir un principio de superposición de señales. Las señales generadas para un sistema con elementos ferroviarios A y B serán la superposición de las señales generadas para proteger al elemento A y las señales generadas para proteger al elemento B. No obstante, puede darse el caso de que una señal que originalmente protegía al elemento A también cumpla la función de proteger a B, por lo cual existe un solapamiento de señales. Por lo tanto, el señalamiento final tendrá menos señales que la suma de los señalamientos originales. Podemos generalizar esta conclusión en la siguiente fórmula:
+    Tal como se explico en la Sección \ref{sec:validacion}, al ser el modelo ferroviario de grafos un sistema lineal, podemos definir un principio de superposición de señales. Las señales generadas para un sistema con elementos ferroviarios A y B serán la superposición de las señales generadas para proteger al elemento A y las señales generadas para proteger al elemento B. No obstante, puede darse el caso de que una señal que originalmente protegía al elemento A también cumpla la función de proteger a B, por lo cual existe un solapamiento de señales. Por lo tanto, el señalamiento final tendrá menos señales que la suma de los señalamientos originales. Podemos generalizar esta conclusión en la Fórmula \ref{frm:signal_1} y Fórmula \ref{frm:signal_2}:
 
-    \[ \text{señales(a,b,\dots,z)} = \sum_{\text{elemento}=a}^{z} \text{señales(elemento)} - \displaystyle\bigcap_{\text{elemento}=a}^{z} \text{señales(elemento,elemento+1)} \]
-    \[ \text{señales(a,b,\dots,z)} \leq \sum_{\text{elemento}=a}^{z} \text{señales(elemento)} \]
+    \begin{equation}
+    \text{señales(a,b,\dots,z)} = \sum_{\text{elemento}=a}^{z} \text{señales(elemento)} - \displaystyle\bigcap_{\text{elemento}=a}^{z} \text{señales(elemento,elemento+1)} 
+    \label{frm:signal_1}
+    \end{equation}
+
+    \begin{equation}
+    \text{señales(a,b,\dots,z)} \leq \sum_{\text{elemento}=a}^{z} \text{señales(elemento)} 
+    \label{frm:signal_2}
+    \end{equation}
 
     Es decir, el señalamiento total siempre será menor a la suma del señalamiento generado para cada uno de los elementos ferroviarios, salvo que no existan señales solapadas. Para obtener el señalamiento final, el RNA debe no solo generar el señalamiento para cada elemento y combinarlo, sino también detectar solapamientos, inconsistencias o señales contradictorias que puedan comprometer la seguridad de la red y eliminarlas. La eliminación de señales deberá realizarse con ciertos criterios, para no disminuir el nivel de seguridad de la red ferroviaria. El proceso de simplificación del señalamiento se abordará en detalle en la Sección \ref{sec:simplificacion}.
 
