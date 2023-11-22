@@ -8,17 +8,21 @@
         %\SetAlgoLined
         \SetNoFillComment
         \LinesNotNumbered 
-        \For{ each netElement }
+        \For{ signal in \{signals\} }
         {
-            \For{ each object in netElement }
+            \If{ each object in netElement }
             {
-                \If{dist(Obj\_A,Obj\_B) $<$ MIN\_DISTANCE }
+                \If{ node is between switches with not enough space }
                 {
-                    move\_signals\_between(Obj\_A,Obj\_B)
+                    Move\_backwards\_in\_main\_line(signal)
+                }
+                \Else 
+                {
+                    combine\_signals( )
                 }
             }
         }
         \KwResult{[Signals]} 
     \end{algorithm}
-
+            
     \lipsum[1-3]
