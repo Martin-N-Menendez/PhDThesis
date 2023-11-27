@@ -1,0 +1,1377 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  23 NOV 2023 19:26
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{titlepage}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     \begin{tikzpicture}
+                            [remember picture,overlay]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     \begin{tikzpicture}[
+                             remember picture,overlay]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.12         \node
+                  [anchor=center, opacity=\backgroundopacity] at (current pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.12 ...[anchor=center, opacity=\backgroundopacity
+                                                  ] at (current page.center)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ) in font nullfont!
+! Undefined control sequence.
+l.12 ...at (current page.center) {\includegraphics
+                                                  [width=\paperwidth,height=...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.12 ...ter) {\includegraphics[width=\paperwidth,h
+                                                  eight=\paperheight]{\backg...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.12 ...ics[width=\paperwidth,height=\paperheight]
+                                                  {\backgroundimage}};
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.12 ...ics[width=\paperwidth,height=\paperheight]
+                                                  {\backgroundimage}};
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.12 ...idth,height=\paperheight]{\backgroundimage
+                                                  }};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.14         \node
+                  [align=right, text width=1.2\textwidth] at (7,-12.5) {\fon...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.14 ...ode[align=right, text width=1.2\textwidth]
+                                                   at (7,-12.5) {\fontsize{3...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.14 ...ode[align=right, text width=1.2\textwidth]
+                                                   at (7,-12.5) {\fontsize{3...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <30> not available
+(Font)              size <24.88> substituted on input line 14.
+
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.15         \node
+                  [align=right, text width=1\textwidth] at (8.5,-15.5) {\fon...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.15 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-15.5) {\fontsize...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.15 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-15.5) {\fontsize...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <20> not available
+(Font)              size <20.74> substituted on input line 15.
+
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.16         \node
+                  [align=right, text width=1\textwidth] at (8.5,-17.15) {\fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.16 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-17.15) {\fontsiz...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.16 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-17.15) {\fontsiz...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15> not available
+(Font)              size <14.4> substituted on input line 16.
+
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.17         \node
+                  [align=right, text width=1\textwidth] at (8.35,-19.75) {\f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.17 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-19.75) {\fontsi...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.17 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-19.75) {\fontsi...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.18         \node
+                  [align=right, text width=1\textwidth] at (8.35,-20.25) {\f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.18 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-20.25) {\fontsi...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.18 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-20.25) {\fontsi...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.19         \node
+                  [align=right, text width=1\textwidth] at (8.35,-21.5) {\fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.19 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-21.5) {\fontsiz...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.19 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-21.5) {\fontsiz...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.20         \node
+                  [align=right, text width=1\textwidth] at (8.35,-22) {\font...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.20 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-22) {\fontsize{...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.20 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-22) {\fontsize{...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.21         \node
+                  [align=right, text width=1\textwidth] at (8.35,-22.5) {\fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.21 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-22.5) {\fontsiz...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.21 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-22.5) {\fontsiz...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.22         \node
+                  [align=right, text width=1\textwidth] at (8.35,-23) {\font...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.22 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-23) {\fontsize{...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.22 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.35,-23) {\fontsize{...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+! Undefined control sequence.
+l.23         \node
+                  [align=right, text width=1\textwidth] at (8.5,-25.15) {\fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.23 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-25.15) {\fontsiz...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.23 ...\node[align=right, text width=1\textwidth]
+                                                   at (8.5,-25.15) {\fontsiz...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24     \end{tikzpicture}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \end{titlepage}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--26
+[]
+ []
+
+
+Overfull \hbox (58.88286pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 Mod-
+ []
+
+
+Overfull \hbox (19.90402pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 e-
+ []
+
+
+Overfull \hbox (45.26793pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 lado
+ []
+
+
+Overfull \hbox (11.61067pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 e
+ []
+
+
+Overfull \hbox (35.93788pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 im-
+ []
+
+
+Overfull \hbox (40.63742pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 ple-
+ []
+
+
+Overfull \hbox (111.51105pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 mentaci^^Son 
+ []
+
+
+Overfull \hbox (25.43294pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 de
+ []
+
+
+Overfull \hbox (34.83208pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 sis-
+ []
+
+
+Overfull \hbox (63.96248pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 temas
+ []
+
+
+Overfull \hbox (78.545pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 cr^^S^^Pticos
+ []
+
+
+Overfull \hbox (25.43294pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 de 
+ []
+
+
+Overfull \hbox (153.18515pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 enclavamiento
+ []
+
+
+Overfull \hbox (38.14944pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 fer-
+ []
+
+
+Overfull \hbox (84.5232pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 roviario 
+ []
+
+
+Overfull \hbox (83.90114pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 basados
+ []
+
+
+Overfull \hbox (25.43294pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 en
+ []
+
+
+Overfull \hbox (31.03099pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 ar-
+ []
+
+
+Overfull \hbox (42.98723pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 reg-
+ []
+
+
+Overfull \hbox (29.16498pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 los
+ []
+
+
+Overfull \hbox (25.43294pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 de
+ []
+
+
+Overfull \hbox (40.91396pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 FP-
+ []
+
+
+Overfull \hbox (48.17064pt too wide) in paragraph at lines 10--26
+\OT1/cmr/b/n/24.88 GAs
+ []
+
+
+Overfull \hbox (32.31926pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/20.74 Mg.
+ []
+
+
+Overfull \hbox (32.0792pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/20.74 Ing.
+ []
+
+
+Overfull \hbox (57.60387pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/20.74 Mart^^S^^Pn
+ []
+
+
+Overfull \hbox (59.63924pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/20.74 Nicol^^Sas
+ []
+
+
+Overfull \hbox (83.12859pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/20.74 Men^^Sendez
+ []
+
+
+Overfull \hbox (30.31462pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/14.4 Tesis
+ []
+
+
+Overfull \hbox (26.24132pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/14.4 doc-
+ []
+
+
+Overfull \hbox (28.98296pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/14.4 toral
+ []
+
+
+Overfull \hbox (15.05626pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Di-
+ []
+
+
+Overfull \hbox (17.67209pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 rec-
+ []
+
+
+Overfull \hbox (17.06378pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 tor:
+ []
+
+
+Overfull \hbox (15.69502pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Dr.
+ []
+
+
+Overfull \hbox (18.55418pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Ing.
+ []
+
+
+Overfull \hbox (23.45128pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Ariel
+ []
+
+
+Overfull \hbox (31.78546pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Luten-
+ []
+
+
+Overfull \hbox (21.01794pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 berg
+ []
+
+
+Overfull \hbox (19.01044pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 (FI-
+ []
+
+
+Overfull \hbox (28.43964pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 UBA)
+ []
+
+
+Overfull \hbox (15.36043pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 Ju-
+ []
+
+
+Overfull \hbox (13.41376pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 ra-
+ []
+
+
+Overfull \hbox (18.91919pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 dos:
+ []
+
+
+Overfull \hbox (17.4896pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 JU-
+ []
+
+
+Overfull \hbox (33.15422pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 RADO
+ []
+
+
+Overfull \hbox (20.07501pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 NU-
+ []
+
+
+Overfull \hbox (39.23755pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 MERO1
+ []
+
+
+Overfull \hbox (25.8542pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 (FIL-
+ []
+
+
+Overfull \hbox (15.81667pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 IA-
+ []
+
+
+Overfull \hbox (32.85005pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 CION)
+ []
+
+
+Overfull \hbox (17.4896pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 JU-
+ []
+
+
+Overfull \hbox (33.15422pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 RADO
+ []
+
+
+Overfull \hbox (20.07501pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 NU-
+ []
+
+
+Overfull \hbox (39.23755pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 MERO2
+ []
+
+
+Overfull \hbox (25.8542pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 (FIL-
+ []
+
+
+Overfull \hbox (15.81667pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 IA-
+ []
+
+
+Overfull \hbox (32.85005pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 CION)
+ []
+
+
+Overfull \hbox (17.4896pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 JU-
+ []
+
+
+Overfull \hbox (33.15422pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 RADO
+ []
+
+
+Overfull \hbox (20.07501pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 NU-
+ []
+
+
+Overfull \hbox (39.23755pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 MERO3
+ []
+
+
+Overfull \hbox (25.8542pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 (FIL-
+ []
+
+
+Overfull \hbox (15.81667pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 IA-
+ []
+
+
+Overfull \hbox (32.85005pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/n/10.95 CION)
+ []
+
+
+Overfull \hbox (18.79431pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Este
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 tra-
+ []
+
+
+Overfull \hbox (17.37766pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 bajo
+ []
+
+
+Overfull \hbox (13.03325pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 fue
+ []
+
+
+Overfull \hbox (11.88321pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 re-
+ []
+
+
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 al-
+ []
+
+
+Overfull \hbox (22.48877pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 izado
+ []
+
+
+Overfull \hbox (10.22215pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 en
+ []
+
+
+Overfull \hbox (7.66663pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 la
+ []
+
+
+Overfull \hbox (19.16653pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Ciu-
+ []
+
+
+Overfull \hbox (15.33325pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 dad
+ []
+
+
+Overfull \hbox (44.99973pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Aut^^Sonoma
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (31.82759pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Buenos
+ []
+
+
+Overfull \hbox (25.70535pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Aires,
+ []
+
+
+Overfull \hbox (10.22215pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 en
+ []
+
+
+Overfull \hbox (27.49428pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 Marzo
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 10--26
+\OT1/cmr/m/it/10 2024
+ []
+
+)
+! Emergency stop.
+<*> ./main.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 43 strings out of 474587
+ 863 string characters out of 5745693
+ 1925558 words of memory out of 5000000
+ 22323 multiletter control sequences out of 15000+600000
+ 559622 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 15i,1n,20p,266b,104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

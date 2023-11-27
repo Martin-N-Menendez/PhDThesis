@@ -11,11 +11,10 @@
     
     Una vez finalizada la generación de señalamiento para cada elemento ferroviario, es necesario abordar el segundo miembro de la Fórmula \ref{frm:signal_1} explicada al comienzo de la Sección \ref{sec:generacion}. El señalamiento total para un sistema de N elementos ferroviarios será la suma de las señales necesarias para proteger a esos N elementos ferroviarios. Es inevitable que algunas señales se solapen con otras espacial o funcionalmente. Incluso algunas señales podrían contradecir a otras, oponiéndose al principio de claridad. La abundancia de señales puede hacer las rutas tan cortas que la autoridad estaría limitada a pequeñas porciones de la red, haciendo inviable una circulación fluida sobre la red.
 
-    La simplificación del señalamiento se sustenta en tres algoritmos básicos: simplificación por proximidad de objetos, simplificación por herencia vertical y simplificación por herencia horizontal. Los tres algoritmos pueden aplicarse en cualquier orden, aunque los algoritmos de herencia solamente se pueden aplicar en redes ramificadas que tengan máquinas de cambios. 
+    La simplificación del señalamiento se sustenta en dos algoritmos básicos: simplificación por herencia vertical y simplificación por herencia horizontal. Los dos algoritmos pueden aplicarse en cualquier orden, aunque los algoritmos de herencia vertical solamente se pueden aplicar en redes ramificadas que tengan máquinas de cambios. 
 
     El proceso de simplificación finaliza con el algoritmo de limpieza, que elimina todas las señales redundantes en base a un nivel de prioridades. Estas prioridades se relacionan directamente con qué elemento ferroviario el RNA intentaba proteger con esta señal, reteniendo la señal mas importante y eliminando el resto. También se combinan señales muy próximas en una vecindad y se borran señales contradictorias o redundantes, para obtener el señalamiento definitivo.    
 
-    \input{RNA/simplificacion/proximity}
+ 	\input{RNA/simplificacion/herencia-vertical}
     \input{RNA/simplificacion/herencia-horizontal}
-    \input{RNA/simplificacion/herencia-vertical}
     \input{RNA/simplificacion/limpieza}
