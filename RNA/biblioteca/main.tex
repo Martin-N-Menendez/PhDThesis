@@ -1,5 +1,6 @@
 \section{Biblioteca RailML}
-
+	\label{sec:Biblioteca}
+	
     El primer paso en el desarrollo del RNA es contar con una librería que permita generar un objeto equivalente uno a uno con el estándar railML y luego exportar un nuevo archivo railML. Como ya se mencionó en la Sección \ref{sec:railML}, el estándar railML define cinco clases de objetos principales: Common, Infraestructure, Interlocking, RollingStock y Timetable. 
 
     La clase Common incluye 109 subclases, todas ellas utilizadas para definir características generales e invariantes para la red. Por ejemplo, podemos encontrar la clase Concessionaire que define quien tiene la concesión de la red, la clase tBrakeType que define el tipo de frenos aceptados en esa red, la clase tVoltage que define la tensión de la red o la clase PublicHolidayPeriodRule que define el período de vacaciones de los operarios de la red, entre otros factores. Esta clase es obligatoria para todos los archivos en formato railML, por lo tanto es necesaria para el funcionamiento del RNA, aunque no se extraigan datos importantes de la misma.

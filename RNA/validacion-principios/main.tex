@@ -1,3 +1,297 @@
 \section{Validación de principios de señalamiento ferroviario}
 
+	% Autoridad > todas las rutas combinadas cubren toda la traza ferroviaria.
+	% Claridad > autoridad no ambigua.
+	% Anticipacion > avisar con antelacion.
+	% Granularidad > rutas cortas y funcionales.
+	% Terminalidad > avisar fin de via.
+	% Infraestructura > avisar de infraestructura.
+	% No bloqueo > circulacion fluida.
+				
+	En esta sección se abordará el proceso de validación de cada uno de los principios ferroviarios establecidos en la Sección \ref{sec:principios}, como parte del proceso expuesto en la Sección \ref{sec:validacion}. Para ello, serán abordados de manera genérica cada uno de los principios de señalamiento junto con el algoritmo que el RNA utiliza para validarlo, previo a exportar el señalamiento generado.
+	
+	\subsection{Validación del principio de autoridad}
+		% Autoridad > todas las rutas combinadas cubren toda la traza ferroviaria.
+		
+		El principio de autoridad radica en que las rutas otorgan a las formaciones un permiso de uso limitado para circular por las vías. No obstante, la combinación de todas las autoridades disponibles de ser otorgadas deben cubrir la totalidad de la traza ferroviaria. Es decir, no debe existir ninguna sección de vía que se encuentre fuera del alcance de las rutas y, por lo tanto, aislada de la red. Puede darse el caso de que una sección de vía tenga una ruta de entrada o de salida, pero no ambas. También puede darse el caso de que la sección de vía sea transitada, pero no sea ni inicio ni final de ninguna ruta.
+		
+		El RNA utiliza el Algoritmo \ref{alg:ppio_autoridad} para validar el principio de autoridad comparando los netElements alcanzados por las rutas disponibles, con la lista de netElements potenciales de ser alcanzados. Esta última salvedad deja fuera las secciones de vías que preceden a una señal de circulación posterior a un final de vía relativo (lineBuffer). Esto se realiza ya que estas secciones de vía son transitadas por rutas fuera de la locación bajo análisis, rutas que terminan en la señal de circulación mencionada.
+
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de autoridad.}\label{alg:ppio_autoridad}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = False\;
+			$\{$Routes$\}$\; 
+			$\{$netElements$\}$ without netElements with lineBuffer\; 
+			\tcc{Validate that every route covers all the railway tracks.}
+			\For{route in $\{$Routes$\}$}
+			{
+				\If{route[begin] in $\{$netElements$\}$}
+				{
+					Remove route[begin] from $\{$netElements$\}$\; 
+				}
+				\If{route[end] in $\{$netElements$\}$}
+				{
+					Remove route[end] from $\{$netElements$\}$\; 
+				}
+				\For{track in route[paths]}
+				{
+					\If{track in $\{$netElements$\}$}
+					{
+						Remove track from $\{$netElements$\}$\; 
+					} 
+				}
+			}
+			\If{$\{$netElements$\}$ is Empty}
+			{
+				Validated = True\; 
+			} 
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		Se asume inicialmente que la validación es fallida por defecto. Si al finalizar el Algoritmo \ref{alg:ppio_autoridad} no existe ningún netElement remanente en la lista, se considera que la validación es exitosa.	
+			
+	\subsection{Validación del principio de claridad}
+		% Claridad > autoridad no ambigua
+		
+		El principio de claridad radica en que el señalamiento no posee señales ambiguas. Es decir, no existen dos rutas distintas que otorguen autoridad sobre las mismas secciones de vía, en el mismo sentido, utilizando la misma infraestructura. En otras palabras, las rutas en una misma dirección y sentido no se solapan, cada una comienza donde otra ha terminado.
+		
+		El RNA utiliza el Algoritmo \ref{alg:ppio_claridad} para validar el principio de claridad, generando una red de grafos dirigidos. La misma se constituye utilizando todas las rutas definidas por el RNA como aristas, y a los netElements que conectan como nodos de la red. Si se detecta que existen dos rutas R$^{\prime}$ y R$^{\prime\prime}$ que conectan dos nodos A y B en el mismo sentido, utilizando la misma infraestructura, entonces se dice que las rutas son ambiguas y el principio de claridad no se cumple.
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de claridad.}\label{alg:ppio_claridad}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = False\;
+			$\{$Routes$\}$\; 
+			\tcc{Validate that every netElement is reached by one route only.}
+			\For{route in $\{$Routes$\}$}
+			{
+				begin = route[begin]\;
+				end = route[end]\;
+				index = route[index] \;
+				direction = route[direction]\;
+				digraph = create\_digraph(begin,end,index,direction)\;	
+			}
+			\If{digraph has no redundant routes}
+			{
+				Validated = True\;
+			}
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		Aunque el orden de validación de los principios de señalamiento es indistinto, la confirmación de que las señales son suficientes para alcanzar toda la red (Principio de autoridad) y de que no existen señales ambiguas (Principio de claridad) facilita las siguientes validaciones. Esto se debe a que, con estas dos comprobaciones, ya sabemos que contamos con la mínima cantidad de señales para recorrer la red de forma unívoca, garantizando la correcta logística de la red. Los siguientes principios son necesarios para validar la seguridad del señalamiento generado por el RNA.
+		
+	\subsection{Validación del principio de anticipación}
+		% Anticipacion > avisar con antelacion
+		
+		El principio de anticipación radica en que existe una señal previo a cada peligro, situada en la zona de señalamiento. Una zona señalamiento puede estar próxima a una curva, al final de la traza ferroviaria o en las inmediaciones de un paso a nivel, una estación, un cambio de vías o cualquier infraestructura ferroviaria a ser protegida. En otras palabras, el señalamiento debe estar distribuido de tal manera que entre dos señales que constituyen una ruta exista un único peligro o situación que quiera la atención del conductor.
+		
+		El RNA utiliza el Algoritmo \ref{alg:ppio_anticipacion} para validar el principio de anticipación, detectando las regiones de señalamiento como zonas peligro peligrosas, producto del trazado ferroviario (curvas, finales de vía) o de la infraestructura ferroviaria (plataformas, pasos a nivel, etc.). A continuación, el Algoritmo \ref{alg:ppio_anticipacion} comprueba que existe una señal para cada dirección del peligro, apuntando en el sentido del mismo. Garantizando de esta forma, que previo a cada peligro inicie o finalice una ruta, en caso de que la ruta sea segura de ser transitada o no, respectivamente.
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de claridad.}\label{alg:ppio_anticipacion}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = True\;
+			$\{$Routes$\}$\; 
+			$\{$Track$\}$\; 
+			$\{$Dangers$\}$ = None\;
+			\tcc{Validate that each danger is protected by the signalling.}
+			
+			\For{curve in $\{$Tracks$\}$}
+			{
+				$\{$Dangers$\}$ $\Leftarrow$ ADD curve
+			}
+			
+			\For{element in $\{$Infraestructure$\}$}
+			{
+				$\{$Dangers$\}$ $\Leftarrow$ ADD element
+			}
+			
+			\For{danger in $\{$Dangers$\}$}
+			{
+				
+				\For{track going into danger}
+				{
+					\If{track has signal AND signal points to danger}
+					{
+						Continue\;
+					}
+					\Else
+					{
+						Validated = False\; 
+						Stop iterations\;
+					}
+				}	
+			}
+			
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		Una sola región de señalamiento que tenga una de sus entradas sin proteger por una señal es suficiente para que el Algoritmo \ref{alg:ppio_anticipacion} devuelva un resultado negativo. Si todas las entradas de cada región de señalamiento están protegidas por una señal, entonces el principio de anticipación se encuentra cumplido. En el caso de que los elementos ferroviarios se encuentren muy próximos, por herencia horizontal, se consideran un único elemento y sus regiones de señalamiento se simplifican como se explicó en la Sección \ref{sec:horizontal}.
+		
+	\subsection{Validación del principio de granularidad}
+		% Granularidad > rutas cortas y funcionales
+		
+		El principio de granularidad radica en que las rutas deben ser lo suficientemente cortas como para permitir una logística flexible, pero no tan cortas como para no tener ninguna funcionalidad real. Consideramos, por lo tanto, que el señalamiento debe estar distribuido de tal forma que las rutas tengan una funcionalidad básica. Entre éstas funciones tenemos el uso de un elemento ferroviario específico (o conjunto de elementos ferroviarios, si están muy próximos) o la subdivisión de rutas cuyos tramos originales eran demasiado extensos.
+		
+		El RNA utiliza el Algoritmo \ref{alg:ppio_granularidad} para validar el principio de granularidad, analizando que elementos ferroviarios se encuentran contenidos en cada ruta y la distancia entre las señales que conforman la misma. Se recorre el listado de rutas generadas por el RNA, que ya establece los elementos contenidos en las rutas, las señales que las definen y la posición de las mismas. En cada ruta se analiza si existen elementos ferroviarios que justifiquen la existencia de la ruta y si el largo de la misma se encuentra entre un rango mínimo y máximo estipulado. Si alguna de estas condiciones se cumple, entonces se procede a analizar la siguiente ruta. En caso contrario, el Algoritmo \ref{alg:ppio_granularidad} finaliza de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de granularidad ha sido validado exitosamente.
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de granularidad.}\label{alg:ppio_granularidad}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = True\;
+			$\{$Routes$\}$\; 
+			\tcc{Validate that each route has a purpose and a min/max length.}
+			\For{route in $\{$Routes$\}$}
+			{
+				\If{MIN > route[length] > MAX OR route[elements] == None}
+				{
+					Validated = False\; 
+					Stop iterations\;
+				}				
+			}
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		Si la ruta es demasiado pequeña o demasiado larga, la validación finaliza de forma negativa. Si la ruta tiene un tamaño adecuado pero no contiene ningún elemento relevante de ser protegido, también se rechaza la validación. En caso contrario, si todas las rutas cumplen el criterio entonces se da por validado el principio de granularidad.
+		
+	\subsection{Validación del principio de terminalidad}
+		% Terminalidad > avisar fin de via
+		
+		El principio de terminalidad radica en que el señalamiento debe indicar, sin excepciones, el final de cada rama del trazado ferroviario, sin importar si es un final relativo u absoluto. Como se explicó en la Sección \ref{sec:bufferstop}, tanto los finales de vía relativos como los absolutos necesitan una señal de parada que permita habilitar la salida de la formación de la locación bajo estudio. Además, los finales de vía absolutos requieren de una señal de partida para reiniciar la marcha de la formación en la dirección contraria, retomando el recorrido dentro de la traza ferroviaria.	
+		
+		El RNA utiliza el Algoritmo \ref{alg:ppio_terminalidad} para validar el principio de terminalidad, recorriendo cada una de las rutas generadas y analizando aquellas que culminan o empiezan en un final de vía. Una vez detectadas las rutas que posean lineBorders o bufferStops, se procede a analizar que clase de señales poseen. Si son compatibles con las condiciones indicadas en la Sección \ref{sec:bufferstop}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de terminalidad ha sido validado exitosamente.
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de terminalidad.}\label{alg:ppio_terminalidad}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = True\;
+			$\{$Routes$\}$\; 
+			\tcc{Validate that each lineBorder and BufferStop have protective signals}
+			\For{route in $\{$Routes$\}$}
+			{
+				\If{lineBorder in route[element] and route goes to lineBorder}
+				{
+					\If{signal is not route[end]}
+					{
+						Validated = False\;
+					}
+				}
+				
+				\If{bufferStop in route[element]}
+				{
+					\If{route goes to bufferStop and signal is not route[end]}
+					{
+						Validated = False\;
+					}
+					\If{route start from bufferStop and signal is not route[begin]}
+					{
+						Validated = False\;
+					}
+				}
+			}
+			
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		Este principio es el más sencillo de validar positivamente ya que, por como fue diseñado el RNA, tanto los lineBorder y los bufferStop siempre tendrán señalamiento y dichas señales tienen la máxima prioridad, por lo que no pueden simplificarse con otras señales. No obstante, si el usuario eligiendo de forma explícita no generar señales para estos elementos ferroviarios entonces este principio de señalamiento podría no cumplirse.		
+				
+	\subsection{Validación del principio de infraestructura}
+		% Infraestructura > avisar de infraestructura
+		
+		El principio de infraestructura radica en que el señalamiento debe proteger, sin excepciones, toda infraestructura ferroviaria crítica, tales como las plataformas y los pasos a nivel. Con excepción de los cambios de vías, que son cubiertos por el principio de no bloqueo. La infraestructura deberá estar protegida por el señalamiento tal como se explicó en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, permitiendo a las formaciones detenerse en las plataformas y antes de los pasos a nivel, respectivamente.
+		
+
+		El RNA utiliza el Algoritmo \ref{alg:ppio_infraestructura} para validar el principio de infraestructura, recorriendo cada una de las rutas generadas y analizando aquellas que atraviesan paso a nivel o que inician o finalizan en una plataforma. Una vez detectadas las rutas, se procede a analizar que clase de señales poseen. Si son compatibles con las condiciones indicadas en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de infraestructura ha sido validado exitosamente.
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de infraestructura.}\label{alg:ppio_infraestructura}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			Validated = True\;
+			$\{$Routes$\}$\; 
+			\tcc{Validate that each platform and crossing have protective signals}
+			\For{route in $\{$Routes$\}$}
+			{
+				\If{platform in route[element]}
+				{
+					\If{route goes across platform and signal is not route[end]}
+					{
+						Validated = False\;
+					}
+					\If{route start from platform and signal is not route[begin]}
+					{
+						Validated = False\;
+					}
+				}
+				
+				\If{levelCrossing in route[element]}
+				{
+					\If{route goes to levelCrossing and signal is not route[end]}
+					{
+						Validated = False\;
+					}
+					\If{route start before levelCrossing and signal is not route[begin]}
+					{
+						Validated = False\;
+					}
+				}
+			}
+			
+			\KwResult{Validated} 
+		\end{algorithm}
+		
+		En el caso de que las plataformas y los pasos a nivel se encuentren muy próximos, por la simplificación de señalamiento por herencia horizontal explicada en la Sección \ref{sec:horizontal}, igualmente el Algoritmo \ref{alg:ppio_infraestructura} buscará las señales mas próximas al nuevo elemento ferroviario compuesto. De esta manera, al analizar todas las rutas exitosamente, es posible validar el señalamiento que protege a los elementos ferroviarios críticos, cumpliendo el principio de infraestructura.
+		
+	\subsection{Validación del principio de no bloqueo}
+		% No bloqueo > circulacion fluida
+		
+		\lipsum[1]
+		
+		Algoritmo \ref{alg:ppio_nobloqueo}
+		
+		Probar que las rutas no bloquean los cambios de via	
+		
+		\begin{algorithm}[hbt!]
+			\caption{Algoritmo de validación del principio de no bloqueo.}\label{alg:ppio_nobloqueo}
+			\DontPrintSemicolon
+			%\SetAlgoLined
+			\SetNoFillComment
+			\LinesNotNumbered 
+			A = FUNCTION()\; 
+			\tcc{COMMENT}
+			\For{i in list}
+			{
+				\If{start\_net != end\_net}
+				{
+					B = FUNCTION()\;
+				}
+				\Else
+				{
+					C = FUNCTION()\;
+				}
+				
+			}
+			
+			\KwResult{Validated} 
+		\end{algorithm}
+		\lipsum[1]
+
 \lipsum[1-5]

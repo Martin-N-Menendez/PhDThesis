@@ -1,13 +1,22 @@
-\section{Generación de tablas de enclavamiento}
-
+\section{Generación de las tablas de enclavamiento}
 	\label{sec:rutas}
 	
-	% Once the signalling is generated and simplified, it is necessary to establish the railway routes to create the railway interlocking table. A railway route is the simplest path between two consecutive signals in the same direction, using the same tracks \cite{SIGNALLING_1,AUTOMATIC_SIMPLE_SIGNAL}. The route may contain switches, level crossings, platforms or any railway element within the path. A railway route is defined with a start and an end signal, accompanied by the indication of the corresponding safe state of the railway netElements like switches or level crossings and the tracks assigned (P1, P2, P3, P4, P5, P6, P7). Algorithm \ref{alg:routes} describes the mechanisms to detect and assign routes.
+	% Autoridad > derecho limitado a una porcion
+	% Claridad > autoridad no ambigua
+	% Anticipacion > avisar con antelacion
+	% Granularidad > rutas cortas y funcionales
+	% Terminalidad > avisar fin de via
+	% Infraestructura > avisar de infraestructura
+	% No bloqueo > circulacion fluida
 	
-	\lipsum[1-5]
+	Una vez que se genera un señalamiento óptimo y simplificado, es necesario establecer las rutas ferroviarias para crear la tabla de enclavamientos. Una ruta ferroviaria es el camino mas corto entre dos señales consecutivas que apuntan en la misma dirección, usando las vías en el sentido definido. Es decir, si el único camino entre dos señales A y B es una vía que solo puede circularse de B hacia A, no existe ruta posible entre ambas señales. Una ruta puede contener máquinas de cambios, pasos a nivel, plataformas o cualquiera de los elementos ferroviarios definidos en la Sección \ref{sec:Biblioteca}.
+	
+	Toda ruta ferroviaria se define con una señal de inicio y una señal de llegada, indicando el estado mas seguro correspondiente a cada elemento ferroviario que involucra. Por ejemplo, por el principio de infraestructura, si la ruta atraviesa un paso a nivel, debe indicarse que ese paso a nivel debe tener su barrera baja. Ademas, si la ruta atraviesa un cambio de vías, por el principio de no bloqueo, debe indicarse la posición del cambio para que la ruta sea segura. Incluso es fundamental establecer que secciones de vías atraviesa la ruta, por el principio de autoridad y granularidad.
+	
+	El mecanismo por el cual el RNA detecta y asigna las rutas ferroviarias es el Algoritmo \ref{alg:routes}. Este algoritmo itera entre todas las señales asumiendo que son la señal de inicio de alguna ruta. Las señales de parada absolutas como las utilizadas para proteger los finales de vía absolutos (bufferStops) no pueden ser una señal de inicio y, por lo tanto, son ignoradas por el Algoritmo \ref{alg:routes}. Solamente las señales de partida, de circulación y de maniobra son consideradas como señales de inicio de potenciales rutas ferroviarias.
 	
 	\begin{algorithm}[hbt!]
-        \caption{Route detection algorithm}\label{alg:routes}
+        \caption{Algoritmo de detección y registro de rutas ferroviarias.}\label{alg:routes}
         \DontPrintSemicolon
         %\SetAlgoLined
         \SetNoFillComment
@@ -39,10 +48,10 @@
         }
         \KwResult{[Routes]} 
     \end{algorithm}
+        
+    El RNA encuentra los caminos posibles a partir de la señal de inicio, recorriendo el grafo ferroviario en el mismo sentido que la señal de entrada. Cada tramo de vía plausible de ser recorrido es intentado, si se encuentra una señal de igual dirección y sentido que la inicial, se la asigna como señal de llegada y se computa la ruta, incrementando el contador de ruta. Si se llega al final de la vía sin haber encontrado una señal compatible, el camino no es considerado una ruta válida y es descartado. Una vez que se probaron todos los caminos posibles con la señal de inicio analizada, incluyendo todas las ramificaciones, entonces se procede con la siguiente señal, hasta analizarlas todas.
     
-    %Stop signals cannot be starting signals and, therefore, are ignored, considering only circulation and manoeuvre signals. It is necessary to follow the graph network in the same direction as the starting signal to identify all the incoming signals through all the possible paths from the netElement where the starting signal is. For example, three routes were highlighted in Figure \ref{fig:Routes} over the simplified signalling for Example 1, with signal S22 as the starting signal: S22 to S32, S22 to X15 and S22 to T05.
-    
-    \lipsum[1-2]
+    Por ejemplo, en la Figura \ref{fig:Routes} se destacan tres rutas sobre un señalamiento generado por el RNA, con la señal S22 como señal de inicio. Podemos identificar tres rutas ferroviarias: desde S22 hasta S32, desde S22 hasta X15 y desde S22 hasta T05. Una misma señal de inicio puede definir mas de una ruta ferroviaria.
     
     \begin{figure}[h]
     	\centering
@@ -50,9 +59,11 @@
     	\centering\caption{Signalling simplified in Example 1 with three routes indicated.}
     	\label{fig:Routes}
     \end{figure}
+        
+    En paralelo a la detección de las rutas, partiendo desde una señal de inicio y encontrando la señal de llegada, se va llevando un registro de los elementos ferroviarios atravesados por estas rutas. Entre estos elementos podemos encontrar las máquinas de cambios (indicando si deben estar en posición normal o reversa), los pasos a nivel (que deben estar cerrados), plataformas y los tramos de vías utilizados. En el caso de la Figura \ref{fig:Routes}, una ruta definida por las señalas S22 y T05 recorrer los tramos de vías asociados a los netElements ne1, ne9 y ne15, usando el cambio de vías Sw04 en posición reversa y el cambio de vías Sw07 en posición normal, sin atravesar ningún paso a nivel.
     
-    %Having the start signal and all the end signals, it is necessary to identify the main rail objects within those paths, such as switches (their position), level crossings (that must be closed), platforms and tracks. In Example 1 (Figure \ref{fig:Routes}), a route defined by signals S22 and T05 covers tracks ne1, ne9 and ne15 using switch Sw04 in reverse position and switch Sw07 in normal position without any level crossing is involved.
+    Si dos rutas comparten las mismas señales de inicio o de llegada, estas son rutas conflictivas. De igual manera serán rutas conflictivas si comparten un tramo de vías, una máquina de cambios, un paso a nivel. Esto significa que el sistema de enclavamientos no puede aprobar a ambas rutas simultáneamente. La aprobación de una ruta implica que la otra debe bloquearse hasta que la primera sea completada o cancelada. 
     
-    %If two routes share the same start signal or end signal they are conflicting routes. The same if they share one netElement, switch, level crossing or the same signals swapped. It means both routes cannot be approved at the same time, one of them being approved implies the others must be blocked until the first one was completed or cancelled. Two routes could have the same start and end signal but use different tracks, but they cannot be approved at the same time because there must be necessary a switch within that routes, with opposite positions and only one position can be approved when one route is ongoing. Conflicting routes are indicated in the interlocking table that is automatically generated by the RNA. Every route is created based on the created graph network and the shortest path algorithm for directed graphs. The paper \cite{GRAPH_4_ROUTES} explores another approach to finding routes based on interlocking tables.
+    Dos rutas pueden tener la misma señal de inicio y de llegada, pero haciendo uso de diferentes tramos de vías. Sin embardo, no pueden habilitarse al mismo tiempo porque, con toda seguridad, ambas rutas compartirán un cambio de vías, con posiciones habilitantes contrarias. Tal es el caso de las rutas S22-S32 y S22-X15 que ambas deben hacer uso del cambio de vías Sw04, pero mientras la primer ruta lo necesita en posición normal, la segunda lo necesita en posición reversa.
     
-    \lipsum[1-3]
+    Las rutas conflictivas son detectadas por el RNA e indicadas en la tabla de enclavamientos generada automáticamente. Cada ruta es creada basada en la red de grafos ferroviaria utilizando el algoritmo de camino óptimo para grafos dirigidos. Otros artículos [REF] exploran otras estrategias para encontrar las rutas basándose en tablas de enclavamientos.   

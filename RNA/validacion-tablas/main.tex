@@ -1,3 +1,57 @@
 \section{Validación de tablas de enclavamiento}
 
-\lipsum[1-5]
+	\lipsum[1-5]
+	
+	
+	\begin{algorithm}[hbt!]
+		\caption{Algoritmo de validación de tablas de enclavamiento ferroviarias.}\label{alg:interlocking_tables}
+		\DontPrintSemicolon
+		%\SetAlgoLined
+		\SetNoFillComment
+		\LinesNotNumbered 
+		old\_graph = create\_Digraph()\; 
+		new\_graph = create\_Digraph()\; 
+		\tcc{Create digraphs for both interlocking tables}
+		\For{start\_net,end\_net,old\_route in old\_table}
+		{
+			old\_graph $\Leftarrow$ start\_net,end\_net,old\_route\;
+		}
+		\For{start\_net,end\_net,new\_route in new\_table}
+		{
+			new\_graph $\Leftarrow$ start\_net,end\_net,new\_route\;
+		}
+		
+		\tcc{Detect coincidences between both digraphs}
+		routes\_found = 0\;
+		\For{start\_net,end\_net,old\_route in old\_table}
+		{
+			\If{start\_net != end\_net}
+			{
+				routes\_found += find\_shortest\_paths(start\_net , end\_net)\;
+			}
+			\Else
+			{
+				\If{start\_net in new\_graph}
+				{
+					routes\_found += 1\;
+				}
+				\Else
+				{
+					\If{end\_net in new\_graph}
+					{
+						begin\_nodes = List(neighbours of end\_net in new\_graph)\;
+						
+						\If{begin\_nodes != []}
+						{
+							routes\_found += find\_shortest\_paths(begin\_nodes[0] , end\_net)\;
+						}
+					}
+				}
+			}
+		
+		}
+
+		\KwResult{routes\_found} 
+	\end{algorithm}
+	
+	\lipsum[1-5]
