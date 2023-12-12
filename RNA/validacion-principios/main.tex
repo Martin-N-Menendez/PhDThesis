@@ -215,7 +215,6 @@
 		% Infraestructura > avisar de infraestructura
 		
 		El principio de infraestructura radica en que el señalamiento debe proteger, sin excepciones, toda infraestructura ferroviaria crítica, tales como las plataformas y los pasos a nivel. Con excepción de los cambios de vías, que son cubiertos por el principio de no bloqueo. La infraestructura deberá estar protegida por el señalamiento tal como se explicó en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, permitiendo a las formaciones detenerse en las plataformas y antes de los pasos a nivel, respectivamente.
-		
 
 		El RNA utiliza el Algoritmo \ref{alg:ppio_infraestructura} para validar el principio de infraestructura, recorriendo cada una de las rutas generadas y analizando aquellas que atraviesan paso a nivel o que inician o finalizan en una plataforma. Una vez detectadas las rutas, se procede a analizar que clase de señales poseen. Si son compatibles con las condiciones indicadas en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de infraestructura ha sido validado exitosamente.
 		
@@ -263,11 +262,9 @@
 	\subsection{Validación del principio de no bloqueo}
 		% No bloqueo > circulacion fluida
 		
-		\lipsum[1]
+		El principio de no bloqueo radica en que el señalamiento debe proteger los cambios de vías en sus tres direcciones: inicio,normal y desvío, como se explica en la Sección \ref{sec:switches}. A su vez, debe garantizarse que los cambios compuestos no tengan señales intermedias, para evitar que las formaciones se detengan en zonas críticas, bloqueando los cambios de vías para otras formaciones que las requieran, como se explica en la Sección \ref{sec:vertical}.
 		
-		Algoritmo \ref{alg:ppio_nobloqueo}
-		
-		Probar que las rutas no bloquean los cambios de via	
+		El RNA utiliza el Algoritmo \ref{alg:ppio_nobloqueo} para validar el principio de no bloqueo, recorriendo la lista de máquinas de cambios. El primer paso es agrupar en tres listas distintas todos los netElements de cada cambio de vía según su dirección: inicio, normal y desvío. Luego, son removidas de las listas de inicio y normal todos los netElements que también pertenezcan a la lista de desvío. De esta manera, el algoritmo contempla a los cambios compuestos productos de la simplificación por herencia vertical (ver Sección \ref{sec:vertical}). A continuación, se remueven de las listas de inicio y normal todos los netElements que tienen una señal apuntando hacia el cambio de vías. Finalmente, si ambas listas se encuentran vacías y los netElements de la lista de cambios que también perteneciesen a las listas de inicio y normal originales no tienen señales, entonces el principio de no bloqueo ha sido validado exitosamente.
 		
 		\begin{algorithm}[hbt!]
 			\caption{Algoritmo de validación del principio de no bloqueo.}\label{alg:ppio_nobloqueo}
@@ -275,23 +272,53 @@
 			%\SetAlgoLined
 			\SetNoFillComment
 			\LinesNotNumbered 
-			A = FUNCTION()\; 
-			\tcc{COMMENT}
-			\For{i in list}
+			Validated = False\;
+			$\{$Switches$\}$\;
+			switch\_start = []\;
+			switch\_normal = []\;
+			switch\_branch = []\;
+			critical = []\;
+			\tcc{Validate that each switch have protective signals}
+			
+			\tcc{List netElements for each side of each switch}
+			
+			\For{sw in $\{$Switches$\}$}
 			{
-				\If{start\_net != end\_net}
+				switch\_start $\leftarrow$ ADD sw[netElement] for 'Start'\;
+				switch\_normal $\leftarrow$ ADD sw[netElement] for 'Normal'\;
+				switch\_branch $\leftarrow$ ADD sw[netElement] for 'Branch'\;
+			}	
+			
+			\tcc{Remove netElements that also belongs to a branch}
+			\For{sw in $\{$Switches$\}$}
+			{
+				switch\_start $\leftarrow$ REMOVE netElement if in switch\_branch\;
+				switch\_normal $\leftarrow$ REMOVE netElement if in switch\_branch\;
+				critical $\leftarrow$ ADD netElement in switch\_branch AND (switch\_start OR switch\_normal)\;
+			}	
+			
+			\tcc{Remove the netElements that have signals}
+			\For{netElement that has a signal}
+			{
+				\If{netElement in unprotected\_switch\_start}
 				{
-					B = FUNCTION()\;
-				}
-				\Else
-				{
-					C = FUNCTION()\;
+					switch\_start $\leftarrow$ REMOVE netElement\;
 				}
 				
+				\If{netElement in unprotected\_switch\_normal}
+				{
+					switch\_normal $\leftarrow$ REMOVE netElement\;
+				}
+			}
+			
+			\tcc{Final condition}
+			\If{switch\_start == [ ] AND switch\_normal == [ ] AND critical has no signals}
+			{
+				Validated = True\;
 			}
 			
 			\KwResult{Validated} 
 		\end{algorithm}
-		\lipsum[1]
-
-\lipsum[1-5]
+		
+		
+	Una vez que todos los principios de señalamiento ferroviario han sido validados podemos afirmar que el señalamiento generado por el RNA es seguro y cumple con todos los requisitos planteados en la Sección \ref{sec:principios}. Dicho señalamiento deberá ser implementado por el Generador Automático de Códigos en VHDL (ACG), explicado en profundidad en la Sección \ref{sec:ACG}.
