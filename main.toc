@@ -49,15 +49,15 @@
 \contentsline {subsection}{\numberline {3.3.2}Algoritmo de simplificación por herencia horizontal}{50}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Limpieza de señales}{51}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Generación de las tablas de enclavamiento}{53}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Validación de tablas de enclavamiento}{54}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Validación del señalamiento y las tablas de enclavamiento}{54}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Validación de principios de señalamiento ferroviario}{56}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Validación del principio de autoridad}{56}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Validación del principio de claridad}{57}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Validación del principio de anticipación}{58}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.2}Validación del principio de claridad}{56}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Validación del principio de anticipación}{57}{subsection.3.6.3}%
 \contentsline {subsection}{\numberline {3.6.4}Validación del principio de granularidad}{58}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Validación del principio de terminalidad}{59}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Validación del principio de infraestructura}{60}{subsection.3.6.6}%
-\contentsline {subsection}{\numberline {3.6.7}Validación del principio de no bloqueo}{60}{subsection.3.6.7}%
+\contentsline {subsection}{\numberline {3.6.5}Validación del principio de terminalidad}{58}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Validación del principio de infraestructura}{59}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Validación del principio de no bloqueo}{59}{subsection.3.6.7}%
 \contentsline {chapter}{\numberline {4}Automatic Code Generator (ACG)}{62}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}Sistemas de enclavamiento}{62}{subsection.4.0.1}%
 \contentsline {subsubsection}{\numberline {4.0.1.1}Bloqueo de máquina de cambios por ocupación}{62}{subsubsection.4.0.1.1}%

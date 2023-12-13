@@ -1,5 +1,6 @@
 \section{Validación de principios de señalamiento ferroviario}
-
+	\label{sec:validar_principios}
+	
 	% Autoridad > todas las rutas combinadas cubren toda la traza ferroviaria.
 	% Claridad > autoridad no ambigua.
 	% Anticipacion > avisar con antelacion.
@@ -24,8 +25,7 @@
 			\SetNoFillComment
 			\LinesNotNumbered 
 			Validated = False\;
-			$\{$Routes$\}$\; 
-			$\{$netElements$\}$ without netElements with lineBuffer\; 
+			$\{$Routes$\}$, $\{$netElements$\}$ without netElements with lineBuffer\; 
 			\tcc{Validate that every route covers all the railway tracks.}
 			\For{route in $\{$Routes$\}$}
 			{
@@ -92,18 +92,17 @@
 		
 		El principio de anticipación radica en que existe una señal previo a cada peligro, situada en la zona de señalamiento. Una zona señalamiento puede estar próxima a una curva, al final de la traza ferroviaria o en las inmediaciones de un paso a nivel, una estación, un cambio de vías o cualquier infraestructura ferroviaria a ser protegida. En otras palabras, el señalamiento debe estar distribuido de tal manera que entre dos señales que constituyen una ruta exista un único peligro o situación que quiera la atención del conductor.
 		
-		El RNA utiliza el Algoritmo \ref{alg:ppio_anticipacion} para validar el principio de anticipación, detectando las regiones de señalamiento como zonas peligro peligrosas, producto del trazado ferroviario (curvas, finales de vía) o de la infraestructura ferroviaria (plataformas, pasos a nivel, etc.). A continuación, el Algoritmo \ref{alg:ppio_anticipacion} comprueba que existe una señal para cada dirección del peligro, apuntando en el sentido del mismo. Garantizando de esta forma, que previo a cada peligro inicie o finalice una ruta, en caso de que la ruta sea segura de ser transitada o no, respectivamente.
+		El RNA utiliza el Algoritmo \ref{alg:ppio_anticipacion} para validar el principio de anticipación, detectando las regiones de señalamiento como zonas peligro peligrosas, producto del trazado ferroviario (curvas, finales de vía) o de la infraestructura ferroviaria (plataformas, pasos a nivel, etc.). 
 		
 		\begin{algorithm}[hbt!]
-			\caption{Algoritmo de validación del principio de claridad.}\label{alg:ppio_anticipacion}
+			\caption{Algoritmo de validación del principio de anticipación.}\label{alg:ppio_anticipacion}
 			\DontPrintSemicolon
 			%\SetAlgoLined
 			\SetNoFillComment
 			\LinesNotNumbered 
-			Validated = True\;
-			$\{$Routes$\}$\; 
-			$\{$Track$\}$\; 
-			$\{$Dangers$\}$ = None\;
+			Validated = True, $\{$Dangers$\}$ = None\;
+			$\{$Routes$\}$, $\{$Track$\}$\; 
+		
 			\tcc{Validate that each danger is protected by the signalling.}
 			
 			\For{curve in $\{$Tracks$\}$}
@@ -135,6 +134,8 @@
 			
 			\KwResult{Validated} 
 		\end{algorithm}
+		
+		A continuación, el Algoritmo \ref{alg:ppio_anticipacion} comprueba que existe una señal para cada dirección del peligro, apuntando en el sentido del mismo. Garantizando de esta forma, que previo a cada peligro inicie o finalice una ruta, en caso de que la ruta sea segura de ser transitada o no, respectivamente.
 		
 		Una sola región de señalamiento que tenga una de sus entradas sin proteger por una señal es suficiente para que el Algoritmo \ref{alg:ppio_anticipacion} devuelva un resultado negativo. Si todas las entradas de cada región de señalamiento están protegidas por una señal, entonces el principio de anticipación se encuentra cumplido. En el caso de que los elementos ferroviarios se encuentren muy próximos, por herencia horizontal, se consideran un único elemento y sus regiones de señalamiento se simplifican como se explicó en la Sección \ref{sec:horizontal}.
 		
@@ -216,7 +217,7 @@
 		
 		El principio de infraestructura radica en que el señalamiento debe proteger, sin excepciones, toda infraestructura ferroviaria crítica, tales como las plataformas y los pasos a nivel. Con excepción de los cambios de vías, que son cubiertos por el principio de no bloqueo. La infraestructura deberá estar protegida por el señalamiento tal como se explicó en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, permitiendo a las formaciones detenerse en las plataformas y antes de los pasos a nivel, respectivamente.
 
-		El RNA utiliza el Algoritmo \ref{alg:ppio_infraestructura} para validar el principio de infraestructura, recorriendo cada una de las rutas generadas y analizando aquellas que atraviesan paso a nivel o que inician o finalizan en una plataforma. Una vez detectadas las rutas, se procede a analizar que clase de señales poseen. Si son compatibles con las condiciones indicadas en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de infraestructura ha sido validado exitosamente.
+		El RNA utiliza el Algoritmo \ref{alg:ppio_infraestructura} para validar el principio de infraestructura, recorriendo cada una de las rutas generadas y analizando aquellas que atraviesan paso a nivel o que inician o finalizan en una plataforma. 
 		
 		\begin{algorithm}[hbt!]
 			\caption{Algoritmo de validación del principio de infraestructura.}\label{alg:ppio_infraestructura}
@@ -257,6 +258,8 @@
 			\KwResult{Validated} 
 		\end{algorithm}
 		
+		Una vez detectadas las rutas, se procede a analizar que clase de señales poseen.  Si son compatibles con las condiciones indicadas en la Sección \ref{sec:platform} y la Sección \ref{sec:crossing}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de infraestructura ha sido validado exitosamente.
+		
 		En el caso de que las plataformas y los pasos a nivel se encuentren muy próximos, por la simplificación de señalamiento por herencia horizontal explicada en la Sección \ref{sec:horizontal}, igualmente el Algoritmo \ref{alg:ppio_infraestructura} buscará las señales mas próximas al nuevo elemento ferroviario compuesto. De esta manera, al analizar todas las rutas exitosamente, es posible validar el señalamiento que protege a los elementos ferroviarios críticos, cumpliendo el principio de infraestructura.
 		
 	\subsection{Validación del principio de no bloqueo}
@@ -264,7 +267,9 @@
 		
 		El principio de no bloqueo radica en que el señalamiento debe proteger los cambios de vías en sus tres direcciones: inicio,normal y desvío, como se explica en la Sección \ref{sec:switches}. A su vez, debe garantizarse que los cambios compuestos no tengan señales intermedias, para evitar que las formaciones se detengan en zonas críticas, bloqueando los cambios de vías para otras formaciones que las requieran, como se explica en la Sección \ref{sec:vertical}.
 		
-		El RNA utiliza el Algoritmo \ref{alg:ppio_nobloqueo} para validar el principio de no bloqueo, recorriendo la lista de máquinas de cambios. El primer paso es agrupar en tres listas distintas todos los netElements de cada cambio de vía según su dirección: inicio, normal y desvío. Luego, son removidas de las listas de inicio y normal todos los netElements que también pertenezcan a la lista de desvío. De esta manera, el algoritmo contempla a los cambios compuestos productos de la simplificación por herencia vertical (ver Sección \ref{sec:vertical}). A continuación, se remueven de las listas de inicio y normal todos los netElements que tienen una señal apuntando hacia el cambio de vías. Finalmente, si ambas listas se encuentran vacías y los netElements de la lista de cambios que también perteneciesen a las listas de inicio y normal originales no tienen señales, entonces el principio de no bloqueo ha sido validado exitosamente.
+		El RNA utiliza el Algoritmo \ref{alg:ppio_nobloqueo} para validar el principio de no bloqueo, recorriendo la lista de máquinas de cambios. El primer paso es agrupar en tres listas distintas todos los netElements de cada cambio de vía según su dirección: inicio, normal y desvío. Luego, son removidas de las listas de inicio y normal todos los netElements que también pertenezcan a la lista de desvío. De esta manera, el algoritmo contempla a los cambios compuestos productos de la simplificación por herencia vertical (ver Sección \ref{sec:vertical}). 
+		
+	
 		
 		\begin{algorithm}[hbt!]
 			\caption{Algoritmo de validación del principio de no bloqueo.}\label{alg:ppio_nobloqueo}
@@ -274,10 +279,7 @@
 			\LinesNotNumbered 
 			Validated = False\;
 			$\{$Switches$\}$\;
-			switch\_start = []\;
-			switch\_normal = []\;
-			switch\_branch = []\;
-			critical = []\;
+			switch\_start = [], switch\_normal = [], switch\_branch = [], critical = []\;
 			\tcc{Validate that each switch have protective signals}
 			
 			\tcc{List netElements for each side of each switch}
@@ -320,5 +322,6 @@
 			\KwResult{Validated} 
 		\end{algorithm}
 		
+		A continuación, se remueven de las listas de inicio y normal todos los netElements que tienen una señal apuntando hacia el cambio de vías. Finalmente, si ambas listas se encuentran vacías y los netElements de la lista de cambios que también perteneciesen a las listas de inicio y normal originales no tienen señales, entonces el principio de no bloqueo ha sido validado exitosamente.
 		
 	Una vez que todos los principios de señalamiento ferroviario han sido validados podemos afirmar que el señalamiento generado por el RNA es seguro y cumple con todos los requisitos planteados en la Sección \ref{sec:principios}. Dicho señalamiento deberá ser implementado por el Generador Automático de Códigos en VHDL (ACG), explicado en profundidad en la Sección \ref{sec:ACG}.

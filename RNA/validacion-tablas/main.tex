@@ -1,7 +1,8 @@
-\section{Validación de tablas de enclavamiento}
+\section{Validación del señalamiento y las tablas de enclavamiento}
 
-	\lipsum[1-5]
+	La validación a nivel general del señalamiento generado por el RNA se realiza comparándolo con el señalamiento original. Esta comparación se realiza mediante sus tablas de enclavamientos, que representan de forma objetiva y detallada el listado de rutas y como se relacionan con la infraestructura ferroviaria. Si no existiese señalamiento previo y, por lo tanto, no existe una tabla de enclavamientos original contra la cual comparar, entonces la validación es exitosa por defecto. Los detalles particulares respecto a la calidad del señalamiento y la seguridad que aportan al sistema son discutidos en la Sección \ref{sec:validar_principios}.
 	
+	En el caso de que exista un señalamiento previo, el RNA utiliza el Algoritmo \ref{alg:interlocking_tables} para validar el señalamiento generado. Para lo cual, en primer lugar, se genera una red de digrafos en base a la tabla de enclavamientos original. Este digrafo tendrá como nodos iniciales y finales los netElement iniciales y finales de cada ruta respectivamente. Las rutas, a su vez, serán las aristas que conecten los nodos. Análogamente se crea un digrafo que represente al nuevo señalamiento generado por el RNA.
 	
 	\begin{algorithm}[hbt!]
 		\caption{Algoritmo de validación de tablas de enclavamiento ferroviarias.}\label{alg:interlocking_tables}
@@ -54,4 +55,27 @@
 		\KwResult{routes\_found} 
 	\end{algorithm}
 	
-	\lipsum[1-5]
+	A continuación, el Algoritmo \ref{alg:interlocking_tables} recorre la lista de rutas originales. Si es posible encontrar la ruta original en el nuevo digrafo, con el mismo sentido de circulación y mismos netElements de inicio y destino, entonces se computa que ambas rutas son equivalentes. Es de esperar que, por el principio de granularidad que subdivide las rutas largas en rutas mas pequeñas y funcionales, la cantidad de rutas generadas por el RNA sea igual o mayor que la cantidad de rutas originales.
+	
+	Este es el caso de una ruta original que se encuentra definida entre los netElement A y D, pero no es posible encontrar rutas en el digrafo generado que cubran el trayecto A-D. Entonces se procede a calcular todas las sucesiones de rutas que, comenzando por A, puedan concatenarse, sin solaparse, hasta llegar a D. Por ejemplo, las rutas que recorran A-B, B-C y C-D serán tres rutas que, en conjunto, serán equivalentes a la ruta original A-D. Por el principio de autoridad, podemos afirmar que la combinación de rutas mas pequeñas serán equivalentes a rutas mas largas del señalamiento original y, a su vez, la combinación de todas las rutas permitirán recorrer toda la locación. Cada ruta particionada encontrada se computa como una nueva ruta encontrada. Por lo que una ruta compuesta de N rutas simples que, en conjunto, equivalen a una de las rutas originales, será computada como N rutas.
+	
+	Adicionalmente, es probable que el señalamiento generado por el RNA proteja elementos ferroviarios no contemplados en el señalamiento original, añadiendo mas rutas a la tabla de enclavamientos. Estas rutas no tendrán un equivalente en el señalamiento original, pero son computadas igualmente ya que amplían la logística y seguridad de la red ferroviaria.
+	
+	El grado de cobertura del señalamiento generado por el RNA será una proporción entre la cantidad de rutas generadas y las originales. Si alguna de las rutas originales no tiene un equivalente directo o compuesto con las rutas generadas por el RNA, la cobertura será menor al 100\%. Si la cantidad de rutas es la misma y no existe ninguna ruta original sin equivalente en el nuevo señalamiento entonces la cobertura es del 100\%. Si, adicionalmente a la equivalencia total de rutas originales y generadas, el señalamiento generado incorpora nuevas rutas que incrementan la seguridad y la logística de la red, la cobertura es mayor al 100\%. La validación del señalamiento es exitosa si la cobertura iguala o supera al 100\%.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
