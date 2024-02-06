@@ -1,0 +1,19 @@
+\section{Objetivo de esta tesis}
+
+    El objetivo de esta tesis es el desarrollo de una herramienta que realice automáticamente tanto el diseño del señalamiento como la implementación del sistema de enclavamiento en una plataforma electrónica. El flujo de trabajo mostrado en la Figura \ref{fig:workflow} introduce el Analizador de Redes Ferroviarias (RNA, del inglés, Railway Network Analyzer) y el Generador Automático de Código (ACG, del inglés, Automatic Code Generator). Cada flecha indica las relaciones entre los diferentes bloques. El RNA se enfoca principalmente en el comportamiento estático del sistema, mientras que el ACG se enfoca en el comportamiento dinámico. Ambos son explicados a profundidad en el Capítulo \ref{sec:RNA} y Capítulo \ref{sec:ACG} respectivamente.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1\textwidth]{Figuras/workflow.png}
+        \centering\caption{Flujo de trabajo de la presente tesis.}
+        \label{fig:workflow}
+    \end{figure}
+
+    El RNA importa un archivo en formato railML que describe el sistema, con o sin señalamiento previo. Luego el RNA analiza la topología de la red, detecta todos los elementos ferroviarios involucrados y genera el señalamiento necesario para que la red sea segura. Finalmente, el RNA exporta un nuevo archivo en formato railML con el nuevo señalamiento, además de la tabla de enclavamientos del sistema, con todas las rutas soportadas por esa red ferroviaria. El nuevo archivo railML es utilizado por el ACG para generar código en VHDL [VHDL] (del inglés, Very High-Speed Integrated Circuit Hardware Description Language) automáticamente para ser sintetizado en una plataforma FPGA [FPGA] (del inglés, Field Programmable Gate Arrays).
+    
+    El proceso de validación incluye la validación de la sintaxis del archivo railML generado por el RNA, la validación de la tabla de enclavamiento generada automáticamente por el RNA y, finalmente, la validación del señalamiento generado conforme a los principios de señalamiento (Sección \ref{sec:principios}). Para implementar automáticamente un sistema de enclavamiento, el ACG toma este diseño de señalamiento estático generado automáticamente y un modelo de comportamiento dinámico en redes de Petri. %Un ingeniero de señalamiento puede realizar un análisis dinámico adicional, incluyendo cualquier problema relacionado con el tiempo, como fallas o retrasos, que están más allá del alcance de este artículo.
+
+\input{introduccion/enfoque}
+\input{introduccion/arquitectura}
+%\input{introduccion/sistema}
+\input{introduccion/validacion}
