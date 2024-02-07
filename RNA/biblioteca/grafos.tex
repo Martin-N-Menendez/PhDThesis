@@ -1,4 +1,4 @@
-\subsection{Infraestructura y Redes de grafos}
+\subsection{Infraestructura y redes de grafos}
     \label{sec:grafos}
 
     La clase Infraestructure define todos los elementos ferroviarios con características físicas, materiales y estáticas. Las subclases que contiene son:
@@ -12,7 +12,7 @@
         \item InfrastructureStates: define la validez de los datos referidos a cada elemento ferroviario.
     \end{itemize}
 
-    Para realizar el análisis de la red, el RNA debe centrarse en tres de estas subclases: Topology (para conocer COMO es la red), FunctionalInfrastructure (para conocer QUE elementos tiene la red) y InfrastructureVisualizations (para conocer DONDE está cada elemento ferroviario).
+    Para realizar el análisis de la red, el RNA debe centrarse en tres de estas subclases: Topology (para conocer cómo es la red), FunctionalInfrastructure (para conocer qué elementos tiene la red) y InfrastructureVisualizations (para conocer dónde está cada elemento ferroviario).
 
     Empezando por la clase Topology, existen dos subclases esenciales para este análisis: la subclase netElements y la subclase netRelationships. Ambas son subclases vectores, constituidas por subclases mas pequeñas: netElement y netRelationship. Un ejemplo de la clase netElement se puede ver en el Código \ref{lst:netElement}.
     
@@ -35,7 +35,7 @@
 
     Los netElement son los nodos de la red de grafos, pero estos no son puntuales, sino que son bidimensionales. De las coordenadas de ne3 podemos deducir que ne3 se encuentra definido de derecha a izquierda. Conocer la orientación del netElement será importante a la hora de definir la circulación, información necesaria para generar las rutas.
 
-    La subclase netRelation son las aristas de la red de grafos que relacionan dos netElements entre si. En el Código \ref{lst:netRelation} se muestra un ejemplo de los netRelation que vinculan a los netElement ne3, ne46 y ne53.    
+    La subclase netRelation son las aristas de la red de grafos que relacionan dos netElements entre sí. En el Código \ref{lst:netRelation} se muestra un ejemplo de los netRelation que vinculan a los netElement ne3, ne46 y ne53.    
     
     \begin{lstlisting}[language = XML, caption = Clase netRelation , label = {lst:netRelation}]
 <netRelation navigability="Both" positionOnA="1" positionOnB="1" id="nr_ne3ne46_swi77">
@@ -52,10 +52,10 @@
 </netRelation>
     \end{lstlisting}
     
-    La primer netRelation es entre el netElement ne3 y el ne46, la segunda netRelation es entre el netElement ne3 y el ne53. Esto es consistente con los parámetros de relation que tenía el netElement ne3 en el Código \ref{lst:netElement}. Sin embargo, en el tercer netRelation vemos que existe una relación entre los netElement ne46 y ne53 pero, en este caso, el parámetro navigability es "None", a diferencia de los primeros dos que era "both". La navegabilidad es el parámetro que hace que una red de grafos tenga sentido como red ferroviaria: que exista una conexión no implica que sea físicamente utilizable por un tren, tal como se explico en la Sección \ref{sec:RTM}.
+    La primer netRelation es entre el netElement ne3 y el ne46, la segunda netRelation es entre el netElement ne3 y el ne53. Esto es consistente con los parámetros de relation que tenía el netElement ne3 en el Código \ref{lst:netElement}. Sin embargo, en el tercer netRelation vemos que existe una relación entre los netElement ne46 y ne53 pero, en este caso, el parámetro navigability es "None", a diferencia de los primeros dos que era "both". La navegabilidad es el parámetro que hace que una red de grafos tenga sentido como red ferroviaria: que exista una conexión no implica que sea físicamente utilizable por un tren, tal como se explicó en la Sección \ref{sec:RTM}.
     
     % Explicar analisis de red de grafos
-    La secuencia de análisis de la red de grafos se describe en el Algoritmo \ref{alg:graph_network}. El primer paso es procesar la subclase netElements para obtener un diccionario de todos los nodos de la red. Ordenar este diccionario es importante para agilizar la búsqueda de rutas mas adelante. El criterio de ordenamiento fue por coordenadas, de menor a mayor, priorizando la coordenada x por sobre la y, pero cualquier otro criterio sería válido. Con el diccionario de nodos y analizando la subclase netRelations es posible construir un diccionario de netPaths. Este diccionario utiliza cada nodo del grafo como índice y contiene un diccionario con todos los nodos que son vecinos anteriores y posteriores (considerando el criterio de ordenamiento, algunos nodos estarán antes o después).
+    La secuencia de análisis de la red de grafos se describe en el Algoritmo \ref{alg:graph_network}. El primer paso es procesar la subclase netElements para obtener un diccionario de todos los nodos de la red. Ordenar este diccionario es importante para agilizar la búsqueda de rutas más adelante. El criterio de ordenamiento fue por coordenadas, de menor a mayor, priorizando la coordenada x por sobre la y, pero cualquier otro criterio sería válido. Con el diccionario de nodos y analizando la subclase netRelations es posible construir un diccionario de netPaths. Este diccionario utiliza cada nodo del grafo como índice y contiene un diccionario con todos los nodos que son vecinos anteriores y posteriores (considerando el criterio de ordenamiento, algunos nodos estarán antes o después).
     
         \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
             \caption{Análisis de la red de grafos}
@@ -71,9 +71,9 @@
             \end{algorithmic}
         \end{algorithm}
 
-    La cantidad de vecinos de cada nodo es fundamental para poder clasificarlos. Los nodos que posee un solo vecino serán nodos que se encuentren en el límite de la red (límite relativo u absoluto). Aquellos con dos vecinos, uno anterior y otro posterior, son nodos normales. En cambio, si tienen dos vecinos y ambos son anteriores o ambos son posteriores entonces son nodos que con toda seguridad tienen una máquina de cambios. Por ejemplo, el nodo ne3 del Código \ref{lst:netRelation} posee una máquina de cambios ya que los nodos ne46 y ne53 son anteriores a ne3.
+    La cantidad de vecinos de cada nodo es fundamental para poder clasificarlos. Los nodos que poseen un solo vecino serán nodos que se encuentren en el límite de la red (límite relativo o absoluto). Aquellos con dos vecinos, uno anterior y otro posterior, son nodos normales. En cambio, si tienen dos vecinos y ambos son anteriores o ambos son posteriores entonces son nodos que con toda seguridad tienen una máquina de cambios. Por ejemplo, el nodo ne3 del Código \ref{lst:netRelation} posee una máquina de cambios ya que los nodos ne46 y ne53 son anteriores a ne3.
 
-    A continuación, es necesario determinar la conexidad de la red. Una red de grafos puede ser como alguna de las ilustradas en la Figura \ref{fig:conexidad}. Las redes de grafos que tengan nodos aislados o una cantida de vecinos tales que ese nodo no represente a ninguna máquina de cambios existente no podrá ser una red ferroviaria. La red no tiene que ser totalmente conexa, se admiten redes ferroviarias disjuntas, siempre que cada red funcione de manera independiente, con una cantidad mínima de nodos en cada una.   
+    A continuación, es necesario determinar la conexidad de la red. Una red de grafos puede ser como alguna de las ilustradas en la Figura \ref{fig:conexidad}. Las redes de grafos que tengan nodos aislados o una cantidad de vecinos tales que ese nodo no represente a ninguna máquina de cambios existente no podrán ser consideradas una red ferroviaria. La red no tiene que ser totalmente conexa, se admiten redes ferroviarias disjuntas, siempre que cada red funcione de manera independiente, con una cantidad mínima de nodos en cada una.   
 
     \begin{figure}[!h]
         \centering

@@ -27,12 +27,12 @@
 \contentsline {section}{\numberline {1.5}Objetivo de esta tesis}{17}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Enfoque aplicado}{18}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Arquitectura del sistema}{18}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Validación del sistema}{19}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.3}Amenazas a la validez del sistema}{19}{subsection.1.5.3}%
 \contentsline {chapter}{\numberline {2}Railway Network Analyzer (RNA)}{21}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Biblioteca RailML}{21}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Campo de metadatos}{22}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Clase common}{22}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Infraestructura y Redes de grafos}{23}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Infraestructura y redes de grafos}{23}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Vías}{26}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Fin de vía y transiciones}{28}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Sistemas de detección de formaciones ferroviarias}{29}{subsection.2.1.6}%
