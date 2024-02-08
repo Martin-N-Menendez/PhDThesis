@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  7 FEB 2024 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  8 FEB 2024 20:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1776,7 +1776,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (caratula/main.tex
-<caratula/FIUBA.png, id=502, 598.3956pt x 845.559pt>
+<caratula/FIUBA.png, id=510, 598.3956pt x 845.559pt>
 File: caratula/FIUBA.png Graphic file (type png)
 <use caratula/FIUBA.png>
 Package pdftex.def Info: caratula/FIUBA.png  used on input line 12.
@@ -1911,9 +1911,9 @@ LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [5]
-LaTeX Info: Redefining \sptext on input line 100.
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \sptext on input line 101.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1942,11 +1942,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-
-Overfull \hbox (2.56111pt too wide) detected at line 16
-\T1/lmr/m/n/10 1.2.10 
- []
-
 
 Overfull \hbox (2.56111pt too wide) detected at line 30
 \T1/lmr/m/n/10 2.1.10 
@@ -1979,17 +1974,17 @@ Overfull \hbox (2.56111pt too wide) detected at line 35
 
 [8]
 Overfull \hbox (2.56111pt too wide) detected at line 55
-\T1/lmr/m/n/10 3.0.10 
+\T1/lmr/m/n/10 3.1.10 
  []
 
 
 Overfull \hbox (2.56111pt too wide) detected at line 56
-\T1/lmr/m/n/10 3.0.11 
+\T1/lmr/m/n/10 3.1.11 
  []
 
 
 Overfull \hbox (2.56111pt too wide) detected at line 57
-\T1/lmr/m/n/10 3.0.12 
+\T1/lmr/m/n/10 3.1.12 
  []
 
 LaTeX Info: Redefining \sptext on input line 106.
@@ -2043,14 +2038,14 @@ Cap\'{\i }tulo 1.
 (introduccion/topologias/main.tex (introduccion/topologias/bypass.tex [1
 
 ]
-<Figuras/bypass.png, id=1014, 851.43094pt x 171.64125pt>
+<Figuras/bypass.png, id=1023, 851.43094pt x 171.64125pt>
 File: Figuras/bypass.png Graphic file (type png)
 <use Figuras/bypass.png>
 Package pdftex.def Info: Figuras/bypass.png  used on input line 9.
 (pdftex.def)             Requested size: 418.25368pt x 84.31708pt.
 )
 (introduccion/topologias/simple.tex
-<Figuras/simple.png, id=1016, 855.94781pt x 297.36093pt>
+<Figuras/simple.png, id=1025, 855.94781pt x 297.36093pt>
 File: Figuras/simple.png Graphic file (type png)
 <use Figuras/simple.png>
 Package pdftex.def Info: Figuras/simple.png  used on input line 9.
@@ -2059,13 +2054,13 @@ Package pdftex.def Info: Figuras/simple.png  used on input line 9.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2 <./Figuras/bypass.png> <./Figuras/simple.png>]
-<Figuras/hub.png, id=1025, 893.58844pt x 398.23781pt>
+<Figuras/hub.png, id=1034, 893.58844pt x 398.23781pt>
 File: Figuras/hub.png Graphic file (type png)
 <use Figuras/hub.png>
 Package pdftex.def Info: Figuras/hub.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 186.40005pt.
 ) (introduccion/topologias/terminal.tex
-<Figuras/terminal.png, id=1027, 925.20656pt x 375.65344pt>
+<Figuras/terminal.png, id=1036, 925.20656pt x 375.65344pt>
 File: Figuras/terminal.png Graphic file (type png)
 <use Figuras/terminal.png>
 Package pdftex.def Info: Figuras/terminal.png  used on input line 7.
@@ -2073,64 +2068,41 @@ Package pdftex.def Info: Figuras/terminal.png  used on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (introduccion/estado-del-arte/main.tex
+)) (introduccion/principios.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [3 <./Figuras/hub.png>]
-(introduccion/estado-del-arte/historia.tex
-<Figuras/palancas.jpg, id=1033, 1284.8pt x 722.7pt>
+ [3 <./Figuras/hub.png>])
+(introduccion/enclavamientos/main.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [4{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
+nc}{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} 
+<./Figuras/terminal.png>]
+(introduccion/enclavamientos/historia.tex
+<Figuras/palancas.jpg, id=1048, 1284.8pt x 722.7pt>
 File: Figuras/palancas.jpg Graphic file (type jpg)
 <use Figuras/palancas.jpg>
 Package pdftex.def Info: Figuras/palancas.jpg  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 235.26067pt.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
- [4 <./Figuras/terminal.png> <./Figuras/palancas.jpg>]
-<Figuras/relees.jpg, id=1039, 1284.8pt x 624.3325pt>
+<Figuras/relees.jpg, id=1050, 1284.8pt x 624.3325pt>
 File: Figuras/relees.jpg Graphic file (type jpg)
 <use Figuras/relees.jpg>
 Package pdftex.def Info: Figuras/relees.jpg  used on input line 18.
 (pdftex.def)             Requested size: 418.25368pt x 203.23909pt.
-<Figuras/llavallol.jpg, id=1041, 1284.8pt x 624.3325pt>
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+ [5 <./Figuras/palancas.jpg>]
+<Figuras/llavallol.jpg, id=1057, 1284.8pt x 624.3325pt>
 File: Figuras/llavallol.jpg Graphic file (type jpg)
 <use Figuras/llavallol.jpg>
 Package pdftex.def Info: Figuras/llavallol.jpg  used on input line 27.
 (pdftex.def)             Requested size: 418.25368pt x 203.23909pt.
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
- [5 <./Figuras/relees.jpg>])
-(introduccion/estado-del-arte/empresas.tex
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
- [6 <./Figuras/llavallol.jpg>])
-(introduccion/estado-del-arte/estandares.tex
-<Figuras/IEC61508.png, id=1052, 356.33125pt x 142.5325pt>
-File: Figuras/IEC61508.png Graphic file (type png)
-<use Figuras/IEC61508.png>
-Package pdftex.def Info: Figuras/IEC61508.png  used on input line 7.
-(pdftex.def)             Requested size: 418.25368pt x 167.30823pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (introduccion/estado-del-arte/redundancia.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [7 <./Figuras/IEC61508.png>]
-<Figuras/redundancia.png, id=1060, 834.11626pt x 351.56343pt>
-File: Figuras/redundancia.png Graphic file (type png)
-<use Figuras/redundancia.png>
-Package pdftex.def Info: Figuras/redundancia.png  used on input line 7.
-(pdftex.def)             Requested size: 418.25368pt x 176.28552pt.
 )
-(introduccion/estado-del-arte/estudios.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [8{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{
-C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} 
-<./Figuras/redundancia.png>])
-(introduccion/estado-del-arte/tablas.tex
-<Figuras/rutas.PNG, id=1071, 310.91156pt x 97.86563pt>
+(introduccion/enclavamientos/tablas.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [6 <./Figuras/relees.jpg> <./Figuras/llavallol.jpg>]
+<Figuras/rutas.PNG, id=1063, 310.91156pt x 97.86563pt>
 File: Figuras/rutas.PNG Graphic file (type png)
 <use Figuras/rutas.PNG>
 Package pdftex.def Info: Figuras/rutas.PNG  used on input line 9.
@@ -2139,78 +2111,101 @@ Package pdftex.def Info: Figuras/rutas.PNG  used on input line 9.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+) (introduccion/enclavamientos/funcional.tex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [7 <./Figuras/rutas.PNG>])
+(introduccion/enclavamientos/geografico.tex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [8]))
+(introduccion/estandares/main.tex (introduccion/estandares/estandares.tex
+<Figuras/IEC61508.png, id=1081, 356.33125pt x 142.5325pt>
+File: Figuras/IEC61508.png Graphic file (type png)
+<use Figuras/IEC61508.png>
+Package pdftex.def Info: Figuras/IEC61508.png  used on input line 7.
+(pdftex.def)             Requested size: 418.25368pt x 167.30823pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-[9 <./Figuras/rutas.PNG>]) (introduccion/estado-del-arte/funcional.tex
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- [10])
-(introduccion/estado-del-arte/geografico.tex)
-(introduccion/estado-del-arte/railTopoModel/main.tex
-<Figuras/objetos.png, id=1089, 679.78969pt x 521.69907pt>
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+[9 <./Figuras/IEC61508.png>]) (introduccion/estandares/redundancia.tex
+<Figuras/redundancia.png, id=1089, 834.11626pt x 351.56343pt>
+File: Figuras/redundancia.png Graphic file (type png)
+<use Figuras/redundancia.png>
+Package pdftex.def Info: Figuras/redundancia.png  used on input line 7.
+(pdftex.def)             Requested size: 418.25368pt x 176.28552pt.
+))
+(introduccion/railML/main.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [10{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
+enc} <./Figuras/redundancia.png>]
+(introduccion/railML/railTopoModel/main.tex
+<Figuras/objetos.png, id=1098, 679.78969pt x 521.69907pt>
 File: Figuras/objetos.png Graphic file (type png)
 <use Figuras/objetos.png>
 Package pdftex.def Info: Figuras/objetos.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 320.98233pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(introduccion/estado-del-arte/railTopoModel/base.tex)
-(introduccion/estado-del-arte/railTopoModel/netEntities.tex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
- [11]
-<Figuras/grafos.png, id=1096, 889.07156pt x 293.59688pt>
+(introduccion/railML/railTopoModel/base.tex)
+(introduccion/railML/railTopoModel/netEntities.tex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [11 <./Figuras/objetos.png>]
+<Figuras/grafos.png, id=1105, 889.07156pt x 293.59688pt>
 File: Figuras/grafos.png Graphic file (type png)
 <use Figuras/grafos.png>
 Package pdftex.def Info: Figuras/grafos.png  used on input line 10.
 (pdftex.def)             Requested size: 418.25368pt x 138.11598pt.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
- [12 <./Figuras/objetos.png> <./Figuras/grafos.png>])
-(introduccion/estado-del-arte/railTopoModel/niveles.tex
-<Figuras/capas.png, id=1104, 729.47531pt x 344.03531pt>
+) (introduccion/railML/railTopoModel/niveles.tex
+<Figuras/capas.png, id=1108, 729.47531pt x 344.03531pt>
 File: Figuras/capas.png Graphic file (type png)
 <use Figuras/capas.png>
 Package pdftex.def Info: Figuras/capas.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 197.25706pt.
-<Figuras/railtopomodel.png, id=1106, 925.95938pt x 385.44pt>
-File: Figuras/railtopomodel.png Graphic file (type png)
-<use Figuras/railtopomodel.png>
-Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
-(pdftex.def)             Requested size: 418.25368pt x 174.1051pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
-[13 <./Figuras/capas.png>])
-(introduccion/estado-del-arte/railTopoModel/positioning.tex))
-(introduccion/estado-del-arte/railML/main.tex
-(introduccion/estado-del-arte/railML/railML3.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [14 <./Figuras/railtopomodel.png>]) (introduccion/estado-del-arte/railML/Indus
-tria.tex)))
-(introduccion/contexto.tex
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
- [15]
-<Figuras/HojaDeRuta.png, id=1122, 913.91437pt x 368.87813pt>
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+[12 <./Figuras/grafos.png>]
+<Figuras/railtopomodel.png, id=1115, 925.95938pt x 385.44pt>
+File: Figuras/railtopomodel.png Graphic file (type png)
+<use Figuras/railtopomodel.png>
+Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
+(pdftex.def)             Requested size: 418.25368pt x 174.1051pt.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [13 <./Figuras/capas.png> <./Figuras/railtopomodel.png>]) (introduccion/railML
+/railTopoModel/positioning.tex))
+(introduccion/railML/railML3.tex) (introduccion/railML/Industria.tex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+ [14]))
+(introduccion/estado-del-arte/main.tex
+(introduccion/estado-del-arte/empresas.tex)
+(introduccion/estado-del-arte/estudios.tex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [15])
+(introduccion/estado-del-arte/contexto.tex
+<Figuras/HojaDeRuta.png, id=1132, 913.91437pt x 368.87813pt>
 File: Figuras/HojaDeRuta.png Graphic file (type png)
 <use Figuras/HojaDeRuta.png>
 Package pdftex.def Info: Figuras/HojaDeRuta.png  used on input line 11.
 (pdftex.def)             Requested size: 418.25368pt x 168.81355pt.
-) (introduccion/principios.tex
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [16 <./Figuras/HojaDeRuta.png>]) (introduccion/propuesta.tex
-<Figuras/workflow.png, id=1130, 1096.095pt x 522.95375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+[16])) (introduccion/propuesta.tex
+<Figuras/workflow.png, id=1140, 1096.095pt x 522.95375pt>
 File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
@@ -2219,21 +2214,24 @@ Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
-[17{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
-nc}] (introduccion/enfoque.tex) (introduccion/arquitectura.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [18 <./Figuras/workflow.png>]
-<Figuras/Architecture.png, id=1145, 615.0177pt x 333.1647pt>
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+[17 <./Figuras/HojaDeRuta.png>] (introduccion/enfoque.tex)
+(introduccion/arquitectura.tex
+<Figuras/Architecture.png, id=1149, 615.0177pt x 333.1647pt>
 File: Figuras/Architecture.png Graphic file (type png)
 <use Figuras/Architecture.png>
 Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 226.5795pt.
-) (introduccion/validacion.tex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+[18 <./Figuras/workflow.png>]) (introduccion/validacion.tex
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
  [19 <./Figuras/Architecture.png>])))
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
@@ -2269,7 +2267,7 @@ Overfull \hbox (15.0pt too wide) detected at line 72
 [][] 
  []
 
-<Figuras/conexo.PNG, id=1266, 586.44093pt x 336.50719pt>
+<Figuras/conexo.PNG, id=1275, 586.44093pt x 336.50719pt>
 File: Figuras/conexo.PNG Graphic file (type png)
 <use Figuras/conexo.PNG>
 Package pdftex.def Info: Figuras/conexo.PNG  used on input line 80.
@@ -2290,7 +2288,7 @@ Overfull \hbox (15.0pt too wide) detected at line 107
  []
 
 ) (RNA/biblioteca/vias.tex
-<Figuras/trocha.png, id=1285, 803.0pt x 231.86626pt>
+<Figuras/trocha.png, id=1294, 803.0pt x 231.86626pt>
 File: Figuras/trocha.png Graphic file (type png)
 <use Figuras/trocha.png>
 Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
@@ -2298,7 +2296,7 @@ Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
  [26 <./Figuras/trocha.png>]
-<Figuras/ascDesc.png, id=1310, 447.6725pt x 232.87pt>
+<Figuras/ascDesc.png, id=1319, 447.6725pt x 232.87pt>
 File: Figuras/ascDesc.png Graphic file (type png)
 <use Figuras/ascDesc.png>
 Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
@@ -2308,7 +2306,7 @@ Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [27 <./Figuras/ascDesc.png>]
-<Figuras/Border.png, id=1331, 1611.01875pt x 348.30125pt>
+<Figuras/Border.png, id=1340, 1611.01875pt x 348.30125pt>
 File: Figuras/Border.png Graphic file (type png)
 <use Figuras/Border.png>
 Package pdftex.def Info: Figuras/Border.png  used on input line 8.
@@ -2316,12 +2314,12 @@ Package pdftex.def Info: Figuras/Border.png  used on input line 8.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
  [28 <./Figuras/Border.png>]) (RNA/biblioteca/detection.tex
-<Figuras/Detector.png, id=1347, 556.32843pt x 97.11281pt>
+<Figuras/Detector.png, id=1356, 556.32843pt x 97.11281pt>
 File: Figuras/Detector.png Graphic file (type png)
 <use Figuras/Detector.png>
 Package pdftex.def Info: Figuras/Detector.png  used on input line 8.
 (pdftex.def)             Requested size: 418.25368pt x 73.01224pt.
-<Figuras/circuito_via.png, id=1349, 936.49875pt x 302.63063pt>
+<Figuras/circuito_via.png, id=1358, 936.49875pt x 302.63063pt>
 File: Figuras/circuito_via.png Graphic file (type png)
 <use Figuras/circuito_via.png>
 Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
@@ -2329,7 +2327,7 @@ Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  [29 <./Figuras/Detector.png> <./Figuras/circuito_via.png>]
-<Figuras/contador.jpg, id=1364, 645.10484pt x 338.5279pt>
+<Figuras/contador.jpg, id=1373, 645.10484pt x 338.5279pt>
 File: Figuras/contador.jpg Graphic file (type jpg)
 <use Figuras/contador.jpg>
 Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
@@ -2338,7 +2336,7 @@ Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [30 <./Figuras/contador.jpg>]
-<Figuras/Platform.png, id=1384, 803.25093pt x 250.68657pt>
+<Figuras/Platform.png, id=1393, 803.25093pt x 250.68657pt>
 File: Figuras/Platform.png Graphic file (type png)
 <use Figuras/Platform.png>
 Package pdftex.def Info: Figuras/Platform.png  used on input line 10.
@@ -2347,7 +2345,7 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 
 [31 <./Figuras/Platform.png>]) (RNA/biblioteca/crossing.tex
-<Figuras/cruce.png, id=1414, 800.9925pt x 317.68687pt>
+<Figuras/cruce.png, id=1423, 800.9925pt x 317.68687pt>
 File: Figuras/cruce.png Graphic file (type png)
 <use Figuras/cruce.png>
 Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
@@ -2355,7 +2353,7 @@ Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
  [32 <./Figuras/cruce.png>]) (RNA/biblioteca/switch.tex
-<Figuras/Cambios.jpg, id=1432, 4047.12pt x 3035.34pt>
+<Figuras/Cambios.jpg, id=1441, 4047.12pt x 3035.34pt>
 File: Figuras/Cambios.jpg Graphic file (type jpg)
 <use Figuras/Cambios.jpg>
 Package pdftex.def Info: Figuras/Cambios.jpg  used on input line 8.
@@ -2364,7 +2362,7 @@ Package pdftex.def Info: Figuras/Cambios.jpg  used on input line 8.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/Cambios_2.jpg, id=1434, 3034.33624pt x 2543.5025pt>
+<Figuras/Cambios_2.jpg, id=1443, 3034.33624pt x 2543.5025pt>
 File: Figuras/Cambios_2.jpg Graphic file (type jpg)
 <use Figuras/Cambios_2.jpg>
 Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
@@ -2372,7 +2370,7 @@ Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/cambio_3.PNG, id=1436, 934.99312pt x 295.85532pt>
+<Figuras/cambio_3.PNG, id=1445, 934.99312pt x 295.85532pt>
 File: Figuras/cambio_3.PNG Graphic file (type png)
 <use Figuras/cambio_3.PNG>
 Package pdftex.def Info: Figuras/cambio_3.PNG  used on input line 26.
@@ -2380,7 +2378,7 @@ Package pdftex.def Info: Figuras/cambio_3.PNG  used on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/cambios.png, id=1438, 852.18375pt x 285.31593pt>
+<Figuras/cambios.png, id=1447, 852.18375pt x 285.31593pt>
 File: Figuras/cambios.png Graphic file (type png)
 <use Figuras/cambios.png>
 Package pdftex.def Info: Figuras/cambios.png  used on input line 35.
@@ -2405,7 +2403,7 @@ Overfull \hbox (15.0pt too wide) detected at line 109
  []
 
 ) (RNA/biblioteca/signal.tex
-<Figuras/Semaforo3.png, id=1485, 839.135pt x 612.2875pt>
+<Figuras/Semaforo3.png, id=1494, 839.135pt x 612.2875pt>
 File: Figuras/Semaforo3.png Graphic file (type png)
 <use Figuras/Semaforo3.png>
 Package pdftex.def Info: Figuras/Semaforo3.png  used on input line 8.
@@ -2420,7 +2418,7 @@ LaTeX Info: Redefining \% on input line 20.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
  [37]
-<Figuras/semaforos.PNG, id=1538, 1099.10625pt x 460.72125pt>
+<Figuras/semaforos.PNG, id=1547, 1099.10625pt x 460.72125pt>
 File: Figuras/semaforos.PNG Graphic file (type png)
 <use Figuras/semaforos.PNG>
 Package pdftex.def Info: Figuras/semaforos.PNG  used on input line 23.
@@ -2434,7 +2432,7 @@ LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
  [39{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.
 enc}]
-<Figuras/limites.PNG, id=1569, 989.94844pt x 397.485pt>
+<Figuras/limites.PNG, id=1578, 989.94844pt x 397.485pt>
 File: Figuras/limites.PNG Graphic file (type png)
 <use Figuras/limites.PNG>
 Package pdftex.def Info: Figuras/limites.PNG  used on input line 68.
@@ -2444,7 +2442,7 @@ LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 
 [40 <./Figuras/limites.PNG>]
-<Figuras/detectores.PNG, id=1598, 1190.19656pt x 595.47469pt>
+<Figuras/detectores.PNG, id=1607, 1190.19656pt x 595.47469pt>
 File: Figuras/detectores.PNG Graphic file (type png)
 <use Figuras/detectores.PNG>
 Package pdftex.def Info: Figuras/detectores.PNG  used on input line 43.
@@ -2457,7 +2455,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [41]
-<Figuras/platforms.PNG, id=1619, 770.88pt x 217.5628pt>
+<Figuras/platforms.PNG, id=1628, 770.88pt x 217.5628pt>
 File: Figuras/platforms.PNG Graphic file (type png)
 <use Figuras/platforms.PNG>
 Package pdftex.def Info: Figuras/platforms.PNG  used on input line 37.
@@ -2470,7 +2468,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [42 <./Figuras/detectores.PNG>]
-<Figuras/crossings.PNG, id=1635, 767.11594pt x 217.5628pt>
+<Figuras/crossings.PNG, id=1644, 767.11594pt x 217.5628pt>
 File: Figuras/crossings.PNG Graphic file (type png)
 <use Figuras/crossings.PNG>
 Package pdftex.def Info: Figuras/crossings.PNG  used on input line 37.
@@ -2486,7 +2484,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
  [44 <./Figuras/crossings.PNG>]
-<Figuras/switches.PNG, id=1659, 897.3525pt x 343.2825pt>
+<Figuras/switches.PNG, id=1668, 897.3525pt x 343.2825pt>
 File: Figuras/switches.PNG Graphic file (type png)
 <use Figuras/switches.PNG>
 Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
@@ -2496,7 +2494,7 @@ Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [45 <./Figuras/switches.PNG>]
-<Figuras/Figure8_Crop.pdf, id=1671, 380.63907pt x 179.48155pt>
+<Figuras/Figure8_Crop.pdf, id=1680, 380.63907pt x 179.48155pt>
 File: Figuras/Figure8_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure8_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure8_Crop.pdf  used on input line 17.
@@ -2508,7 +2506,7 @@ LaTeX Info: Redefining \% on input line 78.
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
  [47]
-<Figuras/Figure9_Crop.pdf, id=1763, 379.77182pt x 177.74706pt>
+<Figuras/Figure9_Crop.pdf, id=1772, 379.77182pt x 177.74706pt>
 File: Figuras/Figure9_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure9_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure9_Crop.pdf  used on input line 89.
@@ -2518,7 +2516,7 @@ Package pdftex.def Info: Figuras/Figure9_Crop.pdf  used on input line 89.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [48 <./Figuras/Figure9_Crop.pdf>]
-<Figuras/proximity.PNG, id=1848, 377.2494pt x 218.2554pt>
+<Figuras/proximity.PNG, id=1857, 377.2494pt x 218.2554pt>
 File: Figuras/proximity.PNG Graphic file (type png)
 <use Figuras/proximity.PNG>
 Package pdftex.def Info: Figuras/proximity.PNG  used on input line 47.
@@ -2537,7 +2535,7 @@ LaTeX Info: Redefining \% on input line 60.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
  [51]
-<Figuras/Figure11.pdf, id=1903, 684.63776pt x 289.08pt>
+<Figuras/Figure11.pdf, id=1912, 684.63776pt x 289.08pt>
 File: Figuras/Figure11.pdf Graphic file (type pdf)
 <use Figuras/Figure11.pdf>
 Package pdftex.def Info: Figuras/Figure11.pdf  used on input line 58.
@@ -2577,28 +2575,22 @@ LaTeX Info: Redefining \% on input line 88.
 (ACG/main.tex
 Cap\'{\i }tulo 3.
 (ACG/sistemas-enclavamiento/main.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1.
-
 File: Figuras/bypass.png Graphic file (type png)
 <use Figuras/bypass.png>
 Package pdftex.def Info: Figuras/bypass.png  used on input line 10.
 (pdftex.def)             Requested size: 418.25368pt x 84.31708pt.
+
 (ACG/sistemas-enclavamiento/bloqueo-por-ocupacion.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1.
-
-<Figuras/ocupacion.png, id=2115, 843.90282pt x 286.06876pt>
+<Figuras/ocupacion.png, id=2124, 843.90282pt x 286.06876pt>
 File: Figuras/ocupacion.png Graphic file (type png)
 <use Figuras/ocupacion.png>
 Package pdftex.def Info: Figuras/ocupacion.png  used on input line 6.
 (pdftex.def)             Requested size: 418.25368pt x 141.78125pt.
-) (ACG/sistemas-enclavamiento/bloqueo-rutas.tex [61
+)
+(ACG/sistemas-enclavamiento/bloqueo-rutas.tex [61
 
 ]
-<Figuras/bloqueo_rutas.png, id=2120, 925.20656pt x 366.61969pt>
+<Figuras/bloqueo_rutas.png, id=2129, 925.20656pt x 366.61969pt>
 File: Figuras/bloqueo_rutas.png Graphic file (type png)
 <use Figuras/bloqueo_rutas.png>
 Package pdftex.def Info: Figuras/bloqueo_rutas.png  used on input line 6.
@@ -2611,47 +2603,45 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [62 <./Figuras/ocupacion.png>]
-<Figuras/aproximacion_1.png, id=2126, 943.27406pt x 336.50719pt>
+<Figuras/aproximacion_1.png, id=2135, 943.27406pt x 336.50719pt>
 File: Figuras/aproximacion_1.png Graphic file (type png)
 <use Figuras/aproximacion_1.png>
 Package pdftex.def Info: Figuras/aproximacion_1.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 149.20863pt.
-<Figuras/aproximacion_2.png, id=2127, 941.01563pt x 338.76563pt>
+<Figuras/aproximacion_2.png, id=2136, 941.01563pt x 338.76563pt>
 File: Figuras/aproximacion_2.png Graphic file (type png)
 <use Figuras/aproximacion_2.png>
 Package pdftex.def Info: Figuras/aproximacion_2.png  used on input line 16.
 (pdftex.def)             Requested size: 418.25368pt x 150.57188pt.
-<Figuras/aproximacion_3.png, id=2128, 942.52126pt x 336.50719pt>
+<Figuras/aproximacion_3.png, id=2137, 942.52126pt x 336.50719pt>
 File: Figuras/aproximacion_3.png Graphic file (type png)
 <use Figuras/aproximacion_3.png>
 Package pdftex.def Info: Figuras/aproximacion_3.png  used on input line 25.
 (pdftex.def)             Requested size: 418.25368pt x 149.32674pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
-[63 <./Figuras/bloqueo_rutas.png> <./Figuras/aproximacion_1.png>]
-<Figuras/aproximacion_4.png, id=2135, 940.26282pt x 335.75438pt>
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [63 <./Figuras/bloqueo_rutas.png> <./Figuras/aproximacion_1.png>]
+<Figuras/aproximacion_4.png, id=2144, 940.26282pt x 335.75438pt>
 File: Figuras/aproximacion_4.png Graphic file (type png)
 <use Figuras/aproximacion_4.png>
 Package pdftex.def Info: Figuras/aproximacion_4.png  used on input line 34.
 (pdftex.def)             Requested size: 418.25368pt x 149.3513pt.
-)
-(ACG/sistemas-enclavamiento/proteccion-solape.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [64 <./Figuras/aproximacion_2.png> <./Figuras/aproximacion_3.png> <./Figuras/a
-proximacion_4.png>]
-<Figuras/solape.png, id=2143, 938.75719pt x 335.75438pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (ACG/sistemas-enclavamiento/proteccion-solape.tex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [64 <./Figuras/aproximacion_2.png> <./Figuras/aproximacion_3.png>]
+<Figuras/solape.png, id=2151, 938.75719pt x 335.75438pt>
 File: Figuras/solape.png Graphic file (type png)
 <use Figuras/solape.png>
 Package pdftex.def Info: Figuras/solape.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 149.5921pt.
 )
 (ACG/sistemas-enclavamiento/doble-recubrimiento.tex
-<example-image.pdf, id=2144, 321.2pt x 240.9pt>
+<example-image.pdf, id=2152, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 4.
@@ -2660,8 +2650,8 @@ Package pdftex.def Info: example-image.pdf  used on input line 4.
 (ACG/sistemas-enclavamiento/liberacion-secuencial.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [65 <./Figuras/solape.png>]
-<Figuras/secuencial_1.png, id=2151, 938.75719pt x 336.50719pt>
+ [65 <./Figuras/aproximacion_4.png> <./Figuras/solape.png>]
+<Figuras/secuencial_1.png, id=2160, 938.75719pt x 336.50719pt>
 File: Figuras/secuencial_1.png Graphic file (type png)
 <use Figuras/secuencial_1.png>
 Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 7.
@@ -2670,7 +2660,7 @@ Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/secuencial_2.png, id=2152, 941.01563pt x 339.51843pt>
+<Figuras/secuencial_2.png, id=2161, 941.01563pt x 339.51843pt>
 File: Figuras/secuencial_2.png Graphic file (type png)
 <use Figuras/secuencial_2.png>
 Package pdftex.def Info: Figuras/secuencial_2.png  used on input line 16.
@@ -2682,7 +2672,7 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 [66 <C:/Users/menen/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.p
 df>]
-<Figuras/secuencial_3.png, id=2163, 941.76843pt x 337.26pt>
+<Figuras/secuencial_3.png, id=2172, 941.76843pt x 337.26pt>
 File: Figuras/secuencial_3.png Graphic file (type png)
 <use Figuras/secuencial_3.png>
 Package pdftex.def Info: Figuras/secuencial_3.png  used on input line 25.
@@ -2691,7 +2681,7 @@ LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
  [67 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png> <./Figuras/secue
 ncial_3.png>]
-<Figuras/secuencial_4.png, id=2171, 938.75719pt x 333.49594pt>
+<Figuras/secuencial_4.png, id=2180, 938.75719pt x 333.49594pt>
 File: Figuras/secuencial_4.png Graphic file (type png)
 <use Figuras/secuencial_4.png>
 Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 34.
@@ -2708,7 +2698,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [69])
 (ACG/modelado/signal.tex)) (ACG/redundancia/main.tex
-<Figuras/antagonica.png, id=2181, 812.28468pt x 386.19281pt>
+<Figuras/antagonica.png, id=2190, 812.28468pt x 386.19281pt>
 File: Figuras/antagonica.png Graphic file (type png)
 <use Figuras/antagonica.png>
 Package pdftex.def Info: Figuras/antagonica.png  used on input line 9.
@@ -2727,7 +2717,7 @@ LaTeX Info: Redefining \% on input line 90.
 (resultados-obtenidos/main.tex
 Cap\'{\i }tulo 4.
 (resultados-obtenidos/ejemplo1/main.tex
-<resultados-obtenidos/ejemplo1/images/1_original.png, id=2192, 1678.01906pt x 6
+<resultados-obtenidos/ejemplo1/images/1_original.png, id=2201, 1678.01906pt x 6
 87.31781pt>
 File: resultados-obtenidos/ejemplo1/images/1_original.png Graphic file (type pn
 g)
@@ -2735,7 +2725,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 171.31514pt.
-<resultados-obtenidos/ejemplo1/images/1_empty.png, id=2193, 2068.72874pt x 871.
+<resultados-obtenidos/ejemplo1/images/1_empty.png, id=2202, 2068.72874pt x 871.
 75688pt>
 File: resultados-obtenidos/ejemplo1/images/1_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_empty.png>
@@ -2746,7 +2736,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step1.png, id=2194, 2095.83pt x 875.520
+<resultados-obtenidos/ejemplo1/images/1_step1.png, id=2203, 2095.83pt x 875.520
 94pt>
 File: resultados-obtenidos/ejemplo1/images/1_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step1.png>
@@ -2756,7 +2746,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step2.png, id=2195, 2091.31313pt x 855.
+<resultados-obtenidos/ejemplo1/images/1_step2.png, id=2204, 2091.31313pt x 855.
 195pt>
 File: resultados-obtenidos/ejemplo1/images/1_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step2.png>
@@ -2766,7 +2756,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step3.png, id=2196, 2098.08844pt x 857.
+<resultados-obtenidos/ejemplo1/images/1_step3.png, id=2205, 2098.08844pt x 857.
 45343pt>
 File: resultados-obtenidos/ejemplo1/images/1_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step3.png>
@@ -2776,7 +2766,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step4.png, id=2197, 2079.26813pt x 872.
+<resultados-obtenidos/ejemplo1/images/1_step4.png, id=2206, 2079.26813pt x 872.
 50969pt>
 File: resultados-obtenidos/ejemplo1/images/1_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step4.png>
@@ -2786,7 +2776,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=2198, 1672.74937pt x 682.04
+<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=2207, 1672.74937pt x 682.04
 813pt>
 File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_RNA.png>
@@ -2842,7 +2832,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [76]
-<resultados-obtenidos/ejemplo2/images/2_original.png, id=2221, 2390.9325pt x 27
+<resultados-obtenidos/ejemplo2/images/2_original.png, id=2230, 2390.9325pt x 27
 1.76532pt>
 File: resultados-obtenidos/ejemplo2/images/2_original.png Graphic file (type pn
 g)
@@ -2854,7 +2844,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_empty.png, id=2222, 959.83594pt x 217.5
+<resultados-obtenidos/ejemplo2/images/2_empty.png, id=2231, 959.83594pt x 217.5
 628pt>
 File: resultados-obtenidos/ejemplo2/images/2_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_empty.png>
@@ -2864,7 +2854,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step1.png, id=2223, 3006.73312pt x 374.
+<resultados-obtenidos/ejemplo2/images/2_step1.png, id=2232, 3006.73312pt x 374.
 90062pt>
 File: resultados-obtenidos/ejemplo2/images/2_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step1.png>
@@ -2874,7 +2864,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step2.png, id=2224, 3006.73312pt x 394.
+<resultados-obtenidos/ejemplo2/images/2_step2.png, id=2233, 3006.73312pt x 394.
 47375pt>
 File: resultados-obtenidos/ejemplo2/images/2_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step2.png>
@@ -2884,7 +2874,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step3.png, id=2225, 3006.73312pt x 362.
+<resultados-obtenidos/ejemplo2/images/2_step3.png, id=2234, 3006.73312pt x 362.
 10281pt>
 File: resultados-obtenidos/ejemplo2/images/2_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step3.png>
@@ -2894,7 +2884,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step4.png, id=2226, 3006.73312pt x 328.
+<resultados-obtenidos/ejemplo2/images/2_step4.png, id=2235, 3006.73312pt x 328.
 97906pt>
 File: resultados-obtenidos/ejemplo2/images/2_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step4.png>
@@ -2904,7 +2894,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=2227, 2346.51656pt x 282.30
+<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=2236, 2346.51656pt x 282.30
 469pt>
 File: resultados-obtenidos/ejemplo2/images/2_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_RNA.png>
@@ -2950,7 +2940,7 @@ LaTeX Info: Redefining \% on input line 1.
 [80 <./resultados-obtenidos/ejemplo2/images/2_step3.png> <./resultados-obtenido
 s/ejemplo2/images/2_step4.png> <./resultados-obtenidos/ejemplo2/images/2_RNA.pn
 g>]
-<resultados-obtenidos/ejemplo3/images/3_original.png, id=2248, 6134.66907pt x 1
+<resultados-obtenidos/ejemplo3/images/3_original.png, id=2257, 6134.66907pt x 1
 477.77094pt>
 File: resultados-obtenidos/ejemplo3/images/3_original.png Graphic file (type pn
 g)
@@ -2958,21 +2948,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 100.74866pt.
-<resultados-obtenidos/ejemplo3/images/3_empty.png, id=2249, 10514.28125pt x 239
+<resultados-obtenidos/ejemplo3/images/3_empty.png, id=2258, 10514.28125pt x 239
 4.9475pt>
 File: resultados-obtenidos/ejemplo3/images/3_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 95.26996pt.
-<resultados-obtenidos/ejemplo3/images/3_step1.png, id=2250, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step1.png, id=2259, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 101.31772pt.
-<resultados-obtenidos/ejemplo3/images/3_step2.png, id=2251, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step2.png, id=2260, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step2.png>
@@ -2983,7 +2973,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step3.png, id=2252, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step3.png, id=2261, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step3.png>
@@ -2993,7 +2983,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step4.png, id=2253, 7647.82219pt x 1852
+<resultados-obtenidos/ejemplo3/images/3_step4.png, id=2262, 7647.82219pt x 1852
 .67157pt>
 File: resultados-obtenidos/ejemplo3/images/3_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step4.png>
@@ -3003,7 +2993,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=2254, 10195.08875pt x 2470.
+<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=2263, 10195.08875pt x 2470.
 22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_RNA.png>
@@ -3112,7 +3102,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [89]
-<resultados-obtenidos/ejemplo4/images/4_original.png, id=2294, 2657.42813pt x 6
+<resultados-obtenidos/ejemplo4/images/4_original.png, id=2303, 2657.42813pt x 6
 42.14906pt>
 File: resultados-obtenidos/ejemplo4/images/4_original.png Graphic file (type pn
 g)
@@ -3120,21 +3110,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 101.06062pt.
-<resultados-obtenidos/ejemplo4/images/4_empty.png, id=2295, 3349.26282pt x 801.
+<resultados-obtenidos/ejemplo4/images/4_empty.png, id=2304, 3349.26282pt x 801.
 74532pt>
 File: resultados-obtenidos/ejemplo4/images/4_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_empty.png  used
  on input line 16.
 (pdftex.def)             Requested size: 418.25368pt x 100.12004pt.
-<resultados-obtenidos/ejemplo4/images/4_step1.png, id=2296, 3334.20656pt x 842.
+<resultados-obtenidos/ejemplo4/images/4_step1.png, id=2305, 3334.20656pt x 842.
 39719pt>
 File: resultados-obtenidos/ejemplo4/images/4_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step1.png  used
  on input line 23.
 (pdftex.def)             Requested size: 418.25368pt x 105.67215pt.
-<resultados-obtenidos/ejemplo4/images/4_step2.png, id=2297, 3356.79094pt x 855.
+<resultados-obtenidos/ejemplo4/images/4_step2.png, id=2306, 3356.79094pt x 855.
 195pt>
 File: resultados-obtenidos/ejemplo4/images/4_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step2.png>
@@ -3145,7 +3135,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step3.png, id=2298, 3303.34125pt x 830.
+<resultados-obtenidos/ejemplo4/images/4_step3.png, id=2307, 3303.34125pt x 830.
 35219pt>
 File: resultados-obtenidos/ejemplo4/images/4_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step3.png>
@@ -3155,7 +3145,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step4.png, id=2299, 3336.465pt x 840.89
+<resultados-obtenidos/ejemplo4/images/4_step4.png, id=2308, 3336.465pt x 840.89
 156pt>
 File: resultados-obtenidos/ejemplo4/images/4_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step4.png>
@@ -3165,7 +3155,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=2300, 3288.285pt x 809.2734
+<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=2309, 3288.285pt x 809.2734
 4pt>
 File: resultados-obtenidos/ejemplo4/images/4_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_RNA.png>
@@ -3321,7 +3311,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [100]
-<resultados-obtenidos/ejemplo5/images/5_original.png, id=2347, 2812.5075pt x 82
+<resultados-obtenidos/ejemplo5/images/5_original.png, id=2356, 2812.5075pt x 82
 2.07124pt>
 File: resultados-obtenidos/ejemplo5/images/5_original.png Graphic file (type pn
 g)
@@ -3329,21 +3319,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 122.25168pt.
-<resultados-obtenidos/ejemplo5/images/5_empty.png, id=2348, 963.6pt x 325.96782
+<resultados-obtenidos/ejemplo5/images/5_empty.png, id=2357, 963.6pt x 325.96782
 pt>
 File: resultados-obtenidos/ejemplo5/images/5_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 141.48647pt.
-<resultados-obtenidos/ejemplo5/images/5_step1.png, id=2349, 2841.11438pt x 999.
+<resultados-obtenidos/ejemplo5/images/5_step1.png, id=2358, 2841.11438pt x 999.
 735pt>
 File: resultados-obtenidos/ejemplo5/images/5_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 147.16216pt.
-<resultados-obtenidos/ejemplo5/images/5_step2.png, id=2350, 2841.11438pt x 1027
+<resultados-obtenidos/ejemplo5/images/5_step2.png, id=2359, 2841.11438pt x 1027
 .58907pt>
 File: resultados-obtenidos/ejemplo5/images/5_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step2.png>
@@ -3354,7 +3344,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step3.png, id=2351, 2841.11438pt x 1042
+<resultados-obtenidos/ejemplo5/images/5_step3.png, id=2360, 2841.11438pt x 1042
 .64531pt>
 File: resultados-obtenidos/ejemplo5/images/5_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step3.png>
@@ -3364,7 +3354,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step4.png, id=2352, 2841.11438pt x 1041
+<resultados-obtenidos/ejemplo5/images/5_step4.png, id=2361, 2841.11438pt x 1041
 .1397pt>
 File: resultados-obtenidos/ejemplo5/images/5_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step4.png>
@@ -3374,7 +3364,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=2353, 1365.60187pt x 510.40
+<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=2362, 1365.60187pt x 510.40
 688pt>
 File: resultados-obtenidos/ejemplo5/images/5_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_RNA.png>
@@ -3428,7 +3418,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [105]
-<resultados-obtenidos/ejemplo6/images/6_original.png, id=2376, 3274.73438pt x 7
+<resultados-obtenidos/ejemplo6/images/6_original.png, id=2385, 3274.73438pt x 7
 92.71156pt>
 File: resultados-obtenidos/ejemplo6/images/6_original.png Graphic file (type pn
 g)
@@ -3436,21 +3426,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 101.24174pt.
-<resultados-obtenidos/ejemplo6/images/6_empty.png, id=2377, 963.6pt x 239.39438
+<resultados-obtenidos/ejemplo6/images/6_empty.png, id=2386, 963.6pt x 239.39438
 pt>
 File: resultados-obtenidos/ejemplo6/images/6_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 103.90923pt.
-<resultados-obtenidos/ejemplo6/images/6_step1.png, id=2378, 4163.05313pt x 977.
+<resultados-obtenidos/ejemplo6/images/6_step1.png, id=2387, 4163.05313pt x 977.
 15062pt>
 File: resultados-obtenidos/ejemplo6/images/6_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 98.16809pt.
-<resultados-obtenidos/ejemplo6/images/6_step2.png, id=2379, 4163.05313pt x 1004
+<resultados-obtenidos/ejemplo6/images/6_step2.png, id=2388, 4163.05313pt x 1004
 .25188pt>
 File: resultados-obtenidos/ejemplo6/images/6_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step2.png>
@@ -3461,7 +3451,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step3.png, id=2380, 4163.05313pt x 995.
+<resultados-obtenidos/ejemplo6/images/6_step3.png, id=2389, 4163.05313pt x 995.
 21812pt>
 File: resultados-obtenidos/ejemplo6/images/6_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step3.png>
@@ -3471,7 +3461,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step4.png, id=2381, 1707.37875pt x 401.
+<resultados-obtenidos/ejemplo6/images/6_step4.png, id=2390, 1707.37875pt x 401.
 24907pt>
 File: resultados-obtenidos/ejemplo6/images/6_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step4.png>
@@ -3481,7 +3471,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=2382, 1407.75937pt x 339.51
+<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=2391, 1407.75937pt x 339.51
 843pt>
 File: resultados-obtenidos/ejemplo6/images/6_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_RNA.png>
@@ -3532,7 +3522,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [110]
-<resultados-obtenidos/ejemplo7/images/7_original.png, id=2405, 1902.3572pt x 11
+<resultados-obtenidos/ejemplo7/images/7_original.png, id=2414, 1902.3572pt x 11
 58.57843pt>
 File: resultados-obtenidos/ejemplo7/images/7_original.png Graphic file (type pn
 g)
@@ -3540,7 +3530,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 254.71126pt.
-<resultados-obtenidos/ejemplo7/images/7_empty.png, id=2406, 963.6pt x 542.025pt
+<resultados-obtenidos/ejemplo7/images/7_empty.png, id=2415, 963.6pt x 542.025pt
 >
 File: resultados-obtenidos/ejemplo7/images/7_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_empty.png>
@@ -3551,7 +3541,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step1.png, id=2407, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step1.png, id=2416, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step1.png>
@@ -3561,7 +3551,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step2.png, id=2408, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step2.png, id=2417, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step2.png>
@@ -3571,7 +3561,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step3.png, id=2409, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step3.png, id=2418, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step3.png>
@@ -3581,7 +3571,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step4.png, id=2410, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step4.png, id=2419, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step4.png>
@@ -3591,7 +3581,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=2411, 926.71219pt x 550.305
+<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=2420, 926.71219pt x 550.305
 94pt>
 File: resultados-obtenidos/ejemplo7/images/7_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_RNA.png>
@@ -3647,7 +3637,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [116 <./resultados-obtenidos/ejemplo7/images/7_step4.png> <./resultados-obteni
 dos/ejemplo7/images/7_RNA.png>]
-<resultados-obtenidos/ejemplo8/images/8_original.png, id=2438, 2300.595pt x 446
+<resultados-obtenidos/ejemplo8/images/8_original.png, id=2447, 2300.595pt x 446
 .41782pt>
 File: resultados-obtenidos/ejemplo8/images/8_original.png Graphic file (type pn
 g)
@@ -3655,21 +3645,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 81.15552pt.
-<resultados-obtenidos/ejemplo8/images/8_empty.png, id=2439, 2318.6625pt x 444.1
+<resultados-obtenidos/ejemplo8/images/8_empty.png, id=2448, 2318.6625pt x 444.1
 5938pt>
 File: resultados-obtenidos/ejemplo8/images/8_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 80.11467pt.
-<resultados-obtenidos/ejemplo8/images/8_step1.png, id=2440, 9609.65157pt x 1841
+<resultados-obtenidos/ejemplo8/images/8_step1.png, id=2449, 9609.65157pt x 1841
 .37938pt>
 File: resultados-obtenidos/ejemplo8/images/8_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 80.13307pt.
-<resultados-obtenidos/ejemplo8/images/8_step2.png, id=2441, 9565.23563pt x 1863
+<resultados-obtenidos/ejemplo8/images/8_step2.png, id=2450, 9565.23563pt x 1863
 .21094pt>
 File: resultados-obtenidos/ejemplo8/images/8_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step2.png>
@@ -3680,7 +3670,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step3.png, id=2442, 9607.39313pt x 1958
+<resultados-obtenidos/ejemplo8/images/8_step3.png, id=2451, 9607.39313pt x 1958
 .81813pt>
 File: resultados-obtenidos/ejemplo8/images/8_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step3.png>
@@ -3690,7 +3680,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step4.png, id=2443, 9649.55063pt x 1906
+<resultados-obtenidos/ejemplo8/images/8_step4.png, id=2452, 9649.55063pt x 1906
 .87407pt>
 File: resultados-obtenidos/ejemplo8/images/8_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step4.png>
@@ -3700,7 +3690,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=2444, 9660.84282pt x 1838.3
+<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=2453, 9660.84282pt x 1838.3
 6812pt>
 File: resultados-obtenidos/ejemplo8/images/8_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_RNA.png>
@@ -3796,16 +3786,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62A084BCD014CEDBB1207BA8BB313657;24804.
+(rerunfilecheck)             Checksum: 354CCA5BE682D93774E785C1A9D4EFDA;24873.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48475 strings out of 474587
- 958166 string characters out of 5745693
+ 48497 strings out of 474587
+ 958275 string characters out of 5745693
  2137558 words of memory out of 5000000
- 68378 multiletter control sequences out of 15000+600000
+ 68390 multiletter control sequences out of 15000+600000
  656612 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,33n,131p,1225b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3831,9 +3821,9 @@ menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/
 menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/m
 enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/m
 enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (143 pages, 26066858 bytes).
+Output written on main.pdf (143 pages, 26067234 bytes).
 PDF statistics:
- 3195 PDF objects out of 3580 (max. 8388607)
- 916 named destinations out of 1000 (max. 500000)
- 55832 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 3204 PDF objects out of 3580 (max. 8388607)
+ 918 named destinations out of 1000 (max. 500000)
+ 55848 words of extra memory for PDF output out of 61914 (max. 10000000)
 
