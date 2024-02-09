@@ -19,6 +19,450 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{IRSE}{online}{}
+      \name{author}{1}{}{%
+        {{hash=228f09412ee4b3a7a79729209b443f43}{%
+           family={Railway\bibnamedelimb Signal\bibnamedelima Engineers},
+           familyi={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Institution},
+           giveni={I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{228f09412ee4b3a7a79729209b443f43}
+      \strng{fullhash}{228f09412ee4b3a7a79729209b443f43}
+      \strng{bibnamehash}{228f09412ee4b3a7a79729209b443f43}
+      \strng{authorbibnamehash}{228f09412ee4b3a7a79729209b443f43}
+      \strng{authornamehash}{228f09412ee4b3a7a79729209b443f43}
+      \strng{authorfullhash}{228f09412ee4b3a7a79729209b443f43}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Fundamental Requirements for Train Control Systems}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.irse.org/Publications-Resources/Misc-publications
+      \endverb
+      \verb{url}
+      \verb https://www.irse.org/Publications-Resources/Misc-publications
+      \endverb
+    \endentry
+    \entry{RISSB}{online}{}
+      \name{author}{2}{}{%
+        {{hash=669fc691222e9f4c7f19b8fa55985a48}{%
+           family={Safety},
+           familyi={S\bibinitperiod},
+           given={Rail\bibnamedelima Industry},
+           giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=e69dd8a3370acfcae3217f140e4d9434}{%
+           family={Board},
+           familyi={B\bibinitperiod},
+           given={Standards},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \strng{fullhash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \strng{bibnamehash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \strng{authorbibnamehash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \strng{authornamehash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \strng{authorfullhash}{1c575eecc0bd635b842aaa9ee4e09a0f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Signallingg Principles}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.rissb.com.au/wp-content/uploads/2019/03/AS-7711-Signalling-Principles-PC-Draft.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.rissb.com.au/wp-content/uploads/2019/03/AS-7711-Signalling-Principles-PC-Draft.pdf
+      \endverb
+    \endentry
+    \entry{TFNSW}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f2cdae89ba91109006c697e4757178c4}{%
+           family={New\bibnamedelimb South\bibnamedelima Wales},
+           familyi={N\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Transport},
+           giveni={T\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2cdae89ba91109006c697e4757178c4}
+      \strng{fullhash}{f2cdae89ba91109006c697e4757178c4}
+      \strng{bibnamehash}{f2cdae89ba91109006c697e4757178c4}
+      \strng{authorbibnamehash}{f2cdae89ba91109006c697e4757178c4}
+      \strng{authornamehash}{f2cdae89ba91109006c697e4757178c4}
+      \strng{authorfullhash}{f2cdae89ba91109006c697e4757178c4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Rail Signalling Principles for Light Rail Networks}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.transport.nsw.gov.au/system/files?file=media/asa_standards/2020/t-lr-sc-08001-st-v4.0_0.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.transport.nsw.gov.au/system/files?file=media/asa_standards/2020/t-lr-sc-08001-st-v4.0_0.pdf
+      \endverb
+    \endentry
+    \entry{Paper_71}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-1-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_72}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-2-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_73}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-3-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_74}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-4-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_75}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-5-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_76}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-6-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_77}{article}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{IEC 61508-7-2010}
+      \field{year}{2010}
+    \endentry
+    \entry{Paper_26}{article}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Developing Safety Critical Applications that Meet IEC 61508 Standards}
+      \field{year}{2013}
+    \endentry
+    \entry{Paper_29}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2aa4f1887e77d28db290b11a36d74de3}{%
+           family={Gracic},
+           familyi={G\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1af120104ce763cddfd162f8460fd376}{%
+           family={Hayek},
+           familyi={H\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
+           family={Börcsök},
+           familyi={B\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{fullhash}{eb0397e364de04f39609597c597d7b18}
+      \strng{bibnamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authorbibnamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authornamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authorfullhash}{eb0397e364de04f39609597c597d7b18}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on System Reliability and Safety (ICSRS)}
+      \field{title}{Evaluation of FPGA Design Tools for Safety Systems with On-Chip Redundancy Referring to the Standard IEC 61508}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1109/ICSRS.2017.8272853
+      \endverb
+    \endentry
+    \entry{Paper_30}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2aa4f1887e77d28db290b11a36d74de3}{%
+           family={Gracic},
+           familyi={G\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1af120104ce763cddfd162f8460fd376}{%
+           family={Hayek},
+           familyi={H\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
+           family={Börcsök},
+           familyi={B\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{fullhash}{eb0397e364de04f39609597c597d7b18}
+      \strng{bibnamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authorbibnamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authornamehash}{eb0397e364de04f39609597c597d7b18}
+      \strng{authorfullhash}{eb0397e364de04f39609597c597d7b18}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on System Reliability and Science (ICSRS)}
+      \field{title}{Implementation of a Fault-Tolerant System Using Safety-Related Xilinx Tools Conforming to the Standard IEC 61508}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/ICSRS.2016.7815842
+      \endverb
+    \endentry
+    \entry{Paper_31}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1af120104ce763cddfd162f8460fd376}{%
+           family={Hayek},
+           familyi={H\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
+           family={Börcsök},
+           familyi={B\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{051fd487fb033e69e6233cb890d6b3fb}
+      \strng{fullhash}{051fd487fb033e69e6233cb890d6b3fb}
+      \strng{bibnamehash}{051fd487fb033e69e6233cb890d6b3fb}
+      \strng{authorbibnamehash}{051fd487fb033e69e6233cb890d6b3fb}
+      \strng{authornamehash}{051fd487fb033e69e6233cb890d6b3fb}
+      \strng{authorfullhash}{051fd487fb033e69e6233cb890d6b3fb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on Advances in Computational Tools for Engineering Applications (ACTEA)}
+      \field{title}{SRAM-Based FPGA Design Techniques for Safety Related Systems Conforming to IEC 61508}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.1109/ICTEA.2012.6462892
+      \endverb
+    \endentry
+    \entry{Paper_34}{article}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{8 Reasons to Use FPGAs in IEC 61508 Functional Safety Applications}
+      \field{year}{2013}
+    \endentry
+    \entry{Paper_47}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8ae4aa6c8f7483e4a02742a273f2581c}{%
+           family={Corradi},
+           familyi={C\bibinitperiod},
+           given={Giulio},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4661120010a26abd2948bcf185fe7078}{%
+           family={Girardey},
+           familyi={G\bibinitperiod},
+           given={Romuald},
+           giveni={R\bibinitperiod}}}%
+        {{hash=26866fdadecc1a8bf04fe9d628279e66}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bfe350420d89a6108a2fed92388053e}
+      \strng{fullhash}{9bfe350420d89a6108a2fed92388053e}
+      \strng{bibnamehash}{9bfe350420d89a6108a2fed92388053e}
+      \strng{authorbibnamehash}{9bfe350420d89a6108a2fed92388053e}
+      \strng{authornamehash}{9bfe350420d89a6108a2fed92388053e}
+      \strng{authorfullhash}{9bfe350420d89a6108a2fed92388053e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NASA/ESA Conference on Adaptive Hardware and Systems (AHS)}
+      \field{title}{Xilinx tools facilitate development of FPGA Applications for IEC61508}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.1109/AHS.2012.6268669
+      \endverb
+    \endentry
+    \entry{Paper_70}{article}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{UNE-EN 50128}
+      \field{year}{2002}
+    \endentry
+    \entry{Paper_146}{article}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Union of Railways}
+      \field{title}{IRS 30100}
+      \field{year}{2016}
+    \endentry
+    \entry{Paper_144}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dae22ce2fa695ddfb11b6dc772a53e44}{%
+           family={Hlubuček},
+           familyi={H\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \strng{fullhash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \strng{bibnamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \strng{authorbibnamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \strng{authornamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \strng{authorfullhash}{dae22ce2fa695ddfb11b6dc772a53e44}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Polytechnica CTU Proceedings}
+      \field{title}{RailTopoModel and RailML3 in overall context}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.14311/APP.2017.11.0016
+      \endverb
+    \endentry
+    \entry{Paper_143}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Union of Railways}
+      \field{title}{Feasibility study RailTopoModel}
+      \field{year}{2013}
+    \endentry
+    \entry{Paper_103}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{IRS 30110 -RailTopoModel - Railway infrastructure topological model}
+      \field{year}{2016}
+    \endentry
+    \entry{Paper_101}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2f40b1d1d62e54b7cccfde01447c061a}{%
+           family={Bosschaart},
+           familyi={B\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7e9785fe714dfdfeaaabd57c4764584a}{%
+           family={Quaglietta},
+           familyi={Q\bibinitperiod},
+           given={Egidio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e5f47b1164766d6284f1eba2357249df}{%
+           family={Janssen},
+           familyi={J\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fef610ed7ef5914535a248278ba6d238}{%
+           family={Goverde},
+           familyi={G\bibinitperiod},
+           given={Rob\bibnamedelimb M.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
+      \strng{fullhash}{c60dcb365574a133b47c93cf00c79aa3}
+      \strng{bibnamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
+      \strng{authorbibnamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
+      \strng{authornamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
+      \strng{authorfullhash}{c60dcb365574a133b47c93cf00c79aa3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Systems}
+      \field{title}{Efficient formalization of railway interlocking data in RailML}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1016/j.is.2014.11.007
+      \endverb
+    \endentry
+    \entry{Paper_106}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Using railML for Exchanging Timetable Data}
+      \field{year}{2017}
+    \endentry
+    \entry{Paper_154}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f0720e1c36dab7977bf528bf61a06a98}{%
+           family={Iliasov},
+           familyi={I\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b0aef6bd4ce9c5aa6f19efb66f503bd}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=511c12c5a0b9d5ddaa1b1378b1191f10}{%
+           family={Laibinis},
+           familyi={L\bibinitperiod},
+           given={Linas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5c6cb2827ae64b3aaf13f8f8823610dc}{%
+           family={Romanovsky},
+           familyi={R\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
+      \strng{fullhash}{d170f4c203b5bf8cd2a00046ed0c6a28}
+      \strng{bibnamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
+      \strng{authorbibnamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
+      \strng{authornamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
+      \strng{authorfullhash}{d170f4c203b5bf8cd2a00046ed0c6a28}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Dependable and Secure Computing}
+      \field{title}{Practical Verification of Railway Signalling Programs}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1109/TDSC.2022.3141555
+      \endverb
+    \endentry
     \entry{Paper_1}{article}{}
       \name{author}{1}{}{%
         {{hash=1abe93f7b1d15d13bf394cc07a1e33fa}{%
@@ -63,8 +507,8 @@
       \strng{authorbibnamehash}{8221cdb6d04b614430b06101f45c3f6f}
       \strng{authornamehash}{8221cdb6d04b614430b06101f45c3f6f}
       \strng{authorfullhash}{8221cdb6d04b614430b06101f45c3f6f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IFAC Symposium on Control in Transportation Systems}
@@ -114,8 +558,8 @@
       \strng{authorbibnamehash}{cd130c5bb322f96b887777b488ac7abc}
       \strng{authornamehash}{cd130c5bb322f96b887777b488ac7abc}
       \strng{authorfullhash}{6d334540d977e8dcc0ae8fd48077fb34}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer Safety, Reliability and Security: 17th International Conference, SAFECOMP’98 Heidelberg}
@@ -147,8 +591,8 @@
       \strng{authorbibnamehash}{17d0644d739e46d1505d9940cceced21}
       \strng{authornamehash}{17d0644d739e46d1505d9940cceced21}
       \strng{authorfullhash}{17d0644d739e46d1505d9940cceced21}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Euro Interlocking-Standards for functions and interfaces as a basis for CBTC on mainline railways in Europe}
@@ -173,8 +617,8 @@
       \strng{authorbibnamehash}{07b171ddd2e5473af86db6ec7e3730c8}
       \strng{authornamehash}{07b171ddd2e5473af86db6ec7e3730c8}
       \strng{authorfullhash}{07b171ddd2e5473af86db6ec7e3730c8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Design \& Test of Computers}
@@ -248,8 +692,8 @@
       \strng{authorbibnamehash}{cd3ac950787af276934268ef245e655c}
       \strng{authornamehash}{cd3ac950787af276934268ef245e655c}
       \strng{authorfullhash}{7f6cf158cd1278de9399fd90a74b801e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AP-ASIC'99. First IEEE Asia Pacific Conference on ASICs (Cat. No.99EX360)}
@@ -283,8 +727,8 @@
       \strng{authorbibnamehash}{f43faaa2b79b8088c1819f86d9059b75}
       \strng{authornamehash}{f43faaa2b79b8088c1819f86d9059b75}
       \strng{authorfullhash}{f43faaa2b79b8088c1819f86d9059b75}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Some experiences on Formal specification of Railway Interlocking Systems using Statecharts}
@@ -309,8 +753,8 @@
       \strng{authorbibnamehash}{8abcd2c0fe465b411bd786847014b3bc}
       \strng{authornamehash}{8abcd2c0fe465b411bd786847014b3bc}
       \strng{authorfullhash}{8abcd2c0fe465b411bd786847014b3bc}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Euromicro Symposium on Digital System Design}
@@ -339,8 +783,8 @@
       \strng{authorbibnamehash}{22d2a11655f00f271208f6d04d7f93f2}
       \strng{authornamehash}{22d2a11655f00f271208f6d04d7f93f2}
       \strng{authorfullhash}{22d2a11655f00f271208f6d04d7f93f2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronic Notes in Theoretical Computer Science}
@@ -369,8 +813,8 @@
       \strng{authorbibnamehash}{298f87fdec46117ef81ed80601b79a33}
       \strng{authornamehash}{298f87fdec46117ef81ed80601b79a33}
       \strng{authorfullhash}{298f87fdec46117ef81ed80601b79a33}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Australasian computer science conference}
@@ -401,8 +845,8 @@
       \strng{authorbibnamehash}{99d6500646841a95fa110f5600645a2f}
       \strng{authornamehash}{99d6500646841a95fa110f5600645a2f}
       \strng{authorfullhash}{99d6500646841a95fa110f5600645a2f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Raiss-RAIlway Signalling : Safety and Security}
@@ -422,8 +866,8 @@
       \strng{authorbibnamehash}{13e834c269ab5c2be04ce2fa08f13976}
       \strng{authornamehash}{13e834c269ab5c2be04ce2fa08f13976}
       \strng{authorfullhash}{13e834c269ab5c2be04ce2fa08f13976}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Report of a comparative analysis of the Interlocking Systems}
@@ -453,8 +897,8 @@
       \strng{authorbibnamehash}{7dfd6d3b15de1d07ca5de9c2023f7a6f}
       \strng{authornamehash}{7dfd6d3b15de1d07ca5de9c2023f7a6f}
       \strng{authorfullhash}{7dfd6d3b15de1d07ca5de9c2023f7a6f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Eksploatacja i Niezawodnosc - Maintenance and Reliability}
@@ -478,8 +922,8 @@
       \strng{authorbibnamehash}{8b59cf40a617ca141c81a94c9979b753}
       \strng{authornamehash}{8b59cf40a617ca141c81a94c9979b753}
       \strng{authorfullhash}{8b59cf40a617ca141c81a94c9979b753}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{SAT-based Model Checking and its applications to Train Control Systems}
@@ -504,8 +948,8 @@
       \strng{authorbibnamehash}{931087b8a03069d9297555419f9e8ad3}
       \strng{authornamehash}{931087b8a03069d9297555419f9e8ad3}
       \strng{authorfullhash}{931087b8a03069d9297555419f9e8ad3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Software Design based on Architecture Conformance}
@@ -525,8 +969,8 @@
       \strng{authorbibnamehash}{a45b7a367a165e0be6e18681a5b76ea1}
       \strng{authornamehash}{a45b7a367a165e0be6e18681a5b76ea1}
       \strng{authorfullhash}{a45b7a367a165e0be6e18681a5b76ea1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEE Proceedings B - Electric Power Applications}
@@ -555,8 +999,8 @@
       \strng{authorbibnamehash}{b8e5c059ee841d5aa9ce2b44e3caccf4}
       \strng{authornamehash}{b8e5c059ee841d5aa9ce2b44e3caccf4}
       \strng{authorfullhash}{b8e5c059ee841d5aa9ce2b44e3caccf4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{SSI - Australian Railways}
@@ -581,8 +1025,8 @@
       \strng{authorbibnamehash}{7fa6e68f91487d4311ad23fdb5adf246}
       \strng{authornamehash}{7fa6e68f91487d4311ad23fdb5adf246}
       \strng{authorfullhash}{7fa6e68f91487d4311ad23fdb5adf246}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Towards an universal computer interlocking system}
@@ -612,8 +1056,8 @@
       \strng{authorbibnamehash}{d2a4b68c179ac08cbd1acecb018a9b6e}
       \strng{authornamehash}{d2a4b68c179ac08cbd1acecb018a9b6e}
       \strng{authorfullhash}{d2a4b68c179ac08cbd1acecb018a9b6e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Innovative Computing, Information and Control}
@@ -639,8 +1083,8 @@
       \strng{authorbibnamehash}{c8eabbbbcbe99e5e30a74b77cbc89c52}
       \strng{authornamehash}{c8eabbbbcbe99e5e30a74b77cbc89c52}
       \strng{authorfullhash}{c8eabbbbcbe99e5e30a74b77cbc89c52}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Modern Transportation}
@@ -680,8 +1124,8 @@
       \strng{authornamehash}{18b2204c92a5343341361d4b334ee2bf}
       \strng{authorfullhash}{9c7c5ed2499b59210de0ee8d0328968a}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Symposium on Control in Transportation Systems}
@@ -705,8 +1149,8 @@
       \strng{authorbibnamehash}{9f5f40529820a0fcd4cf272129752794}
       \strng{authornamehash}{9f5f40529820a0fcd4cf272129752794}
       \strng{authorfullhash}{9f5f40529820a0fcd4cf272129752794}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Safety Integrity Level - an Overview for FPGA Engineers}
@@ -751,8 +1195,8 @@
       \strng{authorbibnamehash}{7c23b6b7f39e5d3867baa32b13542215}
       \strng{authornamehash}{7c23b6b7f39e5d3867baa32b13542215}
       \strng{authorfullhash}{6d2e257bf7924bd21c5f15ac2a33b738}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Euromicro Conference on Digital System Design}
@@ -763,28 +1207,21 @@
       \endverb
     \endentry
     \entry{Paper_24}{article}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Safety design on FPGA’s using soft Lockstep Processors}
       \field{year}{2016}
     \endentry
     \entry{Paper_25}{article}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Safe FPGA Design Practices Safe FPGA Design Practices for Instrumentation and for Instrumentation and Control in Nuclear Plants}
     \endentry
-    \entry{Paper_26}{article}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{title}{Developing Safety Critical Applications that Meet IEC 61508 Standards}
-      \field{year}{2013}
-    \endentry
     \entry{Paper_27}{article}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Safety Critical Applications}
       \field{year}{2012}
@@ -827,8 +1264,8 @@
       \strng{authorbibnamehash}{78cbac14a509f0c6883be11bb6a9f491}
       \strng{authornamehash}{78cbac14a509f0c6883be11bb6a9f491}
       \strng{authorfullhash}{076705a0943d19eded3f5a3c2925e9e8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Latin-American Test Symposium (LATS)}
@@ -836,108 +1273,6 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1109/LATW.2016.7483331
-      \endverb
-    \endentry
-    \entry{Paper_29}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2aa4f1887e77d28db290b11a36d74de3}{%
-           family={Gracic},
-           familyi={G\bibinitperiod},
-           given={Emil},
-           giveni={E\bibinitperiod}}}%
-        {{hash=1af120104ce763cddfd162f8460fd376}{%
-           family={Hayek},
-           familyi={H\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
-           family={Börcsök},
-           familyi={B\bibinitperiod},
-           given={Josef},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{fullhash}{eb0397e364de04f39609597c597d7b18}
-      \strng{bibnamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authorbibnamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authornamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authorfullhash}{eb0397e364de04f39609597c597d7b18}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Conference on System Reliability and Safety (ICSRS)}
-      \field{title}{Evaluation of FPGA Design Tools for Safety Systems with On-Chip Redundancy Referring to the Standard IEC 61508}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.1109/ICSRS.2017.8272853
-      \endverb
-    \endentry
-    \entry{Paper_30}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2aa4f1887e77d28db290b11a36d74de3}{%
-           family={Gracic},
-           familyi={G\bibinitperiod},
-           given={Emil},
-           giveni={E\bibinitperiod}}}%
-        {{hash=1af120104ce763cddfd162f8460fd376}{%
-           family={Hayek},
-           familyi={H\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
-           family={Börcsök},
-           familyi={B\bibinitperiod},
-           given={Josef},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{fullhash}{eb0397e364de04f39609597c597d7b18}
-      \strng{bibnamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authorbibnamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authornamehash}{eb0397e364de04f39609597c597d7b18}
-      \strng{authorfullhash}{eb0397e364de04f39609597c597d7b18}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Conference on System Reliability and Science (ICSRS)}
-      \field{title}{Implementation of a Fault-Tolerant System Using Safety-Related Xilinx Tools Conforming to the Standard IEC 61508}
-      \field{year}{2016}
-      \verb{doi}
-      \verb 10.1109/ICSRS.2016.7815842
-      \endverb
-    \endentry
-    \entry{Paper_31}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1af120104ce763cddfd162f8460fd376}{%
-           family={Hayek},
-           familyi={H\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3c4304f42310aa26ca7086f356ede3d0}{%
-           family={Börcsök},
-           familyi={B\bibinitperiod},
-           given={Josef},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{051fd487fb033e69e6233cb890d6b3fb}
-      \strng{fullhash}{051fd487fb033e69e6233cb890d6b3fb}
-      \strng{bibnamehash}{051fd487fb033e69e6233cb890d6b3fb}
-      \strng{authorbibnamehash}{051fd487fb033e69e6233cb890d6b3fb}
-      \strng{authornamehash}{051fd487fb033e69e6233cb890d6b3fb}
-      \strng{authorfullhash}{051fd487fb033e69e6233cb890d6b3fb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Conference on Advances in Computational Tools for Engineering Applications (ACTEA)}
-      \field{title}{SRAM-Based FPGA Design Techniques for Safety Related Systems Conforming to IEC 61508}
-      \field{year}{2012}
-      \verb{doi}
-      \verb 10.1109/ICTEA.2012.6462892
       \endverb
     \endentry
     \entry{Paper_32}{article}{}
@@ -974,8 +1309,8 @@
       \strng{authorbibnamehash}{263844017f0a627e47d6861a6952f4bd}
       \strng{authornamehash}{263844017f0a627e47d6861a6952f4bd}
       \strng{authorfullhash}{d6e15a2682037d94e7208bb581602bf4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EICE Electronics Expres}
@@ -986,64 +1321,57 @@
       \endverb
     \endentry
     \entry{Paper_33}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Development of Safety Related Systems}
       \field{year}{2015}
     \endentry
-    \entry{Paper_34}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{title}{8 Reasons to Use FPGAs in IEC 61508 Functional Safety Applications}
-      \field{year}{2013}
-    \endentry
     \entry{Paper_35}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Developing Functional Safety Systems with TÜV-Qualified FPGAs}
       \field{year}{2010}
     \endentry
     \entry{Paper_36}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{DO-254 for the FPGA Designer}
       \field{year}{2012}
     \endentry
     \entry{Paper_37}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Isolation Design Flow for Xilinx 7 Series FPGAs or Zynq-7000 AP SoCs (ISE Tools)}
       \field{year}{2015}
     \endentry
     \entry{Paper_38}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{On Applying Software Development Best Practice to FPGAs in Safety-Critical Systems}
       \field{year}{2000}
     \endentry
     \entry{Paper_39}{article}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Functional safety in process instrumentation with SIL rating}
       \field{year}{2003}
     \endentry
     \entry{Paper_40}{article}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{The Xilinx Isolation Design Flow for Fault-Tolerant Systems}
       \field{year}{2013}
     \endentry
     \entry{Paper_41}{article}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Isolation Design Flow for Xilinx 7 Series FPGAs or Zynq-7000 AP SoCs (Vivado Tools)}
       \field{year}{2016}
@@ -1072,8 +1400,8 @@
       \strng{authorbibnamehash}{acd47169e5ddb4b3a6766ae8e92f9c73}
       \strng{authornamehash}{acd47169e5ddb4b3a6766ae8e92f9c73}
       \strng{authorfullhash}{acd47169e5ddb4b3a6766ae8e92f9c73}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Computer Society Annual Symposium on VLSI}
@@ -1112,8 +1440,8 @@
       \strng{authorbibnamehash}{6c9647d9e5ed5ee1411c4e6e8bb07695}
       \strng{authornamehash}{6c9647d9e5ed5ee1411c4e6e8bb07695}
       \strng{authorfullhash}{e94d42dd8774b6723f99d74f52f8a9c0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Nuclear Science}
@@ -1162,8 +1490,8 @@
       \strng{authorbibnamehash}{da6d2d6dde6f939106e6d4e3b3c0940b}
       \strng{authornamehash}{da6d2d6dde6f939106e6d4e3b3c0940b}
       \strng{authorfullhash}{f7d875c5f1b480b49c04ff058b61b0e5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Information Science, Electronics and Electrical Engineering}
@@ -1187,8 +1515,8 @@
       \strng{authorbibnamehash}{b08f929170965cb3232d097b908c77ad}
       \strng{authornamehash}{b08f929170965cb3232d097b908c77ad}
       \strng{authorfullhash}{b08f929170965cb3232d097b908c77ad}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A control and automation engineering approach to railway interlocking system design}
@@ -1219,48 +1547,13 @@
       \strng{authornamehash}{4c1f76aa7aba0c6d63232f9c2e6488de}
       \strng{authorfullhash}{4c1f76aa7aba0c6d63232f9c2e6488de}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computer Science and Technology}
       \field{title}{SRAM-based FPGA Systems for Safety-Critical Applications: A Survey on Design Standards and Proposed Methodologies}
       \field{year}{2015}
-    \endentry
-    \entry{Paper_47}{article}{}
-      \name{author}{3}{}{%
-        {{hash=8ae4aa6c8f7483e4a02742a273f2581c}{%
-           family={Corradi},
-           familyi={C\bibinitperiod},
-           given={Giulio},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4661120010a26abd2948bcf185fe7078}{%
-           family={Girardey},
-           familyi={G\bibinitperiod},
-           given={Romuald},
-           giveni={R\bibinitperiod}}}%
-        {{hash=26866fdadecc1a8bf04fe9d628279e66}{%
-           family={Becker},
-           familyi={B\bibinitperiod},
-           given={Jürgen},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{9bfe350420d89a6108a2fed92388053e}
-      \strng{fullhash}{9bfe350420d89a6108a2fed92388053e}
-      \strng{bibnamehash}{9bfe350420d89a6108a2fed92388053e}
-      \strng{authorbibnamehash}{9bfe350420d89a6108a2fed92388053e}
-      \strng{authornamehash}{9bfe350420d89a6108a2fed92388053e}
-      \strng{authorfullhash}{9bfe350420d89a6108a2fed92388053e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{NASA/ESA Conference on Adaptive Hardware and Systems (AHS)}
-      \field{title}{Xilinx tools facilitate development of FPGA Applications for IEC61508}
-      \field{year}{2012}
-      \verb{doi}
-      \verb 10.1109/AHS.2012.6268669
-      \endverb
     \endentry
     \entry{Paper_48}{article}{}
       \name{author}{6}{}{%
@@ -1301,8 +1594,8 @@
       \strng{authorbibnamehash}{954b284e5e451ec0b91869f00c4158bb}
       \strng{authornamehash}{954b284e5e451ec0b91869f00c4158bb}
       \strng{authorfullhash}{4e3d498d1c7245cf58021c5e2b6c5db0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Annual International Symposium on Field-Programmable Custom Computing Machines}
@@ -1336,8 +1629,8 @@
       \strng{authorbibnamehash}{70be8804202cc43054fba3e65217d3a4}
       \strng{authornamehash}{70be8804202cc43054fba3e65217d3a4}
       \strng{authorfullhash}{70be8804202cc43054fba3e65217d3a4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE International Parallel \& Distributed Processing Symposium Workshops}
@@ -1366,8 +1659,8 @@
       \strng{authorbibnamehash}{9318d9e314dc44212fdb281a2f20671a}
       \strng{authornamehash}{9318d9e314dc44212fdb281a2f20671a}
       \strng{authorfullhash}{9318d9e314dc44212fdb281a2f20671a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE International Conference on Industrial Informatics}
@@ -1396,8 +1689,8 @@
       \strng{authorbibnamehash}{25a07a188a785389bfa257d7d5804c03}
       \strng{authornamehash}{25a07a188a785389bfa257d7d5804c03}
       \strng{authorfullhash}{25a07a188a785389bfa257d7d5804c03}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Transport Systems Telematics}
@@ -1428,8 +1721,8 @@
       \strng{authorbibnamehash}{0f8042ad81b9ffc85757177292177b95}
       \strng{authornamehash}{0f8042ad81b9ffc85757177292177b95}
       \strng{authorfullhash}{0f8042ad81b9ffc85757177292177b95}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Asia-Pacific Conference on Computational Intelligence and Industrial Applications (PACIIA)}
@@ -1469,8 +1762,8 @@
       \strng{authornamehash}{65dd795d1e869b15b3965350cfe90b8e}
       \strng{authorfullhash}{426e349f837ce38e4c4ff09d148b04da}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Transportation, Mechanical, and Electrical Engineering (TMEE)}
@@ -1499,8 +1792,8 @@
       \strng{authorbibnamehash}{68ef01ce5c39750ec05ac4623efc7072}
       \strng{authornamehash}{68ef01ce5c39750ec05ac4623efc7072}
       \strng{authorfullhash}{68ef01ce5c39750ec05ac4623efc7072}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Technical Conference on Circuits/Systems, Computers and Communications}
@@ -1526,8 +1819,8 @@
       \strng{authorbibnamehash}{0af8bc1e0717619d6a3bddd34d450bd2}
       \strng{authornamehash}{0af8bc1e0717619d6a3bddd34d450bd2}
       \strng{authorfullhash}{0af8bc1e0717619d6a3bddd34d450bd2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computing and Informatics}
@@ -1551,8 +1844,8 @@
       \strng{authorbibnamehash}{986e58edeec37e544fb30b6bf7827a92}
       \strng{authornamehash}{986e58edeec37e544fb30b6bf7827a92}
       \strng{authorfullhash}{986e58edeec37e544fb30b6bf7827a92}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Software Engineering (ICSE)}
@@ -1578,8 +1871,8 @@
       \strng{authorbibnamehash}{bce487c85449c034c0db6a93a998375d}
       \strng{authornamehash}{bce487c85449c034c0db6a93a998375d}
       \strng{authorfullhash}{bce487c85449c034c0db6a93a998375d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual IEEE/IFIP Conference on Dependable Systems and Networks Workshop (DSN-W)}
@@ -1590,8 +1883,8 @@
       \endverb
     \endentry
     \entry{Paper_58}{article}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Aplicacion de normativa CENELEC a desarrollo y explotacion de material rodante}
     \endentry
@@ -1639,15 +1932,15 @@
       \strng{authorbibnamehash}{365c9123c9404596e385978065d6dae4}
       \strng{authornamehash}{365c9123c9404596e385978065d6dae4}
       \strng{authorfullhash}{f6f50cba23804c851beb303f35c2bb79}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Modelling a Railway Signalling System using SDL}
     \endentry
     \entry{Paper_60}{article}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Model Driven Engineering of railway control systems with the openETCS process}
       \field{year}{2014}
@@ -1676,8 +1969,8 @@
       \strng{authorbibnamehash}{96c7ea40bcebc3383e3ccfe2d4b8079d}
       \strng{authornamehash}{96c7ea40bcebc3383e3ccfe2d4b8079d}
       \strng{authorfullhash}{96c7ea40bcebc3383e3ccfe2d4b8079d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Symposium on Software Reliability Engineering Workshops}
@@ -1711,8 +2004,8 @@
       \strng{authorbibnamehash}{65c12a8022fe28b701c33568ebcb53ef}
       \strng{authornamehash}{65c12a8022fe28b701c33568ebcb53ef}
       \strng{authorfullhash}{65c12a8022fe28b701c33568ebcb53ef}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EEJ Transactions on Electrical and Electronic Engineering}
@@ -1746,8 +2039,8 @@
       \strng{authorbibnamehash}{8a5af7d436e48e5f05ade97564a7db4a}
       \strng{authornamehash}{8a5af7d436e48e5f05ade97564a7db4a}
       \strng{authorfullhash}{8a5af7d436e48e5f05ade97564a7db4a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Supporting design and development of safety critical applications by model based tools}
@@ -1777,8 +2070,8 @@
       \strng{authorbibnamehash}{775640661a790fd8c3d0818a5192ac6e}
       \strng{authornamehash}{775640661a790fd8c3d0818a5192ac6e}
       \strng{authorfullhash}{775640661a790fd8c3d0818a5192ac6e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Asian Control Conference (ASCC)}
@@ -1809,8 +2102,8 @@
       \strng{authorbibnamehash}{4d03ba0a0c7189373f79ed66e36ee9af}
       \strng{authornamehash}{4d03ba0a0c7189373f79ed66e36ee9af}
       \strng{authorfullhash}{4d03ba0a0c7189373f79ed66e36ee9af}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Asian Control Conference (ASCC)}
@@ -1818,8 +2111,8 @@
       \field{year}{2011}
     \endentry
     \entry{Paper_66}{article}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{Design and RAMS analysis of railway interlocking systems using formal methods}
       \field{year}{2013}
@@ -1863,8 +2156,8 @@
       \strng{authorbibnamehash}{7af6b75a5b83782a81a02f121cf8dbf5}
       \strng{authornamehash}{7af6b75a5b83782a81a02f121cf8dbf5}
       \strng{authorfullhash}{17f962cd4616339abd2467b27ca70407}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Dependability of Computer Systems DepCoS-RELCOMEX}
@@ -1903,8 +2196,8 @@
       \strng{authorbibnamehash}{e7362e6eaaaeb7d38a28d93ac80b1f62}
       \strng{authornamehash}{e7362e6eaaaeb7d38a28d93ac80b1f62}
       \strng{authorfullhash}{a436c94381c54df0f7dc42597f335841}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nnual Industrial Automation and Electromechanical Engineering Conference (IEMECON)}
@@ -1938,68 +2231,12 @@
       \strng{authorbibnamehash}{423adb78745beffadc4f98c92a70a505}
       \strng{authornamehash}{423adb78745beffadc4f98c92a70a505}
       \strng{authorfullhash}{423adb78745beffadc4f98c92a70a505}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Computer Society}
       \field{title}{Evolving software architecture descriptions of critical systems}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_70}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{UNE-EN 50128}
-      \field{year}{2002}
-    \endentry
-    \entry{Paper_71}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-1-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_72}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-2-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_73}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-3-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_74}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-4-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_75}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-5-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_76}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-6-2010}
-      \field{year}{2010}
-    \endentry
-    \entry{Paper_77}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{IEC 61508-7-2010}
       \field{year}{2010}
     \endentry
     \entry{Paper_78}{article}{}
@@ -2021,8 +2258,8 @@
       \strng{authorbibnamehash}{204db6b3b5f4900f2c7f5a376927c35f}
       \strng{authornamehash}{204db6b3b5f4900f2c7f5a376927c35f}
       \strng{authorfullhash}{204db6b3b5f4900f2c7f5a376927c35f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Handbook of RAMS in railway systems theory and practice}
@@ -2063,8 +2300,8 @@
       \strng{authornamehash}{5cedb3ce1dbf37ce606a692fc3e97d7d}
       \strng{authorfullhash}{dc08e5544bac646e75cf209246ae2a87}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
@@ -2098,8 +2335,8 @@
       \strng{authorbibnamehash}{97a4d030b39e3f708214d52fc6874982}
       \strng{authornamehash}{97a4d030b39e3f708214d52fc6874982}
       \strng{authorfullhash}{97a4d030b39e3f708214d52fc6874982}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Communication Technologies (ComTech)}
@@ -2138,8 +2375,8 @@
       \strng{authorbibnamehash}{2d3472c4dda5f8ae5dc90b16bdf0307b}
       \strng{authornamehash}{2d3472c4dda5f8ae5dc90b16bdf0307b}
       \strng{authorfullhash}{0217e7a4de0c28b4ca40cb9f39208374}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Intelligent Rail Transportation (ICIRT)}
@@ -2183,8 +2420,8 @@
       \strng{authorbibnamehash}{19893d5af9983fde7b083742a1f2f93b}
       \strng{authornamehash}{19893d5af9983fde7b083742a1f2f93b}
       \strng{authorfullhash}{36ad4cc99db6b3563708b1cf48928246}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE)}
@@ -2233,8 +2470,8 @@
       \strng{authorbibnamehash}{3f9fcb81ca57a30507641485a0b8eea8}
       \strng{authornamehash}{3f9fcb81ca57a30507641485a0b8eea8}
       \strng{authorfullhash}{35546825b4216fe0f39fe657422f6241}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Symposium on High Assurance Systems Engineering (HASE)}
@@ -2258,8 +2495,8 @@
       \strng{authorbibnamehash}{0c9e930262185826ed653c720096805a}
       \strng{authornamehash}{0c9e930262185826ed653c720096805a}
       \strng{authorfullhash}{0c9e930262185826ed653c720096805a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Sensing,Diagnostics, Prognostics, and Control (SDPC)}
@@ -2288,8 +2525,8 @@
       \strng{authorbibnamehash}{c4a4b8402e3692735d9a743e6383a022}
       \strng{authornamehash}{c4a4b8402e3692735d9a743e6383a022}
       \strng{authorfullhash}{c4a4b8402e3692735d9a743e6383a022}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE International Conference on Intelligent Rail Transportation Proceedings}
@@ -2323,8 +2560,8 @@
       \strng{authorbibnamehash}{ce32a9dcea59738648cb8dc42ed11b5a}
       \strng{authornamehash}{ce32a9dcea59738648cb8dc42ed11b5a}
       \strng{authorfullhash}{ce32a9dcea59738648cb8dc42ed11b5a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Computational Intelligence and Software Engineering}
@@ -2368,8 +2605,8 @@
       \strng{authorbibnamehash}{266db234b15a273c901abcdcef43d796}
       \strng{authornamehash}{266db234b15a273c901abcdcef43d796}
       \strng{authorfullhash}{8cc1eecaabb096b0198bba161fb07b44}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IFAC World Congress}
@@ -2403,8 +2640,8 @@
       \strng{authorbibnamehash}{46da896e83de4d0b5425402afcc28685}
       \strng{authornamehash}{46da896e83de4d0b5425402afcc28685}
       \strng{authorfullhash}{46da896e83de4d0b5425402afcc28685}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Symposium on Intelligent and Manufacturing Systems}
@@ -2430,8 +2667,8 @@
       \strng{authorbibnamehash}{d19990cfb7e0b96c4ff5d9ca10c915d4}
       \strng{authornamehash}{d19990cfb7e0b96c4ff5d9ca10c915d4}
       \strng{authorfullhash}{d19990cfb7e0b96c4ff5d9ca10c915d4}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Information Communication and Embedded Systems}
@@ -2442,8 +2679,8 @@
       \endverb
     \endentry
     \entry{Paper_90}{article}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IFAC World Congress}
       \field{title}{Fail-Safe Signalization Design for a Railway Yard: A Level Crossing Case}
@@ -2453,8 +2690,8 @@
       \endverb
     \endentry
     \entry{Paper_91}{article}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{Triple module redundancy design techniques for Virtex FPGAs}
       \field{year}{2001}
@@ -2488,8 +2725,8 @@
       \strng{authorbibnamehash}{74f5c9fc76f65969854ebbde7b67d753}
       \strng{authornamehash}{74f5c9fc76f65969854ebbde7b67d753}
       \strng{authorfullhash}{062d5112b4285ed4325931e90d54a2b5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Design, Automation and Test in Europe}
@@ -2534,8 +2771,8 @@
       \strng{authornamehash}{215b5b36320ba4d556bcac44b73d31ec}
       \strng{authorfullhash}{cb9e2ea84443c3683274a0ad1ce639bb}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Informartion technology and control}
@@ -2559,8 +2796,8 @@
       \strng{authorbibnamehash}{4b30ede126c91cb77ac865aa8d382e59}
       \strng{authornamehash}{4b30ede126c91cb77ac865aa8d382e59}
       \strng{authorfullhash}{4b30ede126c91cb77ac865aa8d382e59}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Control and Computer Vision}
@@ -2584,8 +2821,8 @@
       \strng{authorbibnamehash}{fa1da5a9eebd355ad88f875945d50702}
       \strng{authornamehash}{fa1da5a9eebd355ad88f875945d50702}
       \strng{authorfullhash}{fa1da5a9eebd355ad88f875945d50702}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Workshop on the HOL Theorem Proving System and Its Applications}
@@ -2619,8 +2856,8 @@
       \strng{authorbibnamehash}{3df7e7464a2df40a8f0a8b4b77b1edfe}
       \strng{authornamehash}{3df7e7464a2df40a8f0a8b4b77b1edfe}
       \strng{authorfullhash}{3df7e7464a2df40a8f0a8b4b77b1edfe}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Industrial Engineering}
@@ -2644,8 +2881,8 @@
       \strng{authorbibnamehash}{34f4c8190d19798a2cccef30ebe24f16}
       \strng{authornamehash}{34f4c8190d19798a2cccef30ebe24f16}
       \strng{authorfullhash}{34f4c8190d19798a2cccef30ebe24f16}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Graduate project}
@@ -2653,15 +2890,15 @@
       \field{year}{2005}
     \endentry
     \entry{Paper_98}{article}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{All Aboard with Xilinx Exploring the Future of Trains and Railways}
       \field{year}{2020}
     \endentry
     \entry{Paper_99}{article}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{Railway and Industry Business Expertise}
       \field{year}{2020}
@@ -2672,46 +2909,6 @@
       \field{labeltitlesource}{title}
       \field{title}{SOC for Railway Train \& Railways}
       \field{year}{2020}
-    \endentry
-    \entry{Paper_101}{article}{}
-      \name{author}{4}{}{%
-        {{hash=2f40b1d1d62e54b7cccfde01447c061a}{%
-           family={Bosschaart},
-           familyi={B\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7e9785fe714dfdfeaaabd57c4764584a}{%
-           family={Quaglietta},
-           familyi={Q\bibinitperiod},
-           given={Egidio},
-           giveni={E\bibinitperiod}}}%
-        {{hash=e5f47b1164766d6284f1eba2357249df}{%
-           family={Janssen},
-           familyi={J\bibinitperiod},
-           given={Bob},
-           giveni={B\bibinitperiod}}}%
-        {{hash=fef610ed7ef5914535a248278ba6d238}{%
-           family={Goverde},
-           familyi={G\bibinitperiod},
-           given={Rob\bibnamedelimb M.\bibnamedelimi P.},
-           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
-      \strng{fullhash}{c60dcb365574a133b47c93cf00c79aa3}
-      \strng{bibnamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
-      \strng{authorbibnamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
-      \strng{authornamehash}{256e31db40fd0031b1a31d1d7f9bcc3e}
-      \strng{authorfullhash}{c60dcb365574a133b47c93cf00c79aa3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Information Systems}
-      \field{title}{Efficient formalization of railway interlocking data in RailML}
-      \field{year}{2015}
-      \verb{doi}
-      \verb 10.1016/j.is.2014.11.007
-      \endverb
     \endentry
     \entry{Paper_102}{article}{}
       \name{author}{3}{}{%
@@ -2748,13 +2945,6 @@
       \verb 10.1016/S1474-6670(17)38143-0
       \endverb
     \endentry
-    \entry{Paper_103}{article}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{title}{IRS 30110 -RailTopoModel - Railway infrastructure topological model}
-      \field{year}{2016}
-    \endentry
     \entry{Paper_104}{article}{}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -2767,13 +2957,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Arty Evaluation Board Tutorial LwIP Applications for the Arty Evaluation Board}
       \field{year}{2015}
-    \endentry
-    \entry{Paper_106}{article}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{title}{Using railML for Exchanging Timetable Data}
-      \field{year}{2017}
     \endentry
     \entry{Paper_107}{article}{}
       \name{author}{5}{}{%
@@ -4230,39 +4413,6 @@
       \verb 10.1109/TITS.2020.2970000
       \endverb
     \endentry
-    \entry{Paper_143}{article}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Union of Railways}
-      \field{title}{Feasibility study RailTopoModel}
-      \field{year}{2013}
-    \endentry
-    \entry{Paper_144}{article}{}
-      \name{author}{1}{}{%
-        {{hash=dae22ce2fa695ddfb11b6dc772a53e44}{%
-           family={Hlubuček},
-           familyi={H\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \strng{fullhash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \strng{bibnamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \strng{authorbibnamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \strng{authornamehash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \strng{authorfullhash}{dae22ce2fa695ddfb11b6dc772a53e44}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Acta Polytechnica CTU Proceedings}
-      \field{title}{RailTopoModel and RailML3 in overall context}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.14311/APP.2017.11.0016
-      \endverb
-    \endentry
     \entry{Paper_145}{article}{}
       \name{author}{4}{}{%
         {{hash=21c9cd67116f3c3e1e305aa8ec028ef2}{%
@@ -4302,14 +4452,6 @@
       \verb{doi}
       \verb 10.3390/su13031394
       \endverb
-    \endentry
-    \entry{Paper_146}{article}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Union of Railways}
-      \field{title}{IRS 30100}
-      \field{year}{2016}
     \endentry
     \entry{Paper_147}{article}{}
       \name{author}{3}{}{%
@@ -4507,46 +4649,6 @@
       \field{title}{RailML – A standard data interface for railroad applications}
       \field{year}{2004}
     \endentry
-    \entry{Paper_154}{article}{}
-      \name{author}{4}{}{%
-        {{hash=f0720e1c36dab7977bf528bf61a06a98}{%
-           family={Iliasov},
-           familyi={I\bibinitperiod},
-           given={Alexei},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4b0aef6bd4ce9c5aa6f19efb66f503bd}{%
-           family={Taylor},
-           familyi={T\bibinitperiod},
-           given={Dominic},
-           giveni={D\bibinitperiod}}}%
-        {{hash=511c12c5a0b9d5ddaa1b1378b1191f10}{%
-           family={Laibinis},
-           familyi={L\bibinitperiod},
-           given={Linas},
-           giveni={L\bibinitperiod}}}%
-        {{hash=5c6cb2827ae64b3aaf13f8f8823610dc}{%
-           family={Romanovsky},
-           familyi={R\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
-      \strng{fullhash}{d170f4c203b5bf8cd2a00046ed0c6a28}
-      \strng{bibnamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
-      \strng{authorbibnamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
-      \strng{authornamehash}{af0fdc1115a998f4eb7e7be4e77a6f80}
-      \strng{authorfullhash}{d170f4c203b5bf8cd2a00046ed0c6a28}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Dependable and Secure Computing}
-      \field{title}{Practical Verification of Railway Signalling Programs}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.1109/TDSC.2022.3141555
-      \endverb
-    \endentry
     \entry{Paper_155}{article}{}
       \name{author}{3}{}{%
         {{hash=d78f2b855dc378c3ac9d403e07f6f560}{%
@@ -4580,6 +4682,7 @@
       \field{year}{2018}
     \endentry
   \enddatalist
+  \missing{Paper_156}
 \endrefsection
 \endinput
 

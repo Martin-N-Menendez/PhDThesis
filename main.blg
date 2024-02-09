@@ -1,17 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[71] biber-MSWIN64:340> INFO - === 
-[108] Biber.pm:419> INFO - Reading 'main.bcf'
-[188] Biber.pm:979> INFO - Found 155 citekeys in bib section 0
-[197] Biber.pm:4419> INFO - Processing section 0
-[205] Biber.pm:4610> INFO - Looking for bibtex file 'references/main.bib' for section 0
-[250] bibtex.pm:1713> INFO - LaTeX decoding ...
-[329] bibtex.pm:1519> INFO - Found BibTeX data source 'references/main.bib'
-[681] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[681] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[681] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[728] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[773] bbl.pm:763> INFO - Output to main.bbl
-[773] Biber.pm:131> WARN - Duplicate entry key: 'Paper_151' in file 'references/main.bib', skipping ...
-[773] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\menen\AppData\Local\Temp\biber_tmp_2RYS\3b92c3a43883b50258e417775889aed6_22380.utf8, line 937, warning: 78 characters of junk seen at toplevel
-[773] Biber.pm:133> INFO - WARNINGS: 2
+[69] biber-MSWIN64:340> INFO - === 
+[109] Biber.pm:419> INFO - Reading 'main.bcf'
+[236] Biber.pm:979> INFO - Found 159 citekeys in bib section 0
+[247] Biber.pm:4419> INFO - Processing section 0
+[260] Biber.pm:4610> INFO - Looking for bibtex file 'references/main.bib' for section 0
+[305] bibtex.pm:1713> INFO - LaTeX decoding ...
+[384] bibtex.pm:1519> INFO - Found BibTeX data source 'references/main.bib'
+[727] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[727] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[727] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[776] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[819] bbl.pm:763> INFO - Output to main.bbl
+[819] Biber.pm:131> WARN - Duplicate entry key: 'Paper_151' in file 'references/main.bib', skipping ...
+[819] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\menen\AppData\Local\Temp\biber_tmp_0Cw7\3b92c3a43883b50258e417775889aed6_18252.utf8, line 937, warning: 78 characters of junk seen at toplevel
+[819] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
+[819] Biber.pm:133> INFO - WARNINGS: 3
