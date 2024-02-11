@@ -1,33 +1,23 @@
 % !TeX document-id = {f194c271-35cd-4912-8193-fe5787052428}
 % !BIB TS-program = biber
 
-\documentclass{book}
+\documentclass{report}
 \usepackage[cache=false,outputdir=build]{minted}
-\usepackage{packages}
+%\usepackage{packages}
 \usepackage{lipsum}
 \usepackage{mwe}
 \usepackage{amsmath,amsfonts}
-
-%\usepackage[numbers]{natbib}
-%\bibliographystyle{IEEEtranN}
-
 \usepackage{listings}
 \usepackage[spanish,linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage{algorithmic}
 \usepackage{tikz}
+\usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{subcaption}
 
-%\usepackage[style=numeric-comp]{biblatex}
+\usepackage[backend=biber,style=ieee]{biblatex}
 
-%\usepackage{biblatex}
-\usepackage[style=ieee,natbib]{biblatex}
-
-%\bibliographystyle{ieeetr}
-%\bibliography{refs}
-
-%\addbibresource{references/references.bib}
-
-\bibliography{references/references.bib}
+\addbibresource{references/references.bib}
 
  
 \newcommand{\SWITCH}[1]{\STATE \textbf{Switch} (#1)}
@@ -98,8 +88,6 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \input{introduccion/main}
-%\newpage
-%\input{propuesta/main}
 \newpage
 \input{RNA/main}
 \newpage
