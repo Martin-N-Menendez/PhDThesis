@@ -81,47 +81,47 @@
 \contentsline {subsection}{\numberline {3.3.3}Modelo dinamico de las señales}{70}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Redundancia}{70}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Validacion de la implementacion}{71}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Resultados obtenidos}{72}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Ejemplo 1}{72}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Señalamiento original}{73}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Señalamiento generado por el RNA}{73}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Sistema sintetizado}{75}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Validacion del sistema}{75}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Ejemplo 2}{77}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Señalamiento original}{77}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Señalamiento generado por el RNA}{78}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Sistema sintetizado}{78}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Validacion del sistema}{79}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Ejemplo 3}{81}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Señalamiento original}{81}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Señalamiento generado por el RNA}{82}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Sistema sintetizado}{82}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Validacion del sistema}{82}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Ejemplo 4}{90}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Señalamiento original}{91}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Señalamiento generado por el RNA}{91}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Sistema sintetizado}{91}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Validacion del sistema}{92}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Ejemplo 5}{101}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Señalamiento original}{102}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Señalamiento generado por el RNA}{102}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Sistema sintetizado}{103}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Validacion del sistema}{103}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Ejemplo 6}{106}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Señalamiento original}{106}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Señalamiento generado por el RNA}{107}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Sistema sintetizado}{108}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Validacion del sistema}{108}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Ejemplo 7}{111}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Señalamiento original}{111}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Señalamiento generado por el RNA}{111}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Sistema sintetizado}{112}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Validacion del sistema}{113}{subsection.4.7.4}%
-\contentsline {section}{\numberline {4.8}Ejemplo 8}{117}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Señalamiento original}{117}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Señalamiento generado por el RNA}{118}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Sistema sintetizado}{118}{subsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.8.4}Validacion del sistema}{119}{subsection.4.8.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{121}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Resultados obtenidos}{121}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Trabajo futuro}{121}{section.5.2}%
+\contentsline {chapter}{\numberline {4}Resultados obtenidos}{73}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ejemplo 1}{73}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Señalamiento original}{74}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Señalamiento generado por el RNA}{74}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Sistema sintetizado}{76}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Validacion del sistema}{76}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Ejemplo 2}{78}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Señalamiento original}{78}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Señalamiento generado por el RNA}{79}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Sistema sintetizado}{79}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Validacion del sistema}{80}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Ejemplo 3}{82}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Señalamiento original}{82}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Señalamiento generado por el RNA}{83}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Sistema sintetizado}{83}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Validacion del sistema}{83}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Ejemplo 4}{91}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Señalamiento original}{92}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Señalamiento generado por el RNA}{92}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Sistema sintetizado}{92}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Validacion del sistema}{93}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Ejemplo 5}{102}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Señalamiento original}{103}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Señalamiento generado por el RNA}{103}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Sistema sintetizado}{104}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Validacion del sistema}{104}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Ejemplo 6}{107}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Señalamiento original}{107}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Señalamiento generado por el RNA}{108}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Sistema sintetizado}{109}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Validacion del sistema}{109}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Ejemplo 7}{112}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Señalamiento original}{112}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Señalamiento generado por el RNA}{112}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Sistema sintetizado}{113}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Validacion del sistema}{114}{subsection.4.7.4}%
+\contentsline {section}{\numberline {4.8}Ejemplo 8}{118}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Señalamiento original}{118}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Señalamiento generado por el RNA}{119}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Sistema sintetizado}{119}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}Validacion del sistema}{120}{subsection.4.8.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{123}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Resultados obtenidos}{123}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{123}{section.5.2}%

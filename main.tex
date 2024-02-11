@@ -1,19 +1,34 @@
-\documentclass{report}
+% !TeX document-id = {f194c271-35cd-4912-8193-fe5787052428}
+% !BIB TS-program = biber
+
+\documentclass{book}
 \usepackage[cache=false,outputdir=build]{minted}
 \usepackage{packages}
 \usepackage{lipsum}
 \usepackage{mwe}
 \usepackage{amsmath,amsfonts}
+
+%\usepackage[numbers]{natbib}
+%\bibliographystyle{IEEEtranN}
+
 \usepackage{listings}
-%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[spanish,linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage{algorithmic}
-%\usepackage[margin=2cm]{geometry} % Adjust margins as needed
 \usepackage{tikz}
 \usepackage{graphicx}
-\usepackage{lipsum} % For dummy text, you can remove this in your actual document
 
-%\usepackage[ natbib=true, style=numeric,sorting=none]{biblatex}
+%\usepackage[style=numeric-comp]{biblatex}
+
+%\usepackage{biblatex}
+\usepackage[style=ieee,natbib]{biblatex}
+
+%\bibliographystyle{ieeetr}
+%\bibliography{refs}
+
+%\addbibresource{references/references.bib}
+
+\bibliography{references/references.bib}
+
  
 \newcommand{\SWITCH}[1]{\STATE \textbf{Switch} (#1)}
 \newcommand{\OUTPUT}{\STATE \textbf{Return} }
@@ -52,7 +67,7 @@
     }
 
     
-\addbibresource{references/main.bib}
+
 \setcounter{secnumdepth}{4} % para que ponga 1.1.1.1 en subsubsecciones
 \setcounter{tocdepth}{4} % para que ponga subsubsecciones en el indice
 \begin{document}
@@ -93,6 +108,8 @@
 \input{resultados-obtenidos/main}
 \newpage
 \input{conclusiones/main}
+
+
 
 \printbibliography[title={Referencias}]
 

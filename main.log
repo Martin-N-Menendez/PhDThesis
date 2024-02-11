@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  9 FEB 2024 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  11 FEB 2024 17:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6,10 +6,10 @@ entering extended mode
 (main.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
-(C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
-Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count186
 \c@chapter=\count187
@@ -1597,6 +1597,24 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
+
+! LaTeX Error: Option clash for package biblatex.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 
+     
+The package biblatex has already been loaded with options:
+  [backend=biber,style=numeric,sorting=none]
+There has now been an attempt to load it with options
+  [style=ieee,natbib]
+Adding the global options:
+  backend=biber,style=numeric,sorting=none,style=ieee,natbib
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ma
 in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
 
@@ -1606,9 +1624,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 58
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73
 .
-
 (C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux
@@ -1633,24 +1650,24 @@ LaTeX Warning: Label `Tab:tabla_original_1' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1659,48 +1676,48 @@ LaTeX Font Info:    ... okay on input line 58.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
 * v-part:(T,H,B)=(68.01874pt, 675.0pt, 102.0281pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=418.25368pt
 * \textheight=675.0pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-41.25125pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-34.31874pt
 * \headheight=12.0pt
-* \headsep=25.0pt
+* \headsep=18.06749pt
 * \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
-LaTeX Info: Redefining \microtypecontext on input line 58.
-Package microtype Info: Applying patch `item' on input line 58.
-Package microtype Info: Applying patch `toc' on input line 58.
-Package microtype Info: Applying patch `eqnum' on input line 58.
-Package microtype Info: Applying patch `footnote' on input line 58.
-Package microtype Info: Applying patch `verbatim' on input line 58.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 73.
+Package microtype Info: Applying patch `item' on input line 73.
+Package microtype Info: Applying patch `toc' on input line 73.
+Package microtype Info: Applying patch `eqnum' on input line 73.
+Package microtype Info: Applying patch `footnote' on input line 73.
+Package microtype Info: Applying patch `verbatim' on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 58.
+LaTeX Info: Redefining \showhyphens on input line 73.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1739,7 +1756,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count564
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 73.
  (main.out) (main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1757,18 +1774,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout5 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
+Package biblatex Info: ... file 'main.bbl' not found.
 
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Paper_156
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 58.
-Package biblatex Info: Reference segment=0 on input line 58.
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
 
 (C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1851,15 +1861,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
 [1
 
+
 {C:/Users/menen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/mene
 n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./caratula/FIUBA
-.png>])
-pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66 \newpage
-              [1] (resumen.tex
+.png>]) [2] (resumen.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 2.
 
@@ -1912,9 +1917,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \newpage
-              [1] (abstract.tex) [2] [3] (agradecimientos.tex) [4] (indice.tex
-(main.toc
+l.85 \newpage
+              [1] (abstract.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \newpage
+              [2] [3] (agradecimientos.tex) [4] (indice.tex (main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1934,6 +1944,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6])
 \tf@toc=\write8
 \openout8 = `main.toc'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -2010,6 +2023,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 
@@ -2030,8 +2046,8 @@ LaTeX Info: Redefining \% on input line 1.
 \openout10 = `main.lot'.
 
 )
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2043,6 +2059,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12] (introduccion/main.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation 'Paper_160' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_168' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_176' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_202' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_203' on page 1 undefined on input line 3.
+
 (introduccion/topologias/main.tex (introduccion/topologias/bypass.tex [1
 
 ]
@@ -2079,20 +2110,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 )) (introduccion/principios.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [3 <./Figuras/hub.png>])
-(introduccion/enclavamientos/main.tex
+ [3 <./Figuras/hub.png>]
+
+LaTeX Warning: Citation 'IRSE' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'RISSB' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'TFNSW' on page 4 undefined on input line 6.
+
+) (introduccion/enclavamientos/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [4{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
 nc}{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} 
 <./Figuras/terminal.png>]
 (introduccion/enclavamientos/historia.tex
-<Figuras/palancas.jpg, id=1054, 1284.8pt x 722.7pt>
+<Figuras/palancas.jpg, id=1048, 1284.8pt x 722.7pt>
 File: Figuras/palancas.jpg Graphic file (type jpg)
 <use Figuras/palancas.jpg>
 Package pdftex.def Info: Figuras/palancas.jpg  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 235.26067pt.
-<Figuras/relees.jpg, id=1056, 1284.8pt x 624.3325pt>
+<Figuras/relees.jpg, id=1050, 1284.8pt x 624.3325pt>
 File: Figuras/relees.jpg Graphic file (type jpg)
 <use Figuras/relees.jpg>
 Package pdftex.def Info: Figuras/relees.jpg  used on input line 18.
@@ -2100,7 +2140,7 @@ Package pdftex.def Info: Figuras/relees.jpg  used on input line 18.
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  [5 <./Figuras/palancas.jpg>]
-<Figuras/llavallol.jpg, id=1063, 1284.8pt x 624.3325pt>
+<Figuras/llavallol.jpg, id=1057, 1284.8pt x 624.3325pt>
 File: Figuras/llavallol.jpg Graphic file (type jpg)
 <use Figuras/llavallol.jpg>
 Package pdftex.def Info: Figuras/llavallol.jpg  used on input line 27.
@@ -2110,7 +2150,7 @@ Package pdftex.def Info: Figuras/llavallol.jpg  used on input line 27.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [6 <./Figuras/relees.jpg> <./Figuras/llavallol.jpg>]
-<Figuras/rutas.PNG, id=1069, 310.91156pt x 97.86563pt>
+<Figuras/rutas.PNG, id=1063, 310.91156pt x 97.86563pt>
 File: Figuras/rutas.PNG Graphic file (type png)
 <use Figuras/rutas.PNG>
 Package pdftex.def Info: Figuras/rutas.PNG  used on input line 9.
@@ -2128,19 +2168,66 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  [8]))
 (introduccion/estandares/main.tex (introduccion/estandares/estandares.tex
-<Figuras/IEC61508.png, id=1100, 356.33125pt x 142.5325pt>
+
+LaTeX Warning: Citation 'Paper_71' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_72' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_73' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_74' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_75' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_76' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_77' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_26' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_29' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_30' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_31' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_34' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_47' on page 9 undefined on input line 3.
+
+<Figuras/IEC61508.png, id=1081, 356.33125pt x 142.5325pt>
 File: Figuras/IEC61508.png Graphic file (type png)
 <use Figuras/IEC61508.png>
 Package pdftex.def Info: Figuras/IEC61508.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 167.30823pt.
 
+LaTeX Warning: Citation 'Paper_70' on page 9 undefined on input line 12.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+
+LaTeX Warning: Citation 'Paper_70' on page 9 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'Paper_70' on page 9 undefined on input line 40.
+
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
 [9 <./Figuras/IEC61508.png>]) (introduccion/estandares/redundancia.tex
-<Figuras/redundancia.png, id=1125, 834.11626pt x 351.56343pt>
+<Figuras/redundancia.png, id=1089, 834.11626pt x 351.56343pt>
 File: Figuras/redundancia.png Graphic file (type png)
 <use Figuras/redundancia.png>
 Package pdftex.def Info: Figuras/redundancia.png  used on input line 7.
@@ -2152,24 +2239,35 @@ LaTeX Info: Redefining \% on input line 1.
  [10{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
 enc} <./Figuras/redundancia.png>]
 (introduccion/railML/railTopoModel/main.tex
-<Figuras/objetos.png, id=1137, 679.78969pt x 521.69907pt>
+
+LaTeX Warning: Citation 'Paper_146' on page 11 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_144' on page 11 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_143' on page 11 undefined on input line 3.
+
+<Figuras/objetos.png, id=1098, 679.78969pt x 521.69907pt>
 File: Figuras/objetos.png Graphic file (type png)
 <use Figuras/objetos.png>
 Package pdftex.def Info: Figuras/objetos.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 320.98233pt.
+
+LaTeX Warning: Citation 'Paper_103' on page 11 undefined on input line 12.
 
 (introduccion/railML/railTopoModel/base.tex)
 (introduccion/railML/railTopoModel/netEntities.tex
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
  [11 <./Figuras/objetos.png>]
-<Figuras/grafos.png, id=1149, 889.07156pt x 293.59688pt>
+<Figuras/grafos.png, id=1105, 889.07156pt x 293.59688pt>
 File: Figuras/grafos.png Graphic file (type png)
 <use Figuras/grafos.png>
 Package pdftex.def Info: Figuras/grafos.png  used on input line 10.
 (pdftex.def)             Requested size: 418.25368pt x 138.11598pt.
 ) (introduccion/railML/railTopoModel/niveles.tex
-<Figuras/capas.png, id=1152, 729.47531pt x 344.03531pt>
+<Figuras/capas.png, id=1108, 729.47531pt x 344.03531pt>
 File: Figuras/capas.png Graphic file (type png)
 <use Figuras/capas.png>
 Package pdftex.def Info: Figuras/capas.png  used on input line 7.
@@ -2181,7 +2279,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 [12 <./Figuras/grafos.png>]
-<Figuras/railtopomodel.png, id=1159, 925.95938pt x 385.44pt>
+<Figuras/railtopomodel.png, id=1115, 925.95938pt x 385.44pt>
 File: Figuras/railtopomodel.png Graphic file (type png)
 <use Figuras/railtopomodel.png>
 Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
@@ -2190,18 +2288,49 @@ LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
  [13 <./Figuras/capas.png> <./Figuras/railtopomodel.png>]) (introduccion/railML
 /railTopoModel/positioning.tex))
-(introduccion/railML/railML3.tex) (introduccion/railML/Industria.tex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+(introduccion/railML/railML3.tex
+
+LaTeX Warning: Citation 'Paper_101' on page 14 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_106' on page 14 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Paper_154' on page 14 undefined on input line 3.
+
+) (introduccion/railML/Industria.tex
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
  [14]))
 (introduccion/estado-del-arte/main.tex
-(introduccion/estado-del-arte/empresas.tex)
-(introduccion/estado-del-arte/estudios.tex
+(introduccion/estado-del-arte/empresas.tex
+
+LaTeX Warning: Citation 'Paper_71' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_72' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_73' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_74' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_75' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_76' on page 15 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Paper_77' on page 15 undefined on input line 20.
+
+) (introduccion/estado-del-arte/estudios.tex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  [15])
 (introduccion/estado-del-arte/contexto.tex
-<Figuras/HojaDeRuta.png, id=1189, 913.91437pt x 368.87813pt>
+<Figuras/HojaDeRuta.png, id=1132, 913.91437pt x 368.87813pt>
 File: Figuras/HojaDeRuta.png Graphic file (type png)
 <use Figuras/HojaDeRuta.png>
 Package pdftex.def Info: Figuras/HojaDeRuta.png  used on input line 11.
@@ -2213,7 +2342,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 [16])) (introduccion/propuesta.tex
-<Figuras/workflow.png, id=1197, 1096.095pt x 522.95375pt>
+<Figuras/workflow.png, id=1140, 1096.095pt x 522.95375pt>
 File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
@@ -2226,7 +2355,7 @@ LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 [17 <./Figuras/HojaDeRuta.png>] (introduccion/enfoque.tex)
 (introduccion/arquitectura.tex
-<Figuras/Architecture.png, id=1206, 615.0177pt x 333.1647pt>
+<Figuras/Architecture.png, id=1149, 615.0177pt x 333.1647pt>
 File: Figuras/Architecture.png Graphic file (type png)
 <use Figuras/Architecture.png>
 Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
@@ -2242,8 +2371,8 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  [19 <./Figuras/Architecture.png>])))
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
  [20] (RNA/main.tex
 Cap\'{\i }tulo 2.
 (RNA/biblioteca/main.tex [21
@@ -2276,7 +2405,7 @@ Overfull \hbox (15.0pt too wide) detected at line 72
 [][] 
  []
 
-<Figuras/conexo.PNG, id=1332, 586.44093pt x 336.50719pt>
+<Figuras/conexo.PNG, id=1275, 586.44093pt x 336.50719pt>
 File: Figuras/conexo.PNG Graphic file (type png)
 <use Figuras/conexo.PNG>
 Package pdftex.def Info: Figuras/conexo.PNG  used on input line 80.
@@ -2297,7 +2426,7 @@ Overfull \hbox (15.0pt too wide) detected at line 107
  []
 
 ) (RNA/biblioteca/vias.tex
-<Figuras/trocha.png, id=1351, 803.0pt x 231.86626pt>
+<Figuras/trocha.png, id=1294, 803.0pt x 231.86626pt>
 File: Figuras/trocha.png Graphic file (type png)
 <use Figuras/trocha.png>
 Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
@@ -2305,7 +2434,7 @@ Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
  [26 <./Figuras/trocha.png>]
-<Figuras/ascDesc.png, id=1376, 447.6725pt x 232.87pt>
+<Figuras/ascDesc.png, id=1319, 447.6725pt x 232.87pt>
 File: Figuras/ascDesc.png Graphic file (type png)
 <use Figuras/ascDesc.png>
 Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
@@ -2315,7 +2444,7 @@ Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [27 <./Figuras/ascDesc.png>]
-<Figuras/Border.png, id=1397, 1611.01875pt x 348.30125pt>
+<Figuras/Border.png, id=1340, 1611.01875pt x 348.30125pt>
 File: Figuras/Border.png Graphic file (type png)
 <use Figuras/Border.png>
 Package pdftex.def Info: Figuras/Border.png  used on input line 8.
@@ -2323,12 +2452,12 @@ Package pdftex.def Info: Figuras/Border.png  used on input line 8.
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
  [28 <./Figuras/Border.png>]) (RNA/biblioteca/detection.tex
-<Figuras/Detector.png, id=1413, 556.32843pt x 97.11281pt>
+<Figuras/Detector.png, id=1356, 556.32843pt x 97.11281pt>
 File: Figuras/Detector.png Graphic file (type png)
 <use Figuras/Detector.png>
 Package pdftex.def Info: Figuras/Detector.png  used on input line 8.
 (pdftex.def)             Requested size: 418.25368pt x 73.01224pt.
-<Figuras/circuito_via.png, id=1415, 936.49875pt x 302.63063pt>
+<Figuras/circuito_via.png, id=1358, 936.49875pt x 302.63063pt>
 File: Figuras/circuito_via.png Graphic file (type png)
 <use Figuras/circuito_via.png>
 Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
@@ -2336,7 +2465,7 @@ Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  [29 <./Figuras/Detector.png> <./Figuras/circuito_via.png>]
-<Figuras/contador.jpg, id=1430, 645.10484pt x 338.5279pt>
+<Figuras/contador.jpg, id=1373, 645.10484pt x 338.5279pt>
 File: Figuras/contador.jpg Graphic file (type jpg)
 <use Figuras/contador.jpg>
 Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
@@ -2345,7 +2474,7 @@ Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [30 <./Figuras/contador.jpg>]
-<Figuras/Platform.png, id=1450, 803.25093pt x 250.68657pt>
+<Figuras/Platform.png, id=1393, 803.25093pt x 250.68657pt>
 File: Figuras/Platform.png Graphic file (type png)
 <use Figuras/Platform.png>
 Package pdftex.def Info: Figuras/Platform.png  used on input line 10.
@@ -2354,7 +2483,7 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 
 [31 <./Figuras/Platform.png>]) (RNA/biblioteca/crossing.tex
-<Figuras/cruce.png, id=1480, 800.9925pt x 317.68687pt>
+<Figuras/cruce.png, id=1423, 800.9925pt x 317.68687pt>
 File: Figuras/cruce.png Graphic file (type png)
 <use Figuras/cruce.png>
 Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
@@ -2362,7 +2491,7 @@ Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
  [32 <./Figuras/cruce.png>]) (RNA/biblioteca/switch.tex
-<Figuras/Cambios.jpg, id=1498, 4047.12pt x 3035.34pt>
+<Figuras/Cambios.jpg, id=1441, 4047.12pt x 3035.34pt>
 File: Figuras/Cambios.jpg Graphic file (type jpg)
 <use Figuras/Cambios.jpg>
 Package pdftex.def Info: Figuras/Cambios.jpg  used on input line 8.
@@ -2371,7 +2500,7 @@ Package pdftex.def Info: Figuras/Cambios.jpg  used on input line 8.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/Cambios_2.jpg, id=1500, 3034.33624pt x 2543.5025pt>
+<Figuras/Cambios_2.jpg, id=1443, 3034.33624pt x 2543.5025pt>
 File: Figuras/Cambios_2.jpg Graphic file (type jpg)
 <use Figuras/Cambios_2.jpg>
 Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
@@ -2379,7 +2508,7 @@ Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/cambio_3.PNG, id=1502, 934.99312pt x 295.85532pt>
+<Figuras/cambio_3.PNG, id=1445, 934.99312pt x 295.85532pt>
 File: Figuras/cambio_3.PNG Graphic file (type png)
 <use Figuras/cambio_3.PNG>
 Package pdftex.def Info: Figuras/cambio_3.PNG  used on input line 26.
@@ -2387,7 +2516,7 @@ Package pdftex.def Info: Figuras/cambio_3.PNG  used on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/cambios.png, id=1504, 852.18375pt x 285.31593pt>
+<Figuras/cambios.png, id=1447, 852.18375pt x 285.31593pt>
 File: Figuras/cambios.png Graphic file (type png)
 <use Figuras/cambios.png>
 Package pdftex.def Info: Figuras/cambios.png  used on input line 35.
@@ -2412,7 +2541,7 @@ Overfull \hbox (15.0pt too wide) detected at line 109
  []
 
 ) (RNA/biblioteca/signal.tex
-<Figuras/Semaforo3.png, id=1551, 839.135pt x 612.2875pt>
+<Figuras/Semaforo3.png, id=1494, 839.135pt x 612.2875pt>
 File: Figuras/Semaforo3.png Graphic file (type png)
 <use Figuras/Semaforo3.png>
 Package pdftex.def Info: Figuras/Semaforo3.png  used on input line 8.
@@ -2427,31 +2556,35 @@ LaTeX Info: Redefining \% on input line 20.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
  [37]
-<Figuras/semaforos.PNG, id=1604, 1099.10625pt x 460.72125pt>
+<Figuras/semaforos.PNG, id=1547, 1099.10625pt x 460.72125pt>
 File: Figuras/semaforos.PNG Graphic file (type png)
 <use Figuras/semaforos.PNG>
 Package pdftex.def Info: Figuras/semaforos.PNG  used on input line 23.
 (pdftex.def)             Requested size: 418.25368pt x 175.32195pt.
 )) (RNA/generacion/main.tex
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
  [38 <./Figuras/Semaforo3.png> <./Figuras/semaforos.PNG>] (RNA/generacion/borde
 r.tex
 LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
- [39{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.
-enc}]
-<Figuras/limites.PNG, id=1635, 989.94844pt x 397.485pt>
+
+[39{C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc}]
+<Figuras/limites.PNG, id=1578, 989.94844pt x 397.485pt>
 File: Figuras/limites.PNG Graphic file (type png)
 <use Figuras/limites.PNG>
 Package pdftex.def Info: Figuras/limites.PNG  used on input line 68.
 (pdftex.def)             Requested size: 418.25368pt x 167.93724pt.
 ) (RNA/generacion/detector.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
-
-[40 <./Figuras/limites.PNG>]
-<Figuras/detectores.PNG, id=1664, 1190.19656pt x 595.47469pt>
+ [40 <./Figuras/limites.PNG>]
+<Figuras/detectores.PNG, id=1607, 1190.19656pt x 595.47469pt>
 File: Figuras/detectores.PNG Graphic file (type png)
 <use Figuras/detectores.PNG>
 Package pdftex.def Info: Figuras/detectores.PNG  used on input line 43.
@@ -2461,10 +2594,12 @@ Package pdftex.def Info: Figuras/detectores.PNG  used on input line 43.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (RNA/generacion/platform.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [41]
-<Figuras/platforms.PNG, id=1685, 770.88pt x 217.5628pt>
+<Figuras/platforms.PNG, id=1628, 770.88pt x 217.5628pt>
 File: Figuras/platforms.PNG Graphic file (type png)
 <use Figuras/platforms.PNG>
 Package pdftex.def Info: Figuras/platforms.PNG  used on input line 37.
@@ -2477,7 +2612,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [42 <./Figuras/detectores.PNG>]
-<Figuras/crossings.PNG, id=1701, 767.11594pt x 217.5628pt>
+<Figuras/crossings.PNG, id=1644, 767.11594pt x 217.5628pt>
 File: Figuras/crossings.PNG Graphic file (type png)
 <use Figuras/crossings.PNG>
 Package pdftex.def Info: Figuras/crossings.PNG  used on input line 37.
@@ -2493,7 +2628,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
  [44 <./Figuras/crossings.PNG>]
-<Figuras/switches.PNG, id=1725, 897.3525pt x 343.2825pt>
+<Figuras/switches.PNG, id=1668, 897.3525pt x 343.2825pt>
 File: Figuras/switches.PNG Graphic file (type png)
 <use Figuras/switches.PNG>
 Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
@@ -2503,7 +2638,7 @@ Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [45 <./Figuras/switches.PNG>]
-<Figuras/Figure8_Crop.pdf, id=1737, 380.63907pt x 179.48155pt>
+<Figuras/Figure8_Crop.pdf, id=1680, 380.63907pt x 179.48155pt>
 File: Figuras/Figure8_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure8_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure8_Crop.pdf  used on input line 17.
@@ -2515,17 +2650,19 @@ LaTeX Info: Redefining \% on input line 78.
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
  [47]
-<Figuras/Figure9_Crop.pdf, id=1829, 379.77182pt x 177.74706pt>
+<Figuras/Figure9_Crop.pdf, id=1772, 379.77182pt x 177.74706pt>
 File: Figuras/Figure9_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure9_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure9_Crop.pdf  used on input line 89.
 (pdftex.def)             Requested size: 418.25368pt x 195.76643pt.
 )
 (RNA/simplificacion/herencia-horizontal.tex
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  [48 <./Figuras/Figure9_Crop.pdf>]
-<Figuras/proximity.PNG, id=1914, 377.2494pt x 218.2554pt>
+<Figuras/proximity.PNG, id=1857, 377.2494pt x 218.2554pt>
 File: Figuras/proximity.PNG Graphic file (type png)
 <use Figuras/proximity.PNG>
 Package pdftex.def Info: Figuras/proximity.PNG  used on input line 47.
@@ -2541,10 +2678,12 @@ LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
  [50 <./Figuras/proximity.PNG>]))
 (RNA/generacion-tablas/main.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
  [51]
-<Figuras/Figure11.pdf, id=1969, 684.63776pt x 289.08pt>
+<Figuras/Figure11.pdf, id=1912, 684.63776pt x 289.08pt>
 File: Figuras/Figure11.pdf Graphic file (type pdf)
 <use Figuras/Figure11.pdf>
 Package pdftex.def Info: Figuras/Figure11.pdf  used on input line 58.
@@ -2575,13 +2714,15 @@ LaTeX Info: Redefining \% on input line 211.
 LaTeX Info: Redefining \. on input line 271.
 LaTeX Info: Redefining \% on input line 271.
  [58]
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 326.
 LaTeX Info: Redefining \% on input line 326.
  [59]))
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
- [60]
-(ACG/main.tex
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+
+[60] (ACG/main.tex
 Cap\'{\i }tulo 3.
 (ACG/sistemas-enclavamiento/main.tex
 File: Figuras/bypass.png Graphic file (type png)
@@ -2590,7 +2731,7 @@ Package pdftex.def Info: Figuras/bypass.png  used on input line 10.
 (pdftex.def)             Requested size: 418.25368pt x 84.31708pt.
 
 (ACG/sistemas-enclavamiento/bloqueo-por-ocupacion.tex
-<Figuras/ocupacion.png, id=2181, 843.90282pt x 286.06876pt>
+<Figuras/ocupacion.png, id=2124, 843.90282pt x 286.06876pt>
 File: Figuras/ocupacion.png Graphic file (type png)
 <use Figuras/ocupacion.png>
 Package pdftex.def Info: Figuras/ocupacion.png  used on input line 6.
@@ -2599,7 +2740,7 @@ Package pdftex.def Info: Figuras/ocupacion.png  used on input line 6.
 (ACG/sistemas-enclavamiento/bloqueo-rutas.tex [61
 
 ]
-<Figuras/bloqueo_rutas.png, id=2186, 925.20656pt x 366.61969pt>
+<Figuras/bloqueo_rutas.png, id=2129, 925.20656pt x 366.61969pt>
 File: Figuras/bloqueo_rutas.png Graphic file (type png)
 <use Figuras/bloqueo_rutas.png>
 Package pdftex.def Info: Figuras/bloqueo_rutas.png  used on input line 6.
@@ -2612,17 +2753,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [62 <./Figuras/ocupacion.png>]
-<Figuras/aproximacion_1.png, id=2192, 943.27406pt x 336.50719pt>
+<Figuras/aproximacion_1.png, id=2135, 943.27406pt x 336.50719pt>
 File: Figuras/aproximacion_1.png Graphic file (type png)
 <use Figuras/aproximacion_1.png>
 Package pdftex.def Info: Figuras/aproximacion_1.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 149.20863pt.
-<Figuras/aproximacion_2.png, id=2193, 941.01563pt x 338.76563pt>
+<Figuras/aproximacion_2.png, id=2136, 941.01563pt x 338.76563pt>
 File: Figuras/aproximacion_2.png Graphic file (type png)
 <use Figuras/aproximacion_2.png>
 Package pdftex.def Info: Figuras/aproximacion_2.png  used on input line 16.
 (pdftex.def)             Requested size: 418.25368pt x 150.57188pt.
-<Figuras/aproximacion_3.png, id=2194, 942.52126pt x 336.50719pt>
+<Figuras/aproximacion_3.png, id=2137, 942.52126pt x 336.50719pt>
 File: Figuras/aproximacion_3.png Graphic file (type png)
 <use Figuras/aproximacion_3.png>
 Package pdftex.def Info: Figuras/aproximacion_3.png  used on input line 25.
@@ -2630,7 +2771,7 @@ Package pdftex.def Info: Figuras/aproximacion_3.png  used on input line 25.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
  [63 <./Figuras/bloqueo_rutas.png> <./Figuras/aproximacion_1.png>]
-<Figuras/aproximacion_4.png, id=2201, 940.26282pt x 335.75438pt>
+<Figuras/aproximacion_4.png, id=2144, 940.26282pt x 335.75438pt>
 File: Figuras/aproximacion_4.png Graphic file (type png)
 <use Figuras/aproximacion_4.png>
 Package pdftex.def Info: Figuras/aproximacion_4.png  used on input line 34.
@@ -2643,14 +2784,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
  [64 <./Figuras/aproximacion_2.png> <./Figuras/aproximacion_3.png>]
-<Figuras/solape.png, id=2208, 938.75719pt x 335.75438pt>
+<Figuras/solape.png, id=2151, 938.75719pt x 335.75438pt>
 File: Figuras/solape.png Graphic file (type png)
 <use Figuras/solape.png>
 Package pdftex.def Info: Figuras/solape.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 149.5921pt.
 )
 (ACG/sistemas-enclavamiento/doble-recubrimiento.tex
-<example-image.pdf, id=2209, 321.2pt x 240.9pt>
+<example-image.pdf, id=2152, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 4.
@@ -2660,7 +2801,7 @@ Package pdftex.def Info: example-image.pdf  used on input line 4.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [65 <./Figuras/aproximacion_4.png> <./Figuras/solape.png>]
-<Figuras/secuencial_1.png, id=2217, 938.75719pt x 336.50719pt>
+<Figuras/secuencial_1.png, id=2160, 938.75719pt x 336.50719pt>
 File: Figuras/secuencial_1.png Graphic file (type png)
 <use Figuras/secuencial_1.png>
 Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 7.
@@ -2669,7 +2810,7 @@ Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/secuencial_2.png, id=2218, 941.01563pt x 339.51843pt>
+<Figuras/secuencial_2.png, id=2161, 941.01563pt x 339.51843pt>
 File: Figuras/secuencial_2.png Graphic file (type png)
 <use Figuras/secuencial_2.png>
 Package pdftex.def Info: Figuras/secuencial_2.png  used on input line 16.
@@ -2681,7 +2822,7 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 [66 <C:/Users/menen/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.p
 df>]
-<Figuras/secuencial_3.png, id=2229, 941.76843pt x 337.26pt>
+<Figuras/secuencial_3.png, id=2172, 941.76843pt x 337.26pt>
 File: Figuras/secuencial_3.png Graphic file (type png)
 <use Figuras/secuencial_3.png>
 Package pdftex.def Info: Figuras/secuencial_3.png  used on input line 25.
@@ -2690,7 +2831,7 @@ LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
  [67 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png> <./Figuras/secue
 ncial_3.png>]
-<Figuras/secuencial_4.png, id=2237, 938.75719pt x 333.49594pt>
+<Figuras/secuencial_4.png, id=2180, 938.75719pt x 333.49594pt>
 File: Figuras/secuencial_4.png Graphic file (type png)
 <use Figuras/secuencial_4.png>
 Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 34.
@@ -2707,7 +2848,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [69])
 (ACG/modelado/signal.tex)) (ACG/redundancia/main.tex
-<Figuras/antagonica.png, id=2247, 812.28468pt x 386.19281pt>
+<Figuras/antagonica.png, id=2190, 812.28468pt x 386.19281pt>
 File: Figuras/antagonica.png Graphic file (type png)
 <use Figuras/antagonica.png>
 Package pdftex.def Info: Figuras/antagonica.png  used on input line 9.
@@ -2720,13 +2861,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [70]))
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
  [71 <./Figuras/antagonica.png>]
 (resultados-obtenidos/main.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [72
+
+]
 Cap\'{\i }tulo 4.
 (resultados-obtenidos/ejemplo1/main.tex
-<resultados-obtenidos/ejemplo1/images/1_original.png, id=2258, 1678.01906pt x 6
+<resultados-obtenidos/ejemplo1/images/1_original.png, id=2205, 1678.01906pt x 6
 87.31781pt>
 File: resultados-obtenidos/ejemplo1/images/1_original.png Graphic file (type pn
 g)
@@ -2734,7 +2880,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 171.31514pt.
-<resultados-obtenidos/ejemplo1/images/1_empty.png, id=2259, 2068.72874pt x 871.
+<resultados-obtenidos/ejemplo1/images/1_empty.png, id=2206, 2068.72874pt x 871.
 75688pt>
 File: resultados-obtenidos/ejemplo1/images/1_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_empty.png>
@@ -2745,7 +2891,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step1.png, id=2260, 2095.83pt x 875.520
+<resultados-obtenidos/ejemplo1/images/1_step1.png, id=2207, 2095.83pt x 875.520
 94pt>
 File: resultados-obtenidos/ejemplo1/images/1_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step1.png>
@@ -2755,7 +2901,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step2.png, id=2261, 2091.31313pt x 855.
+<resultados-obtenidos/ejemplo1/images/1_step2.png, id=2208, 2091.31313pt x 855.
 195pt>
 File: resultados-obtenidos/ejemplo1/images/1_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step2.png>
@@ -2765,7 +2911,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step3.png, id=2262, 2098.08844pt x 857.
+<resultados-obtenidos/ejemplo1/images/1_step3.png, id=2209, 2098.08844pt x 857.
 45343pt>
 File: resultados-obtenidos/ejemplo1/images/1_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step3.png>
@@ -2775,7 +2921,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step4.png, id=2263, 2079.26813pt x 872.
+<resultados-obtenidos/ejemplo1/images/1_step4.png, id=2210, 2079.26813pt x 872.
 50969pt>
 File: resultados-obtenidos/ejemplo1/images/1_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step4.png>
@@ -2785,7 +2931,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=2264, 1672.74937pt x 682.04
+<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=2211, 1672.74937pt x 682.04
 813pt>
 File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_RNA.png>
@@ -2795,9 +2941,8 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo1/original-signalling.tex [72
-
- <./resultados-obtenidos/ejemplo1/images/1_original.png>]
+(resultados-obtenidos/ejemplo1/original-signalling.tex [73 <./resultados-obteni
+dos/ejemplo1/images/1_original.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--33
 
  []
@@ -2808,10 +2953,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) (resultados-obtenidos/ejemplo1/generated-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [73 <./resultados-obtenidos/ejemplo1/images/1_empty.png> <./resultados-obtenid
+ [74 <./resultados-obtenidos/ejemplo1/images/1_empty.png> <./resultados-obtenid
 os/ejemplo1/images/1_step1.png>]
 
-LaTeX Warning: Text page 74 contains only floats.
+LaTeX Warning: Text page 75 contains only floats.
 
 
 Overfull \vbox (1.34186pt too high) has occurred while \output is active []
@@ -2819,7 +2964,7 @@ Overfull \vbox (1.34186pt too high) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 
-[74 <./resultados-obtenidos/ejemplo1/images/1_step2.png> <./resultados-obtenido
+[75 <./resultados-obtenidos/ejemplo1/images/1_step2.png> <./resultados-obtenido
 s/ejemplo1/images/1_step3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--40
 
@@ -2832,7 +2977,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo1/system-validation.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [75 <./resultados-obtenidos/ejemplo1/images/1_step4.png> <./resultados-obtenid
+ [76 <./resultados-obtenidos/ejemplo1/images/1_step4.png> <./resultados-obtenid
 os/ejemplo1/images/1_RNA.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2840,8 +2985,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo2/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [76]
-<resultados-obtenidos/ejemplo2/images/2_original.png, id=2287, 2390.9325pt x 27
+ [77]
+<resultados-obtenidos/ejemplo2/images/2_original.png, id=2235, 2390.9325pt x 27
 1.76532pt>
 File: resultados-obtenidos/ejemplo2/images/2_original.png Graphic file (type pn
 g)
@@ -2853,7 +2998,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_empty.png, id=2288, 959.83594pt x 217.5
+<resultados-obtenidos/ejemplo2/images/2_empty.png, id=2236, 959.83594pt x 217.5
 628pt>
 File: resultados-obtenidos/ejemplo2/images/2_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_empty.png>
@@ -2863,7 +3008,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step1.png, id=2289, 3006.73312pt x 374.
+<resultados-obtenidos/ejemplo2/images/2_step1.png, id=2237, 3006.73312pt x 374.
 90062pt>
 File: resultados-obtenidos/ejemplo2/images/2_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step1.png>
@@ -2873,7 +3018,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step2.png, id=2290, 3006.73312pt x 394.
+<resultados-obtenidos/ejemplo2/images/2_step2.png, id=2238, 3006.73312pt x 394.
 47375pt>
 File: resultados-obtenidos/ejemplo2/images/2_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step2.png>
@@ -2883,7 +3028,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step3.png, id=2291, 3006.73312pt x 362.
+<resultados-obtenidos/ejemplo2/images/2_step3.png, id=2239, 3006.73312pt x 362.
 10281pt>
 File: resultados-obtenidos/ejemplo2/images/2_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step3.png>
@@ -2893,7 +3038,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step4.png, id=2292, 3006.73312pt x 328.
+<resultados-obtenidos/ejemplo2/images/2_step4.png, id=2240, 3006.73312pt x 328.
 97906pt>
 File: resultados-obtenidos/ejemplo2/images/2_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step4.png>
@@ -2903,7 +3048,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=2293, 2346.51656pt x 282.30
+<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=2241, 2346.51656pt x 282.30
 469pt>
 File: resultados-obtenidos/ejemplo2/images/2_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_RNA.png>
@@ -2916,7 +3061,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (resultados-obtenidos/ejemplo2/original-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [77]
+ [78]
 Underfull \hbox (badness 10000) in paragraph at lines 10--24
 
  []
@@ -2933,7 +3078,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo2/system-validation.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [78 <./resultados-obtenidos/ejemplo2/images/2_original.png> <./resultados-obte
+ [79 <./resultados-obtenidos/ejemplo2/images/2_original.png> <./resultados-obte
 nidos/ejemplo2/images/2_empty.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2941,15 +3086,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo3/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [79 <./resultados-obtenidos/ejemplo2/images/2_step1.png> <./resultados-obtenid
+ [80 <./resultados-obtenidos/ejemplo2/images/2_step1.png> <./resultados-obtenid
 os/ejemplo2/images/2_step2.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[80 <./resultados-obtenidos/ejemplo2/images/2_step3.png> <./resultados-obtenido
+[81 <./resultados-obtenidos/ejemplo2/images/2_step3.png> <./resultados-obtenido
 s/ejemplo2/images/2_step4.png> <./resultados-obtenidos/ejemplo2/images/2_RNA.pn
 g>]
-<resultados-obtenidos/ejemplo3/images/3_original.png, id=2314, 6134.66907pt x 1
+<resultados-obtenidos/ejemplo3/images/3_original.png, id=2261, 6134.66907pt x 1
 477.77094pt>
 File: resultados-obtenidos/ejemplo3/images/3_original.png Graphic file (type pn
 g)
@@ -2957,21 +3102,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 100.74866pt.
-<resultados-obtenidos/ejemplo3/images/3_empty.png, id=2315, 10514.28125pt x 239
+<resultados-obtenidos/ejemplo3/images/3_empty.png, id=2262, 10514.28125pt x 239
 4.9475pt>
 File: resultados-obtenidos/ejemplo3/images/3_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 95.26996pt.
-<resultados-obtenidos/ejemplo3/images/3_step1.png, id=2316, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step1.png, id=2263, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 101.31772pt.
-<resultados-obtenidos/ejemplo3/images/3_step2.png, id=2317, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step2.png, id=2264, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step2.png>
@@ -2982,7 +3127,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step3.png, id=2318, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step3.png, id=2265, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step3.png>
@@ -2992,7 +3137,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step4.png, id=2319, 7647.82219pt x 1852
+<resultados-obtenidos/ejemplo3/images/3_step4.png, id=2266, 7647.82219pt x 1852
 .67157pt>
 File: resultados-obtenidos/ejemplo3/images/3_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step4.png>
@@ -3002,7 +3147,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=2320, 10195.08875pt x 2470.
+<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=2267, 10195.08875pt x 2470.
 22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_RNA.png>
@@ -3015,7 +3160,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (resultados-obtenidos/ejemplo3/original-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [81
+ [82
 
  <./resultados-obtenidos/ejemplo3/images/3_original.png> <./resultados-obtenido
 s/ejemplo3/images/3_empty.png> <./resultados-obtenidos/ejemplo3/images/3_step1.
@@ -3079,7 +3224,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo3/system-validation.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [82 <./resultados-obtenidos/ejemplo3/images/3_step2.png> <./resultados-obtenid
+ [83 <./resultados-obtenidos/ejemplo3/images/3_step2.png> <./resultados-obtenid
 os/ejemplo3/images/3_step3.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3090,15 +3235,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo4/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [83 <./resultados-obtenidos/ejemplo3/images/3_step4.png> <./resultados-obtenid
+ [84 <./resultados-obtenidos/ejemplo3/images/3_step4.png> <./resultados-obtenid
 os/ejemplo3/images/3_RNA.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[84]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [85]
+[85]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [86]
@@ -3111,7 +3253,10 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [89]
-<resultados-obtenidos/ejemplo4/images/4_original.png, id=2360, 2657.42813pt x 6
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [90]
+<resultados-obtenidos/ejemplo4/images/4_original.png, id=2307, 2657.42813pt x 6
 42.14906pt>
 File: resultados-obtenidos/ejemplo4/images/4_original.png Graphic file (type pn
 g)
@@ -3119,21 +3264,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 101.06062pt.
-<resultados-obtenidos/ejemplo4/images/4_empty.png, id=2361, 3349.26282pt x 801.
+<resultados-obtenidos/ejemplo4/images/4_empty.png, id=2308, 3349.26282pt x 801.
 74532pt>
 File: resultados-obtenidos/ejemplo4/images/4_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_empty.png  used
  on input line 16.
 (pdftex.def)             Requested size: 418.25368pt x 100.12004pt.
-<resultados-obtenidos/ejemplo4/images/4_step1.png, id=2362, 3334.20656pt x 842.
+<resultados-obtenidos/ejemplo4/images/4_step1.png, id=2309, 3334.20656pt x 842.
 39719pt>
 File: resultados-obtenidos/ejemplo4/images/4_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step1.png  used
  on input line 23.
 (pdftex.def)             Requested size: 418.25368pt x 105.67215pt.
-<resultados-obtenidos/ejemplo4/images/4_step2.png, id=2363, 3356.79094pt x 855.
+<resultados-obtenidos/ejemplo4/images/4_step2.png, id=2310, 3356.79094pt x 855.
 195pt>
 File: resultados-obtenidos/ejemplo4/images/4_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step2.png>
@@ -3144,7 +3289,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step3.png, id=2364, 3303.34125pt x 830.
+<resultados-obtenidos/ejemplo4/images/4_step3.png, id=2311, 3303.34125pt x 830.
 35219pt>
 File: resultados-obtenidos/ejemplo4/images/4_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step3.png>
@@ -3154,7 +3299,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step4.png, id=2365, 3336.465pt x 840.89
+<resultados-obtenidos/ejemplo4/images/4_step4.png, id=2312, 3336.465pt x 840.89
 156pt>
 File: resultados-obtenidos/ejemplo4/images/4_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step4.png>
@@ -3164,7 +3309,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=2366, 3288.285pt x 809.2734
+<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=2313, 3288.285pt x 809.2734
 4pt>
 File: resultados-obtenidos/ejemplo4/images/4_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_RNA.png>
@@ -3177,7 +3322,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (resultados-obtenidos/ejemplo4/original-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [90
+ [91
 
  <./resultados-obtenidos/ejemplo4/images/4_original.png> <./resultados-obtenido
 s/ejemplo4/images/4_empty.png> <./resultados-obtenidos/ejemplo4/images/4_step1.
@@ -3273,11 +3418,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo4/system-validation.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [91 <./resultados-obtenidos/ejemplo4/images/4_step2.png> <./resultados-obtenid
+ [92 <./resultados-obtenidos/ejemplo4/images/4_step2.png> <./resultados-obtenid
 os/ejemplo4/images/4_step3.png>]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [92 <./resultados-obtenidos/ejemplo4/images/4_step4.png> <./resultados-obtenid
+ [93 <./resultados-obtenidos/ejemplo4/images/4_step4.png> <./resultados-obtenid
 os/ejemplo4/images/4_RNA.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3297,9 +3442,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo5/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [93]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
  [94]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3315,12 +3457,15 @@ LaTeX Info: Redefining \% on input line 1.
  [98]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-
-[99]
+ [99]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [100]
-<resultados-obtenidos/ejemplo5/images/5_original.png, id=2413, 2812.5075pt x 82
+
+[100]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [101]
+<resultados-obtenidos/ejemplo5/images/5_original.png, id=2361, 2812.5075pt x 82
 2.07124pt>
 File: resultados-obtenidos/ejemplo5/images/5_original.png Graphic file (type pn
 g)
@@ -3328,21 +3473,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 122.25168pt.
-<resultados-obtenidos/ejemplo5/images/5_empty.png, id=2414, 963.6pt x 325.96782
+<resultados-obtenidos/ejemplo5/images/5_empty.png, id=2362, 963.6pt x 325.96782
 pt>
 File: resultados-obtenidos/ejemplo5/images/5_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 141.48647pt.
-<resultados-obtenidos/ejemplo5/images/5_step1.png, id=2415, 2841.11438pt x 999.
+<resultados-obtenidos/ejemplo5/images/5_step1.png, id=2363, 2841.11438pt x 999.
 735pt>
 File: resultados-obtenidos/ejemplo5/images/5_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 147.16216pt.
-<resultados-obtenidos/ejemplo5/images/5_step2.png, id=2416, 2841.11438pt x 1027
+<resultados-obtenidos/ejemplo5/images/5_step2.png, id=2364, 2841.11438pt x 1027
 .58907pt>
 File: resultados-obtenidos/ejemplo5/images/5_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step2.png>
@@ -3353,7 +3498,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step3.png, id=2417, 2841.11438pt x 1042
+<resultados-obtenidos/ejemplo5/images/5_step3.png, id=2365, 2841.11438pt x 1042
 .64531pt>
 File: resultados-obtenidos/ejemplo5/images/5_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step3.png>
@@ -3363,7 +3508,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step4.png, id=2418, 2841.11438pt x 1041
+<resultados-obtenidos/ejemplo5/images/5_step4.png, id=2366, 2841.11438pt x 1041
 .1397pt>
 File: resultados-obtenidos/ejemplo5/images/5_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step4.png>
@@ -3373,7 +3518,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=2419, 1365.60187pt x 510.40
+<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=2367, 1365.60187pt x 510.40
 688pt>
 File: resultados-obtenidos/ejemplo5/images/5_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_RNA.png>
@@ -3386,7 +3531,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (resultados-obtenidos/ejemplo5/original-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [101
+ [102
 
  <./resultados-obtenidos/ejemplo5/images/5_original.png> <./resultados-obtenido
 s/ejemplo5/images/5_empty.png> <./resultados-obtenidos/ejemplo5/images/5_step1.
@@ -3410,7 +3555,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo5/system-validation.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [102 <./resultados-obtenidos/ejemplo5/images/5_step2.png> <./resultados-obteni
+ [103 <./resultados-obtenidos/ejemplo5/images/5_step2.png> <./resultados-obteni
 dos/ejemplo5/images/5_step3.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3418,16 +3563,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo6/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [103 <./resultados-obtenidos/ejemplo5/images/5_step4.png> <./resultados-obteni
+ [104 <./resultados-obtenidos/ejemplo5/images/5_step4.png> <./resultados-obteni
 dos/ejemplo5/images/5_RNA.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[104]
+[105]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [105]
-<resultados-obtenidos/ejemplo6/images/6_original.png, id=2442, 3274.73438pt x 7
+ [106]
+<resultados-obtenidos/ejemplo6/images/6_original.png, id=2389, 3274.73438pt x 7
 92.71156pt>
 File: resultados-obtenidos/ejemplo6/images/6_original.png Graphic file (type pn
 g)
@@ -3435,21 +3580,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 101.24174pt.
-<resultados-obtenidos/ejemplo6/images/6_empty.png, id=2443, 963.6pt x 239.39438
+<resultados-obtenidos/ejemplo6/images/6_empty.png, id=2390, 963.6pt x 239.39438
 pt>
 File: resultados-obtenidos/ejemplo6/images/6_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 103.90923pt.
-<resultados-obtenidos/ejemplo6/images/6_step1.png, id=2444, 4163.05313pt x 977.
+<resultados-obtenidos/ejemplo6/images/6_step1.png, id=2391, 4163.05313pt x 977.
 15062pt>
 File: resultados-obtenidos/ejemplo6/images/6_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 98.16809pt.
-<resultados-obtenidos/ejemplo6/images/6_step2.png, id=2445, 4163.05313pt x 1004
+<resultados-obtenidos/ejemplo6/images/6_step2.png, id=2392, 4163.05313pt x 1004
 .25188pt>
 File: resultados-obtenidos/ejemplo6/images/6_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step2.png>
@@ -3460,7 +3605,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step3.png, id=2446, 4163.05313pt x 995.
+<resultados-obtenidos/ejemplo6/images/6_step3.png, id=2393, 4163.05313pt x 995.
 21812pt>
 File: resultados-obtenidos/ejemplo6/images/6_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step3.png>
@@ -3470,7 +3615,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step4.png, id=2447, 1707.37875pt x 401.
+<resultados-obtenidos/ejemplo6/images/6_step4.png, id=2394, 1707.37875pt x 401.
 24907pt>
 File: resultados-obtenidos/ejemplo6/images/6_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step4.png>
@@ -3480,7 +3625,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=2448, 1407.75937pt x 339.51
+<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=2395, 1407.75937pt x 339.51
 843pt>
 File: resultados-obtenidos/ejemplo6/images/6_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_RNA.png>
@@ -3493,7 +3638,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (resultados-obtenidos/ejemplo6/original-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [106
+ [107
 
  <./resultados-obtenidos/ejemplo6/images/6_original.png> <./resultados-obtenido
 s/ejemplo6/images/6_empty.png> <./resultados-obtenidos/ejemplo6/images/6_step1.
@@ -3505,7 +3650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--35
 ) (resultados-obtenidos/ejemplo6/generated-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [107 <./resultados-obtenidos/ejemplo6/images/6_step2.png> <./resultados-obteni
+ [108 <./resultados-obtenidos/ejemplo6/images/6_step2.png> <./resultados-obteni
 dos/ejemplo6/images/6_step3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
@@ -3522,16 +3667,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (resultados-obtenidos/ejemplo7/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [108 <./resultados-obtenidos/ejemplo6/images/6_step4.png> <./resultados-obteni
+ [109 <./resultados-obtenidos/ejemplo6/images/6_step4.png> <./resultados-obteni
 dos/ejemplo6/images/6_RNA.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[109]
+[110]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [110]
-<resultados-obtenidos/ejemplo7/images/7_original.png, id=2471, 1902.3572pt x 11
+ [111]
+<resultados-obtenidos/ejemplo7/images/7_original.png, id=2418, 1902.3572pt x 11
 58.57843pt>
 File: resultados-obtenidos/ejemplo7/images/7_original.png Graphic file (type pn
 g)
@@ -3539,7 +3684,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 254.71126pt.
-<resultados-obtenidos/ejemplo7/images/7_empty.png, id=2472, 963.6pt x 542.025pt
+<resultados-obtenidos/ejemplo7/images/7_empty.png, id=2419, 963.6pt x 542.025pt
 >
 File: resultados-obtenidos/ejemplo7/images/7_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_empty.png>
@@ -3550,7 +3695,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step1.png, id=2473, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step1.png, id=2420, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step1.png>
@@ -3560,7 +3705,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step2.png, id=2474, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step2.png, id=2421, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step2.png>
@@ -3570,7 +3715,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step3.png, id=2475, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step3.png, id=2422, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step3.png>
@@ -3580,7 +3725,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step4.png, id=2476, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step4.png, id=2423, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step4.png>
@@ -3590,7 +3735,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=2477, 926.71219pt x 550.305
+<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=2424, 926.71219pt x 550.305
 94pt>
 File: resultados-obtenidos/ejemplo7/images/7_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_RNA.png>
@@ -3611,7 +3756,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) (resultados-obtenidos/ejemplo7/generated-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [111
+ [112
 
  <./resultados-obtenidos/ejemplo7/images/7_original.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--30
@@ -3623,30 +3768,32 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo7/synthesizing.tex)
 (resultados-obtenidos/ejemplo7/system-validation.tex
+Underfull \vbox (badness 5388) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [112 <./resultados-obtenidos/ejemplo7/images/7_empty.png>]
+ [113 <./resultados-obtenidos/ejemplo7/images/7_empty.png>]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [113 <./resultados-obtenidos/ejemplo7/images/7_step1.png>]
+ [114 <./resultados-obtenidos/ejemplo7/images/7_step1.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )) (resultados-obtenidos/ejemplo8/main.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [114 <./resultados-obtenidos/ejemplo7/images/7_step2.png>]
+ [115 <./resultados-obtenidos/ejemplo7/images/7_step2.png>]
 
-LaTeX Warning: Text page 115 contains only floats.
+LaTeX Warning: Text page 116 contains only floats.
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[115 <./resultados-obtenidos/ejemplo7/images/7_step3.png>]
+[116 <./resultados-obtenidos/ejemplo7/images/7_step3.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [116 <./resultados-obtenidos/ejemplo7/images/7_step4.png> <./resultados-obteni
+ [117 <./resultados-obtenidos/ejemplo7/images/7_step4.png> <./resultados-obteni
 dos/ejemplo7/images/7_RNA.png>]
-<resultados-obtenidos/ejemplo8/images/8_original.png, id=2504, 2300.595pt x 446
+<resultados-obtenidos/ejemplo8/images/8_original.png, id=2451, 2300.595pt x 446
 .41782pt>
 File: resultados-obtenidos/ejemplo8/images/8_original.png Graphic file (type pn
 g)
@@ -3654,21 +3801,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 81.15552pt.
-<resultados-obtenidos/ejemplo8/images/8_empty.png, id=2505, 2318.6625pt x 444.1
+<resultados-obtenidos/ejemplo8/images/8_empty.png, id=2452, 2318.6625pt x 444.1
 5938pt>
 File: resultados-obtenidos/ejemplo8/images/8_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 80.11467pt.
-<resultados-obtenidos/ejemplo8/images/8_step1.png, id=2506, 9609.65157pt x 1841
+<resultados-obtenidos/ejemplo8/images/8_step1.png, id=2453, 9609.65157pt x 1841
 .37938pt>
 File: resultados-obtenidos/ejemplo8/images/8_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step1.png  used
  on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 80.13307pt.
-<resultados-obtenidos/ejemplo8/images/8_step2.png, id=2507, 9565.23563pt x 1863
+<resultados-obtenidos/ejemplo8/images/8_step2.png, id=2454, 9565.23563pt x 1863
 .21094pt>
 File: resultados-obtenidos/ejemplo8/images/8_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step2.png>
@@ -3679,7 +3826,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step3.png, id=2508, 9607.39313pt x 1958
+<resultados-obtenidos/ejemplo8/images/8_step3.png, id=2455, 9607.39313pt x 1958
 .81813pt>
 File: resultados-obtenidos/ejemplo8/images/8_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step3.png>
@@ -3689,7 +3836,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step4.png, id=2509, 9649.55063pt x 1906
+<resultados-obtenidos/ejemplo8/images/8_step4.png, id=2456, 9649.55063pt x 1906
 .87407pt>
 File: resultados-obtenidos/ejemplo8/images/8_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step4.png>
@@ -3699,7 +3846,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=2510, 9660.84282pt x 1838.3
+<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=2457, 9660.84282pt x 1838.3
 6812pt>
 File: resultados-obtenidos/ejemplo8/images/8_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_RNA.png>
@@ -3720,7 +3867,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) (resultados-obtenidos/ejemplo8/generated-signalling.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [117
+ [118
 
  <./resultados-obtenidos/ejemplo8/images/8_original.png> <./resultados-obtenido
 s/ejemplo8/images/8_empty.png> <./resultados-obtenidos/ejemplo8/images/8_step1.
@@ -3736,50 +3883,762 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (resultados-obtenidos/ejemplo8/system-validation.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [118 <./resultados-obtenidos/ejemplo8/images/8_step2.png> <./resultados-obteni
+ [119 <./resultados-obtenidos/ejemplo8/images/8_step2.png> <./resultados-obteni
 dos/ejemplo8/images/8_step3.png>]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [119 <./resultados-obtenidos/ejemplo8/images/8_step4.png> <./resultados-obteni
+ [120 <./resultados-obtenidos/ejemplo8/images/8_step4.png> <./resultados-obteni
 dos/ejemplo8/images/8_RNA.png>])))
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [120] (conclusiones/main.tex
-Cap\'{\i }tulo 5.
-
-LaTeX Warning: Citation 'Paper_156' on page 121 undefined on input line 41.
-
-) [121
-
-]
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+ [121] (conclusiones/main.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [122
 
 ]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [123]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [124]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [125]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [126]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [127]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [128]
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [129]
+Cap\'{\i }tulo 5.
 
+LaTeX Warning: Citation 'Paper_1' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_2' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_3' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_4' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_5' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_6' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_7' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_8' on page 123 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Paper_9' on page 123 undefined on input line 11.
+
+
+Overfull \hbox (44.36462pt too wide) in paragraph at lines 11--12
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_10' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_11' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_12' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_13' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_14' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_15' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_16' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_17' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_18' on page 123 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Paper_19' on page 123 undefined on input line 13.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 13--14
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_20' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_21' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_22' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_23' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_24' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_25' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_26' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_27' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_28' on page 123 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Paper_29' on page 123 undefined on input line 15.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 15--16
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_30' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_31' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_32' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_33' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_34' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_35' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_36' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_37' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_38' on page 123 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Paper_39' on page 123 undefined on input line 17.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 17--18
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_40' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_41' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_42' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_43' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_44' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_45' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_46' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_47' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_48' on page 123 undefined on input line 19.
+
+
+LaTeX Warning: Citation 'Paper_49' on page 123 undefined on input line 19.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 19--20
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_50' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_51' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_52' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_53' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_54' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_55' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_56' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_57' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_58' on page 123 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Paper_59' on page 123 undefined on input line 21.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 21--22
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_60' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_61' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_62' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_63' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_64' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_65' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_66' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_67' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_68' on page 123 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Paper_69' on page 123 undefined on input line 23.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 23--24
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_70' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_71' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_72' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_73' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_74' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_75' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_76' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_77' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_78' on page 123 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Paper_79' on page 123 undefined on input line 25.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 25--26
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_80' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_81' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_82' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_83' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_84' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_85' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_86' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_87' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_88' on page 123 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'Paper_89' on page 123 undefined on input line 27.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 27--28
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_90' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_91' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_92' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_93' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_94' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_95' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_96' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_97' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_98' on page 123 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Paper_99' on page 123 undefined on input line 29.
+
+
+Overfull \hbox (151.59984pt too wide) in paragraph at lines 29--30
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_100' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_101' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_102' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_103' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_104' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_105' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_106' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_107' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_108' on page 123 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Paper_109' on page 123 undefined on input line 31.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 31--32
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_110' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_111' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_112' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_113' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_114' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_115' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_116' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_117' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_118' on page 123 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Paper_119' on page 123 undefined on input line 33.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 33--34
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_120' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_121' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_122' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_123' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_124' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_125' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_126' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_127' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_128' on page 123 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Paper_129' on page 123 undefined on input line 35.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 35--36
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_130' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_131' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_132' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_133' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_134' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_135' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_136' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_137' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_138' on page 123 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Paper_139' on page 123 undefined on input line 37.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 37--38
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_140' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_141' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_142' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_143' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_144' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_145' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_146' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_147' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_148' on page 123 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Paper_149' on page 123 undefined on input line 39.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 39--40
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_150' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_151' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_152' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_153' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_154' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_155' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_156' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_157' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_158' on page 123 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Paper_159' on page 123 undefined on input line 41.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 41--42
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_160' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_161' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_162' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_163' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_164' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_165' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_166' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_167' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_168' on page 123 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Paper_169' on page 123 undefined on input line 43.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 43--44
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_170' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_171' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_172' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_173' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_174' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_175' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_176' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_177' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_178' on page 123 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Paper_179' on page 123 undefined on input line 45.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 45--46
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+[123]
+
+LaTeX Warning: Citation 'Paper_180' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_181' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_182' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_183' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_184' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_185' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_186' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_187' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_188' on page 124 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'Paper_189' on page 124 undefined on input line 47.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 47--48
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_190' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_191' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_192' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_193' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_194' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_195' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_196' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_197' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_198' on page 124 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'Paper_199' on page 124 undefined on input line 49.
+
+
+Overfull \hbox (209.09969pt too wide) in paragraph at lines 49--50
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]][[]] 
+ []
+
+
+LaTeX Warning: Citation 'Paper_200' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_201' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_202' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_203' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_204' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_205' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_206' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_207' on page 124 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Paper_208' on page 124 undefined on input line 51.
+
+)
+Overfull \hbox (147.86435pt too wide) in paragraph at lines 51--111
+[]\T1/lmr/m/n/10 (-20) [[]][[]][[]][[]][[]][[]][[]][[]][[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--111
+
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 114.
+
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
+[124] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -3799,16 +4658,21 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CEA481699AE322DFFE4EE8AD1C844489;24680.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48511 strings out of 474587
- 958678 string characters out of 5745693
+ 47777 strings out of 474587
+ 935328 string characters out of 5745693
  2137558 words of memory out of 5000000
- 68401 multiletter control sequences out of 15000+600000
- 656616 words of font info for 218 fonts, out of 8000000 for 9000
+ 67897 multiletter control sequences out of 15000+600000
+ 649951 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,33n,131p,1225b,2406s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmb10.pfb
@@ -3816,26 +4680,25 @@ Here is how much of TeX's memory you used:
 ><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb
 ><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb>
 <C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><
-C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb>
-<C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb>
-<C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
-<C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><
-C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
-:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:
-/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/
-Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Us
-ers/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/User
-s/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/
-menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/
-menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/
-menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/
-menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/
-menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/m
-enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/m
-enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (143 pages, 26079975 bytes).
+C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><
+C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><
+C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C
+:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
+/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
+Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/U
+sers/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Use
+rs/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users
+/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/m
+enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/m
+enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/m
+enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/m
+enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/m
+enen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/me
+nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/me
+nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (138 pages, 25939894 bytes).
 PDF statistics:
- 3248 PDF objects out of 3580 (max. 8388607)
- 921 named destinations out of 1000 (max. 500000)
- 55848 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 2740 PDF objects out of 2984 (max. 8388607)
+ 757 named destinations out of 1000 (max. 500000)
+ 53800 words of extra memory for PDF output out of 61914 (max. 10000000)
 
