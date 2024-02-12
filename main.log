@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  11 FEB 2024 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  12 FEB 2024 20:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1104,12 +1104,6 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl
 
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'INTERLOCKING_BASIC':
-(biblatex)                - online entry 'INTERLOCKING_BASIC' (references/refer
-ences.bib): Invalid format '2022-13-02' of date field 'urldate' - ignoring.
-
-
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                Paper_156
@@ -1327,40 +1321,33 @@ Package pdftex.def Info: Figuras/IEC61508.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 138.00623pt.
 
 [12 <./Figuras/IEC61508.png>]) (introduccion/estandares/redundancia.tex
-<Figuras/redundancia.png, id=118, 834.11626pt x 351.56343pt>
+[13]
+<Figuras/redundancia.png, id=122, 834.11626pt x 351.56343pt>
 File: Figuras/redundancia.png Graphic file (type png)
 <use Figuras/redundancia.png>
 Package pdftex.def Info: Figuras/redundancia.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 145.4133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13])) (introduccion/railML/main.tex
-(introduccion/railML/railTopoModel/main.tex
-<Figuras/objetos.png, id=123, 679.78969pt x 521.69907pt>
+)) (introduccion/railML/main.tex
+(introduccion/railML/railTopoModel/main.tex [14 <./Figuras/redundancia.png>]
+<Figuras/objetos.png, id=126, 679.78969pt x 521.69907pt>
 File: Figuras/objetos.png Graphic file (type png)
 <use Figuras/objetos.png>
 Package pdftex.def Info: Figuras/objetos.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 264.76544pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14 <./Figuras/redundancia.png>] (introduccion/railML/railTopoModel/base.tex)
+(introduccion/railML/railTopoModel/base.tex)
 (introduccion/railML/railTopoModel/netEntities.tex [15 <./Figuras/objetos.png>]
 <Figuras/grafos.png, id=131, 889.07156pt x 293.59688pt>
 File: Figuras/grafos.png Graphic file (type png)
 <use Figuras/grafos.png>
 Package pdftex.def Info: Figuras/grafos.png  used on input line 10.
 (pdftex.def)             Requested size: 345.0pt x 113.92888pt.
-) (introduccion/railML/railTopoModel/niveles.tex
-<Figuras/capas.png, id=132, 729.47531pt x 344.03531pt>
+) (introduccion/railML/railTopoModel/niveles.tex [16 <./Figuras/grafos.png>]
+<Figuras/capas.png, id=136, 729.47531pt x 344.03531pt>
 File: Figuras/capas.png Graphic file (type png)
 <use Figuras/capas.png>
 Package pdftex.def Info: Figuras/capas.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 162.70978pt.
- [16 <./Figuras/grafos.png>]
 <Figuras/railtopomodel.png, id=137, 925.95938pt x 385.44pt>
 File: Figuras/railtopomodel.png Graphic file (type png)
 <use Figuras/railtopomodel.png>
@@ -1371,15 +1358,16 @@ Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17 <./Figuras/capas.png>]) (introduccion/railML/railTopoModel/positioning.tex)
-) (introduccion/railML/railML3.tex [18 <./Figuras/railtopomodel.png>])
-(introduccion/railML/Industria.tex)) (introduccion/estado-del-arte/main.tex
+) [18 <./Figuras/railtopomodel.png>] (introduccion/railML/railML3.tex)
+(introduccion/railML/Industria.tex [19]))
+(introduccion/estado-del-arte/main.tex
 Overfull \hbox (3.91403pt too wide) in paragraph at lines 7--1
 \OT1/cmr/m/n/10 tura [VIS ALL 3D] y vi-su-al-izadores/sim-u-ladores de in-fraes
 truc-tura en-clavamiento
  []
 
-[19] (introduccion/estado-del-arte/empresas.tex)
-(introduccion/estado-del-arte/estudios.tex [20])
+(introduccion/estado-del-arte/empresas.tex [20])
+(introduccion/estado-del-arte/estudios.tex)
 (introduccion/estado-del-arte/contexto.tex [21]
 <Figuras/HojaDeRuta.png, id=157, 913.91437pt x 368.87813pt>
 File: Figuras/HojaDeRuta.png Graphic file (type png)
@@ -1392,16 +1380,19 @@ File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 164.60362pt.
- [23 <./Figuras/workflow.png>]
-(introduccion/enfoque.tex) (introduccion/arquitectura.tex [24]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] (introduccion/enfoque.tex) (introduccion/arquitectura.tex [24 <./Figuras/w
+orkflow.png>]
 <Figuras/Architecture.png, id=169, 615.0177pt x 333.1647pt>
 File: Figuras/Architecture.png Graphic file (type png)
 <use Figuras/Architecture.png>
 Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 186.8963pt.
-)
-(introduccion/validacion.tex [25 <./Figuras/Architecture.png>] [26]))) [27]
-(RNA/main.tex
+) (introduccion/validacion.tex [25 <./Figuras/Architecture.png>]
+[26]))) [27] (RNA/main.tex
 Chapter 2.
 (RNA/biblioteca/main.tex [28
 
@@ -2785,7 +2776,19 @@ Overfull \hbox (10.50284pt too wide) in paragraph at lines 102--102
 and R. Passerone,
  []
 
-[151]
+[151] [152]
+Overfull \hbox (1.80617pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 for elec-tri-cal/-elec-tron-ic/pro-grammable elec-tronic safety
+-related sys-tems,''
+ []
+
+
+Overfull \hbox (2.2019pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 demon-stra-tion of re-li-a-bil-ity, avail-abil-ity, main-tain-a
+bil-ity and safety (rams)
+ []
+
+
 Overfull \hbox (2.2019pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 demon-stra-tion of re-li-a-bil-ity, avail-abil-ity, main-tain-a
 bil-ity and safety (rams)
@@ -2797,7 +2800,7 @@ Overfull \hbox (7.78844pt too wide) in paragraph at lines 102--102
 -ca-tion and demon-
  []
 
-
+[153]
 Overfull \hbox (7.78844pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 CENELEC, ``En 50126-4 rail-way ap-pli-ca-tions. the spec-i-fi
 -ca-tion and demon-
@@ -2809,43 +2812,13 @@ Overfull \hbox (7.78844pt too wide) in paragraph at lines 102--102
 -ca-tion and demon-
  []
 
-[152]
-Overfull \hbox (2.2019pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 demon-stra-tion of re-li-a-bil-ity, avail-abil-ity, main-tain-a
-bil-ity and safety (rams)
- []
 
-[153] [154]
-Overfull \hbox (0.37682pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 chine,'' \OT1/cmr/m/it/10 In-ter-na-tional Con-fer-ence on In-f
-or-ma-tion Sci-ence, Elec-tron-ics and
- []
-
-[155]
 Overfull \hbox (24.30072pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 D. Stre-it-ferdt, A. Zim-mer-mann, J. Schaffner, and M. Kalle
 n-bach, ``Component-
  []
 
 
-Overfull \hbox (1.80617pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 for elec-tri-cal/-elec-tron-ic/pro-grammable elec-tronic safety
--related sys-tems,''
- []
-
-[156]
-Overfull \hbox (12.57439pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 based on neu-ral net-work,'' \OT1/cmr/m/it/10 In-ter-na-tional 
-Con-fer-ence on Sens-ing,Diagnostics,
- []
-
-
-Overfull \hbox (6.26382pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 tolerant com-puter in-ter-lock-ing sys-tem,'' \OT1/cmr/m/it/10 
-In-ter-na-tional Con-fer-ence on Com-
- []
-
-[157] [158]
 Overfull \hbox (10.24745pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 safety-oriented on-line test-ing of dig-i-tal sys-tems,'' \OT1/
 cmr/m/it/10 Component-Based Safety-
@@ -2856,6 +2829,24 @@ Overfull \hbox (0.48145pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/it/10 Oriented On-Line Test-ing of Dig-i-tal Sys-tems\OT1/cmr/m/n/10
  , 2010. \OT1/cmr/m/sc/10 doi\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 10 . 1109 / EW
 DTS .
+ []
+
+[154] [155] [156]
+Overfull \hbox (0.37682pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 chine,'' \OT1/cmr/m/it/10 In-ter-na-tional Con-fer-ence on In-f
+or-ma-tion Sci-ence, Elec-tron-ics and
+ []
+
+[157]
+Overfull \hbox (12.57439pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 based on neu-ral net-work,'' \OT1/cmr/m/it/10 In-ter-na-tional 
+Con-fer-ence on Sens-ing,Diagnostics,
+ []
+
+[158]
+Overfull \hbox (6.26382pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 tolerant com-puter in-ter-lock-ing sys-tem,'' \OT1/cmr/m/it/10 
+In-ter-na-tional Con-fer-ence on Com-
  []
 
 [159] [160]
@@ -2876,13 +2867,13 @@ Overfull \hbox (12.98695pt too wide) in paragraph at lines 102--102
 udy,'' \OT1/cmr/m/it/10 IEEE/ACM
  []
 
-
+[163]
 Overfull \hbox (2.8194pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 mod-elling rail-way safety and ca-pac-ity,'' \OT1/cmr/m/it/10 I
 n-ter-na-tional Con-fer-ence on Com-
  []
 
-[163] [164] (main.aux)
+[164] (main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -2908,10 +2899,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31582 strings out of 474587
- 688686 string characters out of 5745693
+ 31584 strings out of 474587
+ 688717 string characters out of 5745693
  2143558 words of memory out of 5000000
- 52972 multiletter control sequences out of 15000+600000
+ 52974 multiletter control sequences out of 15000+600000
  565381 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1418b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2939,7 +2930,7 @@ rs/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mss17.pfb>
-Output written on main.pdf (180 pages, 25569318 bytes).
+Output written on main.pdf (180 pages, 25569196 bytes).
 PDF statistics:
  1080 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

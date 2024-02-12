@@ -13,22 +13,22 @@
 \contentsline {section}{\numberline {1.4}Estándares de seguridad}{12}{}%
 \contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{12}{}%
 \contentsline {subsection}{\numberline {1.4.2}Redundancia y diversidad en sistemas ferroviarios}{13}{}%
-\contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{14}{}%
-\contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{14}{}%
+\contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{15}{}%
+\contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{15}{}%
 \contentsline {subsubsection}{\numberline {1.5.1.1}Paquete base}{15}{}%
-\contentsline {subsubsection}{\numberline {1.5.1.2}Modelo de grafos}{15}{}%
-\contentsline {subsubsection}{\numberline {1.5.1.3}Topología y niveles}{16}{}%
-\contentsline {subsubsection}{\numberline {1.5.1.4}Posicionamiento}{18}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Modelo de grafos}{16}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.3}Topología y niveles}{17}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.4}Posicionamiento}{19}{}%
 \contentsline {subsection}{\numberline {1.5.2}RailML 3.0}{19}{}%
-\contentsline {subsection}{\numberline {1.5.3}Uso del estándar railML en la industria ferroviaria}{19}{}%
+\contentsline {subsection}{\numberline {1.5.3}Uso del estándar railML en la industria ferroviaria}{20}{}%
 \contentsline {section}{\numberline {1.6}Estado del arte}{20}{}%
 \contentsline {subsection}{\numberline {1.6.1}Empresas del sector ferroviario}{20}{}%
 \contentsline {subsection}{\numberline {1.6.2}Antecedentes de trabajos académicos en la temática}{21}{}%
 \contentsline {subsection}{\numberline {1.6.3}GICSAFe y los trabajos realizados}{21}{}%
 \contentsline {section}{\numberline {1.7}Herramienta propuesta}{23}{}%
 \contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{24}{}%
-\contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{24}{}%
-\contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{25}{}%
+\contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{25}{}%
+\contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{26}{}%
 \contentsline {chapter}{\numberline {2}Railway Network Analyzer (RNA)}{28}{}%
 \contentsline {section}{\numberline {2.1}Biblioteca RailML}{28}{}%
 \contentsline {subsection}{\numberline {2.1.1}Campo de metadatos}{30}{}%
