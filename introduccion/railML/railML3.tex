@@ -1,16 +1,16 @@
 \subsection{RailML 3.0}
 
-	railML \cite{Paper_101,Paper_106,Paper_154} (del inglés, Railway Markup Language) es un estándar abierto de datos basado en XML, para intercomunicar aplicaciones ferroviarias. El estándar railML fue desarrollado por las principales empresas de la industria ferroviaria a partir del año 2002 [REF]. Las primeras dos versiones del estándar se diseñaron en base al enfoque funcional, pero en 2017 se lanzó railML 3.0, que adopta gran parte de los conceptos de RailTopoModel y los expande, incorporando nuevos elementos, en base a las necesidades de las empresas ferroviarias que lo adoptan. Debido a la incorporación de RailTopoModel, railML 3.0 adopta un enfoque puramente geográfico [REF].
+	railML \cite{RAILML_0,Paper_107,Paper_112,Paper_150,Paper_159} (del inglés, Railway Markup Language) es un estándar abierto de datos basado en XML, para intercomunicar aplicaciones ferroviarias. El estándar railML fue desarrollado por las principales empresas de la industria ferroviaria a partir del año 2001 \cite{Paper_159}. Las primeras dos versiones del estándar se diseñaron en base al enfoque funcional, pero en 2017 se lanzó railML 3.0 \cite{RAILML_0,Paper_146,Paper_150}, que adopta gran parte de los conceptos de RailTopoModel y los expande, incorporando nuevos elementos, en base a las necesidades de las empresas ferroviarias que lo adoptan. Debido a la incorporación de RailTopoModel, railML 3.0 adopta un enfoque puramente geográfico \cite{Paper_150}.
 	
 	El estándar railML 3.0 posee cinco módulos principales:
 	
 
     \begin{itemize}
-        \item Common (CO) [REF]: similar al módulo base de RailTopoModel. Contiene datos transversales a todo el sistema, como el autor del archivo, el sistema eléctrico de alimentación, la versión de railML utilizada, etc.
-        \item Infrastructure (IS) [REF]: incorpora al módulo de topología de RailTopoModel, con sus netElement y netRelations. Ademas del sistema de coordenadas, la geometría y todos los elementos ferroviarios. Es estos últimos solo admite datos estáticos como la posición, tamaño y demás atributos invariantes en el tiempo.
-        \item Interlocking (IL) [REF]: incorpora los atributos dinámicos de los elementos ferroviarios mencionados en la infraestructura y agrega el listado de rutas.
-        \item Rollingstock (RS): incorpora toda la información relativa al material rodante: coches, vagones, locomotoras, formaciones combinadas, etc.
-        \item Timetable and Rostering (TT): incorpora detalles logísticos de la red ferroviaria.
+        \item Common (CO) \cite{RAILML_CO}: similar al módulo base de RailTopoModel. Contiene datos transversales a todo el sistema, como el autor del archivo, el sistema eléctrico de alimentación, la versión de railML utilizada, etc.
+        \item Infrastructure (IS) \cite{RAILML_IS}: incorpora al módulo de topología de RailTopoModel, con sus netElement y netRelations. Ademas del sistema de coordenadas, la geometría y todos los elementos ferroviarios. Es estos últimos solo admite datos estáticos como la posición, tamaño y demás atributos invariantes en el tiempo.
+        \item Interlocking (IL) \cite{RAILML_IL}: incorpora los atributos dinámicos de los elementos ferroviarios mencionados en la infraestructura y agrega el listado de rutas.
+        \item Rollingstock (RS) \cite{RAILML_RS}: incorpora toda la información relativa al material rodante: coches, vagones, locomotoras, formaciones combinadas, etc.
+        \item Timetable and Rostering (TT) \cite{RAILML_TT}: incorpora detalles logísticos de la red ferroviaria.
     \end{itemize}
 
     A lo largo de esta tesis doctoral nos enfocaremos exclusivamente en los tres primeros módulos. Los cuales serán analizados detalladamente a medida que sea necesario introducirlos.

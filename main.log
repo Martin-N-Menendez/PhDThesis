@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  12 FEB 2024 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  14 FEB 2024 21:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1361,11 +1361,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [18 <./Figuras/railtopomodel.png>] (introduccion/railML/railML3.tex)
 (introduccion/railML/Industria.tex [19]))
 (introduccion/estado-del-arte/main.tex
-Overfull \hbox (3.91403pt too wide) in paragraph at lines 7--1
-\OT1/cmr/m/n/10 tura [VIS ALL 3D] y vi-su-al-izadores/sim-u-ladores de in-fraes
-truc-tura en-clavamiento
- []
-
 (introduccion/estado-del-arte/empresas.tex [20])
 (introduccion/estado-del-arte/estudios.tex)
 (introduccion/estado-del-arte/contexto.tex [21]
@@ -2831,49 +2826,97 @@ Overfull \hbox (0.48145pt too wide) in paragraph at lines 102--102
 DTS .
  []
 
-[154] [155] [156]
-Overfull \hbox (0.37682pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 chine,'' \OT1/cmr/m/it/10 In-ter-na-tional Con-fer-ence on In-f
-or-ma-tion Sci-ence, Elec-tron-ics and
+[154] [155]
+Overfull \hbox (4.03511pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/10 H. Rail. ``The hi-tatchi wsp2g com-puter based in-ter-lock-in
+g sys-tem.'' (2022),
  []
 
-[157]
-Overfull \hbox (12.57439pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 based on neu-ral net-work,'' \OT1/cmr/m/it/10 In-ter-na-tional 
-Con-fer-ence on Sens-ing,Diagnostics,
+
+Overfull \hbox (2.06157pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 [On-line]. Avail-able: $\OT1/cmtt/m/n/10 https : / / www . riss
+b . com . au / wp -[] content / uploads /
  []
 
-[158]
-Overfull \hbox (6.26382pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 tolerant com-puter in-ter-lock-ing sys-tem,'' \OT1/cmr/m/it/10 
-In-ter-na-tional Con-fer-ence on Com-
+
+Overfull \hbox (6.64183pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/10 Hima. ``Cots rail ap-pli-ca-tions { a global move-ment that i
+s grow-ing rapidly.''
  []
 
-[159] [160]
+
+Overfull \hbox (2.65518pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/10 C. Sig-nalling. ``Quasar q4, elec-tronic in-ter-lock-ing.'' (
+2024), [On-line]. Avail-
+ []
+
+
+Overfull \hbox (15.05278pt too wide) in paragraph at lines 102--102
+\OT1/cmtt/m/n/10 new -[] normal / definition -[] and -[] technology -[] trend -
+[] of -[] train -[] signaling -[]
+ []
+
+
+Overfull \hbox (3.34706pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 on trimet tran-sit net-work in port-land.'' (2010), [On-line]. 
+Avail-able: $\OT1/cmtt/m/n/10 https :
+ []
+
+[156]
 Overfull \hbox (0.28409pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 ``Feasibility study rail-topo-model,'' \OT1/cmr/m/it/10 In-te
 r-na-tional Union of Rail-ways\OT1/cmr/m/n/10 , 2013. 
  []
 
-[161]
+
+Overfull \hbox (1.4327pt too wide) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/10 Railml.org. ``Railml 3.2 in-fras-truc-ture.'' (2022), [On-lin
+e]. Avail-able: $\OT1/cmtt/m/n/10 http :
+ []
+
+[157]
+Overfull \hbox (67.70668pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 cast (2023-2029).'' (2024), [On-line]. Avail-able: $\OT1/cmtt/m
+/n/10 https : / / www . maximizemarketresearch .
+ []
+
+[158]
+Overfull \hbox (0.37682pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 chine,'' \OT1/cmr/m/it/10 In-ter-na-tional Con-fer-ence on In-f
+or-ma-tion Sci-ence, Elec-tron-ics and
+ []
+
+[159] [160]
+Overfull \hbox (12.57439pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 based on neu-ral net-work,'' \OT1/cmr/m/it/10 In-ter-na-tional 
+Con-fer-ence on Sens-ing,Diagnostics,
+ []
+
+
+Overfull \hbox (6.26382pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 tolerant com-puter in-ter-lock-ing sys-tem,'' \OT1/cmr/m/it/10 
+In-ter-na-tional Con-fer-ence on Com-
+ []
+
+[161] [162] [163]
 Overfull \hbox (1.95258pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 from rail-way in-ter-lock-ing ta-bles,'' \OT1/cmr/m/it/10 In-te
 r-na-tional Jour-nal on Soft-ware Tools
  []
 
-[162]
+[164]
 Overfull \hbox (12.98695pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 ``Com-par-ing for-mal tools for sys-tem de-sign: A judg-ment st
 udy,'' \OT1/cmr/m/it/10 IEEE/ACM
  []
 
-[163]
+
 Overfull \hbox (2.8194pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 mod-elling rail-way safety and ca-pac-ity,'' \OT1/cmr/m/it/10 I
 n-ter-na-tional Con-fer-ence on Com-
  []
 
-[164] (main.aux)
+[165] [166] (main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -2889,20 +2932,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31584 strings out of 474587
- 688717 string characters out of 5745693
+ 31666 strings out of 474587
+ 691996 string characters out of 5745693
  2143558 words of memory out of 5000000
- 52974 multiletter control sequences out of 15000+600000
+ 53056 multiletter control sequences out of 15000+600000
  565381 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1418b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2930,9 +2968,9 @@ rs/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mss17.pfb>
-Output written on main.pdf (180 pages, 25569196 bytes).
+Output written on main.pdf (182 pages, 25575641 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
+ 1089 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  568 words of extra memory for PDF output out of 10000 (max. 10000000)
 
