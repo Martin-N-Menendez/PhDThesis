@@ -5,27 +5,27 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Topología terminal.}}{5}{}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Sistema de enclavamiento mecánico basado en palancas.}}{7}{}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Sistema de enclavamiento electromecánico basado en relés.}}{8}{}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Panel de control central de un sistema de enclavamientos.}}{8}{}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Ejemplo de asignación de rutas.}}{9}{}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Estándar IEC 61508.}}{12}{}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Sistema con redundancia 2oo3 y diversidad.}}{14}{}%
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Alcance del modelo de UIC RailTopoModel.}}{15}{}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Modedelado en grafos de una máquina de cambios simple.}}{16}{}%
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Estructura de capas de RailTopoModel.}}{17}{}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Panel de control central de un sistema de enclavamientos.}}{9}{}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Ejemplo de asignación de rutas de izquierda a derecha (arriba) y de derecha a izquierda (abajo).}}{10}{}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Estándar IEC 61508.}}{13}{}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Sistema con redundancia 2oo3 y diversidad.}}{15}{}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Alcance del modelo de UIC RailTopoModel.}}{16}{}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Modedelado en grafos de una máquina de cambios simple.}}{17}{}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Estructura de capas de RailTopoModel.}}{18}{}%
 \contentsline {figure}{\numberline {1.14}{\ignorespaces Niveles microscópico, mesoscópico y macroscópico.}}{18}{}%
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Trabajos realizados e hitos del proyecto.}}{22}{}%
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Flujo de trabajo de la presente tesis.}}{23}{}%
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Arquitectura del sistema}}{25}{}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Trabajos realizados e hitos del proyecto.}}{23}{}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Flujo de trabajo de la presente tesis.}}{24}{}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Arquitectura del sistema}}{26}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Distintos tipos de redes de grafos.}}{35}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Vías ferroviarias y trocha.}}{35}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Vías ferroviarias y trocha.}}{36}{}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Vías ascendentes y descendentes.}}{37}{}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Topología de ejemplo con finales de vía relativos y absolutos.}}{38}{}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Circuito de vía (04) y contador de ejes (AxC01).}}{39}{}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Circuito de vía libre y ocupado.}}{40}{}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Contadores de ejes.}}{41}{}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Estación de doble plataforma.}}{42}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Cruces de vías vehiculares y peatonales.}}{43}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Cruces de vías vehiculares y peatonales.}}{44}{}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Máquina de cambios.}}{45}{}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Cambio de vías de estación Matheu, Linea Mitre.}}{46}{}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Posiciones adoptadas por una máquina de cambios simple.}}{46}{}%
@@ -40,7 +40,7 @@
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Señalamiento generado, simplificado por algoritmo de herencia vertical.}}{61}{}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Señalamiento generado, simplificado por algoritmo de herencia vertical.}}{64}{}%
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Señalamiento generado, simplificado por algoritmo de herencia horizontal.}}{66}{}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Signalling simplified in Example 1 with three routes indicated.}}{71}{}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Signalling simplified in Example 1 with three routes indicated.}}{70}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces XXXXX.}}{81}{}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces XXXXX.}}{82}{}%

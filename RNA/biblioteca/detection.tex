@@ -23,7 +23,7 @@
     
     Existe una discontinuidad entre los rieles denominado juntura, que permite la expansión de los mismos al ser sometidos a altas temperaturas sin que los rieles se doblen y provoquen daños a la infraestructura. Los circuitos de vía, se relacionan directamente a las junturas entre las vías, modelados por la clase rail Joint en railML.  Esta discontinuidad eléctrica es lo que limita la acción del circuito de vía a la región entre dos junturas.
 
-    En el código \ref{lst:trackCircuit} podemos ver un ejemplo de la clase trackCircuit dentro de la clase interlocking, que incluye a la clase assetsForIL y estos, a su vez, a la clase vector de tvdSections. Esta clase posee un id (tvd7), la tecnología utilizada (en este caso trackCircuit, circuivo de vía) y los límites donde el circuito de vía es válido: los bufferStop bus1 y bus2.
+    En el código \ref{lst:trackCircuit} podemos ver un ejemplo de la clase tvdSection dentro de la clase interlocking, que incluye a la clase assetsForIL y estos, a su vez, a la clase vector de tvdSections. Esta clase posee un id (tvd7), la tecnología utilizada (en este caso trackCircuit, circuivo de vía) y los límites donde el circuito de vía es válido: los bufferStop bus1 y bus2.
 
     \begin{lstlisting}[language = XML, caption = Clase trackCircuit , label = {lst:trackCircuit}]
     <tvdSection id="tvd7" partialRouteReleaseDelay="PT4S" residualRouteCancellationDelay="PT90S" technology="trackCircuit" isBerthingTrack="false">
@@ -42,7 +42,7 @@
         \label{fig:deteccion_2}
     \end{figure}
 
-    Al igual que los circuitos de vía, los sistemas contadores de eje siguen el principio de fail-safe, adoptando la condición mas restrictiva en caso de falla. Ambos sistemas pueden utilizarse en simultáneo, de ser requerido. En el código \ref{lst:axleCounter} podemos ver un ejemplo de la clase trainDetectionElement, dentro de la clase functionalInfrastructure, dentro de la clase infrastructure. En este ejemplo la clase fue definida como tipo axleCounter (contador de eje) y se le asigna el nombre AxC01 que vemos en la Figura \ref{fig:deteccion_1}, referido al netElement ne1. También podemos ver que este contador de ejes se activa en ambos sentidos (applicationDirection = both) y su coordenada intrínseca dentro del netElement ne1, dentro de los dos tercios de la sección.
+    Al igual que los circuitos de vía, los sistemas contadores de eje siguen el principio de fail-safe, adoptando la condición mas restrictiva en caso de falla. Ambos sistemas pueden utilizarse en simultáneo, de ser requerido. En el código \ref{lst:axleCounter} podemos ver un ejemplo de la clase trainDetectionElement, dentro de la clase functionalInfrastructure, dentro de la clase infrastructure. En este ejemplo la bclase fue definida como tipo axleCounter (contador de eje) y se le asigna el nombre AxC01 que vemos en la Figura \ref{fig:deteccion_1}, referido al netElement ne1. También podemos ver que este contador de ejes se activa en ambos sentidos (applicationDirection = both) y su coordenada intrínseca dentro del netElement ne1, dentro de los dos tercios de la sección.
 
     \begin{lstlisting}[language = XML, caption = Clase trainDetectionElement , label = {lst:axleCounter}]
     <trainDetectionElement id="ac6" type="axleCounter">

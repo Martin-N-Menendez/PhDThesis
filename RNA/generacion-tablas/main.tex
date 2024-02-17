@@ -66,4 +66,30 @@
     
     Dos rutas pueden tener la misma señal de inicio y de llegada, pero haciendo uso de diferentes tramos de vías. Sin embardo, no pueden habilitarse al mismo tiempo porque, con toda seguridad, ambas rutas compartirán un cambio de vías, con posiciones habilitantes contrarias. Tal es el caso de las rutas S22-S32 y S22-X15 que ambas deben hacer uso del cambio de vías Sw04, pero mientras la primer ruta lo necesita en posición normal, la segunda lo necesita en posición reversa.
     
-    Las rutas conflictivas son detectadas por el RNA e indicadas en la tabla de enclavamientos generada automáticamente. Cada ruta es creada basada en la red de grafos ferroviaria utilizando el algoritmo de camino óptimo para grafos dirigidos. Otros artículos [REF] exploran otras estrategias para encontrar las rutas basándose en tablas de enclavamientos.   
+    Las rutas conflictivas son detectadas por el RNA e indicadas en la tabla de enclavamientos generada automáticamente. Cada ruta es creada basada en la red de grafos ferroviaria utilizando el algoritmo de camino óptimo para grafos dirigidos. Otros artículos \cite{Paper_114,Paper_162,Paper_170,Paper_182} exploran otras estrategias para encontrar las rutas basándose en tablas de enclavamientos. 
+    
+    En \cite{Paper_114} abordan la generación automática de una tabla de enclavamientos a partir de un señalamiento previamente diseñado y en sus conclusiones destacan que sería deseable a futuro hacer su sistema compatible con railML para poder realizar un análisis mas profundo y, por lo tanto, generar una tabla de enclavamientos mas precisa. En \cite{Paper_162} generan la tabla de enclavamientos utilizando la topología pero, nuevamente, no es compatible con railML y presenta muchas restricciones para aplicar su método: el señalamiento tiene que ser dado previamente, solo se admiten señales principales, solo se admiten máquinas de cambios simples y no se admiten pasos a nivel. En \cite{Paper_170} se valida la tabla de enclavamientos junto con el trazado de vías, pero deben ser dadas previamente por el usuario. Finalmente, en \cite{Paper_182} se genera la tabla de enclavamientos en base a la topología, pero solo considera como únicos elementos ferroviarios a las vías y las máquinas de cambios.
+    
+    El RNA, en cambio, puede generar la tabla de enclavamientos sin restringir ni el número ni el tipo de elementos ferroviarios usados. Además, valida su propia tabla de enclavamientos contra la tabla de enclavamientos original, si hubiese. También es destacable que al ser compatible con railML es posible utilizarlo en conjunto con otras herramientas compatibles con el estándar, aumentando su escalabilidad y usabilidad.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     

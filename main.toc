@@ -8,34 +8,34 @@
 \contentsline {section}{\numberline {1.3}Sistemas de enclavamiento}{6}{}%
 \contentsline {subsection}{\numberline {1.3.1}Tipos de sistemas de enclavamiento}{6}{}%
 \contentsline {subsection}{\numberline {1.3.2}Tablas de enclavamientos}{9}{}%
-\contentsline {subsection}{\numberline {1.3.3}Enfoque funcional}{10}{}%
-\contentsline {subsection}{\numberline {1.3.4}Enfoque geográfico}{11}{}%
-\contentsline {section}{\numberline {1.4}Estándares de seguridad}{12}{}%
-\contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{12}{}%
-\contentsline {subsection}{\numberline {1.4.2}Redundancia y diversidad en sistemas ferroviarios}{13}{}%
-\contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{14}{}%
-\contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{14}{}%
+\contentsline {subsection}{\numberline {1.3.3}Enfoque funcional}{11}{}%
+\contentsline {subsection}{\numberline {1.3.4}Enfoque geográfico}{12}{}%
+\contentsline {section}{\numberline {1.4}Estándares de seguridad}{13}{}%
+\contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{13}{}%
+\contentsline {subsection}{\numberline {1.4.2}Redundancia y diversidad en sistemas ferroviarios}{14}{}%
+\contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{15}{}%
+\contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{15}{}%
 \contentsline {subsubsection}{\numberline {1.5.1.1}Paquete base}{15}{}%
 \contentsline {subsubsection}{\numberline {1.5.1.2}Modelo de grafos}{16}{}%
 \contentsline {subsubsection}{\numberline {1.5.1.3}Topología y niveles}{17}{}%
 \contentsline {subsubsection}{\numberline {1.5.1.4}Posicionamiento}{19}{}%
 \contentsline {subsection}{\numberline {1.5.2}RailML 3.0}{19}{}%
 \contentsline {subsection}{\numberline {1.5.3}Uso del estándar railML en la industria ferroviaria}{20}{}%
-\contentsline {section}{\numberline {1.6}Estado del arte}{20}{}%
-\contentsline {subsection}{\numberline {1.6.1}Empresas del sector ferroviario}{20}{}%
-\contentsline {subsection}{\numberline {1.6.2}Antecedentes de trabajos académicos en la temática}{21}{}%
-\contentsline {subsection}{\numberline {1.6.3}GICSAFe y los trabajos realizados}{21}{}%
-\contentsline {section}{\numberline {1.7}Herramienta propuesta}{23}{}%
-\contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{24}{}%
-\contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{24}{}%
-\contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{25}{}%
+\contentsline {section}{\numberline {1.6}Estado del arte}{21}{}%
+\contentsline {subsection}{\numberline {1.6.1}Empresas del sector ferroviario}{21}{}%
+\contentsline {subsection}{\numberline {1.6.2}Antecedentes de trabajos académicos en la temática}{22}{}%
+\contentsline {subsection}{\numberline {1.6.3}GICSAFe y los trabajos realizados}{22}{}%
+\contentsline {section}{\numberline {1.7}Herramienta propuesta}{24}{}%
+\contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{25}{}%
+\contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{25}{}%
+\contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{26}{}%
 \contentsline {chapter}{\numberline {2}Railway Network Analyzer (RNA)}{28}{}%
 \contentsline {section}{\numberline {2.1}Biblioteca RailML}{28}{}%
-\contentsline {subsection}{\numberline {2.1.1}Campo de metadatos}{30}{}%
+\contentsline {subsection}{\numberline {2.1.1}Clase Metadata}{30}{}%
 \contentsline {subsection}{\numberline {2.1.2}Clase common}{30}{}%
 \contentsline {subsection}{\numberline {2.1.3}Infraestructura y redes de grafos}{31}{}%
-\contentsline {subsection}{\numberline {2.1.4}Vías}{34}{}%
-\contentsline {subsection}{\numberline {2.1.5}Fin de vía y transiciones}{37}{}%
+\contentsline {subsection}{\numberline {2.1.4}Vías}{35}{}%
+\contentsline {subsection}{\numberline {2.1.5}Fin de vía y transiciones}{38}{}%
 \contentsline {subsection}{\numberline {2.1.6}Sistemas de detección de formaciones ferroviarias}{39}{}%
 \contentsline {subsection}{\numberline {2.1.7}Estaciones ferroviarias}{41}{}%
 \contentsline {subsection}{\numberline {2.1.8}Cruces ferroviarios}{43}{}%
@@ -46,21 +46,21 @@
 \contentsline {subsection}{\numberline {2.2.2}Detectores de posición y velocidad.}{54}{}%
 \contentsline {subsection}{\numberline {2.2.3}Plataformas ferroviarias}{56}{}%
 \contentsline {subsection}{\numberline {2.2.4}Pasos a nivel}{57}{}%
-\contentsline {subsection}{\numberline {2.2.5}Maquinas de cambios}{58}{}%
+\contentsline {subsection}{\numberline {2.2.5}Maquinas de cambios}{59}{}%
 \contentsline {section}{\numberline {2.3}Algoritmos de simplificación de señalamiento}{60}{}%
 \contentsline {subsection}{\numberline {2.3.1}Algoritmo de simplificación por herencia vertical}{61}{}%
 \contentsline {subsection}{\numberline {2.3.2}Algoritmo de simplificación por herencia horizontal}{65}{}%
 \contentsline {subsection}{\numberline {2.3.3}Limpieza de señales}{67}{}%
 \contentsline {section}{\numberline {2.4}Generación de las tablas de enclavamiento}{69}{}%
-\contentsline {section}{\numberline {2.5}Validación del señalamiento y las tablas de enclavamiento}{71}{}%
-\contentsline {section}{\numberline {2.6}Validación de principios de señalamiento ferroviario}{73}{}%
-\contentsline {subsection}{\numberline {2.6.1}Validación del principio de autoridad}{73}{}%
-\contentsline {subsection}{\numberline {2.6.2}Validación del principio de claridad}{73}{}%
-\contentsline {subsection}{\numberline {2.6.3}Validación del principio de anticipación}{75}{}%
-\contentsline {subsection}{\numberline {2.6.4}Validación del principio de granularidad}{76}{}%
-\contentsline {subsection}{\numberline {2.6.5}Validación del principio de terminalidad}{77}{}%
-\contentsline {subsection}{\numberline {2.6.6}Validación del principio de infraestructura}{78}{}%
-\contentsline {subsection}{\numberline {2.6.7}Validación del principio de no bloqueo}{79}{}%
+\contentsline {section}{\numberline {2.5}Validación del señalamiento y las tablas de enclavamiento}{72}{}%
+\contentsline {section}{\numberline {2.6}Comprobación de principios de señalamiento ferroviario}{73}{}%
+\contentsline {subsection}{\numberline {2.6.1}Comprobación del principio de autoridad}{74}{}%
+\contentsline {subsection}{\numberline {2.6.2}Comprobación del principio de claridad}{75}{}%
+\contentsline {subsection}{\numberline {2.6.3}Comprobación del principio de anticipación}{75}{}%
+\contentsline {subsection}{\numberline {2.6.4}Comprobación del principio de granularidad}{76}{}%
+\contentsline {subsection}{\numberline {2.6.5}Comprobación del principio de terminalidad}{77}{}%
+\contentsline {subsection}{\numberline {2.6.6}Comprobación del principio de infraestructura}{78}{}%
+\contentsline {subsection}{\numberline {2.6.7}Comprobación del principio de no bloqueo}{79}{}%
 \contentsline {chapter}{\numberline {3}Automatic Code Generator (ACG)}{81}{}%
 \contentsline {section}{\numberline {3.1}Sistemas de enclavamiento}{81}{}%
 \contentsline {subsection}{\numberline {3.1.1}Bloqueo de máquina de cambios por ocupación}{82}{}%

@@ -1,9 +1,9 @@
-\subsection{Campo de metadatos}
+\subsection{Clase Metadata}
     \label{sec:metadata}
 
-    Aunque no es una clase de railML, el campo metadata es fundamental para que el archivo en formato railML sea válido. Se presenta el Código \ref{lst:metadata} para ilustrar los elementos presentes en la sección de metadatos.
+    Aunque no es una clase de railML, la clase metadata es fundamental para que el archivo en formato railML sea válido. Se presenta el Código \ref{lst:metadata} para ilustrar los elementos presentes en la clase metadata.
     
-    \begin{lstlisting}[language = XML, caption = Campo de metadatos, label = {lst:metadata}]
+    \begin{lstlisting}[language = XML, caption = Clase metadata, label = {lst:metadata}]
 <metadata>
     <dc:title>Example_9.railml</dc:title>
     <dc:date>2023-10-04T10:51:21Z</dc:date>
@@ -17,4 +17,4 @@
 </metadata>
     \end{lstlisting}
 
-    Ninguno de estos campos es esencial para el funcionamiento del RNA, por lo que son copiados sin cambios al nuevo archivo generado. No obstante, la ausencia de alguno de estos campos o que el campo sea nulo provoca que tanto el RNA como cualquier herramienta compatible con railML considere al archivo como incompleto o corrupto.
+    Ninguno de estos campos es esencial para el análisis de la red ferroviaria, por lo que son copiados sin cambios al nuevo archivo generado. No obstante, la ausencia de alguno de estos campos o que el campo sea nulo provoca que tanto el RNA como cualquier herramienta compatible con railML considere al archivo como incompleto o corrupto.
