@@ -3781,6 +3781,31 @@
       \verb 10.56578/mits020404
       \endverb
     \endentry
+    \entry{Paper_170}{article}{}
+      \name{author}{1}{}{%
+        {{hash=349e41a017e8a9a0a6e5ccba898cb3dc}{%
+           family={Haxthausen},
+           familyi={H\bibinitperiod},
+           given={Anne\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \strng{fullhash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \strng{bibnamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \strng{authorbibnamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \strng{authornamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \strng{authorfullhash}{349e41a017e8a9a0a6e5ccba898cb3dc}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal on Software Tools for Technology Transfer}
+      \field{title}{Automated generation of formal safety conditions from railway interlocking tables}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1007/s10009-013-0295-9
+      \endverb
+    \endentry
     \entry{Paper_198}{article}{}
       \name{author}{3}{}{%
         {{hash=32d4291bde4e3de7e2274b544543328f}{%
@@ -5714,31 +5739,6 @@
       \endverb
       \verb{url}
       \verb https://es.wikipedia.org/wiki/Accidente_ferroviario_de_Versalles
-      \endverb
-    \endentry
-    \entry{Paper_170}{article}{}
-      \name{author}{1}{}{%
-        {{hash=349e41a017e8a9a0a6e5ccba898cb3dc}{%
-           family={Haxthausen},
-           familyi={H\bibinitperiod},
-           given={Anne\bibnamedelima E.},
-           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \strng{namehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \strng{fullhash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \strng{bibnamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \strng{authorbibnamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \strng{authornamehash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \strng{authorfullhash}{349e41a017e8a9a0a6e5ccba898cb3dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal on Software Tools for Technology Transfer}
-      \field{title}{Automated generation of formal safety conditions from railway interlocking tables}
-      \field{year}{2013}
-      \verb{doi}
-      \verb 10.1007/s10009-013-0295-9
       \endverb
     \endentry
     \entry{Paper_1}{article}{}

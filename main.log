@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  17 FEB 2024 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  18 FEB 2024 21:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1317,93 +1317,77 @@ Package pdftex.def Info: Figuras/rutas.PNG  used on input line 9.
 (introduccion/enclavamientos/funcional.tex [11])
 (introduccion/enclavamientos/geografico.tex)) (introduccion/estandares/main.tex
 (introduccion/estandares/estandares.tex [12]
-<Figuras/IEC61508.png, id=119, 356.33125pt x 142.5325pt>
+<Figuras/IEC61508.png, id=119, 484.209pt x 351.9549pt>
 File: Figuras/IEC61508.png Graphic file (type png)
 <use Figuras/IEC61508.png>
 Package pdftex.def Info: Figuras/IEC61508.png  used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 138.00623pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13 <./Figuras/IEC61508.png>]) (introduccion/estandares/redundancia.tex
-<Figuras/redundancia.png, id=124, 834.11626pt x 351.56343pt>
+(pdftex.def)             Requested size: 345.0pt x 250.77583pt.
+ [13 <./Figuras/IEC61508.png>])
+(introduccion/estandares/redundancia.tex
+<Figuras/redundancia.png, id=124, 535.5207pt x 552.8655pt>
 File: Figuras/redundancia.png Graphic file (type png)
 <use Figuras/redundancia.png>
 Package pdftex.def Info: Figuras/redundancia.png  used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 145.4133pt.
+(pdftex.def)             Requested size: 345.0pt x 356.18636pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14])) (introduccion/railML/main.tex
+[14])) (introduccion/railML/main.tex [15 <./Figuras/redundancia.png>]
 (introduccion/railML/railTopoModel/main.tex
-<Figuras/objetos.png, id=129, 679.78969pt x 521.69907pt>
+<Figuras/objetos.png, id=134, 406.1574pt x 124.48508pt>
 File: Figuras/objetos.png Graphic file (type png)
 <use Figuras/objetos.png>
 Package pdftex.def Info: Figuras/objetos.png  used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 264.76544pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(pdftex.def)             Requested size: 345.0pt x 105.74063pt.
 
 (introduccion/railML/railTopoModel/base.tex)
-(introduccion/railML/railTopoModel/netEntities.tex [15 <./Figuras/redundancia.p
-ng>]
-<Figuras/grafos.png, id=134, 889.07156pt x 293.59688pt>
+(introduccion/railML/railTopoModel/netEntities.tex [16 <./Figuras/objetos.png>]
+<Figuras/grafos.png, id=139, 484.9317pt x 159.7167pt>
 File: Figuras/grafos.png Graphic file (type png)
 <use Figuras/grafos.png>
 Package pdftex.def Info: Figuras/grafos.png  used on input line 10.
-(pdftex.def)             Requested size: 345.0pt x 113.92888pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16 <./Figuras/objetos.png>]) (introduccion/railML/railTopoModel/niveles.tex
-<Figuras/capas.png, id=138, 729.47531pt x 344.03531pt>
+(pdftex.def)             Requested size: 345.0pt x 113.6336pt.
+) (introduccion/railML/railTopoModel/niveles.tex [17 <./Figuras/grafos.png>]
+<Figuras/capas.png, id=144, 625.8582pt x 220.4235pt>
 File: Figuras/capas.png Graphic file (type png)
 <use Figuras/capas.png>
 Package pdftex.def Info: Figuras/capas.png  used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 162.70978pt.
+(pdftex.def)             Requested size: 345.0pt x 121.50908pt.
+<Figuras/railtopomodel.png, id=145, 1482.2577pt x 471.9231pt>
+File: Figuras/railtopomodel.png Graphic file (type png)
+<use Figuras/railtopomodel.png>
+Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
+(pdftex.def)             Requested size: 345.0pt x 109.8362pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./Figuras/grafos.png>]
-<Figuras/railtopomodel.png, id=143, 925.95938pt x 385.44pt>
-File: Figuras/railtopomodel.png Graphic file (type png)
-<use Figuras/railtopomodel.png>
-Package pdftex.def Info: Figuras/railtopomodel.png  used on input line 18.
-(pdftex.def)             Requested size: 345.0pt x 143.61038pt.
- [18 <./Figuras/capas.png> <./Figuras/railtopomodel.png>]) (introduccion/railML
-/railTopoModel/positioning.tex))
-(introduccion/railML/railML3.tex [19]) (introduccion/railML/Industria.tex))
-(introduccion/estado-del-arte/main.tex [20]
-(introduccion/estado-del-arte/empresas.tex)
-(introduccion/estado-del-arte/estudios.tex
-
-LaTeX Warning: Citation 'Paper_199' on page 21 undefined on input line 5.
-
-[21]) (introduccion/estado-del-arte/contexto.tex
-<Figuras/HojaDeRuta.png, id=160, 913.91437pt x 368.87813pt>
-File: Figuras/HojaDeRuta.png Graphic file (type png)
-<use Figuras/HojaDeRuta.png>
-Package pdftex.def Info: Figuras/HojaDeRuta.png  used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 139.24641pt.
+[18 <./Figuras/capas.png>]) (introduccion/railML/railTopoModel/positioning.tex)
+) (introduccion/railML/railML3.tex [19 <./Figuras/railtopomodel.png>])
+(introduccion/railML/Industria.tex [20]))
+(introduccion/estado-del-arte/main.tex
+(introduccion/estado-del-arte/empresas.tex [21])
+(introduccion/estado-del-arte/estudios.tex)
+(introduccion/estado-del-arte/contexto.tex
+<Figuras/hojaDeRuta.png, id=162, 1411.4331pt x 467.5869pt>
+File: Figuras/hojaDeRuta.png Graphic file (type png)
+<use Figuras/hojaDeRuta.png>
+Package pdftex.def Info: Figuras/hojaDeRuta.png  used on input line 7.
+(pdftex.def)             Requested size: 345.0pt x 114.29224pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22])) (introduccion/propuesta.tex [23 <./Figuras/HojaDeRuta.png>]
-<Figuras/workflow.png, id=167, 1096.095pt x 522.95375pt>
+[22])) (introduccion/propuesta.tex [23 <./Figuras/hojaDeRuta.png>]
+<Figuras/workflow.png, id=170, 1096.095pt x 522.95375pt>
 File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 164.60362pt.
-
-(introduccion/enfoque.tex [24 <./Figuras/workflow.png>])
-(introduccion/arquitectura.tex
-<Figuras/Architecture.png, id=172, 615.0177pt x 333.1647pt>
+ [24 <./Figuras/workflow.png>] (introduccion/enfoque.tex) (introduccion/arquite
+ctura.tex
+<Figuras/Architecture.png, id=175, 615.0177pt x 333.1647pt>
 File: Figuras/Architecture.png Graphic file (type png)
 <use Figuras/Architecture.png>
 Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
@@ -1413,18 +1397,18 @@ Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (introduccion/validacion.tex [25] [26 <./Figuras/Architecture.png>])))
-[27] (RNA/main.tex
+[27] [28] (RNA/main.tex
 Chapter 2.
-(RNA/biblioteca/main.tex [28
+(RNA/biblioteca/main.tex [29
 
-] [29] (RNA/biblioteca/metadata.tex)
-(RNA/biblioteca/common.tex [30]) (RNA/biblioteca/grafos.tex
+] [30] (RNA/biblioteca/metadata.tex)
+(RNA/biblioteca/common.tex [31]) (RNA/biblioteca/grafos.tex
 Overfull \hbox (1.08385pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/10 La clase In-fraestruc-ture de-fine to-dos los el-e-men-tos fer-
 roviar-ios con car-ac-ter^^S^^Psticas
  []
 
-[31] [32] [33]
+[32] [33] [34]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
 6.
 
@@ -1438,29 +1422,21 @@ Overfull \hbox (15.0pt too wide) detected at line 74
 [][] 
  []
 
-<Figuras/conexo.PNG, id=205, 586.44093pt x 336.50719pt>
+<Figuras/conexo.PNG, id=211, 1069.596pt x 669.2202pt>
 File: Figuras/conexo.PNG Graphic file (type png)
 <use Figuras/conexo.PNG>
 Package pdftex.def Info: Figuras/conexo.PNG  used on input line 82.
-(pdftex.def)             Requested size: 345.0pt x 197.96242pt.
+(pdftex.def)             Requested size: 345.0pt x 215.86015pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package caption Warning: \label without proper reference on input line 90.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `alg:connectedness' on page 34 undefined on input line
- 87.
 
 
 Overfull \hbox (15.0pt too wide) detected at line 109
 [][] 
  []
 
-) (RNA/biblioteca/vias.tex [34]
-<Figuras/trocha.png, id=210, 803.0pt x 231.86626pt>
+) (RNA/biblioteca/vias.tex [35]
+<Figuras/trocha.png, id=216, 803.0pt x 231.86626pt>
 File: Figuras/trocha.png Graphic file (type png)
 <use Figuras/trocha.png>
 Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
@@ -1469,8 +1445,8 @@ Package pdftex.def Info: Figuras/trocha.png  used on input line 10.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35 <./Figuras/conexo.PNG>]
-<Figuras/ascDesc.png, id=215, 447.6725pt x 232.87pt>
+[36 <./Figuras/conexo.PNG>]
+<Figuras/ascDesc.png, id=221, 447.6725pt x 232.87pt>
 File: Figuras/ascDesc.png Graphic file (type png)
 <use Figuras/ascDesc.png>
 Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
@@ -1479,20 +1455,20 @@ Package pdftex.def Info: Figuras/ascDesc.png  used on input line 21.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36 <./Figuras/trocha.png>]) (RNA/biblioteca/border.tex [37 <./Figuras/ascDesc.
+[37 <./Figuras/trocha.png>]) (RNA/biblioteca/border.tex [38 <./Figuras/ascDesc.
 png>]
-<Figuras/Border.png, id=224, 1611.01875pt x 348.30125pt>
+<Figuras/Border.png, id=230, 1611.01875pt x 348.30125pt>
 File: Figuras/Border.png Graphic file (type png)
 <use Figuras/Border.png>
 Package pdftex.def Info: Figuras/Border.png  used on input line 8.
 (pdftex.def)             Requested size: 310.4979pt x 67.12924pt.
- [38 <./Figuras/Border.png>]) (RNA/biblioteca/detection.tex
-<Figuras/Detector.png, id=229, 556.32843pt x 97.11281pt>
+ [39 <./Figuras/Border.png>]) (RNA/biblioteca/detection.tex
+<Figuras/Detector.png, id=236, 556.32843pt x 97.11281pt>
 File: Figuras/Detector.png Graphic file (type png)
 <use Figuras/Detector.png>
 Package pdftex.def Info: Figuras/Detector.png  used on input line 8.
 (pdftex.def)             Requested size: 345.0pt x 60.22412pt.
-<Figuras/circuito_via.png, id=230, 936.49875pt x 302.63063pt>
+<Figuras/circuito_via.png, id=237, 936.49875pt x 302.63063pt>
 File: Figuras/circuito_via.png Graphic file (type png)
 <use Figuras/circuito_via.png>
 Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
@@ -1501,8 +1477,8 @@ Package pdftex.def Info: Figuras/circuito_via.png  used on input line 17.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./Figuras/Detector.png>]
-<Figuras/contador.jpg, id=236, 645.10484pt x 338.5279pt>
+[40 <./Figuras/Detector.png>]
+<Figuras/contador.jpg, id=242, 645.10484pt x 338.5279pt>
 File: Figuras/contador.jpg Graphic file (type jpg)
 <use Figuras/contador.jpg>
 Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
@@ -1511,19 +1487,15 @@ Package pdftex.def Info: Figuras/contador.jpg  used on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40 <./Figuras/circuito_via.png>]) (RNA/biblioteca/platform.tex
-<Figuras/Platform.png, id=241, 803.25093pt x 250.68657pt>
+[41 <./Figuras/circuito_via.png>]) (RNA/biblioteca/platform.tex [42 <./Figuras/
+contador.jpg>]
+<Figuras/Platform.png, id=250, 803.25093pt x 250.68657pt>
 File: Figuras/Platform.png Graphic file (type png)
 <use Figuras/Platform.png>
 Package pdftex.def Info: Figuras/Platform.png  used on input line 10.
 (pdftex.def)             Requested size: 345.0pt x 107.67453pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41 <./Figuras/contador.jpg>] [42 <./Figuras/Platform.png>])
-(RNA/biblioteca/crossing.tex
-<Figuras/cruce.png, id=249, 800.9925pt x 317.68687pt>
+ [43 <./Figuras/Platform.png>]) (RNA/biblioteca/crossing.tex
+<Figuras/cruce.png, id=255, 800.9925pt x 317.68687pt>
 File: Figuras/cruce.png Graphic file (type png)
 <use Figuras/cruce.png>
 Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
@@ -1532,13 +1504,13 @@ Package pdftex.def Info: Figuras/cruce.png  used on input line 8.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43] [44 <./Figuras/cruce.png>]) (RNA/biblioteca/switch.tex
-<Figuras/Cambios.jpg, id=257, 4047.12pt x 3035.34pt>
+[44] [45 <./Figuras/cruce.png>]) (RNA/biblioteca/switch.tex
+<Figuras/Cambios.jpg, id=264, 4047.12pt x 3035.34pt>
 File: Figuras/Cambios.jpg Graphic file (type jpg)
 <use Figuras/Cambios.jpg>
 Package pdftex.def Info: Figuras/Cambios.jpg  used on input line 8.
 (pdftex.def)             Requested size: 310.4979pt x 232.87433pt.
-<Figuras/Cambios_2.jpg, id=258, 3034.33624pt x 2543.5025pt>
+<Figuras/Cambios_2.jpg, id=265, 3034.33624pt x 2543.5025pt>
 File: Figuras/Cambios_2.jpg Graphic file (type jpg)
 <use Figuras/Cambios_2.jpg>
 Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
@@ -1547,26 +1519,19 @@ Package pdftex.def Info: Figuras/Cambios_2.jpg  used on input line 17.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figuras/cambio_3.PNG, id=259, 934.99312pt x 295.85532pt>
+[46 <./Figuras/Cambios.jpg>]
+<Figuras/cambio_3.PNG, id=269, 934.99312pt x 295.85532pt>
 File: Figuras/cambio_3.PNG Graphic file (type png)
 <use Figuras/cambio_3.PNG>
 Package pdftex.def Info: Figuras/cambio_3.PNG  used on input line 26.
 (pdftex.def)             Requested size: 310.4979pt x 98.25102pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[45 <./Figuras/Cambios.jpg>]
-<Figuras/cambios.png, id=264, 852.18375pt x 285.31593pt>
+<Figuras/cambios.png, id=270, 852.18375pt x 285.31593pt>
 File: Figuras/cambios.png Graphic file (type png)
 <use Figuras/cambios.png>
 Package pdftex.def Info: Figuras/cambios.png  used on input line 35.
 (pdftex.def)             Requested size: 345.0pt x 115.50877pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46 <./Figuras/Cambios_2.jpg> <./Figuras/cambio_3.PNG>] [47 <./Figuras/cambios.
-png>]
+ [47 <./Figuras/Cambios_2.jpg> <./Figuras/cambio_3.PNG>] [48 <./Figuras/cambios
+.png>]
 Overfull \hbox (5.95059pt too wide) in paragraph at lines 73--74
 \OT1/cmr/m/n/10 Los datos obtenidos en switches[sw[]id].LeftBranch y switches[s
 w[]id].RightBranch,
@@ -1577,26 +1542,26 @@ Overfull \hbox (15.0pt too wide) detected at line 109
 [][] 
  []
 
-) (RNA/biblioteca/signal.tex [48] [49]
-<Figuras/Semaforo3.png, id=279, 839.135pt x 612.2875pt>
+) (RNA/biblioteca/signal.tex [49] [50]
+<Figuras/Semaforo3.png, id=285, 839.135pt x 612.2875pt>
 File: Figuras/Semaforo3.png Graphic file (type png)
 <use Figuras/Semaforo3.png>
 Package pdftex.def Info: Figuras/Semaforo3.png  used on input line 8.
 (pdftex.def)             Requested size: 345.0pt x 251.73087pt.
- [50 <./Figuras/Semaforo3.png>]
-<Figuras/semaforos.PNG, id=284, 1099.10625pt x 460.72125pt>
+ [51 <./Figuras/Semaforo3.png>]
+<Figuras/semaforos.PNG, id=291, 1099.10625pt x 460.72125pt>
 File: Figuras/semaforos.PNG Graphic file (type png)
 <use Figuras/semaforos.PNG>
 Package pdftex.def Info: Figuras/semaforos.PNG  used on input line 23.
 (pdftex.def)             Requested size: 345.0pt x 144.61476pt.
 ))
-(RNA/generacion/main.tex [51 <./Figuras/semaforos.PNG>]
+(RNA/generacion/main.tex [52 <./Figuras/semaforos.PNG>]
 Overfull \hbox (43.74536pt too wide) detected at line 11
 [][] \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10 ^^@ [] []
  []
 
-(RNA/generacion/border.tex [52]
-<Figuras/limites.PNG, id=294, 989.94844pt x 397.485pt>
+(RNA/generacion/border.tex [53]
+<Figuras/limites.PNG, id=300, 989.94844pt x 397.485pt>
 File: Figuras/limites.PNG Graphic file (type png)
 <use Figuras/limites.PNG>
 Package pdftex.def Info: Figuras/limites.PNG  used on input line 68.
@@ -1605,29 +1570,35 @@ Package pdftex.def Info: Figuras/limites.PNG  used on input line 68.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (RNA/generacion/detector.tex [53] [54 <./Figuras/limites.PNG>]
-<Figuras/detectores.PNG, id=303, 1190.19656pt x 595.47469pt>
+) (RNA/generacion/detector.tex [54] [55 <./Figuras/limites.PNG>]
+<Figuras/detectores.PNG, id=309, 1190.19656pt x 595.47469pt>
 File: Figuras/detectores.PNG Graphic file (type png)
 <use Figuras/detectores.PNG>
 Package pdftex.def Info: Figuras/detectores.PNG  used on input line 43.
 (pdftex.def)             Requested size: 345.0pt x 172.60146pt.
-)
-(RNA/generacion/platform.tex [55 <./Figuras/detectores.PNG>] [56]
-<Figuras/platforms.PNG, id=312, 770.88pt x 217.5628pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (RNA/generacion/platform.tex [56]
+<Figuras/platforms.PNG, id=313, 770.88pt x 217.5628pt>
 File: Figuras/platforms.PNG Graphic file (type png)
 <use Figuras/platforms.PNG>
 Package pdftex.def Info: Figuras/platforms.PNG  used on input line 37.
 (pdftex.def)             Requested size: 345.0pt x 97.36787pt.
-)
-(RNA/generacion/crossing.tex [57 <./Figuras/platforms.PNG>]
-<Figuras/crossings.PNG, id=318, 767.11594pt x 217.5628pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (RNA/generacion/crossing.tex [57 <./Figuras/detectores.PNG>] [58 <./Figuras/p
+latforms.PNG>]
+<Figuras/crossings.PNG, id=324, 767.11594pt x 217.5628pt>
 File: Figuras/crossings.PNG Graphic file (type png)
 <use Figuras/crossings.PNG>
 Package pdftex.def Info: Figuras/crossings.PNG  used on input line 37.
 (pdftex.def)             Requested size: 345.0pt x 97.84592pt.
-)
-(RNA/generacion/switch.tex [58 <./Figuras/crossings.PNG>]
-<Figuras/switches.PNG, id=323, 897.3525pt x 343.2825pt>
+) (RNA/generacion/switch.tex [59 <./Figuras/crossings.PNG>]
+<Figuras/switches.PNG, id=329, 897.3525pt x 343.2825pt>
 File: Figuras/switches.PNG Graphic file (type png)
 <use Figuras/switches.PNG>
 Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
@@ -1636,7 +1607,7 @@ Package pdftex.def Info: Figuras/switches.PNG  used on input line 49.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[59])) (RNA/simplificacion/main.tex
+[60])) (RNA/simplificacion/main.tex
 Overfull \hbox (4.06126pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Algoritmos de sim-pli-fi-caci^^Son de se~nalamiento 
  []
@@ -1647,15 +1618,15 @@ Overfull \hbox (0.16727pt too wide) in paragraph at lines 12--13
 1[] ex-pli-cada al comienzo
  []
 
-[60 <./Figuras/switches.PNG>] (RNA/simplificacion/herencia-vertical.tex
-<Figuras/Figure8_Crop.pdf, id=331, 380.63907pt x 179.48155pt>
+[61 <./Figuras/switches.PNG>] (RNA/simplificacion/herencia-vertical.tex
+<Figuras/Figure8_Crop.pdf, id=337, 380.63907pt x 179.48155pt>
 File: Figuras/Figure8_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure8_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure8_Crop.pdf  used on input line 17.
 (pdftex.def)             Requested size: 345.0pt x 162.68213pt.
 
-[61 <./Figuras/Figure8_Crop.pdf>] [62]
-<Figuras/Figure9_Crop.pdf, id=405, 379.77182pt x 177.74706pt>
+[62 <./Figuras/Figure8_Crop.pdf>] [63]
+<Figuras/Figure9_Crop.pdf, id=412, 379.77182pt x 177.74706pt>
 File: Figuras/Figure9_Crop.pdf Graphic file (type pdf)
 <use Figuras/Figure9_Crop.pdf>
 Package pdftex.def Info: Figuras/Figure9_Crop.pdf  used on input line 89.
@@ -1664,9 +1635,9 @@ Package pdftex.def Info: Figuras/Figure9_Crop.pdf  used on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[63]) (RNA/simplificacion/herencia-horizontal.tex [64 <./Figuras/Figure9_Crop.p
+[64]) (RNA/simplificacion/herencia-horizontal.tex [65 <./Figuras/Figure9_Crop.p
 df>]
-<Figuras/proximity.PNG, id=483, 377.2494pt x 218.2554pt>
+<Figuras/proximity.PNG, id=489, 377.2494pt x 218.2554pt>
 File: Figuras/proximity.PNG Graphic file (type png)
 <use Figuras/proximity.PNG>
 Package pdftex.def Info: Figuras/proximity.PNG  used on input line 47.
@@ -1675,81 +1646,81 @@ Package pdftex.def Info: Figuras/proximity.PNG  used on input line 47.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[65] [66 <./Figuras/proximity.PNG>]) (RNA/simplificacion/limpieza.tex [67]))
-(RNA/generacion-tablas/main.tex [68] [69]
-<Figuras/Figure11.pdf, id=501, 684.63776pt x 289.08pt>
+[66] [67 <./Figuras/proximity.PNG>]) (RNA/simplificacion/limpieza.tex [68]))
+(RNA/generacion-tablas/main.tex [69] [70]
+<Figuras/Figure11.pdf, id=507, 684.63776pt x 289.08pt>
 File: Figuras/Figure11.pdf Graphic file (type pdf)
 <use Figuras/Figure11.pdf>
 Package pdftex.def Info: Figuras/Figure11.pdf  used on input line 58.
 (pdftex.def)             Requested size: 345.0pt x 145.67326pt.
- [70 <./Figuras/Figure11.pdf>])
-(RNA/validacion-tablas/main.tex [71]
+ [71 <./Figuras/Figure11.pdf>])
+(RNA/validacion-tablas/main.tex [72]
 Overfull \hbox (6.38956pt too wide) in paragraph at lines 62--63
 \OT1/cmr/m/n/10 teja el-e-men-tos fer-roviar-ios no con-tem-pla-dos en el se~na
 lamiento orig-i-nal, a~nadiendo
  []
 
-[72]) (RNA/validacion-principios/main.tex
+[73]) (RNA/validacion-principios/main.tex
 Overfull \hbox (1.95457pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Comprobaci^^Son de prin-ci-p-ios de se~nalamiento
  []
 
-[73] [74]
+[74] [75]
 Overfull \hbox (4.5551pt too wide) in paragraph at lines 62--63
 []\OT1/cmr/m/n/10 El RNA uti-liza el Al-go-ritmo 16[] para val-i-dar el prin-ci
 -pio de clar-i-dad, generando
  []
 
-[75] [76] [77] [78] [79])) [80] (ACG/main.tex
+[76] [77] [78] [79] [80])) [81] (ACG/main.tex
 Chapter 3.
 (ACG/sistemas-enclavamiento/main.tex
 File: Figuras/bypass.png Graphic file (type png)
 <use Figuras/bypass.png>
 Package pdftex.def Info: Figuras/bypass.png  used on input line 10.
 (pdftex.def)             Requested size: 345.0pt x 63.91573pt.
- [81
+ [82
 
 ]
 (ACG/sistemas-enclavamiento/bloqueo-por-ocupacion.tex
-<Figuras/ocupacion.png, id=634, 843.90282pt x 286.06876pt>
+<Figuras/ocupacion.png, id=640, 843.90282pt x 286.06876pt>
 File: Figuras/ocupacion.png Graphic file (type png)
 <use Figuras/ocupacion.png>
 Package pdftex.def Info: Figuras/ocupacion.png  used on input line 6.
 (pdftex.def)             Requested size: 345.0pt x 116.94847pt.
 )
-(ACG/sistemas-enclavamiento/bloqueo-rutas.tex [82 <./Figuras/ocupacion.png>]
-<Figuras/bloqueo_rutas.png, id=639, 925.20656pt x 366.61969pt>
+(ACG/sistemas-enclavamiento/bloqueo-rutas.tex [83 <./Figuras/ocupacion.png>]
+<Figuras/bloqueo_rutas.png, id=645, 925.20656pt x 366.61969pt>
 File: Figuras/bloqueo_rutas.png Graphic file (type png)
 <use Figuras/bloqueo_rutas.png>
 Package pdftex.def Info: Figuras/bloqueo_rutas.png  used on input line 6.
 (pdftex.def)             Requested size: 345.0pt x 136.71004pt.
 )
-(ACG/sistemas-enclavamiento/proteccion-aproximacion.tex [83 <./Figuras/bloqueo_
+(ACG/sistemas-enclavamiento/proteccion-aproximacion.tex [84 <./Figuras/bloqueo_
 rutas.png>]
-<Figuras/aproximacion_1.png, id=644, 943.27406pt x 336.50719pt>
+<Figuras/aproximacion_1.png, id=650, 943.27406pt x 336.50719pt>
 File: Figuras/aproximacion_1.png Graphic file (type png)
 <use Figuras/aproximacion_1.png>
 Package pdftex.def Info: Figuras/aproximacion_1.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 123.07826pt.
-<Figuras/aproximacion_2.png, id=645, 941.01563pt x 338.76563pt>
+<Figuras/aproximacion_2.png, id=651, 941.01563pt x 338.76563pt>
 File: Figuras/aproximacion_2.png Graphic file (type png)
 <use Figuras/aproximacion_2.png>
 Package pdftex.def Info: Figuras/aproximacion_2.png  used on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 124.19893pt.
- [84 <./Figuras/aproximacion_1.png>]
-<Figuras/aproximacion_3.png, id=650, 942.52126pt x 336.50719pt>
+ [85 <./Figuras/aproximacion_1.png>]
+<Figuras/aproximacion_3.png, id=656, 942.52126pt x 336.50719pt>
 File: Figuras/aproximacion_3.png Graphic file (type png)
 <use Figuras/aproximacion_3.png>
 Package pdftex.def Info: Figuras/aproximacion_3.png  used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 123.17581pt.
-<Figuras/aproximacion_4.png, id=651, 940.26282pt x 335.75438pt>
+<Figuras/aproximacion_4.png, id=657, 940.26282pt x 335.75438pt>
 File: Figuras/aproximacion_4.png Graphic file (type png)
 <use Figuras/aproximacion_4.png>
 Package pdftex.def Info: Figuras/aproximacion_4.png  used on input line 34.
 (pdftex.def)             Requested size: 345.0pt x 123.19228pt.
- [85 <./Figuras/aproximacion_2.png> <./Figuras/aproximacion_3.png>])
+ [86 <./Figuras/aproximacion_2.png> <./Figuras/aproximacion_3.png>])
 (ACG/sistemas-enclavamiento/proteccion-solape.tex
-<Figuras/solape.png, id=657, 938.75719pt x 335.75438pt>
+<Figuras/solape.png, id=663, 938.75719pt x 335.75438pt>
 File: Figuras/solape.png Graphic file (type png)
 <use Figuras/solape.png>
 Package pdftex.def Info: Figuras/solape.png  used on input line 7.
@@ -1758,9 +1729,9 @@ Package pdftex.def Info: Figuras/solape.png  used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (ACG/sistemas-enclavamiento/doble-recubrimiento.tex [86 <./Figuras/aproximaci
+) (ACG/sistemas-enclavamiento/doble-recubrimiento.tex [87 <./Figuras/aproximaci
 on_4.png>]
-<example-image.pdf, id=662, 321.2pt x 240.9pt>
+<example-image.pdf, id=669, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 4.
@@ -1770,26 +1741,26 @@ Overfull \hbox (6.36594pt too wide) in paragraph at lines 4--1
 [] \OT1/cmr/m/n/10 Lo-rem
  []
 
-[87 <./Figuras/solape.png>]
-<Figuras/secuencial_1.png, id=668, 938.75719pt x 336.50719pt>
+[88 <./Figuras/solape.png>]
+<Figuras/secuencial_1.png, id=674, 938.75719pt x 336.50719pt>
 File: Figuras/secuencial_1.png Graphic file (type png)
 <use Figuras/secuencial_1.png>
 Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 123.66875pt.
- [88 <C:/Users/menen/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.
+ [89 <C:/Users/menen/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.
 pdf>]
-<Figuras/secuencial_2.png, id=678, 941.01563pt x 339.51843pt>
+<Figuras/secuencial_2.png, id=684, 941.01563pt x 339.51843pt>
 File: Figuras/secuencial_2.png Graphic file (type png)
 <use Figuras/secuencial_2.png>
 Package pdftex.def Info: Figuras/secuencial_2.png  used on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 124.47493pt.
- [89 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png>]
-<Figuras/secuencial_3.png, id=684, 941.76843pt x 337.26pt>
+ [90 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png>]
+<Figuras/secuencial_3.png, id=690, 941.76843pt x 337.26pt>
 File: Figuras/secuencial_3.png Graphic file (type png)
 <use Figuras/secuencial_3.png>
 Package pdftex.def Info: Figuras/secuencial_3.png  used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 123.54916pt.
-<Figuras/secuencial_4.png, id=685, 938.75719pt x 333.49594pt>
+<Figuras/secuencial_4.png, id=691, 938.75719pt x 333.49594pt>
 File: Figuras/secuencial_4.png Graphic file (type png)
 <use Figuras/secuencial_4.png>
 Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 34.
@@ -1798,22 +1769,22 @@ Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 34.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (ACG/arquitectura/main.tex [90 <./Figuras/secuencial_3.png>]
+)) (ACG/arquitectura/main.tex [91 <./Figuras/secuencial_3.png>]
 (ACG/arquitectura/comunicacion.tex (ACG/arquitectura/encoder.tex)
-(ACG/arquitectura/decoder.tex [91 <./Figuras/secuencial_4.png>]))
-(ACG/arquitectura/interlocking.tex)) (ACG/modelado/main.tex [92]
+(ACG/arquitectura/decoder.tex [92 <./Figuras/secuencial_4.png>]))
+(ACG/arquitectura/interlocking.tex)) (ACG/modelado/main.tex [93]
 (ACG/modelado/crossing.tex) (ACG/modelado/switch.tex) (ACG/modelado/signal.tex)
-) (ACG/redundancia/main.tex [93]
-<Figuras/antagonica.png, id=701, 812.28468pt x 386.19281pt>
+) (ACG/redundancia/main.tex [94]
+<Figuras/antagonica.png, id=707, 812.28468pt x 386.19281pt>
 File: Figuras/antagonica.png Graphic file (type png)
 <use Figuras/antagonica.png>
 Package pdftex.def Info: Figuras/antagonica.png  used on input line 9.
 (pdftex.def)             Requested size: 345.0pt x 164.02664pt.
-) (ACG/validacion/main.tex [94 <./Figuras/antagonica.png>])) [95] (resultados-o
+) (ACG/validacion/main.tex [95 <./Figuras/antagonica.png>])) [96] (resultados-o
 btenidos/main.tex
 Chapter 4.
 (resultados-obtenidos/ejemplo1/main.tex
-<resultados-obtenidos/ejemplo1/images/1_original.png, id=709, 1678.01906pt x 68
+<resultados-obtenidos/ejemplo1/images/1_original.png, id=715, 1678.01906pt x 68
 7.31781pt>
 File: resultados-obtenidos/ejemplo1/images/1_original.png Graphic file (type pn
 g)
@@ -1825,7 +1796,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_empty.png, id=710, 2068.72874pt x 871.7
+<resultados-obtenidos/ejemplo1/images/1_empty.png, id=716, 2068.72874pt x 871.7
 5688pt>
 File: resultados-obtenidos/ejemplo1/images/1_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_empty.png>
@@ -1835,7 +1806,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step1.png, id=711, 2095.83pt x 875.5209
+<resultados-obtenidos/ejemplo1/images/1_step1.png, id=717, 2095.83pt x 875.5209
 4pt>
 File: resultados-obtenidos/ejemplo1/images/1_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step1.png>
@@ -1845,7 +1816,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step2.png, id=712, 2091.31313pt x 855.1
+<resultados-obtenidos/ejemplo1/images/1_step2.png, id=718, 2091.31313pt x 855.1
 95pt>
 File: resultados-obtenidos/ejemplo1/images/1_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step2.png>
@@ -1855,7 +1826,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step3.png, id=713, 2098.08844pt x 857.4
+<resultados-obtenidos/ejemplo1/images/1_step3.png, id=719, 2098.08844pt x 857.4
 5343pt>
 File: resultados-obtenidos/ejemplo1/images/1_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step3.png>
@@ -1865,7 +1836,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_step4.png, id=714, 2079.26813pt x 872.5
+<resultados-obtenidos/ejemplo1/images/1_step4.png, id=720, 2079.26813pt x 872.5
 0969pt>
 File: resultados-obtenidos/ejemplo1/images/1_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step4.png>
@@ -1875,7 +1846,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=715, 1672.74937pt x 682.048
+<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=721, 1672.74937pt x 682.048
 13pt>
 File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_RNA.png>
@@ -1885,7 +1856,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo1/original-signalling.tex [96
+(resultados-obtenidos/ejemplo1/original-signalling.tex [97
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 10--33
@@ -1900,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo1/generated-signalling.tex [97 <./resultados-obt
+) (resultados-obtenidos/ejemplo1/generated-signalling.tex [98 <./resultados-obt
 enidos/ejemplo1/images/1_original.png> <./resultados-obtenidos/ejemplo1/images/
 1_empty.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--40
@@ -1911,16 +1882,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--40
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo1/synthesizing.tex)
-(resultados-obtenidos/ejemplo1/system-validation.tex [98 <./resultados-obtenido
+(resultados-obtenidos/ejemplo1/system-validation.tex [99 <./resultados-obtenido
 s/ejemplo1/images/1_step1.png> <./resultados-obtenidos/ejemplo1/images/1_step2.
-png>] [99 <./resultados-obtenidos/ejemplo1/images/1_step3.png> <./resultados-ob
-tenidos/ejemplo1/images/1_step4.png>] [100 <./resultados-obtenidos/ejemplo1/ima
-ges/1_RNA.png>]
+png>] [100 <./resultados-obtenidos/ejemplo1/images/1_step3.png> <./resultados-o
+btenidos/ejemplo1/images/1_step4.png>] [101 <./resultados-obtenidos/ejemplo1/im
+ages/1_RNA.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )) (resultados-obtenidos/ejemplo2/main.tex
-<resultados-obtenidos/ejemplo2/images/2_original.png, id=734, 2390.9325pt x 271
+<resultados-obtenidos/ejemplo2/images/2_original.png, id=740, 2390.9325pt x 271
 .76532pt>
 File: resultados-obtenidos/ejemplo2/images/2_original.png Graphic file (type pn
 g)
@@ -1932,7 +1903,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_empty.png, id=735, 959.83594pt x 217.56
+<resultados-obtenidos/ejemplo2/images/2_empty.png, id=741, 959.83594pt x 217.56
 28pt>
 File: resultados-obtenidos/ejemplo2/images/2_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_empty.png>
@@ -1942,7 +1913,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step1.png, id=736, 3006.73312pt x 374.9
+<resultados-obtenidos/ejemplo2/images/2_step1.png, id=742, 3006.73312pt x 374.9
 0062pt>
 File: resultados-obtenidos/ejemplo2/images/2_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step1.png>
@@ -1952,7 +1923,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step2.png, id=737, 3006.73312pt x 394.4
+<resultados-obtenidos/ejemplo2/images/2_step2.png, id=743, 3006.73312pt x 394.4
 7375pt>
 File: resultados-obtenidos/ejemplo2/images/2_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step2.png>
@@ -1962,7 +1933,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step3.png, id=738, 3006.73312pt x 362.1
+<resultados-obtenidos/ejemplo2/images/2_step3.png, id=744, 3006.73312pt x 362.1
 0281pt>
 File: resultados-obtenidos/ejemplo2/images/2_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step3.png>
@@ -1972,7 +1943,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_step4.png, id=739, 3006.73312pt x 328.9
+<resultados-obtenidos/ejemplo2/images/2_step4.png, id=745, 3006.73312pt x 328.9
 7906pt>
 File: resultados-obtenidos/ejemplo2/images/2_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step4.png>
@@ -1982,7 +1953,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=740, 2346.51656pt x 282.304
+<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=746, 2346.51656pt x 282.304
 69pt>
 File: resultados-obtenidos/ejemplo2/images/2_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_RNA.png>
@@ -1992,7 +1963,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo2/original-signalling.tex [101] [102]
+(resultados-obtenidos/ejemplo2/original-signalling.tex [102] [103]
 Underfull \hbox (badness 10000) in paragraph at lines 10--24
 [][]
  []
@@ -2011,13 +1982,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--29
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo2/synthesizing.tex)
-(resultados-obtenidos/ejemplo2/system-validation.tex [103 <./resultados-obtenid
+(resultados-obtenidos/ejemplo2/system-validation.tex [104 <./resultados-obtenid
 os/ejemplo2/images/2_original.png> <./resultados-obtenidos/ejemplo2/images/2_em
-pty.png>] [104 <./resultados-obtenidos/ejemplo2/images/2_step1.png> <./resultad
+pty.png>] [105 <./resultados-obtenidos/ejemplo2/images/2_step1.png> <./resultad
 os-obtenidos/ejemplo2/images/2_step2.png>]))
-(resultados-obtenidos/ejemplo3/main.tex [105 <./resultados-obtenidos/ejemplo2/i
+(resultados-obtenidos/ejemplo3/main.tex [106 <./resultados-obtenidos/ejemplo2/i
 mages/2_step3.png> <./resultados-obtenidos/ejemplo2/images/2_step4.png>]
-<resultados-obtenidos/ejemplo3/images/3_original.png, id=759, 6134.66907pt x 14
+<resultados-obtenidos/ejemplo3/images/3_original.png, id=765, 6134.66907pt x 14
 77.77094pt>
 File: resultados-obtenidos/ejemplo3/images/3_original.png Graphic file (type pn
 g)
@@ -2025,14 +1996,14 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 83.09283pt.
-<resultados-obtenidos/ejemplo3/images/3_empty.png, id=760, 10514.28125pt x 2394
+<resultados-obtenidos/ejemplo3/images/3_empty.png, id=766, 10514.28125pt x 2394
 .9475pt>
 File: resultados-obtenidos/ejemplo3/images/3_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_empty.png  used
  on input line 14.
 (pdftex.def)             Requested size: 345.0pt x 78.5694pt.
-<resultados-obtenidos/ejemplo3/images/3_step1.png, id=761, 10195.08875pt x 2470
+<resultados-obtenidos/ejemplo3/images/3_step1.png, id=767, 10195.08875pt x 2470
 .22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step1.png>
@@ -2043,7 +2014,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step2.png, id=762, 10195.08875pt x 2470
+<resultados-obtenidos/ejemplo3/images/3_step2.png, id=768, 10195.08875pt x 2470
 .22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step2.png>
@@ -2053,7 +2024,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step3.png, id=763, 10195.08875pt x 2470
+<resultados-obtenidos/ejemplo3/images/3_step3.png, id=769, 10195.08875pt x 2470
 .22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step3.png>
@@ -2063,7 +2034,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_step4.png, id=764, 7647.82219pt x 1852.
+<resultados-obtenidos/ejemplo3/images/3_step4.png, id=770, 7647.82219pt x 1852.
 67157pt>
 File: resultados-obtenidos/ejemplo3/images/3_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step4.png>
@@ -2073,7 +2044,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=765, 10195.08875pt x 2470.2
+<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=771, 10195.08875pt x 2470.2
 2874pt>
 File: resultados-obtenidos/ejemplo3/images/3_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_RNA.png>
@@ -2083,7 +2054,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo3/original-signalling.tex [106 <./resultados-obten
+(resultados-obtenidos/ejemplo3/original-signalling.tex [107 <./resultados-obten
 idos/ejemplo2/images/2_RNA.png> <./resultados-obtenidos/ejemplo3/images/3_origi
 nal.png> <./resultados-obtenidos/ejemplo3/images/3_empty.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--52
@@ -2093,7 +2064,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--52
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo3/generated-signalling.tex [107 <./resultados-ob
+) (resultados-obtenidos/ejemplo3/generated-signalling.tex [108 <./resultados-ob
 tenidos/ejemplo3/images/3_step1.png> <./resultados-obtenidos/ejemplo3/images/3_
 step2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--34
@@ -2144,7 +2115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--186
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo3/synthesizing.tex)
-(resultados-obtenidos/ejemplo3/system-validation.tex [108 <./resultados-obtenid
+(resultados-obtenidos/ejemplo3/system-validation.tex [109 <./resultados-obtenid
 os/ejemplo3/images/3_step3.png> <./resultados-obtenidos/ejemplo3/images/3_step4
 .png>]
 
@@ -2154,7 +2125,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )) (resultados-obtenidos/ejemplo4/main.tex
-<resultados-obtenidos/ejemplo4/images/4_original.png, id=777, 2657.42813pt x 64
+<resultados-obtenidos/ejemplo4/images/4_original.png, id=783, 2657.42813pt x 64
 2.14906pt>
 File: resultados-obtenidos/ejemplo4/images/4_original.png Graphic file (type pn
 g)
@@ -2162,21 +2133,21 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_original.png  u
 sed on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 83.36472pt.
- [109 <./resultados-obtenidos/ejemplo3/images/3_RNA.png> <./resultados-obtenido
+ [110 <./resultados-obtenidos/ejemplo3/images/3_RNA.png> <./resultados-obtenido
 s/ejemplo4/images/4_original.png>]
-[110]
-<resultados-obtenidos/ejemplo4/images/4_empty.png, id=785, 3349.26282pt x 801.7
+[111]
+<resultados-obtenidos/ejemplo4/images/4_empty.png, id=792, 3349.26282pt x 801.7
 4532pt>
 File: resultados-obtenidos/ejemplo4/images/4_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_empty.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_empty.png  used
  on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 82.57701pt.
- [111]
+ [112]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step1.png, id=790, 3334.20656pt x 842.3
+<resultados-obtenidos/ejemplo4/images/4_step1.png, id=796, 3334.20656pt x 842.3
 9719pt>
 File: resultados-obtenidos/ejemplo4/images/4_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step1.png>
@@ -2186,7 +2157,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step2.png, id=791, 3356.79094pt x 855.1
+<resultados-obtenidos/ejemplo4/images/4_step2.png, id=797, 3356.79094pt x 855.1
 95pt>
 File: resultados-obtenidos/ejemplo4/images/4_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step2.png>
@@ -2196,7 +2167,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step3.png, id=792, 3303.34125pt x 830.3
+<resultados-obtenidos/ejemplo4/images/4_step3.png, id=798, 3303.34125pt x 830.3
 5219pt>
 File: resultados-obtenidos/ejemplo4/images/4_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step3.png>
@@ -2206,7 +2177,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_step4.png, id=793, 3336.465pt x 840.891
+<resultados-obtenidos/ejemplo4/images/4_step4.png, id=799, 3336.465pt x 840.891
 56pt>
 File: resultados-obtenidos/ejemplo4/images/4_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step4.png>
@@ -2216,7 +2187,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=794, 3288.285pt x 809.27344
+<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=800, 3288.285pt x 809.27344
 pt>
 File: resultados-obtenidos/ejemplo4/images/4_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_RNA.png>
@@ -2226,7 +2197,7 @@ n input line 51.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo4/original-signalling.tex [112] [113]
+(resultados-obtenidos/ejemplo4/original-signalling.tex [113] [114]
 Underfull \hbox (badness 10000) in paragraph at lines 10--34
 
  []
@@ -2325,9 +2296,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--189
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo4/synthesizing.tex)
-(resultados-obtenidos/ejemplo4/system-validation.tex [114] [115] [116 <./result
+(resultados-obtenidos/ejemplo4/system-validation.tex [115] [116] [117 <./result
 ados-obtenidos/ejemplo4/images/4_empty.png> <./resultados-obtenidos/ejemplo4/im
-ages/4_step1.png>] [117 <./resultados-obtenidos/ejemplo4/images/4_step2.png> <.
+ages/4_step1.png>] [118 <./resultados-obtenidos/ejemplo4/images/4_step2.png> <.
 /resultados-obtenidos/ejemplo4/images/4_step3.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2344,17 +2315,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (resultados-obtenidos/ejemplo5/main.tex [118 <./resultados-obtenidos/ejemplo
+)) (resultados-obtenidos/ejemplo5/main.tex [119 <./resultados-obtenidos/ejemplo
 4/images/4_step4.png> <./resultados-obtenidos/ejemplo4/images/4_RNA.png>]
 Overfull \vbox (11.23502pt too high) has occurred while \output is active []
 
 
-[119] [120] [121] [122]
+[120] [121] [122] [123]
 
-LaTeX Warning: Text page 123 contains only floats.
+LaTeX Warning: Text page 124 contains only floats.
 
-[123]
-<resultados-obtenidos/ejemplo5/images/5_original.png, id=833, 2812.5075pt x 822
+[124]
+<resultados-obtenidos/ejemplo5/images/5_original.png, id=839, 2812.5075pt x 822
 .07124pt>
 File: resultados-obtenidos/ejemplo5/images/5_original.png Graphic file (type pn
 g)
@@ -2366,7 +2337,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_empty.png, id=834, 963.6pt x 325.96782p
+<resultados-obtenidos/ejemplo5/images/5_empty.png, id=840, 963.6pt x 325.96782p
 t>
 File: resultados-obtenidos/ejemplo5/images/5_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_empty.png>
@@ -2376,7 +2347,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step1.png, id=835, 2841.11438pt x 999.7
+<resultados-obtenidos/ejemplo5/images/5_step1.png, id=841, 2841.11438pt x 999.7
 35pt>
 File: resultados-obtenidos/ejemplo5/images/5_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step1.png>
@@ -2386,7 +2357,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step2.png, id=836, 2841.11438pt x 1027.
+<resultados-obtenidos/ejemplo5/images/5_step2.png, id=842, 2841.11438pt x 1027.
 58907pt>
 File: resultados-obtenidos/ejemplo5/images/5_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step2.png>
@@ -2396,7 +2367,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step3.png, id=837, 2841.11438pt x 1042.
+<resultados-obtenidos/ejemplo5/images/5_step3.png, id=843, 2841.11438pt x 1042.
 64531pt>
 File: resultados-obtenidos/ejemplo5/images/5_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step3.png>
@@ -2406,7 +2377,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_step4.png, id=838, 2841.11438pt x 1041.
+<resultados-obtenidos/ejemplo5/images/5_step4.png, id=844, 2841.11438pt x 1041.
 1397pt>
 File: resultados-obtenidos/ejemplo5/images/5_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step4.png>
@@ -2416,7 +2387,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=839, 1365.60187pt x 510.406
+<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=845, 1365.60187pt x 510.406
 88pt>
 File: resultados-obtenidos/ejemplo5/images/5_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_RNA.png>
@@ -2426,7 +2397,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo5/original-signalling.tex [124]
+(resultados-obtenidos/ejemplo5/original-signalling.tex [125]
 Underfull \hbox (badness 10000) in paragraph at lines 10--35
 
  []
@@ -2434,7 +2405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--35
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo5/generated-signalling.tex [125]
+) (resultados-obtenidos/ejemplo5/generated-signalling.tex [126]
 Underfull \hbox (badness 10000) in paragraph at lines 10--35
 
  []
@@ -2443,15 +2414,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--35
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo5/synthesizing.tex)
-(resultados-obtenidos/ejemplo5/system-validation.tex [126 <./resultados-obtenid
+(resultados-obtenidos/ejemplo5/system-validation.tex [127 <./resultados-obtenid
 os/ejemplo5/images/5_original.png> <./resultados-obtenidos/ejemplo5/images/5_em
 pty.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (resultados-obtenidos/ejemplo6/main.tex [127 <./resultados-obtenidos/ejemplo
+)) (resultados-obtenidos/ejemplo6/main.tex [128 <./resultados-obtenidos/ejemplo
 5/images/5_step1.png> <./resultados-obtenidos/ejemplo5/images/5_step2.png>]
-<resultados-obtenidos/ejemplo6/images/6_original.png, id=853, 3274.73438pt x 79
+<resultados-obtenidos/ejemplo6/images/6_original.png, id=859, 3274.73438pt x 79
 2.71156pt>
 File: resultados-obtenidos/ejemplo6/images/6_original.png Graphic file (type pn
 g)
@@ -2463,7 +2434,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_empty.png, id=854, 963.6pt x 239.39438p
+<resultados-obtenidos/ejemplo6/images/6_empty.png, id=860, 963.6pt x 239.39438p
 t>
 File: resultados-obtenidos/ejemplo6/images/6_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_empty.png>
@@ -2473,7 +2444,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step1.png, id=855, 4163.05313pt x 977.1
+<resultados-obtenidos/ejemplo6/images/6_step1.png, id=861, 4163.05313pt x 977.1
 5062pt>
 File: resultados-obtenidos/ejemplo6/images/6_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step1.png>
@@ -2483,7 +2454,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step2.png, id=856, 4163.05313pt x 1004.
+<resultados-obtenidos/ejemplo6/images/6_step2.png, id=862, 4163.05313pt x 1004.
 25188pt>
 File: resultados-obtenidos/ejemplo6/images/6_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step2.png>
@@ -2493,7 +2464,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step3.png, id=857, 4163.05313pt x 995.2
+<resultados-obtenidos/ejemplo6/images/6_step3.png, id=863, 4163.05313pt x 995.2
 1812pt>
 File: resultados-obtenidos/ejemplo6/images/6_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step3.png>
@@ -2503,7 +2474,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_step4.png, id=858, 1707.37875pt x 401.2
+<resultados-obtenidos/ejemplo6/images/6_step4.png, id=864, 1707.37875pt x 401.2
 4907pt>
 File: resultados-obtenidos/ejemplo6/images/6_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step4.png>
@@ -2513,7 +2484,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=859, 1407.75937pt x 339.518
+<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=865, 1407.75937pt x 339.518
 43pt>
 File: resultados-obtenidos/ejemplo6/images/6_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_RNA.png>
@@ -2523,7 +2494,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo6/original-signalling.tex [128 <./resultados-obten
+(resultados-obtenidos/ejemplo6/original-signalling.tex [129 <./resultados-obten
 idos/ejemplo5/images/5_step3.png> <./resultados-obtenidos/ejemplo5/images/5_ste
 p4.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--35
@@ -2533,7 +2504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--35
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo6/generated-signalling.tex [129 <./resultados-ob
+) (resultados-obtenidos/ejemplo6/generated-signalling.tex [130 <./resultados-ob
 tenidos/ejemplo5/images/5_RNA.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
@@ -2543,15 +2514,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--41
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo6/synthesizing.tex)
-(resultados-obtenidos/ejemplo6/system-validation.tex [130 <./resultados-obtenid
-os/ejemplo6/images/6_original.png>] [131] [132 <./resultados-obtenidos/ejemplo6
+(resultados-obtenidos/ejemplo6/system-validation.tex [131 <./resultados-obtenid
+os/ejemplo6/images/6_original.png>] [132] [133 <./resultados-obtenidos/ejemplo6
 /images/6_empty.png> <./resultados-obtenidos/ejemplo6/images/6_step1.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (resultados-obtenidos/ejemplo7/main.tex [133 <./resultados-obtenidos/ejemplo
+)) (resultados-obtenidos/ejemplo7/main.tex [134 <./resultados-obtenidos/ejemplo
 6/images/6_step2.png> <./resultados-obtenidos/ejemplo6/images/6_step3.png>]
-<resultados-obtenidos/ejemplo7/images/7_original.png, id=880, 1902.3572pt x 115
+<resultados-obtenidos/ejemplo7/images/7_original.png, id=886, 1902.3572pt x 115
 8.57843pt>
 File: resultados-obtenidos/ejemplo7/images/7_original.png Graphic file (type pn
 g)
@@ -2563,7 +2534,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_empty.png, id=881, 963.6pt x 542.025pt>
+<resultados-obtenidos/ejemplo7/images/7_empty.png, id=887, 963.6pt x 542.025pt>
 
 File: resultados-obtenidos/ejemplo7/images/7_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_empty.png>
@@ -2573,7 +2544,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step1.png, id=882, 3283.26625pt x 2443.
+<resultados-obtenidos/ejemplo7/images/7_step1.png, id=888, 3283.26625pt x 2443.
 1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step1.png>
@@ -2583,7 +2554,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step2.png, id=883, 3283.26625pt x 2443.
+<resultados-obtenidos/ejemplo7/images/7_step2.png, id=889, 3283.26625pt x 2443.
 1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step2.png>
@@ -2593,7 +2564,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step3.png, id=884, 3283.26625pt x 2443.
+<resultados-obtenidos/ejemplo7/images/7_step3.png, id=890, 3283.26625pt x 2443.
 1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step3.png>
@@ -2603,7 +2574,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_step4.png, id=885, 3283.26625pt x 2443.
+<resultados-obtenidos/ejemplo7/images/7_step4.png, id=891, 3283.26625pt x 2443.
 1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step4.png>
@@ -2613,7 +2584,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=886, 926.71219pt x 550.3059
+<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=892, 926.71219pt x 550.3059
 4pt>
 File: resultados-obtenidos/ejemplo7/images/7_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_RNA.png>
@@ -2631,7 +2602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--27
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo7/generated-signalling.tex [134 <./resultados-ob
+) (resultados-obtenidos/ejemplo7/generated-signalling.tex [135 <./resultados-ob
 tenidos/ejemplo6/images/6_step4.png> <./resultados-obtenidos/ejemplo6/images/6_
 RNA.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--30
@@ -2642,14 +2613,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--30
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo7/synthesizing.tex)
-(resultados-obtenidos/ejemplo7/system-validation.tex [135] [136] [137 <./result
+(resultados-obtenidos/ejemplo7/system-validation.tex [136] [137] [138 <./result
 ados-obtenidos/ejemplo7/images/7_original.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (resultados-obtenidos/ejemplo8/main.tex [138 <./resultados-obtenidos/ejemplo
+)) (resultados-obtenidos/ejemplo8/main.tex [139 <./resultados-obtenidos/ejemplo
 7/images/7_empty.png>]
-<resultados-obtenidos/ejemplo8/images/8_original.png, id=904, 2300.595pt x 446.
+<resultados-obtenidos/ejemplo8/images/8_original.png, id=910, 2300.595pt x 446.
 41782pt>
 File: resultados-obtenidos/ejemplo8/images/8_original.png Graphic file (type pn
 g)
@@ -2661,7 +2632,7 @@ sed on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_empty.png, id=905, 2318.6625pt x 444.15
+<resultados-obtenidos/ejemplo8/images/8_empty.png, id=911, 2318.6625pt x 444.15
 938pt>
 File: resultados-obtenidos/ejemplo8/images/8_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_empty.png>
@@ -2671,7 +2642,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_empty.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step1.png, id=906, 9609.65157pt x 1841.
+<resultados-obtenidos/ejemplo8/images/8_step1.png, id=912, 9609.65157pt x 1841.
 37938pt>
 File: resultados-obtenidos/ejemplo8/images/8_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step1.png>
@@ -2681,7 +2652,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step1.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step2.png, id=907, 9565.23563pt x 1863.
+<resultados-obtenidos/ejemplo8/images/8_step2.png, id=913, 9565.23563pt x 1863.
 21094pt>
 File: resultados-obtenidos/ejemplo8/images/8_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step2.png>
@@ -2691,7 +2662,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step2.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step3.png, id=908, 9607.39313pt x 1958.
+<resultados-obtenidos/ejemplo8/images/8_step3.png, id=914, 9607.39313pt x 1958.
 81813pt>
 File: resultados-obtenidos/ejemplo8/images/8_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step3.png>
@@ -2701,7 +2672,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step3.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_step4.png, id=909, 9649.55063pt x 1906.
+<resultados-obtenidos/ejemplo8/images/8_step4.png, id=915, 9649.55063pt x 1906.
 87407pt>
 File: resultados-obtenidos/ejemplo8/images/8_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step4.png>
@@ -2711,7 +2682,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step4.png  used
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=910, 9660.84282pt x 1838.36
+<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=916, 9660.84282pt x 1838.36
 812pt>
 File: resultados-obtenidos/ejemplo8/images/8_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_RNA.png>
@@ -2721,7 +2692,7 @@ n input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(resultados-obtenidos/ejemplo8/original-signalling.tex [139 <./resultados-obten
+(resultados-obtenidos/ejemplo8/original-signalling.tex [140 <./resultados-obten
 idos/ejemplo7/images/7_step1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--31
 
@@ -2730,7 +2701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--31
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (resultados-obtenidos/ejemplo8/generated-signalling.tex [140 <./resultados-ob
+) (resultados-obtenidos/ejemplo8/generated-signalling.tex [141 <./resultados-ob
 tenidos/ejemplo7/images/7_step2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--33
 
@@ -2740,30 +2711,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--33
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (resultados-obtenidos/ejemplo8/synthesizing.tex)
-(resultados-obtenidos/ejemplo8/system-validation.tex [141 <./resultados-obtenid
+(resultados-obtenidos/ejemplo8/system-validation.tex [142 <./resultados-obtenid
 os/ejemplo7/images/7_step3.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-))) [142 <./resultados-obtenidos/ejemplo7/images/7_step4.png>]
-(conclusiones/main.tex [143 <./resultados-obtenidos/ejemplo7/images/7_RNA.png>]
-[144 <./resultados-obtenidos/ejemplo8/images/8_original.png> <./resultados-obte
+))) [143 <./resultados-obtenidos/ejemplo7/images/7_step4.png>]
+(conclusiones/main.tex [144 <./resultados-obtenidos/ejemplo7/images/7_RNA.png>]
+[145 <./resultados-obtenidos/ejemplo8/images/8_original.png> <./resultados-obte
 nidos/ejemplo8/images/8_empty.png> <./resultados-obtenidos/ejemplo8/images/8_st
 ep1.png> <./resultados-obtenidos/ejemplo8/images/8_step2.png> <./resultados-obt
-enidos/ejemplo8/images/8_step3.png>] [145 <./resultados-obtenidos/ejemplo8/imag
-es/8_step4.png> <./resultados-obtenidos/ejemplo8/images/8_RNA.png>] [146]
-[147]
+enidos/ejemplo8/images/8_step3.png>] [146 <./resultados-obtenidos/ejemplo8/imag
+es/8_step4.png> <./resultados-obtenidos/ejemplo8/images/8_RNA.png>] [147]
+[148]
 Chapter 5.
-[148
+[149
 
 ]
 
-LaTeX Warning: Citation 'Paper_156' on page 149 undefined on input line 41.
+LaTeX Warning: Citation 'Paper_156' on page 150 undefined on input line 41.
 
 
-LaTeX Warning: Citation 'Paper_199' on page 149 undefined on input line 49.
+LaTeX Warning: Citation 'Paper_199' on page 150 undefined on input line 49.
 
-) [149]
+) [150]
 Overfull \hbox (55.97313pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 ing prin-ci-ples (for-mer rail-way group stan-dard gk/rt0060) -
  nr/l2/sig/30009/gkrt0060,''
@@ -2787,7 +2758,7 @@ Overfull \hbox (12.92581pt too wide) in paragraph at lines 102--102
  sys-tem,'' \OT1/cmr/m/it/10 ACM/IEEE
  []
 
-[150
+[151
 
 ]
 Overfull \hbox (3.79802pt too wide) in paragraph at lines 102--102
@@ -2795,7 +2766,7 @@ Overfull \hbox (3.79802pt too wide) in paragraph at lines 102--102
 ca-tions (ACTEA)\OT1/cmr/m/n/10 ,
  []
 
-[151]
+[152]
 Overfull \hbox (5.35223pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 sys-tems sil cer-ti-fi-ca-tion,'' \OT1/cmr/m/it/10 East-West De
 -sign & Test Sym-po-sium (EWDTS)\OT1/cmr/m/n/10 ,
@@ -2807,7 +2778,7 @@ Overfull \hbox (10.50284pt too wide) in paragraph at lines 102--102
 and R. Passerone,
  []
 
-[152] [153]
+[153] [154]
 Overfull \hbox (1.80617pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 for elec-tri-cal/-elec-tron-ic/pro-grammable elec-tronic safety
 -related sys-tems,''
@@ -2831,7 +2802,7 @@ Overfull \hbox (7.78844pt too wide) in paragraph at lines 102--102
 -ca-tion and demon-
  []
 
-[154]
+[155]
 Overfull \hbox (7.78844pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 CENELEC, ``En 50126-4 rail-way ap-pli-ca-tions. the spec-i-fi
 -ca-tion and demon-
@@ -2862,7 +2833,7 @@ Overfull \hbox (0.48145pt too wide) in paragraph at lines 102--102
 DTS .
  []
 
-[155] [156]
+[156] [157]
 Overfull \hbox (4.03511pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 H. Rail. ``The hi-tatchi wsp2g com-puter based in-ter-lock-in
 g sys-tem.'' (2022),
@@ -2898,7 +2869,7 @@ Overfull \hbox (3.34706pt too wide) in paragraph at lines 102--102
 Avail-able: $\OT1/cmtt/m/n/10 https :
  []
 
-[157]
+[158]
 Overfull \hbox (0.28409pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 ``Feasibility study rail-topo-model,'' \OT1/cmr/m/it/10 In-te
 r-na-tional Union of Rail-ways\OT1/cmr/m/n/10 , 2013. 
@@ -2910,13 +2881,19 @@ Overfull \hbox (1.4327pt too wide) in paragraph at lines 102--102
 e]. Avail-able: $\OT1/cmtt/m/n/10 http :
  []
 
-[158]
+[159]
 Overfull \hbox (67.70668pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 cast (2023-2029).'' (2024), [On-line]. Avail-able: $\OT1/cmtt/m
 /n/10 https : / / www . maximizemarketresearch .
  []
 
-[159] [160]
+
+Overfull \hbox (1.95258pt too wide) in paragraph at lines 102--102
+\OT1/cmr/m/n/10 from rail-way in-ter-lock-ing ta-bles,'' \OT1/cmr/m/it/10 In-te
+r-na-tional Jour-nal on Soft-ware Tools
+ []
+
+[160] [161]
 Overfull \hbox (2.8194pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 mod-elling rail-way safety and ca-pac-ity,'' \OT1/cmr/m/it/10 I
 n-ter-na-tional Con-fer-ence on Com-
@@ -2928,7 +2905,7 @@ Overfull \hbox (12.98695pt too wide) in paragraph at lines 102--102
 udy,'' \OT1/cmr/m/it/10 IEEE/ACM
  []
 
-[161]
+[162]
 Overfull \hbox (9.90474pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10 Trenes-Argentinos. ``Trenes ar-genti-nos.'' (2024), [On-line]
 . Avail-able: $\OT1/cmtt/m/n/10 https :
@@ -2946,25 +2923,19 @@ Overfull \hbox (4.49849pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 (vis-ited on 06/10/2023). 
  []
 
-[162]
+[163]
 Overfull \hbox (3.78203pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 able: $\OT1/cmtt/m/n/10 https : / / github . com / GICSAFePhD /
  RailML$ \OT1/cmr/m/n/10 (vis-ited on 02/14/2024). 
  []
 
-
-Overfull \hbox (1.95258pt too wide) in paragraph at lines 102--102
-\OT1/cmr/m/n/10 from rail-way in-ter-lock-ing ta-bles,'' \OT1/cmr/m/it/10 In-te
-r-na-tional Jour-nal on Soft-ware Tools
- []
-
-[163]
+[164]
 Overfull \hbox (0.37682pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 chine,'' \OT1/cmr/m/it/10 In-ter-na-tional Con-fer-ence on In-f
 or-ma-tion Sci-ence, Elec-tron-ics and
  []
 
-[164] [165]
+[165] [166]
 Overfull \hbox (12.57439pt too wide) in paragraph at lines 102--102
 \OT1/cmr/m/n/10 based on neu-ral net-work,'' \OT1/cmr/m/it/10 In-ter-na-tional 
 Con-fer-ence on Sens-ing,Diagnostics,
@@ -2976,7 +2947,7 @@ Overfull \hbox (6.26382pt too wide) in paragraph at lines 102--102
 In-ter-na-tional Con-fer-ence on Com-
  []
 
-[166] [167] [168] (main.aux)
+[167] [168] [169] (main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -2985,9 +2956,6 @@ L3 programming layer <2023-11-09>
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 5.12pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2999,11 +2967,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  31687 strings out of 474587
  693003 string characters out of 5745693
- 2080558 words of memory out of 5000000
+ 2079558 words of memory out of 5000000
  53077 multiletter control sequences out of 15000+600000
  565381 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,33n,93p,1488b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,33n,93p,1488b,1726s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmb10.pfb><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/publi
@@ -3028,9 +2996,9 @@ rs/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mss17.pfb>
-Output written on main.pdf (184 pages, 26332225 bytes).
+Output written on main.pdf (185 pages, 27833570 bytes).
 PDF statistics:
- 1098 PDF objects out of 1200 (max. 8388607)
+ 1104 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  568 words of extra memory for PDF output out of 10000 (max. 10000000)
 

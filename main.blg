@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[132] biber-MSWIN64:340> INFO - === 
-[170] Biber.pm:419> INFO - Reading 'main.bcf'
-[327] Biber.pm:979> INFO - Found 246 citekeys in bib section 0
-[335] Biber.pm:4419> INFO - Processing section 0
-[343] Biber.pm:4610> INFO - Looking for bibtex file 'references/references.bib' for section 0
-[385] bibtex.pm:1713> INFO - LaTeX decoding ...
-[468] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
-[998] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[998] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[999] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[999] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1069] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1133] bbl.pm:763> INFO - Output to main.bbl
-[1133] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_199' (section 0)
-[1133] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
-[1133] Biber.pm:133> INFO - WARNINGS: 2
+[84] biber-MSWIN64:340> INFO - === 
+[114] Biber.pm:419> INFO - Reading 'main.bcf'
+[278] Biber.pm:979> INFO - Found 246 citekeys in bib section 0
+[295] Biber.pm:4419> INFO - Processing section 0
+[303] Biber.pm:4610> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[348] bibtex.pm:1713> INFO - LaTeX decoding ...
+[428] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[962] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[963] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[963] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[963] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1042] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1112] bbl.pm:763> INFO - Output to main.bbl
+[1112] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
+[1112] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_199' (section 0)
+[1112] Biber.pm:133> INFO - WARNINGS: 2

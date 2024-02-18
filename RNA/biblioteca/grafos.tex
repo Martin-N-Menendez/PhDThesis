@@ -87,8 +87,8 @@
     Para determinar si la red es conexa, se siguen los pasos del Algoritmo \ref{alg:connectedness}. Añadiendo nodos a una lista de zonas siempre que el nodo tenga un vecino en esa lista. Si un nodo posee un vecino en ambas listas, las listas se combinan, creando una nueva zona. Si la cantidad de zonas es uno entonces la red es fuertemente conexa. Una red ferroviaria disconexa puede resolverse mas rápido que una fuertemente conexa ya que no haría falta iterar entre todos los elementos para analizarlos sino solo los pertenecientes a dicho subgrafo.
         
     \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-        \label{alg:connectedness}
         \caption{Algoritmo de conexidad}
+        \label{alg:connectedness}
         \begin{algorithmic}
             \STATE \{zones\} $\gets \{ \}$
             \STATE ADD first node in \{zones\}
