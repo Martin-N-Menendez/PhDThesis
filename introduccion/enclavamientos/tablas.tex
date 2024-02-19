@@ -4,7 +4,7 @@
 	
 	Cada ruta es definida junto con los elementos ferroviarios que la condicionan y los estados que deben tener los mismos para que la ruta sea habilitada. Además, se explicita cada una de las rutas que entrarían en conflicto con la ruta en cuestión. A modo de ejemplo se presenta en la Figura \ref{fig:funcional_1} como se realiza la asignación de rutas en un cambio de vías.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{Figuras/rutas.PNG}
 		\centering\caption{Ejemplo de asignación de rutas de izquierda a derecha (arriba) y de derecha a izquierda (abajo).}
@@ -13,7 +13,7 @@
 	
 	Si el trazado de vías fuese utilizado para circular únicamente de izquierda a derecha, podemos definir únicamente dos rutas. La primera será la ruta R1, desde la señal A hasta la señal C. La segunda ruta R2 se define desde la señal B hasta la señal D, utilizando el cambio de vía a reverso. Ambas rutas quedan definidas en la Tabla \ref{Tab:funcional_2}.
 	
-	\begin{table}[!h]
+	\begin{table}[H]
 		{
 			\caption{Tabla de enclavamientos (rutas de izquierda a derecha).}
 			\label{Tab:funcional_2}
@@ -37,7 +37,7 @@
 	
 	De forma análoga, podríamos analizar el mismo trazado de vías asumiendo que las formaciones circularán estrictamente de derecha a izquierda, definiendo otro nuevo conjunto de rutas. Sumando así las rutas R3 y R4 como se visualiza en la Tabla \ref{Tab:funcional_3}
 	
-	\begin{table}[!h]
+	\begin{table}[H]
 		{
 			\caption{Tabla de enclavamientos (rutas de derecha a izquierda).}
 			\label{Tab:funcional_3}
@@ -61,7 +61,7 @@
 	
 	Ambas tablas de enclavamiento (Tabla \ref{Tab:funcional_2} y Tabla \ref{Tab:funcional_3}) son válidas, dependiendo del uso que se le quiera dar a la infraestructura. Incluso podemos notar que ambas tablas están incompletas porque una tabla no contempla los casos que contempla la otra y viceversa. Por lo tanto, es posible definir una nueva tabla de enclavamientos como la conjunción de ambas, como se muestra en la Tabla \ref{Tab:funcional_4}, especificando las rutas conflictivas.
 	
-	\begin{table}[!h]
+	\begin{table}[H]
 		{
 			\caption{Tabla de enclavamientos completa.}
 			\label{Tab:funcional_4}

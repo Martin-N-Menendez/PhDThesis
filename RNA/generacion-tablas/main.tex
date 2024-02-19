@@ -15,7 +15,7 @@
 	
 	El mecanismo por el cual el RNA detecta y asigna las rutas ferroviarias es el Algoritmo \ref{alg:routes}. Este algoritmo itera entre todas las señales asumiendo que son la señal de inicio de alguna ruta. Las señales de parada absolutas como las utilizadas para proteger los finales de vía absolutos (bufferStops) no pueden ser una señal de inicio y, por lo tanto, son ignoradas por el Algoritmo \ref{alg:routes}. Solamente las señales de partida, de circulación y de maniobra son consideradas como señales de inicio de potenciales rutas ferroviarias.
 	
-	\begin{algorithm}[hbt!]
+	\begin{algorithm}[H]
         \caption{Algoritmo de detección y registro de rutas ferroviarias.}\label{alg:routes}
         \DontPrintSemicolon
         %\SetAlgoLined
@@ -53,7 +53,7 @@
     
     Por ejemplo, en la Figura \ref{fig:Routes} se destacan tres rutas sobre un señalamiento generado por el RNA, con la señal S22 como señal de inicio. Podemos identificar tres rutas ferroviarias: desde S22 hasta S32, desde S22 hasta X15 y desde S22 hasta T05. Una misma señal de inicio puede definir mas de una ruta ferroviaria.
     
-    \begin{figure}[h]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[width=1\textwidth]{Figuras/Figure11.pdf}
     	\centering\caption{Signalling simplified in Example 1 with three routes indicated.}

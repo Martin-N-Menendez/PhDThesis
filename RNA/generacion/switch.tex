@@ -13,7 +13,7 @@
     
     En el Algoritmo \ref{alg:SW} definimos al punto de acceso de inicio como la vía desde la cual la trayectoria de la formación se bifurca, para lo cual se genera una señal de circulación para continuar por la rama principal y una señal de maniobra para acceder a la rama secundaria. Además, se añade una señal de circulación en la rama principal y una señal de maniobra en la rama secundaria, ambas en sentido contrario, para poder retornar al punto de inicio. 
     
-    \begin{algorithm}[hbt!]
+    \begin{algorithm}[H]
         \caption{Algoritmo de generación de señalamiento para Switches}\label{alg:SW}
         \DontPrintSemicolon
         %\SetAlgoLined
@@ -44,7 +44,7 @@
 
     Aplicando el Algoritmo \ref{alg:SW} a un sistema de vías que se bifurcan obtenemos el resultado ilustrado en la Figura \ref{fig:signal_swithces}. Se asumieron que ambas vías son bidireccionales. En caso contrario, si el sentido de circulación es únicamente de bifurcación, las señales de retorno S02 y S03 no son necesarias. Si el sentido de circulación fuese de derecha a izquierda, las señales de inicio S01 no son necesarias.
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/switches.PNG}
         \centering\caption{Señalamiento generado para cambios de vías.}

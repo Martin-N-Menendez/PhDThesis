@@ -16,7 +16,7 @@ Si la distancia entre dos elementos ferroviarios es menor a X, las señales gene
 
 El RNA aplica el Algoritmo \ref{alg:horizontal} de herencia horizontal para solucionar este inconveniente, analizando los objetos cercanos de a pares. Cuando la distancia entre dos objetos es menor a un parámetro dado, las señales son movidas y "heredadas" por los elementos anteriores o posteriores. Las señales de advertencia, previas a un elemento ferroviario, son anticipadas, salteando el elemento que provoca el solapamiento de señales. Las señales de partida son retrasadas, mas allá del elemento que provoca el solapamiento de señales. El resultado obtenido es que ambos elementos ferroviarios, al situarse tan próximo uno del otro, se consideran prácticamente como un solo elemento ferroviario a proteger.
 
-\begin{algorithm}[hbt!]
+\begin{algorithm}[H]
 	\caption{Algoritmo de simplificación por herencia horizontal}
 	\label{alg:horizontal}
 	\DontPrintSemicolon
@@ -42,7 +42,7 @@ El RNA aplica el Algoritmo \ref{alg:horizontal} de herencia horizontal para solu
 
 La Figura \ref{fig:signal_horizontal} ilustra un sistema de vía simple con un paso a nivel (Lc01) y una plataforma (Plat01) para tres casos: suficiente separación entre elementos (vía superior), poca distancia entre los elementos sin aplicar el Algoritmo \ref{alg:horizontal} (vía intermedia) y poca distancia entre elementos pero aplicando el Algoritmo \ref{alg:horizontal} (vía inferior).
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figuras/proximity.PNG}
 	\centering\caption{Señalamiento generado, simplificado por algoritmo de herencia horizontal.}

@@ -57,27 +57,27 @@
     % Explicar analisis de red de grafos
     La secuencia de análisis de la red de grafos se describe en el Algoritmo \ref{alg:graph_network}. Tanto el Algoritmo \ref{alg:graph_network} como todos los algoritmos pertenecientes al RNA y el ACG fueron diseñados e implementados durante el transcurso del presente doctorado. Estos algoritmos no son parte de ningún estándar ni trabajo previo ajeno a este desarrollo, por lo que son una pieza fundamental y original de esta tesis.    
     
-    El primer paso es procesar la clase netElements para obtener un diccionario de todos los nodos de la red. Ordenar este diccionario es importante para agilizar la búsqueda de rutas más adelante. El criterio de ordenamiento fue por coordenadas, de menor a mayor, priorizando la coordenada x por sobre la y, pero cualquier otro criterio sería válido. Con el diccionario de nodos y analizando la clase netRelations es posible construir un diccionario de netPaths. Este diccionario utiliza cada nodo del grafo como índice y contiene un diccionario con todos los nodos que son vecinos anteriores y posteriores (considerando el criterio de ordenamiento, algunos nodos estarán antes o después).
+    \begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
+    	\caption{Análisis de la red de grafos}
+    	\label{alg:graph_network}
+    	\begin{algorithmic}
+    		\STATE \{nodes\} $\gets$ get\_nodes(netElements)
+    		\STATE  order\_nodes(\{nodes\})
+    		\STATE \{netPaths\} $\gets$ get\_relations(\{nodes\},netRelations)
+    		\STATE \{neighbours\} $\gets$ get\_neighbours(\{netPaths\})
+    		\STATE \{switches\} $\gets$ get\_switches(\{nodes\},\{neighbours\})
+    		\STATE \{limits\} $\gets$ get\_limits(\{nodes\})
+    		\STATE analyze\_connectedness(\{netPaths\})
+    	\end{algorithmic}
+    \end{algorithm}
     
-        \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \caption{Análisis de la red de grafos}
-            \label{alg:graph_network}
-            \begin{algorithmic}
-                \STATE \{nodes\} $\gets$ get\_nodes(netElements)
-                \STATE  order\_nodes(\{nodes\})
-                \STATE \{netPaths\} $\gets$ get\_relations(\{nodes\},netRelations)
-                \STATE \{neighbours\} $\gets$ get\_neighbours(\{netPaths\})
-                \STATE \{switches\} $\gets$ get\_switches(\{nodes\},\{neighbours\})
-                \STATE \{limits\} $\gets$ get\_limits(\{nodes\})
-                \STATE analyze\_connectedness(\{netPaths\})
-            \end{algorithmic}
-        \end{algorithm}
+    El primer paso es procesar la clase netElements para obtener un diccionario de todos los nodos de la red. Ordenar este diccionario es importante para agilizar la búsqueda de rutas más adelante. El criterio de ordenamiento fue por coordenadas, de menor a mayor, priorizando la coordenada x por sobre la y, pero cualquier otro criterio sería válido. Con el diccionario de nodos y analizando la clase netRelations es posible construir un diccionario de netPaths. Este diccionario utiliza cada nodo del grafo como índice y contiene un diccionario con todos los nodos que son vecinos anteriores y posteriores (considerando el criterio de ordenamiento, algunos nodos estarán antes o después).
 
     La cantidad de vecinos de cada nodo es fundamental para poder clasificarlos. Los nodos que poseen un solo vecino serán nodos que se encuentren en el límite de la red (límite relativo o absoluto). Aquellos con dos vecinos, uno anterior y otro posterior, son nodos normales. En cambio, si tienen dos vecinos y ambos son anteriores o ambos son posteriores entonces son nodos que con toda seguridad tienen una máquina de cambios. Por ejemplo, el nodo ne3 del Código \ref{lst:netRelation} posee una máquina de cambios ya que los nodos ne46 y ne53 son anteriores a ne3.
 
     A continuación, es necesario determinar la conexidad de la red. Una red de grafos puede ser como alguna de las ilustradas en la Figura \ref{fig:conexidad}. Las redes de grafos que tengan nodos aislados o una cantidad de vecinos tales que ese nodo no represente a ninguna máquina de cambios existente no podrán ser consideradas una red ferroviaria. La red no tiene que ser totalmente conexa, se admiten redes ferroviarias disjuntas, siempre que cada red funcione de manera independiente, con una cantidad mínima de nodos en cada una.   
 
-    \begin{figure}[!h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/conexo.PNG}
         \centering\caption{Distintos tipos de redes de grafos.}
@@ -86,7 +86,7 @@
 
     Para determinar si la red es conexa, se siguen los pasos del Algoritmo \ref{alg:connectedness}. Añadiendo nodos a una lista de zonas siempre que el nodo tenga un vecino en esa lista. Si un nodo posee un vecino en ambas listas, las listas se combinan, creando una nueva zona. Si la cantidad de zonas es uno entonces la red es fuertemente conexa. Una red ferroviaria disconexa puede resolverse mas rápido que una fuertemente conexa ya que no haría falta iterar entre todos los elementos para analizarlos sino solo los pertenecientes a dicho subgrafo.
         
-    \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
+    \begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
         \caption{Algoritmo de conexidad}
         \label{alg:connectedness}
         \begin{algorithmic}

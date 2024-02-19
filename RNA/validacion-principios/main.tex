@@ -18,7 +18,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_autoridad} para validar el principio de autoridad comparando los netElements alcanzados por las rutas disponibles, con la lista de netElements potenciales de ser alcanzados. Esta última salvedad deja fuera las secciones de vías que preceden a una señal de circulación posterior a un final de vía relativo (lineBuffer). Esto se realiza ya que estas secciones de vía son transitadas por rutas fuera de la locación bajo análisis, rutas que terminan en la señal de circulación mencionada.
 
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de autoridad.}\label{alg:ppio_autoridad}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -61,7 +61,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_claridad} para validar el principio de claridad, generando una red de grafos dirigidos. La misma se constituye utilizando todas las rutas definidas por el RNA como aristas, y a los netElements que conectan como nodos de la red. Si se detecta que existen dos rutas R$^{\prime}$ y R$^{\prime\prime}$ que conectan dos nodos A y B en el mismo sentido, utilizando la misma infraestructura, entonces se dice que las rutas son ambiguas y el principio de claridad no se cumple.
 		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de claridad.}\label{alg:ppio_claridad}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -94,7 +94,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_anticipacion} para validar el principio de anticipación, detectando las regiones de señalamiento como zonas peligro peligrosas, producto del trazado ferroviario (curvas, finales de vía) o de la infraestructura ferroviaria (plataformas, pasos a nivel, etc.). 
 		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de anticipación.}\label{alg:ppio_anticipacion}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -146,7 +146,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_granularidad} para validar el principio de granularidad, analizando que elementos ferroviarios se encuentran contenidos en cada ruta y la distancia entre las señales que conforman la misma. Se recorre el listado de rutas generadas por el RNA, que ya establece los elementos contenidos en las rutas, las señales que las definen y la posición de las mismas. En cada ruta se analiza si existen elementos ferroviarios que justifiquen la existencia de la ruta y si el largo de la misma se encuentra entre un rango mínimo y máximo estipulado. Si alguna de estas condiciones se cumple, entonces se procede a analizar la siguiente ruta. En caso contrario, el Algoritmo \ref{alg:ppio_granularidad} finaliza de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de granularidad ha sido validado exitosamente.
 		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de granularidad.}\label{alg:ppio_granularidad}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -175,7 +175,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_terminalidad} para validar el principio de terminalidad, recorriendo cada una de las rutas generadas y analizando aquellas que culminan o empiezan en un final de vía. Una vez detectadas las rutas que posean lineBorders o bufferStops, se procede a analizar que clase de señales poseen. Si son compatibles con las condiciones indicadas en la Sección \ref{sec:bufferstop}, entonces se continúa analizando con la siguiente ruta. Caso contrario, la validación termina de forma negativa. Si todas las rutas analizadas superan el proceso, entonces el principio de terminalidad ha sido validado exitosamente.
 		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de terminalidad.}\label{alg:ppio_terminalidad}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -219,7 +219,7 @@
 
 		El RNA utiliza el Algoritmo \ref{alg:ppio_infraestructura} para validar el principio de infraestructura, recorriendo cada una de las rutas generadas y analizando aquellas que atraviesan paso a nivel o que inician o finalizan en una plataforma. 
 		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de infraestructura.}\label{alg:ppio_infraestructura}
 			\DontPrintSemicolon
 			%\SetAlgoLined
@@ -269,9 +269,7 @@
 		
 		El RNA utiliza el Algoritmo \ref{alg:ppio_nobloqueo} para validar el principio de no bloqueo, recorriendo la lista de máquinas de cambios. El primer paso es agrupar en tres listas distintas todos los netElements de cada cambio de vía según su dirección: inicio, normal y desvío. Luego, son removidas de las listas de inicio y normal todos los netElements que también pertenezcan a la lista de desvío. De esta manera, el algoritmo contempla a los cambios compuestos productos de la simplificación por herencia vertical (ver Sección \ref{sec:vertical}). 
 		
-	
-		
-		\begin{algorithm}[hbt!]
+		\begin{algorithm}[H]
 			\caption{Algoritmo de validación del principio de no bloqueo.}\label{alg:ppio_nobloqueo}
 			\DontPrintSemicolon
 			%\SetAlgoLined

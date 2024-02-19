@@ -3,7 +3,7 @@
  
     Una máquina de cambios (Figura \ref{fig:cambios_1}) es un mecanismo utilizado para permitir el paso de las formaciones de una vía a una ramificación del recorrido principal. Esto se realiza mediante el movimiento de la aguja del cambio (riel móvil) hacia su respectiva contraaguja (riel fijo) hasta obtener un adecuado acoplamiento que permita la circulación de la formación.
 
-    \begin{figure}[!h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\textwidth]{Figuras/Cambios.jpg}
         \centering\caption{Máquina de cambios.}
@@ -12,7 +12,7 @@
 
     En la Figura \ref{fig:cambios_2} se muestra el cambio de vía de la estación Matheu de la Línea Mitre. Se observa que según sea la posición de la máquina de cambios, el tren puede continuar en la misma vía o hacer el cambio a la otra vía.
 
-    \begin{figure}[!h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\textwidth]{Figuras/Cambios_2.jpg}
         \centering\caption{Cambio de vías de estación Matheu, Linea Mitre.}
@@ -21,7 +21,7 @@
 
     En la Figura \ref{fig:cambios_3} se muestran las posiciones que puede adoptar el cambio. En la posición normal, los trenes pueden circular de forma directa, en paralelo, por la vía principal en sentidos opuestos. En la posición reversa, en cambio, se permite el intercambio de trenes de una rama principal a otra en sentido opuesto o a una ramificación secundaria de la red.
 
-    \begin{figure}[!h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\textwidth]{Figuras/cambio_3.PNG}
         \centering\caption{Posiciones adoptadas por una máquina de cambios simple.}
@@ -30,7 +30,7 @@
 
     Las máquinas de cambios son un elemento activo de la red ferroviaria, controlados por el sistema de enclavamientos. Al ser mecanismos que necesitan tiempo para cambiar de un estado al otro, no puede asumirse que el comando es obedecido al instante. Incluso podría darse el caso que jamás llegue a cumplirse la orden debido a desperfectos mecánicos o eléctricos. Es por eso que introducimos los conceptos de comando, indicación y correspondencia, tal como se ilustran en la Figura \ref{fig:cambios_4}.
 
-    \begin{figure}[!h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/cambios}
         \centering\caption{Comando, indicación y correspondencia en máquinas de cambios.}
@@ -72,7 +72,7 @@
     
     El RNA utiliza el Algoritmo \ref{alg:switches} para detectar todos estos parámetros y crear un vector de máquinas de cambios (switches) indexado por el id de cada máquina de cambios (sw\_id). La existencia y ubicación de las máquinas de cambios ya se habían obtenido mediante el análisis de la red de grafos ferroviaria. El Algoritmo \ref{alg:switches} analiza la clase switchIS y confirma la existencia de la máquina de cambios, para luego la clase spotElementProjection y confirmar la ubicación de la misma. Los datos obtenidos en switches[sw\_id].LeftBranch y switches[sw\_id].RightBranch, permiten obtener los nodos de las ramificaciones que luego se conformarán analizando la clase switchIL en algoritmos posteriores.
 
-    \begin{algorithm}\captionsetup{labelfont={sc,bf}, labelsep=newline}
+    \begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
             \caption{Algoritmo detector de máquinas de cambios.}
             \label{alg:switches}
             \begin{algorithmic}

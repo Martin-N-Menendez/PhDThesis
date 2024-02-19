@@ -14,7 +14,7 @@
 
     En el Algoritmo \ref{alg:lineBorder} aplicamos todos estos principios al solicitar que la sección donde colocamos la señal tenga un parámetro de largo mínimo. Además, al ser una transición, las señales colocadas son todas de partida, para transitar de una región a la otra, de ser permitido, o detener la formación en la frontera entre ambas regiones, de encontrarse saturada la próxima región.
     
-    \begin{algorithm}[hbt!]
+    \begin{algorithm}[H]
         \caption{Algoritmo de generación de señalamiento para Line borders.}\label{alg:lineBorder}
         \DontPrintSemicolon
         %\SetAlgoLined
@@ -39,7 +39,7 @@
 
     En el caso de los buffer stops, por el principio de terminalidad ($P_5$) es necesaria una señal que indique a las formaciones que deben detenerse antes de llegar al final de la vía. Además, es necesaria una señal de partida en sentido contrario para que las formaciones reanuden su marcha en el otro sentido. Esto fue implementado en el Algoritmo \ref{alg:bufferStop}. La restricción de tamaño fue removida porque el final de vía y la formación deben ser protegidos sin importar el largo de la sección.
     
-    \begin{algorithm}[hbt!]
+    \begin{algorithm}[H]
         \caption{Algoritmo de generación de señalamiento para Buffer stops.}\label{alg:bufferStop}
         \DontPrintSemicolon
         %\SetAlgoLined
@@ -63,7 +63,7 @@
     
     Aplicando el Algoritmo \ref{alg:lineBorder} y el Algoritmo \ref{alg:bufferStop} a dos vías paralelas con finales de vías relativos (vía superior) y absolutos (vía inferior) obtenemos un señalamiento como el que se visualiza en la Figura \ref{fig:signal_border}.
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/limites.PNG}
         \centering\caption{Señalamiento generado para finales de vía relativos y absolutos.}

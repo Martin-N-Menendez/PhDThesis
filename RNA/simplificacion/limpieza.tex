@@ -11,7 +11,7 @@
 	
 	El Algoritmo \ref{alg:vertical} de simplificación por herencia vertical y el Algoritmo \ref{alg:horizontal} de simplificación por herencia horizontal tienen diferentes efectos en la cantidad de señales totales. El Algoritmo de herencia horizontal mueve las señales entre elementos cuando no existe suficiente espacio entre ellos. Sin embargo, el Algoritmo de herencia vertical duplica la cantidad de señales si se aplica el criterio \#2 o el \#4. Todos los algoritmos que utiliza el RNA pueden aplicarse de forma iterativa si las condiciones lo permiten, pero particularmente el Algoritmo \ref{alg:vertical} duplicará las señales por cada nivel de profundidad de la red ferroviaria. Esto llevará a tener mas señales que las necesarias en algunos netElements. Este exceso de señales deben eliminarse para mantener una proporción uno a uno entre una señal y una funcionalidad específica. El Algoritmo \ref{alg:reduction} se ocupa de la limpieza de las señales que se encuentran muy próximas entre si, eliminando siempre las que tengan menor prioridad. 
 
-	\begin{algorithm}[hbt!]
+	\begin{algorithm}[H]
         \caption{Signal reduction algorithm}\label{alg:reduction}
         \DontPrintSemicolon
         %\SetAlgoLined
