@@ -15,10 +15,11 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 
-\usepackage[backend=biber,style=ieee,urldate=short,sorting=none]{biblatex}
+\usepackage[backend=biber,bibstyle=ieee,citestyle=numeric-comp,urldate=short,sorting=none]{biblatex}
 
 \addbibresource{references/references.bib}
 
+ 
  
 \newcommand{\SWITCH}[1]{\STATE \textbf{Switch} (#1)}
 \newcommand{\OUTPUT}{\STATE \textbf{Return} }
@@ -96,7 +97,6 @@
 \input{resultados-obtenidos/main}
 \newpage
 \input{conclusiones/main}
-
 
 
 \printbibliography[title={Referencias}]

@@ -5,8 +5,8 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{Figuras/Detector.png}
-        \centering\caption{Circuito de vía (04) y contador de ejes (AxC01).}
+        \includegraphics[width=1\textwidth]{Figuras/detector}
+        \centering\caption{Circuito de vía (01) y contador de ejes (AxC01).}
         \label{fig:deteccion_1}
     \end{figure}
 
@@ -14,12 +14,12 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{Figuras/circuito_via}
+        \includegraphics[width=1\textwidth]{Figuras/circuitoVia}
         \centering\caption{Circuito de vía libre y ocupado.}
         \label{fig:deteccion_2}
     \end{figure}
 
-    En caso de que la alimentación se interrumpa, el cableado sufra alguna falla, vandalismo, inundación, o que efectivamente una formación ocupe la sección, el circuito de vía reportará que la sección se encuentra ocupada. De esta manera, solo es posible recibir un reporte de sección desocupada cuando la sección efectivamente se encuentre desocupada. A este principio se le denomina fail-safe [REF]. Es decir, si por alguna razón algo falla, el sistema adopta la condición más restrictiva, mitigando la posibilidad de una situación peligrosa. 
+    En caso de que la alimentación se interrumpa, el cableado sufra alguna falla, vandalismo, inundación, o que efectivamente una formación ocupe la sección, el circuito de vía reportará que la sección se encuentra ocupada. De esta manera, solo es posible recibir un reporte de sección desocupada cuando la sección efectivamente se encuentre desocupada. A este principio se le denomina fail-safe \cite{Paper_5,Paper_94,Paper_95,Paper_96}. Es decir, si por alguna razón algo falla, el sistema adopta la condición más restrictiva, mitigando la posibilidad de una situación peligrosa. 
     
     Existe una discontinuidad entre los rieles denominado juntura, que permite la expansión de los mismos al ser sometidos a altas temperaturas sin que los rieles se doblen y provoquen daños a la infraestructura. Los circuitos de vía, se relacionan directamente a las junturas entre las vías, modelados por la clase rail Joint en railML.  Esta discontinuidad eléctrica es lo que limita la acción del circuito de vía a la región entre dos junturas.
 
@@ -27,7 +27,7 @@
 
     \begin{lstlisting}[language = XML, caption = Clase trackCircuit , label = {lst:trackCircuit}]
     <tvdSection id="tvd7" partialRouteReleaseDelay="PT4S" residualRouteCancellationDelay="PT90S" technology="trackCircuit" isBerthingTrack="false">
-        <designator register="_Example" entry="04"/>
+        <designator register="Example" entry="01"/>
         <hasDemarcatingBufferstop ref="bus2"/>
         <hasDemarcatingBufferstop ref="bus1"/>
     </tvdSection>
@@ -37,7 +37,7 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{Figuras/contador.jpg}
+        \includegraphics[width=1\textwidth]{Figuras/contador}
         \centering\caption{Contadores de ejes.}
         \label{fig:deteccion_2}
     \end{figure}
@@ -48,6 +48,6 @@
     <trainDetectionElement id="ac6" type="axleCounter">
         <name name="AxC01" language="en"/>
         <spotLocation id="ac6_sloc01" netElementRef="ne1" applicationDirection="both" intrinsicCoord="0.6710"/>
-        <designator register="_Example" entry="TRAIN DETECTION ELEMENT AxC01"/>
+        <designator register="Example" entry="TRAIN DETECTION ELEMENT AxC01"/>
     </trainDetectionElement>
     \end{lstlisting}

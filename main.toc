@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {1.3.2}Tablas de enclavamientos}{9}{}%
 \contentsline {subsection}{\numberline {1.3.3}Enfoque funcional}{11}{}%
 \contentsline {subsection}{\numberline {1.3.4}Enfoque geográfico}{12}{}%
-\contentsline {section}{\numberline {1.4}Estándares de seguridad}{13}{}%
-\contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{13}{}%
+\contentsline {section}{\numberline {1.4}Estándares de seguridad}{12}{}%
+\contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{12}{}%
 \contentsline {subsection}{\numberline {1.4.2}Redundancia y diversidad en sistemas ferroviarios}{14}{}%
 \contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{16}{}%
 \contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{16}{}%
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {2.1.5}Fin de vía y transiciones}{39}{}%
 \contentsline {subsection}{\numberline {2.1.6}Sistemas de detección de formaciones ferroviarias}{40}{}%
 \contentsline {subsection}{\numberline {2.1.7}Estaciones ferroviarias}{43}{}%
-\contentsline {subsection}{\numberline {2.1.8}Cruces ferroviarios}{45}{}%
+\contentsline {subsection}{\numberline {2.1.8}Cruces ferroviarios}{44}{}%
 \contentsline {subsection}{\numberline {2.1.9}Máquina de cambios}{46}{}%
 \contentsline {subsection}{\numberline {2.1.10}Señales ferroviarias}{51}{}%
 \contentsline {section}{\numberline {2.2}Algoritmos de generación de señalamiento}{53}{}%
