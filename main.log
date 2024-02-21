@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  21 FEB 2024 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.22)  21 FEB 2024 21:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1117,90 +1117,79 @@ Package biblatex Info: Reference segment=0 on input line 67.
 <caratula/FIUBA.png, id=4, 598.3956pt x 845.559pt>
 File: caratula/FIUBA.png Graphic file (type png)
 <use caratula/FIUBA.png>
-Package pdftex.def Info: caratula/FIUBA.png  used on input line 12.
+Package pdftex.def Info: caratula/FIUBA.png  used on input line 10.
 (pdftex.def)             Requested size: 614.30905pt x 795.01912pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <30> not available
-(Font)              size <24.88> substituted on input line 14.
+(Font)              size <24.88> substituted on input line 12.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
  [][]\OT1/cmr/b/n/24.88 Modelado e im-ple-mentaci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
  [][]\OT1/cmr/b/n/24.88 de sis-temas cr^^S^^Pticos de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
  [][]\OT1/cmr/b/n/24.88 enclavamiento fer-roviario
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
  [][]\OT1/cmr/b/n/24.88 basados en ar-reg-los de FP-GAs
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 18.
+(Font)              size <20.74> substituted on input line 16.
 
 
-Underfull \hbox (badness 3199) in paragraph at lines 18--18
+Underfull \hbox (badness 3199) in paragraph at lines 16--16
  [][]\OT1/cmr/m/n/20.74 Mg. Ing. Mart^^S^^Pn Nicol^^Sas Men^^Sendez
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 19.
+(Font)              size <14.4> substituted on input line 17.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
  [][]\OT1/cmr/m/n/14.4 Tesis doc-toral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
  [][]\OT1/cmr/m/n/10.95 Director:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
  [][]\OT1/cmr/m/n/10.95 Dr. Ing. Ariel Luten-berg (FIUBA-CONICET)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
  [][]\OT1/cmr/m/n/10.95 Jurados:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
  [][]\OT1/cmr/m/n/10.95 JURADO NU-MERO1 (FIL-IA-CION)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
  [][]\OT1/cmr/m/n/10.95 JURADO NU-MERO2 (FIL-IA-CION)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
  [][]\OT1/cmr/m/n/10.95 JURADO NU-MERO3 (FIL-IA-CION)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
- [][]\OT1/cmr/m/it/10 Este tra-bajo fue re-al-izado en la Ciu-dad Aut^^Sonoma d
-e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
- \OT1/cmr/m/it/10 Buenos Aires, en-tre Julio de 2024 y Marzo de 2024
  []
 
 [1
@@ -2899,10 +2888,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31700 strings out of 474587
- 693238 string characters out of 5745693
+ 31706 strings out of 474587
+ 693391 string characters out of 5745693
  2164558 words of memory out of 5000000
- 53092 multiletter control sequences out of 15000+600000
+ 53098 multiletter control sequences out of 15000+600000
  565381 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1488b,1726s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2930,7 +2919,7 @@ rs/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb><C:/Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mss17.pfb>
-Output written on main.pdf (188 pages, 28802899 bytes).
+Output written on main.pdf (188 pages, 28802913 bytes).
 PDF statistics:
  1116 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
