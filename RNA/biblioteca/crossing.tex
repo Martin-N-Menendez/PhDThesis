@@ -16,9 +16,9 @@
     
     Se debe destacar que el mismo proceso de descenso de la barrera ocurrirá si esta se desenergiza por una falla electromecánica y/o pérdida de alimentación. Es decir, el sistema asumirá el estado más seguro ante cualquiera de los mencionados fallos, siguiendo el principio de falla segura.
 
-    En el Código \ref{lst:crossing_1} se puede ver la implementación de la clase crossing que modela los cruces de vía. Esta clase se encuentra dentro de la clase infrastructure, que a su vez contiene a la clase functionalInfrastructure. La misma incluye atributos como el nombre asignado, si posee o no indicación lumínica o sonora, la dirección de activación y el netElement al que se encuentran asociado, además de su coordenada relativa dentro del netElement.
+    En el Código \ref{lst:levelCrossing_1} se puede ver la implementación de la clase \textit{levelCrossingsIS} que modela los cruces ferroviarios. Esta clase se encuentra dentro de la clase \textit{infrastructure}, que a su vez contiene a la clase \textit{functionalInfrastructure}. La misma incluye atributos como el nombre asignado, si posee o no indicación lumínica o sonora, la dirección de activación y el \textit{netElement} al que se encuentran asociado, además de su coordenada relativa dentro del netElement.
 
-    \begin{lstlisting}[language = XML, caption = Clase Platform , label = {lst:crossing_1}]
+    \begin{lstlisting}[language = XML, caption = Clase \textit{LevelCrossingsIS} , label = {lst:levelCrossing_1}]
     <levelCrossingsIS>
         <levelCrossingIS id="lcr7" activation="none">
             <name name="Lc01" language="en"/>
@@ -29,9 +29,9 @@
     </levelCrossingsIS>
     \end{lstlisting}
 
-	Los datos relativos a la características físicas como el largo y el ancho la encontramos dentro de la clase visualization, dentro de la clase infrastructureVisualizations, como se puede ver en el Código \ref{lst:crossing_2}.
+	Los datos relativos a la características físicas como el largo y el ancho la encontramos dentro de la clase \textit{visualization}, dentro de la clase \textit{infrastructureVisualizations}, como se puede ver en el Código \ref{lst:levelCrossing_2}.
 	
-    \begin{lstlisting}[language = XML, caption = Clase visualization , label = {lst:crossing_2}]
+    \begin{lstlisting}[language = XML, caption = Clase \textit{Visualization} , label = {lst:levelCrossing_2}]
     <spotElementProjection refersToElement="lcr7" id="vis01_sep4">
         <name name="Lc01" language="en"/>
         <coordinate x="-236.364" y="-240.000"/>
@@ -39,3 +39,12 @@
     \end{lstlisting}
 
     Conocer las dimensiones del elemento físico que representa esta clase es fundamental a la hora de analizar el impacto de este elemento en la red y donde se deberían asignar las señales ferroviarias.
+    
+    La clase \textit{levelCrossingIL}, definida dentro del vector de clases \textit{LevelCrossingsIL}, se encuentra dentro de la clase \textit{assetsForIL}, en la clase \textit{interlocking}. Contiene datos extra sobre el comportamiento dinámico de las barreras de los pasos a nivel y define los estados por defecto de la barrera. El RNA no hace uso de esta información, pero si el ACG.
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{LevelCrossingIL} , label = {lst:levelCrossingIL}]
+	    <levelCrossingIL preferredPosition="closing" typicalTimeToClose="PT10S" id="il_lcr176">
+	    <isLevelCrossingType ref="lcx_aut"/>
+	    <refersTo ref="lcr176"/>
+	    </levelCrossingIL>
+    \end{lstlisting}

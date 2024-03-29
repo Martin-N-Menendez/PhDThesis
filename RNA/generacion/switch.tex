@@ -1,4 +1,4 @@
-\subsection{Maquinas de cambios}
+\subsection{Cambios de vías}
 	\label{sec:signal_switches}
 	
     % Autoridad > derecho limitado a una porcion
@@ -9,12 +9,12 @@
     % Infraestructura > avisar de infraestructura
     % No bloqueo > circulacion fluida
     
-    En la Sección \ref{sec:switches} definimos la clase switch que modela a las máquinas de cambios. Las máquinas de cambios son de los elementos ferroviarios mas críticos de la red. Por lo tanto, se deberá aplicar al principio de infraestructura ($P_6$) a cada una de sus entradas. Además, las máquinas de cambios actúan como una frontera entre las ramas principales de la red, donde se circula a mayor velocidad, y las ramas secundarias, donde se circula a una velocidad menor. Esto divide las rutas en dos o mas rutas, aplicando el principio de autoridad ($P_1$) y granularidad ($P_4$). Finalmente, por el principio de no bloqueo ($P_7$), será necesario generar señales de diferente tipo para las ramas principales y las secundarias, priorizando las primeras. Esto puede cumplirse si otorgamos señales de circulación de tres o mas aspectos a la rama principal y señales de maniobra para utilizar una rama secundaria como salida o entrada de la red.
+    En la Sección \ref{sec:switches} definimos la clase \textit{switchIs} que modela a los cambios de vías. Los cambios de vías son de los elementos ferroviarios mas críticos de la red. Por lo tanto, se deberá aplicar al principio de infraestructura ($P_6$) a cada una de sus entradas. Además, las máquinas de cambios actúan como una frontera entre las ramas principales de la red, donde se circula a mayor velocidad, y las ramas secundarias, donde se circula a una velocidad menor. Esto divide las rutas en dos o mas rutas, aplicando el principio de autoridad ($P_1$) y granularidad ($P_4$). Finalmente, por el principio de no bloqueo ($P_7$), será necesario generar señales de diferente tipo para las ramas principales y las secundarias, priorizando las primeras. Esto puede cumplirse si otorgamos señales de circulación de tres o mas aspectos a la rama principal y señales de maniobra para utilizar una rama secundaria como salida o entrada de la red.
     
     En el Algoritmo \ref{alg:SW} definimos al punto de acceso de inicio como la vía desde la cual la trayectoria de la formación se bifurca, para lo cual se genera una señal de circulación para continuar por la rama principal y una señal de maniobra para acceder a la rama secundaria. Además, se añade una señal de circulación en la rama principal y una señal de maniobra en la rama secundaria, ambas en sentido contrario, para poder retornar al punto de inicio. 
     
     \begin{algorithm}[H]
-        \caption{Algoritmo de generación de señalamiento para Switches}\label{alg:SW}
+        \caption{Algoritmo de generación de señalamiento para \textit{Switches}}\label{alg:SW}
         \DontPrintSemicolon
         %\SetAlgoLined
         \SetNoFillComment

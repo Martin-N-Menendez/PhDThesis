@@ -1,18 +1,18 @@
-\subsection{Clase common}
+\subsection{Clase \textit{Common}}
     \label{sec:common}
 
-    La clase Common define todos los parámetros que son invariantes a toda la red. Esta clase puede ser definida solo una vez o no definirse. Sus clases son:
+    La clase \textit{Common} define todos los parámetros que son invariantes a toda la red. Esta clase puede ser definida solo una vez o no definirse. Sus clases son:
 
     \begin{itemize}
-        \item ElectrificationSystems: define la tensión y frecuencia de la red eléctrica.
-        \item OrganizationalUnits: define quien administra la infraestructura, quien fabrica y opera el material rodante, quien es el cliente final, quien es el contratista y quien posee la concesión del servicio. 
-        \item SpeedProfiles: define el perfil de aceleración, velocidades y frenado.
-        \item Positioning: define los sistemas de posicionamiento geométrico, linear y referido a la pantalla del editor.
+        \item \textit{ElectrificationSystems}: define la tensión y frecuencia de la red eléctrica.
+        \item \textit{OrganizationalUnits}: define quien administra la infraestructura, quién fabrica y opera el material rodante, quién es el cliente final, quién es el contratista y quién posee la concesión del servicio. 
+        \item \textit{SpeedProfiles}: define el perfil de aceleración, velocidades y frenado.
+        \item \textit{Positioning}: define los sistemas de posicionamiento geométrico, lineal y referido a la pantalla del editor.
     \end{itemize}
 
-    Cada uno de sus campos internos es único, pero también son opcionales. A modo de ejemplo se muestra el Código \ref{lst:common}, donde se ilustra como no todas las clases han sido definidas.
+    Cada uno de estos campos internos es único, pero también son opcionales. A modo de ejemplo se muestra el Código \ref{lst:common}, donde se ilustra como no todas las clases han sido definidas.
     
-    \begin{lstlisting}[language = XML, caption = Clase Common , label = {lst:common}]
+    \begin{lstlisting}[language = XML, caption = Clase \textit{Common} , label = {lst:common}]
 <common id="co_01">
     <organizationalUnits>
         <infrastructureManager id="im_01"/>
@@ -35,4 +35,4 @@
 </common>
     \end{lstlisting}
 
-    Solamente los clases OrganizationalUnits y Positioning fueron definidas, pero tanto el RNA como el estándar railML en el que el RNA se basa consideran válido a este fragmento de código. Los vectores son definidos en plural, como en el caso de geometricPositioningSystems cuyo primer, y único elemento en este caso, es geometricPositioningSystem con id="gps01". Es habitual ver estos vectores a lo largo de todo el archivo y será esencial poder determinar su dimensión para procesar correctamente los datos y contar la cantidad de elementos.
+    Solamente las clases \textit{OrganizationalUnits} y \textit{Positioning} fueron definidas, pero tanto el RNA como el estándar railML en el que el RNA se basa consideran válido a este fragmento de código. Los vectores son definidos en plural, como en el caso de \textit{geometricPositioningSystems} cuyo primer, y único elemento en este caso, es \textit{geometricPositioningSystem} con id="gps01". Es habitual ver estos vectores a lo largo de todo el archivo y será esencial poder determinar su dimensión para procesar correctamente los datos y contar la cantidad de elementos.
