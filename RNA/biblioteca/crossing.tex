@@ -29,7 +29,7 @@
     </levelCrossingsIS>
     \end{lstlisting}
 
-	Los datos relativos a la características físicas como el largo y el ancho la encontramos dentro de la clase \textit{visualization}, dentro de la clase \textit{infrastructureVisualizations}, como se puede ver en el Código \ref{lst:levelCrossing_2}.
+	Los datos relativos a la características físicas como el largo y el ancho la encontramos dentro de la clase \textit{visualization}, dentro de la clase \textit{infrastructureVisualizations}, como se puede ver en el Código \ref{lst:levelCrossing_2}.  Conocer las dimensiones del elemento físico que representa esta clase es fundamental a la hora de analizar el impacto de este elemento en la red y donde se deberían asignar las señales ferroviarias.
 	
     \begin{lstlisting}[language = XML, caption = Clase \textit{Visualization} , label = {lst:levelCrossing_2}]
     <spotElementProjection refersToElement="lcr7" id="vis01_sep4">
@@ -38,8 +38,6 @@
     </spotElementProjection>
     \end{lstlisting}
 
-    Conocer las dimensiones del elemento físico que representa esta clase es fundamental a la hora de analizar el impacto de este elemento en la red y donde se deberían asignar las señales ferroviarias.
-    
     La clase \textit{levelCrossingIL}, definida dentro del vector de clases \textit{LevelCrossingsIL}, se encuentra dentro de la clase \textit{assetsForIL}, en la clase \textit{interlocking}. Contiene datos extra sobre el comportamiento dinámico de las barreras de los pasos a nivel y define los estados por defecto de la barrera. El RNA no hace uso de esta información, pero si el ACG.
     
     \begin{lstlisting}[language = XML, caption = Clase \textit{LevelCrossingIL} , label = {lst:levelCrossingIL}]

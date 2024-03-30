@@ -15,7 +15,7 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\textwidth]{Figuras/Cambios.jpg}
+        \includegraphics[width=0.8\textwidth]{Figuras/Cambios.jpg}
         \centering\caption{Máquina de cambios.}
         \label{fig:cambios_1}
     \end{figure}
@@ -24,7 +24,7 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\textwidth]{Figuras/Cambios_2.jpg}
+        \includegraphics[width=0.8\textwidth]{Figuras/Cambios_2.jpg}
         \centering\caption{Cambio de vías de estación Matheu, Linea Mitre.}
         \label{fig:cambios_2}
     \end{figure}
@@ -49,92 +49,233 @@
     
     El comando es la instrucción que el sistema de enclavamientos envía a la máquina de cambios. Esta instrucción puede ser modificar la posición de normal a reverso o de reverso a normal. La indicación es el estado que la máquina de cambios informa al sistema de enclavamientos. El sistema solo asume que el comando fue obedecido cuando tanto el comando como la indicación muestran una correspondencia. En caso contrario, el sistema de enclavamiento no puede asumir cual es el estado real del sistema, si el comando enviado o el estado reportado por la máquina de cambios. El mismo concepto puede ser aplicado en cualquier otro elemento mecánico, como por ejemplo las barreras ferroviarias.
 
-    El RNA debe analizar diversos atributos distribuidos entre la clase \textit{switchIS} (Código \ref{lst:switchIS}), la clase \textit{spotElementProjection} (Código \ref{lst:switch}) y la clase \textit{switchIL} (Código \ref{lst:switchIL}). La clase \textit{switchIS} se encuentra dentro del vector de clases \textit{switchesIS}, dentro de la clase \textit{functionalInfrastructure}, que a su vez es parte de la clase infrastructure. La clase \textit{switchIS} define el id de la máquina de cambios, el tipo (ordinario), el \textit{netElement} al cual pertenece la entrada del cambio y hacia que lado se encuentra la vía de continuación y ramificación si transitamos desde el \textit{netElement} del cambio hacia el cambio mismo. En este caso, si transitamos por el \textit{netElement} ne16 el tren tendrá la vía de continuación en la mano derecha y la ramificación en la mano izquierda. Los cambios de vías simples ("ordinarySwitch") siempre tienen una rama izquierda y una rama derecha definida. Además, dentro de la definición de cada rama tenemos el atributo \textit{netRelationRef}, del cual se puede obtener, procesamiento mediante, los otros \textit{netElement} correspondientes a las ramas: ne15 y ne14.
-
-    \begin{lstlisting}[language = XML, caption = Clase \textit{switchIS} , label = {lst:switchIS}]
-    <switchIS id="swi84" continueCourse="right" branchCourse="left" type="ordinarySwitch">
-        <name name="Sw01" language="en"/>
-        <spotLocation id="swi84_sloc01" netElementRef="ne16" applicationDirection="reverse" intrinsicCoord="0.0000"/>
-        <designator register="_Example" entry="SWITCH Sw01"/>
-        <leftBranch netRelationRef="nr_ne15ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="-500"/>
-        <rightBranch netRelationRef="nr_ne14ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="0"/>
-    </switchIS>
-    \end{lstlisting}
-
-    La clase \textit{spotElementProjection} define la ubicación en el espacio del elemento ferroviario referido. En este caso, como se puede ver en el Código \ref{lst:switch}, la posición de la máquina de cambios es la coordenada (-561 ; -450).
-
-    \begin{lstlisting}[language = XML, caption = Clase \textit{spotElementProjection} , label = {lst:switch}]
-    <spotElementProjection refersToElement="swi84" id="vis01_sep16">
-        <name name="Sw01" language="en"/>
-        <coordinate x="-560.994" y="-450.000"/>
-    </spotElementProjection>
-    \end{lstlisting}
-
-    La clase \textit{switchIL}, definida dentro del vector de clases \textit{switchesIL}, se encuentra dentro de la clase \textit{assetsForIL}, en la clase \textit{interlocking}. Contiene datos extra sobre el comportamiento dinámico del cambio de vías y define explícitamente los otros dos nodos, en contraposición a \textit{switchIS} del cual hay que obtenerlos procesando un string. El RNA puede obtener los \textit{netElement} de ambas clase y compararlos, anulando el análisis si los \textit{netElement} definidos en \textit{switchIS} y \textit{switchIL} no son coincidentes.
+    El RNA debe analizar diversos atributos distribuidos entre la clase \textit{switchIS} (Código \ref{lst:switchIS_1} y Código \ref{lst:switchIS_2}), la clase \textit{crossings} (Código \ref{lst:switchIS_3}), la clase \textit{spotElementProjection} (Código \ref{lst:switch_1}, Código \ref{lst:switch_2} y Código \ref{lst:switch_3}), la clase \textit{switchIL} (Código \ref{lst:switchIL_1} y Código \ref{lst:switchIL_2}) y la clase \textit{movableCrossings} (Código \ref{lst:switchIL_3}). 
     
-    \begin{lstlisting}[language = XML, caption = Clase \textit{SwitchIL} , label = {lst:switchIL}]
-    <switchIL id="il_swi84" maxThrowTime="PT10S" typicalThrowTime="PT6S" isKeyLocked="false" returnsToPreferredPosition="false">
-        <refersTo ref="swi84"/>
-        <branchLeft ref="ne15"/>
-        <branchRight ref="ne14"/>
-    </switchIL>
+    La clase \textit{switchIS}, que define a los cambios de vías simples y dobles, se encuentra dentro del vector de clases \textit{switchesIS}, dentro de la clase \textit{functionalInfrastructure}, que a su vez es parte de la clase infrastructure. La clase \textit{switchIS} define el id del cambio de vías, el tipo (\textit{ordinarySwitch} para cambio de vías simple o \textit{doubleSwitchCrossing} para cambios de vías dobles), el \textit{netElement} al cual pertenece la entrada del cambio y hacia que lado se encuentra la vía de continuación y ramificación si transitamos desde el \textit{netElement} del cambio hacia el cambio mismo. 
+    
+    En el caso del cambio de vías simple (Código \ref{lst:switchIS_1}), si transitamos por el \textit{netElement} ne16 el tren tendrá la vía de continuación en la mano derecha y la ramificación en la mano izquierda. Los cambios de vías simples (\textit{ordinarySwitch}) siempre tienen una rama izquierda y una rama derecha definida. Además, dentro de la definición de cada rama tenemos el atributo \textit{netRelationRef}, del cual se puede obtener, procesamiento mediante, los otros \textit{netElement} correspondientes a las ramas: ne15 y ne14. 
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{switchIS} (ordinarySwitch) , label = {lst:switchIS_1}]
+    	<switchIS id="swi84" continueCourse="right" branchCourse="left" type="ordinarySwitch">
+    	<name name="Sw01" language="en"/>
+    	<spotLocation id="swi84_sloc01" netElementRef="ne16" applicationDirection="reverse" intrinsicCoord="0.0000"/>
+    	<designator register="_Example" entry="SWITCH Sw01"/>
+    	<leftBranch netRelationRef="nr_ne15ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="-500"/>
+    	<rightBranch netRelationRef="nr_ne14ne16_swi84" branchingSpeed="0" joiningSpeed="0" radius="0"/>
+    	</switchIS>
     \end{lstlisting}
     
-    El RNA utiliza el Algoritmo \ref{alg:switches} para detectar todos estos parámetros y crear un vector de máquinas de cambios (switches) indexado por el id de cada máquina de cambios (sw\_id). La existencia y ubicación de las máquinas de cambios ya se habían obtenido mediante el análisis de la red de grafos ferroviaria. El Algoritmo \ref{alg:switches} analiza la clase \textit{switchIS} y confirma la existencia de la máquina de cambios, para luego la clase \textit{spotElementProjection} y confirmar la ubicación de la misma. Los datos obtenidos en switches[sw\_id].LeftBranch y switches[sw\_id].RightBranch, permiten obtener los nodos de las ramificaciones que luego se conformarán analizando la clase \textit{switchIL} en algoritmos posteriores.
+    La clase \textit{spotElementProjection} define la ubicación en el espacio del elemento ferroviario referido. En este caso, como se puede ver en el Código \ref{lst:switch_1}, la posición del cambio de vías simple es la coordenada (-561 ; -450).
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{spotElementProjection} (ordinarySwitch) , label = {lst:switch_1}]
+    	<spotElementProjection refersToElement="swi84" id="vis01_sep16">
+    	<name name="Sw01" language="en"/>
+    	<coordinate x="-560.994" y="-450.000"/>
+    	</spotElementProjection>
+    \end{lstlisting}
+    
+    La clase \textit{switchIL} (Código \ref{lst:switchIL_1}), definida dentro del vector de clases \textit{switchesIL}, se encuentra dentro de la clase \textit{assetsForIL}, en la clase \textit{interlocking}. Contiene datos extra sobre el comportamiento dinámico del cambio de vías y define explícitamente los otros dos nodos, en contraposición a \textit{switchIS} del cual hay que obtenerlos procesando un string. El RNA puede obtener los \textit{netElement} de ambas clase y compararlos, anulando el análisis si los \textit{netElement} definidos en \textit{switchIS} y \textit{switchIL} no son coincidentes.
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{SwitchIL} (ordinarySwitch) , label = {lst:switchIL_1}]
+    	<switchIL id="il_swi84" maxThrowTime="PT10S" typicalThrowTime="PT6S" isKeyLocked="false" returnsToPreferredPosition="false">
+    	<refersTo ref="swi84"/>
+    	<branchLeft ref="ne15"/>
+    	<branchRight ref="ne14"/>
+    	</switchIL>
+    \end{lstlisting}    
+    
+    Los cambios de vías dobles (Código \ref{lst:switchIS_2}), a diferencia de los cambios de vías simples, siempre tienen dos ramas derechas (\textit{straightBranch}) y dos ramas de bifurcación (turningBranch) definidas. Además, dentro de la definición de cada rama tenemos el atributo \textit{netRelationRef}, del cual se puede obtener, procesamiento mediante, los otros \textit{netElement} correspondientes a las ramas: ne41, ne82, ne84 y ne85. En este caso las posiciones del cambio permitirían circular entre alguna de las cuatro opciones: ne82 y ne84, ne41 y ne85, ne41 y ne82, ne84 y ne85.
+    
+     \begin{lstlisting}[language = XML, caption = Clase \textit{switchIS} (doubleSwitchCrossing) , label = {lst:switchIS_2}]
+    	<switchIS type="doubleSwitchCrossing" id="dsw328">
+    	<straightBranch netRelationRef="nr_ne82ne84_dsw328" radius="0"/>
+    	<straightBranch netRelationRef="nr_ne41ne85_dsw328" radius="0"/>
+    	<turningBranch branchingSpeed="60" joiningSpeed="60" netRelationRef="nr_ne41ne82_dsw328" radius="-500"/>
+    	<turningBranch branchingSpeed="60" joiningSpeed="60" netRelationRef="nr_ne84ne85_dsw328" radius="-500"/>
+    	<designator register="_AdvancedExample" entry="SLIP SWITCH Sw05"/>
+    	<spotLocation netElementRef="ne82" intrinsicCoord="1.0000" applicationDirection="normal" id="dsw328_sloc01"/>
+    	<name name="Sw05" language="en"/>
+    	</switchIS>
+    \end{lstlisting}
+
+    La clase \textit{spotElementProjection} define la ubicación en el espacio del elemento ferroviario referido. En este caso, como se puede ver en el Código \ref{lst:switch_2}, la posición del cambio de vías dobles es la coordenada (-300 ; 1200).
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{spotElementProjection} (doubleSwitchCrossing) , label = {lst:switch_2}]
+    	<spotElementProjection refersToElement="dsw328" id="vis01_sep106">
+	    	<coordinate x="-300.129" y="1200.000"/>
+	    	<name name="Sw05" language="en"/>
+    	</spotElementProjection>
+    \end{lstlisting}
+
+    Al igual que con los cambios de vías simples, el análisis de los cambios de vías dobles es complementando con el análisis de la lase \textit{switchIL} (Código \ref{lst:switchIL_2}). El RNA puede obtener los \textit{netElement} definidos en las clases \textit{switchIS} y \textit{switchIL}, compararlos y anular el análisis si los \textit{netElement} no son coincidentes.
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{SwitchIL} (doubleSwitchCrossing) , label = {lst:switchIL_2}]
+    	<switchIL maxThrowTime="PT10S" typicalThrowTime="PT6S" returnsToPreferredPosition="false" isKeyLocked="false" id="il_dsw328_ne82_ne85">
+	    	<branchLeft ref="ne82"/>
+	    	<branchRight ref="ne85"/>
+	    	<refersTo ref="dsw328"/>
+	    	<relatedMovableElement ref="il_dsw328_ne84_ne41"/>
+    	</switchIL>
+    \end{lstlisting}
+    
+    Los cambios de vías en tijeras (Código \ref{lst:switchIS_3}), a diferencia de los cambios de vías simples o dobles, no posee ramas principales. Ambas ramas, definidas en \textit{external}, pueden considerarse igualmente importantes. Además, dentro de la definición de cada rama es el atributo \textit{Ref} y no \textit{netRelationRef}, el que tiene la información de los \textit{netElement}. En este caso: ne21 y ne104 pertenecen a una rama, mientras que ne52 y ne77 pertenecen a otra. En el caso de los cambios de vías en tijera, la ubicación del elemento se determina en base a la ubicación del \textit{netElement} definido en \textit{spotLocation} ya que su ubicación coincide al tener el parámetro \textit{intrinsicCoord} igualado a uno.
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{Crossing} , label = {lst:switchIS_3}]
+    	<crossing id="scr314">
+	    	<designator register="_AdvancedExample" entry="CROSSING Sw03"/>
+	    	<external id="scr314_1" ref="nr_ne21ne104_scr314"/>
+	    	<external id="scr314_2" ref="nr_ne52ne77_scr314"/>
+	    	<spotLocation netElementRef="ne21" intrinsicCoord="1.0000" applicationDirection="normal" id="scr314_sloc01"/>
+	    	<name name="Sw03" language="en"/>
+    	</crossing>
+    \end{lstlisting}
+        
+    La clase \textit{movableCrossing} (Código \ref{lst:switchIL_3}), definida dentro del vector de clases \textit{movableCrossings}, se encuentra dentro de la clase \textit{assetsForIL}, en la clase \textit{interlocking}. Contiene datos extra sobre el comportamiento dinámico del cambio de vías y define explícitamente los otros dos nodos, en contraposición a \textit{crossings} del cual hay que obtenerlos procesando un string. El RNA puede obtener los \textit{netElement} de ambas clase y compararlos, anulando el análisis si los \textit{netElement} definidos en \textit{crossings} y \textit{movableCrossings} no son coincidentes.
+    
+    \begin{lstlisting}[language = XML, caption = Clase \textit{movableCrossing}, label = {lst:switchIL_3}]
+	    <movableCrossing preferredPosition="upleft-rightdown" maxThrowTime="PT10S" returnsToPreferredPosition="false" isKeyLocked="false" id="il_scr314">
+	    <branchUpLeft ref="ne21"/>
+	    <branchUpRight ref="ne52"/>
+	    <branchDownLeft ref="ne77"/>
+	    <branchDownRight ref="ne104"/>
+	    <refersTo ref="scr314"/>
+    </movableCrossing>
+    \end{lstlisting}
+        
+    El RNA utiliza el Algoritmo \ref{alg:switches_1}, Algoritmo \ref{alg:switches_2} y Algoritmo \ref{alg:switches_3} para detectar todos estos parámetros y crear un vector de máquinas de cambios (switches) indexado por el id de cada máquina de cambios (sw\_id). La existencia y ubicación de las máquinas de cambios ya se habían obtenido mediante el análisis de la red de grafos ferroviaria. Los Algoritmos \ref{alg:switches_1} y \ref{alg:switches_2}  analizan la clase \textit{switchIS} y el Algortimo \ref{alg:switches_3} analizan la clase \textit{crossings} para confirmar la existencia del cambio de vías. Luego se analiza la clase \textit{spotElementProjection} para confirmar la ubicación del cambio de vías. Los datos obtenidos en \textit{LeftBranch}, \textit{RightBranch}, \textit{straightBranch} y/o \textit{turningBranch} permiten obtener los nodos de las ramificaciones que luego se conformarán analizando las clases \textit{switchIL} o \textit{movableCrossing}, según corresponda, en algoritmos posteriores.
 
     \begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
-            \caption{Algoritmo detector de cambios de vías.}
-            \label{alg:switches}
-            \begin{algorithmic}
-                \STATE \{switches\} $\gets$ \{\}
-                \IF {infrastructure.SwitchesIS != None} 
-                    \FOR{i in infrastructure.SwitchesIS[0].SwitchIS}
-                        \IF{i.Id not in switchesIS.keys()}
-                            \STATE sw\_id $\gets$ i.Name[0].Name
-                            \STATE j $\gets$ i.SpotLocation[0]
-                            \STATE node $\gets$ j.NetElementRef
-                            \STATE type $\gets$ i.Type
-                            
-                           	\IF{type == 'OrdinarySwitch'}
-	                           	\STATE left\_id $\gets$ i.LeftBranch[0].NetRelationRef
-	                           	\STATE right\_id $\gets$ i.RightBranch[0].NetRelationRef
-	                           	\STATE switches[sw\_id] $\gets$ \{"Node":node\}
-	                           	\STATE switches[sw\_id] $\gets$ \{"Continue":i.ContinueCourse\}
-	                           	\STATE switches[sw\_id] $\gets$ \{"Branch":i.BranchCourse\}
-	                           	\STATE switches[sw\_id] $\gets$ \{"Dir":j.ApplicationDirection\}
-	                           	\STATE switches[sw\_id] $\gets$ \{"LeftBranch":j.left\_id\}
-	                           	\STATE switches[sw\_id] $\gets$ \{"RightBranch":j.right\_id\}
-                            \ENDIF
-                            \IF{type == 'DoubleSwitchCrossing'}
-	                            \STATE straightBranch\_A\_id $\gets$ i.StraightBranch[0].NetRelationRef
-	                            \STATE straightBranch\_B\_id $\gets$ i.StraightBranch[1].NetRelationRef
-	                            \STATE turningBranch\_A\_id $\gets$ i.TurningBranch[0].NetRelationRef
-	                            \STATE turningBranch\_B\_id $\gets$ i.TurningBranch[1].NetRelationRef
-	                            
-	                            \FOR{X,Z combination(A,B)}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"Node":node\}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"Continue":i.ContinueCourse\}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"Branch":i.BranchCourse\}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"Dir":j.ApplicationDirection\}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"LeftBranch":j.straightBranch\_X\}
-		                            \STATE switches[sw\_id+'XZ'] $\gets$ \{"RightBranch":j.turningBranch\_Z\}
-	      						\ENDFOR
-                            \ENDIF
-                            
-                        \ENDIF
-                    \ENDFOR
-                \ENDIF
-                \STATE visual\_data $\gets$ visualization.Visualization
-                \IF {visual\_data != None}
-                    \FOR {i in  visual\_data[0].SpotElementProjection}
+		\caption{Algoritmo detector de cambios de vías simples.}
+        \label{alg:switches_1}
+        \begin{algorithmic}
+            \STATE \{switches\} $\gets$ \{\}
+            \IF {infrastructure.SwitchesIS != None} 
+                \FOR{i in infrastructure.SwitchesIS[0].SwitchIS}
+                    \IF{i.Id not in switchesIS.keys()}
                         \STATE sw\_id $\gets$ i.Name[0].Name
-                        \IF {'Sw' in sw\_id}
-                            \STATE pos\_x $\gets$ int(i.Coordinate[0].X)
-                            \STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
-                            \STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
-                        \ENDIF 
-                    \ENDFOR
-                \ENDIF
-            \OUTPUT \{switches\}
-            \end{algorithmic}
-        \end{algorithm}
+                        \STATE j $\gets$ i.SpotLocation[0]
+                        \STATE node $\gets$ j.NetElementRef
+                        \STATE type $\gets$ i.Type
+                      
+                        \IF{type == 'OrdinarySwitch'}
+                           	\STATE left\_id $\gets$ i.LeftBranch[0].NetRelationRef
+                           	\STATE right\_id $\gets$ i.RightBranch[0].NetRelationRef
+                           	\STATE switches[sw\_id] $\gets$ \{"Node":node\}
+                           	\STATE switches[sw\_id] $\gets$ \{"Continue":i.ContinueCourse\}
+                           	\STATE switches[sw\_id] $\gets$ \{"Branch":i.BranchCourse\}
+                           	\STATE switches[sw\_id] $\gets$ \{"Dir":j.ApplicationDirection\}
+                           	\STATE switches[sw\_id] $\gets$ \{"LeftBranch":j.left\_id\}
+                           	\STATE switches[sw\_id] $\gets$ \{"RightBranch":j.right\_id\}
+                        \ENDIF                        
+                    \ENDIF
+                \ENDFOR
+            \ENDIF
+            \STATE visual\_data $\gets$ visualization.Visualization
+            \IF {visual\_data != None}
+                \FOR {i in  visual\_data[0].SpotElementProjection}
+                    \STATE sw\_id $\gets$ i.Name[0].Name
+                    \IF {'Sw' in sw\_id}
+                        \STATE pos\_x $\gets$ int(i.Coordinate[0].X)
+                        \STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
+                        \STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
+                    \ENDIF 
+                \ENDFOR
+            \ENDIF
+        \OUTPUT \{switches\}
+        \end{algorithmic}
+    \end{algorithm}
+    
+    \begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
+	\caption{Algoritmo detector de cambios de vías dobles.}
+	\label{alg:switches_2}
+		\begin{algorithmic}
+			\STATE \{switches\} $\gets$ \{\}
+			\IF {infrastructure.SwitchesIS != None} 
+				\FOR{i in infrastructure.SwitchesIS[0].SwitchIS}
+					\IF{i.Id not in switchesIS.keys()}
+						\STATE sw\_id $\gets$ i.Name[0].Name
+						\STATE j $\gets$ i.SpotLocation[0]
+						\STATE node $\gets$ j.NetElementRef
+						\STATE type $\gets$ i.Type
+						
+						\IF{type == 'DoubleSwitchCrossing'}
+							\STATE straightBranch\_A\_id $\gets$ i.StraightBranch[0].NetRelationRef
+							\STATE straightBranch\_B\_id $\gets$ i.StraightBranch[1].NetRelationRef
+							\STATE turningBranch\_A\_id $\gets$ i.TurningBranch[0].NetRelationRef
+							\STATE turningBranch\_B\_id $\gets$ i.TurningBranch[1].NetRelationRef
+							
+							\FOR{X,Z combination(A,B)}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Node":node\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Continue":i.ContinueCourse\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Branch":i.BranchCourse\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Dir":j.ApplicationDirection\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"LeftBranch":j.straightBranch\_X\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"RightBranch":j.turningBranch\_Z\}
+							\ENDFOR
+						\ENDIF
+					
+					\ENDIF
+				\ENDFOR
+			\ENDIF
+			\STATE visual\_data $\gets$ visualization.Visualization
+			\IF {visual\_data != None}
+				\FOR {i in  visual\_data[0].SpotElementProjection}
+					\STATE sw\_id $\gets$ i.Name[0].Name
+					\IF {'dsw' in sw\_id}
+						\STATE pos\_x $\gets$ int(i.Coordinate[0].X)
+						\STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
+						\STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
+					\ENDIF 
+				\ENDFOR
+			\ENDIF
+			\OUTPUT \{switches\}
+		\end{algorithmic}
+	\end{algorithm}
+	
+	\begin{algorithm}[H]\captionsetup{labelfont={sc,bf}, labelsep=newline}
+		\caption{Algoritmo detector de cambios de vías en tijera.}
+		\label{alg:switches_3}
+		\begin{algorithmic}
+			\STATE \{switches\} $\gets$ \{\}
+			\IF {infrastructure.Crossings != None} 
+				\FOR{i in infrastructure.Crossings[0].SwitchIS}
+					\IF{i.Id not in Crossings.keys()}
+						\STATE sw\_id $\gets$ i.Name[0].Name
+						\STATE j $\gets$ i.SpotLocation[0]
+						\STATE node $\gets$ j.NetElementRef
+						\STATE type $\gets$ i.Type
+						\STATE direction $\gets$ i.SpotLocation[0].ApplicationDirection
+						
+						\IF{type == 'DoubleSwitchCrossing'}
+							\STATE straightBranch\_A\_id $\gets$ i.External[0].Ref
+							\STATE straightBranch\_B\_id $\gets$ i.External[1].Ref
+							\STATE turningBranch\_A\_id $\gets$ i.External[0].Ref
+							\STATE turningBranch\_B\_id $\gets$ i.External[1].Ref
+							
+							\FOR{X,Z combination(A,B)}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Node":node\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Continue":i.ContinueCourse\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Branch":i.BranchCourse\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"Dir":j.ApplicationDirection\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"LeftBranch":j.straightBranch\_X\}
+								\STATE switches[sw\_id+'XZ'] $\gets$ \{"RightBranch":j.turningBranch\_Z\}
+							\ENDFOR
+						\ENDIF	
+					\ENDIF
+				\ENDFOR
+			\ENDIF
+			\STATE visual\_data $\gets$ visualization.Visualization
+			\IF {visual\_data != None}
+				\FOR {i in  visual\_data[0].SpotElementProjection}
+					\STATE sw\_id $\gets$ i.Name[0].Name
+					\IF {'scr' in sw\_id}
+					\STATE pos\_x $\gets$ int(i.Coordinate[0].X)
+					\STATE pos\_y $\gets$ int(i.Coordinate[0].Y)
+					\STATE switches[sw\_id] $\gets$ \{"Position":[pos\_x,-pos\_y]\}
+					\ENDIF 
+				\ENDFOR
+			\ENDIF
+			\OUTPUT \{switches\}
+		\end{algorithmic}
+	\end{algorithm}
+    

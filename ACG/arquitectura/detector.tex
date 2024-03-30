@@ -1,0 +1,32 @@
+\subsubsection{Módulo Detector}
+
+\lipsum[1]
+
+El módulo detector tiene como función recibir una secuencia de caracteres y armar una salida con un vector de elementos booleanos. Un diagrama en bloques del funcionamiento del módulo se muestra en la figura 3.9
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{example-image}
+	\centering\caption{FPGA.}
+	\label{fig:XXX}
+\end{figure}
+
+La UART envía secuencialmente un caracter por medio de la señal r\_data (8 bytes) y un pulso (r\_disponible) para informar que un nuevo dato ha sido enviado, además de indicar por medio de la señal N la cantidad de caracteres que serán
+enviados.
+
+El proceso de detección se ilustra en la figura 3.10.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{example-image}
+	\centering\caption{FPGA.}
+	\label{fig:XXX}
+\end{figure}
+
+En la figura 3.10 se tiene un estado inicial en el cual se espera el caracter de inicio de la trama ("<") que provoca una transición al estado de lectura. En dicho estado se recibirán hasta N caracteres mientras se actualiza un contador interno. Cuando el contador interno iguale la cantidad N, se verifica si el próximo caracter es el de
+fin de trama (">"). 
+
+Si el caracter leído es el de final de trama, se pasa al estado final, donde el paquete es considerado válido y enviado a la próxima etapa junto con su pulso de validación del dato. Si el caracter leído es distinto, entonces se descarta toda la trama y se vuelve al inicio a la espera de otro caracter de inicio de trama, reiniciando
+todas las variables auxiliares.
+
+Internamente se tienen diversas variables auxiliares para controlar si se han recibido los delimitadores y si la cantidad recibida es correcta. Eso cobra gran importancia al realizar los ensayos, porque se puede diferenciar rápidamente la fuente de posibles errores.

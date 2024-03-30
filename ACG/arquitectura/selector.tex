@@ -1,0 +1,18 @@
+\subsubsection{Módulo Selector}
+
+\lipsum[1]
+
+Para facilitar el proceso se añadió la posibilidad de elegir con uno de los switches del kit de desarrollo el puntear completamente el enclavamiento. En la figura 3.13 se ilustra brevemente el módulo diseñado para lograr este objetivo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{example-image}
+	\centering\caption{FPGA.}
+	\label{fig:XXX}
+\end{figure}
+
+El módulo selector permite que ante un cambio en la posición del switch la salida sea una copia exacta de la entrada, lo cuál permitió diseñar todo el proceso de detección, lectura y escritura en la UART de forma independiente al enclavamiento.
+
+Mientras que con la otra posición del switch se enviaba la señal de entrada al sistema de enclavamiento y la salida era la consecuencia de haber pasado por este proceso.
+
+La implementación permite enviar la entrada a una salida u otra según la posición del switch, de forma asincrónica. Aunque no solo envía el dato sino también la ráfaga de pulsos asociada para su correcta escritura en la UART.

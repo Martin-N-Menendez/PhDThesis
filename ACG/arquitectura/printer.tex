@@ -1,0 +1,31 @@
+\subsubsection{Módulo Printer}
+
+\lipsum[1]
+
+Así como el módulo de detección realiza una conversión de caracteres (1 byte) a booleanos (1 bit), el módulo de registro (figura 3.11) hace la operación inversa. Dado un vector de elementos booleanos, el módulo debe generar M caracteres ’0’
+o ’1’ según corresponda en base al vector, y enviarlos a la UART para su posterior impresión
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{example-image}
+	\centering\caption{FPGA.}
+	\label{fig:XXX}
+\end{figure}
+
+La máquina de estados (FSM) desarrollada se ocupa de generar cada dos ciclos de reloj un pulso para poder enviar secuencialmente los caracteres detectados. A la vez que el multiplexor va seleccionando cada elemento del vector paquete[M] según el valor del contador vigente, que se incrementa cada pulso del reloj interno
+generado.
+
+Finalmente se envía un caracter ASCII ’1’ si el elemento i-ésimo del paquete es ’1’ lógico y un "0"si lo recibido es un ’0’ lógico. Junto con el caracter se envía la señal ”wr\_uart” para indicarle a la UART que ese dato debe ser guardado en una estructura de memoria llamada FIFO (del inglés, First-In,First-Out) de salida y la señal ”procesado” para indicarle al módulo de detección que ya puede recibir nuevas tramas. 
+
+La máquina de estados se ilustra en la figura 3.12.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{example-image}
+	\centering\caption{FPGA.}
+	\label{fig:XXX}
+\end{figure}
+
+Se añadieron dos estados para generar el pulso de reloj necesario para mantener sincronizadas las tramas. Al estado de reinicio se accede cuando el contador haya recorrido todos los elementos del paquete, igualando el valor de M, la cantidad de elementos esperados.
+
+La señal ”procesar” se recibe de las etapas anteriores. Si la trama ingresada es incorrecta, o si ya fue impresa, entonces esa señal será ’0’ y el registro dejará de enviar datos a la UART. En caso afirmativo (”procesar” = ’1’) el proceso continuará hasta que la UART indique que no pueda recibir mas datos o que alguna etapa previa informe de algún error en el proceso.

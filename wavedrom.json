@@ -1,0 +1,5 @@
+{signal: [
+  // Ocupation | Routes | signals | levelCrossings | singleSwitches | doubleSwitches | scissorCrossinges
+  {name: 'input', wave: '045.5.7...5.5.7...5.40', data: ['<','N_NET','N_RTS','N_SIG','N_LCB','N_SSW','N_DSW','N_SCR','>']},
+  {name: 'output', wave: '045.7...5.5.7...5.40', data: ['<','N_RTS','N_SIG','N_LCB','N_SSW','N_DSW','N_SCR','>']},
+]}
