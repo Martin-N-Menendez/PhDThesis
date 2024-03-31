@@ -1,16 +1,16 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[83] biber-MSWIN64:340> INFO - === 
-[113] Biber.pm:420> INFO - Reading 'main.bcf'
-[279] Biber.pm:994> INFO - Found 249 citekeys in bib section 0
-[288] Biber.pm:4463> INFO - Processing section 0
-[295] Biber.pm:4654> INFO - Looking for bibtex file 'references/references.bib' for section 0
-[341] bibtex.pm:1713> INFO - LaTeX decoding ...
-[423] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
-[987] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[987] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[988] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[1062] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1141] bbl.pm:779> INFO - Output to main.bbl
-[1141] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
-[1141] Biber.pm:133> INFO - WARNINGS: 1
+[93] biber-MSWIN64:340> INFO - === 
+[122] Biber.pm:420> INFO - Reading 'main.bcf'
+[287] Biber.pm:994> INFO - Found 250 citekeys in bib section 0
+[297] Biber.pm:4463> INFO - Processing section 0
+[305] Biber.pm:4654> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[350] bibtex.pm:1713> INFO - LaTeX decoding ...
+[434] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[997] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[997] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[997] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[1071] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1147] bbl.pm:779> INFO - Output to main.bbl
+[1148] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
+[1148] Biber.pm:133> INFO - WARNINGS: 1

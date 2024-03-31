@@ -7,8 +7,8 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1\textwidth]{example-image}
-		\centering\caption{FPGA.}
+		\includegraphics[width=1\textwidth]{Figuras/FSMD.png}
+		\centering\caption{Diagrama en bloques  de una FSMD genérica.}
 		\label{fig:FSMD}
 	\end{figure}
 	
@@ -32,8 +32,8 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1\textwidth]{example-image}
-		\centering\caption{FPGA.}
+		\includegraphics[width=1\textwidth]{Figuras/Arq_general.png}
+		\centering\caption{Arquitectura general del sistema generado por el ACG.}
 		\label{fig:GeneralSystem}
 	\end{figure}
 	
@@ -41,5 +41,10 @@
 	
 	La descripción del sistema se realizará desde sus módulos mas externos, que implementan la comunicación del sistema: los módulos de UART, Detector, Decoder, Encoder y Printer. De forma tal de entender en alto nivel como es el proceso de comunicación hacia y desde la FPGA, para luego abordar el núcleo del sistema de enclavamiento. cuya complejidad es mucho mayor.		
 	
-\input{ACG/arquitectura/comunicacion}
-\input{ACG/arquitectura/interlocking}
+	\input{ACG/arquitectura/UART}
+	\input{ACG/arquitectura/detector}
+	\input{ACG/arquitectura/decoder}
+	\input{ACG/arquitectura/encoder}
+	\input{ACG/arquitectura/printer}
+	\input{ACG/arquitectura/selector}
+	\input{ACG/arquitectura/network}

@@ -1,32 +1,25 @@
-\subsubsection{Módulo Detector}
+\subsection{Módulo Detector}
 
-\lipsum[1]
-
-El módulo detector tiene como función recibir una secuencia de caracteres y armar una salida con un vector de elementos booleanos. Un diagrama en bloques del funcionamiento del módulo se muestra en la figura 3.9
+El módulo \textit{detector} es el encargado de detectar el inicio y final de cada trama, validando que el contenido de la misma tenga N caracteres, conforme al formato de trama expuesto en la Sección \ref{sec:UART}. A medida que la validación tiene lugar, los caracteres ASCII son convertidos en valores booleanos (\textit{std\_logic}) dentro de un vector de elementos booleanos llamado \textit{packet}[N] (\textit{std\_logic\_vector} de N elementos). El diagrama de bloques de las máquinas de estado finitas con camino de datos se muestra en la Figura \ref{fig:Detector_module}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{example-image}
-	\centering\caption{FPGA.}
-	\label{fig:XXX}
+	\includegraphics[width=1\textwidth]{Figuras/Detector_module.png}
+	\centering\caption{FSMD del módulo \textit{Detector}.}
+	\label{fig:Detector_module}
 \end{figure}
 
-La UART envía secuencialmente un caracter por medio de la señal r\_data (8 bytes) y un pulso (r\_disponible) para informar que un nuevo dato ha sido enviado, además de indicar por medio de la señal N la cantidad de caracteres que serán
-enviados.
-
-El proceso de detección se ilustra en la figura 3.10.
+En cada pulso de reloj (\textit{clk\_i}), el módulo UART envía un caracter por medio de la señal \textit{r\_data} (8 bytes) y un pulso (\textit{r\_available}) para informar que un nuevo dato ha sido enviado. El pulso de reloj es utilizado principalmente en el módulo \textit{Counter\_0\_to\_N}, cuyo parámetro N ya ha sido calculado por el ACG previo a generar el código y es la cantidad de caracteres que serán enviados a continuación del caracter de inicio. El proceso de detección y validación de la trama recibida se describe el diagrama de estados de la Figura \ref{fig:Detector_FSMD}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{example-image}
-	\centering\caption{FPGA.}
-	\label{fig:XXX}
+	\includegraphics[width=0.8\textwidth]{Figuras/Detector_FSMD.png}
+	\centering\caption{Diagrama de estados del módulo \textit{Detector}.}
+	\label{fig:Detector_FSMD}
 \end{figure}
 
-En la figura 3.10 se tiene un estado inicial en el cual se espera el caracter de inicio de la trama ("<") que provoca una transición al estado de lectura. En dicho estado se recibirán hasta N caracteres mientras se actualiza un contador interno. Cuando el contador interno iguale la cantidad N, se verifica si el próximo caracter es el de
-fin de trama (">"). 
+El módulo \textit{Detector} inicia por detecto en el estado \textit{start}, aguardando por el caracter de inicio de trama '$<$'. Al recibir el caracter de inicio de trama, el módulo transiciona al estado \textit{reading}. En el estado \textit{reading} se recibirán solamente los caracteres ASCII '0' y '1'. Si al terminar de recibir N caracteres, el próximo caracter no es el de fin de trama '$>$' entonces se transiciona al estado \textit{error}, se reinician las variables auxiliares, la trama se descarta y se vuelve al estado \textit{start}.
 
-Si el caracter leído es el de final de trama, se pasa al estado final, donde el paquete es considerado válido y enviado a la próxima etapa junto con su pulso de validación del dato. Si el caracter leído es distinto, entonces se descarta toda la trama y se vuelve al inicio a la espera de otro caracter de inicio de trama, reiniciando
-todas las variables auxiliares.
+Si el próximo caracter luego de leer N valores ASCII '0' y '1' es el caracter de fin de trama '$>$', entonces el módulo transiciona al estado \textit{final}, donde se da por válida la trama y se habilita su envío al módulo \textit{decoder}, para volver al estado \textit{start} a la espera de un nuevl caracter de inicio de trama, reiniciando todas las variables auxiliares.
 
 Internamente se tienen diversas variables auxiliares para controlar si se han recibido los delimitadores y si la cantidad recibida es correcta. Eso cobra gran importancia al realizar los ensayos, porque se puede diferenciar rápidamente la fuente de posibles errores.
