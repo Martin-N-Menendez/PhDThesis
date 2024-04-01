@@ -54,23 +54,23 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces FSMD del módulo \textit {Printer}.}}{100}{}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de estados del módulo \textit {Printer}.}}{101}{}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces FSMD del módulo \textit {Selector}.}}{102}{}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces xxxxx}}{103}{}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces xxxxx}}{104}{}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces xxxxx}}{106}{}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces xxxxx}}{107}{}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces xxxxx}}{108}{}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces xxxxx}}{109}{}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces xxxxx}}{110}{}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces xxxxx}}{112}{}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces xxxxx}}{113}{}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces FSMD del módulo \textit {Network}.}}{103}{}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces FSMD del módulo genérico de \textit {LevelCrossing}.}}{105}{}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces FSMD del módulo genérico de \textit {SingleSwitches}.}}{106}{}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces FSMD del módulo genérico de \textit {DoubleSwitches}.}}{107}{}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces FSMD del módulo genérico de \textit {ScissorCrossings}.}}{108}{}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces FSMD del módulo genérico de \textit {NetElements}.}}{109}{}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces FSMD del módulo genérico de \textit {Signals}.}}{110}{}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces FSMD del módulo genérico de \textit {Routes}}}{112}{}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces xxxxx}}{114}{}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces xxxxx}}{115}{}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces xxxxx}}{116}{}%
 \contentsline {figure}{\numberline {3.23}{\ignorespaces xxxxx}}{117}{}%
 \contentsline {figure}{\numberline {3.24}{\ignorespaces xxxxx}}{118}{}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces xxxxx}}{119}{}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces xxxxx}}{120}{}%
 \contentsline {figure}{\numberline {3.26}{\ignorespaces xxxxx}}{121}{}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces XXXXX.}}{122}{}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces XXXXX.}}{122}{}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces XXXXX.}}{123}{}%
 \contentsline {figure}{\numberline {3.29}{\ignorespaces XXXXX.}}{123}{}%
 \contentsline {figure}{\numberline {3.30}{\ignorespaces XXXXX.}}{124}{}%
 \contentsline {figure}{\numberline {3.31}{\ignorespaces XXXXX.}}{125}{}%
