@@ -1887,170 +1887,58 @@
       \field{year}{2015}
     \endentry
     \entry{Paper_77}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-1-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 1: General requirements}
       \field{year}{2010}
     \endentry
     \entry{Paper_78}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-2-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 2: Requirements for electrical/electronic/programmable electronic safety-related systems}
       \field{year}{2010}
     \endentry
     \entry{Paper_79}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-3-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 3: Software requirements}
       \field{year}{2010}
     \endentry
     \entry{Paper_80}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{4}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-4-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 4: Definitions and abbreviations}
       \field{year}{2010}
     \endentry
     \entry{Paper_81}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{5}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-5-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 5: Examples of methods for the determination of safety integrity levels}
       \field{year}{2010}
     \endentry
     \entry{Paper_82}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{6}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-6-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 6: Guidelines on the application of IEC 61508-2 and IEC 61508-3}
       \field{year}{2010}
     \endentry
     \entry{Paper_83}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=ba3d65d09c9e84642b9e35f2c0dbbf97}{%
-           family={Standard},
-           familyi={S\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{fullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{bibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorbibnamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authornamehash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhash}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \strng{authorfullhashraw}{ba3d65d09c9e84642b9e35f2c0dbbf97}
-      \field{extraname}{7}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{International Standard}
       \field{title}{IEC 61508-7-2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 7: Overview of techniques and measures}
       \field{year}{2010}
     \endentry
@@ -6345,6 +6233,41 @@
       \verb https://en.wikipedia.org/wiki/Train_communication_network
       \endverb
     \endentry
+    \entry{Paper_64}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8ada70eb92cd63b81cf9da2a06ca4203}{%
+           family={Durmuş},
+           familyi={D\bibinitperiod},
+           given={Mustafa\bibnamedelima Seçkin},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=32fc3020bb8f38de6b4b4161262dac7e}{%
+           family={Yildirim},
+           familyi={Y\bibinitperiod},
+           given={Uğur},
+           giveni={U\bibinitperiod}}}%
+        {{hash=ea68f8d7dd5c3330297b5b341b6d0d1b}{%
+           family={Söylemez},
+           familyi={S\bibinitperiod},
+           given={Mehmet\bibnamedelima Turan},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{65dd795d1e869b15b3965350cfe90b8e}
+      \strng{fullhash}{775640661a790fd8c3d0818a5192ac6e}
+      \strng{fullhashraw}{775640661a790fd8c3d0818a5192ac6e}
+      \strng{bibnamehash}{775640661a790fd8c3d0818a5192ac6e}
+      \strng{authorbibnamehash}{775640661a790fd8c3d0818a5192ac6e}
+      \strng{authornamehash}{65dd795d1e869b15b3965350cfe90b8e}
+      \strng{authorfullhash}{775640661a790fd8c3d0818a5192ac6e}
+      \strng{authorfullhashraw}{775640661a790fd8c3d0818a5192ac6e}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Asian Control Conference (ASCC)}
+      \field{title}{Application of Functional Safety on Railways Part I: Modelling \& Design}
+      \field{year}{2011}
+    \endentry
     \entry{Paper_1}{article}{}{}
       \name{author}{1}{}{%
         {{hash=1abe93f7b1d15d13bf394cc07a1e33fa}{%
@@ -6703,9 +6626,26 @@
       \endverb
     \endentry
     \entry{Paper_27}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=75feb37949d8629c101e55e96e831745}{%
+           family={Olay},
+           familyi={O\bibinitperiod},
+           given={Rufino},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{75feb37949d8629c101e55e96e831745}
+      \strng{fullhash}{75feb37949d8629c101e55e96e831745}
+      \strng{fullhashraw}{75feb37949d8629c101e55e96e831745}
+      \strng{bibnamehash}{75feb37949d8629c101e55e96e831745}
+      \strng{authorbibnamehash}{75feb37949d8629c101e55e96e831745}
+      \strng{authornamehash}{75feb37949d8629c101e55e96e831745}
+      \strng{authorfullhash}{75feb37949d8629c101e55e96e831745}
+      \strng{authorfullhashraw}{75feb37949d8629c101e55e96e831745}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsemi Industrial Business Manager}
       \field{title}{Safety Critical Applications}
       \field{year}{2012}
     \endentry
@@ -6713,6 +6653,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Lattice Semiconductor}
       \field{title}{Development of Safety Related Systems}
       \field{year}{2015}
     \endentry
@@ -6720,6 +6661,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Siemens}
       \field{title}{Functional safety in process instrumentation with SIL rating}
       \field{year}{2003}
     \endentry
@@ -6727,6 +6669,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Xilinx}
       \field{title}{The Xilinx Isolation Design Flow for Fault-Tolerant Systems}
       \field{year}{2013}
     \endentry
@@ -6785,20 +6728,20 @@
     \endentry
     \entry{Paper_45}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=b08f929170965cb3232d097b908c77ad}{%
-           family={DURMUŞ},
+        {{hash=4e1168f8a6324caec11ba736f0a4ab4f}{%
+           family={Durmus},
            familyi={D\bibinitperiod},
-           given={Mustafa\bibnamedelima Seçkin},
+           given={Mustafa\bibnamedelima Seckin},
            giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
-      \strng{namehash}{b08f929170965cb3232d097b908c77ad}
-      \strng{fullhash}{b08f929170965cb3232d097b908c77ad}
-      \strng{fullhashraw}{b08f929170965cb3232d097b908c77ad}
-      \strng{bibnamehash}{b08f929170965cb3232d097b908c77ad}
-      \strng{authorbibnamehash}{b08f929170965cb3232d097b908c77ad}
-      \strng{authornamehash}{b08f929170965cb3232d097b908c77ad}
-      \strng{authorfullhash}{b08f929170965cb3232d097b908c77ad}
-      \strng{authorfullhashraw}{b08f929170965cb3232d097b908c77ad}
+      \strng{namehash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{fullhash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{fullhashraw}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{bibnamehash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{authorbibnamehash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{authornamehash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{authorfullhash}{4e1168f8a6324caec11ba736f0a4ab4f}
+      \strng{authorfullhashraw}{4e1168f8a6324caec11ba736f0a4ab4f}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -7049,6 +6992,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{CAF}
       \field{title}{Aplicacion de normativa CENELEC a desarrollo y explotacion de material rodante}
     \endentry
     \entry{Paper_59}{article}{}{}
@@ -7102,6 +7046,13 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Modelling a Railway Signalling System using SDL}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:17261702
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:17261702
+      \endverb
     \endentry
     \entry{Paper_60}{article}{}{}
       \field{sortinit}{1}
@@ -7216,41 +7167,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Supporting design and development of safety critical applications by model based tools}
       \field{year}{2009}
-    \endentry
-    \entry{Paper_64}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=8ada70eb92cd63b81cf9da2a06ca4203}{%
-           family={Durmuş},
-           familyi={D\bibinitperiod},
-           given={Mustafa\bibnamedelima Seçkin},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=32fc3020bb8f38de6b4b4161262dac7e}{%
-           family={Yildirim},
-           familyi={Y\bibinitperiod},
-           given={Uğur},
-           giveni={U\bibinitperiod}}}%
-        {{hash=ea68f8d7dd5c3330297b5b341b6d0d1b}{%
-           family={Söylemez},
-           familyi={S\bibinitperiod},
-           given={Mehmet\bibnamedelima Turan},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \strng{namehash}{65dd795d1e869b15b3965350cfe90b8e}
-      \strng{fullhash}{775640661a790fd8c3d0818a5192ac6e}
-      \strng{fullhashraw}{775640661a790fd8c3d0818a5192ac6e}
-      \strng{bibnamehash}{775640661a790fd8c3d0818a5192ac6e}
-      \strng{authorbibnamehash}{775640661a790fd8c3d0818a5192ac6e}
-      \strng{authornamehash}{65dd795d1e869b15b3965350cfe90b8e}
-      \strng{authorfullhash}{775640661a790fd8c3d0818a5192ac6e}
-      \strng{authorfullhashraw}{775640661a790fd8c3d0818a5192ac6e}
-      \field{extraname}{4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Asian Control Conference (ASCC)}
-      \field{title}{Application of Functional Safety on Railways Part I: Modelling \& Design}
-      \field{year}{2011}
     \endentry
     \entry{Paper_67}{article}{}{}
       \name{author}{6}{}{%
@@ -7534,6 +7450,7 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Xilinx}
       \field{title}{All Aboard with Xilinx Exploring the Future of Trains and Railways}
       \field{year}{2020}
     \endentry
@@ -7541,29 +7458,15 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{MIOS Elettronica}
       \field{title}{Railway and Industry Business Expertise}
       \field{year}{2020}
     \endentry
     \entry{Paper_106}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=d31ec6c0d8558619bb389db5fda7b976}{%
-           family={Webinar},
-           familyi={W\bibinitperiod},
-           given={Xilinx},
-           giveni={X\bibinitperiod}}}%
-      }
-      \strng{namehash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{fullhash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{fullhashraw}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{bibnamehash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{authorbibnamehash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{authornamehash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{authorfullhash}{d31ec6c0d8558619bb389db5fda7b976}
-      \strng{authorfullhashraw}{d31ec6c0d8558619bb389db5fda7b976}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Xilinx Webinar}
       \field{title}{SOC for Railway Train \& Railways}
       \field{year}{2020}
     \endentry
@@ -7608,6 +7511,7 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Ministerio de Economía, Secretaría de Estado de Transporte y Obras Públicas de la República Argentina}
       \field{title}{Normas para los cruces entre caminos y vias ferreas}
     \endentry
     \entry{Paper_111}{article}{}{}
