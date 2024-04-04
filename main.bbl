@@ -316,6 +316,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{ARTC, Australian Rail Track Corporation LTD}
       \field{title}{SSI - Australian Railways}
       \field{year}{2005}
     \endentry
@@ -349,23 +350,11 @@
       \field{year}{2013}
     \endentry
     \entry{RITO}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=d0865472cd30efce794033b4369500d2}{%
-           family={Trenes-Argentinos},
-           familyi={T\bibinithyphendelim A\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Trenes Argentinos}%
       }
-      \strng{namehash}{d0865472cd30efce794033b4369500d2}
-      \strng{fullhash}{d0865472cd30efce794033b4369500d2}
-      \strng{fullhashraw}{d0865472cd30efce794033b4369500d2}
-      \strng{bibnamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorbibnamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authornamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorfullhash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorfullhashraw}{d0865472cd30efce794033b4369500d2}
-      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Reglamento Interno Técnico Operativo}
       \field{urlday}{11}
@@ -410,26 +399,11 @@
       \endverb
     \endentry
     \entry{IRSE}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=228f09412ee4b3a7a79729209b443f43}{%
-           family={Railway\bibnamedelimb Signal\bibnamedelima Engineers},
-           familyi={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim E\bibinitperiod},
-           given={Institution},
-           giveni={I\bibinitperiod},
-           prefix={of},
-           prefixi={o\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Institution of Railway Signal Engineers}%
       }
-      \strng{namehash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{fullhash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{fullhashraw}{228f09412ee4b3a7a79729209b443f43}
-      \strng{bibnamehash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{authorbibnamehash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{authornamehash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{authorfullhash}{228f09412ee4b3a7a79729209b443f43}
-      \strng{authorfullhashraw}{228f09412ee4b3a7a79729209b443f43}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Fundamental Requirements for Train Control Systems}
       \field{urlday}{11}
@@ -720,6 +694,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Altera}
       \field{title}{8 Reasons to Use FPGAs in IEC 61508 Functional Safety Applications}
       \field{year}{2013}
     \endentry
@@ -727,6 +702,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Altera}
       \field{title}{Developing Functional Safety Systems with TÜV-Qualified FPGAs}
       \field{year}{2010}
     \endentry
@@ -734,6 +710,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Xilinx}
       \field{title}{DO-254 for the FPGA Designer}
       \field{year}{2012}
     \endentry
@@ -1121,6 +1098,13 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ESA FPGA Task Force: Lessons Learned}
+      \field{year}{2002}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:198956430
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:198956430
+      \endverb
     \endentry
     \entry{Paper_204}{article}{}{}
       \name{author}{5}{}{%
@@ -1383,6 +1367,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Xilinx}
       \field{title}{Triple module redundancy design techniques for Virtex FPGAs}
       \field{year}{2001}
     \endentry
@@ -1946,7 +1931,8 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{title}{Developing Safety Critical Applications that Meet IEC 61508 Standards}
+      \field{journaltitle}{Microsemi}
+      \field{title}{Developing Safety Critical Applications that Meet IEC 61508 Standards, Using System-on-Chip Devices with Embedded ARM Cortex-M3 and FPGA}
       \field{year}{2013}
     \endentry
     \entry{Paper_30}{article}{}{}
@@ -2142,9 +2128,26 @@
       \field{year}{2020}
     \endentry
     \entry{Paper_66}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2ae5c042984ae45e74ee3dc0c0915b4f}{%
+           family={Bellek},
+           familyi={B\bibinitperiod},
+           given={Mustafa},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{fullhash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{fullhashraw}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{bibnamehash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{authorbibnamehash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{authornamehash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{authorfullhash}{2ae5c042984ae45e74ee3dc0c0915b4f}
+      \strng{authorfullhashraw}{2ae5c042984ae45e74ee3dc0c0915b4f}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Electrical Engineering, Istanbul Technical University}
       \field{title}{Design and RAMS analysis of railway interlocking systems using formal methods}
       \field{year}{2013}
     \endentry
@@ -2173,6 +2176,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{CRC Press}
       \field{title}{Handbook of RAMS in railway systems theory and practice}
       \field{year}{2018}
     \endentry
@@ -2772,6 +2776,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Information Engineering (DINFO), University of Florence}
       \field{title}{Report of a comparative analysis of the Interlocking Systems}
       \field{year}{2013}
     \endentry
@@ -2913,24 +2918,11 @@
       \endverb
     \endentry
     \entry{SIEMENS}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=082858fba12e68cae8872f01fae6d270}{%
-           family={Mobility},
-           familyi={M\bibinitperiod},
-           given={Siemens},
-           giveni={S\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Siemens Mobility}%
       }
-      \strng{namehash}{082858fba12e68cae8872f01fae6d270}
-      \strng{fullhash}{082858fba12e68cae8872f01fae6d270}
-      \strng{fullhashraw}{082858fba12e68cae8872f01fae6d270}
-      \strng{bibnamehash}{082858fba12e68cae8872f01fae6d270}
-      \strng{authorbibnamehash}{082858fba12e68cae8872f01fae6d270}
-      \strng{authornamehash}{082858fba12e68cae8872f01fae6d270}
-      \strng{authorfullhash}{082858fba12e68cae8872f01fae6d270}
-      \strng{authorfullhashraw}{082858fba12e68cae8872f01fae6d270}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Trackguard Westrace Mk II}
       \field{urlday}{11}
@@ -2946,24 +2938,11 @@
       \endverb
     \endentry
     \entry{ALSTOM}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=21c60d48925613e7612cf9ce2a7508ac}{%
-           family={Transport},
-           familyi={T\bibinitperiod},
-           given={Alstom},
-           giveni={A\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Alstom Transport}%
       }
-      \strng{namehash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{fullhash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{fullhashraw}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{bibnamehash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{authorbibnamehash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{authornamehash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{authorfullhash}{21c60d48925613e7612cf9ce2a7508ac}
-      \strng{authorfullhashraw}{21c60d48925613e7612cf9ce2a7508ac}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Alstoms Smartlock equipment at the heart of modular signalling project in the UK}
       \field{urlday}{11}
@@ -2979,25 +2958,11 @@
       \endverb
     \endentry
     \entry{HITACHI}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=57767ec1459e966895710d7d6f576c8c}{%
-           family={Rail},
-           familyi={R\bibinitperiod},
-           given={Hitachi},
-           giveni={H\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Hitachi Rail}%
       }
-      \strng{namehash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{fullhash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{fullhashraw}{57767ec1459e966895710d7d6f576c8c}
-      \strng{bibnamehash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{authorbibnamehash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{authornamehash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{authorfullhash}{57767ec1459e966895710d7d6f576c8c}
-      \strng{authorfullhashraw}{57767ec1459e966895710d7d6f576c8c}
-      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Hitatchi WSP2G Computer Based Interlocking System}
       \field{urlday}{11}
@@ -3138,20 +3103,21 @@
     \endentry
     \entry{CRRC}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=9db04495b4b4c0c14da15a655e8c9b0f}{%
-           family={Institute},
-           familyi={I\bibinitperiod},
-           given={CRRC\bibnamedelimb Qingdao\bibnamedelimb Sifang\bibnamedelimb Rolling\bibnamedelimb Stock\bibnamedelima Research},
-           giveni={C\bibinitperiod\bibinitdelim Q\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a73ca3e91097edc7e3a7e238594d2c4a}{%
+           family={CRRC},
+           familyi={C\bibinitperiod}}}%
       }
-      \strng{namehash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{fullhash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{fullhashraw}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{bibnamehash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{authorbibnamehash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{authornamehash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{authorfullhash}{9db04495b4b4c0c14da15a655e8c9b0f}
-      \strng{authorfullhashraw}{9db04495b4b4c0c14da15a655e8c9b0f}
+      \list{organization}{1}{%
+        {CRRC Qingdao Sifang Rolling Stock Research Institute}%
+      }
+      \strng{namehash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{fullhash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{fullhashraw}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{bibnamehash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{authorbibnamehash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{authornamehash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{authorfullhash}{a73ca3e91097edc7e3a7e238594d2c4a}
+      \strng{authorfullhashraw}{a73ca3e91097edc7e3a7e238594d2c4a}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -3171,20 +3137,21 @@
     \endentry
     \entry{CAF}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=d96bb58c581cc04f6922ab8a5919fcdf}{%
-           family={Signalling},
-           familyi={S\bibinitperiod},
-           given={CAF},
-           giveni={C\bibinitperiod}}}%
+        {{hash=3908b5520c10387318acb3bf705a4f2a}{%
+           family={CAF},
+           familyi={C\bibinitperiod}}}%
       }
-      \strng{namehash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{fullhash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{fullhashraw}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{bibnamehash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{authorbibnamehash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{authornamehash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{authorfullhash}{d96bb58c581cc04f6922ab8a5919fcdf}
-      \strng{authorfullhashraw}{d96bb58c581cc04f6922ab8a5919fcdf}
+      \list{organization}{1}{%
+        {CAF Signalling}%
+      }
+      \strng{namehash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{fullhash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{fullhashraw}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{bibnamehash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{authorbibnamehash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{authornamehash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{authorfullhash}{3908b5520c10387318acb3bf705a4f2a}
+      \strng{authorfullhashraw}{3908b5520c10387318acb3bf705a4f2a}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -3234,24 +3201,11 @@
       \endverb
     \endentry
     \entry{HYUNDAI}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=196a887bf0e68644b0439bf9ce6f9f04}{%
-           family={Rotem},
-           familyi={R\bibinitperiod},
-           given={Hyundai},
-           giveni={H\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Hyundai Rotem}%
       }
-      \strng{namehash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{fullhash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{fullhashraw}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{bibnamehash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{authorbibnamehash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{authornamehash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{authorfullhash}{196a887bf0e68644b0439bf9ce6f9f04}
-      \strng{authorfullhashraw}{196a887bf0e68644b0439bf9ce6f9f04}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Definition and technology trend of train signaling system}
       \field{urlday}{11}
@@ -3267,24 +3221,11 @@
       \endverb
     \endentry
     \entry{GENERAL}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=ad901f68f932b3391dbe955236dd125f}{%
-           family={transportation},
-           familyi={t\bibinitperiod},
-           given={General\bibnamedelima Electric},
-           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {General Electric transportation}%
       }
-      \strng{namehash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{fullhash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{fullhashraw}{ad901f68f932b3391dbe955236dd125f}
-      \strng{bibnamehash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{authorbibnamehash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{authornamehash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{authorfullhash}{ad901f68f932b3391dbe955236dd125f}
-      \strng{authorfullhashraw}{ad901f68f932b3391dbe955236dd125f}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{GE Transportation Increases Safety and Efficiency on TriMet Transit Network in Portland}
       \field{urlday}{11}
@@ -3331,25 +3272,11 @@
       \endverb
     \endentry
     \entry{STADLER}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=5d814111d1899fe85dd35786a849734c}{%
-           family={Rail},
-           familyi={R\bibinitperiod},
-           given={Stadler},
-           giveni={S\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Stadler Rail}%
       }
-      \strng{namehash}{5d814111d1899fe85dd35786a849734c}
-      \strng{fullhash}{5d814111d1899fe85dd35786a849734c}
-      \strng{fullhashraw}{5d814111d1899fe85dd35786a849734c}
-      \strng{bibnamehash}{5d814111d1899fe85dd35786a849734c}
-      \strng{authorbibnamehash}{5d814111d1899fe85dd35786a849734c}
-      \strng{authornamehash}{5d814111d1899fe85dd35786a849734c}
-      \strng{authorfullhash}{5d814111d1899fe85dd35786a849734c}
-      \strng{authorfullhashraw}{5d814111d1899fe85dd35786a849734c}
-      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Electronic interlocking systems with remote control}
       \field{urlday}{11}
@@ -3751,24 +3678,11 @@
       \endverb
     \endentry
     \entry{IVU}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=f613195acd55e840078a6f92782244ba}{%
-           family={Technologies},
-           familyi={T\bibinitperiod},
-           given={IVU\bibnamedelima Traffic},
-           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {IVU Traffic Technologies}%
       }
-      \strng{namehash}{f613195acd55e840078a6f92782244ba}
-      \strng{fullhash}{f613195acd55e840078a6f92782244ba}
-      \strng{fullhashraw}{f613195acd55e840078a6f92782244ba}
-      \strng{bibnamehash}{f613195acd55e840078a6f92782244ba}
-      \strng{authorbibnamehash}{f613195acd55e840078a6f92782244ba}
-      \strng{authornamehash}{f613195acd55e840078a6f92782244ba}
-      \strng{authorfullhash}{f613195acd55e840078a6f92782244ba}
-      \strng{authorfullhashraw}{f613195acd55e840078a6f92782244ba}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{IVU.rail}
       \field{urlday}{14}
@@ -3849,29 +3763,12 @@
       \endverb
     \endentry
     \entry{DESIGN4RAIL}{online}{}{}
-      \name{author}{2}{}{%
-        {{hash=79c5d644fd742174f4a8a0884393efa7}{%
-           family={Rail},
-           familyi={R\bibinitperiod},
-           given={Design\bibnamedelima 4},
-           giveni={D\bibinitperiod\bibinitdelim 4\bibinitperiod}}}%
-        {{hash=e6f811bb414db380039800d08b878a78}{%
-           family={Planner},
-           familyi={P\bibinitperiod},
-           given={Track},
-           giveni={T\bibinitperiod}}}%
+      \list{organization}{2}{%
+        {Design 4 Rail}%
+        {Track Planner}%
       }
-      \strng{namehash}{31db9756415187b848b48bf911e70e37}
-      \strng{fullhash}{31db9756415187b848b48bf911e70e37}
-      \strng{fullhashraw}{31db9756415187b848b48bf911e70e37}
-      \strng{bibnamehash}{31db9756415187b848b48bf911e70e37}
-      \strng{authorbibnamehash}{31db9756415187b848b48bf911e70e37}
-      \strng{authornamehash}{31db9756415187b848b48bf911e70e37}
-      \strng{authorfullhash}{31db9756415187b848b48bf911e70e37}
-      \strng{authorfullhashraw}{31db9756415187b848b48bf911e70e37}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Railway Infrastructure and Layour Aided Designer}
       \field{urlday}{14}
@@ -3983,24 +3880,11 @@
       \endverb
     \endentry
     \entry{MARKET}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=83bb21052f80c42e6e017e95270ed19b}{%
-           family={Research},
-           familyi={R\bibinitperiod},
-           given={Maximize\bibnamedelima Market},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Maximize Market Research}%
       }
-      \strng{namehash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{fullhash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{fullhashraw}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{bibnamehash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{authorbibnamehash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{authornamehash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{authorfullhash}{83bb21052f80c42e6e017e95270ed19b}
-      \strng{authorfullhashraw}{83bb21052f80c42e6e017e95270ed19b}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Global Rolling Stock Market: Industry Analysis and Forecast (2023-2029)}
       \field{urlday}{11}
@@ -5373,23 +5257,11 @@
       \endverb
     \endentry
     \entry{TRENES}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=d0865472cd30efce794033b4369500d2}{%
-           family={Trenes-Argentinos},
-           familyi={T\bibinithyphendelim A\bibinitperiod}}}%
+      \list{organization}{1}{%
+        {Trenes Argentinos}%
       }
-      \strng{namehash}{d0865472cd30efce794033b4369500d2}
-      \strng{fullhash}{d0865472cd30efce794033b4369500d2}
-      \strng{fullhashraw}{d0865472cd30efce794033b4369500d2}
-      \strng{bibnamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorbibnamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authornamehash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorfullhash}{d0865472cd30efce794033b4369500d2}
-      \strng{authorfullhashraw}{d0865472cd30efce794033b4369500d2}
-      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Trenes Argentinos}
       \field{urlday}{11}
@@ -6512,6 +6384,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Information Engineering (DINFO), University of Florence}
       \field{title}{Raiss-RAIlway Signalling : Safety and Security}
       \field{year}{2014}
     \endentry
@@ -6535,6 +6408,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Deparment of Computer Science, Swansea University}
       \field{title}{SAT-based Model Checking and its applications to Train Control Systems}
       \field{year}{2010}
     \endentry
