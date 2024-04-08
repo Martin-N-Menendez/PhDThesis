@@ -1,14 +1,20 @@
 \chapter{Resultados obtenidos}
 	\label{sec:resultados}
-\lipsum[1]
-
+	
+	El código generado por el ACG es independiente de la plataforma que se utilice. Por cuestiones de disponibilidad y experiencia previa con la plataforma durante la Maestría de Sistemas Embebidos, se seleccionó la FPGA ARTY Z7-20 de Xilinx (Figura \ref{fig:FPGA}). La misma posee 53200 Look-up-tables, 106400 Flip-Flops, 32 Buffers y 125 bloque de entrada/salida.	
+	
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{example-image}
-	\centering\caption{FPGA.}
-	\label{fig:LABEL}
+	\includegraphics[width=1\textwidth]{Figuras/FPGA}
+	\centering\caption{Plataforma FPGA Xilinx Arty Z7-20.}
+	\label{fig:FPGA}
 \end{figure}
 
+	La elección de una FPGA por sobre un microprocesador se debe a las ventajas expuestas en la Sección \ref{sec:FPGA} respecto a la concurrencia del sistema, mayor nivel de seguridad y facilidad para redundar el sistema. Además, los sistemas implementados en FPGA son considerados puramente hardware y no software, por lo que solamente deben cumplir los requerimientos de la norma EN 50129, especialmente el anexo F referido a FPGAs, y no la norma EN 50128 que se encarga del software. Los alcances de estas normas ya fueron explicados en la Sección \ref{sec:normas}.
+
+	En las siguientes secciones se analizaran los resultados obtenidos al utilizar el RNA y el ACG en nuevo diferentes ejemplos. Los ejemplos abarcan sistemas simples y complejos, desde ejemplos provistos por railML.org hasta sistemas reales, pasando por locaciones generadas para probar cada una de las funcionalidades. 
+	
+	El análisis incluye la presentación de la topología original junto con su señalamiento y tabla de enclavamientos, de existir. Adicionalmente, se ilustrará la generación paso a paso del señalamiento, su simplificación y tabla de enclavamientos final, junto con la comparación con el enclavamiento original, si existiese. Finalmente, se incluyen las redes de grafos generadas por el RNA y un resumen de los recursos utilizados por el ACG para implementar el sistema.
 
 \input{resultados-obtenidos/ejemplo1/main}
 \input{resultados-obtenidos/ejemplo2/main}
@@ -18,4 +24,4 @@
 \input{resultados-obtenidos/ejemplo6/main}
 \input{resultados-obtenidos/ejemplo7/main}
 \input{resultados-obtenidos/ejemplo8/main}
-% ADD EJEMPLO_9
+\input{resultados-obtenidos/ejemplo9/main}

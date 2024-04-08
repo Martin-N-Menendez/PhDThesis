@@ -2,6 +2,8 @@
 % !BIB TS-program = biber
 
 \documentclass{report}
+\usepackage[paperheight=\paperheight,paperwidth=\paperwidth,textwidth=15cm]{geometry}
+
 \usepackage[cache=false,outputdir=build]{minted}
 %\usepackage{packages}
 \usepackage[spanish]{babel}
@@ -16,11 +18,14 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
 \usepackage[backend=biber,bibstyle=ieee,citestyle=numeric-comp,urldate=short,sorting=none]{biblatex}
 
 \addbibresource{references/references.bib}
 
- 
+\author{Martin Nicolas Menendez}
  
 \newcommand{\SWITCH}[1]{\STATE \textbf{Switch} (#1)}
 \newcommand{\OUTPUT}{\STATE \textbf{Return} }
@@ -35,6 +40,8 @@
 \renewcommand{\spanishtablename}{Tabla}
 
 \renewcommand{\lstlistingname}{Código}
+
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
 
 \lstset{aboveskip=\baselineskip,belowskip=\baselineskip,basicstyle=\ttfamily}
 
@@ -77,6 +84,7 @@
 \
 \newpage
 
+
 \setcounter{page}{1}
 \input{resumen}
 \newpage
@@ -92,8 +100,23 @@
 \newpage
 \input{indice}
 \newpage
+
+
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE]{\nouppercase{\rightmark\hfill\leftmark}}
+\fancyhead[RO]{\nouppercase{\leftmark\hfill\rightmark}}
+
+
+\fancyfoot{}
+\fancyfoot[L]{Tesis doctoral}
+\fancyfoot[C]{\nouppercase{Mg. Ing. Martín Nicolás Menéndez}}
+\fancyfoot[R]{Página \thepage \hspace{1pt} de \pageref{LastPage}}
+
+
 \input{introduccion/main}
 \newpage
 \input{RNA/main}
