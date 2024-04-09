@@ -85,76 +85,76 @@
 \contentsline {figure}{\numberline {3.40}{\ignorespaces XXXXX.}}{128}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Plataforma FPGA Xilinx Arty Z7-20.}}{130}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Señalamiento original del ejemplo 1.}}{131}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Topología ferroviaria del ejemplo 1 sin señalamiento.}}{132}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{133}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{134}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Topología ferroviaria del ejemplo 1 sin señalamiento.}}{131}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Señalamiento original del ejemplo 1.}}{132}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{134}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{135}{}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{135}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{135}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{136}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces XXXX}}{139}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Señalamiento original del ejemplo 2.}}{142}{}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{142}{}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{143}{}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{144}{}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{144}{}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{144}{}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{145}{}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces XXXX}}{146}{}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Señalamiento original del ejemplo 3.}}{149}{}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Topología ferroviaria del ejemplo 3 sin señalamiento.}}{149}{}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{151}{}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{152}{}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{152}{}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{153}{}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{153}{}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces XXXX}}{160}{}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Señalamiento original del ejemplo 4.}}{164}{}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Topología ferroviaria del ejemplo 4 sin señalamiento.}}{164}{}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{170}{}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{170}{}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{171}{}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{171}{}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{172}{}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces XXXX}}{179}{}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Señalamiento original del ejemplo 5.}}{186}{}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Topología ferroviaria del ejemplo 5 sin señalamiento.}}{186}{}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{188}{}%
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{188}{}%
-\contentsline {figure}{\numberline {4.38}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{189}{}%
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{190}{}%
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{190}{}%
-\contentsline {figure}{\numberline {4.41}{\ignorespaces XXXX}}{192}{}%
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Señalamiento original del ejemplo 6.}}{195}{}%
-\contentsline {figure}{\numberline {4.43}{\ignorespaces Topología ferroviaria del ejemplo 6 sin señalamiento.}}{196}{}%
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{198}{}%
-\contentsline {figure}{\numberline {4.45}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{198}{}%
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{199}{}%
-\contentsline {figure}{\numberline {4.47}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{199}{}%
-\contentsline {figure}{\numberline {4.48}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{200}{}%
-\contentsline {figure}{\numberline {4.49}{\ignorespaces XXXX}}{203}{}%
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Señalamiento original del ejemplo 7.}}{206}{}%
-\contentsline {figure}{\numberline {4.51}{\ignorespaces Topología ferroviaria del ejemplo 7 sin señalamiento.}}{207}{}%
-\contentsline {figure}{\numberline {4.52}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{209}{}%
-\contentsline {figure}{\numberline {4.53}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{210}{}%
-\contentsline {figure}{\numberline {4.54}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{211}{}%
-\contentsline {figure}{\numberline {4.55}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{212}{}%
-\contentsline {figure}{\numberline {4.56}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{213}{}%
-\contentsline {figure}{\numberline {4.57}{\ignorespaces XXXX}}{215}{}%
-\contentsline {figure}{\numberline {4.58}{\ignorespaces Señalamiento original del ejemplo 8.}}{217}{}%
-\contentsline {figure}{\numberline {4.59}{\ignorespaces Topología ferroviaria del ejemplo 8 sin señalamiento.}}{217}{}%
-\contentsline {figure}{\numberline {4.60}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{219}{}%
-\contentsline {figure}{\numberline {4.61}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{219}{}%
-\contentsline {figure}{\numberline {4.62}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{220}{}%
-\contentsline {figure}{\numberline {4.63}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{220}{}%
-\contentsline {figure}{\numberline {4.64}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{221}{}%
-\contentsline {figure}{\numberline {4.65}{\ignorespaces XXXX}}{223}{}%
-\contentsline {figure}{\numberline {4.66}{\ignorespaces Señalamiento original del ejemplo 9.}}{225}{}%
-\contentsline {figure}{\numberline {4.67}{\ignorespaces Topología ferroviaria del ejemplo 9 sin señalamiento.}}{226}{}%
-\contentsline {figure}{\numberline {4.68}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{228}{}%
-\contentsline {figure}{\numberline {4.69}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{229}{}%
-\contentsline {figure}{\numberline {4.70}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{230}{}%
-\contentsline {figure}{\numberline {4.71}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{231}{}%
-\contentsline {figure}{\numberline {4.72}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{232}{}%
-\contentsline {figure}{\numberline {4.73}{\ignorespaces XXXX}}{234}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{136}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{137}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces XXXX}}{140}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Señalamiento original del ejemplo 2.}}{143}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{143}{}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{144}{}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{145}{}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{145}{}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{145}{}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{146}{}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces XXXX}}{147}{}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Señalamiento original del ejemplo 3.}}{150}{}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Topología ferroviaria del ejemplo 3 sin señalamiento.}}{150}{}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{152}{}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{153}{}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{153}{}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{154}{}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{154}{}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces XXXX}}{161}{}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Señalamiento original del ejemplo 4.}}{165}{}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Topología ferroviaria del ejemplo 4 sin señalamiento.}}{165}{}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{171}{}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{171}{}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{172}{}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{172}{}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{173}{}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces XXXX}}{180}{}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Señalamiento original del ejemplo 5.}}{187}{}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Topología ferroviaria del ejemplo 5 sin señalamiento.}}{187}{}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{189}{}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{189}{}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{190}{}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{191}{}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{191}{}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces XXXX}}{193}{}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Señalamiento original del ejemplo 6.}}{196}{}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Topología ferroviaria del ejemplo 6 sin señalamiento.}}{197}{}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{199}{}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{199}{}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{200}{}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{200}{}%
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{201}{}%
+\contentsline {figure}{\numberline {4.49}{\ignorespaces XXXX}}{204}{}%
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Señalamiento original del ejemplo 7.}}{207}{}%
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Topología ferroviaria del ejemplo 7 sin señalamiento.}}{208}{}%
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{210}{}%
+\contentsline {figure}{\numberline {4.53}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{211}{}%
+\contentsline {figure}{\numberline {4.54}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{212}{}%
+\contentsline {figure}{\numberline {4.55}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{213}{}%
+\contentsline {figure}{\numberline {4.56}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{214}{}%
+\contentsline {figure}{\numberline {4.57}{\ignorespaces XXXX}}{216}{}%
+\contentsline {figure}{\numberline {4.58}{\ignorespaces Señalamiento original del ejemplo 8.}}{218}{}%
+\contentsline {figure}{\numberline {4.59}{\ignorespaces Topología ferroviaria del ejemplo 8 sin señalamiento.}}{218}{}%
+\contentsline {figure}{\numberline {4.60}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{220}{}%
+\contentsline {figure}{\numberline {4.61}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{220}{}%
+\contentsline {figure}{\numberline {4.62}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{221}{}%
+\contentsline {figure}{\numberline {4.63}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{221}{}%
+\contentsline {figure}{\numberline {4.64}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{222}{}%
+\contentsline {figure}{\numberline {4.65}{\ignorespaces XXXX}}{224}{}%
+\contentsline {figure}{\numberline {4.66}{\ignorespaces Señalamiento original del ejemplo 9.}}{226}{}%
+\contentsline {figure}{\numberline {4.67}{\ignorespaces Topología ferroviaria del ejemplo 9 sin señalamiento.}}{227}{}%
+\contentsline {figure}{\numberline {4.68}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{229}{}%
+\contentsline {figure}{\numberline {4.69}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{230}{}%
+\contentsline {figure}{\numberline {4.70}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{231}{}%
+\contentsline {figure}{\numberline {4.71}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{232}{}%
+\contentsline {figure}{\numberline {4.72}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{233}{}%
+\contentsline {figure}{\numberline {4.73}{\ignorespaces XXXX}}{235}{}%
 \addvspace {10\p@ }
