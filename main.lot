@@ -1,57 +1,57 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces Tabla de enclavamientos (rutas de izquierda a derecha).}}{10}{}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Tabla de enclavamientos (rutas de derecha a izquierda).}}{11}{}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Tabla de enclavamientos (rutas de derecha a izquierda).}}{10}{}%
 \contentsline {table}{\numberline {1.3}{\ignorespaces Tabla de enclavamientos completa.}}{11}{}%
 \contentsline {table}{\numberline {1.4}{\ignorespaces SIL en función de la Probabilidad de Fallas/Hora (PFH).}}{14}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Estados de enclavamiento de cada elemento ferroviario.}}{110}{}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Estados de enclavamiento de cada elemento ferroviario.}}{100}{}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 1.}}{132}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla de enclavamiento del ejemplo 1 generada por el RNA.}}{138}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{142}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Tabla de enclavamiento original del ejemplo 2.}}{144}{}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Tabla de enclavamiento del ejemplo 2 generada por el RNA.}}{147}{}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{149}{}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Tabla de enclavamiento original del ejemplo 3.}}{151}{}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 1 a 15).}}{155}{}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 16 a 30).}}{156}{}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 31 a 45).}}{157}{}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 46 a 60).}}{158}{}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 61 a 75).}}{159}{}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 75 a 87).}}{160}{}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 1 a 16).}}{163}{}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 17 a 33).}}{164}{}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 1 a 15).}}{166}{}%
-\contentsline {table}{\numberline {4.17}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 16 a 30).}}{167}{}%
-\contentsline {table}{\numberline {4.18}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 31 a 45).}}{168}{}%
-\contentsline {table}{\numberline {4.19}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 46 a 160).}}{169}{}%
-\contentsline {table}{\numberline {4.20}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 61 a 76).}}{170}{}%
-\contentsline {table}{\numberline {4.21}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 1 a 15).}}{174}{}%
-\contentsline {table}{\numberline {4.22}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 16 a 30).}}{175}{}%
-\contentsline {table}{\numberline {4.23}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 31 a 45).}}{176}{}%
-\contentsline {table}{\numberline {4.24}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 46 a 60).}}{177}{}%
-\contentsline {table}{\numberline {4.25}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 61 a 75).}}{178}{}%
-\contentsline {table}{\numberline {4.26}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 76 a 90).}}{179}{}%
-\contentsline {table}{\numberline {4.27}{\ignorespaces Equivalencias entre las rutas 1 a 15 originales y las generadas por el RNA.}}{182}{}%
-\contentsline {table}{\numberline {4.28}{\ignorespaces Equivalencias entre las rutas 16 a 30 originales y las generadas por el RNA.}}{183}{}%
-\contentsline {table}{\numberline {4.29}{\ignorespaces Equivalencias entre las rutas 31 a 45 originales y las generadas por el RNA.}}{184}{}%
-\contentsline {table}{\numberline {4.30}{\ignorespaces Equivalencias entre las rutas 46 a 60 originales y las generadas por el RNA.}}{185}{}%
-\contentsline {table}{\numberline {4.31}{\ignorespaces Equivalencias entre las rutas 61 a 77 originales y las generadas por el RNA.}}{186}{}%
-\contentsline {table}{\numberline {4.32}{\ignorespaces Tabla de enclavamiento original del ejemplo 5.}}{188}{}%
-\contentsline {table}{\numberline {4.33}{\ignorespaces Tabla de enclavamiento del ejemplo 5 generada por el RNA.}}{192}{}%
-\contentsline {table}{\numberline {4.34}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{195}{}%
-\contentsline {table}{\numberline {4.35}{\ignorespaces Tabla de enclavamiento original del ejemplo 6.}}{198}{}%
-\contentsline {table}{\numberline {4.36}{\ignorespaces Tabla de enclavamiento del ejemplo 6 generada por el RNA.}}{202}{}%
-\contentsline {table}{\numberline {4.37}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{206}{}%
-\contentsline {table}{\numberline {4.38}{\ignorespaces Tabla de enclavamiento original del ejemplo 7.}}{209}{}%
-\contentsline {table}{\numberline {4.39}{\ignorespaces Tabla de enclavamiento del ejemplo 7 generada por el RNA.}}{215}{}%
-\contentsline {table}{\numberline {4.40}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{217}{}%
-\contentsline {table}{\numberline {4.41}{\ignorespaces Tabla de enclavamiento original del ejemplo 8.}}{219}{}%
-\contentsline {table}{\numberline {4.42}{\ignorespaces Tabla de enclavamiento del ejemplo 8 generada por el RNA.}}{223}{}%
-\contentsline {table}{\numberline {4.43}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{225}{}%
-\contentsline {table}{\numberline {4.44}{\ignorespaces Tabla de enclavamiento original del ejemplo 9.}}{228}{}%
-\contentsline {table}{\numberline {4.45}{\ignorespaces Tabla de enclavamiento del ejemplo 9 generada por el RNA.}}{234}{}%
-\contentsline {table}{\numberline {4.46}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{236}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 1.}}{121}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla de enclavamiento del ejemplo 1 generada por el RNA.}}{133}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{134}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Tabla de enclavamiento original del ejemplo 2.}}{136}{}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Tabla de enclavamiento del ejemplo 2 generada por el RNA.}}{140}{}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{141}{}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Tabla de enclavamiento original del ejemplo 3.}}{143}{}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 1 a 15).}}{148}{}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 16 a 30).}}{149}{}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 31 a 45).}}{150}{}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 46 a 60).}}{151}{}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 61 a 75).}}{152}{}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 75 a 87).}}{152}{}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 1 a 16).}}{154}{}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 17 a 33).}}{155}{}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 1 a 15).}}{157}{}%
+\contentsline {table}{\numberline {4.17}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 16 a 30).}}{158}{}%
+\contentsline {table}{\numberline {4.18}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 31 a 45).}}{159}{}%
+\contentsline {table}{\numberline {4.19}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 46 a 160).}}{160}{}%
+\contentsline {table}{\numberline {4.20}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 61 a 76).}}{161}{}%
+\contentsline {table}{\numberline {4.21}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 1 a 15).}}{166}{}%
+\contentsline {table}{\numberline {4.22}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 16 a 30).}}{167}{}%
+\contentsline {table}{\numberline {4.23}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 31 a 45).}}{168}{}%
+\contentsline {table}{\numberline {4.24}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 46 a 60).}}{169}{}%
+\contentsline {table}{\numberline {4.25}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 61 a 75).}}{170}{}%
+\contentsline {table}{\numberline {4.26}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 76 a 90).}}{171}{}%
+\contentsline {table}{\numberline {4.27}{\ignorespaces Equivalencias entre las rutas 1 a 15 originales y las generadas por el RNA.}}{172}{}%
+\contentsline {table}{\numberline {4.28}{\ignorespaces Equivalencias entre las rutas 16 a 30 originales y las generadas por el RNA.}}{173}{}%
+\contentsline {table}{\numberline {4.29}{\ignorespaces Equivalencias entre las rutas 31 a 45 originales y las generadas por el RNA.}}{173}{}%
+\contentsline {table}{\numberline {4.30}{\ignorespaces Equivalencias entre las rutas 46 a 60 originales y las generadas por el RNA.}}{174}{}%
+\contentsline {table}{\numberline {4.31}{\ignorespaces Equivalencias entre las rutas 61 a 77 originales y las generadas por el RNA.}}{175}{}%
+\contentsline {table}{\numberline {4.32}{\ignorespaces Tabla de enclavamiento original del ejemplo 5.}}{177}{}%
+\contentsline {table}{\numberline {4.33}{\ignorespaces Tabla de enclavamiento del ejemplo 5 generada por el RNA.}}{182}{}%
+\contentsline {table}{\numberline {4.34}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{183}{}%
+\contentsline {table}{\numberline {4.35}{\ignorespaces Tabla de enclavamiento original del ejemplo 6.}}{185}{}%
+\contentsline {table}{\numberline {4.36}{\ignorespaces Tabla de enclavamiento del ejemplo 6 generada por el RNA.}}{190}{}%
+\contentsline {table}{\numberline {4.37}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{192}{}%
+\contentsline {table}{\numberline {4.38}{\ignorespaces Tabla de enclavamiento original del ejemplo 7.}}{195}{}%
+\contentsline {table}{\numberline {4.39}{\ignorespaces Tabla de enclavamiento del ejemplo 7 generada por el RNA.}}{202}{}%
+\contentsline {table}{\numberline {4.40}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{203}{}%
+\contentsline {table}{\numberline {4.41}{\ignorespaces Tabla de enclavamiento original del ejemplo 8.}}{205}{}%
+\contentsline {table}{\numberline {4.42}{\ignorespaces Tabla de enclavamiento del ejemplo 8 generada por el RNA.}}{209}{}%
+\contentsline {table}{\numberline {4.43}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{210}{}%
+\contentsline {table}{\numberline {4.44}{\ignorespaces Tabla de enclavamiento original del ejemplo 9.}}{213}{}%
+\contentsline {table}{\numberline {4.45}{\ignorespaces Tabla de enclavamiento del ejemplo 9 generada por el RNA.}}{220}{}%
+\contentsline {table}{\numberline {4.46}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{220}{}%
 \addvspace {10\p@ }
