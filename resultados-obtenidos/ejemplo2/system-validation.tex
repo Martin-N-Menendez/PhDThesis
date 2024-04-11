@@ -1,16 +1,16 @@
-\subsection{Validacion del sistema}
+\subsection{Validación del sistema de enclavamientos}
 
-\lipsum[1]
+	Las 5 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_2}) tienen 5 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_2}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_2}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
         \caption{Equivalencias entre las rutas originales y las generadas por el RNA.}
-        \label{Tab:tabla_original_1}
+        \label{Tab:tabla_validation_2}
         \centering
         %\small
             %\centering
             \begin{center}
-            \resizebox{1\textwidth}{!}{
+            \resizebox{0.7\textwidth}{!}{
             \begin{tabular}{ c c c c }
                 \hline	
                     Original & Señales & RNA & Señales \\	
@@ -27,4 +27,8 @@
         }    
     \end{table}
     
-    \lipsum[1]
+    El RNA generó nuevas rutas para incrementar la seguridad de la red. La ruta R1 fue definida al crear las señales T02 y L06 para proteger el final de la vía en la sección ne19-ne20. La ruta R6 fue definida al crear la señal L04 para proteger el final de la vía en ne15, creando una nueva ruta con la señal S15. La ruta R8 fue definida al crear la señal L06 para proteger el final de la vía ne20, creando una nueva ruta con la señal S18.
+    
+    Adicionalmente, el RNA generó nuevas rutas para incrementar la mobilidad de la red. La ruta R5 fue definida al crear la señal de partida P09 para la plataforma plat01. La ruta R7 fue definida al crear la señal de partida P12 para la plataforma plat02.
+    
+    Estos elementos ferroviarios, los finales de vía y las plataformas, no se encontraban protegidos en la tabla de enclavamientos original (Tabla \ref{Tab:tabla_original_2}). Ninguna ruta original atravesaba el cruce de vías, por lo que el RNA agregó las rutas R5 y R8 que cumplen esa función.
