@@ -98,68 +98,68 @@
 \contentsline {subsection}{\numberline {4.1.7}Sistema generado por el ACG}{134}{}%
 \contentsline {section}{\numberline {4.2}Ejemplo 2}{135}{}%
 \contentsline {subsection}{\numberline {4.2.1}Topología ferroviaria original}{135}{}%
-\contentsline {subsection}{\numberline {4.2.2}Señalamiento original}{135}{}%
+\contentsline {subsection}{\numberline {4.2.2}Señalamiento original}{136}{}%
 \contentsline {subsection}{\numberline {4.2.3}Generación de señalamiento paso a paso}{136}{}%
 \contentsline {subsection}{\numberline {4.2.4}Red de grafos generada por el RNA}{142}{}%
-\contentsline {subsection}{\numberline {4.2.5}Señalamiento generado por el RNA}{142}{}%
+\contentsline {subsection}{\numberline {4.2.5}Señalamiento generado por el RNA}{143}{}%
 \contentsline {subsection}{\numberline {4.2.6}Validación del sistema de enclavamientos}{143}{}%
 \contentsline {subsection}{\numberline {4.2.7}Sistema generado por el ACG}{144}{}%
-\contentsline {section}{\numberline {4.3}Ejemplo 3}{144}{}%
-\contentsline {subsection}{\numberline {4.3.1}Topología ferroviaria original}{144}{}%
+\contentsline {section}{\numberline {4.3}Ejemplo 3}{145}{}%
+\contentsline {subsection}{\numberline {4.3.1}Topología ferroviaria original}{145}{}%
 \contentsline {subsection}{\numberline {4.3.2}Señalamiento original}{145}{}%
-\contentsline {subsection}{\numberline {4.3.3}Generación de señalamiento paso a paso}{147}{}%
-\contentsline {subsection}{\numberline {4.3.4}Red de grafos generada por el RNA}{149}{}%
-\contentsline {subsection}{\numberline {4.3.5}Señalamiento generado por el RNA}{151}{}%
-\contentsline {subsection}{\numberline {4.3.6}Sistema generado por el ACG}{156}{}%
-\contentsline {subsection}{\numberline {4.3.7}Validacion del sistema}{156}{}%
-\contentsline {section}{\numberline {4.4}Ejemplo 4}{158}{}%
-\contentsline {subsection}{\numberline {4.4.1}Topología ferroviaria original}{158}{}%
-\contentsline {subsection}{\numberline {4.4.2}Señalamiento original}{159}{}%
-\contentsline {subsection}{\numberline {4.4.3}Generación de señalamiento paso a paso}{164}{}%
-\contentsline {subsection}{\numberline {4.4.4}Red de grafos generada por el RNA}{167}{}%
-\contentsline {subsection}{\numberline {4.4.5}Señalamiento generado por el RNA}{169}{}%
-\contentsline {subsection}{\numberline {4.4.6}Sistema generado por el ACG}{174}{}%
-\contentsline {subsection}{\numberline {4.4.7}Validacion del sistema}{174}{}%
-\contentsline {section}{\numberline {4.5}Ejemplo 5}{178}{}%
-\contentsline {subsection}{\numberline {4.5.1}Topología ferroviaria original}{178}{}%
-\contentsline {subsection}{\numberline {4.5.2}Señalamiento original}{179}{}%
-\contentsline {subsection}{\numberline {4.5.3}Generación de señalamiento paso a paso}{180}{}%
-\contentsline {subsection}{\numberline {4.5.4}Red de grafos generada por el RNA}{183}{}%
-\contentsline {subsection}{\numberline {4.5.5}Señalamiento generado por el RNA}{184}{}%
-\contentsline {subsection}{\numberline {4.5.6}Sistema generado por el ACG}{184}{}%
-\contentsline {subsection}{\numberline {4.5.7}Validacion del sistema}{185}{}%
-\contentsline {section}{\numberline {4.6}Ejemplo 6}{187}{}%
-\contentsline {subsection}{\numberline {4.6.1}Topología ferroviaria original}{187}{}%
-\contentsline {subsection}{\numberline {4.6.2}Señalamiento original}{188}{}%
-\contentsline {subsection}{\numberline {4.6.3}Generación de señalamiento paso a paso}{189}{}%
-\contentsline {subsection}{\numberline {4.6.4}Red de grafos generada por el RNA}{191}{}%
-\contentsline {subsection}{\numberline {4.6.5}Señalamiento generado por el RNA}{193}{}%
-\contentsline {subsection}{\numberline {4.6.6}Sistema generado por el ACG}{194}{}%
-\contentsline {subsection}{\numberline {4.6.7}Validacion del sistema}{194}{}%
-\contentsline {section}{\numberline {4.7}Ejemplo 7}{196}{}%
-\contentsline {subsection}{\numberline {4.7.1}Topología ferroviaria original}{196}{}%
-\contentsline {subsection}{\numberline {4.7.2}Señalamiento original}{197}{}%
-\contentsline {subsection}{\numberline {4.7.3}Generación de señalamiento paso a paso}{198}{}%
-\contentsline {subsection}{\numberline {4.7.4}Red de grafos generada por el RNA}{203}{}%
-\contentsline {subsection}{\numberline {4.7.5}Señalamiento generado por el RNA}{204}{}%
-\contentsline {subsection}{\numberline {4.7.6}Sistema generado por el ACG}{205}{}%
-\contentsline {subsection}{\numberline {4.7.7}Validacion del sistema}{205}{}%
-\contentsline {section}{\numberline {4.8}Ejemplo 8}{206}{}%
-\contentsline {subsection}{\numberline {4.8.1}Topología ferroviaria original}{206}{}%
-\contentsline {subsection}{\numberline {4.8.2}Señalamiento original}{207}{}%
-\contentsline {subsection}{\numberline {4.8.3}Generación de señalamiento paso a paso}{208}{}%
-\contentsline {subsection}{\numberline {4.8.4}Red de grafos generada por el RNA}{210}{}%
-\contentsline {subsection}{\numberline {4.8.5}Señalamiento generado por el RNA}{211}{}%
-\contentsline {subsection}{\numberline {4.8.6}Sistema generado por el ACG}{212}{}%
-\contentsline {subsection}{\numberline {4.8.7}Validacion del sistema}{212}{}%
-\contentsline {section}{\numberline {4.9}Ejemplo 9}{214}{}%
-\contentsline {subsection}{\numberline {4.9.1}Topología ferroviaria original}{214}{}%
-\contentsline {subsection}{\numberline {4.9.2}Señalamiento original}{215}{}%
-\contentsline {subsection}{\numberline {4.9.3}Generación de señalamiento paso a paso}{216}{}%
-\contentsline {subsection}{\numberline {4.9.4}Red de grafos generada por el RNA}{221}{}%
-\contentsline {subsection}{\numberline {4.9.5}Señalamiento generado por el RNA}{222}{}%
-\contentsline {subsection}{\numberline {4.9.6}Sistema generado por el ACG}{223}{}%
-\contentsline {subsection}{\numberline {4.9.7}Validacion del sistema}{223}{}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{225}{}%
-\contentsline {section}{\numberline {5.1}Resultados obtenidos}{225}{}%
-\contentsline {section}{\numberline {5.2}Trabajo futuro}{225}{}%
+\contentsline {subsection}{\numberline {4.3.3}Generación de señalamiento paso a paso}{148}{}%
+\contentsline {subsection}{\numberline {4.3.4}Red de grafos generada por el RNA}{150}{}%
+\contentsline {subsection}{\numberline {4.3.5}Señalamiento generado por el RNA}{152}{}%
+\contentsline {subsection}{\numberline {4.3.6}Validacion del sistema}{157}{}%
+\contentsline {subsection}{\numberline {4.3.7}Sistema generado por el ACG}{159}{}%
+\contentsline {section}{\numberline {4.4}Ejemplo 4}{159}{}%
+\contentsline {subsection}{\numberline {4.4.1}Topología ferroviaria original}{159}{}%
+\contentsline {subsection}{\numberline {4.4.2}Señalamiento original}{160}{}%
+\contentsline {subsection}{\numberline {4.4.3}Generación de señalamiento paso a paso}{165}{}%
+\contentsline {subsection}{\numberline {4.4.4}Red de grafos generada por el RNA}{168}{}%
+\contentsline {subsection}{\numberline {4.4.5}Señalamiento generado por el RNA}{170}{}%
+\contentsline {subsection}{\numberline {4.4.6}Sistema generado por el ACG}{175}{}%
+\contentsline {subsection}{\numberline {4.4.7}Validacion del sistema}{175}{}%
+\contentsline {section}{\numberline {4.5}Ejemplo 5}{179}{}%
+\contentsline {subsection}{\numberline {4.5.1}Topología ferroviaria original}{179}{}%
+\contentsline {subsection}{\numberline {4.5.2}Señalamiento original}{180}{}%
+\contentsline {subsection}{\numberline {4.5.3}Generación de señalamiento paso a paso}{181}{}%
+\contentsline {subsection}{\numberline {4.5.4}Red de grafos generada por el RNA}{184}{}%
+\contentsline {subsection}{\numberline {4.5.5}Señalamiento generado por el RNA}{185}{}%
+\contentsline {subsection}{\numberline {4.5.6}Sistema generado por el ACG}{185}{}%
+\contentsline {subsection}{\numberline {4.5.7}Validacion del sistema}{186}{}%
+\contentsline {section}{\numberline {4.6}Ejemplo 6}{188}{}%
+\contentsline {subsection}{\numberline {4.6.1}Topología ferroviaria original}{188}{}%
+\contentsline {subsection}{\numberline {4.6.2}Señalamiento original}{189}{}%
+\contentsline {subsection}{\numberline {4.6.3}Generación de señalamiento paso a paso}{190}{}%
+\contentsline {subsection}{\numberline {4.6.4}Red de grafos generada por el RNA}{192}{}%
+\contentsline {subsection}{\numberline {4.6.5}Señalamiento generado por el RNA}{194}{}%
+\contentsline {subsection}{\numberline {4.6.6}Sistema generado por el ACG}{195}{}%
+\contentsline {subsection}{\numberline {4.6.7}Validacion del sistema}{195}{}%
+\contentsline {section}{\numberline {4.7}Ejemplo 7}{197}{}%
+\contentsline {subsection}{\numberline {4.7.1}Topología ferroviaria original}{197}{}%
+\contentsline {subsection}{\numberline {4.7.2}Señalamiento original}{198}{}%
+\contentsline {subsection}{\numberline {4.7.3}Generación de señalamiento paso a paso}{199}{}%
+\contentsline {subsection}{\numberline {4.7.4}Red de grafos generada por el RNA}{204}{}%
+\contentsline {subsection}{\numberline {4.7.5}Señalamiento generado por el RNA}{205}{}%
+\contentsline {subsection}{\numberline {4.7.6}Sistema generado por el ACG}{206}{}%
+\contentsline {subsection}{\numberline {4.7.7}Validacion del sistema}{206}{}%
+\contentsline {section}{\numberline {4.8}Ejemplo 8}{207}{}%
+\contentsline {subsection}{\numberline {4.8.1}Topología ferroviaria original}{207}{}%
+\contentsline {subsection}{\numberline {4.8.2}Señalamiento original}{208}{}%
+\contentsline {subsection}{\numberline {4.8.3}Generación de señalamiento paso a paso}{209}{}%
+\contentsline {subsection}{\numberline {4.8.4}Red de grafos generada por el RNA}{211}{}%
+\contentsline {subsection}{\numberline {4.8.5}Señalamiento generado por el RNA}{212}{}%
+\contentsline {subsection}{\numberline {4.8.6}Sistema generado por el ACG}{213}{}%
+\contentsline {subsection}{\numberline {4.8.7}Validacion del sistema}{213}{}%
+\contentsline {section}{\numberline {4.9}Ejemplo 9}{215}{}%
+\contentsline {subsection}{\numberline {4.9.1}Topología ferroviaria original}{215}{}%
+\contentsline {subsection}{\numberline {4.9.2}Señalamiento original}{216}{}%
+\contentsline {subsection}{\numberline {4.9.3}Generación de señalamiento paso a paso}{217}{}%
+\contentsline {subsection}{\numberline {4.9.4}Red de grafos generada por el RNA}{222}{}%
+\contentsline {subsection}{\numberline {4.9.5}Señalamiento generado por el RNA}{223}{}%
+\contentsline {subsection}{\numberline {4.9.6}Sistema generado por el ACG}{224}{}%
+\contentsline {subsection}{\numberline {4.9.7}Validacion del sistema}{224}{}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{226}{}%
+\contentsline {section}{\numberline {5.1}Resultados obtenidos}{226}{}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{226}{}%
