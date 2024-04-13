@@ -1,6 +1,15 @@
 \subsection{Señalamiento original}
 
-    \lipsum[1]
+    El señalamiento original, ilustrado en la Figura \ref{fig:EJ6_2}, incluye señales de parada próximas a los finales de vías absolutos (S11, S12, S13, S14, S16), señales de maniobras antes de converger en una vía principal (S10, S15, S20) y señales múltiples para cambios de vías divergentes (S01, S06, S07, S21), entre varias otras señales.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=1\textwidth]{resultados-obtenidos/ejemplo6/images/6_original.png}
+    	\centering\caption{Señalamiento original del ejemplo 6.}
+    	\label{fig:EJ1_2}
+    \end{figure}
+    
+    Estas señales permiten definir hasta un máximo de 16 rutas, todas ellas detalladas en la Tabla \ref{Tab:tabla_original_6}. En una primera inspección, se puede comprobar que todos los elementos ferroviarios son alcanzados por al menos una de las rutas, en al menos una dirección. Además, todos los cambios de vías son utilizados, de forma simple o compuesta. 
     
     \begin{table}[H]
         {
@@ -34,4 +43,4 @@
      }
     \end{table}
     
-    \lipsum[1]
+    Algunas rutas abarcan mas de un \textit{netElement}, como por ejemplo la ruta R15 que comienza en la señal S20 y finaliza en la señal S02, atravesando los \textit{netElements} ne07 y ne01, utilizando los cambios de vías Sw01 y Sw03, en posición reversa y normal respectivamente.
