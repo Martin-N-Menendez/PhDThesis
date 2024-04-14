@@ -1,6 +1,6 @@
 \subsection{Validacion del sistema}
 
-    \lipsum[1]
+    Las 8 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_7}) tienen 8 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_7}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_7}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -10,7 +10,7 @@
         %\small
             %\centering
             \begin{center}
-            \resizebox{1\textwidth}{!}{
+            \resizebox{0.7\textwidth}{!}{
             \begin{tabular}{ c c c c }
                 \hline	
                     Original & Señales & RNA & Señales \\	
@@ -30,4 +30,4 @@
         }    
     \end{table}
     
-    \lipsum[1]
+     Las rutas R1, R4 y R5 (Tabla \ref{Tab:tabla_generated_7}) generadas por el RNA que no tienen equivalencias en el señalamiento original (Tabla \ref{Tab:tabla_original_7}) se deben a que el RNA creó señales extras. Las señales T02, T08 y T10 fueron creadas por el RNA para proteger los finales de vía absolutos. La Ruta R1 fue establecida por el RNA al crear la señal T02 para proteger el final de vía del \textit{netElement} ne01, creando una ruta con la señal S14. La Ruta R4 fue establecida por el RNA al crear la señal T08 para proteger el final de vía del \textit{netElement} ne42, creando una ruta con la señal S14. La ruta R4 añade una parada intermedia entre las rutas R4 y R5 del señalamiento original, previo al cambio de vías Sw19. La Ruta R5 fue establecida por el RNA al crear la señal T10 para proteger el final de vía del \textit{netElement} ne43, creando una ruta con la señal T07. Estos elementos ferroviarios no se encontraban protegidos en el señalamiento original, además que particionar las rutas R4 y R5 originales en R4+R10 y R4+R11 respectivamente incrementa la mobilidad de la red.

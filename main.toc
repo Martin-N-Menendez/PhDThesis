@@ -138,28 +138,28 @@
 \contentsline {subsection}{\numberline {4.6.7}Sistema generado por el ACG}{208}{}%
 \contentsline {section}{\numberline {4.7}Ejemplo 7}{209}{}%
 \contentsline {subsection}{\numberline {4.7.1}Topología ferroviaria original}{209}{}%
-\contentsline {subsection}{\numberline {4.7.2}Señalamiento original}{210}{}%
+\contentsline {subsection}{\numberline {4.7.2}Señalamiento original}{209}{}%
 \contentsline {subsection}{\numberline {4.7.3}Generación de señalamiento paso a paso}{211}{}%
-\contentsline {subsection}{\numberline {4.7.4}Red de grafos generada por el RNA}{216}{}%
-\contentsline {subsection}{\numberline {4.7.5}Señalamiento generado por el RNA}{217}{}%
-\contentsline {subsection}{\numberline {4.7.6}Validacion del sistema}{218}{}%
-\contentsline {subsection}{\numberline {4.7.7}Sistema generado por el ACG}{219}{}%
-\contentsline {section}{\numberline {4.8}Ejemplo 8}{220}{}%
-\contentsline {subsection}{\numberline {4.8.1}Topología ferroviaria original}{220}{}%
-\contentsline {subsection}{\numberline {4.8.2}Señalamiento original}{221}{}%
-\contentsline {subsection}{\numberline {4.8.3}Generación de señalamiento paso a paso}{222}{}%
-\contentsline {subsection}{\numberline {4.8.4}Red de grafos generada por el RNA}{224}{}%
-\contentsline {subsection}{\numberline {4.8.5}Señalamiento generado por el RNA}{225}{}%
-\contentsline {subsection}{\numberline {4.8.6}Validacion del sistema}{225}{}%
-\contentsline {subsection}{\numberline {4.8.7}Sistema generado por el ACG}{227}{}%
-\contentsline {section}{\numberline {4.9}Ejemplo 9}{227}{}%
-\contentsline {subsection}{\numberline {4.9.1}Topología ferroviaria original}{227}{}%
-\contentsline {subsection}{\numberline {4.9.2}Señalamiento original}{229}{}%
-\contentsline {subsection}{\numberline {4.9.3}Generación de señalamiento paso a paso}{230}{}%
-\contentsline {subsection}{\numberline {4.9.4}Red de grafos generada por el RNA}{235}{}%
-\contentsline {subsection}{\numberline {4.9.5}Señalamiento generado por el RNA}{236}{}%
-\contentsline {subsection}{\numberline {4.9.6}Validacion del sistema}{237}{}%
-\contentsline {subsection}{\numberline {4.9.7}Sistema generado por el ACG}{237}{}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{239}{}%
-\contentsline {section}{\numberline {5.1}Resultados obtenidos}{239}{}%
-\contentsline {section}{\numberline {5.2}Trabajo futuro}{239}{}%
+\contentsline {subsection}{\numberline {4.7.4}Red de grafos generada por el RNA}{219}{}%
+\contentsline {subsection}{\numberline {4.7.5}Señalamiento generado por el RNA}{220}{}%
+\contentsline {subsection}{\numberline {4.7.6}Validacion del sistema}{221}{}%
+\contentsline {subsection}{\numberline {4.7.7}Sistema generado por el ACG}{221}{}%
+\contentsline {section}{\numberline {4.8}Ejemplo 8}{222}{}%
+\contentsline {subsection}{\numberline {4.8.1}Topología ferroviaria original}{222}{}%
+\contentsline {subsection}{\numberline {4.8.2}Señalamiento original}{223}{}%
+\contentsline {subsection}{\numberline {4.8.3}Generación de señalamiento paso a paso}{223}{}%
+\contentsline {subsection}{\numberline {4.8.4}Red de grafos generada por el RNA}{230}{}%
+\contentsline {subsection}{\numberline {4.8.5}Señalamiento generado por el RNA}{231}{}%
+\contentsline {subsection}{\numberline {4.8.6}Validacion del sistema}{231}{}%
+\contentsline {subsection}{\numberline {4.8.7}Sistema generado por el ACG}{232}{}%
+\contentsline {section}{\numberline {4.9}Ejemplo 9}{233}{}%
+\contentsline {subsection}{\numberline {4.9.1}Topología ferroviaria original}{233}{}%
+\contentsline {subsection}{\numberline {4.9.2}Señalamiento original}{235}{}%
+\contentsline {subsection}{\numberline {4.9.3}Generación de señalamiento paso a paso}{236}{}%
+\contentsline {subsection}{\numberline {4.9.4}Red de grafos generada por el RNA}{241}{}%
+\contentsline {subsection}{\numberline {4.9.5}Señalamiento generado por el RNA}{242}{}%
+\contentsline {subsection}{\numberline {4.9.6}Validacion del sistema}{243}{}%
+\contentsline {subsection}{\numberline {4.9.7}Sistema generado por el ACG}{243}{}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{245}{}%
+\contentsline {section}{\numberline {5.1}Resultados obtenidos}{245}{}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{245}{}%

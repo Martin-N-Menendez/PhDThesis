@@ -1,6 +1,6 @@
 \subsection{Validacion del sistema}
 
-    \lipsum[1]
+    Las 12 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_8}) tienen 12 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_8}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_8}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -10,23 +10,23 @@
         %\small
             %\centering
             \begin{center}
-            \resizebox{1\textwidth}{!}{
+            \resizebox{0.7\textwidth}{!}{
             \begin{tabular}{ c c c c }
                 \hline	
                     Original & Señales & RNA & Señales \\	
                 \hline
-                    R$_{01}$ & S$_{06}$-S$_{16}$ & R$_{01}$ & X$_{06}$-C$_{24}$ \\
-                    R$_{02}$ & S$_{07}$-S$_{05}$ & R$_{02}$ & X$_{07}$-L$_{04}$ \\
-                    R$_{03}$ & S$_{08}$-S$_{10}$ & R$_{03}$ & X$_{09}$-S$_{22}$ \\
-                    R$_{04}$ & S$_{10}$-S$_{12}$ & R$_{09}$ & S$_{22}$-X$_{13}$ \\
-                    R$_{05}$ & S$_{10}$-S$_{14}$ & R$_{10}$ & S$_{22}$-X$_{16}$ \\
-                    R$_{06}$ & S$_{11}$-S$_{09}$ & R$_{08}$ & P$_{19}$-S$_{02}$ \\
-                    R$_{07}$ & S$_{12}$-S$_{03}$ & R$_{05}$ & X$_{13}$-T$_{03}$ \\
-                    R$_{08}$ & S$_{13}$-S$_{11}$ & R$_{06}$ & X$_{14}$-J$_{12}$ \\
-                    R$_{09}$ & S$_{14}$-S$_{01}$ & R$_{07}$ & X$_{16}$-C$_{01}$ \\
-                    R$_{10}$ & S$_{15}$-S$_{07}$ & R$_{12}$ & S$_{25}$-S$_{07}$ \\
-                    R$_{11}$ & S$_{15}$-S$_{11}$ & R$_{13}$ & S$_{25}$-X$_{12}$ \\
-                    R$_{12}$ & S$_{16}$-S$_{14}$ & R$_{11}$ & C$_{24}$-X$_{16}$ \\
+                    R$_{01}$ & S$_{06}$-S$_{16}$ & R$_{02}$ & X$_{06}$-C$_{24}$ \\
+                    R$_{02}$ & S$_{07}$-S$_{05}$ & R$_{03}$ & X$_{07}$-X$_{05}$ \\
+                    R$_{03}$ & S$_{08}$-S$_{10}$ & R$_{04}$ & X$_{09}$-S$_{22}$ \\
+                    R$_{04}$ & S$_{10}$-S$_{12}$ & R$_{10}$ & S$_{22}$-X$_{13}$ \\
+                    R$_{05}$ & S$_{10}$-S$_{14}$ & R$_{11}$ & S$_{22}$-X$_{16}$ \\
+                    R$_{06}$ & S$_{11}$-S$_{09}$ & R$_{09}$ & P$_{19}$-L$_{02}$ \\
+                    R$_{07}$ & S$_{12}$-S$_{03}$ & R$_{06}$ & X$_{13}$-L$_{03}$ \\
+                    R$_{08}$ & S$_{13}$-S$_{11}$ & R$_{07}$ & X$_{14}$-X$_{12}$ \\
+                    R$_{09}$ & S$_{14}$-S$_{01}$ & R$_{08}$ & X$_{16}$-L$_{01}$ \\
+                    R$_{10}$ & S$_{15}$-S$_{07}$ & R$_{13}$ & S$_{25}$-X$_{07}$ \\
+                    R$_{11}$ & S$_{15}$-S$_{11}$ & R$_{14}$ & S$_{25}$-X$_{12}$ \\
+                    R$_{12}$ & S$_{16}$-S$_{14}$ & R$_{12}$ & C$_{24}$-X$_{16}$ \\
                 \hline
             \end{tabular}
             }
@@ -34,4 +34,4 @@
         }    
     \end{table}
     
-    \lipsum[1]
+    Las rutas R1 y R5 (Tabla \ref{Tab:tabla_generated_1}) generadas por el RNA que no tienen equivalencias en el señalamiento original (Tabla \ref{Tab:tabla_original_1}) se deben a que el RNA creó señales extras. La ruta R1 es definida por el RNA al crear la señal X05 entre la plata forma Plat01 y el cruce de vías Lc03, lo cual genera una parada intermedia que antes no existía, hasta culminar la ruta en la señal L04. De la misma manera, el RNA define la ruta R5 al crear la señal P19, lo cual genera una parada intermedia entre la platforma Plat02 y el cruce de vías Lc07. En definitiva, el RNA dividió las rutas R2 y R6 originales en las nuevas rutas R3+R1 y R5+R9. Lo cual mejora la logística de la red ferroviaria.
