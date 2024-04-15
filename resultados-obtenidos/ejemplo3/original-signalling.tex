@@ -1,6 +1,15 @@
 \subsection{Señalamiento original}
 
-    \lipsum[1]
+    El señalamiento original, ilustrado en la Figura \ref{fig:EJ3_2}, incluye 31 señales en total. La mayoría de las cuales se sitúan cerca de la curva y contra curva principal o próximas a las estaciones. Nombrarlas una a una sería impráctico, pero se pueden destacar a grandes rangos donde se sitúan, que funciones cumplen y cuales descuidan. En primer lugar, todos los finales de vía absolutos se encuentran desprotegidos, así como gran parte de las playas de maniobras. En segundo lugar, el señalamiento prioriza la circulación de las formaciones en una única dirección, dependiendo de cual vía se inspeccione. Esto lleva a concluir, a prior, que el señalamiento esta subdimensionado al punto de no permitir explotar todas las características de la red ferroviaria.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=1\textwidth]{resultados-obtenidos/ejemplo3/images/3_original.png}
+    	\centering\caption{Señalamiento original del ejemplo 3.}
+    	\label{fig:EJ3_2}
+    \end{figure}
+    
+    Estas señales permiten definir hasta un máximo de 33 rutas, todas ellas detalladas en la Tabla \ref{Tab:tabla_original_3}. En una primera inspección, es evidente la ausencia de señalamiento en los límites de la red ferroviaria y en las playas de maniobras. Incluso pueden advertirse alguna situaciones donde las señales otorgarían autoridades ambiguas, lo cual va en contra del principio de claridad. Por ejemplo, la señal 72A podría habilitar una ruta hacia la izquierda de la topología, pero no queda claro que camino tomaría al usar el cambio de vías Sw09, Sw04, Sw08, Sw12, Sw13 y S11; permitiendo hasta 32 posibles caminos.
     
     \begin{table}[H]
         {
@@ -51,4 +60,4 @@
      }
     \end{table}
     
-    \lipsum[1]
+    Todas las rutas abarcan mas de un \textit{netElement}, como por ejemplo la ruta R32 que comienza en la señal 69P3 y finaliza en la señal 68F, atravesando los \textit{netElements} ne77 y ne9, utilizando el cambio de vías 69W04 en posición reversa.
