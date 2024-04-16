@@ -21,6 +21,13 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 
+\lstset{
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
 \usepackage[backend=biber,bibstyle=ieee,citestyle=numeric-comp,urldate=short,sorting=none]{biblatex}
 
 \addbibresource{references/references.bib}
