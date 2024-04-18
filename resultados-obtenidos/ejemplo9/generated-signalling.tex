@@ -1,35 +1,48 @@
 \subsection{Señalamiento generado por el RNA}
 
-    \lipsum[1]
-    
-    \begin{table}[H]
-        {
-        \caption{Tabla de enclavamiento del ejemplo 9 generada por el RNA.}
-        \label{Tab:tabla_generated_9}
-        \centering
-        \resizebox{1\textwidth}{!}{
-            \begin{tabular}{ c c c c c c c }
-                \hline	
-                    Ruta & Inicio & Final & Cambio & Plataforma & Cruce & netElement \\	
-                \hline
-                  %  R$_{00}$  & X$_{05}$ & L$_{04}$ & - & - & Lc$_{03}$ & ne$_{26}$\\
-                  %  R$_{01}$  & X$_{06}$ & C$_{24}$ & - & Plat$_{01}$ & Lc$_{03}$ & ne$_{26}$\\
-                  %  R$_{02}$  & X$_{07}$ & L$_{04}$ & - & Plat$_{01}$ & Lc$_{03}$ & ne$_{26}$\\
-                  %  R$_{03}$  & X$_{09}$ & S$_{22}$ & - & Plat$_{02}$ & Lc$_{07}$ & ne$_{23}$\\
-                  %  R$_{04}$  & X$_{12}$ & S$_{22}$ & - & - & Lc$_{09}$ & ne$_{23}$\\
-                  %  R$_{05}$  & X$_{13}$ & L$_{03}$ & - & - & Lc$_{05}$ & ne$_{25}$\\
-                  %  R$_{06}$  & X$_{14}$ & X$_{12}$ & Sw$_{11}^{N}$ & - & Lc$_{05}$ & ne$_{25}$-ne$_{23}$\\
-                  %  R$_{07}$  & X$_{16}$ & L$_{01}$ & - & - & Lc$_{06}$ & ne$_{03}$\\
-                  %  R$_{08}$  & P$_{19}$ & L$_{02}$ & - & - & Lc$_{07}$ & ne$_{23}$\\
-                  %  R$_{09}$  & S$_{22}$ & X$_{13}$ & Sw$_{11}^{N}$ & - & Lc$_{09}$ & ne$_{23}$-ne$_{25}$\\
-                  %  R$_{10}$  & S$_{22}$ & X$_{16}$ & Sw$_{11}^{R}$+Sw$_{12}^{R}$ & - & Lc$_{09}$ & ne$_{23}$-ne$_{03}$\\
-                  %  R$_{11}$  & C$_{24}$ & X$_{16}$ & Sw$_{12}^{N}$ & - & Lc$_{04}$ & ne$_{26}$-ne$_{03}$\\
-                  %  R$_{12}$  & S$_{25}$ & X$_{07}$ & Sw$_{12}^{N}$ & - & Lc$_{06}$ & ne$_{03}$-ne$_{26}$\\
-                  %  R$_{13}$  & S$_{25}$ & X$_{12}$ & Sw$_{04}^{R}$+Sw$_{07}^{N}$ & - & Lc$_{06}$ & ne$_{03}$-ne$_{23}$\\
-                \hline
-            \end{tabular}
-        }
-     }
-    \end{table}
-    
-    \lipsum[1]
+	El RNA también exporta la misma información mostrada en el Código \ref{lst:EJ9_8} en una hoja de cálculo, similar a la que se visualiza en la Tabla \ref{Tab:tabla_generated_9}.
+	
+	\begin{table}[H]
+		{
+			\caption{Tabla de enclavamiento del ejemplo 9 generada por el RNA.}
+			\label{Tab:tabla_generated_9}
+			\centering
+			\resizebox{1\textwidth}{!}{
+				\begin{tabular}{ c c c c c c c }
+					\hline	
+					Ruta & Inicio & Final & Cambio & Plataforma & Cruce & netElement \\	
+					\hline
+					R$_{01}$  & T$_{02}$ & S$_{42}$ & - & Plat$_{10}$ & - & ne$_{3}$-ne$_{3}$\\
+					R$_{02}$  & T$_{04}$ & J$_{25}$ & - & - & - & ne$_{40}$-ne$_{40}$\\	
+					R$_{03}$  & J$_{05}$ & J$_{11}$ & - & Plat$_{11}$ & Lc$_{11}$ & ne$_{49}$-ne$_{49}$\\
+					R$_{04}$  & J$_{06}$ & J$_{24}$ & Sw$_{27}^{R}$+Sw$_{29}^{N}$ & - & - & ne$_{49}$-ne$_{40}$\\
+					R$_{05}$  & J$_{07}$ & J$_{13}$ & - & Plat$_{12}$ & Lc$_{09}$ & ne$_{50}$-ne$_{50}$\\
+					R$_{06}$  & J$_{09}$ & X$_{31}$ & - & Plat$_{13}$ & - & ne$_{46}$-ne$_{46}$\\
+					R$_{07}$  & J$_{10}$ & J$_{24}$ & Sw$_{27}^{N}$ & - & - & ne$_{46}$-ne$_{40}$\\
+					R$_{08}$  & J$_{11}$ & J$_{17}$ & Sw$_{31}^{R}$+Sw$_{33}^{N}$ & - & - & ne$_{149}$-ne$_{03}$\\
+					R$_{09}$  & J$_{12}$ & J$_{06}$ & - & Plat$_{11}$ & Lc$_{11}$ & ne$_{49}$-ne$_{49}$\\
+					R$_{10}$  & J$_{13}$ & J$_{17}$ & Sw$_{31}^{N}$ +Sw$_{33}^{R}$& - & - & ne$_{50}$-ne$_{03}$\\	
+					R$_{11}$  & J$_{14}$ & B$_{46}$ & - & Plat$_{12}$ & Lc$_{09}$ & ne$_{50}$-ne$_{50}$\\
+					R$_{12}$  & J$_{16}$ & J$_{10}$ & - & Plat$_{13}$ & Lc$_{10}$ & ne$_{46}$-ne$_{46}$\\	
+					R$_{13}$  & J$_{17}$ & J$_{21}$ & - & Plat$_{10}$ & - & ne$_{03}$-ne$_{03}$\\
+					R$_{14}$  & J$_{21}$ & T$_{01}$ & - & - & - & ne$_{03}$-ne$_{03}$\\	
+					R$_{15}$  & J$_{24}$ & J$_{26}$ & - & Plat$_{14}$ & - & ne$_{40}$-ne$_{40}$\\
+					R$_{16}$  & J$_{25}$ & S$_{36}$ & - & Plat$_{14}$ & - & ne$_{40}$-ne$_{40}$\\			
+					R$_{17}$  & J$_{26}$ & T$_{03}$ & - & - & - & ne$_{40}$-ne$_{40}$\\
+					R$_{18}$  & X$_{31}$ & C$_{41}$ & - & - & Lc$_{10}$ & ne$_{46}$-ne$_{46}$\\
+					R$_{19}$  & X$_{33}$ & J$_{17}$ & Sw$_{31}^{R}$+Sw$_{33}^{N}$ & - & Lc$_{11}$ & ne$_{49}$-ne$_{03}$\\
+					R$_{20}$  & S$_{36}$ & J$_{09}$ & Sw$_{27}^{N}$ & - & - & ne$_{40}$-ne$_{46}$\\
+					R$_{21}$  & S$_{36}$ & J$_{05}$ & Sw$_{27}^{R}$+Sw$_{29}^{N}$ & - & - & ne$_{40}$-ne$_{49}$\\				
+					R$_{22}$  & S$_{36}$ & J$_{07}$ & Sw$_{27}^{R}$+Sw$_{29}^{R}$ & - & - & ne$_{40}$-ne$_{50}$\\
+					R$_{23}$  & C$_{41}$ & J$_{17}$ & Sw$_{31}^{N}$ & - & - & ne$_{46}$-ne$_{03}$\\	
+					R$_{24}$  & S$_{42}$ & J$_{16}$ & Sw$_{31}^{N}$ & - & - & ne$_{03}$-ne$_{46}$\\
+					R$_{25}$  & S$_{42}$ & J$_{12}$ & Sw$_{31}^{R}$+Sw$_{33}^{N}$ & - & - & ne$_{03}$-ne$_{49}$\\	
+					R$_{26}$  & S$_{42}$ & J$_{14}$ & Sw$_{31}^{R}$+Sw$_{33}^{R}$ & - & - & ne$_{03}$-ne$_{50}$\\	
+					R$_{27}$  & B$_{46}$ & J$_{24}$ & Sw$_{27}^{R}$+Sw$_{29}^{R}$ & - & - & ne$_{50}$-ne$_{40}$\\
+					\hline
+				\end{tabular}
+			}
+		}
+	\end{table}
+	
+	En una primera inspección podemos ver que el nuevo señalamiento tiene 27 rutas. Las mismas cubren toda la topologia en ambas direcciones, permitiendo todos los movimientos posibles. Además, todas las rutas inician y terminan en lugares críticos: antes de una bifurcación o convergencia de vías, antes de una plataforma, antes de un cruce de vías o antes de una juntura. Lo cual permite al conductor anticiparse a los próximos posibles peligros.

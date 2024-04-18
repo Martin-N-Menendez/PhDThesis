@@ -1,3 +1,45 @@
 \subsection{Sistema generado por el ACG}
 
-\lipsum[3]
+	En base a la red de grafos, ilustrada en la Figura \ref{fig:EJ9_8}, el ACG determinó la siguiente cantidad de elementos, tal puede visualizarse en el Código \ref{lst:EJ9_8}.
+	
+	\begin{lstlisting}[language = {}, caption = Cantidad de elementos a implementar por el ACG, label = {lst:EJ9_8}]
+	n_netElements:7
+	n_switch:4
+	n_doubleSwitch:0
+	n_borders:0
+	n_buffers:2
+	n_levelCrossings:3
+	n_platforms:5
+	n_scissorCrossings:0
+	n_signals:25
+	N : 91
+	M : 84
+	\end{lstlisting}
+	
+	El código VHDL generado por el ACG es importado en un proyecto de Vivado, donde es sintetizado e implementado para generar el bitstream que será utilizado para programar la FPGA. La cantidad de elementos de la FPGA utilizados por el sistema post-síntesis y post-implementación, así como el porcentaje de uso de la plataforma, son detallados en la Tabla \ref{Tab:tabla_ACG_9}.
+	
+	\begin{table}[H]
+		{
+			\caption{Síntesis e implementación del ejemplo 9 generado por el ACG.}
+			\label{Tab:tabla_ACG_9}
+			\centering
+			%\small
+			%\centering
+			\begin{center}
+				\resizebox{0.7\textwidth}{!}{
+					\begin{tabular}{ c c c c }
+						\hline	
+						Recursos & Síntesis & Implementación & Uso \\	
+						\hline
+						LUT & 4382 & 4376 & 8.24-8.23\%\\
+						FF & 5933 & 5933 & 5.58\%\\
+						IO & 16 & 16 & 12.80\%\\
+						BUFG & 1 & 1 & 3.13\%\\
+						\hline
+					\end{tabular}
+				}
+			\end{center}
+		}    
+	\end{table}
+	
+	En este ejemplo, la cantidad de recursos utilizados es baja y el tiempo de sintetización e implementación es de 49 y 44 segundos respectivamente.
