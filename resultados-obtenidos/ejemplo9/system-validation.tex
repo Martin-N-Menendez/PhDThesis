@@ -1,37 +1,3 @@
-\subsection{Validacion del sistema}
+\subsection{Validación del sistema de enclavamientos}
 
-    \lipsum[1]
-
-    \begin{table}[H]
-        {
-        \caption{Equivalencias entre las rutas originales y las generadas por el RNA.}
-        \label{Tab:tabla_validation_9}
-        \centering
-        %\small
-            %\centering
-            \begin{center}
-            \resizebox{1\textwidth}{!}{
-            \begin{tabular}{ c c c c }
-                \hline	
-                    Original & Señales & RNA & Señales \\	
-                \hline
-                %    R$_{01}$ & S$_{06}$-S$_{16}$ & R$_{01}$ & X$_{06}$-C$_{24}$ \\
-                %    R$_{02}$ & S$_{07}$-S$_{05}$ & R$_{02}$ & X$_{07}$-L$_{04}$ \\
-                %    R$_{03}$ & S$_{08}$-S$_{10}$ & R$_{03}$ & X$_{09}$-S$_{22}$ \\
-                %    R$_{04}$ & S$_{10}$-S$_{12}$ & R$_{09}$ & S$_{22}$-X$_{13}$ \\
-                %    R$_{05}$ & S$_{10}$-S$_{14}$ & R$_{10}$ & S$_{22}$-X$_{16}$ \\
-                %    R$_{06}$ & S$_{11}$-S$_{09}$ & R$_{08}$ & P$_{19}$-S$_{02}$ \\
-                %    R$_{07}$ & S$_{12}$-S$_{03}$ & R$_{05}$ & X$_{13}$-T$_{03}$ \\
-                %    R$_{08}$ & S$_{13}$-S$_{11}$ & R$_{06}$ & X$_{14}$-J$_{12}$ \\
-                %    R$_{09}$ & S$_{14}$-S$_{01}$ & R$_{07}$ & X$_{16}$-C$_{01}$ \\
-                %    R$_{10}$ & S$_{15}$-S$_{07}$ & R$_{12}$ & S$_{25}$-S$_{07}$ \\
-                %    R$_{11}$ & S$_{15}$-S$_{11}$ & R$_{13}$ & S$_{25}$-X$_{12}$ \\
-                %    R$_{12}$ & S$_{16}$-S$_{14}$ & R$_{11}$ & C$_{24}$-X$_{16}$ \\
-                \hline
-            \end{tabular}
-            }
-            \end{center}
-        }    
-    \end{table}
-    
-    \lipsum[1]
+    Al no existir un señalamiento original, no es posible realizar una comparación ruta a ruta entre ambos sistemas. Sin embargo, el RNA siempre realiza la comprobación de cada uno de los principios de señalamiento. Por ejemplo, al aplicar el Algoritmo \ref{alg:ppio_infraestructura} referido a la comprobación del principio de infraestructura, los siguientes conjuntos de \textit{netElements} poseen elementos ferroviarios que necesitan protección: ['ne40', 'ne48', 'ne53', 'ne3'] ['ne49', 'ne46'] ['ne48', 'ne50', 'ne53'] ['ne40', 'ne3'] ['ne49', 'ne46']. Al finalizar la comprobación, el RNA comprobó que el señalamiento cubre todos los elementos ferroviarios desde cada uno de sus flancos. 
