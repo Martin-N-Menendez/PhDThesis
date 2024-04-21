@@ -1,12 +1,12 @@
 \subsection{Protección por solape}
 
-\lipsum[1]
+	Si una formación no detiene su marcha antes de una señal de peligro, el sistema de enclavamiento debe bloquear las secciones pertenecientes a esa ruta y la próxima, junto con la infraestructura asociado. La Figura \ref{fig:ACG_solape_1} ilustra este suceso, donde una formación ingresa a la sección violeta pasando una señal a peligro, sin tener la autorización requerida. A diferencia de la protección por aproximación, donde una formación no logra detenerse antes de ingresar a una ruta cancelada con poca anticipación, la protección por solape se ocupa de proteger la infraestructura en el caso de que la formación ingrese a una ruta que jamás fue habilitada.
 
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/solape}
-        \centering\caption{Protección por solape.}
-        \label{fig:solape_1}
+        \centering\caption{Formación ignora señal a peligro y se activa la protección por solape.}
+        \label{fig:ACG_solape_1}
     \end{figure}
     
-\lipsum[1]
+    Automáticamente, las secciones de la próxima ruta (coloreadas en naranja) son bloqueadas, a la vez que los cambios de vías cercanos y todas las señales tanto consecutivas como contrarias o convergentes. El bloqueo se removerá una vez que la formación se detenga en la próxima señal a peligro, luego de un tiempo de seguridad.

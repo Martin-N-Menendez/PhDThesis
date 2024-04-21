@@ -1,58 +1,59 @@
 \subsection{Modulo Network}
-
-El módulo \textit{Network} es el encargado de instanciar todos los elementos ferroviarios presentes en la red de grafos generada por el RNA e interconectarlos como ésta indica. Es el módulo que mas recursos de la FPGA utiliza y donde más se hace énfasis en el uso óptimo de los recursos. Se prioriza la máxima descentralización posible de los módulos instanciados internamente, de forma tal que cada uno de ellos solo dependa de la mínima cantidad necesaria de módulos, evitando conexiones innecesarias. El diagrama de bloques de las máquinas de estado finitas con camino de datos diseñado para lograr este objetivo se muestra en la Figura \ref{fig:Network_module}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figuras/Network_module.png}
-	\centering\caption{FSMD del módulo \textit{Network}.}
-	\label{fig:Network_module}
-\end{figure}
-
-Los módulos de \textit{NetElements}, \textit{Routes} y \textit{Signals} son obligatorios ya que se encuentran presentes en la mínima red ferroviaria aceptada por el RNA. En cambio, los módulos de \textit{SingleSwitches}, \textit{DoubleSwitches}, \textit{ScissorCrossings} y \textit{LevelCrossings} son opcionales y dependen de que existan en la locación. Es decir, si un elemento ferroviario no existe, no solamente no serán instanciado por el ACG, sino que tampoco se generarán archivos que definan sus módulos, señales auxiliares que los interconecten a otros módulos ni tampoco entradas o salidas en otros módulos, destinados a este elemento. De esta manera, se reduce la complejidad del sistema enormemente al implementar solamente los puertos, señales, módulos y conexiones que serán utilizados por el sistema de enclavamiento.
-
-Para garantizar la descentralización de la red, a todos los elementos ferroviarios con entidad física, es decir, todos los mencionados menos las rutas que son entidades abstractas, se les implementa la propiedad de enclavamiento. El enclavamiento de un elemento puede presentar tres estados, tal como se describe en la Tabla \ref{Tab:interlock_states}.
-
-	\begin{table}[!h]
-	{
-		\caption{Estados de enclavamiento de cada elemento ferroviario.}
-		\label{Tab:interlock_states}
+	\label{sec:network}
+	
+	El módulo \textit{Network} es el encargado de instanciar todos los elementos ferroviarios presentes en la red de grafos generada por el RNA e interconectarlos como ésta indica. Es el módulo que mas recursos de la FPGA utiliza y donde más se hace énfasis en el uso óptimo de los recursos. Se prioriza la máxima descentralización posible de los módulos instanciados internamente, de forma tal que cada uno de ellos solo dependa de la mínima cantidad necesaria de módulos, evitando conexiones innecesarias. El diagrama de bloques de las máquinas de estado finitas con camino de datos diseñado para lograr este objetivo se muestra en la Figura \ref{fig:Network_module}.
+	
+	\begin{figure}[H]
 		\centering
-		\resizebox{1\textwidth}{!}{
-		\begin{tabular}{ p{5cm} p{4cm} p{4cm} }
-			\hline	
-			Liberado & Reservado & Enclavado \\	
-			\hline
-			Solicitado por cualquier ruta u opera de forma automática.& 
-			Operado solamente por la ruta que lo reservó.&
-			Depende de sí mismo y de la ruta que lo enclavó.\\
-			\hline
-		\end{tabular}
+		\includegraphics[width=1\textwidth]{Figuras/Network_module.png}
+		\centering\caption{FSMD del módulo \textit{Network}.}
+		\label{fig:Network_module}
+	\end{figure}
+	
+	Los módulos de \textit{NetElements}, \textit{Routes} y \textit{Signals} son obligatorios ya que se encuentran presentes en la mínima red ferroviaria aceptada por el RNA. En cambio, los módulos de \textit{SingleSwitches}, \textit{DoubleSwitches}, \textit{ScissorCrossings} y \textit{LevelCrossings} son opcionales y dependen de que existan en la locación. Es decir, si un elemento ferroviario no existe, no solamente no serán instanciado por el ACG, sino que tampoco se generarán archivos que definan sus módulos, señales auxiliares que los interconecten a otros módulos ni tampoco entradas o salidas en otros módulos, destinados a este elemento. De esta manera, se reduce la complejidad del sistema enormemente al implementar solamente los puertos, señales, módulos y conexiones que serán utilizados por el sistema de enclavamiento.
+	
+	Para garantizar la descentralización de la red, a todos los elementos ferroviarios con entidad física, es decir, todos los mencionados menos las rutas que son entidades abstractas, se les implementa la propiedad de enclavamiento. El enclavamiento de un elemento puede presentar tres estados, tal como se describe en la Tabla \ref{Tab:interlock_states}.
+	
+		\begin{table}[!h]
+		{
+			\caption{Estados de enclavamiento de cada elemento ferroviario.}
+			\label{Tab:interlock_states}
+			\centering
+			\resizebox{1\textwidth}{!}{
+			\begin{tabular}{ p{5cm} p{4cm} p{4cm} }
+				\hline	
+				Liberado & Reservado & Enclavado \\	
+				\hline
+				Solicitado por cualquier ruta u opera de forma automática.& 
+				Operado solamente por la ruta que lo reservó.&
+				Depende de sí mismo y de la ruta que lo enclavó.\\
+				\hline
+			\end{tabular}
+			}
 		}
-	}
-	\end{table}
-
-Todo elemento se encuentra por defecto en el estado liberado y puede ser solicitado por cualquier ruta. Tan pronto una ruta envía el comando de reserva al elemento, pasa a estar en estado reservado y ninguna otra ruta podrá hacer uso de este elemento. Finalmente, si la ruta ha podido reservar todos los elementos necesarios para cumplir las condiciones para ser habilitada, enviará la señal de enclavamiento a todos los elementos involucrados, evitando que puedan ser comandados por otras rutas. Esto incluye tanto a la ocupación de vías (\textit{NetElements}) como a las señales (\textit{Signals}), pasando por todos los cambios de vías (\textit{SingleSwitches}, \textit{DoubleSwitches} y \textit{ScissorCrossings}) y barreras de pasos a nivel (\textit{LevelCrossings}). De esta manera el ACG se asegura que cada elemento sea controlado por una única ruta por vez o de forma automática si ninguna ruta demanda su uso.
-
-Para generalizar y modelizar el comportamiento dinámico del enclavamiento los elementos ferroviarios recurrimos a las redes de Petri \cite{Paper_64,Paper_65,Paper_88,Paper_94,Paper_95,Paper_123,Paper_196}. Una red de Petri es la representación gráfica de un modelo matemático de autómatas concurrente. Las mismas están formadas por lugares (el estado), las transiciones que concentran las condiciones para pasar de un lugar a otro y los arcos que conectan lugares y transiciones. Las redes de Petri puede poseer uno o mas tokens que representan en que estado se encuentra el sistema. Algunas redes de Petri admiten mas de un token por red, o incluso mas de un token por lugar. En el caso del sistema de enclavamiento se definieron solamente redes de Petri con un único token por red, siendo que el sistema solo puede adoptar un estado en cada momento. En la Figura \ref{fig:Interlocking_petri} se visualiza el modelo matemático del enclavamiento de un elemento ferroviario genérico.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Figuras/INT_petri}
-	\centering\caption{Red de Petri del modelo dinámico de enclavamiento de elementos ferroviarios genéricos.}
-	\label{fig:Interlocking_petri}
-\end{figure}
-
-La transición de un elemento ferroviario del estado liberado a reservado no solo puede darse por el pedido expreso de una ruta que lo solicite, sino también de facto al ocuparse los netElements cercanos al elemento, lo cual inicia lo que se denomina 'bloqueo por ocupación' (ver Sección XXX). Esto protege al sistema al impedir que otras rutas soliciten un cambio de estado de un elemento que esta siendo usado por una formación que no ha solicitado ningún permiso, reduciendo el riesgo de accidentes por descarrillamiento o colisión. La red de Petri también deja explícito la inclusión de un timeout para las reservas, con un valor por defecto de 7 segundos, configurable por el usuario. De no cumplirse que el comando y la indicación coincidan dentro del tiempo estipulado, el elemento es liberado, siempre que no se encuentren formaciones cercanas. Las transición de reserva a enclavamiento requiere que tanto el comando como la indicación coincidan y que la ruta solicite el enclavamiento al haber confirmado que todas las condiciones de ruta se han cumplido y es inminente su habilitación. El elemento ferroviario deja de estar enclavado cuando la ruta lo solicita expresamente, momento en el cuál pasa a estar liberado para que otras rutas puedan usarlo.
-
-A diferencia de los módulos explicados en secciones anteriores, donde cada módulo era instanciado una vez, los módulos que modelan elementos ferroviarios, con entidad física o abstracta, son instanciados tantas veces como unidades de éstos existan. Es por eso que, en las siguientes secciones, hablaremos de módulos genéricos a la hora de describir cada módulo. Estos módulos genéricos presentarán todas las entradas, salidas y funcionalidades que pueden tener, de ser requeridas. 
-
-Es trabajo del ACG determinar cuales de ellas deben ser implementadas y cuales no. Por ejemplo, si una ruta A requiere que una barrera X se encuentre baja, pero no tiene requerimientos respecto a las posiciones de los cambios porque la ruta A no los utiliza, entonces el ACG instanciará el módulo de la ruta A considerando en las entradas y salidas los estados de la barrera X y los comandos para operarla, intercontando el módulo de ruta A con el módulo de la barrera ferroviaria X. En cambio, el ACG no implementará ningún puerto destinado a los cambios de vías ni lo considerará en las funcionalidades del módulo de ruta A. De igual manera, el ACG conectará los estados de ocupación de vías correspondientes solamente a los módulos de los elementos ferroviarios que los necesitan y no la totalidad del vector de datos.
-
-\input{ACG/arquitectura/levelCrossings}
-\input{ACG/arquitectura/singlesSwitches}
-\input{ACG/arquitectura/doubleSwitches}
-\input{ACG/arquitectura/scissorCrossings}
-\input{ACG/arquitectura/netElements}
-\input{ACG/arquitectura/signals}
-\input{ACG/arquitectura/routes}
+		\end{table}
+	
+	Todo elemento se encuentra por defecto en el estado liberado y puede ser solicitado por cualquier ruta. Tan pronto una ruta envía el comando de reserva al elemento, pasa a estar en estado reservado y ninguna otra ruta podrá hacer uso de este elemento. Finalmente, si la ruta ha podido reservar todos los elementos necesarios para cumplir las condiciones para ser habilitada, enviará la señal de enclavamiento a todos los elementos involucrados, evitando que puedan ser comandados por otras rutas. Esto incluye tanto a la ocupación de vías (\textit{NetElements}) como a las señales (\textit{Signals}), pasando por todos los cambios de vías (\textit{SingleSwitches}, \textit{DoubleSwitches} y \textit{ScissorCrossings}) y barreras de pasos a nivel (\textit{LevelCrossings}). De esta manera el ACG se asegura que cada elemento sea controlado por una única ruta por vez o de forma automática si ninguna ruta demanda su uso.
+	
+	Para generalizar y modelizar el comportamiento dinámico del enclavamiento los elementos ferroviarios recurrimos a las redes de Petri \cite{Paper_64,Paper_65,Paper_88,Paper_94,Paper_95,Paper_123,Paper_196}. Una red de Petri es la representación gráfica de un modelo matemático de autómatas concurrente. Las mismas están formadas por lugares (el estado), las transiciones que concentran las condiciones para pasar de un lugar a otro y los arcos que conectan lugares y transiciones. Las redes de Petri puede poseer uno o mas tokens que representan en que estado se encuentra el sistema. Algunas redes de Petri admiten mas de un token por red, o incluso mas de un token por lugar. En el caso del sistema de enclavamiento se definieron solamente redes de Petri con un único token por red, siendo que el sistema solo puede adoptar un estado en cada momento. En la Figura \ref{fig:Interlocking_petri} se visualiza el modelo matemático del enclavamiento de un elemento ferroviario genérico.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{Figuras/INT_petri}
+		\centering\caption{Red de Petri del modelo dinámico de enclavamiento de elementos ferroviarios genéricos.}
+		\label{fig:Interlocking_petri}
+	\end{figure}
+	
+	La transición de un elemento ferroviario del estado liberado a reservado no solo puede darse por el pedido expreso de una ruta que lo solicite, sino también de facto al ocuparse los netElements cercanos al elemento, lo cual inicia lo que se denomina 'bloqueo por ocupación' (ver Sección XXX). Esto protege al sistema al impedir que otras rutas soliciten un cambio de estado de un elemento que esta siendo usado por una formación que no ha solicitado ningún permiso, reduciendo el riesgo de accidentes por descarrillamiento o colisión. La red de Petri también deja explícito la inclusión de un timeout para las reservas, con un valor por defecto de 7 segundos, configurable por el usuario. De no cumplirse que el comando y la indicación coincidan dentro del tiempo estipulado, el elemento es liberado, siempre que no se encuentren formaciones cercanas. Las transición de reserva a enclavamiento requiere que tanto el comando como la indicación coincidan y que la ruta solicite el enclavamiento al haber confirmado que todas las condiciones de ruta se han cumplido y es inminente su habilitación. El elemento ferroviario deja de estar enclavado cuando la ruta lo solicita expresamente, momento en el cuál pasa a estar liberado para que otras rutas puedan usarlo.
+	
+	A diferencia de los módulos explicados en secciones anteriores, donde cada módulo era instanciado una vez, los módulos que modelan elementos ferroviarios, con entidad física o abstracta, son instanciados tantas veces como unidades de éstos existan. Es por eso que, en las siguientes secciones, hablaremos de módulos genéricos a la hora de describir cada módulo. Estos módulos genéricos presentarán todas las entradas, salidas y funcionalidades que pueden tener, de ser requeridas. 
+	
+	Es trabajo del ACG determinar cuales de ellas deben ser implementadas y cuales no. Por ejemplo, si una ruta A requiere que una barrera X se encuentre baja, pero no tiene requerimientos respecto a las posiciones de los cambios porque la ruta A no los utiliza, entonces el ACG instanciará el módulo de la ruta A considerando en las entradas y salidas los estados de la barrera X y los comandos para operarla, intercontando el módulo de ruta A con el módulo de la barrera ferroviaria X. En cambio, el ACG no implementará ningún puerto destinado a los cambios de vías ni lo considerará en las funcionalidades del módulo de ruta A. De igual manera, el ACG conectará los estados de ocupación de vías correspondientes solamente a los módulos de los elementos ferroviarios que los necesitan y no la totalidad del vector de datos.
+	
+	\input{ACG/arquitectura/levelCrossings}
+	\input{ACG/arquitectura/singlesSwitches}
+	\input{ACG/arquitectura/doubleSwitches}
+	\input{ACG/arquitectura/scissorCrossings}
+	\input{ACG/arquitectura/netElements}
+	\input{ACG/arquitectura/signals}
+	\input{ACG/arquitectura/routes}

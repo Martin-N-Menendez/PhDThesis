@@ -1,22 +1,13 @@
 \section{Sistemas de enclavamiento}
-
-% MOVER ESTA ETIQUETA
-\label{sec:petri}
-
-A modo de ejemplo, se ilustra en la Figura \ref{fig:enclavamiento} un sistema de cambios en una vía simple con bypass. Esto permite que dos formaciones puedan cruzarse en sentidos opuestos sin colisionar.
-
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=1\textwidth]{Figuras/bypass}
-        \centering\caption{XXXXX.}
-        \label{fig:enclavamiento}
-    \end{figure}
-
-Para evitar la colisión, se requiere un control seguro que evite que las formaciones avancen hacia secciones ya ocupadas por otras. También debe evitar que las formaciones avancen sobre los cambios cuando estos aún no han terminado de posicionarse en su lugar, lo que provocaría descarrilamientos. A este control se lo denomina sistema de enclavamiento y, en definitiva, impide que se produzcan configuraciones no seguras y controla los semáforos que habilitan o no los itinerarios de las formaciones. Una falla en un enclavamiento puede poner en peligro cientos de vidas humanas y generar gastos considerables. Por lo tanto, en el diseño del sistema de enclavamiento se deben cumplir estrictos parámetros de fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS).
-    
-\input{ACG/sistemas-enclavamiento/bloqueo-por-ocupacion}
-\input{ACG/sistemas-enclavamiento/bloqueo-rutas}
-\input{ACG/sistemas-enclavamiento/proteccion-aproximacion}
-\input{ACG/sistemas-enclavamiento/proteccion-solape}
-\input{ACG/sistemas-enclavamiento/doble-recubrimiento}
-\input{ACG/sistemas-enclavamiento/liberacion-secuencial}
+	\label{sec:interlockingTheory}
+	
+	Tal cómo fue definido en la Sección \ref{sec:topologias}, un sistema de enclavamientos debe gestionar las rutas ferroviarias, utilizando el señalamiento para otorgarle al conductor ferroviario autoridad o no sobre ciertas secciones de la red ferroviaria. Las decisiones se toman en base al estado actual de los elementos ferroviarios que componen la red y qué estado garantiza una mayor seguridad, impidiendo descarrillamientos y colisiones.
+	
+	Existen diversas funcionalidades que complementan al sistema de enclavamientos. Algunas centradas en incrementar la seguridad general del sistema y otras en flexibilizar la logística de la asignación de rutas. En esta sección se describirán seis de las funcionalidades principales del sistema de enclavamientos implementadas por el ACG.
+	
+	\input{ACG/sistemas-enclavamiento/bloqueo-por-ocupacion}
+	\input{ACG/sistemas-enclavamiento/bloqueo-rutas}
+	\input{ACG/sistemas-enclavamiento/proteccion-aproximacion}
+	\input{ACG/sistemas-enclavamiento/proteccion-solape}
+	\input{ACG/sistemas-enclavamiento/doble-recubrimiento}
+	\input{ACG/sistemas-enclavamiento/liberacion-secuencial}

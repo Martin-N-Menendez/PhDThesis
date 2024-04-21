@@ -1,17 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[70] biber-MSWIN64:340> INFO - === 
-[111] Biber.pm:420> INFO - Reading 'main.bcf'
-[279] Biber.pm:994> INFO - Found 250 citekeys in bib section 0
-[287] Biber.pm:4463> INFO - Processing section 0
-[295] Biber.pm:4654> INFO - Looking for bibtex file 'references/references.bib' for section 0
-[339] bibtex.pm:1713> INFO - LaTeX decoding ...
-[427] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
-[978] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[978] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[979] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[1053] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1131] bbl.pm:779> INFO - Output to main.bbl
-[1131] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\menen\AppData\Local\Temp\biber_tmp_XHFA\33e59b5ca9ec342068223d604c3f8d55_38548.utf8, line 359, warning: 1 characters of junk seen at toplevel
-[1131] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
-[1131] Biber.pm:133> INFO - WARNINGS: 2
+[81] biber-MSWIN64:340> INFO - === 
+[131] Biber.pm:420> INFO - Reading 'main.bcf'
+[308] Biber.pm:994> INFO - Found 250 citekeys in bib section 0
+[318] Biber.pm:4463> INFO - Processing section 0
+[326] Biber.pm:4654> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[377] bibtex.pm:1713> INFO - LaTeX decoding ...
+[467] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[1014] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1014] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1014] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[1093] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1170] bbl.pm:779> INFO - Output to main.bbl
+[1170] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\menen\AppData\Local\Temp\biber_tmp_ViBm\33e59b5ca9ec342068223d604c3f8d55_5744.utf8, line 359, warning: 1 characters of junk seen at toplevel
+[1170] Biber.pm:131> WARN - I didn't find a database entry for 'Paper_156' (section 0)
+[1170] Biber.pm:133> INFO - WARNINGS: 2

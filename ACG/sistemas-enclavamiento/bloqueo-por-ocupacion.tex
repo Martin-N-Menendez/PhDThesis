@@ -1,10 +1,12 @@
 \subsection{Bloqueo de máquina de cambios por ocupación}
 
-\lipsum[1]
+	Evitar el descarrilamiento de las formaciones es una de las funciones del sistema de enclavamientos. Esto puede ocurrir principalmente en dos situaciones: formaciones circulando a alta velocidad en las curvas o conmutaciones en la máquina de cambios mientras una formación circula sobre el cambio de vías. Para evitar este último escenario, el sistema de enclavamientos implementa un bloqueo de la máquina de cambios por ocupación, tal como se ilustra en la Figura \ref{fig:ACG_ocupacion}.
+
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/ocupacion}
-        \centering\caption{XXXXX.}
-        \label{fig:ocupacion_1}
+        \centering\caption{Bloqueo de máquina de cambios por ocupación de secciones adyacentes.}
+        \label{fig:ACG_ocupacion}
     \end{figure}
-\lipsum[1]
+
+	La funcionalidad implementada radica en inhibir la conmutación de la máquina de cambios si alguna de las secciones de vías próximas al cambio de vías se encuentra ocupada. De esta manera, se garantiza que la posición del cambio de vías se mantendrá al detectar una formación aproximándose y no se permitirá su conmutación hasta que la formación se encuentre completamente alejada una distancia de seguridad. 

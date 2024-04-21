@@ -1,10 +1,11 @@
 \subsection{Módulo Selector}
-
-Se añadió el módulo \textit{Selector} para poder facilitar el testeo de la comunicación serial al permitir anular la totalidad del sistema de enclavamiento. De esta manera, es posible validar la lectura, detección y escritura de tramas en bucle y de forma independiente al sistema de enclavamiento. Esta funcionalidad es habilitada cambiando la posición de un switch de la FPGA y se desactiva invirtiendo su posición. El diagrama de bloques de las máquinas de estado finitas con camino de datos diseñado para lograr este objectivo se muestra en la Figura \ref{fig:Selector_module}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figuras/Selector_module.png}
-	\centering\caption{FSMD del módulo \textit{Selector}.}
-	\label{fig:Selector_module}
-\end{figure}
+	\label{sec:selector}
+	
+	Se añadió el módulo \textit{Selector} para poder facilitar el testeo de la comunicación serial al permitir anular la totalidad del sistema de enclavamiento. De esta manera, es posible validar la lectura, detección y escritura de tramas en bucle y de forma independiente al sistema de enclavamiento. Esta funcionalidad es habilitada cambiando la posición de un switch de la FPGA y se desactiva invirtiendo su posición. El diagrama de bloques de las máquinas de estado finitas con camino de datos diseñado para lograr este objectivo se muestra en la Figura \ref{fig:Selector_module}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Figuras/Selector_module.png}
+		\centering\caption{FSMD del módulo \textit{Selector}.}
+		\label{fig:Selector_module}
+	\end{figure}

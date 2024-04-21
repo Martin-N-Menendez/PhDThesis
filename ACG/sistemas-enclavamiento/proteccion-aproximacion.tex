@@ -1,39 +1,40 @@
-\subsection{Protección por aproximación}
+\subsection{Protección por aproximación en cancelación de ruta}
 
-\lipsum[1]
+	Considerar que una formación se detendrá instantáneamente antes de una señal con aspecto rojo es poco realista e ignora que las formaciones tienen una masa considerable y por lo tanto una inercia. El tiempo de frenado es un aspecto esencial a considerar. La Figura \ref{fig:ACG_aproximacion_1} introduce el caso de una formación tenía una ruta aprobada (aspecto verde) que comenzaba en la sección violeta y abarcaba toda la sección naranja. Por seguridad, ambos cambios de vías fueron bloqueados y sus respectivas señales contrarias fueron forzadas a aspecto rojo y bloqueadas.
 
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/aproximacion_1}
-        \centering\caption{XXXXX.}
-        \label{fig:aproximacion_1}
+        \centering\caption{Formación aproximándose al inicio de la ruta.}
+        \label{fig:ACG_aproximacion_1}
     \end{figure}
     
-\lipsum[1]
-
-    \begin{figure}![h]
+    Mientras la formación se encuentra en movimiento, el operador solicitó la cancelación de la ruta, cambiando el aspecto de la señal a rojo, tal como se visualiza en la Figura \ref{fig:ACG_aproximacion_2}. La formación quizás no tenga el tiempo ni la distancia suficiente para detenerse antes de la señal, por lo que se presentan dos escenarios. Por lo tanto, la ruta deberá seguir protegida durante un tiempo de seguridad.
+    
+    \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/aproximacion_2}
-        \centering\caption{XXXXX.}
-        \label{fig:aproximacion_2}
+        \centering\caption{La ruta es cancelada mietnras la formación se aproxima.}
+        \label{fig:ACG_aproximacion_2}
     \end{figure}
     
-\lipsum[1]
-
+    El primer escenario es el mas favorable: la formación se detiene previo a la señal de peligro y se inicia un contador. Al cumplirse el tiempo de seguridad, las secciones asociadas a la ruta cancelada son liberadas. Lo mismo sucede con los cambios de vías y las señales conflictivas. Este tiempo otorgado permite comprobar que la formación efectivamente se detuvo antes de proceder con la liberación de los elementos ferroviarios para que puedan ser utilizados por otra ruta.
+    
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/aproximacion_3}
-        \centering\caption{XXXXX.}
-        \label{fig:aproximacion_3}
+        \centering\caption{La formación se detiene exitosamente previo a la señal de peligro.}
+        \label{fig:ACG_aproximacion_3}
     \end{figure}
     
-\lipsum[1]
+	En el segundo escenario, la formación no logra detenerse previo a la señal de peligro, tal como se ilustra en la Figura \ref{fig:ACG_aproximacion_4}. Entonces, el sistema de enclavamiento no solamente no libera las secciones pertenecientes a la ruta cancelada, sino que también bloquea las próximas secciones, al no poder estimar cual será la distancia final de frenado de la formación.
 
     \begin{figure}[!h]
         \centering
         \includegraphics[width=1\textwidth]{Figuras/aproximacion_4}
-        \centering\caption{XXXXX.}
-        \label{fig:aproximacion_4}
+        \centering\caption{La formación no se detiene previo a la señal de peligro.}
+        \label{fig:ACG_aproximacion_4}
     \end{figure}
     
-\lipsum[1]
+	Las secciones y elementos ferroviarios próximos se mantienen protegidos y enclavados hasta que la ruta se concluya, aún habiendo sido cancelada. Al finalizar la ruta, el sistema de enclavamiento liberará las secciones y elementos ferroviarios próximos al comprobarse que la formación se detuvo previo a la señal de finalización de la ruta.
+	
