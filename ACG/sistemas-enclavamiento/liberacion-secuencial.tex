@@ -1,7 +1,8 @@
 \subsection{Liberación secuencial}
+
 	\label{sec:ACG_liberacion}
 	
-	Esta claro que las rutas conflictivas no pueden ser habilitadas a la vez, pero existen algunas rutas que son parcialmente conflictivas solamente, que comparten una parte de la infraestructura y no toda. La implementación de la liberación secuencial aumenta la flexibilidad en la asignación y habilitación de rutas, mejorando la logística permita por el sistema de enclavamientos. En la Figura \ref{fig:ACG_secuencial_1} se ilustra una formación que iniciará una ruta ya habilitada, para lo cual ya han sido bloqueadas las secciones (coloreadas en naranja) y la infraestructura (coloreadas en rojo).
+	Las rutas conflictivas no pueden ser habilitadas a la vez, pero existen algunas rutas que son parcialmente conflictivas solamente, porque comparten una parte de la infraestructura y no toda. La implementación de la liberación secuencial aumenta la flexibilidad en la asignación y habilitación de rutas, mejorando la logística permitido por el sistema de enclavamientos. En la Figura \ref{fig:ACG_secuencial_1} se ilustra una formación que iniciará una ruta ya habilitada, para lo cual ya han sido bloqueadas las secciones (coloreadas en naranja) y la infraestructura (coloreadas en rojo).
 	
 	 \begin{figure}[!h]
 	     \centering
@@ -37,6 +38,6 @@
 	     \label{fig:ACG_secuencial_4}
 	 \end{figure}
 	    
-	El ACG implementa estas funcionalidades de seguridad para cada sistema de enclavamientos generado. 
+	Para cada sistema de enclavamientos generado, dependiendo de la infraestructura disponible, el ACG implementa las funciones de seguridad presentadas en la Sección \ref{sec:function_1}, Sección \ref{sec:function_2}, Sección \ref{sec:function_3}, Sección \ref{sec:function_4}, Sección \ref{sec:function_5} y Sección \ref{sec:ACG_liberacion}.
 	
 	En las siguientes secciones se profundizará en la implementación de cada uno de los módulos del sistema y su comportamiento dinámico.
