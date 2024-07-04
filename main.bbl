@@ -6140,6 +6140,68 @@
       \field{title}{Application of Functional Safety on Railways Part I: Modelling \& Design}
       \field{year}{2011}
     \endentry
+    \entry{VIVADO}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=48af4341f745163f945fa838eeabb062}{%
+           family={AMD},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{48af4341f745163f945fa838eeabb062}
+      \strng{fullhash}{48af4341f745163f945fa838eeabb062}
+      \strng{fullhashraw}{48af4341f745163f945fa838eeabb062}
+      \strng{bibnamehash}{48af4341f745163f945fa838eeabb062}
+      \strng{authorbibnamehash}{48af4341f745163f945fa838eeabb062}
+      \strng{authornamehash}{48af4341f745163f945fa838eeabb062}
+      \strng{authorfullhash}{48af4341f745163f945fa838eeabb062}
+      \strng{authorfullhashraw}{48af4341f745163f945fa838eeabb062}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vivado Design Suite}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.xilinx.com/products/design-tools/vivado.html
+      \endverb
+      \verb{url}
+      \verb https://www.xilinx.com/products/design-tools/vivado.html
+      \endverb
+    \endentry
+    \entry{QUARTUS}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9232ef48e81c8fa4eb9a0cafbe1f13d}{%
+           family={INTEL},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{fullhash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{fullhashraw}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{bibnamehash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{authorbibnamehash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{authornamehash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{authorfullhash}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \strng{authorfullhashraw}{f9232ef48e81c8fa4eb9a0cafbe1f13d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quartus Prime Design Software}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.intel.com/content/www/us/en/products/details/fpga/development-tools/quartus-prime.html
+      \endverb
+      \verb{url}
+      \verb https://www.intel.com/content/www/us/en/products/details/fpga/development-tools/quartus-prime.html
+      \endverb
+    \endentry
     \entry{Paper_1}{article}{}{}
       \name{author}{1}{}{%
         {{hash=1abe93f7b1d15d13bf394cc07a1e33fa}{%
@@ -6998,8 +7060,8 @@
       \strng{authornamehash}{0d30ab73b4297d5c2cac60b38bb07946}
       \strng{authorfullhash}{65c12a8022fe28b701c33568ebcb53ef}
       \strng{authorfullhashraw}{65c12a8022fe28b701c33568ebcb53ef}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EEJ Transactions on Electrical and Electronic Engineering}
@@ -7035,8 +7097,8 @@
       \strng{authornamehash}{cfa5330bc043db4ab9b21344dd211d5c}
       \strng{authorfullhash}{8a5af7d436e48e5f05ade97564a7db4a}
       \strng{authorfullhashraw}{8a5af7d436e48e5f05ade97564a7db4a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Supporting design and development of safety critical applications by model based tools}
