@@ -1,6 +1,6 @@
 \subsection{Sistema generado por el ACG}
 
-	En base a la red de grafos, ilustrada en la Figura \ref{fig:EJ1_8}, el ACG determinó la siguiente cantidad de elementos, tal puede visualizarse en el Código \ref{lst:EJ1_8}.
+	En base a la red de grafos, ilustrada en la Figura \ref{fig:EJ1_8}, el ACG determinó la cantidad de elementos ferroviarios de cada tipo, tal como puede visualizarse en el Código \ref{lst:EJ1_8}.
 	
 	\begin{lstlisting}[language = {}, caption = Cantidad de elementos a implementar por el ACG, label = {lst:EJ1_8}]
 	n_netElements:11
@@ -12,11 +12,65 @@
 	n_platforms:2
 	n_scissorCrossings:0
 	n_signals:23
-	N : 85
-	M : 74
+	N : 62
+	M : 62
 	\end{lstlisting}
 	
-	El código VHDL generado por el ACG es importado en un proyecto de Vivado, donde es sintetizado e implementado para generar el bitstream que será utilizado para programar la FPGA. La cantidad de elementos de la FPGA utilizados por el sistema post-síntesis y post-implementación, así como el porcentaje de uso de la plataforma, son detallados en la Tabla \ref{Tab:tabla_ACG_1}.
+	El ACG genera, en el caso de este ejemplo, 80 archivos en formato VHDL, tal como se puede visualizar en la Figura \ref{fig:EJ1_ACG_1}. Podemos destacar de la Figura \ref{fig:EJ1_ACG_1} al archivo \textit{Arty\_Z7-10.XDC}, que define los pines de entrada y salida de la plataforma Arty Z7 10 y Arty Z7 20. Este archivo es provisto por Xilinx para esta familia de plataformas. En caso de utilizar otra plataforma, se deberá incluir el archivo XDC correspondiente. En ambos casos, cada desarrollador debe asignar manualmente los pines a cada puerto del sistema generado por el ACG.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/ACG_files}
+		\centering\caption{Archivos generador por el ACG para el ejemplo 1.}
+		\label{fig:EJ1_ACG_1}
+	\end{figure}
+	
+	Además, podemos mencionar los archivos \textit{my\_package.VHDL} y \textit{flipFlop.VHDL}, ambos generados por el ACG. El primero es una librería que define todos los tipos de datos utilizados por el sistema, y el segundo es un flip-flop tipo D utilizado para generar la secuencia de shift registers necesarios para adaptar el clock de entrada a los diferentes dominios de clock necesarios para el timeout de cada elemento ferroviario.
+	
+	Los archivos restantes son archivos que definen los módulos de alto nivel explicados en la Sección \ref{sec:interlockingArch} o la representación en VHDL de cada elemento ferroviario explicado entre la Sección \ref{sec:ACG_lc} y la Sección \ref{sec:ACG_rts}. Por ejemplo, en base lo descrito en el Código \ref{lst:EJ1_8}, hay 23 señales ferroviarias y podemos visualizar en la Figura \ref{fig:EJ1_ACG_1} 23 archivos referidos a las señales ferroviarias: desde \textit{railwaySignal\_0} hasta \textit{railwaySignal\_22}.
+	
+	Cada ejemplo cuenta con su propia carpeta de principio a fin. Es decir, el archivo railML original, los archivos generados por el RNA y el código generado por el ACG se encuentran en carpetas individuales para cada ejemplo. Esto es una ventaja a la hora de mantener un orden pero una gran desventaja a la hora de sintetizar los proyectos en Vivado. Cada conjunto de archivos debería ser importado de manera individual, previa desvinculación de los archivos del proyecto anterior. Para solucionar este inconveniente se desarrolló el Código \ref{lst:EJ1_script}, que automatiza la importación y desvinculación de los archivos de cada ejemplo.
+	
+	
+	\begin{lstlisting}[language = {bash}, caption = script.tcl, label = {lst:EJ1_script}]
+set chosen 1
+
+# Get a list of all design source files
+set design_sources [get_files -of_objects [get_filesets sources_1]]
+
+remove_files $design_sources
+
+set base_folder_path "ROOT/GICSAFePhD/App/Layouts/Example_"
+set folder_path "${base_folder_path}${chosen}/VHDL"
+
+puts $folder_path
+
+set files [glob -directory $folder_path *.vhd]
+
+add_files -norecurse -scan_for_includes  $files
+
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+	\end{lstlisting}
+	
+	El parámetro \textit{chosen} indica el número de ejemplo seleccionado, mientras que \textit{base\_folder\_path} es la ruta absoluta de los ejemplos, cuyas carpetas deben ser nombradas como \textit{Example\_}+\textit{chosen} para poder ser encontradas. El Código \ref{lst:EJ1_script} puede ser importado en Vivado desde \textit{Tools $>$ Custom Commands $>$ Customize Commands} como un archivo TCL (del inglés, Tool Command Language), que es el formato que define los comandos nativos de Vivado. Pueden importarse tantos archivos TCL como se deseen, uno por cada ejemplo a sintetizar. De esta manera, cada script aparecerá en la barra de acceso rápido de Vivado de forma independiente y se automatiza el proceso de sincronización de archivos.
+	
+	Una vez ejecutado el script, Vivado ordenará los archivos de forma jerárquica, como puede verse en la parte izquierda de la Figura \ref{fig:EJ1_ACG_Vivado} donde el módulo \textit{global} incluye todos los módulos que fueron detallados en la Sección \ref{sec:interlockingArch}. Podemos destacar al módulo \textit{network} que es instanciado 3 veces junto con el módulo \textit{voter}, al ser una redundancia 2oo3, tal fue explicado en la Sección \ref{sec:VHDL2oo3}. Cada una de las instancias del módulo \textit{network} contienen sus propias 62 instancias de los mismos módulos de cada elemento ferroviario ya que N, cantidad de elementos ferroviarios, es 62 en el Código \ref{lst:EJ1_8}.	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/ACG_vivado}
+		\centering\caption{Interfaz del entorno de desarrollo Vivado para el ejemplo 1.}
+		\label{fig:EJ1_ACG_Vivado}
+	\end{figure}
+	
+	La parte derecha de la Figura \ref{fig:EJ1_ACG_Vivado} ilustra la representación en diagrama de bloques de uno de los módulos \textit{network} (los tres módulos tienen los mismos bloques). Puede apreciarse en esta ventana que existen 66 módulos interconectados de forma compleja utilizando 871 señales. Pero esto es solamente una porción del sistema generado por el ACG, de inspeccionar cada uno de los bloques es posible determinar que el ejemplo 1 utiliza 9517 sub módulos conectados automáticamente mediante 21899 señales, lo cual se aleja bastante de un desarrollo que pueda realizarse manualmente de forma trivial.
+	
+	Una vez que Vivado ha generado el diagrama de bloques ya tenemos la certeza de que el código VHDL ha pasado la prueba de sintaxis del entorno de desarrollo. A continuación, se deberá sintetizar e implementar el sistema para generar el bitstream que será utilizado para programar la FPGA. Durante el proceso de síntesis, Vivado busca la mejor forma de representar el código VHDL con compuertas lógicas, por lo que un código de mejor calidad brindará una representación en hardware lo mas fiel posible a lo buscado. Durante el proceso de implementación, en cambio, Vivado calcula si la representación con compuertas lógicas es posible de realizarse con la plataforma disponible. En este proceso influye no solamente la cantidad de compuertas disponibles sino también el tipo de compuertas. Si la plataforma no cuenta con la cantidad suficiente de compuertas A, entonces Vivado buscará la forma de reemplazar esa compuerta por otras compuertas B, C o D, que sean su equivalente lógico. Este proceso de reemplazo y/o simplificación puede llevar a que ambos procesos presenten discrepancias en la cantidad de elementos utilizados. 
+	
+	Los resultados de ambos procesos son detallados en la Tabla \ref{Tab:tabla_ACG_1}. Los porcentajes de uso son calculados por Vivado automáticamente, teniendo en cuenta que la plataforma Arty Z7 20 posee 53200 Look-Up-Tables (LUTs), 106400 Flip-Flops (FFs), 125 Pines de entrada y salida (IOs) y 32 Buffers (BUFGs), tal cómo se explicó en la Sección \ref{sec:AGG}.
 	
 	\begin{table}[H]
 		{
@@ -31,10 +85,10 @@
 						\hline	
 						Recursos & Síntesis & Implementación & Uso \\	
 						\hline
-						LUT & 3613 & 3611 & 6.79\%\\
-						FF & 4555 & 4555 & 4.28\%\\
-						IO & 16 & 16 & 12.80\%\\
-						BUFG & 1 & 1 & 3.13\%\\
+						LUT & 3457 & 3416 & 6.42/6.50\%\\
+						FF & 3810 & 3813 & 3.58\%\\
+						IO & 15 & 15 & 12.00\%\\
+						BUFG & 3 & 3 & 9.38\%\\
 						\hline
 					\end{tabular}
 				}
@@ -42,4 +96,6 @@
 		}    
 	\end{table}
 	
-	En este ejemplo, la cantidad de recursos utilizados es baja y el tiempo de sintetización e implementación es de 47 y 44 segundos respectivamente.
+	En este ejemplo, la cantidad de recursos utilizados es baja y el tiempo de síntesis e implementación es de 47 y 44 segundos, respectivamente.
+	
+	

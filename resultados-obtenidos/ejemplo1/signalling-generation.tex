@@ -24,7 +24,7 @@
 	
 	Por ejemplo, el \textit{netElement} ne1 inicia en la coordenada (810;150) y finaliza en la coordenada (1320;150). El símbolo $>>$ indica que ne1 se encuentra definido de izquierda a derecha, ya que la componente x de la coordenada final es mayor a la de la coordenada inicial, teniendo la misma componente y. Además, se puede comprobar que la lista obtenida en consistente con la Figura \ref{fig:EJ1_2}. Por ejemplo, ne1, ne8 y ne9 comparten la coordenada (1320;150), que coincide con la coordenada del cambio de vías Sw04.
 	
-	A continuación, el RNA detectará la infraestructura ferroviaria, las curvas peligrosas y los puntos medios de los netElements que el RNA considera demasiado largos. El resultado de este proceso se puede visualizar en el Código \ref{lst:EJ1_2} y puede leerse también en el archivo Infrastructure.RNA.
+	A continuación, el RNA detectará la infraestructura ferroviaria, las curvas peligrosas y los puntos medios de los netElements que el RNA considera demasiado largos. El resultado de este proceso se puede visualizar en el Código \ref{lst:EJ1_2}.
 	
 	\begin{lstlisting}[language = {}, caption = Detección de puntos críticos por parte del RNA , label = {lst:EJ1_2}]
 	Analysing infrastructure --> Infrastructure.RNA
@@ -41,6 +41,104 @@
 	ne15 has a Curve(2 lines) @ [[1740, 570]]
 	ne22 has a RailJoint[J15] @ [2452, 150]
 	ne23 has a RailJoint[J14] @ [1284, 0]
+	\end{lstlisting}
+	
+	Esta información es exportada por el RNA, con mayor detalle, en el archivo Infrastructure.RNA \ref{lst:EJ1_4} que resume cada elemento ferroviario asociado a su respectivo \textit{netElement}.
+	
+	\begin{lstlisting}[language = {}, caption = Infrastructure.RNA, label = {lst:EJ1_4}]
+Nodes: 11|Switches: 5|Signals: 0|Detectors: 2|Ends: 7|Barriers: 2
+Node ne1:
+	Track = track1
+	Neighbours = 2 -> ['ne8', 'ne9']
+	Switches -> Sw04
+		ContinueCourse -> right -> ne8
+		BranchCourse -> left -> ne9
+Node ne2:
+	Track = track7
+	Neighbours = 2 -> ['ne12', 'ne13']
+	Switches -> Sw06
+	ContinueCourse -> right -> ne12
+	BranchCourse -> left -> ne13
+Node ne8:
+	Track = track2
+	Neighbours = 4 -> ['ne1', 'ne9', 'ne22', 'ne24']
+	Switches -> Sw12
+		ContinueCourse -> left -> ne22
+		BranchCourse -> right -> ne24
+Node ne9:
+	Track = track3
+	Neighbours = 4 -> ['ne1', 'ne8', 'ne14', 'ne15']
+	Switches -> Sw07
+		ContinueCourse -> left -> ne15
+		BranchCourse -> right -> ne14
+Node ne12:
+	Track = track8
+	Neighbours = 4 -> ['ne2', 'ne13', 'ne23', 'ne24']
+	Switches -> Sw13
+		ContinueCourse -> left -> ne23
+		BranchCourse -> right -> ne24
+Node ne13:
+	Track = track9
+	Type = BufferStop -> ['bus56']
+	Neighbours = 2 -> ['ne2', 'ne12']
+	Level crossing -> lcr74
+		Protection -> true | Barriers -> none | Lights -> none Acoustic -> none
+		Position -> [1317, 180] | Coordinate: 0.7059
+Node ne14:
+	Track = track4
+	Type = BufferStop -> ['bus10']
+	Neighbours = 2 -> ['ne9', 'ne15']
+	Level crossing -> lcr69
+		Protection -> true | Barriers -> none | Lights -> none Acoustic -> none
+		Position -> [1990, -360] | Coordinate: 0.3197
+Node ne15:
+	Track = track10
+	Type = BufferStop -> ['bus59']
+	Neighbours = 2 -> ['ne9', 'ne14']
+Node ne22:
+	Track = track6
+	TrainDetectionElements -> tde78
+	Type -> insulatedRailJoint
+	Neighbours = 2 -> ['ne8', 'ne24']
+Node ne23:
+	Track = track5
+	TrainDetectionElements -> tde77
+	Type -> insulatedRailJoint
+	Neighbours = 2 -> ['ne12', 'ne24']
+Node ne24:
+	Track = track11
+	Neighbours = 4 -> ['ne8', 'ne12', 'ne22', 'ne23']
+	\end{lstlisting}	
+	
+	La información de la infraestructura es utilizada por el RNA para detectar los puntos críticos de la red, es decir, las zonas donde es recomendable colocar una señal, según el sentido de circulación que se desee. El resultado es exportado al archivo SafePoints.RNA (Código \ref{lst:EJ1_5}). En el caso de que un mismo \textit{netElement} tenga más de un punto crítico para el mismo sentido, el RNA tomará el más cercano al elemento a proteger.
+	
+	\begin{lstlisting}[language = {}, caption = SafePoints.RNA, label = {lst:EJ1_5}]
+ne1:
+	Next: [[1065.0, 150]]
+	Prev: [[1065.0, 150]]
+ne2:
+	Next: [[2715.0, 0]]
+	Prev: [[2715.0, 0]]
+ne8:
+	Next: [[1560.0, 150]]
+	Prev: [[1560.0, 150]]
+ne12:
+	Next: [[2205.0, 0]]
+	Prev: [[2205.0, 0]]
+ne13:
+	Next: [[1162, 180], [2180.0, -180]]
+	Prev: [[1764, 180]]
+ne14:
+	Next: [[2290, -360], [1745, -360]]
+	Prev: [[2690, -360], [2145, -360]]
+ne15:
+	Prev: [[1840.0, 570]]
+ne22:
+	Next: [[2352.0, 150]]
+	Prev: [[2552.0, 150]]
+ne23:
+	Next: [[1184.0, 0]]
+	Prev: [[1384.0, 0]]
 	\end{lstlisting}
 	
 	Una vez que el RNA detectó cada punto crítico de la red ferroviaria, procede a generar el señalamiento. El orden de generación no es importante, pero para poder describirlo de forma consistente se iniciará generando el señalamiento para proteger los finales de vías, las junturas entre rieles, las plataformas, los cruces de vía y los cambios de vías. Luego se procederá a mostrar el señalamiento pre y post simplificación. Las señales generadas para proteger los finales de vías relativos y absolutos son ilustradas en la Figura \ref{fig:EJ1_3}.
@@ -107,4 +205,171 @@
 		\label{fig:EJ1_7}
 	\end{figure}
 	
-	Al finalizar la generación del señalamiento, el RNA debe detectar todas las posibles rutas admitidas por la red para crear la tabla de enclavamientos. El RNA exporta los resultados del análisis en los siguientes cuatro documentos: Infrastructure.RNA (Apéndice \ref{sec:infrastructureRNA}), SafePoint.RNA (Apéndice \ref{sec:safePointsRNA}), Signalling.RNA (Apéndice \ref{sec:signallingRNA}) y Routes.RNA (Apéndice \ref{sec:routesRNA}).
+	Además, toda la información del señalamiento generado es exportada por el RNA en el archivo Signalling.RNA (Código \ref{lst:EJ1_6}), que incluye información detallada de la posición, orientación, sentido, coordenada, nombre y tipo de señal.
+		
+	\begin{lstlisting}[language = {}, caption = Signalling.RNA, label = {lst:EJ1_6}]
+T01 [T01] <<:
+	From: ne13 | To: bus56_left
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [910, 180] | Coordinate: 0.2055
+T02 [T02] >>:
+	From: ne13 | To: ne13_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [910, 180] | Coordinate: 0.2055
+T03 [T03] >>:
+	From: ne14 | To: bus10_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [2870, -360] | Coordinate: 0.9305
+T04 [T04] <<:
+	From: ne14 | To: ne14_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [2870, -360] | Coordinate: 0.9305
+T05 [T05] >>:
+	From: ne15 | To: bus59_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [2870, -570] | Coordinate: 0.9345
+T06 [T06] <<:
+	From: ne15 | To: ne15_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [2870, -570] | Coordinate: 0.9345
+L07 [L07] <<:
+	From: ne1 | To: oe40_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [910, -150] | Coordinate: 0.1960
+L08 [L08] >>:
+	From: ne2 | To: oe42_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2870, 0] | Coordinate: 0.8039
+L09 [L09] >>:
+	From: ne22 | To: oe41_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2870, -150] | Coordinate: 0.9145
+J11 [J11] >>:
+	From: ne22 | To: ne22_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2352.0, -150] | Coordinate: 0.4717
+J12 [J12] <<:
+	From: ne22 | To: ne22_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2552.0, -150] | Coordinate: 0.6427
+J13 [J13] >>:
+	From: ne23 | To: ne23_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [1184.0, 0] | Coordinate: 0.3280
+J14 [J14] <<:
+	From: ne23 | To: ne23_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1384.0, 0] | Coordinate: 0.5035
+X15 [X15] >>:
+	From: ne14 | To: ne14_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1745, 360] | Coordinate: 0.5218
+X16 [X16] <<:
+	From: ne14 | To: ne14_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2145, 360] | Coordinate: 0.6575
+P20 [P20] >>:
+	From: ne13 | To: ne13_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [1844, -180] | Coordinate: 0.7824
+C21 [C21] <<:
+	From: ne8 | To: ne8_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [1560.0, -150] | Coordinate: 0.5
+S22 [S22] >>:
+	From: ne1 | To: ne1_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1065.0, -150] | Coordinate: 0.5
+C25 [C25] >>:
+	From: ne12 | To: ne12_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2205.0, 0] | Coordinate: 0.5
+S27 [S27] <<:
+	From: ne2 | To: ne2_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2715.0, 0] | Coordinate: 0.5
+C29 [C29] <<:
+	From: ne15 | To: ne15_left
+	Type: Manouver | Direction: reverse | AtTrack: right 
+	Position: [1840.0, -570] | Coordinate: 0.2599
+S32 [S32] >>:
+	From: ne8 | To: ne8_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1560.0, -150] | Coordinate: 0.5
+S35 [S35] <<:
+	From: ne12 | To: ne12_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2205.0, 0] | Coordinate: 0.5
+	\end{lstlisting}
+	
+	Al finalizar la generación del señalamiento, el RNA debe detectar todas las posibles rutas admitidas por la red para crear la tabla de enclavamientos. La cuál puede ser visualizada en el archivo Routes.RNA (Código \ref{lst:EJ1_7}). La misma detalla las señales de inicio y final, los \textit{netElements} abarcados por la ruta y cualquier infraestructura involucrada, incluyendo el estado que deben tener para que la ruta sea activada.
+	
+	\begin{lstlisting}[language = {}, caption = Routes.RNA, label = {lst:EJ1_7}]
+route_1 [T02 >> P20]:
+	Path: ['ne13']
+	Platforms: ['Plat13']
+	LevelCrossings: ['Lc08']
+route_2 [T04 << X16]:
+	Path: ['ne14']
+	Platforms: ['Plat11']
+route_3 [T06 << C29]:
+	Path: ['ne15']
+route_4 [J11 >> L09]:
+	Path: ['ne22']
+route_5 [J12 << C21]:
+	Path: ['ne22', 'ne8']
+	Switches: ['Sw12_N']
+route_6 [J13 >> C25]:
+	Path: ['ne23', 'ne12']
+	Switches: ['Sw13_N']
+route_7 [X15 >> T03]:
+	Path: ['ne14']
+	Platforms: ['Plat11']
+	LevelCrossings: ['Lc06']
+route_8 [X16 << L07]:
+	Path: ['ne14', 'ne9', 'ne1']
+	Switches: ['Sw04_R', 'Sw07_R']
+	LevelCrossings: ['Lc06']
+route_9 [P20 >> L08]:
+	Path: ['ne13', 'ne2']
+	Switches: ['Sw06_R']
+route_10 [C21 << L07]:
+	Path: ['ne8', 'ne1']
+	Switches: ['Sw04_N']
+route_11 [S22 >> S32]:
+	Path: ['ne1', 'ne8']
+	Switches: ['Sw04_N']
+route_12 [S22 >> X15]:
+	Path: ['ne1', 'ne9', 'ne14']
+	Switches: ['Sw04_R', 'Sw07_R']
+route_13 [S22 >> T05]:
+	Path: ['ne1', 'ne9', 'ne15']
+	Switches: ['Sw04_R', 'Sw07_N']
+route_14 [C25 >> L08]:
+	Path: ['ne12', 'ne2']
+	Switches: ['Sw06_N']
+route_15 [S27 << S35]:
+	Path: ['ne2', 'ne12']
+	Switches: ['Sw06_N']
+route_16 [S27 << T01]:
+	Path: ['ne2', 'ne13']
+	Switches: ['Sw06_R']
+	Platforms: ['Plat13']
+	LevelCrossings: ['Lc08']
+route_17 [C29 << L07]:
+	Path: ['ne15', 'ne9', 'ne1']
+	Switches: ['Sw04_R', 'Sw07_N']
+route_18 [S32 >> J11]:
+	Path: ['ne8', 'ne22']
+	Switches: ['Sw12_N']
+route_19 [S32 >> C25]:
+	Path: ['ne8', 'ne24', 'ne12']
+	Switches: ['Sw12_R', 'Sw13_R']
+route_20 [S35 << J14]:
+	Path: ['ne12', 'ne23']
+	Switches: ['Sw13_N']
+route_21 [S35 << C21]:
+	Path: ['ne12', 'ne24', 'ne8']
+	Switches: ['Sw12_R', 'Sw13_R']
+	\end{lstlisting}	
+		
