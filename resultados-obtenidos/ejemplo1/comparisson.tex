@@ -34,16 +34,35 @@
 						IO 				& 15    & 15    & 15    & 15    & 15    & 15    & 15    & 15    & 15\\
 						BUFG 			& 3     & 3     & 3     & 3     & 3     & 3     & 3     & 3     & 3\\
 						\hline
-						\% LUT 			& 6.42  & 3.37  & 25.39 & 25.69 & 4.34  & 6.29  & 3.38  & 4.07  & 7.20\\
-						\% FF 			& 3.58  & 1.87  & 14.20 & 14.17 & 2.21  & 3.57  & 1.89  & 2.15  & 3.89\\
-						\% IO 			& 12.00 & 12.00 & 12.00 & 12.00 & 12.00 & 12.00 & 12.00 & 12.00 & 12.00\\
-						\% BUFG 		& 9.38  & 9.38  & 9.38  & 9.38  & 9.38  & 9.38  & 9.38  & 9.38  & 9.38\\
+						\% LUT 			& 6,42  & 3,37  & 25,39 & 25,69 & 4,34  & 6,29  & 3,38  & 4,07  & 7,20\\
+						\% FF 			& 3,58  & 1,87  & 14,20 & 14,17 & 2,21  & 3,57  & 1,89  & 2,15  & 3,89\\
+						\% IO 			& 12,00 & 12,00 & 12,00 & 12,00 & 12,00 & 12,00 & 12,00 & 12,00 & 12,00\\
+						\% BUFG 		& 9,38  & 9,38  & 9,38  & 9,38  & 9,38  & 9,38  & 9,38  & 9,38  & 9,38\\
 					\end{tabular}
 				}
 			\end{center}
 		}    
 	\end{table}
 	
-	CREAR GRAFICO PARA EXPLICAR MEJOR COMO CRECE
+	Debido a que se utiliza una interfaz serie para comunicar los datos, la cantidad de pines utilizados es independiente del tamaño del sistema a a implementar, lo cual se refleja en el número de pines de entrada y salida (IOs) y de buffers (BUFGs). Sin embargo, la cantidad de Look-Up-Tables (LUTs) y Flip-Flops (FFs) incrementa considerablemente. En la Figura \ref{fig:ACG_RECURSOS_1} se puede visualizar la cantidad de Look-Up-Table y Flip-Flops utilizadas en función de la cantidad de elementos ferroviarios (N). La cantidad de recursos utilizados incrementa linealmente, a diferencia del enfoque funcional explicado en la Sección \ref{sec:funcional}, cuyo crecimiento es exponencial.	
+	 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[origin = c, width=0.9\textwidth]{resultados-obtenidos/ejemplo1/images/recursos_1}
+		\centering\caption{Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}
+		\label{fig:ACG_RECURSOS_1}
+	\end{figure}
 	
+	En la Figura \ref{fig:ACG_RECURSOS_2} se visualizan los mismos datos de la Figura \ref{fig:ACG_RECURSOS_1}, esta vez ponderados por la cantidad de recursos disponibles en la plataforma Arty Z7 20.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[origin = c, width=0.9\textwidth]{resultados-obtenidos/ejemplo1/images/recursos_2}
+		\centering\caption{Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7 20.}
+		\label{fig:ACG_RECURSOS_2}
+	\end{figure}
+	
+	Realizando una aproximación lineal podemos calcular el valor de N para el cual el uso de la plataforma alcanza el 100\%. Si consideramos la cantidad de Flip-Flops, un valor de N igual a 1684 sería suficiente para que el proceso de implementación fallase por falta de recursos disponibles. Si consideramos la cantidad de Look-Up-Tables, el valor límite de N es 937. Por lo tanto, siendo que el ejemplo mas grande implementado es, según la Tabla \ref{Tab:tabla_ACG_total}, el ejemplo 3 con un valor de N de 245, se podría implementar un sistema hasta 3,8 veces mas grande sin inconvenientes.
+	
+	 Si consideramos un sistema 3,8 veces mas grande que el ejemplo 3 estaríamos hablando de una red ferroviaria de 49 estaciones, 68 cambios de vías, 193 secciones de vías, 311 semáforos y hasta 345 rutas. A modo de referencia, la línea Roca, la mas extensa del área metropolitana de Buenos Aires, cuenta con 69 estaciones a lo largo de mas de 230 kilómetros \cite{TRENES}. Por lo que un hipotético ejemplo que utilice el 100\% de la plataforma cubriría el 71\% de todas las funcionalidades de dicha linea.
 	

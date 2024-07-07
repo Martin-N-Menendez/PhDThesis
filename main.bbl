@@ -6202,6 +6202,40 @@
       \verb https://www.intel.com/content/www/us/en/products/details/fpga/development-tools/quartus-prime.html
       \endverb
     \endentry
+    \entry{YOUTUBE}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{bibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorbibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Videos demostrativos}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
+      \endverb
+    \endentry
     \entry{Paper_1}{article}{}{}
       \name{author}{1}{}{%
         {{hash=1abe93f7b1d15d13bf394cc07a1e33fa}{%
@@ -7023,8 +7057,8 @@
       \strng{authornamehash}{0f2ce8858e45aa3c690e20762e9f69d0}
       \strng{authorfullhash}{96c7ea40bcebc3383e3ccfe2d4b8079d}
       \strng{authorfullhashraw}{96c7ea40bcebc3383e3ccfe2d4b8079d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Symposium on Software Reliability Engineering Workshops}
