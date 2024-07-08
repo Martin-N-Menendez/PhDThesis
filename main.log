@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  7 JUL 2024 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  8 JUL 2024 21:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1124,6 +1124,12 @@ LaTeX Warning: Label `fig:bypass_1' multiply defined.
 LaTeX Warning: Label `fig:bypass_3' multiply defined.
 
 
+LaTeX Warning: Label `sec:simplificacion' multiply defined.
+
+
+LaTeX Warning: Label `sec:signal_switches' multiply defined.
+
+
 LaTeX Warning: Label `lst:EJ1_4' multiply defined.
 
 )
@@ -1879,52 +1885,52 @@ LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
  [52 <./Figuras/semaforos.PNG>]
 (RNA/generacion/border.tex
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
  [53]
 <Figuras/limites.PNG, id=308, 989.94844pt x 397.485pt>
 File: Figuras/limites.PNG Graphic file (type png)
 <use Figuras/limites.PNG>
-Package pdftex.def Info: Figuras/limites.PNG  used on input line 68.
+Package pdftex.def Info: Figuras/limites.PNG  used on input line 70.
 (pdftex.def)             Requested size: 426.79134pt x 171.36403pt.
 ) (RNA/generacion/detector.tex
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
  [54 <./Figuras/limites.PNG>]
 <Figuras/detectores.PNG, id=313, 1190.19656pt x 595.47469pt>
 File: Figuras/detectores.PNG Graphic file (type png)
 <use Figuras/detectores.PNG>
-Package pdftex.def Info: Figuras/detectores.PNG  used on input line 43.
+Package pdftex.def Info: Figuras/detectores.PNG  used on input line 45.
 (pdftex.def)             Requested size: 426.79134pt x 213.5257pt.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
  [55]) (RNA/generacion/platform.tex
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
  [56 <./Figuras/detectores.PNG>]
 <Figuras/platforms.PNG, id=322, 770.88pt x 217.5628pt>
 File: Figuras/platforms.PNG Graphic file (type png)
 <use Figuras/platforms.PNG>
-Package pdftex.def Info: Figuras/platforms.PNG  used on input line 37.
+Package pdftex.def Info: Figuras/platforms.PNG  used on input line 39.
 (pdftex.def)             Requested size: 426.79134pt x 120.45pt.
 ) (RNA/generacion/crossing.tex
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
  [57 <./Figuras/platforms.PNG>]
 <Figuras/crossings.PNG, id=328, 767.11594pt x 217.5628pt>
 File: Figuras/crossings.PNG Graphic file (type png)
 <use Figuras/crossings.PNG>
-Package pdftex.def Info: Figuras/crossings.PNG  used on input line 37.
+Package pdftex.def Info: Figuras/crossings.PNG  used on input line 39.
 (pdftex.def)             Requested size: 426.79134pt x 121.04424pt.
 )
 (RNA/generacion/switch.tex
@@ -2606,29 +2612,29 @@ LaTeX Info: Redefining \% on input line 43.
 [117 <./resultados-obtenidos/ejemplo1/images/1_empty.png> <./resultados-obtenid
 os/ejemplo1/images/1_original.png>])
 (resultados-obtenidos/ejemplo1/signalling-generation.tex
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
  [118]
 
-LaTeX Warning: Command \guillemotright invalid in math mode on input line 28.
+LaTeX Warning: Command \guillemotright invalid in math mode on input line 25.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-55.
+52.
 (C:\Users\menen\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 [119]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
  [120]
 <resultados-obtenidos/ejemplo1/images/1_step1.png, id=849, 2095.83pt x 875.5209
 4pt>
@@ -2682,25 +2688,25 @@ File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_RNA.png  used o
 n input line 206.
 (pdftex.def)             Requested size: 426.79134pt x 174.01883pt.
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
  [124 <./resultados-obtenidos/ejemplo1/images/1_RNA.png>]
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
  [125]
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
  [126]
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
+LaTeX Info: Redefining \. on input line 371.
+LaTeX Info: Redefining \% on input line 371.
+LaTeX Info: Redefining \. on input line 371.
+LaTeX Info: Redefining \% on input line 371.
 
 [127]) (resultados-obtenidos/ejemplo1/graph-generated.tex
 <Figuras/Graph_1.png, id=877, 2282.5275pt x 419.5675pt>
@@ -4325,10 +4331,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36449 strings out of 474424
- 791041 string characters out of 5741739
+ 36453 strings out of 474424
+ 791113 string characters out of 5741739
  2640496 words of memory out of 5000000
- 57828 multiletter control sequences out of 15000+600000
+ 57832 multiletter control sequences out of 15000+600000
  571016 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1571b,2132s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4365,7 +4371,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (325 pages, 57275419 bytes).
+Output written on main.pdf (325 pages, 57276472 bytes).
 PDF statistics:
  1697 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
