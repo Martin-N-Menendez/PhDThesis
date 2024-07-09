@@ -1,5 +1,7 @@
 \section{Validación del señalamiento y las tablas de enclavamiento}
 
+	\label{sec:validar_tabla}
+	
 	La validación a nivel general del señalamiento generado por el RNA se realiza comparándolo con el señalamiento original. Esta comparación se realiza mediante sus tablas de enclavamientos, que representan de forma objetiva y detallada el listado de rutas y como se relacionan con la infraestructura ferroviaria. Si no existiese señalamiento previo y, por lo tanto, no existe una tabla de enclavamientos original contra la cual comparar, entonces la validación es exitosa por defecto. Los detalles particulares respecto a la validez del señalamiento y la seguridad que aportan al sistema son discutidos en la Sección \ref{sec:validar_principios}.
 	
 	En el caso de que exista un señalamiento previo, el RNA utiliza el Algoritmo \ref{alg:interlocking_tables} para validar el señalamiento generado. Para lo cual, en primer lugar, se genera una red de digrafos en base a la tabla de enclavamientos original. Este digrafo tendrá como nodos iniciales y finales los netElement iniciales y finales de cada ruta respectivamente. Las rutas, a su vez, serán las aristas que conecten los nodos. Análogamente se crea un digrafo que represente al nuevo señalamiento generado por el RNA.
