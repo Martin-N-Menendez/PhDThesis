@@ -1,6 +1,6 @@
-\subsection{Validacion del sistema}
+\section{Validación del sistema}
 
-    Las 8 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_7}) tienen 8 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_7}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_7}, generada automáticamente por el RNA.
+    La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 8 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_7}) tienen 8 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_7}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_7}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -30,4 +30,16 @@
         }    
     \end{table}
     
-     Las rutas R1, R4 y R5 (Tabla \ref{Tab:tabla_generated_7}) generadas por el RNA que no tienen equivalencias en el señalamiento original (Tabla \ref{Tab:tabla_original_7}) se deben a que el RNA creó señales extras. Las señales T02, T08 y T10 fueron creadas por el RNA para proteger los finales de vía absolutos. La Ruta R1 fue establecida por el RNA al crear la señal T02 para proteger el final de vía del \textit{netElement} ne01, creando una ruta con la señal S14. La Ruta R4 fue establecida por el RNA al crear la señal T08 para proteger el final de vía del \textit{netElement} ne42, creando una ruta con la señal S14. La ruta R4 añade una parada intermedia entre las rutas R4 y R5 del señalamiento original, previo al cambio de vías Sw19. La Ruta R5 fue establecida por el RNA al crear la señal T10 para proteger el final de vía del \textit{netElement} ne43, creando una ruta con la señal T07. Estos elementos ferroviarios no se encontraban protegidos en el señalamiento original, además que particionar las rutas R4 y R5 originales en R4+R10 y R4+R11 respectivamente incrementa la mobilidad de la red.
+     Las rutas R1, R4 y R5 (Tabla \ref{Tab:tabla_generated_7}) generadas por el RNA que no tienen equivalencias en el señalamiento original (Tabla \ref{Tab:tabla_original_7}) se deben a que el RNA creó señales extras. Las señales T02, T08 y T10 fueron creadas por el RNA para proteger los finales de vía absolutos. La Ruta R1 fue establecida por el RNA al crear la señal T02 para proteger el final de vía del \textit{netElement} ne01, creando una ruta con la señal S14. La Ruta R4 fue establecida por el RNA al crear la señal T08 para proteger el final de vía del \textit{netElement} ne42, creando una ruta con la señal S14. La ruta R4 añade una parada intermedia entre las rutas R4 y R5 del señalamiento original, previo al cambio de vías Sw19. La Ruta R5 fue establecida por el RNA al crear la señal T10 para proteger el final de vía del \textit{netElement} ne43, creando una ruta con la señal T07. Estos elementos ferroviarios no se encontraban protegidos en el señalamiento original, además que particionar las rutas R4 y R5 originales en R4+R10 y R4+R11 respectivamente incrementa la movilidad de la red.
+     
+     Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+     
+     \begin{itemize}
+     	\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+     	\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): rutas 100\% independientes.
+     	\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+     	\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): 100\% de rutas divididas a su mínima expresión.
+     	\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+     	\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+     	\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+     \end{itemize}	

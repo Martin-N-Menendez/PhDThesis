@@ -1,6 +1,6 @@
-\subsection{Validacion del sistema}
+\section{Validación del sistema}
 
-    Las 16 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_6}) tienen 16 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_6}, generada automáticamente por el RNA.
+    La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 16 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_6}) tienen 16 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_6}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -43,3 +43,15 @@
     Respecto a las otras tres rutas: la ruta R14 fue creada por el RNA al añadir la señal B26 para proteger al cambio Sw02 previo a la curva del \textit{netElement} ne04, formando una ruta con la señal C21; la ruta R18 fue creada por el RNA al añadir la señal J13 para proteger la juntura  del \textit{netElement} ne11, formando una ruta con la señal S33; la ruta R20 fue creada por el RNA al añadir la señal T09 para proteger el final de vía del \textit{netElement} ne42, creando una ruta con la señal B36.
     
     Los elementos indicados (finales de vías, curvas y cambios de vías), no se encontraban complemente protegidos en el señalamiento original.
+    
+    Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+    
+    \begin{itemize}
+    	\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+    	\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): rutas 100\% independientes.
+    	\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+    	\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): 100\% de rutas divididas a su mínima expresión.
+    	\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+    	\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+    	\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+    \end{itemize}	

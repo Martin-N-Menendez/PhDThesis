@@ -1,136 +1,506 @@
-\subsection{Generación de señalamiento paso a paso}
+\section{Generación de señalamiento paso a paso}
 	
-	Al ejecutar el RNA, primero detectará todos los \textit{netElements}, sus coordenadas iniciales y finales en la topología, y el sentido en el que fueron definidas. El resultado obtenido se muestra en el Cóodigo \ref{lst:EJ3_1}.
+	Inicialmente, el RNA ejecuta el Algoritmo \ref{alg:graph_network} (ver Sección \ref{sec:grafos}) para detectar todos los \textit{netElements}, sus coordenadas iniciales y finales en la topología, y el sentido en el que fueron definidas. Al concluir el Algoritmo \ref{alg:graph_network}, el RNA ejecuta el Algoritmo \ref{alg:connectedness} (ver Sección \ref{sec:grafos}) para analizar la conexidad de la red. El resultado obtenido se muestra en el Código \ref{lst:EJ3_1}, donde se describen las coordenadas de cada \textit{netElement} y se confirma que la red es conexa.
 	
 	\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = Detección de \textit{netElements} por parte del RNA , label = {lst:EJ3_1}]
-	###### Starting Railway Network Analyzer #####
-	Reading .railML file
-	Creating railML object
-	Analysing railML object
-	Analysing graph
-	ne1 [-2010, 300] [-300, 300] >>   
-	ne4 [7083, 150] [6686, 150] <<    
-	ne7 [-2010, 150] [-300, 300] >>   
-	ne9 [-300, 300] [188, 300] >>     
-	ne11 [2580, 300] [2730, 150] >>   
-	ne14 [2730, 150] [2190, 150] <<   
-	ne17 [4380, 300] [2580, 300] <<   
-	ne23 [3810, -900] [2490, -1050] <<
-	ne24 [3810, -900] [2490, -1050] <<
-	ne26 [2490, -1050] [2138, -1050] <<
-	ne29 [-996, -1050] [239, -1050] >>
-	ne30 [-996, -1050] [-1373, -1050] <<
-	ne32 [239, -1050] [-150, -1050] <<
-	ne41 [-966, -1200] [-300, -1200] >>
-	ne43 [1560, -1050] [1710, -1200] >>
-	ne44 [1560, -1050] [1165, -1050] <<
-	ne47 [1710, -1200] [1290, -1200] <<
-	ne48 [1710, -1200] [1920, -1410] >>
-	ne59 [2009, 300] [2580, 300] >>
-	ne64 [4108, -782] [3810, -900] <<
-	ne65 [2138, -1050] [1866, -1050] <<
-	ne67 [2984, -480] [3882, -480] >>
-	ne70 [2984, -480] [2910, 0] <<
-	ne78 [4380, 300] [4825, 300] >>
-	ne79 [4230, 150] [4380, 300] >>
-	ne82 [-150, -1050] [-300, -1200] <<
-	ne83 [-150, -1050] [-996, -1050] <<
-	ne84 [-300, -1200] [-966, -1350] <<
-	ne86 [-2013, -750] [-1673, -750] >>
-	ne87 [-1673, -750] [-1523, -900] >>
-	ne88 [-1673, -750] [-1323, -750] >>
-	ne89 [-1373, -1050] [-2013, -1050] <<
-	ne90 [-2013, -900] [-1523, -900] >>
-	ne91 [-1523, -900] [-1373, -1050] >>
-	ne93 [4825, 300] [5149, 300] >>
-	ne94 [4826, 150] [4230, 150] <<
-	ne95 [188, 300] [2009, 300] >>
-	ne96 [5149, 300] [5842, 300] >>
-	ne97 [5149, 150] [4826, 150] <<
-	ne98 [5842, 300] [6686, 300] >>
-	ne99 [5841, 150] [5149, 150] <<
-	ne100 [880, -1050] [578, -1050] <<
-	ne101 [1165, -1050] [880, -1050] <<
-	ne102 [1866, -1050] [1560, -1050] <<
-	ne103 [3882, -480] [4108, -782] >>
-	ne105 [6686, 300] [7083, 300] >>
-	ne106 [6686, 150] [5841, 150] <<
-	ne85 [-300, -1200] [578, -1050] >>
-	ne77 [4230, 150] [3045, 75] <<
-	ne104 [2910, 0] [3045, 75] >>
-	ne52 [2730, 150] [3045, 75] >>
-	ne21 [4230, 150] [3045, 75] <<
-	ne110 [578, -1050] [239, -1050] <<
-	The network is connected
+###### Starting Railway Network Analyzer #####
+Reading .railML file
+Creating railML object
+Analysing railML object
+Analysing graph
+ne1 [-2010, 300] [-300, 300] >>   
+ne4 [7083, 150] [6686, 150] <<    
+ne7 [-2010, 150] [-300, 300] >>   
+ne9 [-300, 300] [188, 300] >>     
+ne11 [2580, 300] [2730, 150] >>   
+ne14 [2730, 150] [2190, 150] <<   
+ne17 [4380, 300] [2580, 300] <<   
+ne23 [3810, -900] [2490, -1050] <<
+ne24 [3810, -900] [2490, -1050] <<
+ne26 [2490, -1050] [2138, -1050] <<
+ne29 [-996, -1050] [239, -1050] >>
+ne30 [-996, -1050] [-1373, -1050] <<
+ne32 [239, -1050] [-150, -1050] <<
+ne41 [-966, -1200] [-300, -1200] >>
+ne43 [1560, -1050] [1710, -1200] >>
+ne44 [1560, -1050] [1165, -1050] <<
+ne47 [1710, -1200] [1290, -1200] <<
+ne48 [1710, -1200] [1920, -1410] >>
+ne59 [2009, 300] [2580, 300] >>
+ne64 [4108, -782] [3810, -900] <<
+ne65 [2138, -1050] [1866, -1050] <<
+ne67 [2984, -480] [3882, -480] >>
+ne70 [2984, -480] [2910, 0] <<
+ne78 [4380, 300] [4825, 300] >>
+ne79 [4230, 150] [4380, 300] >>
+ne82 [-150, -1050] [-300, -1200] <<
+ne83 [-150, -1050] [-996, -1050] <<
+ne84 [-300, -1200] [-966, -1350] <<
+ne86 [-2013, -750] [-1673, -750] >>
+ne87 [-1673, -750] [-1523, -900] >>
+ne88 [-1673, -750] [-1323, -750] >>
+ne89 [-1373, -1050] [-2013, -1050] <<
+ne90 [-2013, -900] [-1523, -900] >>
+ne91 [-1523, -900] [-1373, -1050] >>
+ne93 [4825, 300] [5149, 300] >>
+ne94 [4826, 150] [4230, 150] <<
+ne95 [188, 300] [2009, 300] >>
+ne96 [5149, 300] [5842, 300] >>
+ne97 [5149, 150] [4826, 150] <<
+ne98 [5842, 300] [6686, 300] >>
+ne99 [5841, 150] [5149, 150] <<
+ne100 [880, -1050] [578, -1050] <<
+ne101 [1165, -1050] [880, -1050] <<
+ne102 [1866, -1050] [1560, -1050] <<
+ne103 [3882, -480] [4108, -782] >>
+ne105 [6686, 300] [7083, 300] >>
+ne106 [6686, 150] [5841, 150] <<
+ne85 [-300, -1200] [578, -1050] >>
+ne77 [4230, 150] [3045, 75] <<
+ne104 [2910, 0] [3045, 75] >>
+ne52 [2730, 150] [3045, 75] >>
+ne21 [4230, 150] [3045, 75] <<
+ne110 [578, -1050] [239, -1050] <<
+The network is connected
 	\end{lstlisting}
 	
 	Por ejemplo, el \textit{netElement} ne110 inicia en la coordenada (578;-1050) y finaliza en la coordenada (239;-1050). El símbolo $<<$ indica que ne110 se encuentra definido de derecha a izquierda, ya que la componente x de la coordenada final es menor a la de la coordenada inicial, teniendo la misma componente y. Además, se puede comprobar que la lista obtenida en consistente con la Figura \ref{fig:EJ3_2}. Por ejemplo, ne30, ne29 y ne83 comparten la coordenada (-996;-1050), que coincide con la coordenada del cambio de vías Sw08.
 	
-	A continuación, el RNA detectará la infraestructura ferroviaria, las curvas peligrosas y los puntos medios de los netElements que el RNA considera demasiado largos. El resultado de este proceso se puede visualizar en el Código \ref{lst:EJ3_2} y puede leerse también en el archivo Infrastructure.RNA.
+	A continuación, el RNA detectará la infraestructura ferroviaria, las curvas peligrosas y los puntos medios de los netElements que el RNA considera demasiado largos. El análisis de la infraestructura se detalla en la Sección \ref{sec:bufferstop}, Sección \ref{sec:detectors}, Sección \ref{sec:platform} y Sección \ref{sec:crossing}, mientras que la detección de curvas y puntos medios se detalla en la Sección \ref{sec:tracks}. El RNA ejecuta el Algoritmo \ref{alg:switches_1}, Algoritmo \ref{alg:switches_2} y Algoritmo \ref{alg:switches_3} para confirmar la detección de cambios de vías simples, dobles y en tijeras. El resultado de este proceso se puede visualizar en el Código \ref{lst:EJ3_2}.
 	
 	\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = Detección de puntos críticos por parte del RNA , label = {lst:EJ3_2}]
-	Analysing infrastructure --> Infrastructure.RNA
-	Detecting Danger --> Safe_points.RNA
-	ne1 has a Platform[plf177] @ [-1539, -300]
-	ne4 has a Middle point @ [6884.5, 150]
-	ne7 has a Platform[plf178] @ [-1538, -150]
-	ne7 has a Curve(2 lines) @ [[-450, 150]]
-	ne9 has a Middle point @ [-56.0, 300]
-	ne14 has a Middle point @ [2460.0, 150]
-	ne17 has a Platform[plf185] @ [3623, -300]
-	ne23 has a Platform[plf181] @ [3151, 1050]
-	ne23 has a Curve(2 lines) @ [[3660, -1050]]
-	ne24 has a Platform[plf182] @ [3151, 900]
-	ne24 has a Curve(2 lines) @ [[2640, -900]]
-	ne26 has a Middle point @ [2314.0, -1050]
-	ne29 has a Curve(3 lines) @ [[-846, -900], [89, -900]]
-	ne30 has a Middle point @ [-1184.5, -1050]
-	ne32 has a Middle point @ [44.5, -1050]
-	ne41 has a Platform[plf180] @ [-653, 1200]
-	ne44 has a Middle point @ [1362.5, -1050]
-	ne47 has a Middle point @ [1500.0, -1200]
-	ne59 has a Middle point @ [2294.5, 300]
-	ne64 has a Curve(2 lines) @ [[3990, -900]]
-	ne65 has a Middle point @ [2002.0, -1050]
-	ne67 has a Platform[plf183] @ [3430, 480]
-	ne70 has a Curve(5 lines) @ [[2670, -150], [2820, -480], [2820, 0], [2910, 0]]
-	ne78 has a Middle point @ [4602.5, 300]
-	ne83 has a Platform[plf179] @ [-653, 1050]
-	ne84 has a Curve(2 lines) @ [[-450, -1350]]
-	ne86 has a Middle point @ [-1843.0, -750]
-	ne88 has a Middle point @ [-1498.0, -750]
-	ne89 has a Middle point @ [-1799.7, -1050]
-	ne89 has a Middle point @ [-1586.3, -1050]
-	ne90 has a Middle point @ [-1768.0, -900]
-	ne93 has a Middle point @ [4987.0, 300]
-	ne94 has a Middle point @ [4528.0, 150]
-	ne95 has a LevelCrossing[lcr176] @ [1100, -300]
-	ne96 has a Platform[plf187] @ [5459, -300]
-	ne97 has a Middle point @ [4987.5, 150]
-	ne98 has a Middle point @ [6053.0, 300]
-	ne98 has a Middle point @ [6264.0, 300]
-	ne98 has a Middle point @ [6475.0, 300]
-	ne99 has a Platform[plf186] @ [5459, -150]
-	ne100 has a Middle point @ [729.0, -1050]
-	ne101 has a Middle point @ [1022.5, -1050]
-	ne102 has a Middle point @ [1713.0, -1050]
-	ne103 has a Curve(4 lines) @ [[3990, -480], [4108, -782], [4140, -630]]
-	ne105 has a Middle point @ [6884.5, 300]
-	ne106 has a Middle point @ [6052.2, 150]
-	ne106 has a Middle point @ [6263.5, 150]
-	ne106 has a Middle point @ [6474.8, 150]
-	ne85 has a Curve(2 lines) @ [[428, -1200]]
-	ne77 has a Platform[plf322] @ [3619, 0]
-	ne77 has a Curve(3 lines) @ [[3120, 0], [4080, 0]]
-	ne104 has a Curve(2 lines) @ [[2970, 0]]
-	ne52 has a Curve(2 lines) @ [[2970, 150]]
-	ne21 has a Platform[plf321] @ [3621, -150]
-	ne21 has a Curve(2 lines) @ [[3120, 150]]
-	ne110 has a Middle point @ [408.5, -1050]
+Analysing infrastructure --> Infrastructure.RNA
+Detecting Danger --> Safe_points.RNA
+ne1 has a Platform[plf177] @ [-1539, -300]
+ne4 has a Middle point @ [6884.5, 150]
+ne7 has a Platform[plf178] @ [-1538, -150]
+ne7 has a Curve(2 lines) @ [[-450, 150]]
+ne9 has a Middle point @ [-56.0, 300]
+ne14 has a Middle point @ [2460.0, 150]
+ne17 has a Platform[plf185] @ [3623, -300]
+ne23 has a Platform[plf181] @ [3151, 1050]
+ne23 has a Curve(2 lines) @ [[3660, -1050]]
+ne24 has a Platform[plf182] @ [3151, 900]
+ne24 has a Curve(2 lines) @ [[2640, -900]]
+ne26 has a Middle point @ [2314.0, -1050]
+ne29 has a Curve(3 lines) @ [[-846, -900], [89, -900]]
+ne30 has a Middle point @ [-1184.5, -1050]
+ne32 has a Middle point @ [44.5, -1050]
+ne41 has a Platform[plf180] @ [-653, 1200]
+ne44 has a Middle point @ [1362.5, -1050]
+ne47 has a Middle point @ [1500.0, -1200]
+ne59 has a Middle point @ [2294.5, 300]
+ne64 has a Curve(2 lines) @ [[3990, -900]]
+ne65 has a Middle point @ [2002.0, -1050]
+ne67 has a Platform[plf183] @ [3430, 480]
+ne70 has a Curve(5 lines) @ [[2670, -150], [2820, -480], [2820, 0], [2910, 0]]
+ne78 has a Middle point @ [4602.5, 300]
+ne83 has a Platform[plf179] @ [-653, 1050]
+ne84 has a Curve(2 lines) @ [[-450, -1350]]
+ne86 has a Middle point @ [-1843.0, -750]
+ne88 has a Middle point @ [-1498.0, -750]
+ne89 has a Middle point @ [-1799.7, -1050]
+ne89 has a Middle point @ [-1586.3, -1050]
+ne90 has a Middle point @ [-1768.0, -900]
+ne93 has a Middle point @ [4987.0, 300]
+ne94 has a Middle point @ [4528.0, 150]
+ne95 has a LevelCrossing[lcr176] @ [1100, -300]
+ne96 has a Platform[plf187] @ [5459, -300]
+ne97 has a Middle point @ [4987.5, 150]
+ne98 has a Middle point @ [6053.0, 300]
+ne98 has a Middle point @ [6264.0, 300]
+ne98 has a Middle point @ [6475.0, 300]
+ne99 has a Platform[plf186] @ [5459, -150]
+ne100 has a Middle point @ [729.0, -1050]
+ne101 has a Middle point @ [1022.5, -1050]
+ne102 has a Middle point @ [1713.0, -1050]
+ne103 has a Curve(4 lines) @ [[3990, -480], [4108, -782], [4140, -630]]
+ne105 has a Middle point @ [6884.5, 300]
+ne106 has a Middle point @ [6052.2, 150]
+ne106 has a Middle point @ [6263.5, 150]
+ne106 has a Middle point @ [6474.8, 150]
+ne85 has a Curve(2 lines) @ [[428, -1200]]
+ne77 has a Platform[plf322] @ [3619, 0]
+ne77 has a Curve(3 lines) @ [[3120, 0], [4080, 0]]
+ne104 has a Curve(2 lines) @ [[2970, 0]]
+ne52 has a Curve(2 lines) @ [[2970, 150]]
+ne21 has a Platform[plf321] @ [3621, -150]
+ne21 has a Curve(2 lines) @ [[3120, 150]]
+ne110 has a Middle point @ [408.5, -1050]
 	\end{lstlisting}
 	
-	Una vez que el RNA detectó cada punto crítico de la red ferroviaria, procede a generar el señalamiento. El orden de generación no es importante, pero para poder describirlo de forma consistente se iniciará generando el señalamiento para proteger los finales de vías, las junturas entre rieles, las plataformas, los cruces de vía y los cambios de vías. Luego se procederá a mostrar el señalamiento pre y post simplificación. Las señales generadas para proteger los finales de vías relativos y absolutos son ilustradas en la Figura \ref{fig:EJ3_3}.
+Esta información es exportada por el RNA, con mayor detalle, en el archivo Infrastructure.RNA (Código \ref{lst:EJ3_4}) que resume cada elemento ferroviario asociado a su respectivo \textit{netElement}.
+
+\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = Infrastructure.RNA, label = {lst:EJ3_4}]
+Nodes: 53|Switches: 15|Signals: 0|Detectors: 7|Ends: 30|Barriers: 1
+Node ne1:
+	Track = track1
+	TrainDetectionElements -> ac235
+		Type -> axleCounter
+		Side -> right
+	Type = BufferStop -> ['bus2']
+	Neighbours = 2 -> ['ne9', 'ne7']
+Node ne4:
+	Track = track3
+	Type = BufferStop -> ['bus5']
+	Neighbours = 1 -> ['ne106']
+Node ne7:
+	Track = track5
+	TrainDetectionElements -> ac236
+		Type -> axleCounter
+		Side -> left
+	Type = BufferStop -> ['bus8']
+	Neighbours = 2 -> ['ne1', 'ne9']
+Node ne9:
+	Track = track6
+	TrainDetectionElements -> ac237
+		Type -> axleCounter
+		Side -> right
+	TrainDetectionElements -> ac238
+		Type -> axleCounter
+		Side -> right
+	Neighbours = 3 -> ['ne1', 'ne7', 'ne95']
+	Switches -> 68W02
+		ContinueCourse -> right -> ne1
+		BranchCourse -> left -> ne7
+Node ne11:
+	Track = track8
+	Neighbours = 4 -> ['ne59', 'ne17', 'ne52', 'ne14']
+Node ne14:
+	Track = track4
+		Derailer -> der172
+		Side -> left
+	Type = BufferStop -> ['bus6']
+	Neighbours = 2 -> ['ne11', 'ne52']
+Node ne17:
+	Track = track7
+	Neighbours = 4 -> ['ne11', 'ne78', 'ne79', 'ne59']
+Node ne23:
+	Track = track12
+	Neighbours = 3 -> ['ne64', 'ne24', 'ne26']
+Node ne24:
+	Track = track11
+	Neighbours = 3 -> ['ne23', 'ne64', 'ne26']
+Node ne26:
+	Track = track13
+	Neighbours = 3 -> ['ne23', 'ne24', 'ne65']
+	Switches -> 70W02
+		ContinueCourse -> right -> ne23
+		BranchCourse -> left -> ne24
+Node ne29:
+	Track = track16
+	Neighbours = 4 -> ['ne30', 'ne83', 'ne32', 'ne110']
+Node ne30:
+	Track = track14
+	Neighbours = 4 -> ['ne29', 'ne83', 'ne89', 'ne91']
+	Switches -> Sw08
+		ContinueCourse -> right -> ne83
+		BranchCourse -> left -> ne29
+	Switches -> Sw12
+		ContinueCourse -> left -> ne89
+		BranchCourse -> right -> ne91
+Node ne32:
+	Track = track18
+	Neighbours = 4 -> ['ne29', 'ne83', 'ne82', 'ne110']
+	Switches -> Sw04
+		ContinueCourse -> right -> ne83
+		BranchCourse -> left -> ne82
+Node ne41:
+	Track = track19
+	Type = BufferStop -> ['bus37']
+	Neighbours = 3 -> ['ne82', 'ne84', 'ne85']
+Node ne43:
+	Track = track21
+	Neighbours = 4 -> ['ne44', 'ne48', 'ne47', 'ne102']
+Node ne44:
+	Track = track20
+	Neighbours = 3 -> ['ne43', 'ne101', 'ne102']
+	Switches -> 71W01
+		ContinueCourse -> left -> ne102
+		BranchCourse -> right -> ne43
+Node ne47:
+	Track = track23
+	Type = BufferStop -> ['bus50']
+	Neighbours = 2 -> ['ne43', 'ne48']
+Node ne48:
+	Track = track22
+	Neighbours = 2 -> ['ne43', 'ne47']
+	Switches -> 71W02
+		ContinueCourse -> right -> ne43
+		BranchCourse -> left -> ne47
+Node ne59:
+	TrainDetectionElements -> ac241
+		Type -> axleCounter
+		Side -> left
+	Neighbours = 3 -> ['ne11', 'ne17', 'ne95']
+	Switches -> 69W03
+		ContinueCourse -> left -> ne17
+		BranchCourse -> right -> ne11
+Node ne64:
+	Track = track10
+	Neighbours = 3 -> ['ne23', 'ne24', 'ne103']
+	Switches -> 70W01
+		ContinueCourse -> right -> ne24
+		BranchCourse -> left -> ne23
+Node ne65:
+	Neighbours = 2 -> ['ne26', 'ne102']
+Node ne67:
+	Neighbours = 2 -> ['ne70', 'ne103']
+Node ne70:
+	Neighbours = 2 -> ['ne67', 'ne104']
+Node ne78:
+	Neighbours = 3 -> ['ne17', 'ne79', 'ne93']
+	Switches -> Sw06
+		ContinueCourse -> right -> ne17
+		BranchCourse -> left -> ne79
+Node ne79:
+	Track = track24
+	Neighbours = 5 -> ['ne17', 'ne78', 'ne94', 'ne77', 'ne21']
+Node ne82:
+	Track = track25
+	Neighbours = 5 -> ['ne32', 'ne41', 'ne83', 'ne84', 'ne85']
+Node ne83:
+	Track = track15
+	Neighbours = 4 -> ['ne29', 'ne30', 'ne32', 'ne82']
+Node ne84:
+	Track = track26
+	Type = BufferStop -> ['bus327']
+	Neighbours = 3 -> ['ne41', 'ne82', 'ne85']
+Node ne86:
+	Track = track28
+	Type = BufferStop -> ['bus331']
+	Neighbours = 2 -> ['ne88', 'ne87']
+	Switches -> Sw11
+		ContinueCourse -> left -> ne88
+		BranchCourse -> right -> ne87
+Node ne87:
+	Track = track30
+	Neighbours = 4 -> ['ne86', 'ne88', 'ne91', 'ne90']
+Node ne88:
+	Track = track29
+	Type = BufferStop -> ['bus332']
+	Neighbours = 2 -> ['ne86', 'ne87']
+Node ne89:
+	Track = track27
+	Type = BufferStop -> ['bus330']
+	Neighbours = 2 -> ['ne30', 'ne91']
+Node ne90:
+	Track = track32
+	Type = BufferStop -> ['bus335']
+	Neighbours = 2 -> ['ne87', 'ne91']
+Node ne91:
+	Track = track31
+	Neighbours = 4 -> ['ne30', 'ne87', 'ne89', 'ne90']
+	Switches -> Sw13
+		ContinueCourse -> right -> ne87
+		BranchCourse -> left -> ne90
+Node ne93:
+	Neighbours = 2 -> ['ne78', 'ne96']
+Node ne94:
+	Neighbours = 4 -> ['ne79', 'ne97', 'ne77', 'ne21']
+Node ne95:
+	TrainDetectionElements -> ac239
+		Type -> axleCounter
+		Side -> left
+	TrainDetectionElements -> ac240
+		Type -> axleCounter
+		Side -> left
+	Neighbours = 2 -> ['ne9', 'ne59']
+	Level crossing -> lcr176
+		Protection -> true | Barriers -> doubleHalfBarrier | Lights -> none Acoustic -> bell
+		Position -> [1145, -300] | Coordinate: 0.5254
+Node ne96:
+	Neighbours = 2 -> ['ne93', 'ne98']
+Node ne97:
+	Neighbours = 2 -> ['ne94', 'ne99']
+Node ne98:
+	Neighbours = 2 -> ['ne96', 'ne105']
+Node ne99:
+	Neighbours = 2 -> ['ne97', 'ne106']
+Node ne100:
+	Neighbours = 3 -> ['ne101', 'ne110', 'ne85']
+	Switches -> Sw41
+		ContinueCourse -> right -> ne110
+		BranchCourse -> left -> ne85
+Node ne101:
+	Neighbours = 2 -> ['ne44', 'ne100']
+Node ne102:
+	Neighbours = 3 -> ['ne43', 'ne44', 'ne65']
+Node ne103:
+	Neighbours = 2 -> ['ne64', 'ne67']
+Node ne105:
+	Track = track2
+	Type = BufferStop -> ['bus3']
+	Neighbours = 1 -> ['ne98']
+Node ne106:
+	Neighbours = 2 -> ['ne4', 'ne99']
+Node ne85:
+	Track = track33
+	Neighbours = 5 -> ['ne41', 'ne82', 'ne84', 'ne100', 'ne110']
+Node ne77:
+	Track = track34
+	Neighbours = 5 -> ['ne79', 'ne94', 'ne104', 'ne52', 'ne21']
+Node ne104:
+	Neighbours = 4 -> ['ne70', 'ne77', 'ne21', 'ne52']
+Node ne52:
+	Track = track9
+	Neighbours = 5 -> ['ne11', 'ne14', 'ne77', 'ne104', 'ne21']
+	Switches -> 69W04
+		ContinueCourse -> left -> ne14
+		BranchCourse -> right -> ne11
+Node ne21:
+	Track = track35
+	Neighbours = 5 -> ['ne79', 'ne94', 'ne77', 'ne104', 'ne52']
+Node ne110:
+	Track = track17
+	Neighbours = 4 -> ['ne29', 'ne32', 'ne100', 'ne85']
+	Switches -> Sw09
+		ContinueCourse -> left -> ne32
+		BranchCourse -> right -> ne29
+\end{lstlisting}
+
+	La información de la infraestructura es utilizada por el RNA para detectar los puntos críticos de la red, es decir, las zonas donde es recomendable colocar una señal, según el sentido de circulación que se desee. El resultado es exportado al archivo SafePoints.RNA (Código \ref{lst:EJ3_5}). En el caso de que un mismo \textit{netElement} tenga más de un punto crítico para el mismo sentido, el RNA tomará el más cercano al elemento a proteger. El criterio de selección de puntos críticos se aplica para cada elemento ferroviario detectado, cada curva y cada cambio de vías y fue explicado en las secciones correspondientes ya mencionadas.
 	
+	\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = SafePoints.RNA, label = {lst:EJ3_5}]
+ne1:
+	Next: [[-1739, -300]]
+	Prev: [[-1339, -300]]
+ne4:
+	Next: [[6884.5, 150]]
+	Prev: [[6884.5, 150]]
+ne7:
+	Next: [[-1738, -150], [-550.0, 150]]
+Prev: [[-1338, -150]]
+ne9:
+	Next: [[-56.0, 300]]
+	Prev: [[-56.0, 300]]
+ne14:
+	Next: [[2460.0, 150]]
+	Prev: [[2460.0, 150]]
+ne17:
+	Next: [[3423, -300]]
+	Prev: [[3823, -300]]
+ne23:
+	Next: [[2951, 1050], [3560.0, -1050]]
+	Prev: [[3351, 1050]]
+ne24:
+	Next: [[2951, 900]]
+	Prev: [[3351, 900], [2740.0, -900]]
+ne26:
+	Next: [[2314.0, -1050]]
+	Prev: [[2314.0, -1050]]
+ne29:
+	Next: [[-11.0, -900]]
+	Prev: [[-746.0, -900]]
+ne30:
+	Next: [[-1184.5, -1050]]
+	Prev: [[-1184.5, -1050]]
+ne32:
+	Next: [[44.5, -1050]]
+	Prev: [[44.5, -1050]]
+ne41:
+	Next: [[-853, 1200]]
+	Prev: [[-453, 1200]]
+ne44:
+	Next: [[1362.5, -1050]]
+	Prev: [[1362.5, -1050]]
+ne47:
+	Next: [[1500.0, -1200]]
+	Prev: [[1500.0, -1200]]
+ne59:
+	Next: [[2294.5, 300]]
+	Prev: [[2294.5, 300]]
+ne64:
+	Next: [[3890.0, -900]]
+ne65:
+	Next: [[2002.0, -1050]]
+	Prev: [[2002.0, -1050]]
+ne67:
+	Next: [[3230, 480]]
+	Prev: [[3630, 480]]
+ne70:
+	Next: [[2570.0, -150], [2720.0, -480], [2810.0, 0]]
+	Prev: [[2770.0, -150], [2920.0, -480], [2920.0, 0]]
+ne78:
+	Next: [[4602.5, 300]]
+	Prev: [[4602.5, 300]]
+ne83:
+	Next: [[-853, 1050]]
+	Prev: [[-453, 1050]]
+ne84:
+	Next: [[-550.0, -1350]]
+ne86:
+	Next: [[-1843.0, -750]]
+	Prev: [[-1843.0, -750]]
+ne88:
+	Next: [[-1498.0, -750]]
+	Prev: [[-1498.0, -750]]
+ne89:
+	Next: [[-1799.7, -1050], [-1586.3, -1050]]
+	Prev: [[-1799.7, -1050], [-1586.3, -1050]]
+ne90:
+	Next: [[-1768.0, -900]]
+	Prev: [[-1768.0, -900]]
+ne93:
+	Next: [[4987.0, 300]]
+	Prev: [[4987.0, 300]]
+ne94:
+	Next: [[4528.0, 150]]
+	Prev: [[4528.0, 150]]
+ne95:
+	Next: [[900, -300]]
+	Prev: [[1300, -300]]
+ne96:
+	Next: [[5259, -300]]
+	Prev: [[5659, -300]]
+ne97:
+	Next: [[4987.5, 150]]
+	Prev: [[4987.5, 150]]
+ne98:
+	Next: [[6053.0, 300], [6264.0, 300], [6475.0, 300]]
+	Prev: [[6053.0, 300], [6264.0, 300], [6475.0, 300]]
+ne99:
+	Next: [[5259, -150]]
+	Prev: [[5659, -150]]
+ne100:
+	Next: [[729.0, -1050]]
+	Prev: [[729.0, -1050]]
+ne101:
+	Next: [[1022.5, -1050]]
+	Prev: [[1022.5, -1050]]
+ne102:
+	Next: [[1713.0, -1050]]
+	Prev: [[1713.0, -1050]]
+ne103:
+	Next: [[3890.0, -480], [4008.0, -782], [4040.0, -630]]
+	Prev: [[4208.0, -782], [4240.0, -630]]
+ne105:
+	Next: [[6884.5, 300]]
+	Prev: [[6884.5, 300]]
+ne106:
+	Next: [[6052.2, 150], [6263.5, 150], [6474.8, 150]]
+	Prev: [[6052.2, 150], [6263.5, 150], [6474.8, 150]]
+ne85:
+	Next: [[328.0, -1200]]
+ne77:
+	Next: [[3419, 0], [3980.0, 0]]
+	Prev: [[3819, 0], [3220.0, 0]]
+ne104:
+	Next: [[2870.0, 0]]
+ne52:
+	Next: [[2870.0, 150]]
+ne21:
+	Next: [[3421, -150]]
+	Prev: [[3821, -150], [3220.0, 150]]
+ne110:
+	Next: [[408.5, -1050]]
+	Prev: [[408.5, -1050]]
+	\end{lstlisting}
+	
+	Una vez que el RNA detectó cada punto crítico de la red ferroviaria, procede a generar el señalamiento. El orden en que se procesan los elementos ferroviarios no impacta en el resultado final, pero para poder describirlo de forma ordenada se iniciará generando el señalamiento para proteger los finales de vías, las junturas entre rieles, las plataformas (explicado en la Sección \ref{sec:sig_platform}), los cruces de vía (explicado en la Sección \ref{sec:sig_levelcrossing}) y los cambios de vías (explicado en la Sección \ref{sec:signal_switches}). Luego se procederá a mostrar el señalamiento completo antes y después de la simplificación de señales (explicado en la Sección \label{sec:simplificacion}). 
+	
+	Tal cómo se explicó en la Sección \ref{sec:sig_border}, el RNA aplica el Algoritmo \ref{alg:lineBorder} y el Algoritmo \ref{alg:bufferStop} para generar las señales para proteger los finales de vías relativos y absolutos. Estas señales son ilustradas en la Figura \ref{fig:EJ3_3}.
+		
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{resultados-obtenidos/ejemplo3/images/3_step1.png}
@@ -140,8 +510,8 @@
 	
 	Los finales de vías absolutos son protegidos por las señales de parada T01, T03, T05, T07, T09, T11, T13, T15, T17, T19, T21, T23 y las señales de partida son T02, T04, T06, T08, T10, T12, T14, T16, T18, T20, T22 y T24. A su vez, al no existir finales de vías relativos, el RNA no asignó señales para su protección.
 	
-	La Figura \ref{fig:EJ3_4} ilustra la generación de señales destinadas a proteger las junturas entre los rieles. Las señales generadas son todas las señales comprendidas entre J43 y J49, indicadas en color rojo. De no existir junturas que proteger, el RNA salteará este paso.
-	
+	La Figura \ref{fig:EJ3_4} ilustra la generación de señales destinadas a proteger las junturas entre los rieles. Estas señales se obtuvieron al aplicar el Algoritmo \ref{alg:RJ}, tal como fue explicado en la Sección \ref{sec:sig_joint}. Las señales generadas son todas las señales comprendidas entre J43 y J49, indicadas en color rojo. De no existir junturas que proteger, el RNA salteará este paso.
+		
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{resultados-obtenidos/ejemplo3/images/3_step2.png}
@@ -149,7 +519,7 @@
 		\label{fig:EJ3_4}
 	\end{figure}
 	
-	Al generar el señalamiento para proteger la infraestructura, tal como se explicó en la Sección \ref{sec:horizontal}, el Algoritmo \ref{alg:horizontal} simplificará las señales entre dos elementos ferroviarios si no existe espacio suficiente entre ellos. El señalamiento generado para proteger las plataformas y los cruces de vía se ilustra en rojo en la Figura \ref{fig:EJ3_5}. Las señales generadas para proteger las plataformas son las señales de partida P52 a P77, mientras que las señales que protegen los cruces de vía son las señales X50 y X51, ya que los cruces de vía Ucr01 y Ocr01 son cruces bajo nivel y sobre nivel respectivamente, por lo que no interrumpen la circulación de formaciones ferroviaria.
+	Al generar el señalamiento para proteger la infraestructura, tal como se explicó en la Sección \ref{sec:horizontal}, el Algoritmo \ref{alg:horizontal} simplificará las señales entre dos elementos ferroviarios si no existe espacio suficiente entre ellos. El señalamiento generado para proteger las plataformas y los cruces de vía, producto de aplicar el Algoritmo \ref{alg:PTF} y el Algoritmo \ref{alg:LC}, respectivamente, se ilustra en rojo en la Figura \ref{fig:EJ3_5}. Las señales generadas para proteger las plataformas son las señales de partida P52 a P77, mientras que las señales que protegen los cruces de vía son las señales X50 y X51, ya que los cruces de vía Ucr01 y Ocr01 son cruces bajo nivel y sobre nivel respectivamente, por lo que no interrumpen la circulación de formaciones ferroviaria.
 	
 	\begin{figure}[H]
 		\centering
@@ -158,7 +528,7 @@
 		\label{fig:EJ3_5}
 	\end{figure}
 	
-	Al tener dos cambios de vías dobles, un cambio de vías en tijeras y quince cambios de vías simples, resulta poco práctico enumerar cada una de las setenta señales generadas para proteger estos elementos ferroviarios. Todas las señales se encuentran resaltadas en rojo en la Figura \ref{fig:EJ3_6}.
+	Al aplicar el Algoritmo \ref{alg:SW} de generación de señalamiento para cambios de vías, tal como fue explicado en la Sección \label{sec:signal_switches}, se generan todas las señales resaltadas en rojo en la Figura \ref{fig:EJ3_6}. Al tener dos cambios de vías dobles, un cambio de vías en tijeras y quince cambios de vías simples, resulta poco práctico enumerar cada una de las setenta señales generadas para proteger estos elementos ferroviarios. 
 	
 	\begin{figure}[H]
 		\centering
@@ -221,4 +591,609 @@
 		\label{fig:EJ3_7}
 	\end{figure}
 	
-	Al finalizar la generación del señalamiento, el RNA debe detectar todas las posibles rutas admitidas por la red para crear la tabla de enclavamientos. El RNA exporta los resultados del análisis en los siguientes cuatro documentos: Infrastructure.RNA (Apéndice \ref{sec:infrastructureRNA}), SafePoint.RNA (Apéndice \ref{sec:safePointsRNA}), Signalling.RNA (Apéndice \ref{sec:signallingRNA}) y Routes.RNA (Apéndice \ref{sec:routesRNA}).
+	Además, toda la información del señalamiento generado es exportada por el RNA en el archivo Signalling.RNA (Código \ref{lst:EJ3_6}), que incluye información detallada de la posición, orientación, sentido, coordenada, nombre y tipo de señal.
+	
+	\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = Signalling.RNA, label = {lst:EJ3_6}]
+T01 [T01] <<:
+	From: ne1 | To: bus2_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-1910, -300] | Coordinate: 0.0584
+T02 [T02] >>:
+	From: ne1 | To: ne1_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-1910, -300] | Coordinate: 0.0584
+T03 [T03] >>:
+	From: ne4 | To: bus5_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [6983, -150] | Coordinate: 0.7481
+T05 [T05] <<:
+	From: ne7 | To: bus8_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-1910, -150] | Coordinate: 0.1761
+T06 [T06] >>:
+	From: ne7 | To: ne7_right	
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-1910, -150] | Coordinate: 0.1761
+T07 [T07] <<:
+	From: ne14 | To: bus6_left
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [2290, -150] | Coordinate: 0.1851
+T08 [T08] >>:
+	From: ne14 | To: ne14_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [2290, -150] | Coordinate: 0.1851
+T11 [T11] <<:
+	From: ne47 | To: bus50_left
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [1390, 1200] | Coordinate: 0.2380
+T12 [T12] >>:
+	From: ne47 | To: ne47_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [1390, 1200] | Coordinate: 0.2380
+T13 [T13] <<:
+	From: ne84 | To: bus327_left
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-866, 1350] | Coordinate: 0.4286
+T14 [T14] >>:
+	From: ne84 | To: ne84_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-866, 1350] | Coordinate: 0.4286
+T15 [T15] <<:
+	From: ne86 | To: bus331_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-1913, 750] | Coordinate: 0.2941
+T17 [T17] >>:
+	From: ne88 | To: bus332_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-1423, 750] | Coordinate: 0.7142
+T19 [T19] <<:
+	From: ne89 | To: bus330_left
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-1913, 1050] | Coordinate: 0.1562
+T20 [T20] >>:
+	From: ne89 | To: ne89_right
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-1913, 1050] | Coordinate: 0.1562
+T21 [T21] <<:
+	From: ne90 | To: bus335_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [-1913, 900] | Coordinate: 0.2040
+T22 [T22] >>:
+	From: ne90 | To: ne90_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [-1913, 900] | Coordinate: 0.2040
+T23 [T23] >>:
+	From: ne105 | To: bus3_right
+	Type: Stop | Direction: normal | AtTrack: left 
+	Position: [6983, -300] | Coordinate: 0.7481
+T24 [T24] <<:
+	From: ne105 | To: ne105_left
+	Type: Stop | Direction: reverse | AtTrack: right 
+	Position: [6983, -300] | Coordinate: 0.7481
+L25 [L25] <<:
+	From: ne4 | To: sb450_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [6983, -150] | Coordinate: 0.7481
+L27 [L27] <<:
+	From: ne26 | To: sb307_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2238, 1050] | Coordinate: 0.2840
+L28 [L28] <<:
+	From: ne44 | To: sb437_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1265, 1050] | Coordinate: 0.2531
+L29 [L29] >>:
+	From: ne48 | To: line441_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1820, 1410] | Coordinate: 0.7982
+L30 [L30] <<:
+	From: ne65 | To: sb438_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1966, 1050] | Coordinate: 0.3676
+L32 [L32] <<:
+	From: ne70 | To: sb440_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2770, 330] | Coordinate: 0.9020
+L33 [L33] >>:
+	From: ne78 | To: sb398_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [4480, -300] | Coordinate: 0.2247
+L34 [L34] >>:
+	From: ne93 | To: sb432_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [4925, -300] | Coordinate: 0.3086
+L35 [L35] >>:
+	From: ne95 | To: sb301_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [288, -300] | Coordinate: 0.0549
+L37 [L37] <<:
+	From: ne97 | To: sb399_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [4926, -150] | Coordinate: 0.3095
+L38 [L38] >>:
+	From: ne98 | To: sb449_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [5942, -300] | Coordinate: 0.1184
+L40 [L40] <<:	
+	From: ne101 | To: sb436_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [980, 1050] | Coordinate: 0.3508
+L41 [L41] >>:
+	From: ne103 | To: sb306_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [4008, 782] | Coordinate: 0.9693
+L42 [L42] <<:
+	From: ne106 | To: sb435_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [5941, -150] | Coordinate: 0.1183
+J43 [J43] >>:
+	From: ne7 | To: ne7_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-550.0, -150] | Coordinate: 0.9435
+J46 [J46] >>:
+	From: ne9 | To: ne9_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-56.0, -300] | Coordinate: 0.5
+X50 [X50] >>:
+	From: ne95 | To: ne95_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [900, 300] | Coordinate: 0.5113
+X51 [X51] <<:
+	From: ne95 | To: ne95_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [1300, 300] | Coordinate: 0.6938
+P58 [P58] <<:
+	From: ne41 | To: ne41_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [-773, -1200] | Coordinate: 3.6152
+P60 [P60] <<:
+	From: ne23 | To: ne23_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2871, -1050] | Coordinate: 1.6976
+P63 [P63] >>:
+	From: ne24 | To: ne24_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [3431, -900] | Coordinate: 1.5760
+P64 [P64] <<:
+	From: ne67 | To: ne67_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [3310, -480] | Coordinate: 1.1290
+P65 [P65] >>:
+	From: ne67 | To: ne67_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [3550, -480] | Coordinate: 1.2410
+P68 [P68] <<:
+	From: ne99 | To: ne99_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [5179, 150] | Coordinate: 0.4356
+P69 [P69] >>:
+	From: ne99 | To: ne99_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [5739, 150] | Coordinate: 0.9564
+P70 [P70] <<:
+	From: ne96 | To: ne96_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [5339, 300] | Coordinate: 0.9081
+P71 [P71] >>:
+	From: ne96 | To: ne96_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [5579, 300] | Coordinate: 1.0651
+P72 [P72] <<:
+	From: ne21 | To: ne21_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [3341, 150] | Coordinate: 0.3936
+P73 [P73] >>:
+	From: ne21 | To: ne21_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [3901, 150] | Coordinate: 0.7752
+C78 [C78] >>:
+	From: ne1 | To: ne1_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-1339, 300] | Coordinate: 0.5263
+S80 [S80] <<:
+	From: ne9 | To: ne9_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [-56.0, -300] | Coordinate: 0.5
+C82 [C82] <<:
+	From: ne17 | To: ne17_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [3423, 300] | Coordinate: 0.5748
+S83 [S83] >>:
+	From: ne59 | To: ne59_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2294.5, -300] | Coordinate: 0.5
+S86 [S86] <<:
+	From: ne52 | To: ne52_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2870.0, -150] | Coordinate: 0.7110
+B89 [B89] >>:
+	From: ne23 | To: ne23_right
+	Type: Manouver | Direction: reverse | AtTrack: right 
+	Position: [2951, -1050] | Coordinate: 1.7090
+S90 [S90] <<:
+	From: ne64 | To: ne64_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [3890.0, 900] | Coordinate: 0.7117
+B92 [B92] >>:
+	From: ne24 | To: ne24_left
+	Type: Manouver | Direction: normal | AtTrack: right 
+	Position: [3351, -900] | Coordinate: 1.5537
+S93 [S93] >>:
+	From: ne26 | To: ne26_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [2314.0, 1050] | Coordinate: 0.5
+C95 [C95] <<:
+	From: ne83 | To: ne83_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-853, -1050] | Coordinate: 2.4880
+B96 [B96] <<:
+	From: ne29 | To: ne29_left
+	Type: Manouver | Direction: normal | AtTrack: right 
+	Position: [-746.0, 900] | Coordinate: 0.3856
+S97 [S97] >>:
+	From: ne30 | To: ne30_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [-1184.5, 1050] | Coordinate: 0.5
+C100 [C100] >>:
+	From: ne32 | To: ne32_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [44.5, 1050] | Coordinate: 0.5
+B101 [B101] <<:
+	From: ne29 | To: ne29_right
+	Type: Manouver | Direction: reverse | AtTrack: right 
+	Position: [-11.0, 900] | Coordinate: 0.9264
+S102 [S102] <<:
+	From: ne110 | To: ne110_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [408.5, 1050] | Coordinate: 0.5
+C104 [C104] <<:
+	From: ne102 | To: ne102_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [1713.0, 1050] | Coordinate: 0.5
+S105 [S105] >>:
+	From: ne44 | To: ne44_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [1362.5, 1050] | Coordinate: 0.5
+C109 [C109] >>:
+	From: ne17 | To: ne17_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [3823, 300] | Coordinate: 0.7667
+S110 [S110] <<:
+	From: ne78 | To: ne78_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [4602.5, -300] | Coordinate: 0.5
+C114 [C114] >>:
+	From: ne83 | To: ne83_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [-453, -1050] | Coordinate: 2.5639
+S115 [S115] <<:
+	From: ne32 | To: ne32_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [44.5, 1050] | Coordinate: 0.5
+C118 [C118] <<:
+	From: ne88 | To: ne88_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [-1498.0, 750] | Coordinate: 0.5
+S119 [S119] >>:
+	From: ne86 | To: ne86_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-1843.0, 750] | Coordinate: 0.5
+S122 [S122] <<:
+	From: ne30 | To: ne30_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [-1184.5, 1050] | Coordinate: 0.5
+B130 [B130] >>:
+	From: ne41 | To: ne41_right
+	Type: Manouver | Direction: normal | AtTrack: left 
+	Position: [-853, -1200] | Coordinate: 3.6075
+S131 [S131] <<:
+	From: ne85 | To: ne85_left
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [0, 0] | Coordinate: 1.5413
+B133 [B133] <<:
+	From: ne77 | To: ne77_right
+	Type: Manouver | Direction: normal | AtTrack: left 
+	Position: [3419, 0] | Coordinate: 0.4828
+S135 [S135] <<:
+	From: ne94 | To: ne94_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [4528.0, -150] | Coordinate: 0.5
+C138 [C138] >>:
+	From: ne110 | To: ne110_right
+	Type: Circulation | Direction: reverse | AtTrack: right 
+	Position: [408.5, 1050] | Coordinate: 0.5
+S139 [S139] <<:
+	From: ne100 | To: ne100_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [729.0, 1050] | Coordinate: 0.5
+B143 [B143] <<:
+	From: ne104 | To: ne104_right
+	Type: Manouver | Direction: reverse | AtTrack: right 
+	Position: [2870.0, 0] | Coordinate: 1.0
+S144 [S144] <<:
+	From: ne21 | To: ne21_left
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [3220.0, -150] | Coordinate: 0.1694
+B145 [B145] >>:
+	From: ne77 | To: ne77_left
+	Type: Manouver | Direction: reverse | AtTrack: right 
+	Position: [3819, 0] | Coordinate: 0.7958
+S146 [S146] >>:
+	From: ne52 | To: ne52_right
+	Type: Circulation | Direction: normal | AtTrack: left 
+	Position: [2870.0, -150] | Coordinate: 0.7110
+	\end{lstlisting}	
+
+	Al finalizar la generación del señalamiento, el RNA ejecuta el Algoritmo \ref{alg:routes}, explicado en la Sección \ref{sec:rutas}, para detectar todas las posibles rutas admitidas por la red para crear la tabla de enclavamientos. La cuál puede ser visualizada en el archivo Routes.RNA (Código \ref{lst:EJ3_7}). La misma detalla las señales de inicio y final, los \textit{netElements} abarcados por la ruta y cualquier infraestructura involucrada, incluyendo el estado que deben tener para que la ruta sea activada.
+	
+	\begin{lstlisting}[language = {}, tabsize=4, basicstyle=\footnotesize\ttfamily, showspaces=false, showstringspaces=false, caption = Routes.RNA, label = {lst:EJ3_7}]
+route_1 [T02 >> C78]:
+	Path: ['ne1']
+	Platforms: ['Plat01']
+route_2 [T06 >> J43]:
+	Path: ['ne7']
+	Platforms: ['Plat02']
+route_3 [T08 >> S146]:
+	Path: ['ne14', 'ne52']
+	Switches: ['69W04_N']
+route_4 [T12 >> L29]:
+	Path: ['ne47', 'ne48']
+	Switches: ['71W02_R']
+route_5 [T14 >> C100]:
+	Path: ['ne84', 'ne82', 'ne32']
+	Switches: ['Sw04_R', 'Sw05_RR']
+route_6 [T14 >> S105]:
+	Path: ['ne84', 'ne85', 'ne100', 'ne101', 'ne44']
+	Switches: ['Sw05_NR', 'Sw41_R']
+route_7 [T20 >> S97]:
+	Path: ['ne89', 'ne30']
+	Switches: ['Sw12_N']
+route_8 [T22 >> S97]:
+	Path: ['ne90', 'ne91', 'ne30']
+	Switches: ['Sw12_R', 'Sw13_R']
+route_9 [T24 << P70]:
+	Path: ['ne105', 'ne98', 'ne96']
+	Platforms: ['Plat11']
+route_10 [L25 << L42]:
+	Path: ['ne4', 'ne106']
+route_11 [L27 << L30]:
+	Path: ['ne26', 'ne65']
+	route_12 [L28 << L40]:
+	Path: ['ne44', 'ne101']
+route_13 [L30 << C104]:
+	Path: ['ne65', 'ne102']
+route_14 [L32 >> P73]:
+	Path: ['ne70', 'ne104', 'ne21']
+route_15 [L33 >> L34]:
+	Path: ['ne78', 'ne93']
+route_16 [L34 >> P71]:
+	Path: ['ne93', 'ne96']
+	Platforms: ['Plat11']
+route_17 [L35 >> X50]:
+	Path: ['ne95']
+route_18 [L37 << S135]:
+	Path: ['ne97', 'ne94']
+route_19 [L38 >> T23]:
+	Path: ['ne98', 'ne105']
+route_20 [L40 << S139]:
+	Path: ['ne101', 'ne100']
+route_21 [L41 << S90]:
+	Path: ['ne103', 'ne64']
+route_22 [L42 << P68]:
+	Path: ['ne106', 'ne99']
+	Platforms: ['Plat10']
+route_23 [J43 >> J46]:
+	Path: ['ne7', 'ne9']
+	Switches: ['68W02_R']
+route_24 [J46 >> L35]:
+	Path: ['ne9', 'ne95']
+route_25 [X50 >> S83]:
+	Path: ['ne95', 'ne59']
+	LevelCrossings: ['Lc01']
+route_26 [X51 << S80]:
+	Path: ['ne95', 'ne9']
+	LevelCrossings: ['Lc01']
+route_27 [P60 << L27]:
+	Path: ['ne23', 'ne26']
+	Switches: ['70W02_N']
+route_28 [P63 >> L41]:
+	Path: ['ne24', 'ne64', 'ne103']
+	Switches: ['70W01_N']
+route_29 [P64 << L32]:
+	Path: ['ne67', 'ne70']
+route_30 [P65 >> L41]:
+	Path: ['ne67', 'ne103']
+route_31 [P68 << L37]:
+	Path: ['ne99', 'ne97']
+route_32 [P69 >> T03]:
+	Path: ['ne99', 'ne106', 'ne4']
+route_33 [P70 << S110]:
+	Path: ['ne96', 'ne93', 'ne78']
+route_34 [P71 >> L38]:
+	Path: ['ne96', 'ne98']
+route_35 [P72 << S144]:
+	Path: ['ne21']
+route_36 [P73 >> L33]:
+	Path: ['ne21', 'ne79', 'ne78']
+	Switches: ['Sw06_R', 'Sw07_RN']
+route_37 [P73 >> P69]:
+	Path: ['ne21', 'ne94', 'ne97', 'ne99']
+	Switches: ['Sw07_NN']
+	Platforms: ['Plat10']
+route_38 [C78 >> J46]:
+	Path: ['ne1', 'ne9']
+	Switches: ['68W02_N']
+route_39 [S80 << T01]:
+	Path: ['ne9', 'ne1']
+	Switches: ['68W02_N']
+	Platforms: ['Plat01']
+route_40 [S80 << T05]:
+	Path: ['ne9', 'ne7']
+	Switches: ['68W02_R']
+	Platforms: ['Plat02']
+route_41 [C82 << X51]:
+	Path: ['ne17', 'ne59', 'ne95']
+	Switches: ['69W03_N']
+route_42 [S83 >> S146]:
+	Path: ['ne59', 'ne11', 'ne52']
+	Switches: ['69W03_R', '69W04_R']
+route_43 [S83 >> C109]:
+	Path: ['ne59', 'ne17']
+	Switches: ['69W03_N']
+	Platforms: ['Plat09']
+route_44 [S86 << X51]:
+	Path: ['ne52', 'ne11', 'ne59', 'ne95']
+	Switches: ['69W03_R', '69W04_R']
+route_45 [S86 << T07]:
+	Path: ['ne52', 'ne14']
+	Switches: ['69W04_N']
+route_46 [B89 >> L41]:
+	Path: ['ne23', 'ne64', 'ne103']
+	Switches: ['70W01_R']
+	Platforms: ['Plat05']
+route_47 [S90 << P60]:
+	Path: ['ne64', 'ne23']
+	Switches: ['70W01_R']
+	Platforms: ['Plat05']
+route_48 [S90 << L27]:
+	Path: ['ne64', 'ne23', 'ne26']
+	Switches: ['70W01_R', '70W02_N']
+	Platforms: ['Plat05']
+route_49 [B92 >> P63]:
+	Path: ['ne24']
+route_50 [S93 >> B89]:
+	Path: ['ne26', 'ne23']
+	Switches: ['70W02_N']
+route_51 [S93 >> B92]:
+	Path: ['ne26', 'ne24']
+	Switches: ['70W02_R']
+	Platforms: ['Plat06']
+route_52 [C95 << S122]:
+	Path: ['ne83', 'ne30']
+	Switches: ['Sw08_N']
+route_53 [B96 << S122]:
+	Path: ['ne29', 'ne30']
+	Switches: ['Sw08_R']
+route_54 [S97 >> C138]:
+	Path: ['ne30', 'ne29', 'ne110']
+	Switches: ['Sw08_R', 'Sw09_R']
+route_55 [S97 >> C114]:
+	Path: ['ne30', 'ne83']
+	Switches: ['Sw08_N']
+	Platforms: ['Plat03']
+route_56 [C100 >> C138]:
+	Path: ['ne32', 'ne110']
+	Switches: ['Sw09_N']
+route_57 [B101 << B96]:
+	Path: ['ne29']
+route_58 [S102 << S115]:
+	Path: ['ne110', 'ne32']
+	Switches: ['Sw09_N']
+route_59 [S102 << B101]:
+	Path: ['ne110', 'ne29']
+	Switches: ['Sw09_R']
+route_60 [C104 << L28]:
+	Path: ['ne102', 'ne44']
+	Switches: ['71W01_N']
+route_61 [S105 >> L29]:
+	Path: ['ne44', 'ne43', 'ne48']
+	Switches: ['71W01_R', '71W02_N']
+route_62 [S105 >> S93]:
+	Path: ['ne44', 'ne102', 'ne65', 'ne26']
+	Switches: ['71W01_N']
+route_63 [C109 >> L33]:
+	Path: ['ne17', 'ne78']
+	Switches: ['Sw06_N']
+route_64 [S110 << C82]:
+	Path: ['ne78', 'ne17']
+	Switches: ['Sw06_N']
+	Platforms: ['Plat09']
+route_65 [S110 << B133]:
+	Path: ['ne78', 'ne79', 'ne77']
+	Switches: ['Sw06_R', 'Sw07_RR']
+	Platforms: ['Plat08', 'Plat13']
+route_66 [S110 << P72]:
+	Path: ['ne78', 'ne79', 'ne21']
+	Switches: ['Sw06_R', 'Sw07_RN']
+	Platforms: ['Plat12']
+route_67 [C114 >> C100]:
+	Path: ['ne83', 'ne32']
+	Switches: ['Sw04_N']
+route_68 [S115 << C95]:
+	Path: ['ne32', 'ne83']
+	Switches: ['Sw04_N']
+	Platforms: ['Plat03']
+route_69 [S115 << P58]:
+	Path: ['ne32', 'ne82', 'ne41']
+	Switches: ['Sw04_R', 'Sw05_RN']
+	Platforms: ['Plat04']
+route_70 [S115 << T13]:
+	Path: ['ne32', 'ne82', 'ne84']
+	Switches: ['Sw04_R', 'Sw05_RR']
+route_71 [C118 << T15]:
+	Path: ['ne88', 'ne86']
+	Switches: ['Sw11_N']
+route_72 [S119 >> T17]:
+	Path: ['ne86', 'ne88']	
+	Switches: ['Sw11_N']
+route_73 [S119 >> S97]:
+	Path: ['ne86', 'ne87', 'ne91', 'ne30']
+	Switches: ['Sw11_R', 'Sw12_R', 'Sw13_N']
+route_74 [S122 << T19]:
+	Path: ['ne30', 'ne89']
+	Switches: ['Sw12_N']
+route_75 [S122 << T15]:
+	Path: ['ne30', 'ne91', 'ne87', 'ne86']
+	Switches: ['Sw11_R', 'Sw12_R', 'Sw13_N']
+route_76 [S122 << T21]:
+	Path: ['ne30', 'ne91', 'ne90']
+	Switches: ['Sw12_R', 'Sw13_R']
+route_77 [B130 >> C100]:
+	Path: ['ne41', 'ne82', 'ne32']
+	Switches: ['Sw04_R', 'Sw05_RN']
+	Platforms: ['Plat04']
+route_78 [B130 >> S105]:	
+	Path: ['ne41', 'ne85', 'ne100', 'ne101', 'ne44']
+	Switches: ['Sw05_NN', 'Sw41_R']
+	Platforms: ['Plat04']
+route_79 [S131 << P58]:
+	Path: ['ne85', 'ne41']
+	Switches: ['Sw05_NN']
+	Platforms: ['Plat04']
+route_80 [S131 << T13]:
+	Path: ['ne85', 'ne84']
+	Switches: ['Sw05_NR']
+route_81 [B133 << S86]:
+	Path: ['ne77', 'ne52']
+route_82 [S135 << B133]:
+	Path: ['ne94', 'ne77']
+	Switches: ['Sw07_NR']
+	Platforms: ['Plat08', 'Plat13']
+route_83 [S135 << P72]:
+	Path: ['ne94', 'ne21']
+	Switches: ['Sw07_NN']
+	Platforms: ['Plat12']
+route_84 [C138 >> S105]:
+	Path: ['ne110', 'ne100', 'ne101', 'ne44']	
+	Switches: ['Sw41_N']
+route_85 [S139 << S102]:
+	Path: ['ne100', 'ne110']
+	Switches: ['Sw41_N']
+route_86 [S139 << S131]:
+	Path: ['ne100', 'ne85']
+	Switches: ['Sw41_R']
+route_87 [B143 << L32]:
+	Path: ['ne104', 'ne70']
+route_88 [S144 << B143]:
+	Path: ['ne21', 'ne104']
+route_89 [B145 >> L33]:
+	Path: ['ne77', 'ne79', 'ne78']
+	Switches: ['Sw06_R', 'Sw07_RR']
+route_90 [B145 >> P69]:
+	Path: ['ne77', 'ne94', 'ne97', 'ne99']
+	Switches: ['Sw07_NR']
+	Platforms: ['Plat10']
+route_91 [S146 >> B145]:
+	Path: ['ne52', 'ne77']
+	Platforms: ['Plat08', 'Plat13']
+	\end{lstlisting}

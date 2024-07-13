@@ -1,3 +1,14 @@
-\subsection{Validación del sistema de enclavamientos}
+\section{Validación del sistema de enclavamientos}
 
-    Al no existir un señalamiento original, no es posible realizar una comparación ruta a ruta entre ambos sistemas. Sin embargo, el RNA siempre realiza la comprobación de cada uno de los principios de señalamiento. Por ejemplo, al aplicar el Algoritmo \ref{alg:ppio_infraestructura} referido a la comprobación del principio de infraestructura, los siguientes conjuntos de \textit{netElements} poseen elementos ferroviarios que necesitan protección: ['ne40', 'ne48', 'ne53', 'ne3'] ['ne49', 'ne46'] ['ne48', 'ne50', 'ne53'] ['ne40', 'ne3'] ['ne49', 'ne46']. Al finalizar la comprobación, el RNA comprobó que el señalamiento cubre todos los elementos ferroviarios desde cada uno de sus flancos. 
+   	Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+	
+	\begin{itemize}
+		\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+		\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): Al no existir un señalamiento original, no es posible realizar una comparación ruta a ruta entre ambos sistemas.
+		\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+		\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): Al no existir un señalamiento original, no es posible realizar una comparación ruta a ruta entre ambos sistemas.
+		\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+		\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+		\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+	\end{itemize}	
+	

@@ -1,7 +1,7 @@
 \subsection{Módulo Decoder}
 	\label{sec:decoder}
 	
-	El módulo \textit{Decoder} (ver Figura \ref{fig:GeneralSystem}) es el encargado de demultiplexar la trama \textit{packet}[N] ya validada por el módulo \textit{Detector}. El módulo \textit{Decoder} recibe el vector de elementos booleanos \textit{packet}[N] y la señal \textit{process} que indica cuando puede iniciar el proceso de demultiplexación. La salida serán todos los vectores de estado de los elementos ferroviarios. El diagrama de bloques de la máquinas de estado finitas con camino de datos se muestra en la Figura \ref{fig:Decoder_module}.
+	El módulo \textit{Decoder} (ver Figura \ref{fig:GeneralSystem}) es el encargado de demultiplexar la trama \textit{packet}[N] ya validada por el módulo \textit{Detector}. El módulo \textit{Decoder} recibe el vector de elementos booleanos \textit{packet}[N] y la señal \textit{process} que indica cuando puede iniciar el proceso de demultiplexación. La salida serán todos los vectores de estado de los elementos ferroviarios. El diagrama de bloques de la máquinas de estado finitas con camino de datos se muestra en la Figura \ref{fig:Decoder_module}. En este caso particular, no se cuenta con una máquina de estados, ya que la demultiplexación se realiza directamente.
 	
 	\begin{figure}[H]
 		\centering

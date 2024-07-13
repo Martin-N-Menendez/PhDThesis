@@ -1,6 +1,6 @@
-\subsection{Validación del sistema de enclavamientos}
+\section{Validación del sistema de enclavamientos}
 
-    Las 77 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_4_1}, Tabla \ref{Tab:tabla_original_4_2}, Tabla \ref{Tab:tabla_original_4_3}, Tabla \ref{Tab:tabla_original_4_4} y Tabla \ref{Tab:tabla_original_4_5}) tienen 77 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_4_1}, Tabla \ref{Tab:tabla_generated_4_2}, Tabla \ref{Tab:tabla_generated_4_3}, Tabla \ref{Tab:tabla_generated_4_4}, Tabla \ref{Tab:tabla_generated_4_5} y Tabla \ref{Tab:tabla_generated_4_6}), tal como se puede visualizar en las Tabla \ref{Tab:tabla_validation_4_1}, \ref{Tab:tabla_validation_4_2}, \ref{Tab:tabla_validation_4_3}, \ref{Tab:tabla_validation_4_4} y \ref{Tab:tabla_validation_4_5}, generadas automáticamente por el RNA.
+    La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 77 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_4_1}, Tabla \ref{Tab:tabla_original_4_2}, Tabla \ref{Tab:tabla_original_4_3}, Tabla \ref{Tab:tabla_original_4_4} y Tabla \ref{Tab:tabla_original_4_5}) tienen 77 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_4_1}, Tabla \ref{Tab:tabla_generated_4_2}, Tabla \ref{Tab:tabla_generated_4_3}, Tabla \ref{Tab:tabla_generated_4_4}, Tabla \ref{Tab:tabla_generated_4_5} y Tabla \ref{Tab:tabla_generated_4_6}), tal como se puede visualizar en las Tabla \ref{Tab:tabla_validation_4_1}, \ref{Tab:tabla_validation_4_2}, \ref{Tab:tabla_validation_4_3}, \ref{Tab:tabla_validation_4_4} y \ref{Tab:tabla_validation_4_5}, generadas automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -188,4 +188,16 @@
     \end{table}
     
     De las 89 rutas generadas, 35 rutas tienen una equivalencia directa con alguna de las 77 rutas originales. Un total de 36 de las nuevas rutas son producto de la partición de alguna de las rutas originales. Las restantes 18 rutas generadas (R1, R3, R4, R6, R7, R10, R12, R14, R15, R17, R18, R19, R29, R62, R75, R77, R81 y R86) no tienen ninguna equivalencia con el señalamiento original, y todas ellas son producto de haber añadido señales de parada o de partida para a los finales de vía absolutos, ausentes en el señalamiento original.
+    
+    Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+    
+    \begin{itemize}
+    	\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+    	\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): rutas 100\% independientes.
+    	\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+    	\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): 100\% de rutas divididas a su mínima expresión.
+    	\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+    	\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+    	\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+    \end{itemize}	
     

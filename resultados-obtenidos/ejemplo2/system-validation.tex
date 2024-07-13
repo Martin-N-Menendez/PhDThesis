@@ -1,6 +1,6 @@
-\subsection{Validación del sistema de enclavamientos}
+\section{Validación del sistema de enclavamientos}
 
-	Las 5 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_2}) tienen 5 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_2}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_2}, generada automáticamente por el RNA.
+	La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 5 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_2}) tienen 5 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_2}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_2}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -26,9 +26,21 @@
             \end{center}
         }    
     \end{table}
-    
+        
     El RNA generó nuevas rutas para incrementar la seguridad de la red. La ruta R1 fue definida al crear las señales T02 y L06 para proteger el final de la vía en la sección ne19-ne20. La ruta R6 fue definida al crear la señal L04 para proteger el final de la vía en ne15, creando una nueva ruta con la señal S15. La ruta R8 fue definida al crear la señal L06 para proteger el final de la vía ne20, creando una nueva ruta con la señal S18.
     
-    Adicionalmente, el RNA generó nuevas rutas para incrementar la mobilidad de la red. La ruta R5 fue definida al crear la señal de partida P09 para la plataforma plat01. La ruta R7 fue definida al crear la señal de partida P12 para la plataforma plat02.
+    Adicionalmente, el RNA generó nuevas rutas para incrementar la movilidad de la red. La ruta R5 fue definida al crear la señal de partida P09 para la plataforma plat01. La ruta R7 fue definida al crear la señal de partida P12 para la plataforma plat02.
     
     Estos elementos ferroviarios, los finales de vía y las plataformas, no se encontraban protegidos en la tabla de enclavamientos original (Tabla \ref{Tab:tabla_original_2}). Ninguna ruta original atravesaba el cruce de vías, por lo que el RNA agregó las rutas R5 y R8 que cumplen esa función.
+    
+    Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+    
+    \begin{itemize}
+    	\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+    	\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): rutas 100\% independientes.
+    	\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+    	\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): 100\% de rutas divididas a su mínima expresión.
+    	\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+    	\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+    	\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+    \end{itemize}	

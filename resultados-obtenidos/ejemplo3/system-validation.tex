@@ -1,6 +1,6 @@
-\subsection{Validacion del sistema}
+\section{Validación del sistema}
 
-	Las 33 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_3}) tienen 33 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_3_1}, \ref{Tab:tabla_generated_3_2}, \ref{Tab:tabla_generated_3_3}, \ref{Tab:tabla_generated_3_4}, \ref{Tab:tabla_generated_3_5}, \ref{Tab:tabla_generated_3_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_3_1} y Tabla \ref{Tab:tabla_validation_3_2}, generada automáticamente por el RNA.
+	La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 33 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_3}) tienen 33 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_3_1}, \ref{Tab:tabla_generated_3_2}, \ref{Tab:tabla_generated_3_3}, \ref{Tab:tabla_generated_3_4}, \ref{Tab:tabla_generated_3_5}, \ref{Tab:tabla_generated_3_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_3_1} y Tabla \ref{Tab:tabla_validation_3_2}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
@@ -80,3 +80,15 @@
     Las rutas R1, R2, R5, R6, R11, R16, R17, R20, R22, R23, R26, R27, R28, R31 y R32 del señalamiento original fueron divididas en rutas mas pequeñas en el señalamiento generado por el RNA. La razón para dividir la ruta depende de cada caso, tal sea por su longitud y/o por abarcar diversos elementos ferroviarios. Por ejemplo, la ruta R32 fue dividida por ambos motivos: es muy extensa y atraviesa un cambio de vías en tijeras, dos cambios de vías simples, un cruce de vías y una plataforma. Las rutas producto de particionar R32 (R81, R44 y R26 del nuevo señalamiento) añaden paradas luego de cruzar el cambio de vías en tijeras y antes del cruce de vías, incrementando la seguridad y flexibilidad en la logística de la red. Un análisis similar puede hacerse con las demás rutas particionadas.
     
     De las 91 rutas generadas por el RNA, 29 son particiones de rutas originales, por lo que 62 de ellas están relacionadas de alguna manera a las 33 rutas originales. Las 29 rutas restantes corresponden a la protección de los 12 finales de vía absolutos y al único final de vía relativo, además de las señales añadidas para poder operar las playas de maniobras que se encontraban sin señalamiento.
+    
+    Para finalizar, el RNA comprueba los principios de señalamiento ferroviario explicados en la Sección \label{sec:validar_principios}, aplicando los algoritmos indicados, de los cuáles se obtuvieron los siguientes resultados:
+    
+    \begin{itemize}
+    	\item Principio de autoridad (Algoritmo \ref{alg:ppio_autoridad}): cobertura del 100\% de los \textit{netElements}.
+    	\item Principio de claridad (Algoritmo \ref{alg:ppio_claridad}): rutas 100\% independientes.
+    	\item Principio de anticipación (Algoritmo \ref{alg:ppio_anticipacion}): cobertura del 100\% de los puntos críticos.
+    	\item Principio de granularidad (Algoritmo \ref{alg:ppio_granularidad}): 100\% de rutas divididas a su mínima expresión.
+    	\item Principio de terminalidad (Algoritmo \ref{alg:ppio_terminalidad}): 100\% de finales de vías protegidos.
+    	\item Principio de infraestructura (Algoritmo \ref{alg:ppio_infraestructura}): 100\% de infraestructura protegida.
+    	\item Principio de no bloqueo (Algoritmo \ref{alg:ppio_nobloqueo}): 100\% de cambios de vías protegidos.
+    \end{itemize}	

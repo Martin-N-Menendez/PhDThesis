@@ -43,7 +43,7 @@
 	ne23 has a RailJoint[J14] @ [1284, 0]
 	\end{lstlisting}
 	
-	Esta información es exportada por el RNA, con mayor detalle, en el archivo Infrastructure.RNA \ref{lst:EJ1_4} que resume cada elemento ferroviario asociado a su respectivo \textit{netElement}.
+	Esta información es exportada por el RNA, con mayor detalle, en el archivo Infrastructure.RNA (Código \ref{lst:EJ1_4}) que resume cada elemento ferroviario asociado a su respectivo \textit{netElement}.
 	
 	\begin{lstlisting}[language = {}, caption = Infrastructure.RNA, label = {lst:EJ1_4}]
 Nodes: 11|Switches: 5|Signals: 0|Detectors: 2|Ends: 7|Barriers: 2
@@ -143,7 +143,6 @@ ne23:
 	
 	Una vez que el RNA detectó cada punto crítico de la red ferroviaria, procede a generar el señalamiento. El orden en que se procesan los elementos ferroviarios no impacta en el resultado final, pero para poder describirlo de forma ordenada se iniciará generando el señalamiento para proteger los finales de vías, las junturas entre rieles, las plataformas (explicado en la Sección \ref{sec:sig_platform}), los cruces de vía (explicado en la Sección \ref{sec:sig_levelcrossing}) y los cambios de vías (explicado en la Sección \ref{sec:signal_switches}). Luego se procederá a mostrar el señalamiento completo antes y después de la simplificación de señales (explicado en la Sección \label{sec:simplificacion}). 
 	
-	
 	Tal cómo se explicó en la Sección \ref{sec:sig_border}, el RNA aplica el Algoritmo \ref{alg:lineBorder} y el Algoritmo \ref{alg:bufferStop} para generar las señales para proteger los finales de vías relativos y absolutos. Estas señales son ilustradas en la Figura \ref{fig:EJ1_3}.
 	
 	\begin{figure}[H]
@@ -173,7 +172,7 @@ ne23:
 		\label{fig:EJ1_5}
 	\end{figure}
 	
-	Al aplicar el Algoritmo \ref{alg:SW} de generación de señalamiento para cambios de vías, tal como fue explicado en la Sección \label{sec:signal_switches}, se generan las señales S22, C21, H23 y H24 para proteger el cambio de vías Sw04; las señales S27, C25, B26 y H28 para proteger el cambio de vías Sw06; las señales C29 y B30 para proteger el cambio de vías Sw07; las señales S32, C31 y H33 para proteger el cambio de vías Sw12 y las señales S35, C34 y H36 para proteger el cambio de vías Sw13. Estas señales se encuentran resaltadas en rojo en la Figura \ref{fig:EJ1_6}.
+	Al aplicar el Algoritmo \ref{alg:SW} de generación de señalamiento para cambios de vías, tal como fue explicado en la Sección \label{sec:signal_switches}, el RNA genera las señales S22, C21, H23 y H24 para proteger el cambio de vías Sw04; las señales S27, C25, B26 y H28 para proteger el cambio de vías Sw06; las señales C29 y B30 para proteger el cambio de vías Sw07; las señales S32, C31 y H33 para proteger el cambio de vías Sw12 y las señales S35, C34 y H36 para proteger el cambio de vías Sw13. Estas señales se encuentran resaltadas en rojo en la Figura \ref{fig:EJ1_6}.
 	
 	\begin{figure}[H]
 		\centering
