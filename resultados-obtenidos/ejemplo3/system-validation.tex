@@ -1,16 +1,16 @@
 \section{Validación del sistema}
 
-	La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 33 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_3}) tienen 33 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_3_1}, \ref{Tab:tabla_generated_3_2}, \ref{Tab:tabla_generated_3_3}, \ref{Tab:tabla_generated_3_4}, \ref{Tab:tabla_generated_3_5}, \ref{Tab:tabla_generated_3_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_3_1} y Tabla \ref{Tab:tabla_validation_3_2}, generada automáticamente por el RNA.
+	La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 33 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_3}) tienen 33 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_3_1}, \ref{Tab:tabla_generated_3_2}, \ref{Tab:tabla_generated_3_3}, \ref{Tab:tabla_generated_3_4}, \ref{Tab:tabla_generated_3_5}, \ref{Tab:tabla_generated_3_6}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_3_1}, generada automáticamente por el RNA. % y Tabla \ref{Tab:tabla_validation_3_2}, generada automáticamente por el RNA.
 
     \begin{table}[H]
         {
-        \caption{Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 1 a 16).}
+        \caption{Equivalencias entre las rutas originales y las generadas por el RNA.}
         \label{Tab:tabla_validation_3_1}
         \centering
         %\small
             %\centering
             \begin{center}
-            \resizebox{1\textwidth}{!}{
+            \resizebox{0.9\textwidth}{!}{
             \begin{tabular}{ c c c c }
                 \hline	
                     Original & Señales & RNA & Señales \\	
@@ -31,28 +31,28 @@
                     R$_{14}$ & 70N2-69Vc & R$_{27}$ & P$_{60}$-L$_{27}$\\
                     R$_{15}$ & 70N1-69Vc & R$_{28}$ & P$_{63}$-L$_{41}$\\
                     R$_{16}$ & 70P1-72Va & R$_{28}$+R$_{21}$+R$_{48}$+R$_{11}$+R$_{13}$+R$_{60}$ & P$_{63}$-L$_{28}$\\
-                \hline
-            \end{tabular}
-            }
-            \end{center}
-        }    
-    \end{table}
+    %            \hline
+    %        \end{tabular}
+    %        }
+    %        \end{center}
+    %    }    
+    %\end{table}
 
 	%\lipsum[1]
 	
-    \begin{table}[H]
-        {
-        \caption{Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 17 a 33).}
-        \label{Tab:tabla_validation_3_2}
-        \centering
+    %\begin{table}[H]
+    %    {
+    %    \caption{Equivalencias entre las rutas originales y las generadas por el RNA (Rutas 17 a 33).}
+    %    \label{Tab:tabla_validation_3_2}
+    %    \centering
         %\small
             %\centering
-            \begin{center}
-            \resizebox{1\textwidth}{!}{
-            \begin{tabular}{ c c c c }
-                \hline	
-                    Original & Señales & RNA & Señales \\	
-                \hline
+   %         \begin{center}
+   %         \resizebox{0.8\textwidth}{!}{
+   %         \begin{tabular}{ c c c c }
+   %             \hline	
+   %                 Original & Señales & RNA & Señales \\	
+   %             \hline
                     R$_{17}$ & 70P2-72Va & R$_{27}$+R$_{11}$+R$_{13}$+R$_{60}$ & P$_{60}$-L$_{28}$\\
                     R$_{18}$ & 70B-70N2 & R$_{50}$ & S$_{93}$-B$_{89}$\\
                     R$_{19}$ & 70B-70N1 & R$_{51}$ & S$_{93}$-P$_{92}$\\

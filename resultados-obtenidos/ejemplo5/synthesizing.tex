@@ -12,12 +12,17 @@
 	n_platforms:0
 	n_scissorCrossings:0
 	n_signals:16
-	N : 60
-	M : 52
+	N : 44
 	\end{lstlisting}
 	
-	El código VHDL generado por el ACG es importado en un proyecto de Vivado, donde es sintetizado e implementado para generar el bitstream que será utilizado para programar la FPGA. La cantidad de elementos de la FPGA utilizados por el sistema post-síntesis y post-implementación, así como el porcentaje de uso de la plataforma, son detallados en la Tabla \ref{Tab:tabla_ACG_5}.
+	Se repetirán los pasos detallados en el ejemplo 1, Sección \ref{sec:EJEMPLO1_ACG}, por lo que solamente se destacarán aspectos particulares de este ejemplo. El ACG genera 62 archivos en formato VHDL. El archivo \textit{Arty\_Z7-10.XDC} es el mismo para todos los ejemplos, al ser invariante respecto a la cantidad de pines a utilizar. Se deberá modificar el script mostrado en el Código \ref{lst:EJ1_script} y cambiar el parámetro \textit{chosen} a 5 para automatizar la importación de los archivos del ejemplo 5 y desvincular cualquier otro conjunto de archivos de ejemplos anteriores.
 	
+	Una vez ejecutado el script, Vivado ordenará los archivos de forma jerárquica, donde el módulo \textit{global} incluye todos los módulos que fueron detallados en la Sección \ref{sec:interlockingArch}. Cada una de las instancias del módulo \textit{network} contienen sus propias 44 instancias de los mismos módulos de cada elemento ferroviario ya que N, cantidad de elementos ferroviarios, es 44 en el Código \ref{lst:EJ5_8}. El ejemplo 5 utiliza mas de 13800 sub módulos conectados automáticamente mediante mas de 27000 señales, lo cual se aleja bastante de un desarrollo que pueda realizarse manualmente de forma trivial.
+	
+	Cuando Vivado genera el diagrama de bloques ya tenemos la certeza de que el código VHDL ha pasado la prueba de sintaxis del entorno de desarrollo. A continuación, se deberá sintetizar e implementar el sistema para generar el bitstream que será utilizado para programar la FPGA. Los procesos de síntesis e implementación fueron detallados en el ejemplo 1, Sección \ref{sec:EJEMPLO1_ACG}.
+	
+	Los resultados de ambos procesos son detallados en la Tabla \ref{Tab:tabla_ACG_5}. Los porcentajes de uso son calculados por Vivado automáticamente, teniendo en cuenta que la plataforma Arty Z7 20 posee 53200 Look-Up-Tables (LUTs), 106400 Flip-Flops (FFs), 125 Pines de entrada y salida (IOs) y 32 Buffers (BUFGs), tal cómo se explicó en la Sección \ref{sec:AGG}. En este ejemplo, la cantidad de recursos utilizados es baja y el tiempo de síntesis e implementación es de 41 y 57 segundos, respectivamente.
+		
 	\begin{table}[H]
 		{
 			\caption{Síntesis e implementación del ejemplo 5 generado por el ACG.}
@@ -31,15 +36,13 @@
 						\hline	
 						Recursos & Síntesis & Implementación & Uso \\	
 						\hline
-						LUT & 2938 & 13556 & 5.52\%\\
-						FF & 3925 & 17256 & 3.69\%\\
-						IO & 16 & 16 & 12.80\%\\
-						BUFG & 1 & 1 & 3.13\%\\
+						LUT & 2328 & 2307 & 4.38-4.34\%\\
+						FF & 2344 & 2347 & 2.20-2.21\%\\
+						IO & 15 & 15 & 12.00\%\\
+						BUFG & 3 & 3 & 9.38\%\\
 						\hline
 					\end{tabular}
 				}
 			\end{center}
 		}    
 	\end{table}
-	
-	En este ejemplo, la cantidad de recursos utilizados es baja y el tiempo de sintetización e implementación es de 37 segundos y 39 segundos respectivamente.
