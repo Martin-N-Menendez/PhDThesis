@@ -3,29 +3,30 @@
 \section{Resultados obtenidos}
 
 % RailML
-\lipsum[1]
+La adopción de un enfoque geográfico utilizando railML 3.2 cómo eje central del trabajo permitió desarrollar algoritmos flexibles para procesar múltiples topologías ferroviarias sin restricciones de tipo o cantidad de elementos ferroviarios incluidos. Se desarrollo una librería que cubre las 524 de railML, lo cuál amplia el universo de topologías ferroviarias analizadas automáticamente de unos pocos elementos [REF] a la totalidad de elementos ferroviarios contemplados en el estándar railML. El diseño modular de las herramientas creadas, basado en railTopoModel, permite que sea fácil de ampliar y/o mantener en futuras versiones de railML. Adicionalmente, utilizar un estándar ferroviario ampliamente utilizado permite una gran compatibilidad con las herramientas que la industria ferroviaria utiliza actualmente, lo que abre la puerta a que la herramienta sea adoptada sin dificultad.
 
 % RNA
-\lipsum[1]
+El analizador de redes ferroviarias (RNA) genera el señalamiento apropiado, en línea con los principios de señalamiento ferroviarios definidos, para topologías ferroviarias de considerable complejidad. La tabla de enclavamientos generada es indistinguible de la original dado los parámetros de configuración del RNA correctos. En algunos casos, el RNA añade señales de protección extra para los elementos ferroviarios que fueron ignorados en el diseño original, incrementando la seguridad y mejorando la logística de la red.
+
+La efectividad del RNA fue confirmada junto con autoridades de Trenes Argentinos que compararon el señalamiento generado por el RNA para la estación Belgrano C con el señalamiento recientemente actualizado para dicha estación. Este logro se destaca por sobre otros sistemas de generación de señalamiento que solo permiten analizar redes ferroviarias de baja complejidad, con una cantidad limitada de elementos.
 
 % ACG
-\lipsum[1]
+El generador automático de código (ACG) permite una generación modular y escalable de cualquier locación analizada por el RNA. Incluso los ejemplos mas complejos y extensos de railML.org (ejemplo 3 y ejemplo 4) no llegan a utilizar ni un tercio de los recursos de una FPGA de bajo coste y tamaño medio. Todos los sistemas generados cuentan con: UART adaptativa, detección de tramas, triple redundancia, control de estado de enclavamientos y descentralización de las decisiones en cada 
+elemento ferroviario.
+
+La implementación del sistema se realiza de forma tal que solo se instancian los puertos y módulos que el RNA detectó previamente como existentes, ahorrando una gran cantidad de recursos. Adicionalmente, la implementación del comportamiento dinámico del enclavamiento basado en redes de Petri permite que se implementen la totalidad de las funcionalidades esperables en el control de rutas: pedido de rutas, cancelación de rutas, protección por aproximación, protección por solape, cancelación por timeout, protección de rutas opuestas y concatenación de rutas.
 
 % AGG
-\lipsum[1]
+El generador automático de interfaz gráfica de usuario (AGG) permite contar con una interfaz 100\% basada en railML. El entorno gráfico es intuitivo, a semejanza de una consola real que utilizaría un ingeniero de señalamiento en su día a día. La misma es desplazable y permite el uso de zoom. El usuario puede interactuar con todos los elementos visibles en la interfaz: Las vías pueden ser ocupadas/desocupadas, los cambios de vías pueden modificar su posición, las barreras ferroviarias pueden cerrarse/abrirse y las rutas pueden solicitarse/cancelarse presionando las señales correspondientes. Cada interacción modifica en tiempo real la trama a ser enviada a la FPGA, cuya respuesta es leída y actualiza la interfaz gráfica con mínimas demoras, logrando una experiencia fluida.
 
 % Impacto real
-\lipsum[1]
-
-%The RNA algorithm generates appropriate signalling, in accordance with the signalling principles defined, in layouts with considerable complexity. The interlocking tables generated are indistinguishable from the original ones under the right RNA configuration parameters and, in some cases, add extra protection for railway elements that were ignored in the original signallings, increasing safety and mobility. This performance was confirmed by an actual railway practitioner generating signalling for Belgrano C station using RNA and then comparing it with the actual signalling recently updated. This is a remarkable achievement considering that previous works on automatic signalling generation work only in low-complexity layouts having a limited number of element types. 
-
-%The graph network from RailTopoModel, introduced in railML 3.2, allowed us to develop flexible algorithms to process multiple railway networks with no restriction on element types. What is more, the railML files generated pass our own and 3rd party syntax checker as well, confirming its full compatibility with any railML-based software. RNA expands the state of the art of railML to areas that were not discussed before in other articles, being able to be incorporated into a more complex design process, and it is feasible to be formally validated in future development steps.
-
-%We already published a first version of an RNA implementation using XSLT \cite{XSLT}, a language specifically designed to process XML files like railML. We are working now to include in the XSLT implementation an automatic verification and validation for each step of the RNA.
+Finalmente, el uso combinado de todas las herramientas creadas (RNA, ACG y AGG) permite la generación, validación e implementación en pocos segundos del señalamiento ferroviario en la totalidad de los ejemplos analizados, tanto oficiales del estándar railML cómo los creados en base a estaciones reales de Argentina. El análisis de la red ferroviaria cuenta con diversos parámetros, ajustables por el usuario, que permiten adaptar la herramienta a las normativas de diseño de cada país. Adicionalmente, la validación de cada regla de señalamiento ferroviario permite un diseño robusto y seguro. El código VHDL generado es compatible con cualquier familia de FPGAs y puede ser sintetizado en menos de cinco minutos. Esto reduce el tiempo de diseño e implementación del orden de meses o semanas a pocos minutos. La interfaz gráfica generada a medida de cada locación es ideal tanto para realizar pruebas dinámicas sobre la plataforma real, como también para controlar un sistema ferroviario real.
 
 \section{Trabajo futuro}
 
-\lipsum[1]
+A futuro se buscará reforzar la verificación y validación de las herramientas por medio de métodos formales, a cargo del Mg. Ing. Santiago Germino, cuyo trabajo sobre conversión del RNA en una herramienta que explote las características del formato XML de railML ya ha sido publicado [REF]. Lo cual permitirá un mayor uso de la herramienta en entornos ferroviarios y su certificación para uso industrial.
+
+Adicionalmente, se buscará adaptar el ACG para poder incorporar otros protocolos de comunicación mas robustos e implementar el sistema en la plataforma de hardware desarrollada por la Comisión Nacional de Energía Atómica (CONEA), actualmente en posesión del Laboratorio de Sistemas Embebidos.
 
 A\\
 \cite{Paper_1}\cite{Paper_3}\cite{Paper_6}\cite{Paper_7}\cite{Paper_10}\cite{Paper_11}\cite{Paper_14}\cite{Paper_16}\cite{Paper_18}\cite{Paper_20}\\
