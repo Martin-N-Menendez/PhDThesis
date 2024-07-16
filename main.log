@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  15 JUL 2024 20:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  16 JUL 2024 21:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2939,17 +2939,7 @@ LaTeX Info: Redefining \% on input line 133.
 Cap\'{\i }tulo 5.
 [141
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
-
- []
-
-)
+])
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
 LaTeX Info: Redefining \. on input line 135.
@@ -4429,7 +4419,11 @@ Overfull \hbox (2.07059pt too wide) in paragraph at lines 150--150
 c-tro-ni-c/-pro-gram-ma-ble elec-tro-nic safety-
  []
 
-
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+[297]
 Overfull \hbox (2.07059pt too wide) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 ``IEC 61508-5-2010 Fun-ctio-nal sa-fety of elec-tri-ca-l/-ele
 c-tro-ni-c/-pro-gram-ma-ble elec-tro-nic safety-
@@ -4447,11 +4441,7 @@ Overfull \hbox (2.07059pt too wide) in paragraph at lines 150--150
 c-tro-ni-c/-pro-gram-ma-ble elec-tro-nic safety-
  []
 
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-[297]
+
 Overfull \hbox (6.38173pt too wide) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 M. Be-llek, ``De-sign and RAMS analy-sis of rail-way in-ter-l
 oc-king sys-tems using for-mal methods,''
@@ -4467,6 +4457,11 @@ LaTeX Info: Redefining \% on input line 150.
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
  [299]
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+ [300]
 Overfull \hbox (1.61218pt too wide) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 ``GE Trans-por-ta-tion In-crea-ses Sa-fety and Ef-fi-ciency o
 n Tri-Met Transit Net-work in Portland,''
@@ -4488,12 +4483,7 @@ LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
-[300]
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
- [301]
+[301]
 Overfull \hbox (21.02637pt too wide) in paragraph at lines 150--150
 \OT1/cmr/m/n/10 Ser-bia,'' \OT1/cmr/m/it/10 Me-cha-tro-nics and In-te-lli-gent 
 Trans-por-ta-tion Sys-tems\OT1/cmr/m/n/10 , 2023. \OT1/cmr/m/sc/10 doi\OT1/cmr/
@@ -4515,16 +4505,22 @@ LaTeX Info: Redefining \% on input line 150.
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
  [304]
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+ [305]
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+ [306]
 Overfull \hbox (0.66699pt too wide) in paragraph at lines 150--150
 \OT1/cmr/m/n/10 Res-pect to Au-to-ma-tic Le-vel Cros-sing Sig-na-ling Sys-tem,'
 ' \OT1/cmr/m/it/10 In-ter-na-tio-nal Con-fe-ren-ce on Trans-
  []
 
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-[305]
+
 Overfull \hbox (16.61058pt too wide) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 Wikipedia. ``Train com-mu-ni-ca-tion net-work (TCN).'' (2024)
 , di-rec-ci^^Son: $\OT1/cmtt/m/n/10 https : / / en . wikipedia .
@@ -4534,12 +4530,7 @@ LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
-[306]
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
- [307]
+[307]
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
 LaTeX Info: Redefining \. on input line 152.
@@ -4611,7 +4602,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (324 pages, 73895252 bytes).
+Output written on main.pdf (324 pages, 73894973 bytes).
 PDF statistics:
  1692 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
