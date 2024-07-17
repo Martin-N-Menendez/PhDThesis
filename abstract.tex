@@ -8,10 +8,14 @@
     
     \vspace{30pt}
     
-    \lipsum[1]
+    Railway interlocking systems controls signaling to guarantee that trains operate safely, avoiding collisions and derailments. Signaling includes the traffic lights (or signals) that authorize train drivers to transit over the next railway tracks, based on the state of the associated railway infrastructure, such as level crossings, switches, etc. Signaling design is a complex process that involves railway network analysis, detection of zones where collisions or derailments are likely, and accurately positioning the signals. The automatic generation of signalling is particularly valuable and beneficial when developing a new railway network or reactivating an abandoned railway network.
     
     \vspace{5pt}
     
-    \lipsum[1]
+    In this context, a set of tools was designed to automatically perform the design and implementation of railway signaling using a hardware description language, based on the railway layout. The stage responsible for the design of railway signaling is the Railway Network Analyzer (RNA). The implementation in VHDL is handled by the Automatic Code Generator (ACG). Both tools exchange information with each other and with users through the open standard for railway infrastructure data exchange, railML. Finally, the Automatic Graphical User Interface Generator (AGG) constructs an interactive interface for the operator, allowing real-time visualization and control of the interlocking status.
+    
+    \vspace{5pt}
+    
+    The generated signaling includes the number of necessary signals, their position and orientation, as well as the interlocking table. The interlocking table, compliance with railway design principles, and the syntax of the generated railML file are validated by the RNA itself. The generated railML file, along with the dynamic behavior model defined in Petri nets, is used by the ACG to implement the interlocking system. The graphical interface custom-generated for each system by the AGG allows interaction with the implemented system.
 \end{center}
 \end{minipage}}
