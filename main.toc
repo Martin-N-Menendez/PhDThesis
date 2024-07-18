@@ -1,0 +1,167 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{}%
+\contentsline {section}{\numberline {1.1}Topologías ferroviarias}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Derivación ferroviaria}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Estación de baja densidad}{2}{}%
+\contentsline {subsection}{\numberline {1.1.3}Estación de alta densidad}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Estación Terminal}{4}{}%
+\contentsline {section}{\numberline {1.2}Principios de señalamiento ferroviario}{5}{}%
+\contentsline {section}{\numberline {1.3}Sistemas de enclavamiento}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Tipos de sistemas de enclavamiento}{6}{}%
+\contentsline {subsection}{\numberline {1.3.2}Tablas de enclavamientos}{9}{}%
+\contentsline {subsection}{\numberline {1.3.3}Enfoque funcional}{11}{}%
+\contentsline {subsection}{\numberline {1.3.4}Enfoque geográfico}{12}{}%
+\contentsline {section}{\numberline {1.4}Estándares de seguridad}{12}{}%
+\contentsline {subsection}{\numberline {1.4.1}Estándares EN-50126, EN-50128 y EN-50129}{12}{}%
+\contentsline {subsection}{\numberline {1.4.2}Redundancia y diversidad en sistemas ferroviarios}{14}{}%
+\contentsline {section}{\numberline {1.5}RailTopoModel y RailML}{16}{}%
+\contentsline {subsection}{\numberline {1.5.1}RailTopoModel}{16}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}Paquete base}{16}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Modelo de grafos}{17}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.3}Topología y niveles}{17}{}%
+\contentsline {subsubsection}{\numberline {1.5.1.4}Posicionamiento}{19}{}%
+\contentsline {subsection}{\numberline {1.5.2}RailML 3.0}{19}{}%
+\contentsline {subsection}{\numberline {1.5.3}Uso del estándar railML en la industria ferroviaria}{20}{}%
+\contentsline {section}{\numberline {1.6}Estado del arte}{20}{}%
+\contentsline {subsection}{\numberline {1.6.1}Empresas del sector ferroviario}{20}{}%
+\contentsline {subsection}{\numberline {1.6.2}Antecedentes de trabajos académicos en la temática}{21}{}%
+\contentsline {subsection}{\numberline {1.6.3}GICSAFe y los trabajos realizados}{21}{}%
+\contentsline {section}{\numberline {1.7}Herramienta propuesta}{23}{}%
+\contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{23}{}%
+\contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{24}{}%
+\contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{25}{}%
+\contentsline {chapter}{\numberline {2}Railway Network Analyzer (RNA)}{27}{}%
+\contentsline {section}{\numberline {2.1}Biblioteca RailML}{27}{}%
+\contentsline {subsection}{\numberline {2.1.1}Clase \textit {Metadata}}{28}{}%
+\contentsline {subsection}{\numberline {2.1.2}Clase \textit {Common}}{29}{}%
+\contentsline {subsection}{\numberline {2.1.3}Clase \textit {Infraestructure} y redes de grafos}{30}{}%
+\contentsline {subsection}{\numberline {2.1.4}Vías}{33}{}%
+\contentsline {subsection}{\numberline {2.1.5}Fin de vía y transiciones}{36}{}%
+\contentsline {subsection}{\numberline {2.1.6}Sistemas de detección de formaciones ferroviarias}{37}{}%
+\contentsline {subsection}{\numberline {2.1.7}Estaciones ferroviarias}{39}{}%
+\contentsline {subsection}{\numberline {2.1.8}Cruces ferroviarios}{41}{}%
+\contentsline {subsection}{\numberline {2.1.9}Cambios de vías}{42}{}%
+\contentsline {subsection}{\numberline {2.1.10}Señales ferroviarias}{50}{}%
+\contentsline {section}{\numberline {2.2}Algoritmos de generación de señalamiento}{52}{}%
+\contentsline {subsection}{\numberline {2.2.1}Señalización en fin de vía y transiciones}{53}{}%
+\contentsline {subsection}{\numberline {2.2.2}Detectores de posición y velocidad.}{54}{}%
+\contentsline {subsection}{\numberline {2.2.3}Plataformas ferroviarias}{56}{}%
+\contentsline {subsection}{\numberline {2.2.4}Cruces ferroviarios}{57}{}%
+\contentsline {subsection}{\numberline {2.2.5}Cambios de vías}{58}{}%
+\contentsline {section}{\numberline {2.3}Algoritmos de simplificación de señalamiento}{60}{}%
+\contentsline {subsection}{\numberline {2.3.1}Algoritmo de simplificación por herencia vertical}{60}{}%
+\contentsline {subsection}{\numberline {2.3.2}Algoritmo de simplificación por herencia horizontal}{64}{}%
+\contentsline {subsection}{\numberline {2.3.3}Limpieza de señales}{66}{}%
+\contentsline {section}{\numberline {2.4}Generación de las tablas de enclavamiento}{67}{}%
+\contentsline {section}{\numberline {2.5}Validación del señalamiento y las tablas de enclavamiento}{69}{}%
+\contentsline {section}{\numberline {2.6}Comprobación de principios de señalamiento ferroviario}{71}{}%
+\contentsline {subsection}{\numberline {2.6.1}Comprobación del principio de autoridad}{71}{}%
+\contentsline {subsection}{\numberline {2.6.2}Comprobación del principio de claridad}{72}{}%
+\contentsline {subsection}{\numberline {2.6.3}Comprobación del principio de anticipación}{72}{}%
+\contentsline {subsection}{\numberline {2.6.4}Comprobación del principio de granularidad}{73}{}%
+\contentsline {subsection}{\numberline {2.6.5}Comprobación del principio de terminalidad}{74}{}%
+\contentsline {subsection}{\numberline {2.6.6}Comprobación del principio de infraestructura}{75}{}%
+\contentsline {subsection}{\numberline {2.6.7}Comprobación del principio de no bloqueo}{75}{}%
+\contentsline {chapter}{\numberline {3}Automatic Code Generator (ACG)}{77}{}%
+\contentsline {section}{\numberline {3.1}Sistemas de enclavamiento}{77}{}%
+\contentsline {subsection}{\numberline {3.1.1}Bloqueo de máquina de cambios por ocupación}{77}{}%
+\contentsline {subsection}{\numberline {3.1.2}Requerimiento de rutas y bloqueo de cambios en ruta}{78}{}%
+\contentsline {subsection}{\numberline {3.1.3}Protección por aproximación en cancelación de ruta}{79}{}%
+\contentsline {subsection}{\numberline {3.1.4}Protección por solape}{80}{}%
+\contentsline {subsection}{\numberline {3.1.5}Doble recubrimiento}{80}{}%
+\contentsline {subsection}{\numberline {3.1.6}Liberación secuencial}{81}{}%
+\contentsline {section}{\numberline {3.2}Arquitectura del sistema}{82}{}%
+\contentsline {subsection}{\numberline {3.2.1}Modulo UART}{85}{}%
+\contentsline {subsection}{\numberline {3.2.2}Módulo Detector}{86}{}%
+\contentsline {subsection}{\numberline {3.2.3}Módulo Decoder}{89}{}%
+\contentsline {subsection}{\numberline {3.2.4}Módulo Encoder}{91}{}%
+\contentsline {subsection}{\numberline {3.2.5}Módulo Printer}{92}{}%
+\contentsline {subsection}{\numberline {3.2.6}Módulo Selector}{94}{}%
+\contentsline {subsection}{\numberline {3.2.7}Modulo Network}{95}{}%
+\contentsline {subsection}{\numberline {3.2.8}Módulo genérico de las barreras ferroviarias}{99}{}%
+\contentsline {subsection}{\numberline {3.2.9}Módulo genérico de los cambios de vías simples}{102}{}%
+\contentsline {subsection}{\numberline {3.2.10}Módulo genérico de los cambios de vías dobles}{103}{}%
+\contentsline {subsection}{\numberline {3.2.11}Módulo genérico de los cambios en tijeras}{106}{}%
+\contentsline {subsection}{\numberline {3.2.12}Módulo genérico de los netElements}{107}{}%
+\contentsline {subsection}{\numberline {3.2.13}Módulo genérico de las señales ferroviarias}{109}{}%
+\contentsline {subsection}{\numberline {3.2.14}Módulo genérico de las rutas ferroviarias}{111}{}%
+\contentsline {section}{\numberline {3.3}Redundancia}{113}{}%
+\contentsline {section}{\numberline {3.4}Plataforma utilizada}{113}{}%
+\contentsline {chapter}{\numberline {4}Resultados obtenidos}{115}{}%
+\contentsline {section}{\numberline {4.1}Ejemplo 1}{115}{}%
+\contentsline {subsection}{\numberline {4.1.1}Topología ferroviaria original}{115}{}%
+\contentsline {subsection}{\numberline {4.1.2}Señalamiento original}{116}{}%
+\contentsline {subsection}{\numberline {4.1.3}Generación de señalamiento paso a paso}{117}{}%
+\contentsline {subsection}{\numberline {4.1.4}Red de grafos generada por el RNA}{127}{}%
+\contentsline {subsection}{\numberline {4.1.5}Señalamiento generado por el RNA}{127}{}%
+\contentsline {subsection}{\numberline {4.1.6}Validación del sistema de enclavamientos}{128}{}%
+\contentsline {subsection}{\numberline {4.1.7}Sistema generado por el ACG}{130}{}%
+\contentsline {subsection}{\numberline {4.1.8}Interfaz gráfica de usuario}{136}{}%
+\contentsline {subsection}{\numberline {4.1.9}Comparación entre todos los ejemplos}{140}{}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{144}{}%
+\contentsline {section}{\numberline {5.1}Resultados obtenidos}{144}{}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{145}{}%
+\contentsline {chapter}{\numberline {A}Ejemplo 2}{146}{}%
+\contentsline {section}{\numberline {A.1}Topología ferroviaria original}{146}{}%
+\contentsline {section}{\numberline {A.2}Señalamiento original}{146}{}%
+\contentsline {section}{\numberline {A.3}Generación de señalamiento paso a paso}{147}{}%
+\contentsline {section}{\numberline {A.4}Red de grafos generada por el RNA}{153}{}%
+\contentsline {section}{\numberline {A.5}Señalamiento generado por el RNA}{154}{}%
+\contentsline {section}{\numberline {A.6}Validación del sistema de enclavamientos}{155}{}%
+\contentsline {section}{\numberline {A.7}Sistema generado por el ACG}{156}{}%
+\contentsline {chapter}{\numberline {B}Ejemplo 3}{157}{}%
+\contentsline {section}{\numberline {B.1}Topología ferroviaria original}{157}{}%
+\contentsline {section}{\numberline {B.2}Señalamiento original}{157}{}%
+\contentsline {section}{\numberline {B.3}Generación de señalamiento paso a paso}{160}{}%
+\contentsline {section}{\numberline {B.4}Red de grafos generada por el RNA}{180}{}%
+\contentsline {section}{\numberline {B.5}Señalamiento generado por el RNA}{181}{}%
+\contentsline {section}{\numberline {B.6}Validación del sistema}{185}{}%
+\contentsline {section}{\numberline {B.7}Sistema generado por el ACG}{186}{}%
+\contentsline {chapter}{\numberline {C}Ejemplo 4}{188}{}%
+\contentsline {section}{\numberline {C.1}Topología ferroviaria original}{188}{}%
+\contentsline {section}{\numberline {C.2}Señalamiento original}{188}{}%
+\contentsline {section}{\numberline {C.3}Generación de señalamiento paso a paso}{192}{}%
+\contentsline {section}{\numberline {C.4}Red de grafos generada por el RNA}{213}{}%
+\contentsline {section}{\numberline {C.5}Señalamiento generado por el RNA}{214}{}%
+\contentsline {section}{\numberline {C.6}Validación del sistema de enclavamientos}{218}{}%
+\contentsline {section}{\numberline {C.7}Sistema generado por el ACG}{222}{}%
+\contentsline {chapter}{\numberline {D}Ejemplo 5}{223}{}%
+\contentsline {section}{\numberline {D.1}Topología ferroviaria original}{223}{}%
+\contentsline {section}{\numberline {D.2}Señalamiento original}{223}{}%
+\contentsline {section}{\numberline {D.3}Generación de señalamiento paso a paso}{225}{}%
+\contentsline {section}{\numberline {D.4}Red de grafos generada por el RNA}{234}{}%
+\contentsline {section}{\numberline {D.5}Señalamiento generado por el RNA}{234}{}%
+\contentsline {section}{\numberline {D.6}Validación del sistema}{234}{}%
+\contentsline {section}{\numberline {D.7}Sistema generado por el ACG}{235}{}%
+\contentsline {chapter}{\numberline {E}Ejemplo 6}{238}{}%
+\contentsline {section}{\numberline {E.1}Topología ferroviaria original}{238}{}%
+\contentsline {section}{\numberline {E.2}Señalamiento original}{238}{}%
+\contentsline {section}{\numberline {E.3}Generación de señalamiento paso a paso}{239}{}%
+\contentsline {section}{\numberline {E.4}Red de grafos generada por el RNA}{249}{}%
+\contentsline {section}{\numberline {E.5}Señalamiento generado por el RNA}{249}{}%
+\contentsline {section}{\numberline {E.6}Validación del sistema}{250}{}%
+\contentsline {section}{\numberline {E.7}Sistema generado por el ACG}{252}{}%
+\contentsline {chapter}{\numberline {F}Ejemplo 7}{254}{}%
+\contentsline {section}{\numberline {F.1}Topología ferroviaria original}{254}{}%
+\contentsline {section}{\numberline {F.2}Señalamiento original}{255}{}%
+\contentsline {section}{\numberline {F.3}Generación de señalamiento paso a paso}{256}{}%
+\contentsline {section}{\numberline {F.4}Red de grafos generada por el RNA}{265}{}%
+\contentsline {section}{\numberline {F.5}Señalamiento generado por el RNA}{266}{}%
+\contentsline {section}{\numberline {F.6}Validación del sistema}{267}{}%
+\contentsline {section}{\numberline {F.7}Sistema generado por el ACG}{268}{}%
+\contentsline {chapter}{\numberline {G}Ejemplo 8}{269}{}%
+\contentsline {section}{\numberline {G.1}Topología ferroviaria original}{269}{}%
+\contentsline {section}{\numberline {G.2}Señalamiento original}{269}{}%
+\contentsline {section}{\numberline {G.3}Generación de señalamiento paso a paso}{270}{}%
+\contentsline {section}{\numberline {G.4}Red de grafos generada por el RNA}{278}{}%
+\contentsline {section}{\numberline {G.5}Señalamiento generado por el RNA}{278}{}%
+\contentsline {section}{\numberline {G.6}Validación del sistema}{279}{}%
+\contentsline {section}{\numberline {G.7}Sistema generado por el ACG}{280}{}%
+\contentsline {chapter}{\numberline {H}Ejemplo 9}{282}{}%
+\contentsline {section}{\numberline {H.1}Topología ferroviaria original}{282}{}%
+\contentsline {section}{\numberline {H.2}Señalamiento original}{282}{}%
+\contentsline {section}{\numberline {H.3}Generación de señalamiento paso a paso}{283}{}%
+\contentsline {section}{\numberline {H.4}Red de grafos generada por el RNA}{293}{}%
+\contentsline {section}{\numberline {H.5}Señalamiento generado por el RNA}{293}{}%
+\contentsline {section}{\numberline {H.6}Validación del sistema de enclavamientos}{294}{}%
+\contentsline {section}{\numberline {H.7}Sistema generado por el ACG}{295}{}%
