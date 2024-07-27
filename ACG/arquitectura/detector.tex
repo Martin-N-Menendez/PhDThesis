@@ -10,7 +10,7 @@
 		\label{fig:Detector_module}
 	\end{figure}
 	
-	En cada pulso de reloj (\textit{clk\_i}), el módulo UART envía un caracter por medio de la señal \textit{r\_data} (8 bytes) y un pulso (\textit{r\_available}) para informar que un nuevo dato ha sido enviado. El pulso de reloj es utilizado principalmente en el módulo \textit{Counter\_0\_to\_N}, cuyo parámetro N ya ha sido calculado por el ACG previo a generar el código y es la cantidad de caracteres que serán enviados a continuación del caracter de inicio. El proceso de detección y validación de la trama recibida se describe el diagrama de estados de la Figura \ref{fig:Detector_FSMD}.
+	En cada pulso de reloj (\textit{clk\_i}), el módulo UART, que se ilustra en la Figura \ref{fig:GeneralSystem}, envía un caracter por medio de la señal \textit{r\_data} (8 bytes) y un pulso (\textit{r\_available}) para informar que un nuevo dato ha sido enviado. El pulso de reloj es utilizado principalmente en el módulo \textit{Counter\_0\_to\_N}, cuyo parámetro N ya ha sido calculado por el ACG previo a generar el código y es la cantidad de caracteres que serán enviados a continuación del caracter de inicio. El proceso de detección y validación de la trama recibida se describe el diagrama de estados de la Figura \ref{fig:Detector_FSMD}.
 	
 	\begin{figure}[H]
 		\centering
