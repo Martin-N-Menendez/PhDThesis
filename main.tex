@@ -17,6 +17,7 @@
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usetikzlibrary{arrows}
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -52,6 +53,8 @@
 
 \lstset{aboveskip=\baselineskip,belowskip=\baselineskip,basicstyle=\ttfamily}
 
+\tikzstyle{every picture}+=[remember picture]
+\everymath{\displaystyle}
 
 % Define the background image properties
 \def\backgroundimage{caratula/FIUBA.png} % Replace 'example-image' with the name of your background image file
