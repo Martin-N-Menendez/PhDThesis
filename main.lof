@@ -95,16 +95,17 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{124}{}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{125}{}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 1.}}{129}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Archivos generador por el ACG para el ejemplo 1.}}{133}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Archivos generador por el ACG para el ejemplo 1.}}{132}{}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1.}}{137}{}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{139}{}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Nuevo señalamiento con ne22 ocupado.}}{140}{}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{140}{}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{141}{}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Ruta 12 del ejemplo 1 en ejecución.}}{142}{}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{142}{}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}}{144}{}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7 20.}}{144}{}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1 (Menú ampliado).}}{138}{}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{139}{}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Nuevo señalamiento con ne22 ocupado.}}{140}{}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{141}{}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{142}{}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Ruta 12 del ejemplo 1 en ejecución.}}{142}{}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{143}{}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}}{144}{}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7 20.}}{145}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{148}{}%

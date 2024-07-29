@@ -85,8 +85,7 @@
 \contentsline {subsection}{\numberline {3.2.12}Módulo genérico de los netElements}{107}{}%
 \contentsline {subsection}{\numberline {3.2.13}Módulo genérico de las señales ferroviarias}{109}{}%
 \contentsline {subsection}{\numberline {3.2.14}Módulo genérico de las rutas ferroviarias}{111}{}%
-\contentsline {section}{\numberline {3.3}Redundancia}{113}{}%
-\contentsline {section}{\numberline {3.4}Consideraciones respecto a la implementación en una FPGA del código generado por el ACG}{113}{}%
+\contentsline {section}{\numberline {3.3}Consideraciones respecto a la implementación en una FPGA del código generado por el ACG}{113}{}%
 \contentsline {chapter}{\numberline {4}Resultados obtenidos}{115}{}%
 \contentsline {section}{\numberline {4.1}Plataforma utilizada}{115}{}%
 \contentsline {section}{\numberline {4.2}Ejemplo 1}{116}{}%
@@ -94,11 +93,11 @@
 \contentsline {subsection}{\numberline {4.2.2}Señalamiento original}{117}{}%
 \contentsline {subsection}{\numberline {4.2.3}Generación de señalamiento paso a paso}{119}{}%
 \contentsline {subsection}{\numberline {4.2.4}Red de grafos generada por el RNA}{128}{}%
-\contentsline {subsection}{\numberline {4.2.5}Señalamiento generado por el RNA}{129}{}%
+\contentsline {subsection}{\numberline {4.2.5}Tabla de enclavamiento generada por el RNA}{129}{}%
 \contentsline {subsection}{\numberline {4.2.6}Validación del sistema de enclavamientos}{130}{}%
 \contentsline {subsection}{\numberline {4.2.7}Sistema generado por el ACG}{132}{}%
-\contentsline {subsection}{\numberline {4.2.8}Interfaz gráfica de usuario}{138}{}%
-\contentsline {subsection}{\numberline {4.2.9}Comparación entre todos los ejemplos}{142}{}%
+\contentsline {subsection}{\numberline {4.2.8}Interfaz gráfica de usuario}{139}{}%
+\contentsline {subsection}{\numberline {4.2.9}Comparación entre todos los ejemplos}{143}{}%
 \contentsline {chapter}{\numberline {5}Conclusiones}{146}{}%
 \contentsline {section}{\numberline {5.1}Resultados obtenidos}{146}{}%
 \contentsline {section}{\numberline {5.2}Trabajo futuro}{147}{}%
