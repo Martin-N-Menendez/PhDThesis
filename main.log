@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  29 JUL 2024 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  30 JUL 2024 21:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1132,6 +1132,9 @@ LaTeX Warning: Label `alg:vertical' multiply defined.
 LaTeX Warning: Label `sec:generacion' multiply defined.
 
 
+LaTeX Warning: Label `sec:GICSAFE' multiply defined.
+
+
 LaTeX Warning: Label `sec:simplificacion' multiply defined.
 
 
@@ -1698,14 +1701,14 @@ LaTeX Info: Redefining \% on input line 15.
 <Figuras/hojaDeRuta.png, id=162, 1411.4331pt x 467.5869pt>
 File: Figuras/hojaDeRuta.png Graphic file (type png)
 <use Figuras/hojaDeRuta.png>
-Package pdftex.def Info: Figuras/hojaDeRuta.png  used on input line 7.
+Package pdftex.def Info: Figuras/hojaDeRuta.png  used on input line 8.
 (pdftex.def)             Requested size: 426.79134pt x 141.39017pt.
 
 
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 [21])) (introduccion/propuesta.tex
 
 LaTeX Info: Redefining \. on input line 4.
@@ -2293,9 +2296,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [76] (ACG/main.tex
 Cap\'{\i }tulo 3.
-
-LaTeX Warning: Reference `sec:VHDL2oo3' on page 77 undefined on input line 10.
-
 (ACG/sistemas-enclavamiento/main.tex
 (ACG/sistemas-enclavamiento/bloqueo-por-ocupacion.tex
 <Figuras/ocupacion.png, id=628, 351.2322pt x 113.4639pt>
@@ -2305,22 +2305,25 @@ Package pdftex.def Info: Figuras/ocupacion.png  used on input line 9.
 (pdftex.def)             Requested size: 426.79134pt x 137.8769pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (ACG/sistemas-enclavamiento/bloqueo-rutas.tex
+
 [77
 
-]) (ACG/sistemas-enclavamiento/bloqueo-rutas.tex
+]
 <Figuras/bloqueo_rutas.png, id=632, 351.9549pt x 128.6406pt>
 File: Figuras/bloqueo_rutas.png Graphic file (type png)
 <use Figuras/bloqueo_rutas.png>
 Package pdftex.def Info: Figuras/bloqueo_rutas.png  used on input line 9.
 (pdftex.def)             Requested size: 426.79134pt x 155.9991pt.
+) (ACG/sistemas-enclavamiento/proteccion-aproximacion.tex
 
-
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
-[78 <./Figuras/ocupacion.png> <./Figuras/bloqueo_rutas.png>])
-(ACG/sistemas-enclavamiento/proteccion-aproximacion.tex
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+[78 <./Figuras/ocupacion.png> <./Figuras/bloqueo_rutas.png>]
 <Figuras/aproximacion_1.png, id=638, 777.6252pt x 141.6492pt>
 File: Figuras/aproximacion_1.png Graphic file (type png)
 <use Figuras/aproximacion_1.png>
@@ -2336,20 +2339,23 @@ File: Figuras/aproximacion_3.png Graphic file (type png)
 <use Figuras/aproximacion_3.png>
 Package pdftex.def Info: Figuras/aproximacion_3.png  used on input line 29.
 (pdftex.def)             Requested size: 426.79134pt x 61.0855pt.
-
-
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
-[79 <./Figuras/aproximacion_1.png> <./Figuras/aproximacion_2.png> <./Figuras/ap
-roximacion_3.png>]
-<Figuras/aproximacion_4.png, id=647, 777.6252pt x 141.6492pt>
+<Figuras/aproximacion_4.png, id=641, 777.6252pt x 141.6492pt>
 File: Figuras/aproximacion_4.png Graphic file (type png)
 <use Figuras/aproximacion_4.png>
 Package pdftex.def Info: Figuras/aproximacion_4.png  used on input line 38.
 (pdftex.def)             Requested size: 426.79134pt x 77.74518pt.
-) (ACG/sistemas-enclavamiento/proteccion-solape.tex
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+[79 <./Figuras/aproximacion_1.png> <./Figuras/aproximacion_2.png> <./Figuras/ap
+roximacion_3.png>]) (ACG/sistemas-enclavamiento/proteccion-solape.tex
 <Figuras/solape.png, id=648, 777.6252pt x 143.0946pt>
 File: Figuras/solape.png Graphic file (type png)
 <use Figuras/solape.png>
@@ -2380,17 +2386,22 @@ Package pdftex.def Info: Figuras/semaforo2.png  used on input line 23.
 (pdftex.def)             Requested size: 213.39566pt x 106.45749pt.
 )
 (ACG/sistemas-enclavamiento/liberacion-secuencial.tex
-
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-[81 <./Figuras/recubrimiento.png> <./Figuras/semaforo2.png>]
-<Figuras/secuencial_1.png, id=662, 777.6252pt x 141.6492pt>
+<Figuras/secuencial_1.png, id=657, 777.6252pt x 141.6492pt>
 File: Figuras/secuencial_1.png Graphic file (type png)
 <use Figuras/secuencial_1.png>
 Package pdftex.def Info: Figuras/secuencial_1.png  used on input line 9.
 (pdftex.def)             Requested size: 426.79134pt x 77.74518pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+[81 <./Figuras/recubrimiento.png> <./Figuras/semaforo2.png>]
 <Figuras/secuencial_2.png, id=663, 777.6252pt x 141.6492pt>
 File: Figuras/secuencial_2.png Graphic file (type png)
 <use Figuras/secuencial_2.png>
@@ -2408,17 +2419,13 @@ Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 36.
 (pdftex.def)             Requested size: 426.79134pt x 52.35898pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)) (ACG/arquitectura/main.tex
-
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
 [82 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png> <./Figuras/secuen
-cial_3.png>]
-<Figuras/FSMD.png, id=672, 525.4029pt x 344.7279pt>
+cial_3.png> <./Figuras/secuencial_4.png>])) (ACG/arquitectura/main.tex
+<Figuras/FSMD.png, id=673, 525.4029pt x 344.7279pt>
 File: Figuras/FSMD.png Graphic file (type png)
 <use Figuras/FSMD.png>
 Package pdftex.def Info: Figuras/FSMD.png  used on input line 11.
@@ -2429,7 +2436,7 @@ LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
-[83 <./Figuras/secuencial_4.png> <./Figuras/FSMD.png>]
+[83 <./Figuras/FSMD.png>]
 Overfull \hbox (8.15492pt too wide) in paragraph at lines 30--31
 []\OT1/cmr/m/n/10 Internamente, el sis-te-ma con-tem-plar^^Sa que al-gu-nos ele
 -men-tos pue-den ad-mi-tir es-ta-dos de transici^^Son.
@@ -2846,31 +2853,31 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 [117 <./resultados-obtenidos/ejemplo1/images/1_empty.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 19--42
+Underfull \hbox (badness 10000) in paragraph at lines 17--40
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--42
+Underfull \hbox (badness 10000) in paragraph at lines 17--40
 
  []
 
 ) (resultados-obtenidos/ejemplo1/signalling-generation.tex
 
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
 [118 <./resultados-obtenidos/ejemplo1/images/1_original.png>]
 
 LaTeX Warning: Command \guillemotright invalid in math mode on input line 25.
 
 
 
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
 [119]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 52.
@@ -2878,16 +2885,16 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 [120]
 
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
 [121]
 <resultados-obtenidos/ejemplo1/images/1_step1.png, id=855, 2095.83pt x 875.5209
 4pt>
@@ -3093,14 +3100,14 @@ File: resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png Graphic file (type p
 ng)
 <use resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png  
-used on input line 11.
+used on input line 12.
 (pdftex.def)             Requested size: 426.79134pt x 186.27443pt.
 
 
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
 [139 <./resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png>]
 <resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png, id=931, 1445.4pt x 
 679.78969pt>
@@ -3108,7 +3115,7 @@ File: resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png Graphic file (t
 ype png)
 <use resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.
-png  used on input line 30.
+png  used on input line 31.
 (pdftex.def)             Requested size: 426.79134pt x 200.72293pt.
 <resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png, id=932, 1445.4pt x 628.59
 843pt>
@@ -3116,42 +3123,42 @@ File: resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png Graphic file (type pn
 g)
 <use resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png  u
-sed on input line 39.
+sed on input line 40.
 (pdftex.def)             Requested size: 426.79134pt x 185.60757pt.
 
 
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
 [140 <./resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png>]
 <resultados-obtenidos/ejemplo1/images/AGG_R13.png, id=938, 1445.4pt x 636.87938
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R13.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R13.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R13.png  used
- on input line 50.
+ on input line 51.
 (pdftex.def)             Requested size: 426.79134pt x 188.0527pt.
 
 
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 [141 <./resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png>]
 <resultados-obtenidos/ejemplo1/images/AGG_R12.png, id=943, 1445.4pt x 655.69969
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R12.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R12.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R12.png  used
- on input line 61.
+ on input line 62.
 (pdftex.def)             Requested size: 426.79134pt x 193.60982pt.
 
 
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 [142 <./resultados-obtenidos/ejemplo1/images/AGG_R13.png> <./resultados-obtenid
 os/ejemplo1/images/AGG_R12.png>]
 <resultados-obtenidos/ejemplo1/images/AGG_R19.png, id=949, 1445.4pt x 617.30624
@@ -3159,7 +3166,7 @@ pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R19.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R19.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R19.png  used
- on input line 70.
+ on input line 71.
 (pdftex.def)             Requested size: 426.79134pt x 182.2733pt.
 )
 (resultados-obtenidos/ejemplo1/comparisson.tex
@@ -5023,10 +5030,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37151 strings out of 473904
- 806440 string characters out of 5726600
+ 37153 strings out of 473904
+ 806466 string characters out of 5726600
  2629908 words of memory out of 5000000
- 59050 multiletter control sequences out of 15000+600000
+ 59052 multiletter control sequences out of 15000+600000
  574324 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1613b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5063,7 +5070,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (330 pages, 74547299 bytes).
+Output written on main.pdf (330 pages, 74546998 bytes).
 PDF statistics:
  1717 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

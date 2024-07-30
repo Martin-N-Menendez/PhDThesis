@@ -91,7 +91,7 @@
 \contentsline {section}{\numberline {4.2}Ejemplo 1}{116}{}%
 \contentsline {subsection}{\numberline {4.2.1}Topología ferroviaria original}{116}{}%
 \contentsline {subsection}{\numberline {4.2.2}Señalamiento original}{117}{}%
-\contentsline {subsection}{\numberline {4.2.3}Generación de señalamiento paso a paso}{119}{}%
+\contentsline {subsection}{\numberline {4.2.3}Generación de señalamiento paso a paso}{118}{}%
 \contentsline {subsection}{\numberline {4.2.4}Red de grafos generada por el RNA}{128}{}%
 \contentsline {subsection}{\numberline {4.2.5}Tabla de enclavamiento generada por el RNA}{129}{}%
 \contentsline {subsection}{\numberline {4.2.6}Validación del sistema de enclavamientos}{130}{}%
