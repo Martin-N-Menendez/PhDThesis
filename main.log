@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  30 JUL 2024 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  1 AUG 2024 22:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1108,6 +1108,19 @@ in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
 
 runsystem(del main.aex)...executed.
 
+
+
+! Package minted Error: You must have `pygmentize' installed to use this packag
+e.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \begin{document}
+                     
+Refer to the installation instructions in the minted documentation for more inf
+ormation.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -2829,13 +2842,13 @@ LaTeX Info: Redefining \% on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [116 <./Figuras/FPGA.jpg>]
-<resultados-obtenidos/ejemplo1/images/1_empty.png, id=836, 2068.72874pt x 871.7
-5688pt>
-File: resultados-obtenidos/ejemplo1/images/1_empty.png Graphic file (type png)
-<use resultados-obtenidos/ejemplo1/images/1_empty.png>
-Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_empty.png  used
- on input line 7.
-(pdftex.def)             Requested size: 426.79134pt x 179.84198pt.
+<resultados-obtenidos/ejemplo1/images/1_grid.png, id=836, 2146.419pt x 1056.587
+4pt>
+File: resultados-obtenidos/ejemplo1/images/1_grid.png Graphic file (type png)
+<use resultados-obtenidos/ejemplo1/images/1_grid.png>
+Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_grid.png  used 
+on input line 7.
+(pdftex.def)             Requested size: 426.79134pt x 210.08846pt.
 )
 (resultados-obtenidos/ejemplo1/original-signalling.tex
 <resultados-obtenidos/ejemplo1/images/1_original.png, id=837, 1678.01906pt x 68
@@ -2852,7 +2865,7 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-[117 <./resultados-obtenidos/ejemplo1/images/1_empty.png>]
+[117 <./resultados-obtenidos/ejemplo1/images/1_grid.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 17--40
 [][]
  []
@@ -2896,14 +2909,14 @@ LaTeX Info: Redefining \% on input line 136.
 LaTeX Info: Redefining \. on input line 136.
 LaTeX Info: Redefining \% on input line 136.
 [121]
-<resultados-obtenidos/ejemplo1/images/1_step1.png, id=855, 2095.83pt x 875.5209
+<resultados-obtenidos/ejemplo1/images/1_step1.png, id=856, 2095.83pt x 875.5209
 4pt>
 File: resultados-obtenidos/ejemplo1/images/1_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step1.png  used
  on input line 150.
 (pdftex.def)             Requested size: 426.79134pt x 178.28061pt.
-<resultados-obtenidos/ejemplo1/images/1_step2.png, id=856, 2091.31313pt x 855.1
+<resultados-obtenidos/ejemplo1/images/1_step2.png, id=857, 2091.31313pt x 855.1
 95pt>
 File: resultados-obtenidos/ejemplo1/images/1_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step2.png>
@@ -2917,14 +2930,14 @@ LaTeX Info: Redefining \% on input line 165.
 LaTeX Info: Redefining \. on input line 165.
 LaTeX Info: Redefining \% on input line 165.
 [122 <./resultados-obtenidos/ejemplo1/images/1_step1.png>]
-<resultados-obtenidos/ejemplo1/images/1_step3.png, id=861, 2098.08844pt x 857.4
+<resultados-obtenidos/ejemplo1/images/1_step3.png, id=862, 2098.08844pt x 857.4
 5343pt>
 File: resultados-obtenidos/ejemplo1/images/1_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_step3.png  used
  on input line 170.
 (pdftex.def)             Requested size: 426.79134pt x 174.41838pt.
-<resultados-obtenidos/ejemplo1/images/1_step4.png, id=862, 2079.26813pt x 872.5
+<resultados-obtenidos/ejemplo1/images/1_step4.png, id=863, 2079.26813pt x 872.5
 0969pt>
 File: resultados-obtenidos/ejemplo1/images/1_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_step4.png>
@@ -2939,7 +2952,7 @@ LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
 [123 <./resultados-obtenidos/ejemplo1/images/1_step2.png> <./resultados-obtenid
 os/ejemplo1/images/1_step3.png>]
-<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=866, 1672.74937pt x 682.048
+<resultados-obtenidos/ejemplo1/images/1_RNA.png, id=867, 1672.74937pt x 682.048
 13pt>
 File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/1_RNA.png>
@@ -2971,18 +2984,18 @@ LaTeX Info: Redefining \% on input line 339.
 LaTeX Info: Redefining \. on input line 339.
 LaTeX Info: Redefining \% on input line 339.
 [127]) (resultados-obtenidos/ejemplo1/graph-generated.tex
-<Figuras/Graph_1.png, id=880, 9033.75pt x 3297.31876pt>
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[128]
+<Figuras/Graph_1.png, id=885, 9033.75pt x 3297.31876pt>
 File: Figuras/Graph_1.png Graphic file (type png)
 <use Figuras/Graph_1.png>
 Package pdftex.def Info: Figuras/Graph_1.png  used on input line 7.
 (pdftex.def)             Requested size: 426.79134pt x 155.76895pt.
-
-
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-[128]) (resultados-obtenidos/ejemplo1/generated-signalling.tex
+) (resultados-obtenidos/ejemplo1/generated-signalling.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--40
 
  []
@@ -3007,7 +3020,7 @@ LaTeX Info: Redefining \% on input line 51.
 LaTeX Info: Redefining \. on input line 51.
 LaTeX Info: Redefining \% on input line 51.
 [131]) (resultados-obtenidos/ejemplo1/synthesizing.tex
-<resultados-obtenidos/ejemplo1/images/ACG_files.png, id=895, 1300.86pt x 597.73
+<resultados-obtenidos/ejemplo1/images/ACG_files.png, id=896, 1300.86pt x 597.73
 312pt>
 File: resultados-obtenidos/ejemplo1/images/ACG_files.png Graphic file (type png
 )
@@ -3064,7 +3077,7 @@ LaTeX Info: Redefining \% on input line 252.
 LaTeX Info: Redefining \. on input line 252.
 LaTeX Info: Redefining \% on input line 252.
 [136]
-<resultados-obtenidos/ejemplo1/images/ACG_vivado.png, id=916, 1424.32124pt x 67
+<resultados-obtenidos/ejemplo1/images/ACG_vivado.png, id=917, 1424.32124pt x 67
 3.76718pt>
 File: resultados-obtenidos/ejemplo1/images/ACG_vivado.png Graphic file (type pn
 g)
@@ -3072,7 +3085,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/ACG_vivado.png  u
 sed on input line 257.
 (pdftex.def)             Requested size: 426.79134pt x 201.88496pt.
-<resultados-obtenidos/ejemplo1/images/ACG_vivado_2.png, id=917, 333.49594pt x 3
+<resultados-obtenidos/ejemplo1/images/ACG_vivado_2.png, id=918, 333.49594pt x 3
 04.88907pt>
 File: resultados-obtenidos/ejemplo1/images/ACG_vivado_2.png Graphic file (type 
 png)
@@ -3094,7 +3107,7 @@ LaTeX Info: Redefining \. on input line 274.
 LaTeX Info: Redefining \% on input line 274.
 [138 <./resultados-obtenidos/ejemplo1/images/ACG_vivado_2.png>])
 (resultados-obtenidos/ejemplo1/gui.tex
-<resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png, id=926, 1445.4pt x 630.8
+<resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png, id=927, 1445.4pt x 630.8
 5687pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png Graphic file (type p
 ng)
@@ -3109,7 +3122,7 @@ LaTeX Info: Redefining \% on input line 18.
 LaTeX Info: Redefining \. on input line 18.
 LaTeX Info: Redefining \% on input line 18.
 [139 <./resultados-obtenidos/ejemplo1/images/AGG_S32_YES.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png, id=931, 1445.4pt x 
+<resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png, id=932, 1445.4pt x 
 679.78969pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png Graphic file (t
 ype png)
@@ -3117,7 +3130,7 @@ ype png)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.
 png  used on input line 31.
 (pdftex.def)             Requested size: 426.79134pt x 200.72293pt.
-<resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png, id=932, 1445.4pt x 628.59
+<resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png, id=933, 1445.4pt x 628.59
 843pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png Graphic file (type pn
 g)
@@ -3132,7 +3145,7 @@ LaTeX Info: Redefining \% on input line 44.
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
 [140 <./resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_R13.png, id=938, 1445.4pt x 636.87938
+<resultados-obtenidos/ejemplo1/images/AGG_R13.png, id=939, 1445.4pt x 636.87938
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R13.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R13.png>
@@ -3146,7 +3159,7 @@ LaTeX Info: Redefining \% on input line 55.
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
 [141 <./resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_R12.png, id=943, 1445.4pt x 655.69969
+<resultados-obtenidos/ejemplo1/images/AGG_R12.png, id=944, 1445.4pt x 655.69969
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R12.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R12.png>
@@ -3161,7 +3174,7 @@ LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
 [142 <./resultados-obtenidos/ejemplo1/images/AGG_R13.png> <./resultados-obtenid
 os/ejemplo1/images/AGG_R12.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_R19.png, id=949, 1445.4pt x 617.30624
+<resultados-obtenidos/ejemplo1/images/AGG_R19.png, id=950, 1445.4pt x 617.30624
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R19.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R19.png>
@@ -3176,7 +3189,7 @@ LaTeX Info: Redefining \% on input line 46.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
 [143 <./resultados-obtenidos/ejemplo1/images/AGG_R19.png>]
-<resultados-obtenidos/ejemplo1/images/recursos_1.png, id=954, 833.1125pt x 514.
+<resultados-obtenidos/ejemplo1/images/recursos_1.png, id=955, 833.1125pt x 514.
 92375pt>
 File: resultados-obtenidos/ejemplo1/images/recursos_1.png Graphic file (type pn
 g)
@@ -3184,7 +3197,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/recursos_1.png  u
 sed on input line 51.
 (pdftex.def)             Requested size: 384.10959pt x 237.40993pt.
-<resultados-obtenidos/ejemplo1/images/recursos_2.png, id=955, 816.04875pt x 504
+<resultados-obtenidos/ejemplo1/images/recursos_2.png, id=956, 816.04875pt x 504
 .88625pt>
 File: resultados-obtenidos/ejemplo1/images/recursos_2.png Graphic file (type pn
 g)
@@ -3220,7 +3233,7 @@ LaTeX Info: Redefining \% on input line 141.
 [147] (resultados-obtenidos/ejemplo2/main.tex
 Ap\'{e}ndice A.
 (resultados-obtenidos/ejemplo2/original-layout.tex
-<resultados-obtenidos/ejemplo2/images/2_empty.png, id=971, 959.83594pt x 217.56
+<resultados-obtenidos/ejemplo2/images/2_empty.png, id=972, 959.83594pt x 217.56
 28pt>
 File: resultados-obtenidos/ejemplo2/images/2_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_empty.png>
@@ -3229,7 +3242,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 96.74045pt.
 )
 (resultados-obtenidos/ejemplo2/original-signalling.tex
-<resultados-obtenidos/ejemplo2/images/2_original.png, id=972, 2390.9325pt x 271
+<resultados-obtenidos/ejemplo2/images/2_original.png, id=973, 2390.9325pt x 271
 .76532pt>
 File: resultados-obtenidos/ejemplo2/images/2_original.png Graphic file (type pn
 g)
@@ -3278,28 +3291,28 @@ LaTeX Info: Redefining \% on input line 101.
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
 [151]
-<resultados-obtenidos/ejemplo2/images/2_step1.png, id=987, 3006.73312pt x 374.9
+<resultados-obtenidos/ejemplo2/images/2_step1.png, id=988, 3006.73312pt x 374.9
 0062pt>
 File: resultados-obtenidos/ejemplo2/images/2_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step1.png  used
  on input line 104.
 (pdftex.def)             Requested size: 426.79134pt x 53.21223pt.
-<resultados-obtenidos/ejemplo2/images/2_step2.png, id=988, 3006.73312pt x 394.4
+<resultados-obtenidos/ejemplo2/images/2_step2.png, id=989, 3006.73312pt x 394.4
 7375pt>
 File: resultados-obtenidos/ejemplo2/images/2_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step2.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step2.png  used
  on input line 115.
 (pdftex.def)             Requested size: 426.79134pt x 55.99037pt.
-<resultados-obtenidos/ejemplo2/images/2_step3.png, id=989, 3006.73312pt x 362.1
+<resultados-obtenidos/ejemplo2/images/2_step3.png, id=990, 3006.73312pt x 362.1
 0281pt>
 File: resultados-obtenidos/ejemplo2/images/2_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo2/images/2_step3.png  used
  on input line 124.
 (pdftex.def)             Requested size: 426.79134pt x 51.39574pt.
-<resultados-obtenidos/ejemplo2/images/2_step4.png, id=990, 3006.73312pt x 328.9
+<resultados-obtenidos/ejemplo2/images/2_step4.png, id=991, 3006.73312pt x 328.9
 7906pt>
 File: resultados-obtenidos/ejemplo2/images/2_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_step4.png>
@@ -3315,7 +3328,7 @@ LaTeX Info: Redefining \% on input line 137.
 [152 <./resultados-obtenidos/ejemplo2/images/2_step1.png> <./resultados-obtenid
 os/ejemplo2/images/2_step2.png> <./resultados-obtenidos/ejemplo2/images/2_step3
 .png>]
-<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=995, 2346.51656pt x 282.304
+<resultados-obtenidos/ejemplo2/images/2_RNA.png, id=996, 2346.51656pt x 282.304
 69pt>
 File: resultados-obtenidos/ejemplo2/images/2_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo2/images/2_RNA.png>
@@ -3336,7 +3349,7 @@ LaTeX Info: Redefining \% on input line 220.
 LaTeX Info: Redefining \. on input line 220.
 LaTeX Info: Redefining \% on input line 220.
 [154]) (resultados-obtenidos/ejemplo2/graph-generated.tex
-<Figuras/Graph_2.png, id=1003, 1343.0175pt x 415.5525pt>
+<Figuras/Graph_2.png, id=1004, 1343.0175pt x 415.5525pt>
 File: Figuras/Graph_2.png Graphic file (type png)
 <use Figuras/Graph_2.png>
 Package pdftex.def Info: Figuras/Graph_2.png  used on input line 7.
@@ -3373,7 +3386,7 @@ LaTeX Info: Redefining \% on input line 1.
 [158]
 Ap\'{e}ndice B.
 (resultados-obtenidos/ejemplo3/original-layout.tex
-<resultados-obtenidos/ejemplo3/images/3_empty.png, id=1018, 10514.28125pt x 239
+<resultados-obtenidos/ejemplo3/images/3_empty.png, id=1019, 10514.28125pt x 239
 4.9475pt>
 File: resultados-obtenidos/ejemplo3/images/3_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_empty.png>
@@ -3386,7 +3399,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_empty.png  used
 [159
 
  <./resultados-obtenidos/ejemplo3/images/3_empty.png>]
-<resultados-obtenidos/ejemplo3/images/3_original.png, id=1022, 6134.66907pt x 1
+<resultados-obtenidos/ejemplo3/images/3_original.png, id=1023, 6134.66907pt x 1
 417.54594pt>
 File: resultados-obtenidos/ejemplo3/images/3_original.png Graphic file (type pn
 g)
@@ -3465,14 +3478,14 @@ LaTeX Info: Redefining \% on input line 483.
 LaTeX Info: Redefining \. on input line 483.
 LaTeX Info: Redefining \% on input line 483.
 [169]
-<resultados-obtenidos/ejemplo3/images/3_step1.png, id=1055, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step1.png, id=1056, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step1.png  used
  on input line 506.
 (pdftex.def)             Requested size: 426.79134pt x 103.39081pt.
-<resultados-obtenidos/ejemplo3/images/3_step2.png, id=1056, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step2.png, id=1057, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step2.png>
@@ -3486,14 +3499,14 @@ LaTeX Info: Redefining \% on input line 521.
 LaTeX Info: Redefining \. on input line 521.
 LaTeX Info: Redefining \% on input line 521.
 [170 <./resultados-obtenidos/ejemplo3/images/3_step1.png>]
-<resultados-obtenidos/ejemplo3/images/3_step3.png, id=1061, 10195.08875pt x 247
+<resultados-obtenidos/ejemplo3/images/3_step3.png, id=1062, 10195.08875pt x 247
 0.22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo3/images/3_step3.png  used
  on input line 526.
 (pdftex.def)             Requested size: 426.79134pt x 103.39081pt.
-<resultados-obtenidos/ejemplo3/images/3_step4.png, id=1062, 7647.82219pt x 1852
+<resultados-obtenidos/ejemplo3/images/3_step4.png, id=1063, 7647.82219pt x 1852
 .67157pt>
 File: resultados-obtenidos/ejemplo3/images/3_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_step4.png>
@@ -3509,7 +3522,7 @@ LaTeX Info: Redefining \% on input line 541.
 [171 <./resultados-obtenidos/ejemplo3/images/3_step2.png> <./resultados-obtenid
 os/ejemplo3/images/3_step3.png> <./resultados-obtenidos/ejemplo3/images/3_step4
 .png>]
-<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=1066, 10195.08875pt x 2470.
+<resultados-obtenidos/ejemplo3/images/3_RNA.png, id=1067, 10195.08875pt x 2470.
 22874pt>
 File: resultados-obtenidos/ejemplo3/images/3_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo3/images/3_RNA.png>
@@ -3577,7 +3590,7 @@ LaTeX Info: Redefining \% on input line 1146.
 LaTeX Info: Redefining \. on input line 1146.
 LaTeX Info: Redefining \% on input line 1146.
 [181]) (resultados-obtenidos/ejemplo3/graph-generated.tex
-<Figuras/Graph_3.png, id=1098, 3468.96pt x 1743.75465pt>
+<Figuras/Graph_3.png, id=1099, 3468.96pt x 1743.75465pt>
 File: Figuras/Graph_3.png Graphic file (type png)
 <use Figuras/Graph_3.png>
 Package pdftex.def Info: Figuras/Graph_3.png  used on input line 7.
@@ -3663,7 +3676,7 @@ LaTeX Info: Redefining \% on input line 1.
 [189]
 Ap\'{e}ndice C.
 (resultados-obtenidos/ejemplo4/original-layout.tex
-<resultados-obtenidos/ejemplo4/images/4_empty.png, id=1126, 3349.26282pt x 801.
+<resultados-obtenidos/ejemplo4/images/4_empty.png, id=1127, 3349.26282pt x 801.
 74532pt>
 File: resultados-obtenidos/ejemplo4/images/4_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_empty.png>
@@ -3672,7 +3685,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 102.16306pt.
 )
 (resultados-obtenidos/ejemplo4/original-signalling.tex
-<resultados-obtenidos/ejemplo4/images/4_original.png, id=1127, 2657.42813pt x 6
+<resultados-obtenidos/ejemplo4/images/4_original.png, id=1128, 2657.42813pt x 6
 42.14906pt>
 File: resultados-obtenidos/ejemplo4/images/4_original.png Graphic file (type pn
 g)
@@ -3786,7 +3799,7 @@ LaTeX Info: Redefining \% on input line 500.
 LaTeX Info: Redefining \. on input line 500.
 LaTeX Info: Redefining \% on input line 500.
 [202]
-<resultados-obtenidos/ejemplo4/images/4_step1.png, id=1172, 3334.20656pt x 842.
+<resultados-obtenidos/ejemplo4/images/4_step1.png, id=1173, 3334.20656pt x 842.
 39719pt>
 File: resultados-obtenidos/ejemplo4/images/4_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step1.png>
@@ -3800,21 +3813,21 @@ LaTeX Info: Redefining \% on input line 545.
 LaTeX Info: Redefining \. on input line 545.
 LaTeX Info: Redefining \% on input line 545.
 [203 <./resultados-obtenidos/ejemplo4/images/4_step1.png>]
-<resultados-obtenidos/ejemplo4/images/4_step2.png, id=1176, 3356.79094pt x 855.
+<resultados-obtenidos/ejemplo4/images/4_step2.png, id=1177, 3356.79094pt x 855.
 195pt>
 File: resultados-obtenidos/ejemplo4/images/4_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step2.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step2.png  used
  on input line 550.
 (pdftex.def)             Requested size: 426.79134pt x 108.726pt.
-<resultados-obtenidos/ejemplo4/images/4_step3.png, id=1177, 3303.34125pt x 830.
+<resultados-obtenidos/ejemplo4/images/4_step3.png, id=1178, 3303.34125pt x 830.
 35219pt>
 File: resultados-obtenidos/ejemplo4/images/4_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo4/images/4_step3.png  used
  on input line 559.
 (pdftex.def)             Requested size: 426.79134pt x 107.27805pt.
-<resultados-obtenidos/ejemplo4/images/4_step4.png, id=1178, 3336.465pt x 840.89
+<resultados-obtenidos/ejemplo4/images/4_step4.png, id=1179, 3336.465pt x 840.89
 156pt>
 File: resultados-obtenidos/ejemplo4/images/4_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_step4.png>
@@ -3835,7 +3848,7 @@ LaTeX Info: Redefining \% on input line 613.
 LaTeX Info: Redefining \. on input line 613.
 LaTeX Info: Redefining \% on input line 613.
 [205 <./resultados-obtenidos/ejemplo4/images/4_step4.png>]
-<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=1185, 3288.285pt x 809.2734
+<resultados-obtenidos/ejemplo4/images/4_RNA.png, id=1186, 3288.285pt x 809.2734
 4pt>
 File: resultados-obtenidos/ejemplo4/images/4_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo4/images/4_RNA.png>
@@ -3897,7 +3910,7 @@ LaTeX Info: Redefining \% on input line 1171.
 LaTeX Info: Redefining \. on input line 1171.
 LaTeX Info: Redefining \% on input line 1171.
 [214]) (resultados-obtenidos/ejemplo4/graph-generated.tex
-<Figuras/Graph_4.png, id=1215, 3468.96pt x 1418.53966pt>
+<Figuras/Graph_4.png, id=1216, 3468.96pt x 1418.53966pt>
 File: Figuras/Graph_4.png Graphic file (type png)
 <use Figuras/Graph_4.png>
 Package pdftex.def Info: Figuras/Graph_4.png  used on input line 7.
@@ -4009,7 +4022,7 @@ LaTeX Info: Redefining \% on input line 1.
 [224]
 Ap\'{e}ndice D.
 (resultados-obtenidos/ejemplo5/original-layout.tex
-<resultados-obtenidos/ejemplo5/images/5_empty.png, id=1249, 963.6pt x 325.96782
+<resultados-obtenidos/ejemplo5/images/5_empty.png, id=1250, 963.6pt x 325.96782
 pt>
 File: resultados-obtenidos/ejemplo5/images/5_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_empty.png>
@@ -4018,7 +4031,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 144.3713pt.
 )
 (resultados-obtenidos/ejemplo5/original-signalling.tex
-<resultados-obtenidos/ejemplo5/images/5_original.png, id=1250, 2812.5075pt x 82
+<resultados-obtenidos/ejemplo5/images/5_original.png, id=1251, 2812.5075pt x 82
 2.07124pt>
 File: resultados-obtenidos/ejemplo5/images/5_original.png Graphic file (type pn
 g)
@@ -4060,14 +4073,14 @@ LaTeX Info: Redefining \% on input line 130.
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
 [229]
-<resultados-obtenidos/ejemplo5/images/5_step1.png, id=1267, 2841.11438pt x 999.
+<resultados-obtenidos/ejemplo5/images/5_step1.png, id=1268, 2841.11438pt x 999.
 735pt>
 File: resultados-obtenidos/ejemplo5/images/5_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step1.png  used
  on input line 144.
 (pdftex.def)             Requested size: 426.79134pt x 150.16734pt.
-<resultados-obtenidos/ejemplo5/images/5_step2.png, id=1268, 2841.11438pt x 1027
+<resultados-obtenidos/ejemplo5/images/5_step2.png, id=1269, 2841.11438pt x 1027
 .58907pt>
 File: resultados-obtenidos/ejemplo5/images/5_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step2.png>
@@ -4081,14 +4094,14 @@ LaTeX Info: Redefining \% on input line 159.
 LaTeX Info: Redefining \. on input line 159.
 LaTeX Info: Redefining \% on input line 159.
 [230 <./resultados-obtenidos/ejemplo5/images/5_step1.png>]
-<resultados-obtenidos/ejemplo5/images/5_step3.png, id=1273, 2841.11438pt x 1042
+<resultados-obtenidos/ejemplo5/images/5_step3.png, id=1274, 2841.11438pt x 1042
 .64531pt>
 File: resultados-obtenidos/ejemplo5/images/5_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo5/images/5_step3.png  used
  on input line 164.
 (pdftex.def)             Requested size: 426.79134pt x 156.61278pt.
-<resultados-obtenidos/ejemplo5/images/5_step4.png, id=1274, 2841.11438pt x 1041
+<resultados-obtenidos/ejemplo5/images/5_step4.png, id=1275, 2841.11438pt x 1041
 .1397pt>
 File: resultados-obtenidos/ejemplo5/images/5_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_step4.png>
@@ -4109,7 +4122,7 @@ LaTeX Info: Redefining \% on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 [232 <./resultados-obtenidos/ejemplo5/images/5_step4.png>]
-<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=1281, 1365.60187pt x 510.40
+<resultados-obtenidos/ejemplo5/images/5_RNA.png, id=1282, 1365.60187pt x 510.40
 688pt>
 File: resultados-obtenidos/ejemplo5/images/5_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo5/images/5_RNA.png>
@@ -4135,7 +4148,7 @@ LaTeX Info: Redefining \% on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [235]
-<Figuras/Graph_5.png, id=1291, 1046.91125pt x 467.7475pt>
+<Figuras/Graph_5.png, id=1292, 1046.91125pt x 467.7475pt>
 File: Figuras/Graph_5.png Graphic file (type png)
 <use Figuras/Graph_5.png>
 Package pdftex.def Info: Figuras/Graph_5.png  used on input line 7.
@@ -4179,7 +4192,7 @@ LaTeX Info: Redefining \% on input line 1.
 [239]
 Ap\'{e}ndice E.
 (resultados-obtenidos/ejemplo6/original-layout.tex
-<resultados-obtenidos/ejemplo6/images/6_empty.png, id=1306, 963.6pt x 239.39438
+<resultados-obtenidos/ejemplo6/images/6_empty.png, id=1307, 963.6pt x 239.39438
 pt>
 File: resultados-obtenidos/ejemplo6/images/6_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_empty.png>
@@ -4188,7 +4201,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 106.02788pt.
 )
 (resultados-obtenidos/ejemplo6/original-signalling.tex
-<resultados-obtenidos/ejemplo6/images/6_original.png, id=1307, 3274.73438pt x 7
+<resultados-obtenidos/ejemplo6/images/6_original.png, id=1308, 3274.73438pt x 7
 92.71156pt>
 File: resultados-obtenidos/ejemplo6/images/6_original.png Graphic file (type pn
 g)
@@ -4230,14 +4243,14 @@ LaTeX Info: Redefining \% on input line 137.
 LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
 [244]
-<resultados-obtenidos/ejemplo6/images/6_step1.png, id=1325, 4163.05313pt x 977.
+<resultados-obtenidos/ejemplo6/images/6_step1.png, id=1326, 4163.05313pt x 977.
 15062pt>
 File: resultados-obtenidos/ejemplo6/images/6_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step1.png  used
  on input line 153.
 (pdftex.def)             Requested size: 426.79134pt x 100.16603pt.
-<resultados-obtenidos/ejemplo6/images/6_step2.png, id=1326, 4163.05313pt x 1004
+<resultados-obtenidos/ejemplo6/images/6_step2.png, id=1327, 4163.05313pt x 1004
 .25188pt>
 File: resultados-obtenidos/ejemplo6/images/6_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step2.png>
@@ -4252,14 +4265,14 @@ LaTeX Info: Redefining \. on input line 170.
 LaTeX Info: Redefining \% on input line 170.
 [245 <./resultados-obtenidos/ejemplo6/images/6_step1.png> <./resultados-obtenid
 os/ejemplo6/images/6_step2.png>]
-<resultados-obtenidos/ejemplo6/images/6_step3.png, id=1330, 4163.05313pt x 995.
+<resultados-obtenidos/ejemplo6/images/6_step3.png, id=1331, 4163.05313pt x 995.
 21812pt>
 File: resultados-obtenidos/ejemplo6/images/6_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo6/images/6_step3.png  used
  on input line 173.
 (pdftex.def)             Requested size: 426.79134pt x 102.01811pt.
-<resultados-obtenidos/ejemplo6/images/6_step4.png, id=1331, 1707.37875pt x 401.
+<resultados-obtenidos/ejemplo6/images/6_step4.png, id=1332, 1707.37875pt x 401.
 24907pt>
 File: resultados-obtenidos/ejemplo6/images/6_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_step4.png>
@@ -4274,7 +4287,7 @@ LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
 [246 <./resultados-obtenidos/ejemplo6/images/6_step3.png> <./resultados-obtenid
 os/ejemplo6/images/6_step4.png>]
-<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=1335, 1407.75937pt x 339.51
+<resultados-obtenidos/ejemplo6/images/6_RNA.png, id=1336, 1407.75937pt x 339.51
 843pt>
 File: resultados-obtenidos/ejemplo6/images/6_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo6/images/6_RNA.png>
@@ -4306,7 +4319,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 [250]
-<Figuras/Graph_6.png, id=1349, 2073.7475pt x 425.59pt>
+<Figuras/Graph_6.png, id=1350, 2073.7475pt x 425.59pt>
 File: Figuras/Graph_6.png Graphic file (type png)
 <use Figuras/Graph_6.png>
 Package pdftex.def Info: Figuras/Graph_6.png  used on input line 7.
@@ -4350,7 +4363,7 @@ LaTeX Info: Redefining \% on input line 1.
 [255]
 Ap\'{e}ndice F.
 (resultados-obtenidos/ejemplo7/original-layout.tex
-<resultados-obtenidos/ejemplo7/images/7_empty.png, id=1367, 963.6pt x 542.025pt
+<resultados-obtenidos/ejemplo7/images/7_empty.png, id=1368, 963.6pt x 542.025pt
 >
 File: resultados-obtenidos/ejemplo7/images/7_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_empty.png>
@@ -4363,7 +4376,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo7/images/7_empty.png  used
 [256
 
  <./resultados-obtenidos/ejemplo7/images/7_empty.png>]
-<resultados-obtenidos/ejemplo7/images/7_original.png, id=1371, 1902.3572pt x 11
+<resultados-obtenidos/ejemplo7/images/7_original.png, id=1372, 1902.3572pt x 11
 58.57843pt>
 File: resultados-obtenidos/ejemplo7/images/7_original.png Graphic file (type pn
 g)
@@ -4395,7 +4408,7 @@ LaTeX Info: Redefining \% on input line 84.
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
 [259]
-<resultados-obtenidos/ejemplo7/images/7_step1.png, id=1382, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step1.png, id=1383, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step1.png>
@@ -4409,7 +4422,7 @@ LaTeX Info: Redefining \% on input line 114.
 LaTeX Info: Redefining \. on input line 114.
 LaTeX Info: Redefining \% on input line 114.
 [260]
-<resultados-obtenidos/ejemplo7/images/7_step2.png, id=1387, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step2.png, id=1388, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step2.png>
@@ -4423,7 +4436,7 @@ LaTeX Info: Redefining \% on input line 123.
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
 [261 <./resultados-obtenidos/ejemplo7/images/7_step1.png>]
-<resultados-obtenidos/ejemplo7/images/7_step3.png, id=1391, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step3.png, id=1392, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step3.png>
@@ -4437,7 +4450,7 @@ LaTeX Info: Redefining \% on input line 132.
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
 [262 <./resultados-obtenidos/ejemplo7/images/7_step2.png>]
-<resultados-obtenidos/ejemplo7/images/7_step4.png, id=1395, 3283.26625pt x 2443
+<resultados-obtenidos/ejemplo7/images/7_step4.png, id=1396, 3283.26625pt x 2443
 .1275pt>
 File: resultados-obtenidos/ejemplo7/images/7_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_step4.png>
@@ -4457,7 +4470,7 @@ LaTeX Info: Redefining \% on input line 155.
 LaTeX Info: Redefining \. on input line 155.
 LaTeX Info: Redefining \% on input line 155.
 [264 <./resultados-obtenidos/ejemplo7/images/7_step4.png>]
-<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=1402, 926.71219pt x 550.305
+<resultados-obtenidos/ejemplo7/images/7_RNA.png, id=1403, 926.71219pt x 550.305
 94pt>
 File: resultados-obtenidos/ejemplo7/images/7_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo7/images/7_RNA.png>
@@ -4477,7 +4490,7 @@ LaTeX Info: Redefining \% on input line 234.
 LaTeX Info: Redefining \. on input line 234.
 LaTeX Info: Redefining \% on input line 234.
 [266]) (resultados-obtenidos/ejemplo7/graph-generated.tex
-<Figuras/Graph_7.png, id=1410, 1140.26pt x 435.6275pt>
+<Figuras/Graph_7.png, id=1411, 1140.26pt x 435.6275pt>
 File: Figuras/Graph_7.png Graphic file (type png)
 <use Figuras/Graph_7.png>
 Package pdftex.def Info: Figuras/Graph_7.png  used on input line 7.
@@ -4514,7 +4527,7 @@ LaTeX Info: Redefining \% on input line 1.
 [270]
 Ap\'{e}ndice G.
 (resultados-obtenidos/ejemplo8/original-layout.tex
-<resultados-obtenidos/ejemplo8/images/8_empty.png, id=1424, 2318.6625pt x 444.1
+<resultados-obtenidos/ejemplo8/images/8_empty.png, id=1425, 2318.6625pt x 444.1
 5938pt>
 File: resultados-obtenidos/ejemplo8/images/8_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_empty.png>
@@ -4523,7 +4536,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 81.75478pt.
 )
 (resultados-obtenidos/ejemplo8/original-signalling.tex
-<resultados-obtenidos/ejemplo8/images/8_original.png, id=1425, 2300.595pt x 446
+<resultados-obtenidos/ejemplo8/images/8_original.png, id=1426, 2300.595pt x 446
 .41782pt>
 File: resultados-obtenidos/ejemplo8/images/8_original.png Graphic file (type pn
 g)
@@ -4559,21 +4572,21 @@ LaTeX Info: Redefining \% on input line 89.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
 [274]
-<resultados-obtenidos/ejemplo8/images/8_step1.png, id=1440, 9609.65157pt x 1841
+<resultados-obtenidos/ejemplo8/images/8_step1.png, id=1441, 9609.65157pt x 1841
 .37938pt>
 File: resultados-obtenidos/ejemplo8/images/8_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step1.png  used
  on input line 104.
 (pdftex.def)             Requested size: 426.79134pt x 81.7627pt.
-<resultados-obtenidos/ejemplo8/images/8_step2.png, id=1441, 9565.23563pt x 1863
+<resultados-obtenidos/ejemplo8/images/8_step2.png, id=1442, 9565.23563pt x 1863
 .21094pt>
 File: resultados-obtenidos/ejemplo8/images/8_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step2.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo8/images/8_step2.png  used
  on input line 113.
 (pdftex.def)             Requested size: 426.79134pt x 83.13011pt.
-<resultados-obtenidos/ejemplo8/images/8_step3.png, id=1442, 9607.39313pt x 1958
+<resultados-obtenidos/ejemplo8/images/8_step3.png, id=1443, 9607.39313pt x 1958
 .81813pt>
 File: resultados-obtenidos/ejemplo8/images/8_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step3.png>
@@ -4588,7 +4601,7 @@ LaTeX Info: Redefining \. on input line 125.
 LaTeX Info: Redefining \% on input line 125.
 [275 <./resultados-obtenidos/ejemplo8/images/8_step1.png> <./resultados-obtenid
 os/ejemplo8/images/8_step2.png>]
-<resultados-obtenidos/ejemplo8/images/8_step4.png, id=1446, 9649.55063pt x 1906
+<resultados-obtenidos/ejemplo8/images/8_step4.png, id=1447, 9649.55063pt x 1906
 .87407pt>
 File: resultados-obtenidos/ejemplo8/images/8_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_step4.png>
@@ -4603,7 +4616,7 @@ LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
 [276 <./resultados-obtenidos/ejemplo8/images/8_step3.png> <./resultados-obtenid
 os/ejemplo8/images/8_step4.png>]
-<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=1450, 9660.84282pt x 1838.3
+<resultados-obtenidos/ejemplo8/images/8_RNA.png, id=1451, 9660.84282pt x 1838.3
 6812pt>
 File: resultados-obtenidos/ejemplo8/images/8_RNA.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo8/images/8_RNA.png>
@@ -4629,7 +4642,7 @@ LaTeX Info: Redefining \% on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [279]
-<Figuras/Graph_8.png, id=1461, 1745.52126pt x 324.21124pt>
+<Figuras/Graph_8.png, id=1462, 1745.52126pt x 324.21124pt>
 File: Figuras/Graph_8.png Graphic file (type png)
 <use Figuras/Graph_8.png>
 Package pdftex.def Info: Figuras/Graph_8.png  used on input line 7.
@@ -4666,7 +4679,7 @@ LaTeX Info: Redefining \% on input line 1.
 [283]
 Ap\'{e}ndice H.
 (resultados-obtenidos/ejemplo9/original-layout.tex
-<resultados-obtenidos/ejemplo9/images/9_empty.png, id=1475, 5886.99374pt x 831.
+<resultados-obtenidos/ejemplo9/images/9_empty.png, id=1476, 5886.99374pt x 831.
 85782pt>
 File: resultados-obtenidos/ejemplo9/images/9_empty.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo9/images/9_empty.png>
@@ -4675,7 +4688,7 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo9/images/9_empty.png  used
 (pdftex.def)             Requested size: 426.79134pt x 60.30496pt.
 )
 (resultados-obtenidos/ejemplo9/original-signalling.tex
-<resultados-obtenidos/ejemplo9/images/9_original.png, id=1476, 5886.99374pt x 8
+<resultados-obtenidos/ejemplo9/images/9_original.png, id=1477, 5886.99374pt x 8
 31.85782pt>
 File: resultados-obtenidos/ejemplo9/images/9_original.png Graphic file (type pn
 g)
@@ -4708,14 +4721,14 @@ LaTeX Info: Redefining \% on input line 127.
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
 [287]
-<resultados-obtenidos/ejemplo9/images/9_step1.png, id=1492, 9811.65625pt x 1632
+<resultados-obtenidos/ejemplo9/images/9_step1.png, id=1493, 9811.65625pt x 1632
 .0975pt>
 File: resultados-obtenidos/ejemplo9/images/9_step1.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo9/images/9_step1.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo9/images/9_step1.png  used
  on input line 151.
 (pdftex.def)             Requested size: 426.79134pt x 70.97574pt.
-<resultados-obtenidos/ejemplo9/images/9_step2.png, id=1493, 9811.65625pt x 1806
+<resultados-obtenidos/ejemplo9/images/9_step2.png, id=1494, 9811.65625pt x 1806
 .75pt>
 File: resultados-obtenidos/ejemplo9/images/9_step2.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo9/images/9_step2.png>
@@ -4729,14 +4742,14 @@ LaTeX Info: Redefining \% on input line 166.
 LaTeX Info: Redefining \. on input line 166.
 LaTeX Info: Redefining \% on input line 166.
 [288 <./resultados-obtenidos/ejemplo9/images/9_step1.png>]
-<resultados-obtenidos/ejemplo9/images/9_step3.png, id=1498, 9811.65625pt x 1806
+<resultados-obtenidos/ejemplo9/images/9_step3.png, id=1499, 9811.65625pt x 1806
 .75pt>
 File: resultados-obtenidos/ejemplo9/images/9_step3.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo9/images/9_step3.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo9/images/9_step3.png  used
  on input line 171.
 (pdftex.def)             Requested size: 426.79134pt x 78.57092pt.
-<resultados-obtenidos/ejemplo9/images/9_step4.png, id=1499, 9811.65625pt x 1806
+<resultados-obtenidos/ejemplo9/images/9_step4.png, id=1500, 9811.65625pt x 1806
 .75pt>
 File: resultados-obtenidos/ejemplo9/images/9_step4.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo9/images/9_step4.png>
@@ -4788,7 +4801,7 @@ LaTeX Info: Redefining \% on input line 406.
 LaTeX Info: Redefining \. on input line 406.
 LaTeX Info: Redefining \% on input line 406.
 [294]) (resultados-obtenidos/ejemplo9/graph-generated.tex
-<Figuras/Graph_9.png, id=1522, 2604.73125pt x 511.9125pt>
+<Figuras/Graph_9.png, id=1523, 2604.73125pt x 511.9125pt>
 File: Figuras/Graph_9.png Graphic file (type png)
 <use Figuras/Graph_9.png>
 Package pdftex.def Info: Figuras/Graph_9.png  used on input line 7.
@@ -4998,6 +5011,12 @@ Overfull \hbox (16.61058pt too wide) in paragraph at lines 156--156
  []
 
 
+Overfull \hbox (2.56908pt too wide) in paragraph at lines 156--156
+[]\OT1/cmr/m/n/10 Graphviz. ``open sour-ce graph vi-sua-li-za-tion soft-wa-re.'
+' (2024), di-rec-ci^^Son: $\OT1/cmtt/m/n/10 https : / / graphviz .
+ []
+
+
 
 LaTeX Info: Redefining \. on input line 158.
 LaTeX Info: Redefining \% on input line 158.
@@ -5030,13 +5049,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37153 strings out of 473904
- 806466 string characters out of 5726600
+ 37159 strings out of 473904
+ 806717 string characters out of 5726600
  2629908 words of memory out of 5000000
- 59052 multiletter control sequences out of 15000+600000
+ 59058 multiletter control sequences out of 15000+600000
  574324 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,33n,93p,1613b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,33n,93p,1664b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
 0800.pk> <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tctt1000.pk> <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -5070,9 +5089,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (330 pages, 74546998 bytes).
+Output written on main.pdf (330 pages, 83208944 bytes).
 PDF statistics:
- 1717 PDF objects out of 1728 (max. 8388607)
+ 1718 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  838 words of extra memory for PDF output out of 10000 (max. 10000000)
 

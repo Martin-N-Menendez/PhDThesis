@@ -8259,6 +8259,70 @@
       \verb https://www.intel.com/content/www/us/en/products/details/fpga/development-tools/quartus-prime.html
       \endverb
     \endentry
+    \entry{NETWORKX}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=460a12083578164303a067f143b44ffc}{%
+           family={developers},
+           familyi={d\bibinitperiod},
+           given={NetworkX},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{460a12083578164303a067f143b44ffc}
+      \strng{fullhash}{460a12083578164303a067f143b44ffc}
+      \strng{fullhashraw}{460a12083578164303a067f143b44ffc}
+      \strng{bibnamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authorbibnamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authornamehash}{460a12083578164303a067f143b44ffc}
+      \strng{authorfullhash}{460a12083578164303a067f143b44ffc}
+      \strng{authorfullhashraw}{460a12083578164303a067f143b44ffc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Network Analysis in Python}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://networkx.org/
+      \endverb
+      \verb{url}
+      \verb https://networkx.org/
+      \endverb
+    \endentry
+    \entry{GRAPHVIZ}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f2c99066d776c46471abb2d894da470}{%
+           family={Graphviz},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f2c99066d776c46471abb2d894da470}
+      \strng{fullhash}{8f2c99066d776c46471abb2d894da470}
+      \strng{fullhashraw}{8f2c99066d776c46471abb2d894da470}
+      \strng{bibnamehash}{8f2c99066d776c46471abb2d894da470}
+      \strng{authorbibnamehash}{8f2c99066d776c46471abb2d894da470}
+      \strng{authornamehash}{8f2c99066d776c46471abb2d894da470}
+      \strng{authorfullhash}{8f2c99066d776c46471abb2d894da470}
+      \strng{authorfullhashraw}{8f2c99066d776c46471abb2d894da470}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{open source graph visualization software}
+      \field{urlday}{18}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://graphviz.org/
+      \endverb
+      \verb{url}
+      \verb https://graphviz.org/
+      \endverb
+    \endentry
     \entry{YOUTUBE}{online}{}{}
       \name{author}{1}{}{%
         {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
