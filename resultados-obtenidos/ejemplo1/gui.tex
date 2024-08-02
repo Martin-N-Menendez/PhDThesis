@@ -1,20 +1,11 @@
 \subsection{Interfaz gráfica de usuario}
 	\label{sec:AGG_GUI}
 		
-	Una vez el bitstream generado es cargado en la FPGA, se puede visualizar la interfaz gráfica generada por el AGG (del inglés, Automatic Graphic User Interfaz Generator). El AGG genera las tramas a enviar a la FPGA y analiza las tramas de respuesta de la FPGA. Las tramas recibidas por el AGG son reinyectadas a la FPGA hasta que exista una convergencia entre las entradas y salidas de la FPGA.
+	Una vez el bitstream generado es cargado en la FPGA, se puede visualizar la interfaz gráfica generada por el AGG (del inglés, Automatic Graphic User Interfaz Generator), que fue diseñado e implementado en Python por el autor de esta tesis de doctorado, mediante el uso de la biblioteca tkinter \cite{TKINTER}. El AGG genera las tramas a enviar a la FPGA y analiza las tramas de respuesta de la FPGA. Las tramas recibidas por el AGG son reinyectadas a la FPGA hasta que exista una convergencia entre las entradas y salidas de la FPGA.
 	
 	El AGG se encarga, adicionalmente, de generar la interfaz gráfica de usuario utilizando la información provista por el RNA, como por ejemplo la topología (posición, conexión y largo de las vías), la distribución de la infraestructura estática (plataformas, final de vías), la disposición de la infraestructura dinámica (cambios de vías, pasos a nivel) y el señalamiento (posición y orientación de las señales).
 	
-	En la Figura \ref{fig:EJ1_AGG} se ilustra la ventana de la interfaz gráfica del ejemplo 1. La interfaz permite realizar zoom en diferentes zonas utilizando la rueda del mouse y permite desplazarse utilizando el click izquierdo mientras se presiona la tecla shift. Ambas funcionalidades son cruciales en topologías de gran tamaño. 
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_S32_YES}
-		\centering\caption{Interfaz gráfica del ejemplo 1.}
-		\label{fig:EJ1_AGG}
-	\end{figure}
-	
-	El señalamiento reaccionará ante dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: ocupando o liberando una vía, cerrando o abriendo un paso a nivel o modificando la posición de un cambio de vías. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. Los colores de cada elemento representan lo siguiente:
+	El señalamiento reaccionará ante dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: una vía puede estar ocupada o libre, una paso a nivel puede estar cerrado o abierto, o un cambio de vías puede estar en posición normal o reversa. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. Los colores de cada elemento representan lo siguiente:
 	
 	\begin{itemize}
 		\item Vías: negro (libre), rojo (ocupada), gris (enclavada).
@@ -24,7 +15,18 @@
 	
 	En el caso de los cambios de vías, su posición variará según la secuencia de estados posibles (por ejemplo, normal y reversa, en el caso de cambios de vías simples). El usuario es libre de elegir cualquier estado mediante clicks, pero enclavar los elementos es una función que sólo la FPGA puede ejecutar.
 	
-	Por ejemplo, si se selecciona el \textit{netElement} ne22, el AGG reportará el cambio de estado a la FPGA y esa sección cambiará su color a rojo. En pocos segundos la FPGA responderá con el nuevo estado del señalamiento, ilustrado en la Figura \ref{fig:EJ1_AGG_S32_OCCUPIED}. La señal S32 cambiará a rojo para impedir que una formación ingrese a la sección ocupada y la señal S22 cambiará a naranja, aplicando el doble recubrimiento (ver Sección \ref{sec:function_5}). El resto del señalamiento no se modificará ya que la situación local de cada señal no se modificó. Por ejemplo, la señal S29 seguirá de color rojo, para evitar un descarrilamiento, porque el trayecto que tiene a continuación se encuentra desconectado del resto de la red, porque el cambio de vías Sw04 se encuentra en posición reversa.
+	En la Figura \ref{fig:EJ1_AGG} se ilustra la ventana de la interfaz gráfica para el ejemplo 1. Entre las funcionalidades que se implementaron en la interfaz se pueden destacar la posibilidad de realizar zoom en diferentes zonas utilizando la rueda del mouse y desplazarse utilizando el click izquierdo mientras se presiona la tecla shift. Ambas funcionalidades son cruciales en topologías de gran tamaño. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_S32_YES}
+		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\label{fig:EJ1_AGG}
+	\end{figure}
+	
+	
+	
+	Por ejemplo, si se selecciona el \textit{netElement} ne22, el AGG reportará el cambio de estado a la FPGA y esa sección cambiará su color a rojo. En pocos segundos la FPGA responderá con el nuevo estado del señalamiento, ilustrado en la Figura \ref{fig:EJ1_AGG_S32_OCCUPIED}. La señal S32 cambiará a rojo para impedir que una formación ingrese a la sección ocupada y la señal S22 cambiará a naranja, aplicando el doble recubrimiento (ver Sección \ref{sec:function_5}). El resto del señalamiento no se modificará ya que la situación local de cada señal no se modificó. Por ejemplo, la implementación del sistema en la FPGA hará que la señal S29 siga en color rojo, para evitar un descarrilamiento, porque el trayecto que tiene a continuación se encuentra desconectado del resto de la red, porque el cambio de vías Sw04 se encuentra en posición reversa.
 	
 	\begin{figure}[H]
 		\centering
@@ -53,9 +55,9 @@
 		\label{fig:EJ1_AGG_R13}
 	\end{figure}
 	
-	Cualquier pedido de rutas que involucre la misma infraestructura que R13 no será aceptada hasta que la misma sea liberada. La liberación puede darse por tres motivos: cancelación de la ruta (ver Sección \ref{sec:function_3}), timeout durante la comprobación del estado de la infraestructura (ver Sección \ref{sec:function_3}) o liberación secuencial (ver Sección \ref{sec:ACG_liberacion}).	
+	Continuando con el ejemplo referido a la R13, cualquier pedido de rutas que involucre en forma parcial o total elementos de la infraestructura que formen parte de la ruta que está seleccionada, que en este caso es R13, no será aceptada hasta que la misma sea liberada. La liberación puede darse por tres motivos: cancelación de la ruta (ver Sección \ref{sec:function_3}), timeout durante la comprobación del estado de la infraestructura (ver Sección \ref{sec:function_3}) o liberación secuencial (ver Sección \ref{sec:ACG_liberacion}).	
 	
-	La Figura \ref{fig:EJ1_AGG_R12}	ilustra el caso de solicitud y aprobación de la ruta R12, para lo cual el usuario seleccionó la señal S22 y luego la señal S15. Asumiendo que es la única ruta activada, a diferencia del caso anterior, esta ruta solicita, además de secciones libres y cambios de vías sin enclavar, que el paso a nivel Lc08 se encuentre cerrado, aún cuando el paso a nivel se encuentra después de la señal S15 de finalización de ruta. Esto se debe a la protección por solape explicada en la Sección \ref{sec:function_4}.
+	La Figura \ref{fig:EJ1_AGG_R12}	ilustra el caso de solicitud y aprobación de la ruta R12, para lo cual el usuario seleccionó la señal S22 y luego la señal S15. Asumiendo que R12 es la única ruta activada, a diferencia del caso anterior, esta ruta solicita, además de secciones libres y cambios de vías sin enclavar, que el paso a nivel Lc08 se encuentre cerrado, aún cuando el paso a nivel se encuentra después de la señal S15 de finalización de ruta. Esto se debe a la protección por solape explicada en la Sección \ref{sec:function_4}.
 
 	\begin{figure}[H]
 		\centering
@@ -73,6 +75,6 @@
 		\label{fig:EJ1_AGG_R19}
 	\end{figure}
 	
-	Todas las rutas fueron testeadas individualmente y en conjunto. La cancelación de rutas, timeouts y liberación secuencial fueron probadas con éxito pero al no ser posible de exponer en papel, fueron subidas en video, en un canal público para su visualización \cite{YOUTUBE}.	
+	Todas las rutas ilustradas en la tabla \ref{Tab:tabla_generated_1} fueron testeadas individualmente y en conjunto. La cancelación de rutas, timeouts y liberación secuencial fueron probadas con éxito pero al no ser posible de exponer en papel, fueron subidas en video, en un canal público para su visualización \cite{YOUTUBE}.	
 	
 	

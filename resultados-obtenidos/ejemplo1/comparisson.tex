@@ -1,5 +1,6 @@
 \subsection{Comparación entre todos los ejemplos}
-
+	\label{sec:comparacion}
+	
 	Para una mejor comprensión de la eficacia del RNA y el ACG como herramienta para el análisis y generación de señalamiento, los resultados obtenidos en el ejemplo 1 son contrapuestos junto a los resultados de los ejemplos 2 al 9. Estos ejemplos extra pueden encontrarse detallados en los Apéndices comprendidos entre el Apéndice \ref{sec:ejemplo_2} (ejemplo 2) y el Apéndice \ref{sec:ejemplo_9} (ejemplo 9). La comparación entre los ejemplos generados se puede visualizar en la Tabla \ref{Tab:tabla_ACG_total}.
 
 	\begin{table}[H]
@@ -44,7 +45,7 @@
 		}    
 	\end{table}
 	
-	Debido a que se utiliza una interfaz serie para comunicar los datos, la cantidad de pines utilizados es independiente del tamaño del sistema a a implementar, lo cual se refleja en el número de pines de entrada y salida (IOs) y de buffers (BUFGs). Sin embargo, la cantidad de Look-Up-Tables (LUTs) y Flip-Flops (FFs) incrementa considerablemente. En la Figura \ref{fig:ACG_RECURSOS_1} se puede visualizar la cantidad de Look-Up-Table y Flip-Flops utilizadas en función de la cantidad de elementos ferroviarios (N). La cantidad de recursos utilizados incrementa linealmente, a diferencia del enfoque funcional explicado en la Sección \ref{sec:funcional}, cuyo crecimiento es exponencial.	
+	Debido a que se utiliza una interfaz serie para comunicar los datos, la cantidad de pines utilizados es independiente del tamaño del sistema a a implementar, lo cual se refleja en el número de pines de entrada y salida (IOs) y de buffers (BUFGs). Sin embargo, la cantidad de Look-Up-Tables (LUTs) y Flip-Flops (FFs) incrementa considerablemente. En la Figura \ref{fig:ACG_RECURSOS_1} se puede visualizar la cantidad de Look-Up-Table y Flip-Flops utilizadas en función de la cantidad de elementos ferroviarios (N). La cantidad de recursos totales utilizados (fila 11 de la Tabla \ref{Tab:tabla_ACG_total}) incrementa linealmente con la complejidad de la infraestructura ferroviaria, a diferencia del enfoque funcional explicado en la Sección \ref{sec:funcional}, cuya cantidad de recursos totales utilizados crece de forma exponencial.	
 	 	
 	\begin{figure}[H]
 		\centering
@@ -53,16 +54,34 @@
 		\label{fig:ACG_RECURSOS_1}
 	\end{figure}
 	
-	En la Figura \ref{fig:ACG_RECURSOS_2} se visualizan los mismos datos de la Figura \ref{fig:ACG_RECURSOS_1}, esta vez ponderados por la cantidad de recursos disponibles en la plataforma Arty Z7 20.
+	En la Figura \ref{fig:ACG_RECURSOS_2} se visualizan los mismos datos de la Figura \ref{fig:ACG_RECURSOS_1}, esta vez ponderados por la cantidad de recursos disponibles en la plataforma Arty Z7-20. 
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[origin = c, width=0.9\textwidth]{resultados-obtenidos/ejemplo1/images/recursos_2}
-		\centering\caption{Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7 20.}
+		\centering\caption{Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7-20.}
 		\label{fig:ACG_RECURSOS_2}
 	\end{figure}
 	
-	Realizando una aproximación lineal podemos calcular el valor de N para el cual el uso de la plataforma alcanza el 100\%. Si consideramos la cantidad de Flip-Flops, un valor de N igual a 1684 sería suficiente para que el proceso de implementación fallase por falta de recursos disponibles. Si consideramos la cantidad de Look-Up-Tables, el valor límite de N es 937. Por lo tanto, siendo que el ejemplo mas grande implementado es, según la Tabla \ref{Tab:tabla_ACG_total}, el ejemplo 3 con un valor de N de 245, se podría implementar un sistema hasta 3,8 veces mas grande sin inconvenientes.
+	Tal como se adelantó en la Sección \ref{sec:plataforma}, podemos realizar una aproximación lineal y calcular el valor de N para el cual el uso de la plataforma alcanza el 100\%. Si consideramos la cantidad de Flip-Flops, un valor de N igual a 1684 sería suficiente para que el proceso de implementación fallase por falta de recursos disponibles. Si consideramos la cantidad de Look-Up-Tables, el valor límite de N es 937. Por lo tanto, siendo que el ejemplo mas grande implementado es, según la Tabla \ref{Tab:tabla_ACG_total}, el ejemplo 3 con un valor de N de 245, se podría implementar un sistema hasta 3,8 veces mas grande sin inconvenientes.
 	
-	 Si consideramos un sistema 3,8 veces mas grande que el ejemplo 3 estaríamos hablando de una red ferroviaria de 49 estaciones, 68 cambios de vías, 193 secciones de vías, 311 semáforos y hasta 345 rutas. A modo de referencia, la línea Roca, la mas extensa del área metropolitana de Buenos Aires, cuenta con 69 estaciones a lo largo de mas de 230 kilómetros \cite{TRENES}. Por lo que un hipotético ejemplo que utilice el 100\% de la plataforma cubriría el 71\% de todas las funcionalidades de dicha linea.
+	 Si consideramos un sistema 3,8 veces mas grande que el ejemplo 3 estaríamos hablando de una red ferroviaria de 49 estaciones, 68 cambios de vías, 193 secciones de vías, 311 semáforos y hasta 345 rutas. A modo de referencia, la línea Roca, la mas extensa del área metropolitana de Buenos Aires, cuenta con 69 estaciones a lo largo de mas de 230 kilómetros \cite{TRENES} (ver Figura \ref{fig:ROCA}). Por lo que un hipotético ejemplo que utilice el 100\% de la plataforma cubriría el 71\% de todas las funcionalidades de dicha línea. No obstante, esta suposición debe considerar que no tiene sentido práctico controlar un sistema de este tamaño con una sola FPGA, solamente se busca enfatizar la escalabilidad de la herramienta creada.
+	 
+	 \begin{figure}[H]
+	 	\centering
+	 	\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/mapa-linea-roca}
+	 	\centering\caption{Plano de red linea Roca.}
+	 	\label{fig:ROCA}
+	 \end{figure}
+	 
+	 Como fue explicado en la Sección \ref{sec:ARTY}, la plataforma FPGA utilizada es la ARTY Z7-20, cuyo precio promedio de 300 U\$D es razonable para las prestaciones de nivel intermedio que ofrece (53.200 Look-up-tables). Si se buscara implementar el ejemplo 1 con la plataforma económica posible, podemos recurrir a la FPGA ICE5LP4K-SG48ITR \cite{LATTICE}, que cuenta con 3520 Look-up-tables, unas 15 veces mas pequeña que la ARTY Z7-20, pero con un costo de 6U\$D.
+	 
+	 La potencia de las herramientas creadas (RNA, ACG y AGG) permite abordar la redundancia y diversidad del sistema, cuya importancia fue explicada en la Sección \ref{sec:interlock2oo3}, de forma sencilla. Por un lado, todos los ejemplos de la Tabla \ref{Tab:tabla_ACG_total} ya cuentan con una redundancia 2oo3 a nivel del módulo \textit{Network} (ver Sección \ref{sec:network}). Por otro lado, la posibilidad de migrar el código VHDL generado por el ACG a cualquier plataforma FPGA (ver Sección \ref{sec:plataforma}) abre las puertas, a futuro, a implementaciones diversas. Es decir, implementar el mismo sistema en dos o más plataformas de diferentes familias y/o fabricantes.
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	
