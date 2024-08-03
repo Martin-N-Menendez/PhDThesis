@@ -3,96 +3,70 @@
 	
 	La complejidad del sistema implementado en la FPGA en base al código generado por parte del ACG es tal que se vuelve indispensable contar con una herramienta gráfica que facilite la interpretación de los resultados. A su vez, es importante contar con una herramienta que pueda establecer la comunicación con la FPGA, tanto para enviar cómo para recibir las tramas de mensajes definida en la Sección \ref{sec:UART}. Para lograr estos objetivos se creó el AGG (del inglés, Automatic Graphic User Interface Generator), una herramienta diseñada e implementada por el autor de esta tesis de doctorado. El AGG permite establecer la comunicación con la FPGA y actualizar en tiempo real el estado de una interfaz gráfica basada en railML, intuitiva y a semejanza de una consola de señalamiento real.
 	
+	El AGG utiliza la biblioteca tkinter \cite{TKINTER} para implementar la interfaz gráfica de usuario y la biblioteca serial, nativa de Python, para establecer la comunicación con la plataforma FPGA. La interfaz gráfica se genera utilizando la información provista por el RNA (ver Sección \ref{sec:Biblioteca}), como por ejemplo la topología (posición, conexión y largo de las vías), la distribución de la infraestructura estática (plataformas, final de vías), la disposición de la infraestructura dinámica (cambios de vías, pasos a nivel) y el señalamiento (posición y orientación de las señales). El estado de la interfaz gráfica se actualiza en tiempo real y es reportado a la FPGA en una trama de datos, que ya fue explicada en la Sección \ref{sec:UART}.
+	
+	El usuario u operario puede interactuar con la interfaz creada mediante tres acciones: hacer zoom in/out utilizando la rueda del mouse, desplazarse por la interfaz arrastrando la topología mientras se mantiene presionada la tecla shift y haciendo click sobre los elementos de la interfaz que son interactivos. los elementos interactivos son aquellos en los cuales hacer click modifica su estado, por ejemplo un cambio de vías, un paso a nivel o una vía. Los finales de vías no poseen estados y, por lo tanto, no son interactivos. Las tres acciones fueron implementadas por el autor de esta tesis de doctorado mediante interrupciones, para tener una respuesta lo más cercana posible a tiempo real. 
+	
+	Las interacciones producto de hacer click sobre los elementos de la interfaz se dividen en dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: ocupando o liberando una vía, cerrando o abriendo un paso a nivel o modificando la posición de un cambio de vías. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. Los colores de cada elemento representan lo siguiente:
+		
+	\begin{itemize}
+		\item Vías: negro (libre), rojo (ocupada), gris (enclavada).
+		\item Paso a nivel: azul (abierto), rojo (cerrado), rojo oscuro (enclavado).
+		\item Cambio de vías: negro (libre), gris (enclavado).
+	\end{itemize}
+	
+	Debido a que los elementos del sistema de enclavamientos reciben los datos en paralelo, el sistema no converge en un solo ciclo. Supongamos un caso muy común en un señalamiento: dos señales A y B, tal que A depende del estado de B, por pertenecer al recubrimiento (ver Sección \ref{sec:function_5}), y ambas dependen de la trama de entrada. Al recibir la misma trama a la vez, ambas señales evolucionarán de un estado inicial a un estado final, pero la señal A lo hará utilizando la información del estado inicial de B, que ya no sería válido si B cambió de estado. Para evitar esto, el AGG compara la trama de datos enviada a la FPGA con la trama de datos recibida desde la FPGA. Si las tramas son idénticas entonces el sistema de enclavamientos ya ha alcanzado un estado de equilibrio y el AGG detendrá el envío de datos hasta que el operador altere ese equilibrio interactuando con la interfaz. En cambio, si las tramas de datos son diferentes, el AGG enviará a la FPGA la trama recibida, junto con los pedidos que el usuario pudiese haber solicitado entre ambos sucesos. De esta forma, el AGG cierra el lazo de control con la FPGA reinyectando las tramas de datos hasta que las tramas de datos converjan y se cumpla la convergencia.
+
+	\section{Representación de cada elemento ferroviario en la interfaz gráfica}
+	\label{sec:AGG_STATUS}
+	
+	Ejemplo de cada cosa
+	
+	Vías
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_via}
+		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\label{fig:AGG_tracks}
+	\end{figure}
+	
+	Paso a nivel
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_cruce}
+		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\label{fig:AGG_levelCrossing}
+	\end{figure}
 	
 	
 	
-	Comentar que biblioteca utiliza
+	Cambio de vias simple
 	
-	Comunicacion serie
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_switch}
+		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\label{fig:AGG_switch}
+	\end{figure}
+
 	
-	Reinyeccion de tramas
+	Ruta seleccionada
 	
-	Zoom y desplazamiento
+	Ruta solicitada
 	
-	Estatico vs dinamico
-	
-	Colores
-	
-	Ejemplo de cada cosa	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_routes}
+		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\label{fig:AGG_routes}
+	\end{figure}
 	
 		
-	%Una vez el bitstream generado es cargado en la FPGA, se puede visualizar la interfaz gráfica generada por el AGG (del inglés, Automatic Graphic User Interface Generator), que fue diseñado e implementado en Python por el autor de esta tesis de doctorado, mediante el uso de la biblioteca tkinter \cite{TKINTER}. El AGG genera las tramas a enviar a la FPGA y analiza las tramas de respuesta de la FPGA. Las tramas recibidas por el AGG son reinyectadas a la FPGA hasta que exista una convergencia entre las entradas y salidas de la FPGA.
 	
-	%El AGG se encarga, adicionalmente, de generar la interfaz gráfica de usuario utilizando la información provista por el RNA, como por ejemplo la topología (posición, conexión y largo de las vías), la distribución de la infraestructura estática (plataformas, final de vías), la disposición de la infraestructura dinámica (cambios de vías, pasos a nivel) y el señalamiento (posición y orientación de las señales).
 	
-	%En la Figura \ref{fig:EJ1_AGG} se ilustra la ventana de la interfaz gráfica del ejemplo 1. La interfaz permite realizar zoom en diferentes zonas utilizando la rueda del mouse y permite desplazarse utilizando el click izquierdo mientras se presiona la tecla shift. Ambas funcionalidades son cruciales en topologías de gran tamaño. 
-	
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_S32_YES}
-%		\centering\caption{Interfaz gráfica del ejemplo 1.}
-%		\label{fig:EJ1_AGG}
-%	\end{figure}
-%	
-%	El señalamiento reaccionará ante dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: ocupando o liberando una vía, cerrando o abriendo un paso a nivel o modificando la posición de un cambio de vías. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. Los colores de cada elemento representan lo siguiente:
-%	
-%	\begin{itemize}
-%		\item Vías: negro (libre), rojo (ocupada), gris (enclavada).
-%		\item Paso a nivel: azul (abierto), rojo (cerrado), rojo oscuro (enclavado).
-%		\item Cambio de vías: negro (libre), gris (enclavado).
-%	\end{itemize}
-%	
-%	En el caso de los cambios de vías, su posición variará según la secuencia de estados posibles (por ejemplo, normal y reversa, en el caso de cambios de vías simples). El usuario es libre de elegir cualquier estado mediante clicks, pero enclavar los elementos es una función que sólo la FPGA puede ejecutar.
-%	
-%	Por ejemplo, si se selecciona el \textit{netElement} ne22, el AGG reportará el cambio de estado a la FPGA y esa sección cambiará su color a rojo. En pocos segundos la FPGA responderá con el nuevo estado del señalamiento, ilustrado en la Figura \ref{fig:EJ1_AGG_S32_OCCUPIED}. La señal S32 cambiará a rojo para impedir que una formación ingrese a la sección ocupada y la señal S22 cambiará a naranja, aplicando el doble recubrimiento (ver Sección \ref{sec:function_5}). El resto del señalamiento no se modificará ya que la situación local de cada señal no se modificó. Por ejemplo, la señal S29 seguirá de color rojo, para evitar un descarrilamiento, porque el trayecto que tiene a continuación se encuentra desconectado del resto de la red, porque el cambio de vías Sw04 se encuentra en posición reversa.
-%	
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED}
-%		\centering\caption{Nuevo señalamiento con ne22 ocupado.}
-%		\label{fig:EJ1_AGG_S32_OCCUPIED}
-%	\end{figure}
-%
-%	Si en lugar de ocupar ne22 se selecciona el cambio Sw12, para modificar su posición a reversa, se obtiene la Figura \ref{fig:EJ1_AGG_SW12_REVERSE}. En este caso, el sistema de enclavamiento cambia ambas señales S32 y S22 a rojo, para evitar un descarrilamiento producto de que el cambio Sw12 se encuentra en posición reversa pero el cambio Sw13 aún se encuentra en posición normal.		
-%	
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_S32_NO}
-%		\centering\caption{Nuevo señalamiento con Sw12 en reversa.}
-%		\label{fig:EJ1_AGG_SW12_REVERSE}
-%	\end{figure}
-%	
-%	Un evento dinámico es aquel que se ejecuta debido a una ruta. Las rutas pueden ser solicitadas o canceladas desde la interfaz gráfica seleccionando el nombre de las señales. Cuando una señal es seleccionada, su nombre cambia a color verde y todas las señales candidatas a ser señal de finalización de ruta cambiarán su nombre a rojo. El nombre de las señales restantes cambia a color gris. Sí se vuelve a seleccionar la señal de inicio, el AGG envía a la FPGA un comando de ruta cancelada para todas las rutas que inician con esa señal. Sí se selecciona una de las rutas candidatas a ser señal de finalización de la ruta, el AGG envía la solicitud de esa ruta a la FPGA.
-%	
-%	La Figura \ref{fig:EJ1_AGG_R13}	ilustra el caso de solicitud y aprobación de la ruta R13, para lo cual el usuario seleccionó la señal S22 y luego la señal S05. Debido a que ninguna otra ruta se encontraba operativa, la FPGA puede enviar el comando de reserva y enclavamiento de las vías y la infraestructura, tal fue explicado en la Sección \ref{sec:function_2}. El cambio de vías Sw04 pasa a posición reversa, el cambio de vías Sw07 pasa a posición normal y todo el trayecto queda enclavado, tal cómo fue explicado en la Sección \ref{sec:function_1}, ilustrado en color gris. Además, la señal S22, que da inicio a la ruta, pasa a color verde y la señal S05 de finalización de ruta pasa a color rojo. Todas las señales opuestas a la ruta R13, tales cómo C29, pasan a color rojo. 
-%	
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_R13}
-%		\centering\caption{Ruta 13 del ejemplo 1 en ejecución.}
-%		\label{fig:EJ1_AGG_R13}
-%	\end{figure}
-%	
-%	Cualquier pedido de rutas que involucre la misma infraestructura que R13 no será aceptada hasta que la misma sea liberada. La liberación puede darse por tres motivos: cancelación de la ruta (ver Sección \ref{sec:function_3}), timeout durante la comprobación del estado de la infraestructura (ver Sección \ref{sec:function_3}) o liberación secuencial (ver Sección \ref{sec:ACG_liberacion}).	
-%	
-%	La Figura \ref{fig:EJ1_AGG_R12}	ilustra el caso de solicitud y aprobación de la ruta R12, para lo cual el usuario seleccionó la señal S22 y luego la señal S15. Asumiendo que es la única ruta activada, a diferencia del caso anterior, esta ruta solicita, además de secciones libres y cambios de vías sin enclavar, que el paso a nivel Lc08 se encuentre cerrado, aún cuando el paso a nivel se encuentra después de la señal S15 de finalización de ruta. Esto se debe a la protección por solape explicada en la Sección \ref{sec:function_4}.
-%
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_R12}
-%		\centering\caption{Ruta 12 del ejemplo 1 en ejecución.}
-%		\label{fig:EJ1_AGG_R12}
-%	\end{figure}
-%	
-%	La Figura \ref{fig:EJ1_AGG_R19}	ilustra el caso de solicitud y aprobación de la ruta R19, para lo cual el usuario seleccionó la señal S32 y luego la señal S25. A diferencia de los otros casos expuestos, el sistema no sólo enclava los cambios de vías a utilizar (Sw12 y Sw13 en posición reversa), sino que también enclava el cambio de vías Sw06 en posición normal, debido a la protección por solape explicada en la Sección \ref{sec:function_4}.	
-%	
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[origin = c, width=1\textwidth]{resultados-obtenidos/ejemplo1/images/AGG_R19}
-%		\centering\caption{Ruta 19 del ejemplo 1 en ejecución1.}
-%		\label{fig:EJ1_AGG_R19}
-%	\end{figure}
-%	
-%	Todas las rutas fueron testeadas individualmente y en conjunto. La cancelación de rutas, timeouts y liberación secuencial fueron probadas con éxito pero al no ser posible de exponer en papel, fueron subidas en video, en un canal público para su visualización \cite{YOUTUBE}.	
-%	
+
+
+
 	
