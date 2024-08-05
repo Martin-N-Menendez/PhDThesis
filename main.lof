@@ -86,10 +86,10 @@
 \contentsline {figure}{\numberline {3.41}{\ignorespaces FSMD del módulo genérico de \textit {Routes}}}{112}{}%
 \contentsline {figure}{\numberline {3.42}{\ignorespaces Red de Petri del modelo dinámico de \textit {Routes}.}}{113}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{116}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{117}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{117}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{118}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Representación de vía libre (arriba), vía ocupada (medio) y vía enclavada (abajo) en la interfaz gráfica.}}{116}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Representación de paso a nivel abierto (arriba) y paso a nivel cerrado (abajo) en la interfaz gráfica.}}{117}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Representación de cambio de vías simple en posición normal (arriba) y posición reverse (abajo) en la interfaz gráfica.}}{117}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Representación de solicitud de inicio de ruta (arriba) y ruta enclavada (abajo) en la interfaz gráfica.}}{118}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Plataforma FPGA Xilinx Arty Z7-20.}}{120}{}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Topología ferroviaria del ejemplo 1 sin señalamiento.}}{121}{}%

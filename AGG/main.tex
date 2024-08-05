@@ -20,49 +20,45 @@
 	\section{Representación de cada elemento ferroviario en la interfaz gráfica}
 	\label{sec:AGG_STATUS}
 	
-	Ejemplo de cada cosa
-	
-	Vías
-	
+	Cada uno de los elementos ferroviarios presentes en la interfaz gráfica que son interactivos presentan diferentes formas y colores para representar sus estados. Por ejemplo, las tramos de vías definidos por la clase \textit{netElement} son ilustrados en la Figura \ref{fig:AGG_tracks}. La vía libre es representada de color negro, la vía ocupada por un tren es de color rojo, mientras que la vía que se encuentra enclavada por una ruta y no puede ser utilizada por ninguna otra formación, salvo la habilitada por esa ruta, se representa de color gris. El usuario podrá hacer click en cualquier parte de la vía, siendo mas notorios los límites en el caso de la vía roja o gris.
+		
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_via}
-		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\centering\caption{Representación de vía libre (arriba), vía ocupada (medio) y vía enclavada (abajo) en la interfaz gráfica.}
 		\label{fig:AGG_tracks}
 	\end{figure}
 	
-	Paso a nivel
+	Los pasos a nivel son ilustrados en la Figura \ref{fig:AGG_levelCrossing}. El usuario puede alternar entre el estado de barrera alta o abierto (azul) y barrera baja o cerrado (rojo) con un click sobre cualquier parte del paso a nivel, siempre que no existan restricciones sobre la infraestructura. Es decir, si el sistema de enclavamientos mantiene el paso a nivel enclavado porque una ruta activa requiere que ese paso a nivel se encuentre cerrado, entonces el usuario no podrá modificar su estado.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_cruce}
-		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\centering\caption{Representación de paso a nivel abierto (arriba) y paso a nivel cerrado (abajo) en la interfaz gráfica.}
 		\label{fig:AGG_levelCrossing}
 	\end{figure}
 	
-	
-	
-	Cambio de vias simple
+	Los cambio de vías simples son ilustrados en la Figura \ref{fig:AGG_switch}. El usuario puede alternar entre el estado de posición normal y posición reversa con un click sobre la unión oblicua entre la vía normal y el desvío. A diferencia de otros elementos ferroviarios interactivos que cambian su color mediante un click, los cambios de vías solamente cambian a color rojo cuando alguna de las vías que lo componen es ocupada, o a color gris si alguna de las rutas habilitadas requieren que el cambio de vías se encuentre enclavado. En este último caso, cuando el cambio de vías se encuentra enclavado, el usuario no podrá alterar la posición del mismo mediante un click.
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_switch}
-		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\includegraphics[width=0.6\textwidth]{AGG/images/AGG_switch}
+		\centering\caption{Representación de cambio de vías simple en posición normal (arriba) y posición reverse (abajo) en la interfaz gráfica.}
 		\label{fig:AGG_switch}
 	\end{figure}
 
-	
-	Ruta seleccionada
-	
-	Ruta solicitada
+	Finalmente, el usuario puede solicitar o cancelar rutas de manera muy sencilla mediante un click sobre el nombre de la señal que se desea controlar. En la Figura \ref{fig:AGG_routes} se ilustran dos instancias del proceso de habilitación de una ruta. En la parte superior de la Figura \ref{fig:AGG_routes}, el usuario seleccionó la señal S22 haciendo click sobre el nombre de la misma. Al realizar esta acción, la interfaz gráfica aún no ha enviado ninguna señal a la FPGA, pero la interfaz modifica el color del nombre de la señal a verde, para indicar que se ha elegido a la señal S22 como señal inicial de una potencial ruta. Al mismo tiempo, la interfaz cambiará el color del nombre de las potenciales señales de finalización de rutas a color rojo, en este caso: S32, S15 y S05. En cambio, todas las demás señales tendrán su nombre en color gris claro. Si el usuario selecciona alguna de las potenciales señales de finalización de ruta, como por ejemplo S05, la interfaz gráfica enviará la solicitud de ruta a la FPGA. En caso de que la ruta sea aceptada, las vías contenidas entre la señal S22 y S05 cambiarán a color gris (enclavadas) y los cambios de vías necesarios cambiarán su posición y serán enclavados, cambiando también su color a gris.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{AGG/images/AGG_routes}
-		\centering\caption{Interfaz gráfica del ejemplo 1.}
+		\centering\caption{Representación de solicitud de inicio de ruta (arriba) y ruta enclavada (abajo) en la interfaz gráfica.}
 		\label{fig:AGG_routes}
 	\end{figure}
 	
+	El usuario podrá cancelar el pedido de una ruta que aún no fue solicitada si, en lugar de seleccionar las señales de finalización, vuelve a seleccionar la señal inicial. El usuario también puede cancelar una ruta ya habilitada si realiza un doble click sobre la señal de partida. La cancelación de la ruta será aprobada por la FPGA y removerá el enclavamiento de la infraestructura siempre y cuando sea seguro. En caso contrario, la ruta continuará habilitada.
+	
+	Adicionalmente, en la Figura \ref{fig:AGG_routes} se pueden apreciar los distintos colores utilizados para representar los aspectos de las señales. Tal cómo fue explicado en la Sección \ref{sec:function_5}, los aspectos verde, doble amarillo, amarillo y rojo son representados por los colores verde, naranja, amarillo y rojo, respectivamente.
 		
 	
 	

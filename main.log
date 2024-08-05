@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  3 AUG 2024 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  5 AUG 2024 20:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2819,19 +2819,14 @@ Cap\'{\i }tulo 4.
 <AGG/images/AGG_via.png, id=830, 1996.45876pt x 1526.70375pt>
 File: AGG/images/AGG_via.png Graphic file (type png)
 <use AGG/images/AGG_via.png>
-Package pdftex.def Info: AGG/images/AGG_via.png  used on input line 29.
+Package pdftex.def Info: AGG/images/AGG_via.png  used on input line 27.
 (pdftex.def)             Requested size: 298.75262pt x 228.43658pt.
-<AGG/images/AGG_cruce.png, id=831, 1973.3725pt x 1050.92625pt>
-File: AGG/images/AGG_cruce.png Graphic file (type png)
-<use AGG/images/AGG_cruce.png>
-Package pdftex.def Info: AGG/images/AGG_cruce.png  used on input line 38.
-(pdftex.def)             Requested size: 298.75262pt x 159.0914pt.
 
 
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 23.10004pt, for example:
@@ -2841,22 +2836,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.10004pt}.
 
 [116 <./AGG/images/AGG_via.png>]
+<AGG/images/AGG_cruce.png, id=836, 1973.3725pt x 1050.92625pt>
+File: AGG/images/AGG_cruce.png Graphic file (type png)
+<use AGG/images/AGG_cruce.png>
+Package pdftex.def Info: AGG/images/AGG_cruce.png  used on input line 36.
+(pdftex.def)             Requested size: 298.75262pt x 159.0914pt.
 <AGG/images/AGG_switch.png, id=837, 2098.84125pt x 1457.445pt>
 File: AGG/images/AGG_switch.png Graphic file (type png)
 <use AGG/images/AGG_switch.png>
-Package pdftex.def Info: AGG/images/AGG_switch.png  used on input line 49.
-(pdftex.def)             Requested size: 298.75262pt x 207.44344pt.
-<AGG/images/AGG_routes.png, id=838, 2009.5075pt x 1195.46625pt>
-File: AGG/images/AGG_routes.png Graphic file (type png)
-<use AGG/images/AGG_routes.png>
-Package pdftex.def Info: AGG/images/AGG_routes.png  used on input line 61.
-(pdftex.def)             Requested size: 298.75262pt x 177.7252pt.
+Package pdftex.def Info: AGG/images/AGG_switch.png  used on input line 45.
+(pdftex.def)             Requested size: 256.0774pt x 177.82137pt.
 
 
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 23.10004pt, for example:
@@ -2865,7 +2860,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-11.10004pt}.
 
-[117 <./AGG/images/AGG_cruce.png> <./AGG/images/AGG_switch.png>])
+[117 <./AGG/images/AGG_cruce.png> <./AGG/images/AGG_switch.png>]
+<AGG/images/AGG_routes.png, id=843, 2009.5075pt x 1195.46625pt>
+File: AGG/images/AGG_routes.png Graphic file (type png)
+<use AGG/images/AGG_routes.png>
+Package pdftex.def Info: AGG/images/AGG_routes.png  used on input line 54.
+(pdftex.def)             Requested size: 298.75262pt x 177.7252pt.
+)
 
 LaTeX Info: Redefining \. on input line 139.
 LaTeX Info: Redefining \% on input line 139.
@@ -5167,7 +5168,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (335 pages, 83785801 bytes).
+Output written on main.pdf (335 pages, 83789494 bytes).
 PDF statistics:
  1744 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
