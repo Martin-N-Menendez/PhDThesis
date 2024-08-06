@@ -103,15 +103,15 @@
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Archivos generador por el ACG para el ejemplo 1.}}{136}{}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1.}}{141}{}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1 (Menú ampliado).}}{142}{}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{144}{}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{143}{}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Nuevo señalamiento con ne22 ocupado.}}{144}{}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{145}{}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{146}{}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{144}{}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{145}{}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Ruta 12 del ejemplo 1 en ejecución.}}{146}{}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{147}{}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{146}{}%
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}}{148}{}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7-20.}}{149}{}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Plano de red linea Roca.}}{150}{}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7-20.}}{148}{}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Plano de red linea Roca.}}{149}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{153}{}%

@@ -1,21 +1,9 @@
 \subsection{Interfaz gráfica de usuario}
 	\label{sec:AGG_GUI}
 		
-	Una vez el bitstream generado es cargado en la FPGA, se puede visualizar la interfaz gráfica generada por el AGG (del inglés, Automatic Graphic User Interfaz Generator), que fue diseñado e implementado en Python por el autor de esta tesis de doctorado, mediante el uso de la biblioteca tkinter \cite{TKINTER}. El AGG genera las tramas a enviar a la FPGA y analiza las tramas de respuesta de la FPGA. Las tramas recibidas por el AGG son reinyectadas a la FPGA hasta que exista una convergencia entre las entradas y salidas de la FPGA.
-	
-	El AGG se encarga, adicionalmente, de generar la interfaz gráfica de usuario utilizando la información provista por el RNA, como por ejemplo la topología (posición, conexión y largo de las vías), la distribución de la infraestructura estática (plataformas, final de vías), la disposición de la infraestructura dinámica (cambios de vías, pasos a nivel) y el señalamiento (posición y orientación de las señales).
-	
-	El señalamiento reaccionará ante dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: una vía puede estar ocupada o libre, una paso a nivel puede estar cerrado o abierto, o un cambio de vías puede estar en posición normal o reversa. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. Los colores de cada elemento representan lo siguiente:
-	
-	\begin{itemize}
-		\item Vías: negro (libre), rojo (ocupada), gris (enclavada).
-		\item Paso a nivel: azul (abierto), rojo (cerrado), rojo oscuro (enclavado).
-		\item Cambio de vías: negro (libre), gris (enclavado).
-	\end{itemize}
-	
-	En el caso de los cambios de vías, su posición variará según la secuencia de estados posibles (por ejemplo, normal y reversa, en el caso de cambios de vías simples). El usuario es libre de elegir cualquier estado mediante clicks, pero enclavar los elementos es una función que sólo la FPGA puede ejecutar.
-	
-	En la Figura \ref{fig:EJ1_AGG} se ilustra la ventana de la interfaz gráfica para el ejemplo 1. Entre las funcionalidades que se implementaron en la interfaz se pueden destacar la posibilidad de realizar zoom en diferentes zonas utilizando la rueda del mouse y desplazarse utilizando el click izquierdo mientras se presiona la tecla shift. Ambas funcionalidades son cruciales en topologías de gran tamaño. 
+	Una vez el bitstream generado es cargado en la FPGA, se puede visualizar la interfaz gráfica generada por el AGG. El AGG genera la interfaz gráfica de usuario utilizando la información provista por el RNA. Adicionalmente, el AGG gestiona la comunicación entre la FPGA y la interfaz gráfica. Para esto, el AGG actualiza las tramas a enviar a la FPGA y analiza las tramas de respuesta de la FPGA. Las tramas recibidas por el AGG son reinyectadas a la FPGA hasta que exista una convergencia entre las entradas y salidas de la FPGA, tal cómo fue explicado en la Sección \ref{sec:AGG}.
+		
+	En la Figura \ref{fig:EJ1_AGG} se ilustra la ventana de la interfaz gráfica para el ejemplo 1. El usuario puede realizar zoom en cualquier zona de la interfaz gráfica utilizando la rueda del mouse y desplazarse utilizando el click izquierdo mientras se presiona la tecla shift. Estas funcionalidades son de utilidad en topologías de gran tamaño o, en el caso de este ejemplo, para hacer foco en algunas zonas de mayor interés para el usuario.
 	
 	\begin{figure}[H]
 		\centering
@@ -24,7 +12,7 @@
 		\label{fig:EJ1_AGG}
 	\end{figure}
 	
-	Por ejemplo, si se selecciona el \textit{netElement} ne22, el AGG reportará el cambio de estado a la FPGA y esa sección cambiará su color a rojo. En pocos segundos la FPGA responderá con el nuevo estado del señalamiento, ilustrado en la Figura \ref{fig:EJ1_AGG_S32_OCCUPIED}. La señal S32 cambiará a rojo para impedir que una formación ingrese a la sección ocupada y la señal S22 cambiará a naranja, aplicando el doble recubrimiento (ver Sección \ref{sec:function_5}). El resto del señalamiento no se modificará ya que la situación local de cada señal no se modificó. Por ejemplo, la implementación del sistema en la FPGA hará que la señal S29 siga en color rojo, para evitar un descarrilamiento, porque el trayecto que tiene a continuación se encuentra desconectado del resto de la red, porque el cambio de vías Sw04 se encuentra en posición reversa.
+	A modo de ejemplo, para demostrar las funcionalidades del sistema de enclavamientos implementado, si se selecciona el \textit{netElement} ne22, el AGG reportará el cambio de estado a la FPGA y esa sección cambiará su color a rojo. En pocos segundos la FPGA responderá con el nuevo estado del señalamiento, ilustrado en la Figura \ref{fig:EJ1_AGG_S32_OCCUPIED}. La señal S32 cambiará a rojo para impedir que una formación ingrese a la sección ocupada y la señal S22 cambiará a naranja, aplicando el doble recubrimiento (ver Sección \ref{sec:function_5}). El resto del señalamiento no se modificará ya que la situación local de cada señal no se modificó. Por ejemplo, la implementación del sistema en la FPGA hará que la señal S29 siga en color rojo, para evitar un descarrilamiento, porque el trayecto que tiene a continuación se encuentra desconectado del resto de la red, porque el cambio de vías Sw04 se encuentra en posición reversa.
 	
 	\begin{figure}[H]
 		\centering
@@ -42,7 +30,7 @@
 		\label{fig:EJ1_AGG_SW12_REVERSE}
 	\end{figure}
 	
-	Un evento dinámico es aquel que se ejecuta debido a una ruta. Las rutas pueden ser solicitadas o canceladas desde la interfaz gráfica seleccionando el nombre de las señales. Cuando una señal es seleccionada, su nombre cambia a color verde y todas las señales candidatas a ser señal de finalización de ruta cambiarán su nombre a rojo. El nombre de las señales restantes cambia a color gris. Sí se vuelve a seleccionar la señal de inicio, el AGG envía a la FPGA un comando de ruta cancelada para todas las rutas que inician con esa señal. Sí se selecciona una de las rutas candidatas a ser señal de finalización de la ruta, el AGG envía la solicitud de esa ruta a la FPGA.
+	Tal cómo fue explicado en la Sección \ref{sec:AGG}, las rutas pueden ser solicitadas o canceladas desde la interfaz gráfica seleccionando el nombre de las señales. Cuando una señal es seleccionada, su nombre cambia a color verde y todas las señales candidatas a ser señal de finalización de ruta cambiarán su nombre a rojo. El nombre de las señales restantes cambia a color gris. Sí se vuelve a seleccionar la señal de inicio, el AGG envía a la FPGA un comando de ruta cancelada para todas las rutas que inician con esa señal. Sí se selecciona una de las rutas candidatas a ser señal de finalización de la ruta, el AGG envía la solicitud de esa ruta a la FPGA.
 	
 	La Figura \ref{fig:EJ1_AGG_R13}	ilustra el caso de solicitud y aprobación de la ruta R13, para lo cual el usuario seleccionó la señal S22 y luego la señal S05. Debido a que ninguna otra ruta se encontraba operativa, la FPGA puede enviar el comando de reserva y enclavamiento de las vías y la infraestructura, tal fue explicado en la Sección \ref{sec:function_2}. El cambio de vías Sw04 pasa a posición reversa, el cambio de vías Sw07 pasa a posición normal y todo el trayecto queda enclavado, tal cómo fue explicado en la Sección \ref{sec:function_1}, ilustrado en color gris. Además, la señal S22, que da inicio a la ruta, pasa a color verde y la señal S05 de finalización de ruta pasa a color rojo. Todas las señales opuestas a la ruta R13, tales cómo C29, pasan a color rojo. 
 	
