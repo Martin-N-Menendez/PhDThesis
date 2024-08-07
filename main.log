@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  6 AUG 2024 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  7 AUG 2024 19:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1716,11 +1716,11 @@ LaTeX Info: Redefining \% on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [22 <./Figuras/hojaDeRuta.png>]
-<Figuras/workflow.png, id=170, 1096.095pt x 522.95375pt>
+<Figuras/workflow.png, id=170, 1411.2725pt x 565.11125pt>
 File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
-(pdftex.def)             Requested size: 426.79134pt x 203.62398pt.
+(pdftex.def)             Requested size: 426.79134pt x 170.8971pt.
  (introduccion/enfoque.tex
 
 LaTeX Info: Redefining \. on input line 4.
@@ -1735,20 +1735,20 @@ Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
 (pdftex.def)             Requested size: 426.79134pt x 231.20056pt.
 
 
-LaTeX Warning: Reference `sec:VHDL2oo3' on page 24 undefined on input line 14.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+[24 <./Figuras/Architecture.png>]
+
+LaTeX Warning: Reference `sec:VHDL2oo3' on page 25 undefined on input line 14.
 
 ) (introduccion/validacion.tex
 
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[24 <./Figuras/Architecture.png>]
-
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 [25])))
 
 LaTeX Info: Redefining \. on input line 133.
@@ -5122,11 +5122,6 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -5172,7 +5167,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (335 pages, 83788626 bytes).
+Output written on main.pdf (335 pages, 83811222 bytes).
 PDF statistics:
  1744 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

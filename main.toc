@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {1.6.2}Antecedentes de trabajos académicos en la temática}{21}{}%
 \contentsline {subsection}{\numberline {1.6.3}GICSAFe y los trabajos realizados}{21}{}%
 \contentsline {section}{\numberline {1.7}Herramienta propuesta}{23}{}%
-\contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{23}{}%
+\contentsline {subsection}{\numberline {1.7.1}Enfoque aplicado}{24}{}%
 \contentsline {subsection}{\numberline {1.7.2}Arquitectura del sistema}{24}{}%
 \contentsline {subsection}{\numberline {1.7.3}Amenazas a la validez del sistema}{25}{}%
 \contentsline {chapter}{\numberline {2}Railway Network Analyzer (RNA)}{27}{}%

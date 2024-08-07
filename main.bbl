@@ -8174,38 +8174,35 @@
       \verb https://www.artc.com.au/uploads/TA20-Section-9.pdf
       \endverb
     \endentry
-    \entry{YOUTUBE}{online}{}{}
+    \entry{TKINTER}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
-           family={Menéndez},
-           familyi={M\bibinitperiod},
-           given={Martín\bibnamedelima Nicolás},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e5ba8b4c39c29bf13426ef5e0287aaa5}{%
+           family={tkinter},
+           familyi={t\bibinitperiod}}}%
       }
-      \strng{namehash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{fullhash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{fullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{bibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{authorbibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
-      \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
-      \field{extraname}{3}
+      \strng{namehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{fullhash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{fullhashraw}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{bibnamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{authorbibnamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{authornamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{authorfullhash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{authorfullhashraw}{e5ba8b4c39c29bf13426ef5e0287aaa5}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Videos demostrativos}
+      \field{title}{Python interface to Tcl/Tk}
       \field{urlday}{18}
       \field{urlmonth}{7}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
+      \verb https://docs.python.org/3/library/tkinter.html
       \endverb
       \verb{url}
-      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
+      \verb https://docs.python.org/3/library/tkinter.html
       \endverb
     \endentry
     \entry{Paper_104}{article}{}{}
@@ -8357,35 +8354,38 @@
       \verb https://graphviz.org/
       \endverb
     \endentry
-    \entry{TKINTER}{online}{}{}
+    \entry{YOUTUBE}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=e5ba8b4c39c29bf13426ef5e0287aaa5}{%
-           family={tkinter},
-           familyi={t\bibinitperiod}}}%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
-      \strng{namehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{fullhash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{fullhashraw}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{bibnamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{authorbibnamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{authornamehash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{authorfullhash}{e5ba8b4c39c29bf13426ef5e0287aaa5}
-      \strng{authorfullhashraw}{e5ba8b4c39c29bf13426ef5e0287aaa5}
+      \strng{namehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{bibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorbibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Python interface to Tcl/Tk}
+      \field{title}{Videos demostrativos}
       \field{urlday}{18}
       \field{urlmonth}{7}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://docs.python.org/3/library/tkinter.html
+      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
       \endverb
       \verb{url}
-      \verb https://docs.python.org/3/library/tkinter.html
+      \verb https://www.youtube.com/watch?v=CXtid3R2SAg&list=PLZ0XnTXa7AZ2g0SDj3jUp7RSoLuD_Jkyb
       \endverb
     \endentry
     \entry{LATTICE}{online}{}{}
