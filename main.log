@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  11 AUG 2024 20:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  12 AUG 2024 19:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1716,11 +1716,11 @@ LaTeX Info: Redefining \% on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [22 <./Figuras/hojaDeRuta.png>]
-<Figuras/workflow.png, id=170, 1411.2725pt x 565.11125pt>
+<Figuras/workflow.png, id=170, 1015.3935pt x 406.1574pt>
 File: Figuras/workflow.png Graphic file (type png)
 <use Figuras/workflow.png>
 Package pdftex.def Info: Figuras/workflow.png  used on input line 7.
-(pdftex.def)             Requested size: 426.79134pt x 170.8971pt.
+(pdftex.def)             Requested size: 426.79134pt x 170.71509pt.
  (introduccion/enfoque.tex
 
 LaTeX Info: Redefining \. on input line 4.
@@ -1735,17 +1735,17 @@ Package pdftex.def Info: Figuras/Architecture.png  used on input line 7.
 (pdftex.def)             Requested size: 426.79134pt x 231.20056pt.
 
 
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-[24]) (introduccion/validacion.tex
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+[24 <./Figuras/Architecture.png>]) (introduccion/validacion.tex
 
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-[25 <./Figuras/Architecture.png>])))
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+[25])))
 
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
@@ -2380,14 +2380,14 @@ File: Figuras/semaforo2.png Graphic file (type png)
 <use Figuras/semaforo2.png>
 Package pdftex.def Info: Figuras/semaforo2.png  used on input line 24.
 (pdftex.def)             Requested size: 213.39566pt x 106.45749pt.
-)
-(ACG/sistemas-enclavamiento/liberacion-secuencial.tex
 
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-[81 <./Figuras/recubrimiento.png> <./Figuras/semaforo2.png>]
+
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+[81 <./Figuras/recubrimiento.png> <./Figuras/semaforo2.png>])
+(ACG/sistemas-enclavamiento/liberacion-secuencial.tex
 <Figuras/secuencial_1.png, id=662, 777.6252pt x 141.6492pt>
 File: Figuras/secuencial_1.png Graphic file (type png)
 <use Figuras/secuencial_1.png>
@@ -2410,14 +2410,10 @@ Package pdftex.def Info: Figuras/secuencial_4.png  used on input line 36.
 (pdftex.def)             Requested size: 426.79134pt x 52.35898pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
 [82 <./Figuras/secuencial_1.png> <./Figuras/secuencial_2.png> <./Figuras/secuen
 cial_3.png>])) (ACG/arquitectura/main.tex
 <Figuras/FSMD.png, id=672, 525.4029pt x 344.7279pt>
@@ -2460,11 +2456,11 @@ File: Figuras/bypass.png Graphic file (type png)
 <use Figuras/bypass.png>
 Package pdftex.def Info: Figuras/bypass.png  used on input line 7.
 (pdftex.def)             Requested size: 426.79134pt x 79.06787pt.
-<Figuras/UART_module.png, id=686, 289.8027pt x 171.2799pt>
+<Figuras/UART_module.png, id=686, 289.8027pt x 170.5572pt>
 File: Figuras/UART_module.png Graphic file (type png)
 <use Figuras/UART_module.png>
 Package pdftex.def Info: Figuras/UART_module.png  used on input line 18.
-(pdftex.def)             Requested size: 298.75262pt x 176.57968pt.
+(pdftex.def)             Requested size: 298.75262pt x 175.83463pt.
 
 
 LaTeX Info: Redefining \. on input line 22.
@@ -2479,10 +2475,10 @@ Package pdftex.def Info: Figuras/Tramas.png  used on input line 29.
 (pdftex.def)             Requested size: 426.79134pt x 91.45456pt.
 
 
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
 [87 <./Figuras/UART_module.png> <./Figuras/Tramas.png>]
 <Figuras/Trama_ejemplo.jpg, id=697, 8190.6pt x 1706.375pt>
 File: Figuras/Trama_ejemplo.jpg Graphic file (type jpg)
@@ -5168,7 +5164,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (336 pages, 83813410 bytes).
+Output written on main.pdf (336 pages, 86095246 bytes).
 PDF statistics:
  1747 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
