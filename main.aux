@@ -1332,6 +1332,8 @@
 \newlabel{fig:RTS_Petri}{{3.42}{115}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Consideraciones respecto a la implementación en una FPGA del código generado por el ACG}{115}{}\protected@file@percent }
 \newlabel{sec:plataforma}{{3.3}{115}{}{}{}}
+\abx@aux@cite{0}{TCN}
+\abx@aux@segm{0}{0}{TCN}
 \abx@aux@cite{0}{TKINTER}
 \abx@aux@segm{0}{0}{TKINTER}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Automatic Graphic User Interface Generator (AGG)}{117}{}\protected@file@percent }
@@ -1339,6 +1341,8 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{sec:AGG}{{4}{117}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Necesidad de contar con una herramienta para generar interfaces gráficas}{117}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.2}Diseño de la herramienta para la generación automática de interfaces de usuario}{117}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Representación de cada elemento ferroviario en la interfaz gráfica}{118}{}\protected@file@percent }
 \newlabel{sec:AGG_STATUS}{{4.1}{118}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Representación de vía libre (arriba), vía ocupada (medio) y vía enclavada (abajo) en la interfaz gráfica.}}{118}{}\protected@file@percent }
@@ -1347,15 +1351,20 @@
 \newlabel{fig:AGG_levelCrossing}{{4.2}{119}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Representación de cambio de vías simple en posición normal (arriba) y posición reverse (abajo) en la interfaz gráfica.}}{119}{}\protected@file@percent }
 \newlabel{fig:AGG_switch}{{4.3}{119}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Representación de solicitud de inicio de ruta (arriba) y ruta enclavada (abajo) en la interfaz gráfica.}}{120}{}\protected@file@percent }
-\newlabel{fig:AGG_routes}{{4.4}{120}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Resultados obtenidos}{121}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Representación de ruta sin solicitar en la interfaz gráfica.}}{120}{}\protected@file@percent }
+\newlabel{fig:AGG_routes_1}{{4.4}{120}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Representación de solicitud de inicio de ruta en la interfaz gráfica.}}{120}{}\protected@file@percent }
+\newlabel{fig:AGG_routes_2}{{4.5}{120}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Representación de ruta enclavada en la interfaz gráfica.}}{121}{}\protected@file@percent }
+\newlabel{fig:AGG_routes_3}{{4.6}{121}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Consideraciones para asegurar la convergencia del estado del sistema de enclavamientos}{121}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Resultados obtenidos}{122}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:resultados}{{5}{121}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Plataforma utilizada}{121}{}\protected@file@percent }
-\newlabel{sec:ARTY}{{5.1}{121}{}{}{}}
+\newlabel{sec:resultados}{{5}{122}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Plataforma utilizada}{122}{}\protected@file@percent }
+\newlabel{sec:ARTY}{{5.1}{122}{}{}{}}
 \abx@aux@cite{0}{Paper_30}
 \abx@aux@segm{0}{0}{Paper_30}
 \abx@aux@cite{0}{Paper_36}
@@ -1380,586 +1389,586 @@
 \abx@aux@segm{0}{0}{Paper_111}
 \abx@aux@cite{0}{QUARTUS}
 \abx@aux@segm{0}{0}{QUARTUS}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Plataforma FPGA Xilinx Arty Z7-20.}}{122}{}\protected@file@percent }
-\newlabel{fig:FPGA}{{5.1}{122}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Ejemplo 1}{122}{}\protected@file@percent }
-\newlabel{sec:ejemplo_1}{{5.2}{122}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Topología ferroviaria original}{122}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Topología ferroviaria del ejemplo 1 sin señalamiento.}}{123}{}\protected@file@percent }
-\newlabel{fig:EJ1_1}{{5.2}{123}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Señalamiento original}{123}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Señalamiento original del ejemplo 1.}}{124}{}\protected@file@percent }
-\newlabel{fig:EJ1_2}{{5.3}{124}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 1.}}{124}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_1}{{5.1}{124}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Generación de señalamiento paso a paso}{124}{}\protected@file@percent }
-\newlabel{lst:EJ1_1}{{5.1}{125}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{125}{}\protected@file@percent }
-\newlabel{lst:EJ1_2}{{5.2}{125}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{125}{}\protected@file@percent }
-\newlabel{lst:EJ1_4}{{5.3}{126}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Infrastructure.RNA}}{126}{}\protected@file@percent }
-\newlabel{sec:generacion}{{5.2.3}{127}{}{}{}}
-\newlabel{lst:EJ1_5}{{5.4}{127}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces SafePoints.RNA}}{127}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{128}{}\protected@file@percent }
-\newlabel{fig:EJ1_3}{{5.4}{128}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{129}{}\protected@file@percent }
-\newlabel{fig:EJ1_4}{{5.5}{129}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{129}{}\protected@file@percent }
-\newlabel{fig:EJ1_5}{{5.6}{129}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{130}{}\protected@file@percent }
-\newlabel{fig:EJ1_6}{{5.7}{130}{}{}{}}
-\newlabel{lst:EJ1_3}{{5.5}{130}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{130}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{131}{}\protected@file@percent }
-\newlabel{fig:EJ1_7}{{5.8}{131}{}{}{}}
-\newlabel{lst:EJ1_6}{{5.6}{131}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.6}{\ignorespaces Signalling.RNA}}{131}{}\protected@file@percent }
-\newlabel{lst:EJ1_7}{{5.7}{133}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.7}{\ignorespaces Routes.RNA}}{133}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Plataforma FPGA Xilinx Arty Z7-20.}}{123}{}\protected@file@percent }
+\newlabel{fig:FPGA}{{5.1}{123}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Ejemplo 1}{123}{}\protected@file@percent }
+\newlabel{sec:ejemplo_1}{{5.2}{123}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Topología ferroviaria original}{123}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Topología ferroviaria del ejemplo 1 sin señalamiento.}}{124}{}\protected@file@percent }
+\newlabel{fig:EJ1_1}{{5.2}{124}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Señalamiento original}{124}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Señalamiento original del ejemplo 1.}}{125}{}\protected@file@percent }
+\newlabel{fig:EJ1_2}{{5.3}{125}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 1.}}{125}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_1}{{5.1}{125}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Generación de señalamiento paso a paso}{125}{}\protected@file@percent }
+\newlabel{lst:EJ1_1}{{5.1}{126}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{126}{}\protected@file@percent }
+\newlabel{lst:EJ1_2}{{5.2}{126}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{126}{}\protected@file@percent }
+\newlabel{lst:EJ1_4}{{5.3}{127}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Infrastructure.RNA}}{127}{}\protected@file@percent }
+\newlabel{sec:generacion}{{5.2.3}{128}{}{}{}}
+\newlabel{lst:EJ1_5}{{5.4}{128}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces SafePoints.RNA}}{128}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{129}{}\protected@file@percent }
+\newlabel{fig:EJ1_3}{{5.4}{129}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{130}{}\protected@file@percent }
+\newlabel{fig:EJ1_4}{{5.5}{130}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{130}{}\protected@file@percent }
+\newlabel{fig:EJ1_5}{{5.6}{130}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{131}{}\protected@file@percent }
+\newlabel{fig:EJ1_6}{{5.7}{131}{}{}{}}
+\newlabel{lst:EJ1_3}{{5.5}{131}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{131}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{132}{}\protected@file@percent }
+\newlabel{fig:EJ1_7}{{5.8}{132}{}{}{}}
+\newlabel{lst:EJ1_6}{{5.6}{132}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.6}{\ignorespaces Signalling.RNA}}{132}{}\protected@file@percent }
+\newlabel{lst:EJ1_7}{{5.7}{134}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.7}{\ignorespaces Routes.RNA}}{134}{}\protected@file@percent }
 \abx@aux@cite{0}{NETWORKX}
 \abx@aux@segm{0}{0}{NETWORKX}
 \abx@aux@cite{0}{GRAPHVIZ}
 \abx@aux@segm{0}{0}{GRAPHVIZ}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Red de grafos generada por el RNA}{134}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 1.}}{135}{}\protected@file@percent }
-\newlabel{fig:EJ1_8}{{5.9}{135}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Tabla de enclavamiento generada por el RNA}{135}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla de enclavamientos del ejemplo 1 generada por el RNA.}}{136}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_1}{{5.2}{136}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Validación del sistema de enclavamientos}{136}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{137}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_1}{{5.3}{137}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.7}Sistema generado por el ACG}{138}{}\protected@file@percent }
-\newlabel{sec:EJEMPLO1_ACG}{{5.2.7}{138}{}{}{}}
-\newlabel{lst:EJ1_8}{{5.8}{138}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{138}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Archivos generador por el ACG para el ejemplo 1.}}{138}{}\protected@file@percent }
-\newlabel{fig:EJ1_ACG_1}{{5.10}{138}{}{}{}}
-\newlabel{lst:EJ1_vhdl}{{5.9}{139}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.9}{\ignorespaces route\_13.vdhl}}{139}{}\protected@file@percent }
-\newlabel{lst:EJ1_script}{{5.10}{142}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.10}{\ignorespaces script.tcl}}{142}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1.}}{143}{}\protected@file@percent }
-\newlabel{fig:EJ1_ACG_Vivado}{{5.11}{143}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1 (Menú ampliado).}}{144}{}\protected@file@percent }
-\newlabel{fig:EJ1_ACG_Vivado_ampliado}{{5.12}{144}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Síntesis e implementación del ejemplo 1 generado por el ACG.}}{145}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_1}{{5.4}{145}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.8}Interfaz gráfica de usuario}{145}{}\protected@file@percent }
-\newlabel{sec:AGG_GUI}{{5.2.8}{145}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{145}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG}{{5.13}{145}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Nuevo señalamiento con ne22 ocupado.}}{146}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG_S32_OCCUPIED}{{5.14}{146}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{146}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG_SW12_REVERSE}{{5.15}{146}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{147}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG_R13}{{5.16}{147}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Red de grafos generada por el RNA}{135}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 1.}}{136}{}\protected@file@percent }
+\newlabel{fig:EJ1_8}{{5.9}{136}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Tabla de enclavamiento generada por el RNA}{136}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla de enclavamientos del ejemplo 1 generada por el RNA.}}{137}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_1}{{5.2}{137}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Validación del sistema de enclavamientos}{137}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{138}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_1}{{5.3}{138}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.7}Sistema generado por el ACG}{139}{}\protected@file@percent }
+\newlabel{sec:EJEMPLO1_ACG}{{5.2.7}{139}{}{}{}}
+\newlabel{lst:EJ1_8}{{5.8}{139}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{139}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Archivos generador por el ACG para el ejemplo 1.}}{139}{}\protected@file@percent }
+\newlabel{fig:EJ1_ACG_1}{{5.10}{139}{}{}{}}
+\newlabel{lst:EJ1_vhdl}{{5.9}{140}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.9}{\ignorespaces route\_13.vdhl}}{140}{}\protected@file@percent }
+\newlabel{lst:EJ1_script}{{5.10}{143}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.10}{\ignorespaces script.tcl}}{143}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1.}}{144}{}\protected@file@percent }
+\newlabel{fig:EJ1_ACG_Vivado}{{5.11}{144}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Interfaz del entorno de desarrollo Vivado para el ejemplo 1 (Menú ampliado).}}{145}{}\protected@file@percent }
+\newlabel{fig:EJ1_ACG_Vivado_ampliado}{{5.12}{145}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Síntesis e implementación del ejemplo 1 generado por el ACG.}}{146}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_1}{{5.4}{146}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.8}Interfaz gráfica de usuario}{146}{}\protected@file@percent }
+\newlabel{sec:AGG_GUI}{{5.2.8}{146}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Interfaz gráfica del ejemplo 1.}}{146}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG}{{5.13}{146}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Nuevo señalamiento con ne22 ocupado.}}{147}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG_S32_OCCUPIED}{{5.14}{147}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Nuevo señalamiento con Sw12 en reversa.}}{147}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG_SW12_REVERSE}{{5.15}{147}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Ruta 13 del ejemplo 1 en ejecución.}}{148}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG_R13}{{5.16}{148}{}{}{}}
 \abx@aux@cite{0}{YOUTUBE}
 \abx@aux@segm{0}{0}{YOUTUBE}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Ruta 12 del ejemplo 1 en ejecución.}}{148}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG_R12}{{5.17}{148}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{148}{}\protected@file@percent }
-\newlabel{fig:EJ1_AGG_R19}{{5.18}{148}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.9}Comparación entre todos los ejemplos}{149}{}\protected@file@percent }
-\newlabel{sec:comparacion}{{5.2.9}{149}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Comparación entre los ejemplos generados por el ACG.}}{149}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_total}{{5.5}{149}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}}{150}{}\protected@file@percent }
-\newlabel{fig:ACG_RECURSOS_1}{{5.19}{150}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7-20.}}{150}{}\protected@file@percent }
-\newlabel{fig:ACG_RECURSOS_2}{{5.20}{150}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Ruta 12 del ejemplo 1 en ejecución.}}{149}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG_R12}{{5.17}{149}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Ruta 19 del ejemplo 1 en ejecución1.}}{149}{}\protected@file@percent }
+\newlabel{fig:EJ1_AGG_R19}{{5.18}{149}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.9}Comparación entre todos los ejemplos}{150}{}\protected@file@percent }
+\newlabel{sec:comparacion}{{5.2.9}{150}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Comparación entre los ejemplos generados por el ACG.}}{150}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_total}{{5.5}{150}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N.}}{151}{}\protected@file@percent }
+\newlabel{fig:ACG_RECURSOS_1}{{5.19}{151}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Porcentaje de uso de Look-Up-Tables (LUTs) y Flip-Flops (FFs) en función de N, considerando la plataforma Arty Z7-20.}}{151}{}\protected@file@percent }
+\newlabel{fig:ACG_RECURSOS_2}{{5.20}{151}{}{}{}}
 \abx@aux@cite{0}{TRENES}
 \abx@aux@segm{0}{0}{TRENES}
 \abx@aux@cite{0}{LATTICE}
 \abx@aux@segm{0}{0}{LATTICE}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Plano de red linea Roca.}}{151}{}\protected@file@percent }
-\newlabel{fig:ROCA}{{5.21}{151}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusiones}{153}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Plano de red linea Roca.}}{152}{}\protected@file@percent }
+\newlabel{fig:ROCA}{{5.21}{152}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusiones}{154}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Resultados obtenidos}{153}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Resultados obtenidos}{154}{}\protected@file@percent }
 \abx@aux@cite{0}{Paper_207}
 \abx@aux@segm{0}{0}{Paper_207}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Trabajo futuro}{154}{}\protected@file@percent }
-\newlabel{sec:GICSAFE}{{6.2}{154}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Ejemplo 2}{155}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Trabajo futuro}{155}{}\protected@file@percent }
+\newlabel{sec:GICSAFE}{{6.2}{155}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Ejemplo 2}{156}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_2}{{A}{155}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Topología ferroviaria original}{155}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{155}{}\protected@file@percent }
-\newlabel{fig:EJ2_1}{{A.1}{155}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Señalamiento original}{155}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Señalamiento original del ejemplo 2.}}{156}{}\protected@file@percent }
-\newlabel{fig:EJ2_2}{{A.2}{156}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 2.}}{156}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_2}{{A.1}{156}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.3}Generación de señalamiento paso a paso}{156}{}\protected@file@percent }
-\newlabel{lst:EJ2_1}{{A.1}{156}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{156}{}\protected@file@percent }
-\newlabel{lst:EJ2_2}{{A.2}{157}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{157}{}\protected@file@percent }
-\newlabel{lst:EJ2_4}{{A.3}{157}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.3}{\ignorespaces Infrastructure.RNA}}{157}{}\protected@file@percent }
-\newlabel{lst:EJ2_5}{{A.4}{158}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.4}{\ignorespaces SafePoints.RNA}}{158}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{A.3}{158}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{159}{}\protected@file@percent }
-\newlabel{fig:EJ2_3}{{A.3}{159}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{159}{}\protected@file@percent }
-\newlabel{fig:EJ2_4}{{A.4}{159}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{159}{}\protected@file@percent }
-\newlabel{fig:EJ2_5}{{A.5}{159}{}{}{}}
-\newlabel{sec:signal_switches}{{A.3}{159}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.6}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{160}{}\protected@file@percent }
-\newlabel{fig:EJ2_6}{{A.6}{160}{}{}{}}
-\newlabel{lst:EJ2_3}{{A.5}{160}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{160}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {A.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{160}{}\protected@file@percent }
-\newlabel{fig:EJ2_7}{{A.7}{160}{}{}{}}
-\newlabel{lst:EJ2_6}{{A.6}{160}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.6}{\ignorespaces Signalling.RNA}}{160}{}\protected@file@percent }
-\newlabel{lst:EJ2_7}{{A.7}{162}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.7}{\ignorespaces Routes.RNA}}{162}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A.4}Red de grafos generada por el RNA}{162}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {A.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 2.}}{163}{}\protected@file@percent }
-\newlabel{fig:EJ2_8}{{A.8}{163}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.5}Señalamiento generado por el RNA}{163}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de enclavamiento del ejemplo 2 generada por el RNA.}}{163}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_2}{{A.2}{163}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.6}Validación del sistema de enclavamientos}{164}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{164}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_2}{{A.3}{164}{}{}{}}
-\newlabel{sec:validar_principios}{{A.6}{164}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.7}Sistema generado por el ACG}{165}{}\protected@file@percent }
-\newlabel{lst:EJ2_8}{{A.8}{165}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{165}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A.4}{\ignorespaces Síntesis e implementación del ejemplo 2 generado por el ACG.}}{165}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_2}{{A.4}{165}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Ejemplo 3}{166}{}\protected@file@percent }
+\newlabel{sec:ejemplo_2}{{A}{156}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Topología ferroviaria original}{156}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Topología ferroviaria del ejemplo 2 sin señalamiento.}}{156}{}\protected@file@percent }
+\newlabel{fig:EJ2_1}{{A.1}{156}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Señalamiento original}{156}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Señalamiento original del ejemplo 2.}}{157}{}\protected@file@percent }
+\newlabel{fig:EJ2_2}{{A.2}{157}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 2.}}{157}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_2}{{A.1}{157}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Generación de señalamiento paso a paso}{157}{}\protected@file@percent }
+\newlabel{lst:EJ2_1}{{A.1}{157}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{157}{}\protected@file@percent }
+\newlabel{lst:EJ2_2}{{A.2}{158}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{158}{}\protected@file@percent }
+\newlabel{lst:EJ2_4}{{A.3}{158}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.3}{\ignorespaces Infrastructure.RNA}}{158}{}\protected@file@percent }
+\newlabel{lst:EJ2_5}{{A.4}{159}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.4}{\ignorespaces SafePoints.RNA}}{159}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{A.3}{159}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{160}{}\protected@file@percent }
+\newlabel{fig:EJ2_3}{{A.3}{160}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{160}{}\protected@file@percent }
+\newlabel{fig:EJ2_4}{{A.4}{160}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{160}{}\protected@file@percent }
+\newlabel{fig:EJ2_5}{{A.5}{160}{}{}{}}
+\newlabel{sec:signal_switches}{{A.3}{160}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.6}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{161}{}\protected@file@percent }
+\newlabel{fig:EJ2_6}{{A.6}{161}{}{}{}}
+\newlabel{lst:EJ2_3}{{A.5}{161}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{161}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {A.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{161}{}\protected@file@percent }
+\newlabel{fig:EJ2_7}{{A.7}{161}{}{}{}}
+\newlabel{lst:EJ2_6}{{A.6}{161}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.6}{\ignorespaces Signalling.RNA}}{161}{}\protected@file@percent }
+\newlabel{lst:EJ2_7}{{A.7}{163}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.7}{\ignorespaces Routes.RNA}}{163}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Red de grafos generada por el RNA}{163}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {A.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 2.}}{164}{}\protected@file@percent }
+\newlabel{fig:EJ2_8}{{A.8}{164}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.5}Señalamiento generado por el RNA}{164}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de enclavamiento del ejemplo 2 generada por el RNA.}}{164}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_2}{{A.2}{164}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.6}Validación del sistema de enclavamientos}{165}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{165}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_2}{{A.3}{165}{}{}{}}
+\newlabel{sec:validar_principios}{{A.6}{165}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.7}Sistema generado por el ACG}{166}{}\protected@file@percent }
+\newlabel{lst:EJ2_8}{{A.8}{166}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{166}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.4}{\ignorespaces Síntesis e implementación del ejemplo 2 generado por el ACG.}}{166}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_2}{{A.4}{166}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Ejemplo 3}{167}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_3}{{B}{166}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}Topología ferroviaria original}{166}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Topología ferroviaria del ejemplo 3 sin señalamiento.}}{166}{}\protected@file@percent }
-\newlabel{fig:EJ3_1}{{B.1}{166}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.2}Señalamiento original}{166}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Señalamiento original del ejemplo 3.}}{167}{}\protected@file@percent }
-\newlabel{fig:EJ3_2}{{B.2}{167}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 3.}}{168}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_3}{{B.1}{168}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.3}Generación de señalamiento paso a paso}{169}{}\protected@file@percent }
-\newlabel{lst:EJ3_1}{{B.1}{169}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{169}{}\protected@file@percent }
-\newlabel{lst:EJ3_2}{{B.2}{170}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{170}{}\protected@file@percent }
-\newlabel{lst:EJ3_4}{{B.3}{171}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.3}{\ignorespaces Infrastructure.RNA}}{171}{}\protected@file@percent }
-\newlabel{lst:EJ3_5}{{B.4}{175}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.4}{\ignorespaces SafePoints.RNA}}{175}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{B.3}{177}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{177}{}\protected@file@percent }
-\newlabel{fig:EJ3_3}{{B.3}{177}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{178}{}\protected@file@percent }
-\newlabel{fig:EJ3_4}{{B.4}{178}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{178}{}\protected@file@percent }
-\newlabel{fig:EJ3_5}{{B.5}{178}{}{}{}}
-\newlabel{sec:signal_switches}{{B.3}{178}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{178}{}\protected@file@percent }
-\newlabel{fig:EJ3_6}{{B.6}{178}{}{}{}}
-\newlabel{lst:EJ3_3}{{B.5}{179}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{179}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {B.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{180}{}\protected@file@percent }
-\newlabel{fig:EJ3_7}{{B.7}{180}{}{}{}}
-\newlabel{lst:EJ3_6}{{B.6}{180}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.6}{\ignorespaces Signalling.RNA}}{180}{}\protected@file@percent }
-\newlabel{lst:EJ3_7}{{B.7}{185}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.7}{\ignorespaces Routes.RNA}}{185}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B.4}Red de grafos generada por el RNA}{189}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {B.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 3.}}{190}{}\protected@file@percent }
-\newlabel{fig:EJ3_8}{{B.8}{190}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.5}Señalamiento generado por el RNA}{190}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 1 a 15).}}{191}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_1}{{B.2}{191}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 16 a 30).}}{191}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_2}{{B.3}{191}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.4}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 31 a 45).}}{192}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_3}{{B.4}{192}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.5}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 46 a 60).}}{192}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_4}{{B.5}{192}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.6}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 61 a 75).}}{193}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_5}{{B.6}{193}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {B.7}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 75 a 91).}}{193}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_3_6}{{B.7}{193}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.6}Validación del sistema}{194}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.8}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{194}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_3_1}{{B.8}{194}{}{}{}}
-\newlabel{sec:validar_principios}{{B.6}{195}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.7}Sistema generado por el ACG}{195}{}\protected@file@percent }
-\newlabel{lst:EJ3_8}{{B.8}{195}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{195}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {B.9}{\ignorespaces Síntesis e implementación del ejemplo 3 generado por el ACG.}}{196}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_3}{{B.9}{196}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Ejemplo 4}{197}{}\protected@file@percent }
+\newlabel{sec:ejemplo_3}{{B}{167}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Topología ferroviaria original}{167}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Topología ferroviaria del ejemplo 3 sin señalamiento.}}{167}{}\protected@file@percent }
+\newlabel{fig:EJ3_1}{{B.1}{167}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}Señalamiento original}{167}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Señalamiento original del ejemplo 3.}}{168}{}\protected@file@percent }
+\newlabel{fig:EJ3_2}{{B.2}{168}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 3.}}{169}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_3}{{B.1}{169}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}Generación de señalamiento paso a paso}{170}{}\protected@file@percent }
+\newlabel{lst:EJ3_1}{{B.1}{170}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{170}{}\protected@file@percent }
+\newlabel{lst:EJ3_2}{{B.2}{171}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{171}{}\protected@file@percent }
+\newlabel{lst:EJ3_4}{{B.3}{172}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.3}{\ignorespaces Infrastructure.RNA}}{172}{}\protected@file@percent }
+\newlabel{lst:EJ3_5}{{B.4}{176}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.4}{\ignorespaces SafePoints.RNA}}{176}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{B.3}{178}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{178}{}\protected@file@percent }
+\newlabel{fig:EJ3_3}{{B.3}{178}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{179}{}\protected@file@percent }
+\newlabel{fig:EJ3_4}{{B.4}{179}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{179}{}\protected@file@percent }
+\newlabel{fig:EJ3_5}{{B.5}{179}{}{}{}}
+\newlabel{sec:signal_switches}{{B.3}{179}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{179}{}\protected@file@percent }
+\newlabel{fig:EJ3_6}{{B.6}{179}{}{}{}}
+\newlabel{lst:EJ3_3}{{B.5}{180}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{180}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{181}{}\protected@file@percent }
+\newlabel{fig:EJ3_7}{{B.7}{181}{}{}{}}
+\newlabel{lst:EJ3_6}{{B.6}{181}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.6}{\ignorespaces Signalling.RNA}}{181}{}\protected@file@percent }
+\newlabel{lst:EJ3_7}{{B.7}{186}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.7}{\ignorespaces Routes.RNA}}{186}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.4}Red de grafos generada por el RNA}{190}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 3.}}{191}{}\protected@file@percent }
+\newlabel{fig:EJ3_8}{{B.8}{191}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.5}Señalamiento generado por el RNA}{191}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.2}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 1 a 15).}}{192}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_1}{{B.2}{192}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.3}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 16 a 30).}}{192}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_2}{{B.3}{192}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.4}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 31 a 45).}}{193}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_3}{{B.4}{193}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.5}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 46 a 60).}}{193}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_4}{{B.5}{193}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.6}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 61 a 75).}}{194}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_5}{{B.6}{194}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {B.7}{\ignorespaces Tabla de enclavamiento del ejemplo 3 generada por el RNA (Rutas 75 a 91).}}{194}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_3_6}{{B.7}{194}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.6}Validación del sistema}{195}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.8}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{195}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_3_1}{{B.8}{195}{}{}{}}
+\newlabel{sec:validar_principios}{{B.6}{196}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.7}Sistema generado por el ACG}{196}{}\protected@file@percent }
+\newlabel{lst:EJ3_8}{{B.8}{196}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{196}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {B.9}{\ignorespaces Síntesis e implementación del ejemplo 3 generado por el ACG.}}{197}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_3}{{B.9}{197}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Ejemplo 4}{198}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_4}{{C}{197}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.1}Topología ferroviaria original}{197}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Topología ferroviaria del ejemplo 4 sin señalamiento.}}{197}{}\protected@file@percent }
-\newlabel{fig:EJ4_1}{{C.1}{197}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.2}Señalamiento original}{197}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Señalamiento original del ejemplo 4.}}{198}{}\protected@file@percent }
-\newlabel{fig:EJ4_2}{{C.2}{198}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 1 a 15).}}{198}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_4_1}{{C.1}{198}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.2}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 16 a 30).}}{199}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_4_2}{{C.2}{199}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.3}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 31 a 45).}}{199}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_4_3}{{C.3}{199}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.4}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 46 a 160).}}{200}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_4_4}{{C.4}{200}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.5}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 61 a 76).}}{201}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_4_5}{{C.5}{201}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.3}Generación de señalamiento paso a paso}{201}{}\protected@file@percent }
-\newlabel{lst:EJ4_1}{{C.1}{201}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{201}{}\protected@file@percent }
-\newlabel{lst:EJ4_2}{{C.2}{202}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{202}{}\protected@file@percent }
-\newlabel{lst:EJ4_4}{{C.3}{204}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.3}{\ignorespaces Infrastructure.RNA}}{204}{}\protected@file@percent }
-\newlabel{lst:EJ4_5}{{C.4}{208}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.4}{\ignorespaces SafePoints.RNA}}{208}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{C.3}{210}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{210}{}\protected@file@percent }
-\newlabel{fig:EJ4_3}{{C.3}{210}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{211}{}\protected@file@percent }
-\newlabel{fig:EJ4_4}{{C.4}{211}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{211}{}\protected@file@percent }
-\newlabel{fig:EJ4_5}{{C.5}{211}{}{}{}}
-\newlabel{sec:signal_switches}{{C.3}{211}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{212}{}\protected@file@percent }
-\newlabel{fig:EJ4_6}{{C.6}{212}{}{}{}}
-\newlabel{lst:EJ4_3}{{C.5}{212}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{212}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{213}{}\protected@file@percent }
-\newlabel{fig:EJ4_7}{{C.7}{213}{}{}{}}
-\newlabel{lst:EJ4_6}{{C.6}{213}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.6}{\ignorespaces Signalling.RNA}}{213}{}\protected@file@percent }
-\newlabel{lst:EJ4_7}{{C.7}{218}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.7}{\ignorespaces Routes.RNA}}{218}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C.4}Red de grafos generada por el RNA}{222}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 4.}}{223}{}\protected@file@percent }
-\newlabel{fig:EJ4_8}{{C.8}{223}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.5}Señalamiento generado por el RNA}{223}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {C.6}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 1 a 15).}}{224}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_1}{{C.6}{224}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.7}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 16 a 30).}}{224}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_2}{{C.7}{224}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.8}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 31 a 45).}}{225}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_3}{{C.8}{225}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.9}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 46 a 60).}}{225}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_4}{{C.9}{225}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.10}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 61 a 75).}}{226}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_5}{{C.10}{226}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.11}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 76 a 89).}}{226}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_4_6}{{C.11}{226}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.6}Validación del sistema de enclavamientos}{227}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {C.12}{\ignorespaces Equivalencias entre las rutas 1 a 15 originales y las generadas por el RNA.}}{227}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_4_1}{{C.12}{227}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.13}{\ignorespaces Equivalencias entre las rutas 16 a 30 originales y las generadas por el RNA.}}{228}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_4_2}{{C.13}{228}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.14}{\ignorespaces Equivalencias entre las rutas 31 a 45 originales y las generadas por el RNA.}}{228}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_4_3}{{C.14}{228}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.15}{\ignorespaces Equivalencias entre las rutas 46 a 60 originales y las generadas por el RNA.}}{229}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_4_4}{{C.15}{229}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.16}{\ignorespaces Equivalencias entre las rutas 61 a 77 originales y las generadas por el RNA.}}{230}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_4_5}{{C.16}{230}{}{}{}}
-\newlabel{sec:validar_principios}{{C.6}{230}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.7}Sistema generado por el ACG}{231}{}\protected@file@percent }
-\newlabel{lst:EJ4_8}{{C.8}{231}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{231}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {C.17}{\ignorespaces Síntesis e implementación del ejemplo 4 generado por el ACG.}}{231}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_4}{{C.17}{231}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Ejemplo 5}{232}{}\protected@file@percent }
+\newlabel{sec:ejemplo_4}{{C}{198}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.1}Topología ferroviaria original}{198}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Topología ferroviaria del ejemplo 4 sin señalamiento.}}{198}{}\protected@file@percent }
+\newlabel{fig:EJ4_1}{{C.1}{198}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.2}Señalamiento original}{198}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Señalamiento original del ejemplo 4.}}{199}{}\protected@file@percent }
+\newlabel{fig:EJ4_2}{{C.2}{199}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 1 a 15).}}{199}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_4_1}{{C.1}{199}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.2}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 16 a 30).}}{200}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_4_2}{{C.2}{200}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.3}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 31 a 45).}}{200}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_4_3}{{C.3}{200}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.4}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 46 a 160).}}{201}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_4_4}{{C.4}{201}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.5}{\ignorespaces Tabla de enclavamiento original del ejemplo 4 (Rutas 61 a 76).}}{202}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_4_5}{{C.5}{202}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.3}Generación de señalamiento paso a paso}{202}{}\protected@file@percent }
+\newlabel{lst:EJ4_1}{{C.1}{202}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{202}{}\protected@file@percent }
+\newlabel{lst:EJ4_2}{{C.2}{203}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{203}{}\protected@file@percent }
+\newlabel{lst:EJ4_4}{{C.3}{205}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.3}{\ignorespaces Infrastructure.RNA}}{205}{}\protected@file@percent }
+\newlabel{lst:EJ4_5}{{C.4}{209}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.4}{\ignorespaces SafePoints.RNA}}{209}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{C.3}{211}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{211}{}\protected@file@percent }
+\newlabel{fig:EJ4_3}{{C.3}{211}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{212}{}\protected@file@percent }
+\newlabel{fig:EJ4_4}{{C.4}{212}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{212}{}\protected@file@percent }
+\newlabel{fig:EJ4_5}{{C.5}{212}{}{}{}}
+\newlabel{sec:signal_switches}{{C.3}{212}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{213}{}\protected@file@percent }
+\newlabel{fig:EJ4_6}{{C.6}{213}{}{}{}}
+\newlabel{lst:EJ4_3}{{C.5}{213}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{213}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{214}{}\protected@file@percent }
+\newlabel{fig:EJ4_7}{{C.7}{214}{}{}{}}
+\newlabel{lst:EJ4_6}{{C.6}{214}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.6}{\ignorespaces Signalling.RNA}}{214}{}\protected@file@percent }
+\newlabel{lst:EJ4_7}{{C.7}{219}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.7}{\ignorespaces Routes.RNA}}{219}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.4}Red de grafos generada por el RNA}{223}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 4.}}{224}{}\protected@file@percent }
+\newlabel{fig:EJ4_8}{{C.8}{224}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.5}Señalamiento generado por el RNA}{224}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.6}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 1 a 15).}}{225}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_1}{{C.6}{225}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.7}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 16 a 30).}}{225}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_2}{{C.7}{225}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.8}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 31 a 45).}}{226}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_3}{{C.8}{226}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.9}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 46 a 60).}}{226}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_4}{{C.9}{226}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.10}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 61 a 75).}}{227}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_5}{{C.10}{227}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.11}{\ignorespaces Tabla de enclavamiento del ejemplo 4 generada por el RNA (Rutas 76 a 89).}}{227}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_4_6}{{C.11}{227}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.6}Validación del sistema de enclavamientos}{228}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.12}{\ignorespaces Equivalencias entre las rutas 1 a 15 originales y las generadas por el RNA.}}{228}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_4_1}{{C.12}{228}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.13}{\ignorespaces Equivalencias entre las rutas 16 a 30 originales y las generadas por el RNA.}}{229}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_4_2}{{C.13}{229}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.14}{\ignorespaces Equivalencias entre las rutas 31 a 45 originales y las generadas por el RNA.}}{229}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_4_3}{{C.14}{229}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.15}{\ignorespaces Equivalencias entre las rutas 46 a 60 originales y las generadas por el RNA.}}{230}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_4_4}{{C.15}{230}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.16}{\ignorespaces Equivalencias entre las rutas 61 a 77 originales y las generadas por el RNA.}}{231}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_4_5}{{C.16}{231}{}{}{}}
+\newlabel{sec:validar_principios}{{C.6}{231}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.7}Sistema generado por el ACG}{232}{}\protected@file@percent }
+\newlabel{lst:EJ4_8}{{C.8}{232}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {C.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{232}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {C.17}{\ignorespaces Síntesis e implementación del ejemplo 4 generado por el ACG.}}{232}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_4}{{C.17}{232}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Ejemplo 5}{233}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_5}{{D}{232}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.1}Topología ferroviaria original}{232}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces Topología ferroviaria del ejemplo 5 sin señalamiento.}}{232}{}\protected@file@percent }
-\newlabel{fig:EJ5_1}{{D.1}{232}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.2}Señalamiento original}{232}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {D.2}{\ignorespaces Señalamiento original del ejemplo 5.}}{233}{}\protected@file@percent }
-\newlabel{fig:EJ5_2}{{D.2}{233}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {D.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 5.}}{233}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_5}{{D.1}{233}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.3}Generación de señalamiento paso a paso}{234}{}\protected@file@percent }
-\newlabel{lst:EJ5_1}{{D.1}{234}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{234}{}\protected@file@percent }
-\newlabel{lst:EJ5_2}{{D.2}{234}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{234}{}\protected@file@percent }
-\newlabel{lst:EJ5_4}{{D.3}{235}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.3}{\ignorespaces Infrastructure.RNA}}{235}{}\protected@file@percent }
-\newlabel{lst:EJ5_5}{{D.4}{236}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.4}{\ignorespaces SafePoints.RNA}}{236}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{D.3}{237}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{237}{}\protected@file@percent }
-\newlabel{fig:EJ5_3}{{D.3}{237}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{238}{}\protected@file@percent }
-\newlabel{fig:EJ5_4}{{D.4}{238}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{238}{}\protected@file@percent }
-\newlabel{fig:EJ5_5}{{D.5}{238}{}{}{}}
-\newlabel{sec:signal_switches}{{D.3}{238}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{239}{}\protected@file@percent }
-\newlabel{fig:EJ5_6}{{D.6}{239}{}{}{}}
-\newlabel{lst:EJ5_3}{{D.5}{239}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{239}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {D.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{240}{}\protected@file@percent }
-\newlabel{fig:EJ5_7}{{D.7}{240}{}{}{}}
-\newlabel{lst:EJ5_6}{{D.6}{240}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.6}{\ignorespaces Signalling.RNA}}{240}{}\protected@file@percent }
-\newlabel{lst:EJ5_7}{{D.7}{241}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.7}{\ignorespaces Routes.RNA}}{241}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {D.4}Red de grafos generada por el RNA}{243}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {D.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 5.}}{243}{}\protected@file@percent }
-\newlabel{fig:EJ5_8}{{D.8}{243}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.5}Señalamiento generado por el RNA}{243}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {D.6}Validación del sistema}{243}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {D.2}{\ignorespaces Tabla de enclavamiento del ejemplo 5 generada por el RNA.}}{244}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_5}{{D.2}{244}{}{}{}}
-\newlabel{sec:validar_principios}{{D.6}{244}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.7}Sistema generado por el ACG}{244}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {D.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{245}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_5}{{D.3}{245}{}{}{}}
-\newlabel{lst:EJ5_8}{{D.8}{245}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{245}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {D.4}{\ignorespaces Síntesis e implementación del ejemplo 5 generado por el ACG.}}{246}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_5}{{D.4}{246}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {E}Ejemplo 6}{247}{}\protected@file@percent }
+\newlabel{sec:ejemplo_5}{{D}{233}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.1}Topología ferroviaria original}{233}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces Topología ferroviaria del ejemplo 5 sin señalamiento.}}{233}{}\protected@file@percent }
+\newlabel{fig:EJ5_1}{{D.1}{233}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.2}Señalamiento original}{233}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {D.2}{\ignorespaces Señalamiento original del ejemplo 5.}}{234}{}\protected@file@percent }
+\newlabel{fig:EJ5_2}{{D.2}{234}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {D.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 5.}}{234}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_5}{{D.1}{234}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.3}Generación de señalamiento paso a paso}{235}{}\protected@file@percent }
+\newlabel{lst:EJ5_1}{{D.1}{235}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{235}{}\protected@file@percent }
+\newlabel{lst:EJ5_2}{{D.2}{235}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{235}{}\protected@file@percent }
+\newlabel{lst:EJ5_4}{{D.3}{236}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.3}{\ignorespaces Infrastructure.RNA}}{236}{}\protected@file@percent }
+\newlabel{lst:EJ5_5}{{D.4}{237}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.4}{\ignorespaces SafePoints.RNA}}{237}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{D.3}{238}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{238}{}\protected@file@percent }
+\newlabel{fig:EJ5_3}{{D.3}{238}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{239}{}\protected@file@percent }
+\newlabel{fig:EJ5_4}{{D.4}{239}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{239}{}\protected@file@percent }
+\newlabel{fig:EJ5_5}{{D.5}{239}{}{}{}}
+\newlabel{sec:signal_switches}{{D.3}{239}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{240}{}\protected@file@percent }
+\newlabel{fig:EJ5_6}{{D.6}{240}{}{}{}}
+\newlabel{lst:EJ5_3}{{D.5}{240}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{240}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {D.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{241}{}\protected@file@percent }
+\newlabel{fig:EJ5_7}{{D.7}{241}{}{}{}}
+\newlabel{lst:EJ5_6}{{D.6}{241}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.6}{\ignorespaces Signalling.RNA}}{241}{}\protected@file@percent }
+\newlabel{lst:EJ5_7}{{D.7}{242}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.7}{\ignorespaces Routes.RNA}}{242}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D.4}Red de grafos generada por el RNA}{244}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {D.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 5.}}{244}{}\protected@file@percent }
+\newlabel{fig:EJ5_8}{{D.8}{244}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.5}Señalamiento generado por el RNA}{244}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D.6}Validación del sistema}{244}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {D.2}{\ignorespaces Tabla de enclavamiento del ejemplo 5 generada por el RNA.}}{245}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_5}{{D.2}{245}{}{}{}}
+\newlabel{sec:validar_principios}{{D.6}{245}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.7}Sistema generado por el ACG}{245}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {D.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{246}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_5}{{D.3}{246}{}{}{}}
+\newlabel{lst:EJ5_8}{{D.8}{246}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {D.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{246}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {D.4}{\ignorespaces Síntesis e implementación del ejemplo 5 generado por el ACG.}}{247}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_5}{{D.4}{247}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {E}Ejemplo 6}{248}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_6}{{E}{247}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.1}Topología ferroviaria original}{247}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {E.1}{\ignorespaces Topología ferroviaria del ejemplo 6 sin señalamiento.}}{247}{}\protected@file@percent }
-\newlabel{fig:EJ6_1}{{E.1}{247}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.2}Señalamiento original}{247}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {E.2}{\ignorespaces Señalamiento original del ejemplo 6.}}{248}{}\protected@file@percent }
-\newlabel{fig:EJ6_2}{{E.2}{248}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {E.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 6.}}{248}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_6}{{E.1}{248}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.3}Generación de señalamiento paso a paso}{248}{}\protected@file@percent }
-\newlabel{lst:EJ6_1}{{E.1}{249}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{249}{}\protected@file@percent }
-\newlabel{lst:EJ6_2}{{E.2}{249}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{249}{}\protected@file@percent }
-\newlabel{lst:EJ6_4}{{E.3}{250}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.3}{\ignorespaces Infrastructure.RNA}}{250}{}\protected@file@percent }
-\newlabel{lst:EJ6_5}{{E.4}{251}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.4}{\ignorespaces SafePoints.RNA}}{251}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{E.3}{252}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{252}{}\protected@file@percent }
-\newlabel{fig:EJ6_3}{{E.3}{252}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{252}{}\protected@file@percent }
-\newlabel{fig:EJ6_4}{{E.4}{252}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{253}{}\protected@file@percent }
-\newlabel{fig:EJ6_5}{{E.5}{253}{}{}{}}
-\newlabel{sec:signal_switches}{{E.3}{253}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.6}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{253}{}\protected@file@percent }
-\newlabel{fig:EJ6_6}{{E.6}{253}{}{}{}}
-\newlabel{lst:EJ6_3}{{E.5}{253}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{253}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {E.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{254}{}\protected@file@percent }
-\newlabel{fig:EJ6_7}{{E.7}{254}{}{}{}}
-\newlabel{lst:EJ6_6}{{E.6}{254}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.6}{\ignorespaces Signalling.RNA}}{254}{}\protected@file@percent }
-\newlabel{lst:EJ6_7}{{E.7}{256}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.7}{\ignorespaces Routes.RNA}}{256}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {E.4}Red de grafos generada por el RNA}{258}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {E.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 6.}}{258}{}\protected@file@percent }
-\newlabel{fig:EJ6_8}{{E.8}{258}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.5}Señalamiento generado por el RNA}{258}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {E.2}{\ignorespaces Tabla de enclavamiento del ejemplo 6 generada por el RNA.}}{259}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_6}{{E.2}{259}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.6}Validación del sistema}{259}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {E.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{260}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_6}{{E.3}{260}{}{}{}}
-\newlabel{sec:validar_principios}{{E.6}{260}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.7}Sistema generado por el ACG}{261}{}\protected@file@percent }
-\newlabel{lst:EJ6_8}{{E.8}{261}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{261}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {E.4}{\ignorespaces Síntesis e implementación del ejemplo 6 generado por el ACG.}}{262}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_6}{{E.4}{262}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {F}Ejemplo 7}{263}{}\protected@file@percent }
+\newlabel{sec:ejemplo_6}{{E}{248}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.1}Topología ferroviaria original}{248}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {E.1}{\ignorespaces Topología ferroviaria del ejemplo 6 sin señalamiento.}}{248}{}\protected@file@percent }
+\newlabel{fig:EJ6_1}{{E.1}{248}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.2}Señalamiento original}{248}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {E.2}{\ignorespaces Señalamiento original del ejemplo 6.}}{249}{}\protected@file@percent }
+\newlabel{fig:EJ6_2}{{E.2}{249}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {E.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 6.}}{249}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_6}{{E.1}{249}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.3}Generación de señalamiento paso a paso}{249}{}\protected@file@percent }
+\newlabel{lst:EJ6_1}{{E.1}{250}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{250}{}\protected@file@percent }
+\newlabel{lst:EJ6_2}{{E.2}{250}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{250}{}\protected@file@percent }
+\newlabel{lst:EJ6_4}{{E.3}{251}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.3}{\ignorespaces Infrastructure.RNA}}{251}{}\protected@file@percent }
+\newlabel{lst:EJ6_5}{{E.4}{252}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.4}{\ignorespaces SafePoints.RNA}}{252}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{E.3}{253}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fín de vía.}}{253}{}\protected@file@percent }
+\newlabel{fig:EJ6_3}{{E.3}{253}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{253}{}\protected@file@percent }
+\newlabel{fig:EJ6_4}{{E.4}{253}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{254}{}\protected@file@percent }
+\newlabel{fig:EJ6_5}{{E.5}{254}{}{}{}}
+\newlabel{sec:signal_switches}{{E.3}{254}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.6}{\ignorespaces Señalamiento generado por el RNA para proteger las máquinas de cambios.}}{254}{}\protected@file@percent }
+\newlabel{fig:EJ6_6}{{E.6}{254}{}{}{}}
+\newlabel{lst:EJ6_3}{{E.5}{254}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{254}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {E.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{255}{}\protected@file@percent }
+\newlabel{fig:EJ6_7}{{E.7}{255}{}{}{}}
+\newlabel{lst:EJ6_6}{{E.6}{255}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.6}{\ignorespaces Signalling.RNA}}{255}{}\protected@file@percent }
+\newlabel{lst:EJ6_7}{{E.7}{257}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.7}{\ignorespaces Routes.RNA}}{257}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {E.4}Red de grafos generada por el RNA}{259}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {E.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 6.}}{259}{}\protected@file@percent }
+\newlabel{fig:EJ6_8}{{E.8}{259}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.5}Señalamiento generado por el RNA}{259}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {E.2}{\ignorespaces Tabla de enclavamiento del ejemplo 6 generada por el RNA.}}{260}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_6}{{E.2}{260}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.6}Validación del sistema}{260}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {E.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{261}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_6}{{E.3}{261}{}{}{}}
+\newlabel{sec:validar_principios}{{E.6}{261}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.7}Sistema generado por el ACG}{262}{}\protected@file@percent }
+\newlabel{lst:EJ6_8}{{E.8}{262}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {E.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{262}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {E.4}{\ignorespaces Síntesis e implementación del ejemplo 6 generado por el ACG.}}{263}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_6}{{E.4}{263}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {F}Ejemplo 7}{264}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_7}{{F}{263}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.1}Topología ferroviaria original}{263}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {F.1}{\ignorespaces Topología ferroviaria del ejemplo 7 sin señalamiento.}}{263}{}\protected@file@percent }
-\newlabel{fig:EJ7_1}{{F.1}{263}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.2}Señalamiento original}{264}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {F.2}{\ignorespaces Señalamiento original del ejemplo 7.}}{264}{}\protected@file@percent }
-\newlabel{fig:EJ7_2}{{F.2}{264}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {F.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 7.}}{264}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_7}{{F.1}{264}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.3}Generación de señalamiento paso a paso}{265}{}\protected@file@percent }
-\newlabel{lst:EJ7_1}{{F.1}{265}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{265}{}\protected@file@percent }
-\newlabel{lst:EJ7_2}{{F.2}{265}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{265}{}\protected@file@percent }
-\newlabel{lst:EJ7_4}{{F.3}{266}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.3}{\ignorespaces Infrastructure.RNA}}{266}{}\protected@file@percent }
-\newlabel{lst:EJ7_5}{{F.4}{267}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.4}{\ignorespaces SafePoints.RNA}}{267}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{F.3}{267}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {F.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{268}{}\protected@file@percent }
-\newlabel{fig:EJ7_3}{{F.3}{268}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {F.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{269}{}\protected@file@percent }
-\newlabel{fig:EJ7_4}{{F.4}{269}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {F.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{270}{}\protected@file@percent }
-\newlabel{fig:EJ7_5}{{F.5}{270}{}{}{}}
-\newlabel{sec:signal_switches}{{F.3}{270}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {F.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{271}{}\protected@file@percent }
-\newlabel{fig:EJ7_6}{{F.6}{271}{}{}{}}
-\newlabel{lst:EJ7_3}{{F.5}{271}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{271}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {F.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{272}{}\protected@file@percent }
-\newlabel{fig:EJ7_7}{{F.7}{272}{}{}{}}
-\newlabel{lst:EJ7_6}{{F.6}{272}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.6}{\ignorespaces Signalling.RNA}}{272}{}\protected@file@percent }
-\newlabel{lst:EJ7_7}{{F.7}{273}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.7}{\ignorespaces Routes.RNA}}{273}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {F.4}Red de grafos generada por el RNA}{274}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {F.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 7.}}{275}{}\protected@file@percent }
-\newlabel{fig:EJ7_8}{{F.8}{275}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.5}Señalamiento generado por el RNA}{275}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {F.2}{\ignorespaces Tabla de enclavamiento del ejemplo 7 generada por el RNA.}}{275}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_7}{{F.2}{275}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.6}Validación del sistema}{276}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {F.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{276}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_7}{{F.3}{276}{}{}{}}
-\newlabel{sec:validar_principios}{{F.6}{276}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F.7}Sistema generado por el ACG}{277}{}\protected@file@percent }
-\newlabel{lst:EJ7_8}{{F.8}{277}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{277}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {F.4}{\ignorespaces Síntesis e implementación del ejemplo 7 generado por el ACG.}}{277}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_7}{{F.4}{277}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {G}Ejemplo 8}{278}{}\protected@file@percent }
+\newlabel{sec:ejemplo_7}{{F}{264}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.1}Topología ferroviaria original}{264}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {F.1}{\ignorespaces Topología ferroviaria del ejemplo 7 sin señalamiento.}}{264}{}\protected@file@percent }
+\newlabel{fig:EJ7_1}{{F.1}{264}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.2}Señalamiento original}{265}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {F.2}{\ignorespaces Señalamiento original del ejemplo 7.}}{265}{}\protected@file@percent }
+\newlabel{fig:EJ7_2}{{F.2}{265}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {F.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 7.}}{265}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_7}{{F.1}{265}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.3}Generación de señalamiento paso a paso}{266}{}\protected@file@percent }
+\newlabel{lst:EJ7_1}{{F.1}{266}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{266}{}\protected@file@percent }
+\newlabel{lst:EJ7_2}{{F.2}{266}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{266}{}\protected@file@percent }
+\newlabel{lst:EJ7_4}{{F.3}{267}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.3}{\ignorespaces Infrastructure.RNA}}{267}{}\protected@file@percent }
+\newlabel{lst:EJ7_5}{{F.4}{268}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.4}{\ignorespaces SafePoints.RNA}}{268}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{F.3}{268}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {F.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{269}{}\protected@file@percent }
+\newlabel{fig:EJ7_3}{{F.3}{269}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {F.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{270}{}\protected@file@percent }
+\newlabel{fig:EJ7_4}{{F.4}{270}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {F.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{271}{}\protected@file@percent }
+\newlabel{fig:EJ7_5}{{F.5}{271}{}{}{}}
+\newlabel{sec:signal_switches}{{F.3}{271}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {F.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{272}{}\protected@file@percent }
+\newlabel{fig:EJ7_6}{{F.6}{272}{}{}{}}
+\newlabel{lst:EJ7_3}{{F.5}{272}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{272}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {F.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{273}{}\protected@file@percent }
+\newlabel{fig:EJ7_7}{{F.7}{273}{}{}{}}
+\newlabel{lst:EJ7_6}{{F.6}{273}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.6}{\ignorespaces Signalling.RNA}}{273}{}\protected@file@percent }
+\newlabel{lst:EJ7_7}{{F.7}{274}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.7}{\ignorespaces Routes.RNA}}{274}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {F.4}Red de grafos generada por el RNA}{275}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {F.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 7.}}{276}{}\protected@file@percent }
+\newlabel{fig:EJ7_8}{{F.8}{276}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.5}Señalamiento generado por el RNA}{276}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {F.2}{\ignorespaces Tabla de enclavamiento del ejemplo 7 generada por el RNA.}}{276}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_7}{{F.2}{276}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.6}Validación del sistema}{277}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {F.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{277}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_7}{{F.3}{277}{}{}{}}
+\newlabel{sec:validar_principios}{{F.6}{277}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F.7}Sistema generado por el ACG}{278}{}\protected@file@percent }
+\newlabel{lst:EJ7_8}{{F.8}{278}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {F.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{278}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {F.4}{\ignorespaces Síntesis e implementación del ejemplo 7 generado por el ACG.}}{278}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_7}{{F.4}{278}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {G}Ejemplo 8}{279}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_8}{{G}{278}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.1}Topología ferroviaria original}{278}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {G.1}{\ignorespaces Topología ferroviaria del ejemplo 8 sin señalamiento.}}{278}{}\protected@file@percent }
-\newlabel{fig:EJ8_1}{{G.1}{278}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.2}Señalamiento original}{278}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {G.2}{\ignorespaces Señalamiento original del ejemplo 8.}}{279}{}\protected@file@percent }
-\newlabel{fig:EJ8_2}{{G.2}{279}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {G.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 8.}}{279}{}\protected@file@percent }
-\newlabel{Tab:tabla_original_8}{{G.1}{279}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.3}Generación de señalamiento paso a paso}{279}{}\protected@file@percent }
-\newlabel{lst:EJ8_1}{{G.1}{279}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{279}{}\protected@file@percent }
-\newlabel{lst:EJ8_2}{{G.2}{280}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{280}{}\protected@file@percent }
-\newlabel{lst:EJ8_4}{{G.3}{280}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.3}{\ignorespaces Infrastructure.RNA}}{280}{}\protected@file@percent }
-\newlabel{lst:EJ8_5}{{G.4}{281}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.4}{\ignorespaces SafePoints.RNA}}{281}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{G.3}{282}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {G.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{282}{}\protected@file@percent }
-\newlabel{fig:EJ8_3}{{G.3}{282}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {G.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{282}{}\protected@file@percent }
-\newlabel{fig:EJ8_4}{{G.4}{282}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {G.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{283}{}\protected@file@percent }
-\newlabel{fig:EJ8_5}{{G.5}{283}{}{}{}}
-\newlabel{sec:signal_switches}{{G.3}{283}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {G.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{283}{}\protected@file@percent }
-\newlabel{fig:EJ8_6}{{G.6}{283}{}{}{}}
-\newlabel{lst:EJ8_3}{{G.5}{283}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{283}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {G.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{284}{}\protected@file@percent }
-\newlabel{fig:EJ8_7}{{G.7}{284}{}{}{}}
-\newlabel{lst:EJ8_6}{{G.6}{284}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.6}{\ignorespaces Signalling.RNA}}{284}{}\protected@file@percent }
-\newlabel{lst:EJ8_7}{{G.7}{285}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.7}{\ignorespaces Routes.RNA}}{285}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {G.4}Red de grafos generada por el RNA}{287}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {G.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 8.}}{287}{}\protected@file@percent }
-\newlabel{fig:EJ8_8}{{G.8}{287}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.5}Señalamiento generado por el RNA}{287}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {G.2}{\ignorespaces Tabla de enclavamiento del ejemplo 8 generada por el RNA.}}{287}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_8}{{G.2}{287}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.6}Validación del sistema}{288}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {G.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{288}{}\protected@file@percent }
-\newlabel{Tab:tabla_validation_8}{{G.3}{288}{}{}{}}
-\newlabel{sec:validar_principios}{{G.6}{288}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {G.7}Sistema generado por el ACG}{289}{}\protected@file@percent }
-\newlabel{lst:EJ8_8}{{G.8}{289}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{289}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {G.4}{\ignorespaces Síntesis e implementación del ejemplo 8 generado por el ACG.}}{290}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_8}{{G.4}{290}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {H}Ejemplo 9}{291}{}\protected@file@percent }
+\newlabel{sec:ejemplo_8}{{G}{279}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.1}Topología ferroviaria original}{279}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {G.1}{\ignorespaces Topología ferroviaria del ejemplo 8 sin señalamiento.}}{279}{}\protected@file@percent }
+\newlabel{fig:EJ8_1}{{G.1}{279}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.2}Señalamiento original}{279}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {G.2}{\ignorespaces Señalamiento original del ejemplo 8.}}{280}{}\protected@file@percent }
+\newlabel{fig:EJ8_2}{{G.2}{280}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {G.1}{\ignorespaces Tabla de enclavamiento original del ejemplo 8.}}{280}{}\protected@file@percent }
+\newlabel{Tab:tabla_original_8}{{G.1}{280}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.3}Generación de señalamiento paso a paso}{280}{}\protected@file@percent }
+\newlabel{lst:EJ8_1}{{G.1}{280}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{280}{}\protected@file@percent }
+\newlabel{lst:EJ8_2}{{G.2}{281}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{281}{}\protected@file@percent }
+\newlabel{lst:EJ8_4}{{G.3}{281}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.3}{\ignorespaces Infrastructure.RNA}}{281}{}\protected@file@percent }
+\newlabel{lst:EJ8_5}{{G.4}{282}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.4}{\ignorespaces SafePoints.RNA}}{282}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{G.3}{283}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {G.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{283}{}\protected@file@percent }
+\newlabel{fig:EJ8_3}{{G.3}{283}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {G.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{283}{}\protected@file@percent }
+\newlabel{fig:EJ8_4}{{G.4}{283}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {G.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{284}{}\protected@file@percent }
+\newlabel{fig:EJ8_5}{{G.5}{284}{}{}{}}
+\newlabel{sec:signal_switches}{{G.3}{284}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {G.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{284}{}\protected@file@percent }
+\newlabel{fig:EJ8_6}{{G.6}{284}{}{}{}}
+\newlabel{lst:EJ8_3}{{G.5}{284}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{284}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {G.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{285}{}\protected@file@percent }
+\newlabel{fig:EJ8_7}{{G.7}{285}{}{}{}}
+\newlabel{lst:EJ8_6}{{G.6}{285}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.6}{\ignorespaces Signalling.RNA}}{285}{}\protected@file@percent }
+\newlabel{lst:EJ8_7}{{G.7}{286}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.7}{\ignorespaces Routes.RNA}}{286}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {G.4}Red de grafos generada por el RNA}{288}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {G.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 8.}}{288}{}\protected@file@percent }
+\newlabel{fig:EJ8_8}{{G.8}{288}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.5}Señalamiento generado por el RNA}{288}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {G.2}{\ignorespaces Tabla de enclavamiento del ejemplo 8 generada por el RNA.}}{288}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_8}{{G.2}{288}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.6}Validación del sistema}{289}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {G.3}{\ignorespaces Equivalencias entre las rutas originales y las generadas por el RNA.}}{289}{}\protected@file@percent }
+\newlabel{Tab:tabla_validation_8}{{G.3}{289}{}{}{}}
+\newlabel{sec:validar_principios}{{G.6}{289}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G.7}Sistema generado por el ACG}{290}{}\protected@file@percent }
+\newlabel{lst:EJ8_8}{{G.8}{290}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {G.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{290}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {G.4}{\ignorespaces Síntesis e implementación del ejemplo 8 generado por el ACG.}}{291}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_8}{{G.4}{291}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {H}Ejemplo 9}{292}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{sec:ejemplo_9}{{H}{291}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.1}Topología ferroviaria original}{291}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {H.1}{\ignorespaces Topología ferroviaria del ejemplo 9 sin señalamiento.}}{291}{}\protected@file@percent }
-\newlabel{fig:EJ9_1}{{H.1}{291}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.2}Señalamiento original}{291}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {H.2}{\ignorespaces Señalamiento original del ejemplo 9.}}{291}{}\protected@file@percent }
-\newlabel{fig:EJ9_2}{{H.2}{291}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.3}Generación de señalamiento paso a paso}{292}{}\protected@file@percent }
-\newlabel{lst:EJ9_1}{{H.1}{292}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{292}{}\protected@file@percent }
-\newlabel{lst:EJ9_2}{{H.2}{292}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{292}{}\protected@file@percent }
-\newlabel{lst:EJ9_4}{{H.3}{293}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.3}{\ignorespaces Infrastructure.RNA}}{293}{}\protected@file@percent }
-\newlabel{lst:EJ9_5}{{H.4}{295}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.4}{\ignorespaces SafePoints.RNA}}{295}{}\protected@file@percent }
-\newlabel{sec:simplificacion}{{H.3}{295}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {H.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{295}{}\protected@file@percent }
-\newlabel{fig:EJ9_3}{{H.3}{295}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {H.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{296}{}\protected@file@percent }
-\newlabel{fig:EJ9_4}{{H.4}{296}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {H.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{296}{}\protected@file@percent }
-\newlabel{fig:EJ9_5}{{H.5}{296}{}{}{}}
-\newlabel{sec:signal_switches}{{H.3}{296}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {H.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{296}{}\protected@file@percent }
-\newlabel{fig:EJ9_6}{{H.6}{296}{}{}{}}
-\newlabel{lst:EJ9_3}{{H.5}{297}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{297}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {H.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{298}{}\protected@file@percent }
-\newlabel{fig:EJ9_7}{{H.7}{298}{}{}{}}
-\newlabel{lst:EJ9_6}{{H.6}{298}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.6}{\ignorespaces Signalling.RNA}}{298}{}\protected@file@percent }
-\newlabel{lst:EJ9_7}{{H.7}{300}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.7}{\ignorespaces Routes.RNA}}{300}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {H.4}Red de grafos generada por el RNA}{302}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {H.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 9.}}{302}{}\protected@file@percent }
-\newlabel{fig:EJ9_8}{{H.8}{302}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.5}Señalamiento generado por el RNA}{302}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {H.1}{\ignorespaces Tabla de enclavamiento del ejemplo 9 generada por el RNA.}}{303}{}\protected@file@percent }
-\newlabel{Tab:tabla_generated_9}{{H.1}{303}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.6}Validación del sistema de enclavamientos}{303}{}\protected@file@percent }
-\newlabel{sec:validar_principios}{{H.6}{303}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {H.7}Sistema generado por el ACG}{304}{}\protected@file@percent }
-\newlabel{lst:EJ9_8}{{H.8}{304}{}{}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{304}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {H.2}{\ignorespaces Síntesis e implementación del ejemplo 9 generado por el ACG.}}{305}{}\protected@file@percent }
-\newlabel{Tab:tabla_ACG_9}{{H.2}{305}{}{}{}}
-\newlabel{LastPage}{{H.7}{320}{}{}{}}
-\gdef\lastpage@lastpage{320}
+\newlabel{sec:ejemplo_9}{{H}{292}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.1}Topología ferroviaria original}{292}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {H.1}{\ignorespaces Topología ferroviaria del ejemplo 9 sin señalamiento.}}{292}{}\protected@file@percent }
+\newlabel{fig:EJ9_1}{{H.1}{292}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.2}Señalamiento original}{292}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {H.2}{\ignorespaces Señalamiento original del ejemplo 9.}}{292}{}\protected@file@percent }
+\newlabel{fig:EJ9_2}{{H.2}{292}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.3}Generación de señalamiento paso a paso}{293}{}\protected@file@percent }
+\newlabel{lst:EJ9_1}{{H.1}{293}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.1}{\ignorespaces Detección de \textit  {netElements} por parte del RNA}}{293}{}\protected@file@percent }
+\newlabel{lst:EJ9_2}{{H.2}{293}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.2}{\ignorespaces Detección de puntos críticos por parte del RNA}}{293}{}\protected@file@percent }
+\newlabel{lst:EJ9_4}{{H.3}{294}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.3}{\ignorespaces Infrastructure.RNA}}{294}{}\protected@file@percent }
+\newlabel{lst:EJ9_5}{{H.4}{296}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.4}{\ignorespaces SafePoints.RNA}}{296}{}\protected@file@percent }
+\newlabel{sec:simplificacion}{{H.3}{296}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {H.3}{\ignorespaces Señalamiento generado por el RNA para proteger el fin de vía.}}{296}{}\protected@file@percent }
+\newlabel{fig:EJ9_3}{{H.3}{296}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {H.4}{\ignorespaces Señalamiento generado por el RNA para proteger las junturas.}}{297}{}\protected@file@percent }
+\newlabel{fig:EJ9_4}{{H.4}{297}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {H.5}{\ignorespaces Señalamiento generado por el RNA para proteger plataformas y cruces de vía.}}{297}{}\protected@file@percent }
+\newlabel{fig:EJ9_5}{{H.5}{297}{}{}{}}
+\newlabel{sec:signal_switches}{{H.3}{297}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {H.6}{\ignorespaces Señalamiento generado por el RNA para proteger los cambios de vías.}}{297}{}\protected@file@percent }
+\newlabel{fig:EJ9_6}{{H.6}{297}{}{}{}}
+\newlabel{lst:EJ9_3}{{H.5}{298}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.5}{\ignorespaces Reducción de señalamiento por prioridad de señales}}{298}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {H.7}{\ignorespaces Señalamiento generado y simplificado por el RNA.}}{299}{}\protected@file@percent }
+\newlabel{fig:EJ9_7}{{H.7}{299}{}{}{}}
+\newlabel{lst:EJ9_6}{{H.6}{299}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.6}{\ignorespaces Signalling.RNA}}{299}{}\protected@file@percent }
+\newlabel{lst:EJ9_7}{{H.7}{301}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.7}{\ignorespaces Routes.RNA}}{301}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {H.4}Red de grafos generada por el RNA}{303}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {H.8}{\ignorespaces Red de grafos generada por el RNA para el ejemplo 9.}}{303}{}\protected@file@percent }
+\newlabel{fig:EJ9_8}{{H.8}{303}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.5}Señalamiento generado por el RNA}{303}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {H.1}{\ignorespaces Tabla de enclavamiento del ejemplo 9 generada por el RNA.}}{304}{}\protected@file@percent }
+\newlabel{Tab:tabla_generated_9}{{H.1}{304}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.6}Validación del sistema de enclavamientos}{304}{}\protected@file@percent }
+\newlabel{sec:validar_principios}{{H.6}{304}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H.7}Sistema generado por el ACG}{305}{}\protected@file@percent }
+\newlabel{lst:EJ9_8}{{H.8}{305}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {H.8}{\ignorespaces Cantidad de elementos a implementar por el ACG}}{305}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {H.2}{\ignorespaces Síntesis e implementación del ejemplo 9 generado por el ACG.}}{306}{}\protected@file@percent }
+\newlabel{Tab:tabla_ACG_9}{{H.2}{306}{}{}{}}
+\newlabel{LastPage}{{H.7}{321}{}{}{}}
+\gdef\lastpage@lastpage{321}
 \gdef\lastpage@lastpageHy{}
 \abx@aux@read@bbl@mdfivesum{530DCF9EED1789D6F1F323837FAC8C3C}
 \abx@aux@defaultrefcontext{0}{Paper_160}{none/global//global/global/global}
@@ -2220,4 +2229,4 @@
 \abx@aux@defaultrefcontext{0}{GRAPHVIZ}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{YOUTUBE}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{LATTICE}{none/global//global/global/global}
-\gdef \@abspage@last{337}
+\gdef \@abspage@last{338}
