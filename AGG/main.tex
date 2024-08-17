@@ -3,11 +3,11 @@
 	
 	En este capítulo se presentan los motivos que llevaron a desarrollar una herramienta para generar en forma automática interfaces gráficas de usuario adaptadas a cada topología ferroviaria, así como también las bibliotecas de código utilizadas, las estrategias de comunicación y el diseño realizado.
 	
-	\subsection{Necesidad de contar con una herramienta para generar interfaces gráficas}
+	\section{Necesidad de contar con una herramienta para generar interfaces gráficas}
 	
 	La complejidad del sistema implementado en la FPGA en base al código generado por parte del ACG es tal que se vuelve indispensable contar con una herramienta gráfica que facilite la interpretación de los resultados. A su vez, es importante contar con una herramienta que pueda establecer la comunicación con la FPGA, tanto para enviar cómo para recibir las tramas de mensajes definida en la Sección \ref{sec:UART}. Para lograr estos objetivos se creó el AGG (del inglés, Automatic Graphic User Interface Generator), una herramienta diseñada e implementada por el autor de esta tesis de doctorado. El AGG permite establecer la comunicación con la FPGA y actualizar en tiempo real el estado de una interfaz gráfica basada en railML, intuitiva y a semejanza de una consola de señalamiento real.
 	
-	\subsection{Diseño de la herramienta para la generación automática de interfaces de usuario}
+	\section{Diseño de la herramienta para la generación automática de interfaces de usuario}
 	
 	Para implementar el AGG se decidió utilizar la biblioteca tkinter \cite{TKINTER} para la interfaz gráfica de usuario y la biblioteca serial, nativa de Python, para establecer la comunicación con la plataforma FPGA. Ambas bibliotecas son las mas utilizadas debido a su amplia difusión en la comunidad de software libre, funcionalidades incluidas y detallada documentación.
 	

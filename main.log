@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  16 AUG 2024 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  17 AUG 2024 21:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1129,82 +1129,31 @@ LaTeX Warning: Label `alg:horizontal' multiply defined.
 LaTeX Warning: Label `alg:vertical' multiply defined.
 
 
-LaTeX Warning: Label `sec:generacion' multiply defined.
-
-
 LaTeX Warning: Label `sec:GICSAFE' multiply defined.
 
 
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
+LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
+LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
+LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
-
-
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
 
 
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
-
-
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
-
-
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
-
-
-LaTeX Warning: Label `sec:signal_switches' multiply defined.
-
-
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
-
-
-LaTeX Warning: Label `sec:signal_switches' multiply defined.
-
-
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
-
-
-LaTeX Warning: Label `sec:simplificacion' multiply defined.
-
-
-LaTeX Warning: Label `sec:signal_switches' multiply defined.
-
-
-LaTeX Warning: Label `sec:validar_principios' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -4868,49 +4817,50 @@ LaTeX Info: Redefining \% on input line 188.
 [297 <./resultados-obtenidos/ejemplo9/images/9_step2.png> <./resultados-obtenid
 os/ejemplo9/images/9_step3.png> <./resultados-obtenidos/ejemplo9/images/9_step4
 .png>]
-File: resultados-obtenidos/ejemplo1/images/1_RNA.png Graphic file (type png)
-<use resultados-obtenidos/ejemplo1/images/1_RNA.png>
-Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/1_RNA.png  used o
+<resultados-obtenidos/ejemplo9/images/9_RNA.png, id=1548, 9811.65625pt x 1806.7
+5pt>
+File: resultados-obtenidos/ejemplo9/images/9_RNA.png Graphic file (type png)
+<use resultados-obtenidos/ejemplo9/images/9_RNA.png>
+Package pdftex.def Info: resultados-obtenidos/ejemplo9/images/9_RNA.png  used o
 n input line 220.
-(pdftex.def)             Requested size: 426.79134pt x 174.01883pt.
+(pdftex.def)             Requested size: 426.79134pt x 78.57092pt.
 
 
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
-[298]
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+[298 <./resultados-obtenidos/ejemplo9/images/9_RNA.png>]
 
-LaTeX Info: Redefining \. on input line 257.
-LaTeX Info: Redefining \% on input line 257.
-LaTeX Info: Redefining \. on input line 257.
-LaTeX Info: Redefining \% on input line 257.
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
 [299]
 
-LaTeX Info: Redefining \. on input line 308.
-LaTeX Info: Redefining \% on input line 308.
-LaTeX Info: Redefining \. on input line 308.
-LaTeX Info: Redefining \% on input line 308.
+LaTeX Info: Redefining \. on input line 331.
+LaTeX Info: Redefining \% on input line 331.
+LaTeX Info: Redefining \. on input line 331.
+LaTeX Info: Redefining \% on input line 331.
 [300]
 
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
-[301]
-
-LaTeX Info: Redefining \. on input line 406.
-LaTeX Info: Redefining \% on input line 406.
-LaTeX Info: Redefining \. on input line 406.
-LaTeX Info: Redefining \% on input line 406.
-[302]) (resultados-obtenidos/ejemplo9/graph-generated.tex
-<Figuras/Graph_9.png, id=1564, 2604.73125pt x 511.9125pt>
+LaTeX Info: Redefining \. on input line 378.
+LaTeX Info: Redefining \% on input line 378.
+LaTeX Info: Redefining \. on input line 378.
+LaTeX Info: Redefining \% on input line 378.
+[301]) (resultados-obtenidos/ejemplo9/graph-generated.tex
+<Figuras/Graph_9.png, id=1562, 2604.73125pt x 511.9125pt>
 File: Figuras/Graph_9.png Graphic file (type png)
 <use Figuras/Graph_9.png>
 Package pdftex.def Info: Figuras/Graph_9.png  used on input line 7.
 (pdftex.def)             Requested size: 426.79134pt x 83.87608pt.
-)
-(resultados-obtenidos/ejemplo9/generated-signalling.tex
+
+
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+[302]) (resultados-obtenidos/ejemplo9/generated-signalling.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--46
 
  []
@@ -5152,13 +5102,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37260 strings out of 473904
- 810057 string characters out of 5726600
+ 37267 strings out of 473904
+ 810427 string characters out of 5726600
  2629908 words of memory out of 5000000
- 59155 multiletter control sequences out of 15000+600000
+ 59162 multiletter control sequences out of 15000+600000
  574324 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,33n,93p,1664b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,33n,93p,1666b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
 0800.pk> <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tctt1000.pk> <C:\Users\menen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -5192,9 +5142,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (338 pages, 83474952 bytes).
+Output written on main.pdf (338 pages, 83630182 bytes).
 PDF statistics:
- 1759 PDF objects out of 2073 (max. 8388607)
+ 1761 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 873 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 878 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -87,10 +87,10 @@
 \contentsline {subsection}{\numberline {3.2.14}Módulo genérico de las rutas ferroviarias}{113}{}%
 \contentsline {section}{\numberline {3.3}Consideraciones respecto a la implementación en una FPGA del código generado por el ACG}{115}{}%
 \contentsline {chapter}{\numberline {4}Automatic Graphic User Interface Generator (AGG)}{117}{}%
-\contentsline {subsection}{\numberline {4.0.1}Necesidad de contar con una herramienta para generar interfaces gráficas}{117}{}%
-\contentsline {subsection}{\numberline {4.0.2}Diseño de la herramienta para la generación automática de interfaces de usuario}{117}{}%
-\contentsline {section}{\numberline {4.1}Representación de cada elemento ferroviario en la interfaz gráfica}{118}{}%
-\contentsline {section}{\numberline {4.2}Consideraciones para asegurar la convergencia del estado del sistema de enclavamientos}{121}{}%
+\contentsline {section}{\numberline {4.1}Necesidad de contar con una herramienta para generar interfaces gráficas}{117}{}%
+\contentsline {section}{\numberline {4.2}Diseño de la herramienta para la generación automática de interfaces de usuario}{117}{}%
+\contentsline {section}{\numberline {4.3}Representación de cada elemento ferroviario en la interfaz gráfica}{118}{}%
+\contentsline {section}{\numberline {4.4}Consideraciones para asegurar la convergencia del estado del sistema de enclavamientos}{121}{}%
 \contentsline {chapter}{\numberline {5}Resultados obtenidos}{122}{}%
 \contentsline {section}{\numberline {5.1}Plataforma utilizada}{122}{}%
 \contentsline {section}{\numberline {5.2}Ejemplo 1}{123}{}%
@@ -166,7 +166,7 @@
 \contentsline {section}{\numberline {H.1}Topología ferroviaria original}{292}{}%
 \contentsline {section}{\numberline {H.2}Señalamiento original}{292}{}%
 \contentsline {section}{\numberline {H.3}Generación de señalamiento paso a paso}{293}{}%
-\contentsline {section}{\numberline {H.4}Red de grafos generada por el RNA}{303}{}%
+\contentsline {section}{\numberline {H.4}Red de grafos generada por el RNA}{302}{}%
 \contentsline {section}{\numberline {H.5}Señalamiento generado por el RNA}{303}{}%
 \contentsline {section}{\numberline {H.6}Validación del sistema de enclavamientos}{304}{}%
 \contentsline {section}{\numberline {H.7}Sistema generado por el ACG}{305}{}%
