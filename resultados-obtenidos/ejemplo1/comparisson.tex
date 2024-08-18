@@ -74,7 +74,7 @@
 	 	\label{fig:ROCA}
 	 \end{figure}
 	 
-	 Como fue explicado en la Sección \ref{sec:ARTY}, la plataforma FPGA utilizada es la ARTY Z7-20, cuyo precio promedio de 300 U\$D es razonable para las prestaciones de nivel intermedio que ofrece (53.200 Look-up-tables). Si se buscara implementar el ejemplo 1 con la plataforma más económica posible, podemos recurrir a la FPGA ICE5LP4K-SG48ITR \cite{LATTICE}, que cuenta con 3520 Look-up-tables, unas 15 veces mas pequeña que la ARTY Z7-20, pero con un costo de 6U\$D.
+	 Como fue explicado en la Sección \ref{sec:ARTY}, la plataforma FPGA utilizada es la ARTY Z7-20, cuyo precio promedio de 300 U\$D es razonable para las prestaciones de nivel intermedio que ofrece (53.200 Look-up-tables). Si se buscara implementar el ejemplo 1 con la plataforma más económica posible, podemos recurrir a la FPGA ICE5LP4K-SG48ITR \cite{LATTICE}, que cuenta con 3520 Look-up-tables, unas 15 veces mas pequeña que la ARTY Z7-20, pero con un costo de U\$S 6.
 	 
 	 %La potencia de las herramientas creadas (RNA, ACG y AGG) permite abordar la redundancia y diversidad del sistema, cuya importancia fue explicada en la Sección \ref{sec:interlock2oo3}, de forma sencilla. Por un lado, todos los ejemplos de la Tabla \ref{Tab:tabla_ACG_total} ya cuentan con una redundancia 2oo3 a nivel del módulo \textit{Network} (ver Sección \ref{sec:network}). Por otro lado, la posibilidad de migrar el código VHDL generado por el ACG a cualquier plataforma FPGA (ver Sección \ref{sec:plataforma}) abre las puertas, a futuro, a implementaciones diversas. Es decir, implementar el mismo sistema en dos o más plataformas de diferentes familias y/o fabricantes.
 	 

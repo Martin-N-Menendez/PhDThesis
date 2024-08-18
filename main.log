@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  17 AUG 2024 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  18 AUG 2024 22:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1127,9 +1127,6 @@ LaTeX Warning: Label `alg:horizontal' multiply defined.
 
 
 LaTeX Warning: Label `alg:vertical' multiply defined.
-
-
-LaTeX Warning: Label `sec:GICSAFE' multiply defined.
 
 
 LaTeX Warning: Label `sec:signal_switches' multiply defined.
@@ -2773,14 +2770,14 @@ Cap\'{\i }tulo 4.
 <AGG/images/AGG_via.png, id=838, 1996.45876pt x 1526.70375pt>
 File: AGG/images/AGG_via.png Graphic file (type png)
 <use AGG/images/AGG_via.png>
-Package pdftex.def Info: AGG/images/AGG_via.png  used on input line 27.
+Package pdftex.def Info: AGG/images/AGG_via.png  used on input line 28.
 (pdftex.def)             Requested size: 298.75262pt x 228.43658pt.
 
 
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 23.10004pt, for example:
@@ -2793,19 +2790,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <AGG/images/AGG_cruce.png, id=843, 1973.3725pt x 1050.92625pt>
 File: AGG/images/AGG_cruce.png Graphic file (type png)
 <use AGG/images/AGG_cruce.png>
-Package pdftex.def Info: AGG/images/AGG_cruce.png  used on input line 36.
+Package pdftex.def Info: AGG/images/AGG_cruce.png  used on input line 37.
 (pdftex.def)             Requested size: 298.75262pt x 159.0914pt.
 <AGG/images/AGG_switch.png, id=844, 2098.84125pt x 1457.445pt>
 File: AGG/images/AGG_switch.png Graphic file (type png)
 <use AGG/images/AGG_switch.png>
-Package pdftex.def Info: AGG/images/AGG_switch.png  used on input line 45.
+Package pdftex.def Info: AGG/images/AGG_switch.png  used on input line 46.
 (pdftex.def)             Requested size: 256.0774pt x 177.82137pt.
 
 
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 23.10004pt, for example:
@@ -2818,24 +2815,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <AGG/images/AGG_routes_1.png, id=850, 1402.48969pt x 393.72093pt>
 File: AGG/images/AGG_routes_1.png Graphic file (type png)
 <use AGG/images/AGG_routes_1.png>
-Package pdftex.def Info: AGG/images/AGG_routes_1.png  used on input line 56.
+Package pdftex.def Info: AGG/images/AGG_routes_1.png  used on input line 57.
 (pdftex.def)             Requested size: 362.77524pt x 101.84235pt.
 <AGG/images/AGG_routes_2.png, id=851, 1419.05156pt x 404.26031pt>
 File: AGG/images/AGG_routes_2.png Graphic file (type png)
 <use AGG/images/AGG_routes_2.png>
-Package pdftex.def Info: AGG/images/AGG_routes_2.png  used on input line 65.
+Package pdftex.def Info: AGG/images/AGG_routes_2.png  used on input line 66.
 (pdftex.def)             Requested size: 362.77524pt x 103.34717pt.
 <AGG/images/AGG_routes_3.png, id=852, 1492.07437pt x 514.92375pt>
 File: AGG/images/AGG_routes_3.png Graphic file (type png)
 <use AGG/images/AGG_routes_3.png>
-Package pdftex.def Info: AGG/images/AGG_routes_3.png  used on input line 74.
+Package pdftex.def Info: AGG/images/AGG_routes_3.png  used on input line 75.
 (pdftex.def)             Requested size: 362.77524pt x 125.19492pt.
 
 
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 23.10004pt, for example:
@@ -3176,20 +3173,26 @@ sed on input line 28.
 (pdftex.def)             Requested size: 426.79134pt x 185.60757pt.
 
 
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-[147 <./resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png> <./resultado
-s-obtenidos/ejemplo1/images/AGG_S32_NO.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_R13.png, id=975, 1445.4pt x 636.87938
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[147 <./resultados-obtenidos/ejemplo1/images/AGG_S32_OCCUPIED.png>]
+<resultados-obtenidos/ejemplo1/images/AGG_R13.png, id=974, 1445.4pt x 636.87938
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R13.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R13.png>
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R13.png  used
  on input line 39.
 (pdftex.def)             Requested size: 426.79134pt x 188.0527pt.
-<resultados-obtenidos/ejemplo1/images/AGG_R12.png, id=976, 1445.4pt x 655.69969
+
+
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+[148 <./resultados-obtenidos/ejemplo1/images/AGG_S32_NO.png>]
+<resultados-obtenidos/ejemplo1/images/AGG_R12.png, id=979, 1445.4pt x 655.69969
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R12.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R12.png>
@@ -3198,12 +3201,13 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R12.png  used
 (pdftex.def)             Requested size: 426.79134pt x 193.60982pt.
 
 
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-[148 <./resultados-obtenidos/ejemplo1/images/AGG_R13.png>]
-<resultados-obtenidos/ejemplo1/images/AGG_R19.png, id=981, 1445.4pt x 617.30624
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+[149 <./resultados-obtenidos/ejemplo1/images/AGG_R13.png> <./resultados-obtenid
+os/ejemplo1/images/AGG_R12.png>]
+<resultados-obtenidos/ejemplo1/images/AGG_R19.png, id=985, 1445.4pt x 617.30624
 pt>
 File: resultados-obtenidos/ejemplo1/images/AGG_R19.png Graphic file (type png)
 <use resultados-obtenidos/ejemplo1/images/AGG_R19.png>
@@ -3213,13 +3217,12 @@ Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/AGG_R19.png  used
 )
 (resultados-obtenidos/ejemplo1/comparisson.tex
 
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-[149 <./resultados-obtenidos/ejemplo1/images/AGG_R12.png> <./resultados-obtenid
-os/ejemplo1/images/AGG_R19.png>]
-<resultados-obtenidos/ejemplo1/images/recursos_1.png, id=987, 833.1125pt x 514.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+[150 <./resultados-obtenidos/ejemplo1/images/AGG_R19.png>]
+<resultados-obtenidos/ejemplo1/images/recursos_1.png, id=990, 833.1125pt x 514.
 92375pt>
 File: resultados-obtenidos/ejemplo1/images/recursos_1.png Graphic file (type pn
 g)
@@ -3229,12 +3232,12 @@ sed on input line 52.
 (pdftex.def)             Requested size: 384.10959pt x 237.40993pt.
 
 
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
-[150]
-<resultados-obtenidos/ejemplo1/images/recursos_2.png, id=991, 816.04875pt x 504
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+[151 <./resultados-obtenidos/ejemplo1/images/recursos_1.png>]
+<resultados-obtenidos/ejemplo1/images/recursos_2.png, id=995, 816.04875pt x 504
 .88625pt>
 File: resultados-obtenidos/ejemplo1/images/recursos_2.png Graphic file (type pn
 g)
@@ -3242,15 +3245,7 @@ g)
 Package pdftex.def Info: resultados-obtenidos/ejemplo1/images/recursos_2.png  u
 sed on input line 61.
 (pdftex.def)             Requested size: 384.10959pt x 237.65094pt.
-
-
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-[151 <./resultados-obtenidos/ejemplo1/images/recursos_1.png> <./resultados-obte
-nidos/ejemplo1/images/recursos_2.png>]
-<resultados-obtenidos/ejemplo1/images/mapa-linea-roca.png, id=997, 2244.385pt x
+<resultados-obtenidos/ejemplo1/images/mapa-linea-roca.png, id=996, 2244.385pt x
  1547.7825pt>
 File: resultados-obtenidos/ejemplo1/images/mapa-linea-roca.png Graphic file (ty
 pe png)
@@ -3260,17 +3255,18 @@ ng  used on input line 72.
 (pdftex.def)             Requested size: 426.79134pt x 294.3179pt.
 
 
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-[152 <./resultados-obtenidos/ejemplo1/images/mapa-linea-roca.png>])))
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+[152 <./resultados-obtenidos/ejemplo1/images/recursos_2.png>])))
 
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
-[153] (conclusiones/main.tex
+[153 <./resultados-obtenidos/ejemplo1/images/mapa-linea-roca.png>]
+(conclusiones/main.tex
 Cap\'{\i }tulo 6.
 
 
@@ -5102,10 +5098,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37267 strings out of 473904
- 810427 string characters out of 5726600
+ 37269 strings out of 473904
+ 810460 string characters out of 5726600
  2629908 words of memory out of 5000000
- 59162 multiletter control sequences out of 15000+600000
+ 59164 multiletter control sequences out of 15000+600000
  574324 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,33n,93p,1666b,2208s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5142,7 +5138,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (338 pages, 83630182 bytes).
+Output written on main.pdf (338 pages, 83639619 bytes).
 PDF statistics:
  1761 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
