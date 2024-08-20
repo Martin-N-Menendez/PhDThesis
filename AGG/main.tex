@@ -7,6 +7,15 @@
 	
 	La complejidad del sistema implementado en la FPGA en base al código generado por parte del ACG es tal que se vuelve indispensable contar con una herramienta gráfica que facilite la interpretación de los resultados. A su vez, es importante contar con una herramienta que pueda establecer la comunicación con la FPGA, tanto para enviar cómo para recibir las tramas de mensajes definida en la Sección \ref{sec:UART}. Para lograr estos objetivos se creó el AGG (del inglés, Automatic Graphic User Interface Generator), una herramienta diseñada e implementada por el autor de esta tesis de doctorado. El AGG permite establecer la comunicación con la FPGA y actualizar en tiempo real el estado de una interfaz gráfica basada en railML, intuitiva y a semejanza de una consola de señalamiento real.
 	
+	La interfaz de usuario generada por el AGG tiene como objetivo reemplazar a la mesa de señalamiento que se utiliza habitualmente para comandar los sistemas de enclavamiento en Argentina. En la Figura \ref{fig:enclavamiento_3} se presentó una foto de una mesa de enclavamientos real, y para comodidad del lector se muestra nuevamente esa foto en la Figura \ref{fig:enclavamiento_3_nueva}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Figuras/llavallol.jpg}
+		\centering\caption{Panel de control central de un sistema de enclavamientos.}
+		\label{fig:enclavamiento_3_nueva}
+	\end{figure}
+	
 	\section{Diseño de la herramienta para la generación automática de interfaces de usuario}
 	\label{sec:AGG_rutas}
 	
@@ -14,9 +23,9 @@
 	
 	La interfaz gráfica se genera utilizando la información provista por el RNA (ver Sección \ref{sec:Biblioteca}), como por ejemplo la topología (posición, conexión y largo de las vías), la distribución de la infraestructura estática (plataformas, final de vías), la disposición de la infraestructura dinámica (cambios de vías, pasos a nivel) y el señalamiento (posición y orientación de las señales). El estado de la interfaz gráfica se actualiza en tiempo real y es reportado a la FPGA en una trama de datos, que ya fue explicada en la Sección \ref{sec:UART}.
 	
-	El usuario u operario puede interactuar con la interfaz creada mediante tres acciones: hacer zoom in/out utilizando la rueda del mouse, desplazarse por la interfaz arrastrando la topología mientras se mantiene presionada la tecla shift y modificar el estado de los elementos de la interfaz que son interactivos al hacer click con el mouse sobre ellos. Los elementos interactivos son por ejemplo un cambio de vías, un paso a nivel o una vía. Los finales de vías no poseen estados y, por lo tanto, no son interactivos. Las tres acciones fueron implementadas en Python por el autor de esta tesis de doctorado mediante interrupciones, para tener una respuesta lo más cercana posible a tiempo real. 
+	El usuario u operario puede interactuar con la interfaz creada mediante tres acciones: hacer zoom in/out utilizando la rueda del mouse, arrastrar la topología mientras se mantiene presionada la tecla shift para desplazarse por la interfaz y modificar el estado de los elementos de la interfaz que son interactivos al hacer click con el mouse sobre ellos. Los elementos interactivos son por ejemplo un cambio de vías, un paso a nivel o una vía. Los finales de vías no poseen estados y, por lo tanto, no son interactivos. Las tres acciones fueron implementadas en Python por el autor de esta tesis de doctorado mediante interrupciones, para tener una respuesta lo más cercana posible a tiempo real. 
 	
-	Las interacciones producto de hacer click sobre los elementos de la interfaz se dividen en dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario modificando el estado de la infraestructura, por ejemplo: ocupando o liberando una vía, cerrando o abriendo un paso a nivel o modificando la posición de un cambio de vías. Mientras que un evento dinámico implica la solicitud y cancelación de rutas. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. 
+	Las interacciones producto de hacer click sobre los elementos de la interfaz se dividen en dos tipos de eventos: estáticos y dinámicos. Un evento estático involucra al usuario que modifica el estado de la infraestructura, por ejemplo: ocupa o libera una vía, cierra o abre un paso a nivel o modifica la posición de un cambio de vías. Un evento dinámico implica la solicitud y cancelación de rutas. Todas estas acciones se pueden realizar con un click sobre el elemento que se desea modificar. El AGG informará a la FPGA del nuevo estado del elemento seleccionado y actualizará el color y/o posición del elemento, en base a la respuesta de la FPGA. 
 	
 	\section{Representación de cada elemento ferroviario en la interfaz gráfica}
 	\label{sec:AGG_STATUS}
