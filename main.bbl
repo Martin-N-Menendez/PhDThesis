@@ -4087,8 +4087,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Home - railML.org}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4158,8 +4158,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Common}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4190,8 +4190,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Infrastructure}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4222,8 +4222,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Interlocking}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4254,8 +4254,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 RollingStock}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4286,8 +4286,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 TimeTable}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4318,8 +4318,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{railML® partners}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4349,8 +4349,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Maprex Train Simulator}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4369,8 +4369,8 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{IVU.rail}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4401,8 +4401,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{railVIVID: The railML Viewer \& Validator}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4434,8 +4434,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{VIS-ALL 3D}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4455,8 +4455,8 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{Railway Infrastructure and Layour Aided Designer}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -6337,8 +6337,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Repositorio bibliográfico}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -6737,6 +6737,40 @@
       \field{year}{2022}
       \verb{doi}
       \verb 10.1109/LES.2022.3221810
+      \endverb
+    \endentry
+    \entry{GITHUB_PHD}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{fullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{bibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorbibnamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
+      \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Layouts analyzed with RNA}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/GICSAFePhD
+      \endverb
+      \verb{url}
+      \verb https://github.com/GICSAFePhD
       \endverb
     \endentry
     \entry{Paper_139}{article}{}{}
@@ -7949,14 +7983,14 @@
       \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
       \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
       \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Layouts analyzed with RNA}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -7987,8 +8021,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Accidente ferroviario de Versalles}
-      \field{urlday}{14}
-      \field{urlmonth}{2}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -8370,7 +8404,7 @@
       \strng{authornamehash}{976bdce4f103823c02023d7d79b9d3e0}
       \strng{authorfullhash}{976bdce4f103823c02023d7d79b9d3e0}
       \strng{authorfullhashraw}{976bdce4f103823c02023d7d79b9d3e0}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
