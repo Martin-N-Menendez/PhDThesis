@@ -1,13 +1,14 @@
-\section{Validación del sistema}
+\section{Validación del sistema de enclavamientos}
 
     La validación de las rutas de la tabla de enclavamientos es realizada por el RNA aplicando el Algoritmo \ref{alg:interlocking_tables}, explicado en la Sección \ref{sec:validar_tabla}. Las 16 rutas del señalamiento original (Tabla \ref{Tab:tabla_original_5}) tienen 16 rutas equivalentes en el señalamiento generado por el RNA (Tabla \ref{Tab:tabla_generated_5}), tal como se puede visualizar en la Tabla \ref{Tab:tabla_validation_5}, generada automáticamente por el RNA.
 
-    \begin{table}[!h]
+    \begin{table}[H]
         {
         \caption{Equivalencias entre las rutas originales y las generadas por el RNA.}
         \label{Tab:tabla_validation_5}
-        \centering
-        \resizebox{0.9\textwidth}{!}{
+        %\centering
+        \begin{center}
+        \resizebox{0.5\textwidth}{!}{
             \begin{tabular}{ c c c c }
                 \hline	
                     Original & Señales & RNA & Señales \\	
@@ -31,6 +32,7 @@
                 \hline
             \end{tabular}
      		}
+     	\end{center}
         }    
     \end{table}
     
