@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  6 SEP 2024 23:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.28)  16 OCT 2024 19:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1439,17 +1439,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
- [][]\OT1/cmr/m/n/10.95 JURADO NU-ME-RO1 (FI-LIA-CION)
+ [][]\OT1/cmr/m/n/10.95 Dr. Juan Ig-na-cio Gi-ri-bet (FIU-BA/-Uni-ver-si-dad de
+ San Andr^^Ses)
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
- [][]\OT1/cmr/m/n/10.95 JURADO NU-ME-RO2 (FI-LIA-CION)
+ [][]\OT1/cmr/m/n/10.95 Dr. Jos^^Se Da-vid Bri-zue-la (CNEA/-CO-NI-CET)
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
- [][]\OT1/cmr/m/n/10.95 JURADO NU-ME-RO3 (FI-LIA-CION)
+ [][]\OT1/cmr/m/n/10.95 Dr. Ema-nuel Agust^^S^^Pn Irraz^^Sabal (UN-NE)
  []
 
 
@@ -5143,7 +5144,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/me
 nen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/
 Users/menen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on main.pdf (330 pages, 79824553 bytes).
+Output written on main.pdf (330 pages, 79824652 bytes).
 PDF statistics:
  11585 PDF objects out of 12825 (max. 8388607)
  5737 named destinations out of 6186 (max. 500000)
