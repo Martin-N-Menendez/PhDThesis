@@ -1842,6 +1842,7 @@
       \strng{authornamehash}{0668274bef6d716d6b165a25d6a5561b}
       \strng{authorfullhash}{3c350bc29e6fe70e4a356d356f025e39}
       \strng{authorfullhashraw}{3c350bc29e6fe70e4a356d356f025e39}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -4087,8 +4088,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Home - railML.org}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4158,8 +4159,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Common}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4185,13 +4186,13 @@
       \strng{authorfullhash}{e5e23ee00c3d7e2ad578521b8fe7b2f2}
       \strng{authorfullhashraw}{e5e23ee00c3d7e2ad578521b8fe7b2f2}
       \field{extraname}{3}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Infrastructure}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4222,8 +4223,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 Interlocking}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4254,8 +4255,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 RollingStock}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4286,8 +4287,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RailML 3.2 TimeTable}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -4318,8 +4319,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{railML® partners}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4349,8 +4350,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Maprex Train Simulator}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4369,8 +4370,8 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{IVU.rail}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4401,8 +4402,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{railVIVID: The railML Viewer \& Validator}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4429,13 +4430,13 @@
       \strng{authornamehash}{95d59fd42b59a83a22e61bf7f53573bc}
       \strng{authorfullhash}{95d59fd42b59a83a22e61bf7f53573bc}
       \strng{authorfullhashraw}{95d59fd42b59a83a22e61bf7f53573bc}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{VIS-ALL 3D}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -4455,8 +4456,8 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{Railway Infrastructure and Layour Aided Designer}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -5004,8 +5005,8 @@
       \strng{authorfullhash}{9dafdae802abff28be896e7739c4843a}
       \strng{authorfullhashraw}{9dafdae802abff28be896e7739c4843a}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Computer as a Tool (EUROCON)}
@@ -5041,8 +5042,8 @@
       \strng{authornamehash}{fd90daf90a118251147d79296c39d23f}
       \strng{authorfullhash}{341e892096b6186e9c5775f5c0531a59}
       \strng{authorfullhashraw}{341e892096b6186e9c5775f5c0531a59}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of ESREL}
@@ -6337,8 +6338,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Repositorio bibliográfico}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -6761,8 +6762,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{RNA, ACG, AGG and layouts}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -7989,8 +7990,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Layouts analyzed with RNA}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
       \field{urldateera}{ce}
@@ -8021,8 +8022,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Accidente ferroviario de Versalles}
-      \field{urlday}{21}
-      \field{urlmonth}{8}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
       \field{urldateera}{ce}
@@ -8453,6 +8454,393 @@
       \endverb
       \verb{url}
       \verb https://www.digikey.com.au/en/products/detail/lattice-semiconductor-corporation/ICE5LP4K-SG48ITR/5324267
+      \endverb
+    \endentry
+    \entry{case2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=00ed7e99f758cd25dd6512e6c942cb11}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=65ba791570006177ed6755e1286a1fc0}{%
+           family={Lutenberg},
+           familyi={L\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{fullhash}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \strng{fullhashraw}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \strng{bibnamehash}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \strng{authorbibnamehash}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \strng{authornamehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{authorfullhash}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \strng{authorfullhashraw}{75ea5617b3f99e311f9ab5a2e70c1d07}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congreso Argentino de Sistemas Embebidos (CASE)}
+      \field{title}{Sistema contador de pasajeros en tiempo real mediante el procesamiento de beacons WiFi}
+      \field{year}{2018}
+    \endentry
+    \entry{case2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ab58fee6b6603b1057500b227c68773c}{%
+           family={Larosa},
+           familyi={L\bibinitperiod},
+           given={Facundo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=155a23beae1a8490661104820dd8f27c}{%
+           family={Álravez},
+           familyi={Á\bibinitperiod},
+           given={Nicolás},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ad4cba934b69509cc6c8197ecfd4a399}{%
+           family={Ghignone},
+           familyi={G\bibinitperiod},
+           given={Ramiro\bibnamedelima Adrián},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=65ba791570006177ed6755e1286a1fc0}{%
+           family={Lutenberg},
+           familyi={L\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{fullhash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{fullhashraw}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{bibnamehash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authorbibnamehash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authornamehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{authorfullhash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authorfullhashraw}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congreso Argentino de Sistemas Embebidos (CASE)}
+      \field{title}{Diseño de un sistema crítico de enclavamiento ferroviario implementado mediante FPGA}
+      \field{year}{2019}
+    \endentry
+    \entry{case2019B}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=ad4cba934b69509cc6c8197ecfd4a399}{%
+           family={Ghignone},
+           familyi={G\bibinitperiod},
+           given={Ramiro\bibnamedelima Adrián},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ab58fee6b6603b1057500b227c68773c}{%
+           family={Larosa},
+           familyi={L\bibinitperiod},
+           given={Facundo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=947c31c6d762f3bd7ae578c22b321645}{%
+           family={Gouveia},
+           familyi={G\bibinitperiod},
+           given={H.\bibnamedelimi Mendez},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=83b451ba25f8da53bd58ec8d7f7ae426}{%
+           family={Change},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=65ba791570006177ed6755e1286a1fc0}{%
+           family={Lutenberg},
+           familyi={L\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0668274bef6d716d6b165a25d6a5561b}
+      \strng{fullhash}{993a2d630519ce2158babb3ab23ff825}
+      \strng{fullhashraw}{993a2d630519ce2158babb3ab23ff825}
+      \strng{bibnamehash}{993a2d630519ce2158babb3ab23ff825}
+      \strng{authorbibnamehash}{993a2d630519ce2158babb3ab23ff825}
+      \strng{authornamehash}{0668274bef6d716d6b165a25d6a5561b}
+      \strng{authorfullhash}{993a2d630519ce2158babb3ab23ff825}
+      \strng{authorfullhashraw}{993a2d630519ce2158babb3ab23ff825}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congreso Argentino de Sistemas Embebidos (CASE)}
+      \field{title}{Generación automática de modelos y código para sistemas electrónicos de enclavamiento ferroviario}
+      \field{year}{2019}
+    \endentry
+    \entry{case2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=976bdce4f103823c02023d7d79b9d3e0}{%
+           family={Menéndez},
+           familyi={M\bibinitperiod},
+           given={Martín\bibnamedelima Nicolás},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ab58fee6b6603b1057500b227c68773c}{%
+           family={Larosa},
+           familyi={L\bibinitperiod},
+           given={Facundo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=155a23beae1a8490661104820dd8f27c}{%
+           family={Álravez},
+           familyi={Á\bibinitperiod},
+           given={Nicolás},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ad4cba934b69509cc6c8197ecfd4a399}{%
+           family={Ghignone},
+           familyi={G\bibinitperiod},
+           given={Ramiro\bibnamedelima Adrián},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=65ba791570006177ed6755e1286a1fc0}{%
+           family={Lutenberg},
+           familyi={L\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{fullhash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{fullhashraw}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{bibnamehash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authorbibnamehash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authornamehash}{7b4e64a3570980a77917905eba94befa}
+      \strng{authorfullhash}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \strng{authorfullhashraw}{9e7222bcd2e80affc9b4556cb0db8bc5}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congreso Argentino de Sistemas Embebidos (CASE)}
+      \field{title}{Automatización del análisis y la generación de código de sistemas de enclavamiento en FPGA}
+      \field{year}{2020}
+    \endentry
+    \entry{ART}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cf9cae9dd280e888c22ab61f3fa946dd}{%
+           family={ART},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{fullhash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{fullhashraw}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{bibnamehash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{authorbibnamehash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{authornamehash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{authorfullhash}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \strng{authorfullhashraw}{cf9cae9dd280e888c22ab61f3fa946dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Australian Rail Technology Pty. Ltd.}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ar-tech.com.au/
+      \endverb
+      \verb{url}
+      \verb https://ar-tech.com.au/
+      \endverb
+    \endentry
+    \entry{QTMP}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d27d21e99a7d94f1fb3c78e0c3bf14eb}{%
+           family={Government},
+           familyi={G\bibinitperiod},
+           given={Queensland},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{fullhash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{fullhashraw}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{bibnamehash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{authorbibnamehash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{authornamehash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{authorfullhash}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \strng{authorfullhashraw}{d27d21e99a7d94f1fb3c78e0c3bf14eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Queensland Train Manufacturing Program}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tmr.qld.gov.au/projects/programs/queensland-train-manufacturing-program
+      \endverb
+      \verb{url}
+      \verb https://www.tmr.qld.gov.au/projects/programs/queensland-train-manufacturing-program
+      \endverb
+    \endentry
+    \entry{EN50716}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9a5848131c1005cdfe6b82bac5ccac57}{%
+           family={CENELEC},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{fullhash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{fullhashraw}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{bibnamehash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{authorbibnamehash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{authornamehash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{authorfullhash}{9a5848131c1005cdfe6b82bac5ccac57}
+      \strng{authorfullhashraw}{9a5848131c1005cdfe6b82bac5ccac57}
+      \field{extraname}{8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EN 50129 Railway applications - Requirements for software development}
+      \field{year}{2023}
+    \endentry
+    \entry{AlphaZero}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deepmind Alphazero}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/
+      \endverb
+      \verb{url}
+      \verb https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/
+      \endverb
+    \endentry
+    \entry{ESL}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={IEEE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhashraw}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhashraw}{472abfae8142fdb6f39d081303e8af85}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IEEE Embedded Systems Letters}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4563995
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4563995
+      \endverb
+    \endentry
+    \entry{AI}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9bd49f4c55bb22330226b8f028fb16c1}{%
+           family={MDPI},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{fullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{fullhashraw}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{bibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorbibnamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authornamehash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorfullhash}{9bd49f4c55bb22330226b8f028fb16c1}
+      \strng{authorfullhashraw}{9bd49f4c55bb22330226b8f028fb16c1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artificial Intelligence in Railway Transport and Infrastructure Applications}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mdpi.com/si/ai/35D026CG5C
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/si/ai/35D026CG5C
+      \endverb
+    \endentry
+    \entry{TITS}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={IEEE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhashraw}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhashraw}{472abfae8142fdb6f39d081303e8af85}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979
       \endverb
     \endentry
   \enddatalist
